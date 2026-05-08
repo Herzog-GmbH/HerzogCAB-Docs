@@ -1,0 +1,306 @@
+# =============================================================================
+# Herzog CAB - User Manual
+# MkDocs Configuration
+# =============================================================================
+#
+# Local preview: mkdocs serve     (http://127.0.0.1:8000)
+# Static build:  mkdocs build     -> output in ./site/
+# Deploy GH:     Automatically pushed to gh-pages by GitHub Actions.
+# =============================================================================
+
+site_name: Herzog CAB - User Manual
+site_description: User manual for Herzog CAB - the calculation and design software for braiding machines.
+site_author: Herzog GmbH
+site_url: https://herzog-gmbh.github.io/HerzogCAB-Docs/
+
+# -----------------------------------------------------------------------------
+# Repository (Edit-Buttons in der Doku)
+# -----------------------------------------------------------------------------
+repo_name: HerzogCAB-Docs
+repo_url: https://github.com/herzog-gmbh/HerzogCAB-Docs
+edit_uri: edit/main/docs/
+
+# -----------------------------------------------------------------------------
+# Copyright im Footer
+# -----------------------------------------------------------------------------
+copyright: Copyright &copy; Herzog GmbH
+
+# -----------------------------------------------------------------------------
+# Material Theme
+# -----------------------------------------------------------------------------
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png            # noch optional - siehe assets/README.md
+  favicon: assets/favicon.png      # noch optional
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  features:
+    # navigation.instant ist mit i18n-Sprachschalter nicht kompatibel - deaktiviert
+    - navigation.tracking        # Anker in URL
+    - navigation.tabs            # Tabs oben fuer Top-Level
+    - navigation.tabs.sticky
+    - navigation.sections        # Gruppierung in Sidebar
+    - navigation.indexes         # index.md als Sektions-Startseite
+    - navigation.top             # "Nach oben"-Button
+    - navigation.footer          # Vor/Zurueck im Footer
+    - search.suggest             # Suchvorschlaege
+    - search.highlight           # Treffer hervorheben
+    - search.share               # Suchergebnis-Link teilen
+    - toc.follow                 # Inhaltsverzeichnis folgt beim Scrollen
+    - content.action.edit        # Edit-Button
+    - content.code.copy          # Code-Block kopieren
+    - content.tabs.link          # Tabs sind verlinkt
+  palette:
+    # Hell - Herzog-Brand: Primary #00459a, Accent #ffb800
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dunkel
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+# -----------------------------------------------------------------------------
+# Eigenes CSS (Herzog-Brand: Farben, Schrift, Header, Cards, Tabellen ...)
+# -----------------------------------------------------------------------------
+extra_css:
+  - assets/css/herzog-brand.css
+
+# -----------------------------------------------------------------------------
+# Markdown Extensions
+# -----------------------------------------------------------------------------
+markdown_extensions:
+  # Standard
+  - abbr
+  - admonition                   # !!! note, !!! warning, ...
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true            # anchor links on headings
+      title: On this page
+  # PyMdown Extensions
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details             # Aufklappbare Bloecke
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys                # ++ctrl+s++ Notation
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# -----------------------------------------------------------------------------
+# Plugins
+# -----------------------------------------------------------------------------
+plugins:
+  - search:
+      lang:
+        - en
+  # - i18n:                      # ENABLE when adding more languages (e.g. de) alongside English
+  #     docs_structure: suffix
+  #     languages:
+  #       - locale: en
+  #         default: true
+  #         name: English
+  #         build: true
+  #         site_name: Herzog CAB - User Manual
+  #       - locale: de
+  #         name: Deutsch
+  #         build: true
+  #         site_name: Herzog CAB - Handbuch
+  # - mike:                      # ENABLE for versioned docs (1.3, 1.4, latest)
+  #     version_selector: true
+  #     css_dir: css
+  #     javascript_dir: js
+  #     canonical_version: latest
+
+# -----------------------------------------------------------------------------
+# Extra (version selector, social links)
+# -----------------------------------------------------------------------------
+extra:
+  # version:                     # ENABLE once the mike plugin (above) is active
+  #   provider: mike
+  #   default: latest
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.herzog-online.com
+      name: Herzog GmbH website
+    - icon: fontawesome/solid/envelope
+      link: mailto:info@herzog-online.com
+      name: Email contact
+  generator: false               # hide "Made with MkDocs"
+
+# -----------------------------------------------------------------------------
+# Navigation
+# -----------------------------------------------------------------------------
+# Folder names (de) are kept as URL slugs; only display labels are translated.
+nav:
+  - Home: index.md
+
+  # ----- TAB: Setup --------------------------------------------------------
+  - Setup:
+      - Installation:
+          - installation/index.md
+          - System requirements: installation/systemvoraussetzungen.md
+          - Running the installer: installation/installer.md
+          - Activating the license: installation/lizenz-aktivieren.md
+          - First program start: installation/erster-start.md
+      - Getting Started:
+          - erste-schritte/index.md
+          - Setting up the workspace: erste-schritte/workspace.md
+          - First admin account: erste-schritte/admin-konto.md
+          - Choosing the language: erste-schritte/sprache.md
+          - User interface overview: erste-schritte/oberflaeche.md
+          - Navigation and history: erste-schritte/navigation.md
+          - Guided tour: erste-schritte/guided-tour.md
+      - Updates:
+          - updates/index.md
+          - Installing updates: updates/installieren.md
+          - Version history: updates/versionsverlauf.md
+      - Uninstallation:
+          - deinstallation/index.md
+          - Via the Maintenance Tool: deinstallation/maintenance-tool.md
+          - Via Windows Settings: deinstallation/windows-settings.md
+          - Removing data: deinstallation/daten-entfernen.md
+
+  # ----- TAB: Operation ----------------------------------------------------
+  - Operation:
+      - Master Data:
+          - stammdaten/index.md
+          - Materials: stammdaten/materialien.md
+          - Bobbins: stammdaten/spulen.md
+          - Machines: stammdaten/maschinen.md
+          - Customers: stammdaten/kunden.md
+          - Colors: stammdaten/farben.md
+      - Calculations:
+          - berechnungen/index.md
+          - Braid Geometry:
+              - berechnungen/flechtgeometrie/index.md
+              - Braid angle: berechnungen/flechtgeometrie/flechtwinkel.md
+              - Lay length: berechnungen/flechtgeometrie/verlegelaenge.md
+              - Convert braid density: berechnungen/flechtgeometrie/flechtdichte.md
+          - Material:
+              - berechnungen/material/index.md
+              - Linear density: berechnungen/material/lineare-dichte.md
+              - Convert linear density: berechnungen/material/lineare-dichte-umrechnung.md
+              - Material diameter: berechnungen/material/materialdurchmesser.md
+              - Core and sheath ropes: berechnungen/material/kern-mantel.md
+          - Bobbins:
+              - berechnungen/spulen/index.md
+              - Bobbin volume: berechnungen/spulen/spulenvolumen.md
+              - Material length on bobbin: berechnungen/spulen/materiallaenge.md
+              - Number of bobbin winders: berechnungen/spulen/anzahl-wickler.md
+          - Machine:
+              - berechnungen/maschine/index.md
+              - Machine dimensions: berechnungen/maschine/abmessungen.md
+              - Wing pitch circle: berechnungen/maschine/fluegelteilkreis.md
+              - Production speed: berechnungen/maschine/produktionsgeschwindigkeit.md
+              - Run time and bobbin set: berechnungen/maschine/laufzeit-spulensatz.md
+              - Change gears (rubber drive): berechnungen/maschine/wechselraeder.md
+          - Product:
+              - berechnungen/produkt/index.md
+              - Product diameter: berechnungen/produkt/produktdurchmesser.md
+              - Rope length: berechnungen/produkt/seillaenge.md
+              - Rope length on drum: berechnungen/produkt/seillaenge-trommel.md
+              - Rope weight: berechnungen/produkt/seilgewicht.md
+          - Tubular Braid:
+              - berechnungen/rohrgeflecht/index.md
+              - Tube: berechnungen/rohrgeflecht/rohr.md
+              - Tube carriers: berechnungen/rohrgeflecht/rohrtraeger.md
+              - Tube cover: berechnungen/rohrgeflecht/rohrueberzug.md
+              - Tube diameter: berechnungen/rohrgeflecht/rohrdurchmesser.md
+              - Yarn width: berechnungen/rohrgeflecht/garnbreite.md
+          - Advanced:
+              - berechnungen/spezial/index.md
+              - Horn Gear Layout: berechnungen/spezial/horn-gear-layout.md
+              - Horn Gear Overview: berechnungen/spezial/horn-gear-uebersicht.md
+              - Carriers Rules: berechnungen/spezial/carriers-rules.md
+              - Braid Mapping: berechnungen/spezial/braid-mapping.md
+      - Design:
+          - design/index.md
+          - Designer interface: design/designer.md
+          - Colors and patterns: design/farben.md
+          - Product design: design/produkt.md
+      - Jobs:
+          - auftraege/index.md
+          - Create a job: auftraege/anlegen.md
+          - Edit a job: auftraege/bearbeiten.md
+          - QR code for the machine: auftraege/qr-code.md
+          - Print: auftraege/drucken.md
+      - Print Templates:
+          - druckvorlagen/index.md
+          - Manage templates: druckvorlagen/verwalten.md
+          - Editor layout: druckvorlagen/editor.md
+          - Elements (text, tables, images): druckvorlagen/elemente.md
+          - Preview and print: druckvorlagen/vorschau-druck.md
+
+  # ----- TAB: Administration ----------------------------------------------
+  - Administration:
+      - Users and Roles:
+          - benutzer/index.md
+          - Login and logout: benutzer/login.md
+          - Manage users: benutzer/verwalten.md
+          - Roles and permissions: benutzer/rollen.md
+          - Your own profile: benutzer/eigenes-profil.md
+          - Change profile picture: benutzer/avatar.md
+          - Reset password: benutzer/passwort-reset.md
+      - Workspace and Profiles:
+          - workspace/index.md
+          - Workspace concept: workspace/konzept.md
+          - Switch profile: workspace/profil-wechseln.md
+          - Change workspace path: workspace/pfad-aendern.md
+          - Migration from older versions: workspace/migration.md
+      - Settings:
+          - einstellungen/index.md
+          - Language and font size: einstellungen/sprache-schrift.md
+          - Web server and QR code: einstellungen/webserver.md
+          - File locations: einstellungen/speicherorte.md
+
+  # ----- TAB: Help ---------------------------------------------------------
+  - Help:
+      - Help and FAQ:
+          - hilfe/index.md
+          - License problems: hilfe/lizenzprobleme.md
+          - Login problems: hilfe/login-probleme.md
+          - Print problems: hilfe/druckprobleme.md
+          - Update errors: hilfe/update-fehler.md
+          - Known limitations: hilfe/einschraenkungen.md
+          - Contact support: hilfe/support.md
+      - Appendix:
+          - anhang/index.md
+          - Keyboard shortcuts: anhang/tastenkuerzel.md
+          - File locations: anhang/speicherorte.md
+          - Glossary: anhang/glossar.md
+          - Release notes: anhang/changelog.md

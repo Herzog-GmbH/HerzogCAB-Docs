@@ -1,0 +1,533 @@
+/* ============================================================
+   HERZOG CAB - Doku Brand-Stylesheet
+   Orientiert an https://www.herzog-online.com (Redesign)
+   Brand-Primary: #00459a   Brand-Accent: #ffb800
+   ============================================================ */
+
+/* -- Schriften -------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+:root {
+  /* Brand Tokens (entsprechen herzog-online.com style.css) */
+  --herzog-primary:        #00459a;
+  --herzog-primary-dark:   #003470;
+  --herzog-primary-light:  #1a5db0;
+  --herzog-primary-darker: #071731;
+  --herzog-accent:         #ffb800;
+  --herzog-accent-light:   #ffd45e;
+  --herzog-bg-dark:        #0b1a33;
+  --herzog-text:           #1a2332;
+  --herzog-text-muted:     #5a6476;
+  --herzog-border:         #e4e8ef;
+  --herzog-bg-alt:         #f5f7fa;
+}
+
+/* -- Material-Variablen ueberschreiben (helles Theme) ----------- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:           var(--herzog-primary);
+  --md-primary-fg-color--light:    var(--herzog-primary-light);
+  --md-primary-fg-color--dark:     var(--herzog-primary-dark);
+  --md-primary-bg-color:           #ffffff;
+  --md-primary-bg-color--light:    #ffffff;
+
+  --md-accent-fg-color:            var(--herzog-primary);
+  --md-accent-fg-color--transparent: rgba(0, 69, 154, 0.1);
+  --md-accent-bg-color:            #ffffff;
+  --md-accent-bg-color--light:     #ffffff;
+
+  --md-default-fg-color:           var(--herzog-text);
+  --md-default-fg-color--light:    var(--herzog-text-muted);
+  --md-default-bg-color:           #ffffff;
+
+  --md-typeset-a-color:            var(--herzog-primary);
+
+  --md-code-bg-color:              var(--herzog-bg-alt);
+  --md-code-fg-color:              var(--herzog-text);
+
+  --md-footer-bg-color:            var(--herzog-bg-dark);
+  --md-footer-bg-color--dark:      #050d1a;
+  --md-footer-fg-color:            rgba(255, 255, 255, 0.95);
+  --md-footer-fg-color--light:     rgba(255, 255, 255, 0.75);
+  --md-footer-fg-color--lighter:   rgba(255, 255, 255, 0.5);
+}
+
+/* -- Material-Variablen ueberschreiben (dunkles Theme) ---------- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:           var(--herzog-primary-light);
+  --md-primary-fg-color--light:    var(--herzog-primary-light);
+  --md-primary-fg-color--dark:     var(--herzog-primary);
+  --md-primary-bg-color:           #ffffff;
+
+  --md-accent-fg-color:            var(--herzog-accent);
+  --md-accent-fg-color--transparent: rgba(255, 184, 0, 0.15);
+
+  --md-default-bg-color:           #0b1a33;
+  --md-default-fg-color:           rgba(255, 255, 255, 0.95);
+  --md-default-fg-color--light:    rgba(255, 255, 255, 0.75);
+
+  --md-typeset-a-color:            var(--herzog-accent-light);
+
+  --md-code-bg-color:              rgba(255, 255, 255, 0.05);
+
+  --md-footer-bg-color:            #050d1a;
+  --md-footer-bg-color--dark:      #050d1a;
+}
+
+/* -- Globale Schrift ------------------------------------------- */
+body, .md-typeset {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, sans-serif;
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code, kbd, pre, .md-typeset code, .md-typeset pre {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular,
+               Menlo, Consolas, monospace;
+  font-feature-settings: "ss02", "cv02", "calt" 1;
+}
+
+/* -- Ueberschriften (Inter Bold, enge Letter-Spacing) ----------- */
+.md-typeset h1, .md-typeset h2, .md-typeset h3,
+.md-typeset h4, .md-typeset h5, .md-typeset h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1 {
+  font-size: 2.25rem;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.625rem;
+  line-height: 1.2;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--herzog-border);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.md-typeset h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+/* -- Header + Tabs: durchgehend dunkler Block ------------------ */
+/*    Beide Modi gleich, damit oben kein Bruch zwischen hell/dunkel
+      entsteht. Entspricht der Top-Bar-Optik der Webseite.        */
+
+.md-header,
+[data-md-color-scheme="slate"] .md-header {
+  background: var(--herzog-bg-dark);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: none;
+}
+
+.md-header[data-md-state="shadow"] {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.md-header__inner {
+  padding: 0.4rem 0.8rem;
+}
+
+.md-header__title {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-size: 1rem;
+}
+
+.md-header__topic {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Wenn ein Logo gesetzt ist, blendet Material den Title manchmal nicht
+   automatisch aus - wir versteuern das selbst, damit nichts ueberlappt. */
+.md-header__button.md-logo {
+  margin: 0.4rem 0.6rem 0.4rem 0;
+  padding: 0;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 32px;
+  width: auto;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+}
+
+/* Suchfeld dunkel passend zum Header */
+.md-search__form {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.md-search__form:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.md-search__input {
+  color: #ffffff;
+}
+
+.md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.md-search__icon[for="__search"] {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Header-Icons (Theme-Toggle, GitHub-Repo) hell halten */
+.md-header__button {
+  color: #ffffff;
+}
+
+.md-header__button:hover {
+  color: var(--herzog-accent);
+  opacity: 1;
+}
+
+/* Repository-Link rechts oben */
+.md-header__source {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.md-source__repository {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* -- Top-Tabs (Hauptkapitel) - direkt unter Header, gleicher Stil */
+.md-tabs,
+[data-md-color-scheme="slate"] .md-tabs {
+  background: var(--herzog-bg-dark);
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-tabs__list {
+  contain: inline-size;
+}
+
+.md-tabs__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 0;
+  padding: 0.7rem 0;
+  position: relative;
+}
+
+.md-tabs__link:hover {
+  color: #ffffff;
+}
+
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link--active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.md-tabs__item--active .md-tabs__link::after,
+.md-tabs__link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--herzog-accent);
+  border-radius: 2px 2px 0 0;
+}
+
+/* -- Sidebar Navigation ---------------------------------------- */
+.md-nav__title {
+  color: var(--herzog-text);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.md-nav__link {
+  font-size: 0.9rem;
+}
+
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--herzog-primary);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: var(--herzog-accent-light);
+}
+
+/* -- Buttons / Links / Hervorhebungen -------------------------- */
+.md-typeset a {
+  color: var(--herzog-primary);
+  font-weight: 500;
+}
+
+.md-typeset a:hover {
+  color: var(--herzog-primary-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: var(--herzog-accent-light);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: var(--herzog-accent);
+}
+
+.md-button,
+.md-typeset .md-button {
+  background: var(--herzog-primary);
+  color: #ffffff;
+  border: 2px solid var(--herzog-primary);
+  border-radius: 10px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.md-button:hover,
+.md-typeset .md-button:hover {
+  background: var(--herzog-primary-dark);
+  border-color: var(--herzog-primary-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 69, 154, 0.2);
+}
+
+.md-button--secondary,
+.md-typeset .md-button--secondary {
+  background: transparent;
+  color: var(--herzog-primary);
+}
+
+/* -- Material-Cards (z. B. <div class="grid cards"> auf index) - */
+.md-typeset .grid.cards > :is(ul, ol) > li,
+.md-typeset .grid > .card,
+.md-typeset .grid.cards > * {
+  border: 1px solid var(--herzog-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > :is(ul, ol) > li,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > * {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li:hover,
+.md-typeset .grid.cards > *:hover {
+  border-color: transparent;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(16, 24, 40, 0.08),
+              0 8px 10px -6px rgba(16, 24, 40, 0.04);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > :is(ul, ol) > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > *:hover {
+  border-color: var(--herzog-accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Karten-Hauptueberschrift (Material rendert <p><strong>) */
+.md-typeset .grid.cards strong:first-child {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--herzog-primary);
+  letter-spacing: -0.01em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards strong:first-child {
+  color: var(--herzog-accent-light);
+}
+
+/* -- Admonition-Bloecke (Note/Tipp/Warnung) -------------------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+  border-left-width: 4px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--herzog-primary);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background: rgba(0, 69, 154, 0.08);
+  color: var(--herzog-primary);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--herzog-accent);
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background: rgba(255, 184, 0, 0.12);
+  color: #8a5d00;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tip > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .tip > summary {
+  color: var(--herzog-accent-light);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: #f59e0b;
+}
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--herzog-primary-light);
+}
+
+/* -- Tabellen --------------------------------------------------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--herzog-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--herzog-bg-alt);
+  color: var(--herzog-text);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid var(--herzog-primary);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background: rgba(0, 69, 154, 0.03);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover {
+  background: rgba(255, 184, 0, 0.05);
+}
+
+/* -- Code-Bloecke ---------------------------------------------- */
+.md-typeset pre > code {
+  border-radius: 12px;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.md-typeset .highlight {
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+/* -- Suche ----------------------------------------------------- */
+.md-search__icon[for="__search"] {
+  color: var(--herzog-text-muted);
+}
+
+.md-search-result__teaser mark {
+  background: rgba(255, 184, 0, 0.35);
+  color: var(--herzog-text);
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+/* -- Footer ---------------------------------------------------- */
+.md-footer {
+  background: var(--herzog-bg-dark);
+}
+
+.md-footer-meta {
+  background: #050d1a;
+}
+
+.md-footer__title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* "Made with Material for MkDocs" diskreter machen */
+.md-footer-meta__inner,
+.md-copyright {
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+/* -- "Eyebrow"-Style fuer hervorgehobene kleine Beschriftungen - */
+.md-typeset .eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--herzog-primary);
+  margin-bottom: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .eyebrow {
+  color: var(--herzog-accent);
+}
+
+/* -- Kleine Detail-Verbesserungen ----------------------------- */
+.md-typeset hr {
+  border-color: var(--herzog-border);
+}
+
+.md-typeset blockquote {
+  border-left: 3px solid var(--herzog-primary);
+  background: var(--herzog-bg-alt);
+  border-radius: 0 8px 8px 0;
+  padding: 0.75rem 1rem;
+  color: var(--herzog-text-muted);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* (Akzent-Streifen vor dem Title entfaellt - das Logo selbst tut's.) */
+
+/* Druckansicht aufraeumen */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer { display: none !important; }
+  .md-content { margin: 0 !important; max-width: 100% !important; }
+}
