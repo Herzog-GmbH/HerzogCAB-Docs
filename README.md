@@ -1,81 +1,77 @@
-# Herzog CAB - User Manual (Source)
+# Herzog CAB - Anwenderhandbuch (Quelle)
 
-This is the source repository for the **Herzog CAB** user manual.
-The rendered site is automatically published to GitHub Pages.
+Dies ist das Quell-Repository fuer das Anwenderhandbuch von **Herzog CAB**.
+Die fertige Doku wird automatisch auf GitHub Pages veroeffentlicht.
 
 > **Live:** https://herzog-gmbh.github.io/HerzogCAB-Docs/
 
-## Quick start for authors
+## Schnellstart fuer Autoren
 
 ```cmd
-REM 1) Python 3.11+ installed? If not: https://www.python.org/downloads/
+REM 1) Python 3.11+ installiert? Falls nein: https://www.python.org/downloads/
 python --version
 
-REM 2) Virtual environment + dependencies
+REM 2) Virtuelles Environment + Abhaengigkeiten
 cd docs-site
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
-REM 3) Local preview server (live reload on changes)
+REM 3) Lokaler Vorschau-Server (Live-Reload bei Aenderungen)
 mkdocs serve
 
-REM   -> open http://127.0.0.1:8000 in your browser
+REM   -> oeffne http://127.0.0.1:8000 im Browser
 ```
 
-## Project structure
+## Projektstruktur
 
 ```
 docs-site/
-├── mkdocs.yml              # central configuration & navigation
-├── requirements.txt        # Python dependencies
-├── docs/                   # >>> Content lives here <<<
-│   ├── index.md            # landing page
-│   ├── assets/             # logos, images, downloads
-│   ├── installation/       # chapter "Installation"
-│   ├── erste-schritte/     # chapter "Getting Started"
-│   ├── stammdaten/         # ...
+├── mkdocs.yml              # zentrale Konfiguration & Navigation
+├── requirements.txt        # Python-Abhaengigkeiten
+├── docs/                   # >>> Hier wird der Inhalt geschrieben <<<
+│   ├── index.md            # Startseite
+│   ├── assets/             # Logos, Bilder, Downloads
+│   ├── installation/       # Kapitel "Installation"
+│   ├── getting-started/     # Kapitel "Erste Schritte"
+│   ├── master-data/         # ...
 │   └── ...
 └── .github/
     └── workflows/
-        └── docs.yml        # automatic build & deploy
+        └── docs.yml        # Automatischer Build & Deploy
 ```
 
-> Folder names under `docs/` are kept in German (e.g. `erste-schritte`,
-> `stammdaten`) because they form the URL slugs and were the original
-> structure. Display labels in the sidebar are translated in `mkdocs.yml`.
+## Inhalt schreiben
 
-## Writing content
+* Jede Seite ist eine Markdown-Datei (`.md`) unter `docs/`.
+* Die Reihenfolge in der Sidebar wird in `mkdocs.yml` unter `nav:` festgelegt.
+* Bilder/Screenshots gehoeren nach `docs/assets/screenshots/<kapitel>/...`
+  und werden mit `![Beschreibung](../assets/screenshots/...)` eingebunden.
 
-* Every page is a Markdown file (`.md`) under `docs/`.
-* The order in the sidebar is set in `mkdocs.yml` under `nav:`.
-* Images / screenshots go into `docs/assets/screenshots/<chapter>/...`
-  and are embedded with `![Description](../assets/screenshots/...)`.
+## Konventionen
 
-## Conventions
-
-* **Voice:** end customer who operates Herzog CAB on the shop floor.
-  No code-level terms (e.g. `QSettings`, `JSON`) in body text.
-* **Formatting:** buttons in **bold** (e.g. **Save**), menu paths with
-  `>` (e.g. *File > Settings*).
-* **Callouts:** use admonition blocks for warnings, tips and notes:
+* **Sprachebene:** Endkunde, der Herzog CAB im Werk bedient.
+  Keine Code-Begriffe (z. B. `QSettings`, `JSON`) im Fliesstext.
+* **Formatierung:** Buttons in **fett** (z. B. **Speichern**), Menuepfade
+  mit `>` (z. B. *Datei > Einstellungen*).
+* **Hinweise:** Nutze die Admonition-Bloecke fuer Warnungen, Tipps und Hinweise:
 
   ```markdown
-  !!! tip "Tip"
-      If the workspace is on a network share, ...
+  !!! tip "Tipp"
+      Wenn der Workspace auf einem Netzlaufwerk liegt, ...
 
-  !!! warning "Caution"
-      When moving the workspace, all users must sign in again.
+  !!! warning "Achtung"
+      Beim Verschieben des Workspaces muessen alle Benutzer sich neu anmelden.
 
-  !!! info "Note"
-      This feature is available from version 1.3 onwards.
+  !!! info "Hinweis"
+      Diese Funktion steht erst ab Version 1.3 zur Verfuegung.
   ```
 
-## Publishing
+## Veroeffentlichung
 
-Push to `main` -> GitHub Actions builds the site -> deploy to `gh-pages`.
-Nothing to do manually.
+Push nach `main` -> GitHub Actions baut die Site -> Deploy auf `gh-pages`.
+Manuell ist nichts zu tun.
 
-## Contact
+## Kontakt
 
-Questions about the docs: e.siemering@herzog-online.com
+Bei Fragen zur Doku: e.siemering@herzog-online.com
