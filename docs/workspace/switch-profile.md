@@ -1,4 +1,4 @@
-# Switch Profile
+# Profil wechseln
 
-Switching profile happens via a program restart - this prevents unsaved input from being lost.
+Profil-Wechsel erfolgt ueber einen Programmneustart - so wird verhindert, dass ungespeicherte Eingaben verloren gehen.
 

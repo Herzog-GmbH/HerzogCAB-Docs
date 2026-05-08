@@ -1,6 +1,6 @@
-# Uninstallation
+# Deinstallation
 
-* [Via the maintenance tool](maintenance-tool.md)
-* [Via Windows settings](windows-settings.md)
-* [Remove data](remove-data.md)
+* [Ueber das Maintenance Tool](maintenance-tool.md)
+* [Ueber die Windows-Einstellungen](windows-settings.md)
+* [Daten entfernen](remove-data.md)
 

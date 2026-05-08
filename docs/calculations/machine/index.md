@@ -1,13 +1,13 @@
-# Machine
+# Maschine
 
-Dimensions, pitch circle, production speed, runtime, change gears.
+Abmessungen, Fluegelteilkreis, Produktionsgeschwindigkeit, Laufzeit, Wechselraeder.
 
-## Calculations in this group
+## Berechnungen in dieser Gruppe
 
-* [Machine Dimensions](dimensions.md)
-* [Pitch Circle Diameter](wing-pitch-circle.md)
-* [Runtime and Bobbin Set](run-time-bobbin-set.md)
-* [Production Speed](production-speed.md)
-* [Change Gears (Rubber Feed)](change-gears.md)
+* [Maschinenabmessungen](dimensions.md)
+* [Fluegelteilkreis (Pitch Circle Diameter)](wing-pitch-circle.md)
+* [Laufzeit und Spulensatz](run-time-bobbin-set.md)
+* [Produktionsgeschwindigkeit](production-speed.md)
+* [Wechselraeder Gummiantrieb](change-gears.md)
 
-> :material-image-area: *Screenshot: Overview "Machine" with cards per calculation*
+> :material-image-area: *Screenshot: Uebersichtsseite "Maschine" mit Karten je Berechnung*

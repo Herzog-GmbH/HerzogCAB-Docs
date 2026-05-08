@@ -1,52 +1,56 @@
-# Interface Overview
+# Oberflaeche im Ueberblick
 
-> :material-image-area: *Screenshot: Main window with numbered areas (1-5)*
+> :material-image-area: *Screenshot: Hauptfenster mit nummerierten Bereichen (1-5)*
 
-The Herzog CAB main window has five areas:
+Das Hauptfenster von Herzog CAB ist in fuenf Bereiche gegliedert:
 
-## 1. Menu bar (top)
+## 1. Menueleiste (oben)
 
-Contains the top-level menus:
+Enthaelt die Top-Level-Menues:
 
-| Menu       | Contents                                                    |
-|------------|-------------------------------------------------------------|
-| **File**   | Print, Quit                                                 |
-| **View**   | Show/hide navigation, CAB Calculation, CAB Design           |
-| **Tools**  | Settings, Change Language, Show Tours                       |
-| **Help**   | About HerzogCAB, About Qt, Feedback, Updates                |
+| Menue       | Inhalt                                                  |
+|-------------|---------------------------------------------------------|
+| **Datei**   | Drucken, Beenden                                        |
+| **Ansicht** | Navigationsleiste ein-/ausblenden, CAB-Calculation, CAB-Design |
+| **Werkzeuge** | Einstellungen, Sprache aendern, Tour anzeigen        |
+| **Hilfe**   | Ueber HerzogCAB, Ueber Qt, Feedback, Updates            |
 
-## 2. Navigation tree (left)
+## 2. Navigationsbaum (links)
 
-Choose which part of the program is displayed in the centre. Tree:
+Hier waehlen Sie, welcher Bereich des Programms in der Mitte angezeigt
+wird. Aufgebaut als Baum:
 
-* **Master data** - materials, bobbins, machines, customers, colors
-* **Calculations** - all calculation modules
-* **Jobs** - job management
-* **Designer** - design braid patterns
-* **Print templates** - templates for printouts
+* **Stammdaten** - Materialien, Spulen, Maschinen, Kunden, Farben
+* **Berechnungen** - alle Kalkulations-Module
+* **Auftraege** - Auftragsverwaltung
+* **Designer** - Flechtmuster entwerfen
+* **Druckvorlagen** - Vorlagen fuer Ausdrucke
 
-The navigation can be toggled via *View > Navigation*.
+Die Navigation laesst sich ueber Menue *Ansicht > Navigation* ein- und
+ausblenden.
 
-## 3. Main area (centre)
+## 3. Hauptbereich (Mitte)
 
-Shows the content of the currently selected page. For calculations,
-inputs are at the top and results at the bottom.
+Zeigt den Inhalt der gerade gewaehlten Seite. Bei Berechnungen sind
+hier die Eingabefelder oben und die Ergebnisse unten.
 
-## 4. History sidebar (right)
+## 4. Verlauf-Sidebar (rechts)
 
-Lists recently opened calculations or pages. Click an entry to jump
-straight back.
+Listet die zuletzt geoeffneten Berechnungen oder Seiten. Klicken Sie
+einen Eintrag an, um direkt dorthin zurueckzuspringen.
 
-## 5. Profile bar (bottom left)
+## 5. Profil-Leiste (unten links)
 
-Shows the currently signed-in user and their profile picture. Click for:
+Zeigt den aktuell angemeldeten Benutzer und das Profilbild. Klicken Sie
+darauf fuer:
 
-* edit your own profile (see [Own Profile](../users/my-profile.md))
-* sign out
+* eigenes Profil bearbeiten (siehe [Eigenes Profil](../users/my-profile.md))
+* abmelden
 
-## Toast messages
+## Toast-Meldungen
 
-Notes and warnings appear in the bottom right as short, automatically
-fading **toast notifications**, e.g. "Job saved" or "Web server started".
+Hinweise und Warnmeldungen erscheinen rechts unten als kurze, automatisch
+verschwindende **Toast-Benachrichtigungen**. Beispiel: "Auftrag gespeichert"
+oder "Webserver gestartet".
 
-> :material-image-area: *Screenshot: Toast notification*
+> :material-image-area: *Screenshot: Toast-Meldung*

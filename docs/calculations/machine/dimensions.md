@@ -1,27 +1,27 @@
-# Machine Dimensions
+# Maschinenabmessungen
 
-> :material-alert-circle-outline: **TODO** *Description to be validated by Eike at the running program.*
+> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Geometrical key data of the braiding machine - relevant for derived calculations such as pitch circle diameter and travel length.
+Geometrische Eckdaten der Flechtmaschine - relevant fuer abgeleitete Berechnungen wie Fluegelteilkreis oder Lauflaenge.
 
-> :material-image-area: *Screenshot: Calculation page "Machine Dimensions"*
+> :material-image-area: *Screenshot: Berechnungsseite "Maschinenabmessungen"*
 
-## Inputs
+## Eingabe
 
-> :material-alert-circle-outline: **TODO** *Add fields based on the running dialog.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
 
-| Field                      | Unit    | Notes                                |
+| Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Result
+## Ergebnis
 
-| Value                      | Unit    | Notes                                |
+| Wert                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Application notes
+## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Add practical hints and typical value ranges.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
 
 

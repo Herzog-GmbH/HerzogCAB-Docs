@@ -1,11 +1,12 @@
-# Braid Geometry
+# Flechtgeometrie
 
-Braid angle, lay length, picks density.
+Berechnungen rund um die geometrischen Parameter eines Geflechts -
+Flechtwinkel, Verlegelaenge, Flechtdichte.
 
-## Calculations in this group
+## Berechnungen
 
-* [Picks Density](picks-density.md)
-* [Braid Angle](braid-angle.md)
-* [Lay Length](lay-length.md)
+* [Flechtwinkel](braid-angle.md)
+* [Verlegelaenge](lay-length.md)
+* [Flechtdichte umrechnen](picks-density.md)
 
-> :material-image-area: *Screenshot: Overview "Braid Geometry" with cards per calculation*
+> :material-image-area: *Screenshot: Uebersichtsseite "Flechtgeometrie" mit Karten je Berechnung*

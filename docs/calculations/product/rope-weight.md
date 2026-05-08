@@ -1,27 +1,27 @@
-# Rope Weight
+# Seilgewicht
 
-> :material-alert-circle-outline: **TODO** *Description to be validated by Eike at the running program.*
+> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Calculates mass per metre and total mass of a rope.
+Berechnet Masse pro Meter und Gesamtmasse eines Seils.
 
-> :material-image-area: *Screenshot: Calculation page "Rope Weight"*
+> :material-image-area: *Screenshot: Berechnungsseite "Seilgewicht"*
 
-## Inputs
+## Eingabe
 
-> :material-alert-circle-outline: **TODO** *Add fields based on the running dialog.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
 
-| Field                      | Unit    | Notes                                |
+| Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Result
+## Ergebnis
 
-| Value                      | Unit    | Notes                                |
+| Wert                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Application notes
+## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Add practical hints and typical value ranges.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
 
 

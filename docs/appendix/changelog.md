@@ -1,12 +1,12 @@
-# Release Notes
+# Versionshinweise
 
 ## Version 1.3.4 (April 2026)
 
-* Print templates are stored per file under `Printouts/templates/` (automatic migration).
-* Profile pictures are stored machine-wide under `ProgramData`.
-* Performance improvements in the Designer.
+* Druckvorlagen werden pro Datei unter `Printouts/templates/` abgelegt (Migration laeuft automatisch).
+* Profilbilder werden maschinenweit unter `ProgramData` gespeichert.
+* Performance-Verbesserungen im Designer.
 
-## Older versions
+## Aeltere Versionen
 
-Full history: see `CHANGELOG.md` in the program directory.
+Vollstaendiger Verlauf: siehe Datei `CHANGELOG.md` im Programmverzeichnis.
 

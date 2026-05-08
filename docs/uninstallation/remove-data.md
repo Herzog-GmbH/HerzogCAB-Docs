@@ -1,8 +1,8 @@
-# Remove Data
+# Daten entfernen
 
-Uninstalling only removes the program. Workspace data and global user data remain - you may delete them manually:
+Die Deinstallation entfernt nur das Programm. Workspace-Daten und globale Benutzerdaten bleiben erhalten - Sie koennen sie manuell loeschen:
 
-* Workspace folder (chosen by you)
-* `%ProgramData%\Herzog GmbH\Herzog Cab` (global users)
-* Registry key `HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab` (window sizes etc.)
+* Workspace-Ordner (selbst gewaehlt)
+* `%ProgramData%\Herzog GmbH\Herzog Cab` (globale Benutzer)
+* Registry-Schluessel `HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab` (Fenster-groessen u. ae.)
 

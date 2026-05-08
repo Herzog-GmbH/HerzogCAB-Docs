@@ -1,4 +1,4 @@
-# Editor Layout
+# Editor-Aufbau
 
-Layout of the print template editor: toolbar, page area, element properties.
+Aufbau des Druckvorlagen-Editors: Werkzeugleiste, Seitenflaeche, Element-Eigenschaften.
 

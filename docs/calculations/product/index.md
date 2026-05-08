@@ -1,12 +1,12 @@
-# Product
+# Produkt
 
-Product diameter, rope length, rope weight.
+Produktdurchmesser, Seillaenge, Seilgewicht.
 
-## Calculations in this group
+## Berechnungen in dieser Gruppe
 
-* [Product Diameter](product-diameter.md)
-* [Rope Weight](rope-weight.md)
-* [Rope Length on Drum](rope-length-on-drum.md)
-* [Rope Length](rope-length.md)
+* [Produktdurchmesser](product-diameter.md)
+* [Seilgewicht](rope-weight.md)
+* [Seillaenge auf Trommel](rope-length-on-drum.md)
+* [Seillaenge](rope-length.md)
 
-> :material-image-area: *Screenshot: Overview "Product" with cards per calculation*
+> :material-image-area: *Screenshot: Uebersichtsseite "Produkt" mit Karten je Berechnung*

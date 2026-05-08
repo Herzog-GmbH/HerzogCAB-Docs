@@ -1,22 +1,21 @@
-# Colors
+# Farben
 
-In the colors master data you maintain a palette that you can re-use in
-materials and in the Designer.
+In den Farben-Stammdaten pflegen Sie eine Farb-Palette, die Sie in
+Materialien und im Designer wiederverwenden koennen.
 
-> :material-image-area: *Screenshot: Colors editor (UI Colors)*
+> :material-image-area: *Screenshot: Farben-Editor (UI Colors)*
 
-## Color properties
+## Eigenschaften einer Farbe
 
-| Field               | Description                                               |
+| Feld                | Beschreibung                                              |
 |---------------------|-----------------------------------------------------------|
-| Name                | Plain-text name (e.g. "Black", "Golden yellow")           |
-| RGB value           | Picker                                                    |
-| Note                | Optional                                                  |
+| Bezeichnung         | Klartext-Name (z. B. "Schwarz", "Goldgelb")               |
+| RGB-Wert            | Wahl ueber Farb-Picker                                    |
+| Bemerkung           | Optional                                                  |
 
-## Use
+## Verwendung
 
-* In **materials** as the material color.
-* In the **Designer** to design braid patterns - see
-  [Colors and Patterns](../design/colors.md).
+* In den **Materialien** als Materialfarbe.
+* Im **Designer** zum Entwerfen von Flechtmustern - siehe [Farben und Muster](../design/colors.md).
 
-> :material-alert-circle-outline: **TODO** *Eike: are Pantone or RAL codes supported?*
+> :material-alert-circle-outline: **TODO** *Eike: Werden Pantone- oder RAL-Codes unterstuetzt?*

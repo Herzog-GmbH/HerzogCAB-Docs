@@ -1,4 +1,4 @@
-# Own Profile
+# Eigenes Profil
 
-Every user can edit their own profile: display name, e-mail, password, profile picture.
+Jeder Benutzer kann sein eigenes Profil bearbeiten: Anzeigename, E-Mail, Passwort, Profilbild.
 

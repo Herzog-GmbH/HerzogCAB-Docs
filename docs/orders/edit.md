@@ -1,7 +1,7 @@
-# Edit a Job
+# Auftrag bearbeiten
 
-> :material-alert-circle-outline: **TODO** *Add content for "Edit a Job".*
+> :material-alert-circle-outline: **TODO** *Inhalt fuer "Auftrag bearbeiten" ergaenzen.*
 
-Description to follow.
+Beschreibung folgt.
 
-> :material-image-area: *Screenshot: Edit a Job*
+> :material-image-area: *Screenshot: Auftrag bearbeiten*

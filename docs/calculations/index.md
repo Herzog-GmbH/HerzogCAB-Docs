@@ -1,77 +1,79 @@
-# Calculations
+# Berechnungen
 
-The heart of Herzog CAB is the **calculations**. They are organised by
-topic and reachable through the navigation tree (*Calculations*) or via
-*View > CAB Calculation 2.0*.
+Das Herz von Herzog CAB sind die **Berechnungen**. Sie sind nach Themen-
+gruppen gegliedert und ueber den Navigationsbaum (*Berechnungen*) bzw.
+das Menue *Ansicht > CAB Calculation 2.0* erreichbar.
 
-## Topic groups
+## Themengruppen
 
 <div class="grid cards" markdown>
 
-- :material-rotate-3d-variant: __[Braid Geometry](braid-geometry/index.md)__
+- :material-rotate-3d-variant: __[Flechtgeometrie](braid-geometry/index.md)__
 
     ---
-    Braid angle, lay length, picks density
+    Flechtwinkel, Verlegelaenge, Flechtdichte
 
 - :material-tune-variant: __[Material](material/index.md)__
 
     ---
-    Linear density, material diameter, core/cover constellations
+    Lineare Dichte, Materialdurchmesser, Kern-/Mantel-Konstellationen
 
-- :material-cylinder: __[Bobbins](bobbins/index.md)__
-
-    ---
-    Volume, material length on bobbin, number of winders
-
-- :material-cog-outline: __[Machine](machine/index.md)__
+- :material-cylinder: __[Spulen](bobbins/index.md)__
 
     ---
-    Dimensions, pitch circle, production speed, runtime
+    Volumen, Materiallaenge auf Spule, Anzahl Wickler
 
-- :material-shape-outline: __[Product](product/index.md)__
-
-    ---
-    Diameter, rope length, rope weight
-
-- :material-hexagon-outline: __[Tubular Braid](tubular-braid/index.md)__
+- :material-cog-outline: __[Maschine](machine/index.md)__
 
     ---
-    Tube carriers, tube covering, yarn width
+    Abmessungen, Fluegelteilkreis, Produktionsgeschwindigkeit, Laufzeit
 
-- :material-star-four-points-outline: __[Advanced](advanced/index.md)__
+- :material-shape-outline: __[Produkt](product/index.md)__
 
     ---
-    Horn gear layout, carriers rules, braid mapping
+    Durchmesser, Seillaenge, Seilgewicht
+
+- :material-hexagon-outline: __[Rohrgeflecht](tubular-braid/index.md)__
+
+    ---
+    Rohrtraeger, Rohrueberzug, Garnbreite
+
+- :material-star-four-points-outline: __[Spezial](advanced/index.md)__
+
+    ---
+    Horn Gear Layout, Carriers Rules, Braid Mapping
 
 </div>
 
-## Operating a calculation
+## Bedienung der Berechnungen
 
-All calculations follow the same scheme:
+Alle Berechnungen sind nach dem gleichen Schema aufgebaut:
 
-> :material-image-area: *Screenshot: Example calculation with labelled areas*
+> :material-image-area: *Screenshot: Beispiel-Berechnung mit beschrifteten Bereichen*
 
-| Area             | Contents                                                 |
-|------------------|----------------------------------------------------------|
-| **Inputs**       | Fields for input quantities (highlighted yellow).        |
-| **Picker**       | Optionally pick material / bobbin / machine from master data. |
-| **Result**       | Output values (grey background). Several at once.        |
-| **Actions**      | Print, attach to job, reset values.                      |
+| Bereich          | Inhalt                                                    |
+|------------------|-----------------------------------------------------------|
+| **Eingabe**      | Felder fuer die Eingangsgroessen (gelb hinterlegt).        |
+| **Auswahl**      | Optional: Material/Spule/Maschine aus den Stammdaten.     |
+| **Ergebnis**     | Ausgaberechnung (grau hinterlegt). Mehrere Werte gleichzeitig. |
+| **Aktionen**     | Drucken, in Auftrag uebernehmen, Werte zuruecksetzen.     |
 
-!!! tip "Solve calculations backwards"
-    Many calculations can be inverted. Example: you know the production
-    speed and want to find the required RPM - enter the speed, leave
-    the RPM field empty. Herzog CAB calculates the other way around
-    automatically.
+!!! tip "Berechnungen rueckwaerts loesen"
+    Viele Berechnungen lassen sich umkehren. Beispiel: Sie kennen die
+    Produktionsgeschwindigkeit und wollen wissen, welche Drehzahl noetig
+    ist - tragen Sie die Geschwindigkeit ein, das Drehzahlfeld leer.
+    Herzog CAB rechnet automatisch in die andere Richtung.
 
-## Values are kept
+## Werte zwischenspeichern
 
-Entered values are kept while the program runs. Switch to a different
-calculation and come back later - your inputs are still there. After a
-restart, values are reset.
+Eingegebene Werte bleiben erhalten, solange das Programm laeuft. Wechseln
+Sie auf eine andere Berechnung und kommen spaeter zurueck, finden Sie
+Ihre Eingaben unveraendert vor. Nach einem Programmneustart sind die
+Werte zurueckgesetzt.
 
-## Attach to a job
+## In Auftrag uebernehmen
 
-If you do a calculation as part of a [job](../orders/index.md),
-you can use **Attach to job** to link the result with the job. This
-keeps a traceable calculation trail.
+Wenn Sie eine Berechnung im Rahmen eines [Auftrags](../orders/index.md)
+durchfuehren, koennen Sie das Ergebnis ueber **In Auftrag uebernehmen**
+direkt mit dem Auftrag verknuepfen. So bleibt die Berechnungs-Spur
+nachvollziehbar.

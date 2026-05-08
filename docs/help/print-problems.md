@@ -1,6 +1,6 @@
-# Print Problems
+# Druckprobleme
 
-**Print template shows wrong / empty fields.** In the print template editor, check that the correct data fields are bound.
+**Druckvorlage zeigt falsche Daten / leere Felder.** Pruefen Sie im Druckvorlagen-Editor, ob die richtigen Datenfelder verknuepft sind.
 
-**Printer not found.** Make sure the printer is set as default in Windows.
+**Drucker nicht gefunden.** Stellen Sie sicher, dass der Drucker unter Windows als Standard eingerichtet ist.
 

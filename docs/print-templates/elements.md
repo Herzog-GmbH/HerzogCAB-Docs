@@ -1,4 +1,4 @@
-# Elements (Text, Tables, Images)
+# Elemente (Text, Tabellen, Bilder)
 
-Available elements: text, table, image, logo, barcode, QR code, separator, page break.
+Verfuegbare Elemente: Text, Tabelle, Bild, Logo, Barcode, QR-Code, Trennlinie, Seitenumbruch.
 

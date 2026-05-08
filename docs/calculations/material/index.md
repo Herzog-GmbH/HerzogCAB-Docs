@@ -1,12 +1,12 @@
 # Material
 
-Linear density, material diameter, core/cover calculations.
+Lineare Dichte, Materialdurchmesser, Kern-/Mantel-Berechnungen.
 
-## Calculations in this group
+## Berechnungen in dieser Gruppe
 
-* [Core and Cover Ropes](core-sheath.md)
-* [Convert Linear Density](linear-density-conversion.md)
-* [Linear Density](linear-density.md)
-* [Material Diameter](material-diameter.md)
+* [Kern- und Mantelseile](core-sheath.md)
+* [Lineare Dichte umrechnen](linear-density-conversion.md)
+* [Lineare Dichte](linear-density.md)
+* [Materialdurchmesser](material-diameter.md)
 
-> :material-image-area: *Screenshot: Overview "Material" with cards per calculation*
+> :material-image-area: *Screenshot: Uebersichtsseite "Material" mit Karten je Berechnung*

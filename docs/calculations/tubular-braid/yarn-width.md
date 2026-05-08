@@ -1,27 +1,27 @@
-# Yarn Width (Tube Yarn Width)
+# Garnbreite (Tube Yarn Width)
 
-> :material-alert-circle-outline: **TODO** *Description to be validated by Eike at the running program.*
+> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Calculation of the required yarn width for a closed cover layer.
+Berechnung der noetigen Garnbreite fuer eine geschlossene Mantel-Schicht.
 
-> :material-image-area: *Screenshot: Calculation page "Yarn Width (Tube Yarn Width)"*
+> :material-image-area: *Screenshot: Berechnungsseite "Garnbreite (Tube Yarn Width)"*
 
-## Inputs
+## Eingabe
 
-> :material-alert-circle-outline: **TODO** *Add fields based on the running dialog.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
 
-| Field                      | Unit    | Notes                                |
+| Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Result
+## Ergebnis
 
-| Value                      | Unit    | Notes                                |
+| Wert                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Application notes
+## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Add practical hints and typical value ranges.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
 
 

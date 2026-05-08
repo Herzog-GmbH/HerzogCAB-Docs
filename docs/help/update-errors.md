@@ -1,6 +1,6 @@
-# Update Errors
+# Update-Fehler
 
-**'Repository unreachable'.** Check your internet connection and whether the URL `https://herzog-gmbh.github.io/HerzogCAB-Feedback/repository/` is reachable in the browser.
+**'Repository nicht erreichbar'.** Pruefen Sie die Internet-verbindung und ob die URL `https://herzog-gmbh.github.io/HerzogCAB-Feedback/repository/` im Browser erreichbar ist.
 
-**'Component missing'.** Close the program completely (incl. the maintenance tool) and try again.
+**'Komponente fehlt'.** Schliessen Sie das Programm vollstaendig (auch das Maintenance-Tool) und versuchen Sie es erneut.
 

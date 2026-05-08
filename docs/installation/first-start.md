@@ -1,71 +1,73 @@
-# First Program Start
+# Erster Programmstart
 
-Double-click the **Herzog CAB** desktop icon or open the program through
-the Start menu (*Herzog > HerzogCAB*).
+Doppelklicken Sie auf das **Herzog CAB**-Symbol auf dem Desktop oder
+oeffnen Sie das Programm ueber das Start-Menue (*Herzog > HerzogCAB*).
 
-On first start you are guided through a basic setup.
+Beim ersten Start werden Sie schrittweise durch die Grundeinrichtung
+gefuehrt.
 
-## 1. Choose a language
+## 1. Sprache waehlen
 
-The first dialog lets you set the user interface language. Available:
+Im ersten Dialog koennen Sie die Sprache der Oberflaeche festlegen.
+Verfuegbar sind:
 
 - Deutsch
 - English
 - Italiano
 - Espanol
 - Polski
-- 中文 (Chinese)
+- 中文 (Chinesisch)
 
-You can change the language later at any time - see
-[Language and Font Size](../settings/language-font.md).
+Sie koennen die Sprache jederzeit spaeter wieder aendern - siehe
+[Sprache und Schriftgroesse](../settings/language-font.md).
 
-> :material-image-area: *Screenshot: Language selection on first start*
+> :material-image-area: *Screenshot: Sprachauswahl beim ersten Start*
 
-## 2. Set up a workspace
+## 2. Workspace einrichten
 
-A **workspace** is the folder where Herzog CAB stores your master data,
-jobs and print templates. You can choose freely where the folder lives -
-e.g. on a network drive so all operators access the same data.
+Ein **Workspace** ist der Ordner, in dem Herzog CAB Ihre Stammdaten,
+Auftraege und Druckvorlagen ablegt. Sie koennen frei waehlen, wo dieser
+Ordner liegt - z. B. auf einem Netzlaufwerk, damit alle Bediener auf die
+gleichen Daten zugreifen.
 
-The default is:
+Standard ist:
 
 ```
-C:\Users\<YourName>\Documents\HerzogCAB
+C:\Users\<IhrName>\Documents\HerzogCAB
 ```
 
-More about workspaces: [Workspace concept](../workspace/concept.md).
+Mehr Details zu Workspaces: [Workspace-Konzept](../workspace/concept.md).
 
-> :material-image-area: *Screenshot: Workspace setup dialog*
+> :material-image-area: *Screenshot: Workspace-Setup-Dialog*
 
-## 3. Create the first admin account
+## 3. Erstes Admin-Konto anlegen
 
-To prevent everyone from changing data freely, Herzog CAB protects access
-through user accounts. On first start you create the first
-**administrator** account:
+Damit nicht jeder die Daten aendern kann, schuetzt Herzog CAB den Zugriff
+ueber Benutzerkonten. Beim ersten Start legen Sie das erste **Administrator**-
+Konto an:
 
-| Field          | Meaning                                              |
+| Feld           | Bedeutung                                            |
 |----------------|------------------------------------------------------|
-| Login name     | What you enter later in the login dialog.            |
-| Display name   | Shown in the program (e.g. "Max Mustermann").        |
-| E-mail         | Optional, for password reset.                        |
-| Password       | Minimum 8 characters.                                |
-| Profile picture | Optional, can be changed later.                     |
+| Anmeldename    | Was Sie spaeter im Login-Dialog eingeben.            |
+| Anzeigename    | Wird im Programm angezeigt (z. B. "Max Mustermann"). |
+| E-Mail         | Optional, fuer Passwort-Reset.                       |
+| Passwort       | Mindestens 8 Zeichen.                                |
+| Profilbild     | Optional, kann spaeter geaendert werden.             |
 
-More: [First admin account](../getting-started/admin-account.md).
+Mehr Details: [Erstes Admin-Konto](../getting-started/admin-account.md).
 
-> :material-image-area: *Screenshot: First admin setup*
+> :material-image-area: *Screenshot: Erst-Admin-Setup*
 
-## 4. Main window
+## 4. Hauptfenster
 
-After creating the admin account you land in the main window:
+Nach dem Anlegen des Admin-Kontos sind Sie im Hauptfenster. Ueberblick:
 
-- **Left:** Navigation tree with master data, calculations, jobs
-- **Centre:** Current page
-- **Bottom left:** Profile bar with your name
-- **Top:** Menu bar
+- **Links:** Navigationsbaum mit Stammdaten, Berechnungen, Auftraegen
+- **Mitte:** Aktuelle Seite
+- **Unten links:** Profil-Leiste mit Ihrem Namen
+- **Oben:** Menueleiste
 
-> :material-image-area: *Screenshot: Main window after first start*
+> :material-image-area: *Screenshot: Hauptfenster nach Erststart*
 
-You can start using the program right away or take the
-[Guided Tour](../getting-started/guided-tour.md) for an introduction
-to key areas.
+Sie koennen jetzt direkt loslegen oder zuerst die [Guided Tour](../getting-started/guided-tour.md)
+durchlaufen, die wichtige Bereiche erklaert.

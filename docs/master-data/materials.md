@@ -1,39 +1,39 @@
-# Materials
+# Materialien
 
-The material editor is where you maintain the materials used in your
-braids - wires, strands, yarns, threads.
+Im Materialeditor pflegen Sie die Materialien, die in Ihren Flechtungen
+zum Einsatz kommen - Draehte, Litzen, Garne, Faeden.
 
-> :material-image-area: *Screenshot: Material editor with a populated list*
+> :material-image-area: *Screenshot: Materialeditor mit gefuellter Materialliste*
 
-## Material properties
+## Eigenschaften eines Materials
 
-> :material-alert-circle-outline: **TODO** *Field names to be validated against the running editor. Derived from code:*
+> :material-alert-circle-outline: **TODO** *Eike validiert die Feldnamen anhand des Editors. Stand jetzt aus dem Code abgeleitet:*
 
-| Field               | Description                                                 |
+| Feld                | Beschreibung                                                |
 |---------------------|-------------------------------------------------------------|
-| Name                | Plain-text name (e.g. "Wire 0.2 mm galvanised")             |
-| Material type       | Wire, yarn, strand, ...                                     |
-| Diameter            | in mm                                                       |
-| Linear density      | in dtex / tex / g/m                                         |
-| Color               | Reference to colors master data                             |
-| Manufacturer        | Optional                                                    |
-| Note                | Free text                                                   |
+| Bezeichnung         | Klartext-Name (z. B. "Draht 0,2 mm verzinkt")               |
+| Materialtyp         | Draht, Garn, Litze, ...                                     |
+| Durchmesser         | in mm                                                       |
+| Lineare Dichte      | in dtex / tex / g/m                                         |
+| Farbe               | Verweis auf Farben-Stammdaten                               |
+| Hersteller          | Optional                                                    |
+| Bemerkung           | Frei-Text                                                   |
 
-## Create a material
+## Material anlegen
 
-1. Open *Master Data > Materials* in the navigation tree.
-2. Click :material-plus: **New**.
-3. Fill in the fields.
-4. **Save**.
+1. Im Navigationsbaum *Stammdaten > Materialien* oeffnen.
+2. Auf :material-plus: **Neu** klicken.
+3. Felder ausfuellen.
+4. **Speichern**.
 
-## Use a material in a calculation
+## Material in einer Berechnung verwenden
 
-In most calculations you can pick a material from the list instead of
-entering values manually. The values (diameter, linear density, etc.)
-are then taken over automatically.
+In den meisten Berechnungen koennen Sie statt manueller Eingabe ein
+Material aus der Liste waehlen. Die Werte (Durchmesser, lineare Dichte
+etc.) werden dann automatisch uebernommen.
 
-> :material-image-area: *Screenshot: Material picker in a calculation*
+> :material-image-area: *Screenshot: Materialauswahl in einer Berechnung*
 
-!!! tip "Maintain recurring materials once"
-    Maintain frequently used materials cleanly once - this saves typing
-    on every calculation and avoids data entry mistakes.
+!!! tip "Wiederkehrende Materialien einmal anlegen"
+    Pflegen Sie haeufig genutzte Materialien einmal sauber - das spart
+    bei jeder Berechnung Tipparbeit und vermeidet Fehleingaben.

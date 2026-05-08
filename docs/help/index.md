@@ -1,11 +1,11 @@
-# Help and FAQ
+# Hilfe und FAQ
 
-Solutions for common problems:
+Loesungen fuer haeufige Probleme:
 
-* [Licence problems](license-problems.md)
-* [Login problems](login-problems.md)
-* [Print problems](print-problems.md)
-* [Update errors](update-errors.md)
-* [Known limitations](limitations.md)
-* [Contact support](support.md)
+* [Lizenzprobleme](license-problems.md)
+* [Login-Probleme](login-problems.md)
+* [Druckprobleme](print-problems.md)
+* [Update-Fehler](update-errors.md)
+* [Bekannte Einschraenkungen](limitations.md)
+* [Support kontaktieren](support.md)
 

@@ -1,64 +1,66 @@
-# Run the Installer
+# Installer ausfuehren
 
-## 1. Start the installer
+## 1. Installer starten
 
-Double-click the file `HerzogCAB-Setup-x.y.z.exe` (`x.y.z` stands for the
-version, e.g. `1.3.4`). Windows asks for administrator rights - confirm
-with **Yes**.
+Doppelklicken Sie auf die Datei `HerzogCAB-Setup-x.y.z.exe` (`x.y.z` steht
+fuer die Versionsnummer, z. B. `1.3.4`). Windows fragt nach
+Administratorrechten - bestaetigen Sie mit **Ja**.
 
-> :material-image-area: *Screenshot: Windows UAC dialog*
+> :material-image-area: *Screenshot: Windows-UAC-Dialog*
 
-## 2. Welcome page
+## 2. Willkommen-Seite
 
-Click **Next**.
+Klicken Sie auf **Weiter**.
 
-> :material-image-area: *Screenshot: Installer welcome page*
+> :material-image-area: *Screenshot: Willkommen-Seite des Installers*
 
-## 3. Installation directory
+## 3. Installationsverzeichnis
 
-By default Herzog CAB is installed to
+Standardmaessig wird Herzog CAB nach
 
 ```
 C:\Program Files\Herzog\HerzogCAB
 ```
 
-You may choose another folder, but stick to the default unless you have
-a specific reason.
+installiert. Sie koennen einen anderen Ordner waehlen - belassen Sie es
+aber besser bei der Vorgabe, sofern Sie keinen besonderen Grund haben.
 
-> :material-image-area: *Screenshot: Choose installation directory*
+> :material-image-area: *Screenshot: Auswahl Installationsverzeichnis*
 
-## 4. Component selection
+## 4. Komponenten-Auswahl
 
-Leave all checkboxes selected. The main component *Herzog CAB Main
-Component* is mandatory; the *Maintenance Tool* is needed later for
-updates.
+Lassen Sie alle Haken gesetzt. Die Hauptkomponente *Herzog CAB Main
+Component* ist Pflicht; das *Maintenance Tool* benoetigen Sie spaeter
+fuer Updates.
 
-> :material-image-area: *Screenshot: Component selection*
+> :material-image-area: *Screenshot: Komponenten-Auswahl*
 
-## 5. Licence agreement
+## 5. Lizenzvereinbarung
 
-Read the agreement, accept it via the option box and click **Next**.
+Lesen Sie die Vereinbarung, akzeptieren Sie sie ueber das entsprechende
+Optionsfeld und klicken Sie auf **Weiter**.
 
-> :material-image-area: *Screenshot: Licence agreement*
+> :material-image-area: *Screenshot: Lizenzvereinbarung*
 
-## 6. Start menu entry
+## 6. Start-Menue-Eintrag
 
-The installer creates two entries under the Start menu folder *Herzog*:
+Der Installer legt unter dem Start-Menue-Ordner *Herzog* zwei Eintraege an:
 
-- **HerzogCAB** - main application
-- **HerzogCAB Maintenance** - tool for updates and uninstall
+- **HerzogCAB** - Hauptanwendung
+- **HerzogCAB Maintenance** - Tool fuer Updates und Deinstallation
 
-Click **Next**.
+Klicken Sie auf **Weiter**.
 
-## 7. Run installation
+## 7. Installation durchfuehren
 
-Click **Install**. The process takes 1-3 minutes depending on your
-machine. Close the installer with **Finish** when done.
+Klicken Sie auf **Installieren**. Der Vorgang dauert je nach Rechner
+1-3 Minuten. Schliessen Sie den Installer am Ende mit **Fertigstellen**.
 
-!!! tip "Desktop shortcut"
-    The installer automatically creates a desktop icon for Herzog CAB.
-    To remove it, right-click and choose **Delete**.
+!!! tip "Desktop-Verknuepfung"
+    Der Installer legt automatisch ein Desktop-Symbol fuer Herzog CAB an.
+    Falls Sie das nicht wuenschen, koennen Sie es spaeter ueber
+    Rechtsklick > **Loeschen** entfernen.
 
-## Next step
+## Naechster Schritt
 
-Before you start the program, [activate your licence](activate-license.md).
+Bevor Sie das Programm starten, sollten Sie die [Lizenz aktivieren](activate-license.md).

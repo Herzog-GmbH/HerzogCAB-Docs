@@ -1,32 +1,33 @@
 # Guided Tour
 
-Herzog CAB has built-in interactive tours that walk you step by step
-through individual feature areas, with arrows and short explanations
-appearing right on screen.
+Herzog CAB hat eingebaute, interaktive Touren, die Sie schrittweise durch
+einzelne Funktionsbereiche fuehren. Sie werden durch Pfeile und kurze
+Texte direkt im Programm geleitet.
 
-## Start a tour
+## Tour starten
 
-* Menu *Tools > Show Tours*
+* Menue *Werkzeuge > Tour anzeigen*
 
-A picker opens with the available tours:
+Es oeffnet sich ein Auswahl-Dialog mit den verfuegbaren Touren:
 
-> :material-image-area: *Screenshot: Tour selection dialog*
+> :material-image-area: *Screenshot: Tour-Auswahldialog*
 
-| Tour                        | Contents                                       |
-|-----------------------------|------------------------------------------------|
-| Getting started             | General operation                              |
-| Create master data          | Materials and machines                         |
-| First calculation           | Example: braid angle                           |
-| Adjust a print template     | Understanding the template editor              |
+| Tour                       | Inhalt                                         |
+|----------------------------|------------------------------------------------|
+| Erste Schritte             | Allgemeine Bedienung                           |
+| Stammdaten anlegen         | Materialien und Maschinen                      |
+| Erste Berechnung           | Beispiel: Flechtwinkel                         |
+| Druckvorlage anpassen      | Vorlagen-Editor verstehen                      |
 
-## Walking through a tour
+## Tour durchlaufen
 
-* **Next** with the right arrow or the Enter key.
-* **Back** with the left arrow.
-* **Cancel** via the X in the top right of the tour bubble.
+* **Weiter** ueber den Pfeil rechts oder die Eingabetaste.
+* **Zurueck** ueber den Pfeil links.
+* **Abbrechen** ueber das X oben rechts in der Tour-Blase.
 
-> :material-image-area: *Screenshot: Tour overlay in the main window*
+> :material-image-area: *Screenshot: Tour-Overlay im Hauptfenster*
 
-!!! tip "Tour for new operators"
-    When training a new operator, have them go through "Getting started"
-    once. Saves a lot of explaining.
+!!! tip "Tour fuer neue Bediener"
+    Wenn Sie einen neuen Bediener einlernen, lassen Sie ihn die "Erste
+    Schritte"-Tour einmal komplett durchlaufen. Spart Ihnen viel
+    Erklaerzeit.

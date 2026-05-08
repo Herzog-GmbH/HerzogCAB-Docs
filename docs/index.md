@@ -1,76 +1,77 @@
 ---
+title: Herzog CAB - Anwenderhandbuch
 hide:
   - navigation
 ---
 
-# Welcome to the Herzog CAB Manual
+# Willkommen zum Herzog CAB Handbuch
 
-**Herzog CAB** is the calculation and design software from Herzog GmbH for
-braiding machines. With Herzog CAB, you calculate machine, material and
-product parameters, design braid patterns, manage jobs and print ready-to-
-use production documents.
+**Herzog CAB** ist die Kalkulations- und Designsoftware der Herzog GmbH fuer
+Flechtmaschinen. Mit Herzog CAB berechnen Sie Maschinen-, Material- und
+Produktparameter, entwerfen Flechtdesigns, verwalten Auftraege und drucken
+fertige Produktionsunterlagen.
 
-This manual is aimed at **operators** who use Herzog CAB on the shop floor
-every day. It guides you from installation through to daily operation.
+Dieses Handbuch richtet sich an **Anwender**, die Herzog CAB taeglich im
+Werk bedienen. Es fuehrt Sie von der Installation bis zur taeglichen Nutzung.
 
-## Quick navigation
+## Schnellnavigation
 
 <div class="grid cards" markdown>
 
-- :material-download: __Installing Herzog CAB for the first time?__
+- :material-download: __Sie installieren Herzog CAB zum ersten Mal?__
 
     ---
 
-    Start with [Installation](installation/index.md) and then set up
-    your first [workspace](getting-started/workspace.md).
+    Starten Sie mit der [Installation](installation/index.md) und richten Sie
+    danach Ihren ersten [Workspace](getting-started/workspace.md) ein.
 
-- :material-rocket-launch: __New to the program?__
-
-    ---
-
-    The [Getting Started](getting-started/index.md) section shows you
-    the user interface and the most important controls.
-
-- :material-calculator: __Want to run a calculation?__
+- :material-rocket-launch: __Sie sind neu im Programm?__
 
     ---
 
-    Jump straight into the [Calculations](calculations/index.md) - they
-    are organised by topic such as braid geometry, material and machine.
+    Die [Erste Schritte](getting-started/index.md) zeigen Ihnen die Oberflaeche
+    und die wichtigsten Bedienelemente.
 
-- :material-printer: __Want to print results?__
-
-    ---
-
-    Read the chapter on [Print Templates](print-templates/index.md) to
-    create or adjust templates.
-
-- :material-account-multiple: __Managing multiple operators?__
+- :material-calculator: __Sie wollen eine Berechnung durchfuehren?__
 
     ---
 
-    The chapter [Users and Roles](users/index.md) describes user
-    management and the permission system.
+    Springen Sie direkt in die [Berechnungen](calculations/index.md) - sie
+    sind nach Themen wie Flechtgeometrie, Material und Maschine geordnet.
 
-- :material-help-circle: __Something not working?__
+- :material-printer: __Sie wollen Ergebnisse drucken?__
 
     ---
 
-    The [Help and FAQ](help/index.md) section collects solutions for
-    common issues.
+    Lesen Sie das Kapitel [Druckvorlagen](print-templates/index.md), um
+    Vorlagen anzulegen oder anzupassen.
+
+- :material-account-multiple: __Sie verwalten mehrere Bediener?__
+
+    ---
+
+    Das Kapitel [Benutzer und Rollen](users/index.md) beschreibt die
+    Benutzerverwaltung und das Rechtesystem.
+
+- :material-help-circle: __Etwas funktioniert nicht?__
+
+    ---
+
+    Die Sektion [Hilfe und FAQ](help/index.md) sammelt Loesungen fuer
+    haeufige Probleme.
 
 </div>
 
-## What's new?
+## Was ist neu?
 
-A complete list of all changes can be found in the
-[Release Notes](appendix/changelog.md).
+Eine vollstaendige Liste aller Aenderungen finden Sie in den
+[Versionshinweisen](appendix/changelog.md).
 
 ## Support
 
-Stuck? First read the [Help and FAQ](help/index.md). If your question
-remains unanswered, contact us at
+Sie kommen nicht weiter? Lesen Sie zuerst die
+[Hilfe und FAQ](help/index.md). Bleibt die Frage offen, schreiben Sie an
 
 > :material-email: support@herzog-online.com
 
-or use the menu *Help > Feedback* in the program.
+oder benutzen Sie im Programm den Menuepunkt *Hilfe > Feedback*.

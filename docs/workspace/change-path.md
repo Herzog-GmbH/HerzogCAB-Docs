@@ -1,7 +1,7 @@
-# Change Workspace Path
+# Workspace-Pfad aendern
 
-> :material-alert-circle-outline: **TODO** *Add content for "Change Workspace Path".*
+> :material-alert-circle-outline: **TODO** *Inhalt fuer "Workspace-Pfad aendern" ergaenzen.*
 
-Description to follow.
+Beschreibung folgt.
 
-> :material-image-area: *Screenshot: Change Workspace Path*
+> :material-image-area: *Screenshot: Workspace-Pfad aendern*

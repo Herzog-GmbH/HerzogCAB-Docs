@@ -1,34 +1,36 @@
-# Choose a Language
+# Sprache waehlen
 
-Herzog CAB is available in:
+Herzog CAB ist in folgenden Sprachen verfuegbar:
 
-| Language      | Code |
+| Sprache       | Code |
 |---------------|------|
 | Deutsch       | de   |
 | English       | en   |
 | Italiano      | it   |
 | Espanol       | es   |
 | Polski        | pl   |
-| 中文 (Chinese) | cn   |
+| 中文 (Chinesisch) | cn   |
 
-## Change the language
+## Sprache aendern
 
-In the running program:
+Im laufenden Programm:
 
-1. Menu *Tools* > *Change language*.
-2. Select the desired language from the list.
+1. Menue *Werkzeuge* (engl. *Tools*) > *Sprache aendern* (engl. *Change Language*).
+2. Gewuenschte Sprache aus der Liste waehlen.
 
-> :material-image-area: *Screenshot: Language picker dialog*
+> :material-image-area: *Screenshot: Sprachauswahl-Dialog*
 
-The change takes effect immediately. Some texts (e.g. labels embedded in
-print templates) only switch after the program is restarted.
+Die Aenderung wirkt sich sofort aus. Einige Texte (z. B. fest in
+Druckvorlagen eingetragene Beschriftungen) werden erst nach einem
+Programmneustart auf die neue Sprache umgestellt.
 
-!!! info "Multiple operators with different languages"
-    The language setting is **per user**. When a different operator logs
-    in, their preferred language is used.
+!!! info "Mehrere Bediener mit unterschiedlichen Sprachen"
+    Die Spracheinstellung gilt **pro Benutzer**. Loggt sich ein anderer
+    Bediener ein, wird seine bevorzugte Sprache verwendet.
 
-## Quick toggle
+## Schnellumschaltung
 
-The *Tools* menu also has a direct **English** entry, useful for quickly
-switching to English and back - handy for service technicians or
-visiting operators.
+Im Menue *Werkzeuge* gibt es zusaetzlich einen direkten Eintrag fuer
+**English**. Damit koennen Sie schnell auf Englisch umschalten und
+zurueck - praktisch z. B. fuer ausweichende Bediener oder Service-
+Techniker.

@@ -1,4 +1,4 @@
-# Via the Windows Settings
+# Ueber die Windows-Einstellungen
 
-Alternatively *Settings > Apps > Installed apps > HerzogCAB > Uninstall*. In the background Windows calls the maintenance tool.
+Alternativ ueber *Einstellungen > Apps > Installierte Apps > HerzogCAB > Deinstallieren*. Windows ruft im Hintergrund das Maintenance-Tool auf.
 

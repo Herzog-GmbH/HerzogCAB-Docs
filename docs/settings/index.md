@@ -1,8 +1,8 @@
-# Settings
+# Einstellungen
 
-Opened via *Tools > Settings*. Tabs:
+Geoeffnet ueber Menue *Werkzeuge > Einstellungen*. Tabs:
 
-* [Language and font size](language-font.md)
-* [Web server and QR code](web-server.md)
-* [Storage locations](file-locations.md)
+* [Sprache und Schriftgroesse](language-font.md)
+* [Webserver und QR-Code](web-server.md)
+* [Speicherorte](file-locations.md)
 

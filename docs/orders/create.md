@@ -1,7 +1,7 @@
-# Create a Job
+# Auftrag anlegen
 
-> :material-alert-circle-outline: **TODO** *Add content for "Create a Job".*
+> :material-alert-circle-outline: **TODO** *Inhalt fuer "Auftrag anlegen" ergaenzen.*
 
-Description to follow.
+Beschreibung folgt.
 
-> :material-image-area: *Screenshot: Create a Job*
+> :material-image-area: *Screenshot: Auftrag anlegen*

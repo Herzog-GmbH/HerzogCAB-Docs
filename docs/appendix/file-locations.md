@@ -1,39 +1,39 @@
-# File Locations
+# Dateispeicherorte
 
-## Workspace (chosen by user)
+## Workspace (vom Benutzer waehlbar)
 
 ```
 <Workspace>\
-├── customers.json           Customers
-├── machines.json            Machines
-├── colors.json              Colors
-├── jobs.json                Jobs
-├── products.json            Products
-├── materials.json           (legacy) material list
-├── bobbins.json             (legacy) bobbin list
-├── Materials\               material library (detail)
-├── Machines\<MachineID>\documents\
+├── customers.json           Kunden
+├── machines.json            Maschinen
+├── colors.json              Farben
+├── jobs.json                Auftraege
+├── products.json            Produkte
+├── materials.json           (legacy) Materialliste
+├── bobbins.json             (legacy) Spulenliste
+├── Materials\               Material-Bibliothek (Detaildaten)
+├── Machines\<MaschinenID>\documents\
 ├── Printouts\
-│   ├── templates\           print templates (one .json per template)
-│   └── assets\              images / logos for templates
+│   ├── templates\           Druckvorlagen (eine .json je Vorlage)
+│   └── assets\              Bilder/Logos fuer Vorlagen
 └── auth\
-    └── assignments.json     user-role assignments
+    └── assignments.json     Zuordnungen Benutzer <-> Rolle
 ```
 
-## Machine-wide (ProgramData)
+## Maschinenweit (ProgramData)
 
 ```
 %ProgramData%\Herzog GmbH\Herzog Cab\
-├── users.json               all user accounts
-├── profiles.json            all profiles (workspace links)
-├── storage.json             storage metadata
+├── users.json               alle Benutzerkonten
+├── profiles.json            alle Profile (Workspace-Verbindungen)
+├── storage.json             Speicher-Metadaten
 └── auth\
-    └── avatars\             profile pictures
+    └── avatars\             Profilbilder
 ```
 
-## User registry
+## Benutzer-Registry
 
-Window sizes, column widths and last UI state are kept in the Windows registry under
+Fenstergroessen, Spaltenbreiten und letzter Zustand der Oberflaeche werden in der Windows-Registry abgelegt unter
 
 ```
 HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab

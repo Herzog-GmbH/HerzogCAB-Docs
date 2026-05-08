@@ -1,4 +1,4 @@
-# Version History
+# Versionsverlauf
 
-Current release notes: see [Appendix > Release Notes](../appendix/changelog.md).
+Aktuelle Versionshinweise: siehe [Anhang > Versionshinweise](../appendix/changelog.md).
 

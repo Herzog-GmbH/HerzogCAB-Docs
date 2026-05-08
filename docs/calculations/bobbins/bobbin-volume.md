@@ -1,27 +1,27 @@
-# Bobbin Volume
+# Spulenvolumen
 
-> :material-alert-circle-outline: **TODO** *Description to be validated by Eike at the running program.*
+> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Calculates the available winding volume of a bobbin from its geometry (outer diameter, inner diameter, flange width).
+Berechnet das verfuegbare Wickelvolumen einer Spule aus deren Geometrie (Aussen-, Innendurchmesser, Flanschbreite).
 
-> :material-image-area: *Screenshot: Calculation page "Bobbin Volume"*
+> :material-image-area: *Screenshot: Berechnungsseite "Spulenvolumen"*
 
-## Inputs
+## Eingabe
 
-> :material-alert-circle-outline: **TODO** *Add fields based on the running dialog.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
 
-| Field                      | Unit    | Notes                                |
+| Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Result
+## Ergebnis
 
-| Value                      | Unit    | Notes                                |
+| Wert                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Application notes
+## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Add practical hints and typical value ranges.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
 
 

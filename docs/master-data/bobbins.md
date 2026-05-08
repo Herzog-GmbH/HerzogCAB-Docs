@@ -1,28 +1,29 @@
-# Bobbins
+# Spulen
 
-The bobbin editor is where you maintain the bobbin types used on your
-machines. Based on bobbin properties (volume, stroke, flange diameter)
-Herzog CAB calculates material lengths, runtimes and change intervals.
+Im Spulen-Editor (Bobbin Editor) pflegen Sie die Spulentypen, die auf
+Ihren Maschinen zum Einsatz kommen. Ueber die Spuleneigenschaften (z. B.
+Volumen, Hub, Flanschdurchmesser) berechnet Herzog CAB anschliessend
+Materiallaengen, Standzeiten und Wechselintervalle.
 
-> :material-image-area: *Screenshot: Bobbin editor*
+> :material-image-area: *Screenshot: Spulen-Editor (Bobbin Editor)*
 
-## Bobbin properties
+## Eigenschaften einer Spule
 
-> :material-alert-circle-outline: **TODO** *Validate fields against the editor. From code:*
+> :material-alert-circle-outline: **TODO** *Felder anhand des Editors validieren. Aus dem Code abgeleitet:*
 
-| Field                 | Description                                               |
+| Feld                  | Beschreibung                                              |
 |-----------------------|-----------------------------------------------------------|
-| Name                  | Bobbin name                                               |
-| Outer diameter        | in mm                                                     |
-| Inner diameter        | in mm                                                     |
-| Flange width          | in mm                                                     |
-| Winding volume        | calculated from dimensions                                |
-| Note                  | Free text                                                 |
+| Bezeichnung           | Name der Spulenform                                       |
+| Aussendurchmesser     | in mm                                                     |
+| Innendurchmesser      | in mm                                                     |
+| Flanschbreite         | in mm                                                     |
+| Wickelvolumen         | berechnet aus den Abmessungen                             |
+| Bemerkung             | Frei-Text                                                 |
 
-## Use
+## Verwendung
 
-Bobbins are used in:
+Spulen werden in folgenden Berechnungen herangezogen:
 
-* [Bobbin volume](../calculations/bobbins/bobbin-volume.md)
-* [Material length on bobbin](../calculations/bobbins/material-length.md)
-* [Runtime and bobbin set](../calculations/machine/run-time-bobbin-set.md)
+* [Spulenvolumen](../calculations/bobbins/bobbin-volume.md)
+* [Materiallaenge auf Spule](../calculations/bobbins/material-length.md)
+* [Laufzeit und Spulensatz](../calculations/machine/run-time-bobbin-set.md)

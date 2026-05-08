@@ -1,4 +1,4 @@
-# QR Code for the Machine
+# QR-Code fuer die Maschine
 
-For each job Herzog CAB generates a QR code. When scanned at the machine with a smartphone, it automatically opens the mobile job view via the built-in web server. Prerequisite: web server is running - see [Web server and QR code](../settings/web-server.md).
+Pro Auftrag erzeugt Herzog CAB einen QR-Code. Wird er an der Maschine mit dem Smartphone gescannt, oeffnet sich automatisch die mobile Auftragssicht ueber den eingebauten Webserver. Voraussetzung: Webserver ist aktiv - siehe [Webserver und QR-Code](../settings/web-server.md).
 

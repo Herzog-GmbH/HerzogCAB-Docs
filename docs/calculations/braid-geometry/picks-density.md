@@ -1,31 +1,31 @@
-# Picks Density
+# Flechtdichte umrechnen
 
-> :material-alert-circle-outline: **TODO** *Description to be validated by Eike at the running program.*
+> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-**Picks density** (picks per inch / per cm) is an important figure describing among others the look of the braid.
+Die **Flechtdichte** (Picks per Inch / pro cm) ist eine wichtige Kennzahl, die unter anderem die Optik des Geflechts beschreibt.
 
-> :material-image-area: *Screenshot: Calculation page "Picks Density"*
+> :material-image-area: *Screenshot: Berechnungsseite "Flechtdichte umrechnen"*
 
-## Inputs
+## Eingabe
 
-> :material-alert-circle-outline: **TODO** *Add fields based on the running dialog.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
 
-| Field                      | Unit    | Notes                                |
+| Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Result
+## Ergebnis
 
-| Value                      | Unit    | Notes                                |
+| Wert                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Application notes
+## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Add practical hints and typical value ranges.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
 
-## Related calculations
+## Verwandte Berechnungen
 
-* [Braid angle](braid-angle.md)
-* [Lay length](lay-length.md)
+* [Flechtwinkel](braid-angle.md)
+* [Verlegelaenge](lay-length.md)
 

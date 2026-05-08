@@ -1,8 +1,8 @@
-# Login Problems
+# Login-Probleme
 
-**Account locked.** After 5 failed attempts the account is temporarily locked. Wait 5-10 minutes or have an administrator reset it.
+**Konto gesperrt.** Nach 5 fehlgeschlagenen Versuchen wird das Konto kurzzeitig gesperrt. Warten Sie 5-10 Minuten oder lassen Sie es vom Administrator zuruecksetzen.
 
-**Password forgotten.** See [Reset password](../users/password-reset.md).
+**Passwort vergessen.** Siehe [Passwort zuruecksetzen](../users/password-reset.md).
 
-**Account disabled.** An administrator has disabled access - contact them.
+**Konto deaktiviert.** Ein Administrator hat den Zugang gesperrt - wenden Sie sich an ihn.
 

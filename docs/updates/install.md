@@ -1,12 +1,12 @@
-# Install Updates
+# Updates installieren
 
-Updates are applied via the **HerzogCAB Maintenance** tool:
+Updates werden ueber das **HerzogCAB Maintenance**-Tool eingespielt:
 
-1. Quit the program.
-2. Open the maintenance tool from the Start menu (*Herzog > HerzogCAB Maintenance*).
-3. Choose **Update components**.
-4. Follow the wizard, finish with **Done**.
-5. Restart Herzog CAB.
+1. Programm beenden.
+2. Maintenance-Tool aus dem Start-Menue oeffnen (*Herzog > HerzogCAB Maintenance*).
+3. **Komponenten aktualisieren** waehlen.
+4. Den Anweisungen folgen, am Ende **Fertigstellen**.
+5. Herzog CAB neu starten.
 
-Alternatively *Help > Updates* opens the release page with the version notes.
+Alternativ oeffnet Menue *Hilfe > Updates* die Release-Seite mit den Versionshinweisen.
 

@@ -1,7 +1,7 @@
-# Product Design
+# Produkt-Design
 
-> :material-alert-circle-outline: **TODO** *Add content for "Product Design".*
+> :material-alert-circle-outline: **TODO** *Inhalt fuer "Produkt-Design" ergaenzen.*
 
-Description to follow.
+Beschreibung folgt.
 
-> :material-image-area: *Screenshot: Product Design*
+> :material-image-area: *Screenshot: Produkt-Design*

@@ -1,35 +1,36 @@
-# Master Data
+# Stammdaten
 
-**Master data** is where you keep everything that you need over and over
-again in calculations and jobs. Master data belongs to the workspace - it
-is shared by all operators using the same workspace.
+In den **Stammdaten** legen Sie alle Daten ab, die Sie immer wieder in
+Berechnungen und Auftraegen brauchen. Stammdaten gehoeren zum Workspace -
+sie werden also von allen Bedienern geteilt, die mit dem gleichen
+Workspace arbeiten.
 
-## Areas
+## Bereiche
 
-| Area                            | Contents                                               |
-|---------------------------------|--------------------------------------------------------|
-| [Materials](materials.md)  | Wires, yarns, threads with their properties           |
-| [Bobbins](bobbins.md)         | Bobbin shapes and their volumes                       |
-| [Machines](machines.md)     | Braiding machines in your fleet                       |
-| [Customers](customers.md)       | Customer master data for jobs                         |
-| [Colors](colors.md)          | Color palette for designs                             |
+| Bereich                        | Inhalt                                              |
+|--------------------------------|-----------------------------------------------------|
+| [Materialien](materials.md)  | Drahtsorten, Garne, Faeden mit ihren Eigenschaften  |
+| [Spulen](bobbins.md)            | Spulenformen und ihre Volumen                       |
+| [Maschinen](machines.md)      | Flechtmaschinen Ihres Maschinenparks                |
+| [Kunden](customers.md)            | Kundenstammdaten fuer Auftraege                     |
+| [Farben](colors.md)            | Farb-Palette fuer Designs                           |
 
-## Common operation
+## Allgemeine Bedienung
 
-All master data editors are similarly structured:
+Alle Stammdaten-Editoren sind aehnlich aufgebaut:
 
-* **List** on the left - all existing entries.
-* **Detail view** on the right - properties of the selected entry.
-* **Action bar** at the top:
-  * :material-plus: **New** - create entry
-  * :material-content-copy: **Duplicate** - copy an existing entry
-  * :material-delete: **Delete** - delete an entry (confirmation)
-  * :material-content-save: **Save** - persist changes
-  * :material-undo: **Discard** - revert unsaved changes
+* **Liste** auf der linken Seite - alle vorhandenen Eintraege.
+* **Detail-Ansicht** rechts - Eigenschaften des gewaehlten Eintrags.
+* **Aktionsleiste** oben:
+  * :material-plus: **Neu** - Eintrag anlegen
+  * :material-content-copy: **Duplizieren** - bestehenden Eintrag kopieren
+  * :material-delete: **Loeschen** - Eintrag loeschen (Sicherheitsabfrage)
+  * :material-content-save: **Speichern** - Aenderungen sichern
+  * :material-undo: **Verwerfen** - nicht gespeicherte Aenderungen aufheben
 
-> :material-image-area: *Screenshot: Master data overview (Material editor)*
+> :material-image-area: *Screenshot: Stammdaten-Uebersicht (Materialeditor)*
 
-!!! warning "Permission required"
-    Creating, changing or deleting master data requires the **Edit
-    master data** permission. Operators with the *Production* or
-    *Read-only* role can only view the data.
+!!! warning "Berechtigung erforderlich"
+    Zum Anlegen, Aendern oder Loeschen von Stammdaten benoetigen Sie die
+    Berechtigung **Stammdaten bearbeiten**. Reine Bediener mit der Rolle
+    *Produktion* oder *Nur lesen* koennen die Daten nur ansehen.

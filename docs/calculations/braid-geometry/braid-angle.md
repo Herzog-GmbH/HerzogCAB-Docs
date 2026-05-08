@@ -1,34 +1,34 @@
-# Braid Angle
+# Flechtwinkel (Braiding Angle)
 
-The **braid angle** is the angle at which a single strand in the braid
-runs relative to the longitudinal axis of the product. It largely
-determines the look, strength and elasticity of the finished braid.
+Der **Flechtwinkel** ist der Winkel, unter dem ein einzelner Strang im
+Geflecht zur Laengsachse des Produkts verlaeuft. Er bestimmt massgeblich
+Optik, Festigkeit und Dehnung des fertigen Geflechts.
 
-> :material-image-area: *Screenshot: Calculation page "Braid angle"*
+> :material-image-area: *Screenshot: Berechnungsseite "Flechtwinkel"*
 
-## Inputs
+## Eingabe
 
-> :material-alert-circle-outline: **TODO** *Validate fields against the dialog.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des Dialogs validieren.*
 
-| Field                      | Unit    | Notes                                |
+| Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
-| Product diameter           | mm      |                                      |
-| Lay length                 | mm      |                                      |
-| Number of carriers         | pcs     | Can be taken from machine            |
+| Produktdurchmesser         | mm      |                                      |
+| Verlegelaenge              | mm      |                                      |
+| Klueppelzahl               | Stueck  | Aus Maschine uebernehmbar            |
 
-## Result
+## Ergebnis
 
-| Value                      | Unit    | Notes                                |
+| Wert                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
-| Braid angle                | degrees |                                      |
-| Pitch                      | mm      |                                      |
+| Flechtwinkel               | Grad    |                                      |
+| Steigung                   | mm      |                                      |
 
-## Application notes
+## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Add typical values for common applications (e.g. braided sleeves vs. ropes).*
+> :material-alert-circle-outline: **TODO** *Beispielwerte fuer typische Anwendungen einfuegen (z. B. Flechtschlaeuche vs. Seile).*
 
-## Related calculations
+## Verwandte Berechnungen
 
-* [Lay length](lay-length.md)
-* [Picks density (convert)](picks-density.md)
-* [Product diameter](../product/product-diameter.md)
+* [Verlegelaenge](lay-length.md)
+* [Flechtdichte umrechnen](picks-density.md)
+* [Produktdurchmesser](../product/product-diameter.md)

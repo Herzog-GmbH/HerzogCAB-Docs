@@ -1,27 +1,27 @@
-# Change Gears (Rubber Feed)
+# Wechselraeder Gummiantrieb
 
-> :material-alert-circle-outline: **TODO** *Description to be validated by Eike at the running program.*
+> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Calculates the gear combination needed for a desired lay length (Change Gear Rubber Feed Device).
+Berechnet die noetige Zahnradkombination fuer eine gewuenschte Verlegelaenge (Change Gear Rubber Feed Device).
 
-> :material-image-area: *Screenshot: Calculation page "Change Gears (Rubber Feed)"*
+> :material-image-area: *Screenshot: Berechnungsseite "Wechselraeder Gummiantrieb"*
 
-## Inputs
+## Eingabe
 
-> :material-alert-circle-outline: **TODO** *Add fields based on the running dialog.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
 
-| Field                      | Unit    | Notes                                |
+| Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Result
+## Ergebnis
 
-| Value                      | Unit    | Notes                                |
+| Wert                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Application notes
+## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Add practical hints and typical value ranges.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
 
 

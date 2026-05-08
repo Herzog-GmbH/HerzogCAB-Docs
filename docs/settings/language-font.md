@@ -1,4 +1,4 @@
-# Language and Font Size
+# Sprache und Schriftgroesse
 
-User interface language and font size for operating screens of different sizes.
+Sprache der Oberflaeche und Schriftgroesse fuer Bedienung von Bildschirmen unterschiedlicher Groesse.
 

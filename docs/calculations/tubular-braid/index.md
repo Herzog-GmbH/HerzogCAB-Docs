@@ -1,13 +1,13 @@
-# Tubular Braid
+# Rohrgeflecht
 
-Calculations around braiding over tubes.
+Berechnungen rund um das Umflechten von Rohren.
 
-## Calculations in this group
+## Berechnungen in dieser Gruppe
 
-* [Yarn Width (Tube Yarn Width)](yarn-width.md)
-* [Tube](tube.md)
-* [Tube Diameter](tube-diameter.md)
-* [Tube Carrier](tube-carriers.md)
-* [Tube Covering](tube-cover.md)
+* [Garnbreite (Tube Yarn Width)](yarn-width.md)
+* [Rohr](tube.md)
+* [Rohrdurchmesser](tube-diameter.md)
+* [Rohrtraeger](tube-carriers.md)
+* [Rohrueberzug](tube-cover.md)
 
-> :material-image-area: *Screenshot: Overview "Tubular Braid" with cards per calculation*
+> :material-image-area: *Screenshot: Uebersichtsseite "Rohrgeflecht" mit Karten je Berechnung*

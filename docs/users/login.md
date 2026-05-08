@@ -1,4 +1,4 @@
-# Sign In and Sign Out
+# Login und Abmelden
 
-Before opening the profile and the workspace, every operator signs in with their login name and password. After 5 failed attempts the account is temporarily locked.
+Vor dem Oeffnen des Profils und des Workspaces meldet sich jeder Bediener mit Benutzernamen und Passwort an. Bei 5 fehlgeschlagenen Versuchen wird das Konto fuer kurze Zeit gesperrt.
 

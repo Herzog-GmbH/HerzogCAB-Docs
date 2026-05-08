@@ -1,4 +1,4 @@
-# Migration from Older Versions
+# Migration aus aelteren Versionen
 
-When upgrading from an older version (before 1.3), user data and print templates are migrated to the new format automatically. The migration runs once on first start in the background.
+Wenn Sie aus einer aelteren Version (vor 1.3) updaten, werden Benutzerdaten und Druckvorlagen automatisch ins neue Format migriert. Die Migration laeuft beim ersten Start einmalig im Hintergrund.
 

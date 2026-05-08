@@ -1,4 +1,4 @@
-# Reset Password
+# Passwort zuruecksetzen
 
-If a user forgot their password, an administrator can reset it via the **Admin password reset** dialog.
+Wenn ein Benutzer sein Passwort vergessen hat, kann ein Administrator es ueber den Dialog **Admin-Passwort-Reset** zuruecksetzen.
 

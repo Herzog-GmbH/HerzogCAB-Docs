@@ -1,9 +1,9 @@
-# Print Templates
+# Druckvorlagen
 
-Print templates determine how calculations, jobs or master data look when printed. They are stored centrally per workspace under `Printouts/templates/`.
+Druckvorlagen bestimmen, wie Berechnungen, Auftraege oder Stammdaten ausgedruckt aussehen. Sie sind zentral pro Workspace abgelegt unter `Printouts/templates/`.
 
-* [Manage templates](manage.md)
-* [Editor layout](editor.md)
-* [Elements (text, tables, images)](elements.md)
-* [Preview and print](preview-and-print.md)
+* [Vorlagen verwalten](manage.md)
+* [Editor-Aufbau](editor.md)
+* [Elemente (Text, Tabellen, Bilder)](elements.md)
+* [Vorschau und Druck](preview-and-print.md)
 

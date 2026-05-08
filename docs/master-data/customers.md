@@ -1,26 +1,26 @@
-# Customers
+# Kunden
 
-The customers module is where you manage your customer master data for
-Herzog CAB jobs.
+Im Kunden-Modul verwalten Sie die Stammdaten Ihrer Kunden, an die
+Herzog CAB-Auftraege gerichtet sind.
 
-> :material-image-area: *Screenshot: Customer overview*
+> :material-image-area: *Screenshot: Kunden-Uebersicht*
 
-## Customer properties
+## Eigenschaften eines Kunden
 
-> :material-alert-circle-outline: **TODO** *Validate field names against the editor.*
+> :material-alert-circle-outline: **TODO** *Feldnamen anhand des Editors validieren.*
 
-| Field               | Description                               |
+| Feld                | Beschreibung                              |
 |---------------------|-------------------------------------------|
-| Customer name       | Company name or private customer          |
-| Customer number     | Optional, free-form                       |
-| Address             | Street, postcode, city, country           |
-| Contact person      | Name, position                            |
-| E-mail              |                                           |
-| Phone               |                                           |
-| Note                | Free text                                 |
+| Kundenname          | Firmenname oder Privatkunde               |
+| Kundennummer        | Optional, frei vergebbar                  |
+| Anschrift           | Strasse, PLZ, Ort, Land                   |
+| Ansprechpartner     | Name, Position                            |
+| E-Mail              |                                           |
+| Telefon             |                                           |
+| Bemerkung           | Frei-Text                                 |
 
-## Use in jobs
+## Verwendung in Auftraegen
 
-When creating a [job](../orders/create.md), you pick the customer
-from the list. Address and contact are pulled into print templates
-automatically.
+Bei der Anlage eines [Auftrags](../orders/create.md) waehlen Sie den
+Kunden aus der Liste. Adresse und Ansprechpartner werden automatisch in
+die Druckvorlagen uebernommen.

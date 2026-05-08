@@ -1,11 +1,11 @@
-# Users and Roles
+# Benutzer und Rollen
 
-Herzog CAB has a built-in user concept with roles and fine-grained permissions. User data is stored machine-wide - see [Locations](../appendix/file-locations.md).
+Herzog CAB hat ein eingebautes Benutzer-Konzept mit Rollen und feiner Berechtigungssteuerung. Benutzerdaten sind maschinenweit abgelegt - siehe [Speicherorte](../appendix/file-locations.md).
 
-* [Sign in and sign out](login.md)
-* [Manage users](manage.md)
-* [Roles and permissions](roles.md)
-* [Own profile](my-profile.md)
-* [Change profile picture](avatar.md)
-* [Reset password](password-reset.md)
+* [Login und Abmelden](login.md)
+* [Benutzer verwalten](manage.md)
+* [Rollen und Berechtigungen](roles.md)
+* [Eigenes Profil](my-profile.md)
+* [Profilbild aendern](avatar.md)
+* [Passwort zuruecksetzen](password-reset.md)
 

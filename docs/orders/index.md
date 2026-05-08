@@ -1,9 +1,9 @@
-# Jobs
+# Auftraege
 
-The jobs module is where you bundle calculations, designs and materials into a concrete customer job.
+Im Auftragsmodul fassen Sie Berechnungen, Designs und Materialien zu einem konkreten Kundenauftrag zusammen.
 
-* [Create a job](create.md)
-* [Edit a job](edit.md)
-* [QR code for the machine](qr-code.md)
-* [Print](print.md)
+* [Auftrag anlegen](create.md)
+* [Auftrag bearbeiten](edit.md)
+* [QR-Code fuer die Maschine](qr-code.md)
+* [Drucken](print.md)
 

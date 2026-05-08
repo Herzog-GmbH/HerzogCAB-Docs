@@ -1,53 +1,56 @@
-# System Requirements
+# Systemvoraussetzungen
 
-## Operating system
+## Betriebssystem
 
-| Requirement           | Recommendation                          |
+| Anforderung           | Empfehlung                              |
 |-----------------------|-----------------------------------------|
-| Operating system      | Windows 10 (64-bit) or Windows 11       |
-| Architecture          | x64                                     |
+| Betriebssystem        | Windows 10 (64-bit) oder Windows 11     |
+| Architektur           | x64                                     |
 
-The current version of Herzog CAB is tested on Windows 10 and 11. Older
-Windows versions are not supported.
+Die aktuelle Version von Herzog CAB ist auf Windows 10 und 11 getestet.
+Aeltere Windows-Versionen werden nicht unterstuetzt.
 
 ## Hardware
 
-| Component             | Minimum                | Recommended                 |
+| Komponente            | Mindestens             | Empfohlen                   |
 |-----------------------|------------------------|-----------------------------|
-| Processor             | Dual-core 2 GHz        | Quad-core 2.5 GHz or better |
-| Memory                | 4 GB                   | 8 GB                        |
-| Free disk space       | 500 MB                 | 2 GB (job data)             |
-| Display resolution    | 1280 x 720             | 1920 x 1080 or higher       |
+| Prozessor             | Dual-Core 2 GHz        | Quad-Core 2,5 GHz oder mehr |
+| Arbeitsspeicher       | 4 GB                   | 8 GB                        |
+| Freier Festplattenplatz | 500 MB              | 2 GB (Auftragsdaten)        |
+| Bildschirmaufloesung  | 1280 x 720             | 1920 x 1080 oder hoeher     |
 
-## Licence
+## Lizenz
 
-Herzog CAB requires a valid licence to run. Licences are checked via
-**Wibu CodeMeter**. The following licence types are available:
+Fuer den Betrieb von Herzog CAB benoetigen Sie eine gueltige Lizenz.
+Diese wird ueber **Wibu CodeMeter** geprueft. Folgende Lizenzformen sind
+verfuegbar:
 
-- **Full version** (article 88805) - all features without restriction
-- **Demo version** (article 88806) - reduced feature set for evaluation,
-  with a time limit
+- **Vollversion** (Artikel 88805) - alle Funktionen ohne Einschraenkung
+- **Demoversion** (Artikel 88806) - eingeschraenkter Funktionsumfang zum
+  Testen, mit zeitlicher Begrenzung
 
-!!! info "Licence delivery"
-    Licences can be provided **locally** on a CmDongle (USB stick) or
-    **network-wide** via a licence server. Your Herzog representative
-    will tell you which option applies to your installation.
+!!! info "Lizenz-Hinweise"
+    Die Lizenz kann **lokal** auf einem CmDongle (USB-Stick) oder
+    **netzwerkweit** ueber einen Lizenzserver bereitgestellt werden.
+    Welche Variante bei Ihnen genutzt wird, klaert Ihr Herzog-Ansprechpartner.
 
-## Permissions
+## Berechtigungen
 
-Installation requires **administrator rights** on the target machine.
-Daily use of the program does not require administrator rights.
+Fuer die Installation benoetigen Sie **Administratorrechte** auf dem
+Zielrechner. Die taegliche Nutzung des Programms erfordert keine
+Administratorrechte.
 
 ## Internet
 
-An internet connection is not strictly required. It is needed for:
+Eine Internetverbindung ist nicht zwingend erforderlich. Sie wird benoetigt
+fuer:
 
-- Updates via the **Herzog CAB Maintenance** tool
-- Activating an online licence
-- Sending feedback from within the program
+- Updates ueber das **Herzog CAB Maintenance**-Tool
+- Aktivierung einer Online-Lizenz
+- Senden von Feedback aus dem Programm
 
-## Printer
+## Drucker
 
-If you want to print calculations or jobs, a printer should be installed
-and configured as the default printer in Windows. A PDF printer (e.g.
-*Microsoft Print to PDF*) is sufficient.
+Falls Sie Berechnungen oder Auftraege ausdrucken moechten, sollte ein
+Drucker installiert und unter Windows als Standarddrucker eingerichtet
+sein. Ein PDF-Drucker (z. B. *Microsoft Print to PDF*) reicht aus.

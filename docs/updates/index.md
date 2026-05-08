@@ -1,5 +1,5 @@
 # Updates
 
-* [Install updates](install.md)
-* [Version history](version-history.md)
+* [Updates installieren](install.md)
+* [Versionsverlauf](version-history.md)
 

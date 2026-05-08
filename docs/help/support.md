@@ -1,15 +1,15 @@
-# Contact Support
+# Support kontaktieren
 
-**E-mail:** support@herzog-online.com
+**E-Mail:** support@herzog-online.com
 
-**Phone:** see Herzog website
+**Telefon:** siehe Herzog-Website
 
-**In the program:** menu *Help > Feedback*
+**Im Programm:** Menue *Hilfe > Feedback*
 
-Please always state:
+Bitte nennen Sie immer:
 
-* Version (see *Help > About HerzogCAB*)
-* Operating system (Windows 10 / 11)
-* Licence type (full / demo)
-* A description of what you did and what happened.
+* Versionsnummer (siehe *Hilfe > Ueber HerzogCAB*)
+* Betriebssystem (Windows 10 / 11)
+* Lizenztyp (Vollversion / Demo)
+* Eine Beschreibung, was Sie getan haben und was passiert ist.
 

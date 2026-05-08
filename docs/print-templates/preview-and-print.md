@@ -1,4 +1,4 @@
-# Preview and Print
+# Vorschau und Druck
 
-Preview on the current page, choice of printer and paper size, PDF export.
+Druckvorschau auf der aktuellen Seite, Auswahl des Druckers und der Papiergroesse, PDF-Export.
 

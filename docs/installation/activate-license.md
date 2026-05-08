@@ -1,58 +1,60 @@
-# Activate Your Licence
+# Lizenz aktivieren
 
-Herzog CAB uses **Wibu CodeMeter** as its licensing system. Without a
-valid licence, the application will not start.
+Herzog CAB nutzt **Wibu CodeMeter** als Lizenzsystem. Ohne gueltige Lizenz
+laesst sich die Anwendung nicht starten.
 
-## Licence types
+## Lizenztypen
 
-| Type           | Article  | Scope                                              |
-|----------------|----------|----------------------------------------------------|
-| Full version   | 88805    | All features, unlimited                            |
-| Demo version   | 88806    | Reduced feature set, time-limited                  |
+| Typ            | Artikel  | Umfang                                              |
+|----------------|----------|-----------------------------------------------------|
+| Vollversion    | 88805    | Alle Funktionen, unbefristet                        |
+| Demoversion    | 88806    | Eingeschraenkter Umfang, zeitlich begrenzt          |
 
-Licences can be provided in two ways:
+Die Lizenz kann auf zwei Arten bereitgestellt werden:
 
-1. **Locally** - directly on the machine as a CmActLicense or via a USB
-   dongle (CmDongle).
-2. **Networked** - via a Wibu licence server in your company network.
+1. **Lokal** - direkt auf dem Rechner als CmActLicense oder ueber einen
+   USB-Dongle (CmDongle).
+2. **Netzwerk** - ueber einen Wibu-Lizenzserver im Firmennetz.
 
-## Variant A - activate a local licence
+## Variante A - Lokale Lizenz aktivieren
 
-If you received a **ticket number** from Herzog GmbH:
+Sie haben von Herzog GmbH eine **Ticketnummer** erhalten? Dann gehen Sie
+so vor:
 
-1. Open the **CodeMeter Control Center** (Start menu > *CodeMeter*). If
-   it is not installed, first install the *CodeMeter User Runtime* from
-   [https://www.wibu.com/support/user-software.html](https://www.wibu.com/support/user-software.html).
-2. Click **Update licence** > **Next**.
-3. Choose **Receive licence** and click **Next**.
-4. Enter the ticket number and follow the wizard.
+1. Oeffnen Sie das **CodeMeter Control Center** (Start-Menue > *CodeMeter*).
+   Falls es nicht installiert ist, installieren Sie zuerst die
+   *CodeMeter User Runtime* von [https://www.wibu.com/de/support/anwendersoftware.html](https://www.wibu.com/de/support/anwendersoftware.html).
+2. Klicken Sie auf **Lizenz aktualisieren** > **Weiter**.
+3. Waehlen Sie **Lizenzbezug** und klicken Sie auf **Weiter**.
+4. Geben Sie die Ticketnummer ein und folgen Sie dem Assistenten.
 
 > :material-image-area: *Screenshot: CodeMeter Control Center*
 
-## Variant B - use a network licence
+## Variante B - Netzwerklizenz nutzen
 
-If your company runs a Wibu licence server, no further configuration is
-usually needed - Herzog CAB finds the server automatically on the
-network. If it doesn't:
+Wenn Ihre Firma einen Wibu-Lizenzserver betreibt, ist meist keine weitere
+Konfiguration noetig - Herzog CAB findet den Server automatisch im
+Netzwerk. Funktioniert das nicht:
 
-1. Open **CodeMeter WebAdmin** (Start menu > *CodeMeter* > *CodeMeter
-   Control Center* > **WebAdmin** button).
-2. Go to *Settings > Server search list* and add the IP or hostname of
-   your licence server.
+1. Oeffnen Sie das **CodeMeter WebAdmin** (Start-Menue > *CodeMeter* >
+   *CodeMeter Control Center* > Schaltflaeche **WebAdmin**).
+2. Wechseln Sie nach *Einstellungen > Server-Suchliste* und tragen Sie
+   die IP oder den Hostnamen Ihres Lizenzservers ein.
 
-## Licence check by Herzog CAB
+## Lizenzpruefung durch Herzog CAB
 
-On startup, Herzog CAB checks for a valid licence:
+Beim Start prueft Herzog CAB, ob eine gueltige Lizenz vorhanden ist:
 
-| State                       | Behaviour                                       |
+| Status                      | Verhalten                                       |
 |-----------------------------|-------------------------------------------------|
-| Licence present, valid      | Program starts normally.                        |
-| Demo licence, valid         | Program starts with a notice on remaining time. |
-| Licence expired             | Notice dialog, program does not start.          |
-| No licence found            | Notice dialog, program does not start.          |
+| Lizenz vorhanden, gueltig   | Programm startet normal.                        |
+| Demolizenz, gueltig         | Programm startet mit Hinweis auf Restdauer.     |
+| Lizenz abgelaufen           | Hinweis-Dialog, Programm startet nicht.         |
+| Keine Lizenz gefunden       | Hinweis-Dialog, Programm startet nicht.         |
 
-If the licence check fails, see [Licence problems](../help/license-problems.md).
+Wenn die Lizenzpruefung fehlschlaegt, lesen Sie
+[Lizenzprobleme](../help/license-problems.md).
 
-## Next step
+## Naechster Schritt
 
-[First program start](first-start.md)
+[Erster Programmstart](first-start.md)

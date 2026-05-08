@@ -1,52 +1,52 @@
-# Roles and Permissions
+# Rollen und Berechtigungen
 
-Herzog CAB uses a **role-based permission system**. Instead of setting
-each permission per user, you assign roles - and each role bundles a
-typical set of permissions.
+Herzog CAB hat ein **rollenbasiertes Rechtesystem**. Statt einzelne
+Berechtigungen pro Benutzer zu setzen, weisen Sie Rollen zu - die Rolle
+buendelt typische Berechtigungen.
 
-## Built-in roles
+## Eingebaute Rollen
 
-| Role                 | Target group                  | Typically allowed                                          |
-|----------------------|-------------------------------|------------------------------------------------------------|
-| **Owner**            | Workshop manager / owner      | Everything, incl. workspace and company settings           |
-| **Administrator**    | IT / functional lead          | Everything except company settings                         |
-| **Master Data Editor** | Data steward                 | Edit master data and print templates, use calculations, view jobs |
-| **Production**       | Machine operator              | Use calculations, edit jobs, print                         |
-| **Read-only**        | Trainee / guest               | View everything, change nothing                            |
+| Rolle              | Zielgruppe                  | Darf typischerweise                                      |
+|--------------------|-----------------------------|----------------------------------------------------------|
+| **Inhaber**        | Werkstattleiter / Eigentuemer | Alles, inkl. Workspace-Verwaltung und Firmen-Einstellungen |
+| **Administrator**  | IT / Fachverantwortlicher   | Alles ausser Firmen-Einstellungen                        |
+| **Stammdatenpflege** | Datenpfleger              | Stammdaten und Druckvorlagen bearbeiten, Berechnungen nutzen, Auftraege ansehen |
+| **Produktion**     | Maschinenbediener           | Berechnungen nutzen, Auftraege bearbeiten, Drucken      |
+| **Nur lesen**      | Auszubildende / Gaeste      | Alles ansehen, nichts veraendern                         |
 
-> :material-image-area: *Screenshot: Role management dialog*
+> :material-image-area: *Screenshot: Rollen-Verwaltungs-Dialog*
 
-## Available permissions
+## Verfuegbare Berechtigungen
 
-A role is a list made up of these individual permissions:
+Eine Rolle ist eine Liste aus folgenden Einzel-Berechtigungen:
 
-| Permission                | Meaning                                         |
+| Berechtigung              | Bedeutung                                       |
 |---------------------------|-------------------------------------------------|
-| `users.manage`            | Create / change / delete users                  |
-| `company.manage`          | Change company name and global settings         |
-| `workspace.manage`        | Change workspace path, manage profile           |
-| `masterdata.view`         | View master data                                |
-| `masterdata.edit`         | Edit master data                                |
-| `jobs.view`               | View jobs                                       |
-| `jobs.edit`               | Edit jobs                                       |
-| `designer.view`           | View designer                                   |
-| `designer.edit`           | Edit in designer                                |
-| `print_templates.view`    | View print templates                            |
-| `print_templates.edit`    | Edit print templates                            |
-| `calculations.use`        | Run calculations                                |
-| `exports.print`           | Print / export                                  |
+| `users.manage`            | Benutzer anlegen / aendern / loeschen            |
+| `company.manage`          | Firmenname und globale Einstellungen aendern    |
+| `workspace.manage`        | Workspace-Pfad aendern, Profil verwalten        |
+| `masterdata.view`         | Stammdaten ansehen                               |
+| `masterdata.edit`         | Stammdaten bearbeiten                            |
+| `jobs.view`               | Auftraege ansehen                                |
+| `jobs.edit`               | Auftraege bearbeiten                             |
+| `designer.view`           | Designer ansehen                                 |
+| `designer.edit`           | Designer bearbeiten                              |
+| `print_templates.view`    | Druckvorlagen ansehen                            |
+| `print_templates.edit`    | Druckvorlagen bearbeiten                         |
+| `calculations.use`        | Berechnungen durchfuehren                        |
+| `exports.print`           | Drucken / Export                                 |
 
-## Custom roles
+## Eigene Rollen anlegen
 
-In *Role management* (admin area) you can:
+Im Dialog *Rollen-Verwaltung* (Admin-Bereich) koennen Sie:
 
-* view built-in roles (read-only)
-* create new roles
-* edit or delete custom roles
+* eingebaute Rollen ansehen (nicht aendern)
+* neue Rollen anlegen
+* eigene Rollen bearbeiten oder loeschen
 
-> :material-alert-circle-outline: **TODO** *Add screenshots of the dialog.*
+> :material-alert-circle-outline: **TODO** *Screenshots des Dialogs einfuegen.*
 
-!!! tip "Use roles sparingly"
-    Start with the built-in roles. Custom roles only pay off in special
-    cases - for example a "floater" role that may temporarily run
-    calculations but not print.
+!!! tip "Sparsam mit Rollen"
+    Beginnen Sie mit den eingebauten Rollen. Eigene Rollen lohnen sich
+    erst bei Sonderfaellen, z. B. einer "Springer"-Rolle, die nur
+    zeitweilig Berechnungen ohne Druck darf.

@@ -1,12 +1,12 @@
-# Advanced
+# Spezial
 
-Horn gear, carriers rules, braid mapping.
+Horn Gear, Carriers Rules, Braid Mapping.
 
-## Calculations in this group
+## Berechnungen in dieser Gruppe
 
-* [Braid Mapping](braid-mapping.md)
+* [Flechtmuster (Braid Mapping)](braid-mapping.md)
 * [Carriers Rules](carriers-rules.md)
 * [Horn Gear Layout](horn-gear-layout.md)
-* [Horn Gear Overview](horn-gear-overview.md)
+* [Horn Gear Uebersicht](horn-gear-overview.md)
 
-> :material-image-area: *Screenshot: Overview "Advanced" with cards per calculation*
+> :material-image-area: *Screenshot: Uebersichtsseite "Spezial" mit Karten je Berechnung*

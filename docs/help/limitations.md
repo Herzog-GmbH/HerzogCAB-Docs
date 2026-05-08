@@ -1,5 +1,5 @@
-# Known Limitations
+# Bekannte Einschraenkungen
 
-* Workspace on a network drive: no concurrent editing of the same job from two machines.
-* Print templates with very many table rows can slow down the preview.
+* Workspace auf Netzlaufwerk: keine gleichzeitige Bearbeitung des gleichen Auftrags von zwei Rechnern.
+* Druckvorlagen mit sehr vielen Tabellen-Zeilen koennen die Vorschau verlangsamen.
 

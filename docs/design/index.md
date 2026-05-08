@@ -1,8 +1,8 @@
 # Design
 
-In the **Designer** you create braid patterns, color sequences and repeatable designs. Results can be used in jobs and printed.
+Im **Designer** entwerfen Sie Flechtmuster, Farbreihenfolgen und wiederholbare Designs. Ergebnisse koennen in Auftraegen verwendet und gedruckt werden.
 
-* [Designer interface](designer.md)
-* [Colors and patterns](colors.md)
-* [Product design](product.md)
+* [Designer-Oberflaeche](designer.md)
+* [Farben und Muster](colors.md)
+* [Produkt-Design](product.md)
 

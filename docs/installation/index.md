@@ -1,17 +1,18 @@
 # Installation
 
-This chapter walks you through the first-time installation of Herzog CAB
-on Windows. Plan around 15 minutes. To install updates instead, see the
-chapter on [Updates](../updates/index.md).
+Dieses Kapitel fuehrt Sie durch die Erstinstallation von Herzog CAB unter
+Windows. Reservieren Sie sich rund 15 Minuten Zeit. Wenn Sie Updates
+installieren wollen, lesen Sie stattdessen das Kapitel
+[Updates](../updates/index.md).
 
-## Steps at a glance
+## Ablauf in Kuerze
 
-1. [Check system requirements](system-requirements.md)
-2. [Run the installer](installer.md)
-3. [Activate your licence](activate-license.md) (Wibu CodeMeter)
-4. [First program start](first-start.md)
+1. [Systemvoraussetzungen pruefen](system-requirements.md)
+2. [Installer ausfuehren](installer.md)
+3. [Lizenz aktivieren](activate-license.md) (Wibu CodeMeter)
+4. [Erster Programmstart](first-start.md)
 
-!!! info "No installation package yet?"
-    Contact your Herzog representative or write to
-    support@herzog-online.com. We will send you a download link and your
-    licence information.
+!!! info "Sie haben kein Installationspaket erhalten?"
+    Wenden Sie sich an Ihren Herzog-Ansprechpartner oder schreiben Sie an
+    support@herzog-online.com. Sie erhalten von uns einen Download-Link
+    sowie Ihre Lizenzinformationen.

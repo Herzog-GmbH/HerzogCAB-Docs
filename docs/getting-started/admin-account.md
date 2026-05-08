@@ -1,41 +1,41 @@
-# Create the First Admin Account
+# Erstes Admin-Konto anlegen
 
-When a new workspace starts up for the first time, Herzog CAB prompts
-for an administrator account. This account:
+Beim ersten Start eines neuen Workspaces fragt Herzog CAB nach einem
+Administrator-Konto. Dieses Konto:
 
-- can use all features of the program,
-- can create additional users and assign roles,
-- can reconfigure the workspace.
+- darf alle Funktionen des Programms nutzen,
+- kann weitere Benutzer anlegen und Rollen vergeben,
+- kann den Workspace neu konfigurieren.
 
-## Fields in the setup dialog
+## Felder im Setup-Dialog
 
-> :material-image-area: *Screenshot: First admin setup dialog*
+> :material-image-area: *Screenshot: Erst-Admin-Setup-Dialog*
 
-| Field                  | Meaning                                                                |
-|------------------------|------------------------------------------------------------------------|
-| **Login name**         | Used in the login dialog. Case-insensitive.                            |
-| **Display name**       | Full name shown in the program.                                        |
-| **E-mail** (optional)  | Used for password reset (if configured).                               |
-| **Password**           | Minimum 8 characters. At least one letter and one digit.               |
-| **Confirm password**   | Must match "Password" exactly.                                         |
-| **Profile picture** (optional) | Image from a file (JPG/PNG). Can be changed later.             |
+| Feld                | Bedeutung                                                                    |
+|---------------------|------------------------------------------------------------------------------|
+| **Anmeldename**     | Wird im Login-Dialog eingegeben. Klein- und Grossbuchstaben werden nicht unterschieden. |
+| **Anzeigename**     | Voll ausgeschriebener Name, der im Programm angezeigt wird.                  |
+| **E-Mail** (optional) | Wird fuer Passwort-Reset verwendet (sofern eingerichtet).                  |
+| **Passwort**        | Mindestens 8 Zeichen. Enthaelt mindestens einen Buchstaben und eine Zahl.   |
+| **Passwort wiederholen** | Muss exakt mit "Passwort" uebereinstimmen.                              |
+| **Profilbild** (optional) | Bild aus Datei waehlen (JPG/PNG). Kann jederzeit geaendert werden.    |
 
-## Practical notes
+## Praktische Hinweise
 
-!!! tip "Who should be administrator?"
-    Ideally a person who is **organisationally** responsible for
-    Herzog CAB on the shop floor - e.g. a shift leader or workshop
-    manager. Plain machine operators usually receive the *Production*
-    or *Read-only* role.
+!!! tip "Wer sollte Administrator sein?"
+    Idealerweise eine Person, die **organisatorisch** fuer Herzog CAB im
+    Werk verantwortlich ist - z. B. ein Schichtfuehrer oder Werkstattleiter.
+    Reine Maschinenbediener bekommen meist die Rolle *Produktion* oder
+    *Nur lesen*.
 
-!!! warning "Keep the password safe"
-    If you forget the admin password, only an external intervention can
-    help. Note it down somewhere safe.
+!!! warning "Passwort sicher aufbewahren"
+    Wenn Sie das Admin-Passwort vergessen, kann nur ein Eingriff von
+    aussen helfen. Notieren Sie es an einem sicheren Ort.
 
-## What's next?
+## Wie geht es weiter?
 
-After creating the admin you can:
+Nach dem Anlegen des Admins koennen Sie:
 
-* Create more users via [User Management](../users/manage.md) -
-  e.g. machine operators with restricted permissions.
-* Jump straight into [Master Data](../master-data/index.md).
+* Weitere Benutzer ueber [Benutzer verwalten](../users/manage.md)
+  anlegen - z. B. Maschinenbediener mit eingeschraenkten Rechten.
+* Direkt mit den [Stammdaten](../master-data/index.md) starten.

@@ -1,12 +1,12 @@
-# Getting Started
+# Erste Schritte
 
-This chapter introduces the user interface and the most important
-controls. If you've just installed the program, work through the topics
-in order:
+Dieses Kapitel macht Sie mit der Oberflaeche und den wichtigsten Bedien-
+elementen vertraut. Wenn Sie das Programm gerade frisch installiert haben,
+arbeiten Sie die Themen am besten in Reihenfolge durch:
 
-1. [Set up a workspace](workspace.md) - where your data lives
-2. [Create the first admin account](admin-account.md) - who may use the program
-3. [Choose a language](language.md)
-4. [Interface overview](interface.md)
-5. [Navigation and history](navigation.md)
-6. [Guided Tour](guided-tour.md) - built-in walkthrough
+1. [Workspace einrichten](workspace.md) - wo Ihre Daten liegen
+2. [Erstes Admin-Konto anlegen](admin-account.md) - wer das Programm bedienen darf
+3. [Sprache waehlen](language.md)
+4. [Oberflaeche im Ueberblick](interface.md)
+5. [Navigation und Verlauf](navigation.md)
+6. [Guided Tour](guided-tour.md) - eingebauter Rundgang

@@ -1,38 +1,41 @@
-# Machines
+# Maschinen
 
-The machines module is where you maintain the braiding machines in your
-plant. Per machine, Herzog CAB stores technical data, optionally
-documents (data sheets, manuals) and a QR code for use at the machine
-itself.
+Im Maschinen-Modul pflegen Sie die Flechtmaschinen Ihres Werks. Pro
+Maschine speichert Herzog CAB technische Daten, optional Dokumente
+(Datenblaetter, Betriebsanleitungen) und einen QR-Code fuer die
+Verwendung an der Maschine selbst.
 
-> :material-image-area: *Screenshot: My Machines overview*
+> :material-image-area: *Screenshot: Maschinen-Uebersicht (My Machines)*
 
-## Machine properties
+## Eigenschaften einer Maschine
 
-> :material-alert-circle-outline: **TODO** *Validate fields against the editor.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des Editors validieren.*
 
-| Field               | Description                                                 |
+| Feld                | Beschreibung                                                |
 |---------------------|-------------------------------------------------------------|
-| Name                | Unique name (e.g. "Hall 2 - HM48")                          |
-| Manufacturer        | e.g. Herzog GmbH                                            |
-| Model               | Model designation                                           |
-| Number of carriers  | Number of bobbin carriers (carriers / klueppel)             |
-| Pitch circle dia.   | in mm                                                       |
-| Maximum speed       | in rpm                                                      |
-| Note                | Free text                                                   |
+| Bezeichnung         | Eindeutiger Name (z. B. "Halle 2 - HM48")                   |
+| Hersteller          | z. B. Herzog GmbH                                            |
+| Modell              | Modellbezeichnung                                            |
+| Anzahl Klueppel     | Zahl der Spulentraeger                                       |
+| Fluegelteilkreis    | in mm                                                        |
+| Hoechstdrehzahl     | in U/min                                                     |
+| Bemerkung           | Frei-Text                                                    |
 
-## Machine fleet
+## Maschinenpark
 
-The **Machine Fleet** list shows all registered machines. Click an entry
-to open details and machine-specific calculations.
+Die Liste **Maschinen-Park** zeigt alle erfassten Maschinen. Klicken Sie
+einen Eintrag an, um Details und Berechnungen fuer diese Maschine zu
+oeffnen.
 
-## Machine documents
+## Dokumente pro Maschine
 
-Per machine you can store documents (e.g. PDF manuals, maintenance
-plans). Files are kept under
+Pro Maschine koennen Sie Dokumente ablegen (z. B. PDFs mit Betriebs-
+anleitung, Wartungsplaene). Die Dateien werden im Workspace unter
 
 ```
-<Workspace>\Machines\<MachineID>\documents\
+<Workspace>\Machines\<MaschinenID>\documents\
 ```
 
-> :material-image-area: *Screenshot: Machine detail page with documents*
+abgelegt.
+
+> :material-image-area: *Screenshot: Maschinen-Detailseite mit Dokumenten*

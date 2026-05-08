@@ -1,11 +1,11 @@
-# Bobbins
+# Spulen
 
-Bobbin volume, material length on bobbin, number of winders.
+Spulenvolumen, Materiallaenge auf Spule, Anzahl Spulenwickler.
 
-## Calculations in this group
+## Berechnungen in dieser Gruppe
 
-* [Number of Bobbin Winders](number-of-winders.md)
-* [Material Length on Bobbin](material-length.md)
-* [Bobbin Volume](bobbin-volume.md)
+* [Anzahl Spulenwickler](number-of-winders.md)
+* [Materiallaenge auf Spule](material-length.md)
+* [Spulenvolumen](bobbin-volume.md)
 
-> :material-image-area: *Screenshot: Overview "Bobbins" with cards per calculation*
+> :material-image-area: *Screenshot: Uebersichtsseite "Spulen" mit Karten je Berechnung*

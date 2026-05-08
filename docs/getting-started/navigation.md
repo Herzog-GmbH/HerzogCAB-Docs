@@ -1,58 +1,58 @@
-# Navigation and History
+# Navigation und Verlauf
 
-## Navigation tree
+## Navigationsbaum
 
-The tree on the left is grouped by topic:
+Der Baum links ist nach Themen gegliedert:
 
 ```
-Master data
-  ├─ Materials
-  ├─ Bobbins
-  ├─ Machines
-  ├─ Customers
-  └─ Colors
-Calculations
-  ├─ Braid Geometry
+Stammdaten
+  ├─ Materialien
+  ├─ Spulen
+  ├─ Maschinen
+  ├─ Kunden
+  └─ Farben
+Berechnungen
+  ├─ Flechtgeometrie
   ├─ Material
-  ├─ Bobbins
-  ├─ Machine
-  ├─ Product
-  ├─ Tubular Braid
-  └─ Advanced
-Jobs
+  ├─ Spulen
+  ├─ Maschine
+  ├─ Produkt
+  ├─ Rohrgeflecht
+  └─ Spezial
+Auftraege
 Designer
-Print templates
-Users
-Settings
+Druckvorlagen
+Benutzer
+Einstellungen
 ```
 
-Click an entry to open the page. Entries with an arrow contain sub-items
-that can be expanded.
+Klicken Sie einen Eintrag an, um die zugehoerige Seite zu oeffnen. Eintraege
+mit Pfeil-Symbol enthalten Unterpunkte, die sich aufklappen lassen.
 
-## History
+## Verlauf
 
-While you work, Herzog CAB remembers recently opened calculations and
-pages in a **history** on the right side. Benefits:
+Beim Arbeiten merkt sich Herzog CAB die zuletzt geoeffneten Berechnungen
+und Seiten in einem **Verlauf** auf der rechten Seite. Vorteile:
 
-* Quick jump back to recently opened calculations.
-* For calculations, your input values are kept - you can switch to
-  another page briefly and return to find your numbers exactly as you
-  left them.
+* Schneller Sprung zu kuerzlich geoeffneten Berechnungen.
+* Bei Berechnungen werden Ihre Eingabewerte zwischengespeichert - Sie
+  koennen also kurz auf eine andere Seite wechseln und die ursprueng-
+  liche Berechnung mit allen Werten wieder oeffnen.
 
-> :material-image-area: *Screenshot: History sidebar*
+> :material-image-area: *Screenshot: Verlauf-Sidebar*
 
-!!! info "Reset on restart"
-    The history is rebuilt on startup. Input values are discarded on
-    exit.
+!!! info "Verlauf zuruecksetzen"
+    Beim Programmstart wird der Verlauf neu aufgebaut. Beim Beenden
+    werden die Eingabewerte verworfen.
 
-## Navigation shortcuts
+## Tastenkuerzel zur Navigation
 
-| Shortcut              | Action                                   |
+| Tastenkombination     | Wirkung                                  |
 |-----------------------|------------------------------------------|
-| ++ctrl+f++            | Quick search in navigation tree          |
-| ++alt+left++          | Back in history                          |
-| ++alt+right++         | Forward in history                       |
-| ++ctrl+p++            | Print                                    |
-| ++f1++                | Open online help                         |
+| ++ctrl+f++            | Schnellsuche im Navigationsbaum          |
+| ++alt+left++          | Zurueck im Verlauf                       |
+| ++alt+right++         | Vorwaerts im Verlauf                     |
+| ++ctrl+p++            | Drucken                                  |
+| ++f1++                | Online-Hilfe oeffnen                     |
 
-A complete list is in [Keyboard shortcuts](../appendix/keyboard-shortcuts.md).
+Eine vollstaendige Liste finden Sie unter [Tastenkuerzel](../appendix/keyboard-shortcuts.md).

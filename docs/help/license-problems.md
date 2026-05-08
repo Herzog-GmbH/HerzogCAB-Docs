@@ -1,12 +1,12 @@
-# Licence Problems
+# Lizenzprobleme
 
-**Program will not start, message 'No licence found'.**
+**Programm startet nicht, Meldung 'Keine Lizenz gefunden'.**
 
-* In the **CodeMeter Control Center**, check whether a valid licence for firm code 6001037 is shown (full version 88805 or demo version 88806).
-* For network licences: is the licence server reachable? (WebAdmin > Server search list).
-* For USB dongle: is the LED on the dongle blinking?
+* Pruefen Sie im **CodeMeter Control Center**, ob eine gueltige Lizenz fuer Firma 6001037 angezeigt wird (Vollversion 88805 oder Demoversion 88806).
+* Bei Netzwerklizenz: ist der Lizenzserver erreichbar? (WebAdmin > Server-Suchliste).
+* Bei USB-Dongle: blinkt die LED am Dongle?
 
-**Demo version expired.**
+**Demoversion abgelaufen.**
 
-Contact your Herzog representative for a full version or extension.
+Wenden Sie sich an Ihren Herzog-Ansprechpartner fuer eine Vollversion oder Verlaengerung.
 

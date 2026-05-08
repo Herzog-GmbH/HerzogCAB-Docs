@@ -1,14 +1,14 @@
-# Web Server and QR Code
+# Webserver und QR-Code
 
-The built-in web server lets you fetch jobs at the machine via a QR code with a smartphone.
+Der eingebaute Webserver ermoeglicht es, Auftraege ueber QR-Code an der Maschine mit dem Smartphone abzurufen.
 
-Configurable parameters:
+Konfigurierbare Parameter:
 
-* Web server enabled (on/off)
+* Webserver aktiv (ein/aus)
 * Port
-* IP address for the QR code (some machines have several)
-* Password for access protection
+* IP-Adresse fuer den QR-Code (manche Rechner haben mehrere)
+* Passwort fuer Zugriffsschutz
 
-!!! warning "Security note"
-    An open web server in the plant network can expose sensitive     job data. Always enable password protection.
+!!! warning "Sicherheits-Hinweis"
+    Ein offener Webserver im Werks-Netz kann sensible Auftrags-    daten preisgeben. Aktivieren Sie immer den Passwortschutz.
 

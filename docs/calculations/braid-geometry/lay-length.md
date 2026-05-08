@@ -1,31 +1,31 @@
-# Lay Length
+# Verlegelaenge
 
-> :material-alert-circle-outline: **TODO** *Description to be validated by Eike at the running program.*
+> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-The **lay length** specifies the axial advance a strand needs in the braid for one full revolution around the product.
+Die **Verlegelaenge** (Lay Length) gibt den axialen Vorschub an, den ein Strang im Geflecht fuer eine volle Umdrehung um das Produkt benoetigt.
 
-> :material-image-area: *Screenshot: Calculation page "Lay Length"*
+> :material-image-area: *Screenshot: Berechnungsseite "Verlegelaenge"*
 
-## Inputs
+## Eingabe
 
-> :material-alert-circle-outline: **TODO** *Add fields based on the running dialog.*
+> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
 
-| Field                      | Unit    | Notes                                |
+| Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Result
+## Ergebnis
 
-| Value                      | Unit    | Notes                                |
+| Wert                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 |                            |         |                                      |
 
-## Application notes
+## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Add practical hints and typical value ranges.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
 
-## Related calculations
+## Verwandte Berechnungen
 
-* [Braid angle](braid-angle.md)
-* [Picks density](picks-density.md)
+* [Flechtwinkel](braid-angle.md)
+* [Flechtdichte](picks-density.md)
 

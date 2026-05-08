@@ -1,4 +1,4 @@
-# Workspace Concept
+# Workspace-Konzept
 
-A **workspace** is the data folder containing all master data, jobs and print templates. A **profile** links a user with a workspace - so the same user can work in multiple workspaces, and the same workspace can be used by multiple users.
+Ein **Workspace** ist der Daten-Ordner mit allen Stammdaten, Auftraegen und Druckvorlagen. Ein **Profil** ist die Verbindung zwischen Benutzer und Workspace - so kann der gleiche Benutzer an mehreren Workspaces arbeiten und der gleiche Workspace von mehreren Benutzern genutzt werden.
 

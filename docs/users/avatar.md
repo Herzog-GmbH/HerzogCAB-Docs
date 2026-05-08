@@ -1,4 +1,4 @@
-# Change Profile Picture
+# Profilbild aendern
 
-Profile pictures are stored machine-wide under `%ProgramData%\Herzog GmbH\Herzog Cab\auth\avatars\` - independent of the workspace.
+Profilbilder werden maschinenweit unter `%ProgramData%\Herzog GmbH\Herzog Cab\auth\avatars\` abgelegt - so sind sie unabhaengig vom Workspace verfuegbar.
 

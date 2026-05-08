@@ -1,7 +1,7 @@
-# Workspace and Profiles
+# Workspace und Profile
 
-* [Workspace concept](concept.md)
-* [Switch profile](switch-profile.md)
-* [Change workspace path](change-path.md)
-* [Migration from older versions](migration.md)
+* [Workspace-Konzept](concept.md)
+* [Profil wechseln](switch-profile.md)
+* [Workspace-Pfad aendern](change-path.md)
+* [Migration aus aelteren Versionen](migration.md)
 

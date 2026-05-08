@@ -1,4 +1,4 @@
-# Manage Users
+# Benutzer verwalten
 
-In the *User management* dialog, administrators create new users, disable existing ones or assign roles.
+Im Dialog *Benutzerverwaltung* legen Administratoren neue Benutzer an, deaktivieren bestehende oder weisen Rollen zu.
 
