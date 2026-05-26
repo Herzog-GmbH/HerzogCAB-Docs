@@ -13,6 +13,7 @@
   --herzog-primary-dark:   #003470;
   --herzog-primary-light:  #1a5db0;
   --herzog-primary-darker: #071731;
+  --herzog-primary-2:      #0066cc;       /* Landing-Page Sekundaer-Blau */
   --herzog-accent:         #ffb800;
   --herzog-accent-light:   #ffd45e;
   --herzog-bg-dark:        #0b1a33;
@@ -20,6 +21,25 @@
   --herzog-text-muted:     #5a6476;
   --herzog-border:         #e4e8ef;
   --herzog-bg-alt:         #f5f7fa;
+
+  /* Landing-Page-aligned Tokens */
+  --herzog-glow:           rgba(0, 69, 154, 0.22);
+  --herzog-glow-soft:      rgba(0, 69, 154, 0.12);
+  --herzog-radius:         14px;
+  --herzog-radius-sm:      8px;
+  --herzog-radius-lg:      22px;
+  --herzog-shadow-lg:      0 20px 50px rgba(10, 15, 35, 0.10);
+  --herzog-shadow-glow:    0 30px 80px rgba(0, 69, 154, 0.18),
+                           0 10px 30px rgba(10, 15, 35, 0.08);
+  --herzog-gradient-brand: linear-gradient(135deg,
+                             var(--herzog-primary) 0%,
+                             var(--herzog-primary-2) 100%);
+  --herzog-gradient-hero:  radial-gradient(1200px 600px at 85% -10%,
+                             rgba(0, 69, 154, 0.14), transparent 60%),
+                           radial-gradient(900px 500px at 10% 10%,
+                             rgba(0, 102, 204, 0.10), transparent 60%),
+                           radial-gradient(700px 400px at 50% 120%,
+                             rgba(84, 94, 102, 0.08), transparent 60%);
 }
 
 /* -- Material-Variablen ueberschreiben (helles Theme) ----------- */
@@ -306,21 +326,22 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 .md-typeset .md-button {
   background: var(--herzog-primary);
   color: #ffffff;
-  border: 2px solid var(--herzog-primary);
-  border-radius: 10px;
-  padding: 0.6rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: var(--herzog-radius);
+  padding: 0.7rem 1.6rem;
   font-weight: 600;
   letter-spacing: 0;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px var(--herzog-glow);
 }
 
 .md-button:hover,
 .md-typeset .md-button:hover {
   background: var(--herzog-primary-dark);
-  border-color: var(--herzog-primary-dark);
+  border-color: transparent;
   color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 69, 154, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 28px var(--herzog-glow);
 }
 
 .md-button--secondary,
@@ -334,9 +355,9 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 .md-typeset .grid > .card,
 .md-typeset .grid.cards > * {
   border: 1px solid var(--herzog-border);
-  border-radius: 12px;
+  border-radius: var(--herzog-radius);
   padding: 1.5rem;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: #ffffff;
 }
 
@@ -348,10 +369,10 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 
 .md-typeset .grid.cards > :is(ul, ol) > li:hover,
 .md-typeset .grid.cards > *:hover {
-  border-color: transparent;
+  border-color: var(--herzog-primary-2);
   transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(16, 24, 40, 0.08),
-              0 8px 10px -6px rgba(16, 24, 40, 0.04);
+  box-shadow: 0 20px 25px -5px var(--herzog-glow-soft),
+              0 8px 10px -6px rgba(0, 69, 154, 0.08);
 }
 
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > :is(ul, ol) > li:hover,
@@ -376,7 +397,7 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 /* -- Admonition-Bloecke (Note/Tipp/Warnung) -------------------- */
 .md-typeset .admonition,
 .md-typeset details {
-  border-radius: 12px;
+  border-radius: var(--herzog-radius);
   border-left-width: 4px;
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
 }
@@ -421,7 +442,7 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 /* -- Tabellen --------------------------------------------------- */
 .md-typeset table:not([class]) {
   border: 1px solid var(--herzog-border);
-  border-radius: 12px;
+  border-radius: var(--herzog-radius);
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
 }
@@ -449,13 +470,13 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 
 /* -- Code-Bloecke ---------------------------------------------- */
 .md-typeset pre > code {
-  border-radius: 12px;
+  border-radius: var(--herzog-radius);
   font-size: 0.875rem;
   line-height: 1.6;
 }
 
 .md-typeset .highlight {
-  border-radius: 12px;
+  border-radius: var(--herzog-radius);
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
 }
 
@@ -530,4 +551,150 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 @media print {
   .md-header, .md-tabs, .md-sidebar, .md-footer { display: none !important; }
   .md-content { margin: 0 !important; max-width: 100% !important; }
+}
+
+/* ============================================================
+   HERO-BLOCK (nur Startseite docs/index.md)
+   Orientiert am Landing-Page-Hero unter cab.herzog-online.com
+   ============================================================ */
+
+.md-typeset .hero {
+  position: relative;
+  margin: -1.5rem -1rem 3rem;
+  padding: 4.5rem 2rem 3.5rem;
+  text-align: center;
+  background: var(--herzog-gradient-hero);
+  border-radius: var(--herzog-radius-lg);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.md-typeset .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(var(--herzog-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--herzog-border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  opacity: 0.35;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .hero {
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(62, 141, 255, 0.22), transparent 60%),
+    radial-gradient(900px 500px at 10% 10%, rgba(37, 99, 235, 0.14), transparent 60%);
+}
+
+.md-typeset .hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  margin-bottom: 1.5rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid var(--herzog-border);
+  color: var(--herzog-text-muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .hero-eyebrow {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.md-typeset .hero-eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
+}
+
+.md-typeset .hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  margin: 0 0 1.2rem;
+  border: none;
+  padding: 0;
+}
+
+.md-typeset .hero h1 .grad,
+.md-typeset .hero .grad {
+  background: var(--herzog-gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.md-typeset .hero-sub {
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  color: var(--herzog-text-muted);
+  max-width: 680px;
+  margin: 0 auto 2.2rem;
+  line-height: 1.55;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .hero-sub {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.md-typeset .hero-cta {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.md-typeset .hero-cta .md-button {
+  margin: 0;
+}
+
+.md-typeset .hero-cta .md-button:not(.md-button--primary) {
+  background: transparent;
+  color: var(--herzog-primary);
+  border: 1px solid var(--herzog-border);
+  box-shadow: none;
+}
+
+.md-typeset .hero-cta .md-button:not(.md-button--primary):hover {
+  background: #ffffff;
+  border-color: var(--herzog-primary);
+  color: var(--herzog-primary-dark);
+  box-shadow: 0 4px 14px var(--herzog-glow-soft);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .hero-cta .md-button:not(.md-button--primary) {
+  color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .hero-cta .md-button:not(.md-button--primary):hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+/* Auf der Startseite die H1 unter dem Hero ausblenden,
+   da der Hero den Titel selbst traegt. */
+.md-typeset .hero + h1 {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .md-typeset .hero {
+    margin: -1rem -0.5rem 2rem;
+    padding: 3rem 1.2rem 2.5rem;
+  }
 }

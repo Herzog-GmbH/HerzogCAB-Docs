@@ -174,8 +174,8 @@ nav:
           - getting-started/index.md
           - Workspace einrichten: getting-started/workspace.md
           - Erstes Admin-Konto: getting-started/admin-account.md
-          - Sprache waehlen: getting-started/language.md
-          - Oberflaeche im Ueberblick: getting-started/interface.md
+          - Sprache wählen: getting-started/language.md
+          - Oberfläche im Überblick: getting-started/interface.md
           - Navigation und Verlauf: getting-started/navigation.md
           - Guided Tour: getting-started/guided-tour.md
       - Updates:
@@ -184,8 +184,8 @@ nav:
           - Versionsverlauf: updates/version-history.md
       - Deinstallation:
           - uninstallation/index.md
-          - Ueber das Maintenance Tool: uninstallation/maintenance-tool.md
-          - Ueber die Windows-Einstellungen: uninstallation/windows-settings.md
+          - Über das Maintenance Tool: uninstallation/maintenance-tool.md
+          - Über die Windows-Einstellungen: uninstallation/windows-settings.md
           - Daten entfernen: uninstallation/remove-data.md
 
   # ----- TAB: Bedienen -----------------------------------------------------
@@ -202,7 +202,7 @@ nav:
           - Flechtgeometrie:
               - calculations/braid-geometry/index.md
               - Flechtwinkel: calculations/braid-geometry/braid-angle.md
-              - Verlegelaenge: calculations/braid-geometry/lay-length.md
+              - Verlegelänge: calculations/braid-geometry/lay-length.md
               - Flechtdichte umrechnen: calculations/braid-geometry/picks-density.md
           - Material:
               - calculations/material/index.md
@@ -213,37 +213,37 @@ nav:
           - Spulen:
               - calculations/bobbins/index.md
               - Spulenvolumen: calculations/bobbins/bobbin-volume.md
-              - Materiallaenge auf Spule: calculations/bobbins/material-length.md
+              - Materiallänge auf Spule: calculations/bobbins/material-length.md
               - Anzahl Spulenwickler: calculations/bobbins/number-of-winders.md
           - Maschine:
               - calculations/machine/index.md
               - Maschinenabmessungen: calculations/machine/dimensions.md
-              - Fluegelteilkreis: calculations/machine/wing-pitch-circle.md
+              - Flügelteilkreis: calculations/machine/wing-pitch-circle.md
               - Produktionsgeschwindigkeit: calculations/machine/production-speed.md
               - Laufzeit und Spulensatz: calculations/machine/run-time-bobbin-set.md
-              - Wechselraeder Gummiantrieb: calculations/machine/change-gears.md
+              - Wechselräder Gummiantrieb: calculations/machine/change-gears.md
           - Produkt:
               - calculations/product/index.md
               - Produktdurchmesser: calculations/product/product-diameter.md
-              - Seillaenge: calculations/product/rope-length.md
-              - Seillaenge auf Trommel: calculations/product/rope-length-on-drum.md
+              - Seillänge: calculations/product/rope-length.md
+              - Seillänge auf Trommel: calculations/product/rope-length-on-drum.md
               - Seilgewicht: calculations/product/rope-weight.md
           - Rohrgeflecht:
               - calculations/tubular-braid/index.md
               - Rohr: calculations/tubular-braid/tube.md
-              - Rohrtraeger: calculations/tubular-braid/tube-carriers.md
-              - Rohrueberzug: calculations/tubular-braid/tube-cover.md
+              - Rohrträger: calculations/tubular-braid/tube-carriers.md
+              - Rohrüberzug: calculations/tubular-braid/tube-cover.md
               - Rohrdurchmesser: calculations/tubular-braid/tube-diameter.md
               - Garnbreite: calculations/tubular-braid/yarn-width.md
           - Spezial:
               - calculations/advanced/index.md
               - Horn Gear Layout: calculations/advanced/horn-gear-layout.md
-              - Horn Gear Uebersicht: calculations/advanced/horn-gear-overview.md
+              - Horn Gear Übersicht: calculations/advanced/horn-gear-overview.md
               - Carriers Rules: calculations/advanced/carriers-rules.md
               - Flechtmuster (Braid Mapping): calculations/advanced/braid-mapping.md
       - Design:
           - design/index.md
-          - Designer-Oberflaeche: design/designer.md
+          - Designer-Oberfläche: design/designer.md
           - Farben und Muster: design/colors.md
           - Produkt-Design: design/product.md
       - Aufträge:
@@ -267,17 +267,17 @@ nav:
           - Benutzer verwalten: users/manage.md
           - Rollen und Berechtigungen: users/roles.md
           - Eigenes Profil: users/my-profile.md
-          - Profilbild aendern: users/avatar.md
-          - Passwort zuruecksetzen: users/password-reset.md
+          - Profilbild ändern: users/avatar.md
+          - Passwort zurücksetzen: users/password-reset.md
       - Workspace und Profile:
           - workspace/index.md
           - Workspace-Konzept: workspace/concept.md
           - Profil wechseln: workspace/switch-profile.md
-          - Workspace-Pfad aendern: workspace/change-path.md
-          - Migration aus aelteren Versionen: workspace/migration.md
+          - Workspace-Pfad ändern: workspace/change-path.md
+          - Migration aus älteren Versionen: workspace/migration.md
       - Einstellungen:
           - settings/index.md
-          - Sprache und Schriftgroesse: settings/language-font.md
+          - Sprache und Schriftgröße: settings/language-font.md
           - Webserver und QR-Code: settings/web-server.md
           - Speicherorte: settings/file-locations.md
 
@@ -289,11 +289,11 @@ nav:
           - Login-Probleme: help/login-problems.md
           - Druckprobleme: help/print-problems.md
           - Update-Fehler: help/update-errors.md
-          - Bekannte Einschraenkungen: help/limitations.md
+          - Bekannte Einschränkungen: help/limitations.md
           - Support kontaktieren: help/support.md
       - Anhang:
           - appendix/index.md
-          - Tastenkuerzel: appendix/keyboard-shortcuts.md
+          - Tastenkürzel: appendix/keyboard-shortcuts.md
           - Dateispeicherorte: appendix/file-locations.md
           - Glossar: appendix/glossary.md
           - Versionshinweise: appendix/changelog.md

@@ -2,17 +2,35 @@
 title: Herzog CAB - Anwenderhandbuch
 hide:
   - navigation
+  - toc
 ---
 
-# Willkommen zum Herzog CAB Handbuch
+<div class="hero" markdown>
 
-**Herzog CAB** ist die Kalkulations- und Designsoftware der Herzog GmbH für
-Flechtmaschinen. Mit Herzog CAB berechnen Sie Maschinen-, Material- und
-Produktparameter, entwerfen Flechtdesigns, verwalten Aufträge und drucken
-fertige Produktionsunterlagen.
+<div class="hero-eyebrow">Herzog CAB · Anwenderhandbuch</div>
+
+# Geflechte entwerfen,<br><span class="grad">berechnen und produzieren.</span>
+
+<p class="hero-sub">
+Das vollständige Anwenderhandbuch zur Kalkulations- und Designsoftware
+für Herzog Flechtmaschinen — von der Installation bis zur täglichen
+Bedienung im Werk.
+</p>
+
+<div class="hero-cta" markdown>
+[Erste Schritte](getting-started/index.md){ .md-button .md-button--primary }
+[Installation](installation/index.md){ .md-button }
+</div>
+
+</div>
+
+**Herzog CAB** ist die Kalkulations- und Designsoftware der Herzog GmbH
+für Flechtmaschinen. Mit Herzog CAB berechnen Sie Maschinen-, Material-
+und Produktparameter, entwerfen Flechtdesigns, verwalten Aufträge und
+drucken fertige Produktionsunterlagen.
 
 Dieses Handbuch richtet sich an **Anwender**, die Herzog CAB täglich im
-Werk bedienen. Es führt Sie von der Installation bis zur täglichen Nutzung.
+Werk bedienen.
 
 ## Schnellnavigation
 
