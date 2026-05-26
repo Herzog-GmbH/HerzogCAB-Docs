@@ -1,10 +1,10 @@
-# Seillaenge auf Trommel
+# Seillänge auf Trommel
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
 Wie viel Seil passt auf eine Aufwickel-Trommel?
 
-> :material-image-area: *Screenshot: Berechnungsseite "Seillaenge auf Trommel"*
+> :material-image-area: *Screenshot: Berechnungsseite "Seillänge auf Trommel"*
 
 ## Eingabe
 
@@ -22,6 +22,6 @@ Wie viel Seil passt auf eine Aufwickel-Trommel?
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

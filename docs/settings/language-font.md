@@ -1,4 +1,4 @@
-# Sprache und Schriftgroesse
+# Sprache und Schriftgröße
 
-Sprache der Oberflaeche und Schriftgroesse fuer Bedienung von Bildschirmen unterschiedlicher Groesse.
+Sprache der Oberfläche und Schriftgröße für Bedienung von Bildschirmen unterschiedlicher Größe.
 

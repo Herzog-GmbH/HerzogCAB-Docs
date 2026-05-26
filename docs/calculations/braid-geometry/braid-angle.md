@@ -1,7 +1,7 @@
 # Flechtwinkel (Braiding Angle)
 
 Der **Flechtwinkel** ist der Winkel, unter dem ein einzelner Strang im
-Geflecht zur Laengsachse des Produkts verlaeuft. Er bestimmt massgeblich
+Geflecht zur Längsachse des Produkts verläuft. Er bestimmt maßgeblich
 Optik, Festigkeit und Dehnung des fertigen Geflechts.
 
 > :material-image-area: *Screenshot: Berechnungsseite "Flechtwinkel"*
@@ -13,8 +13,8 @@ Optik, Festigkeit und Dehnung des fertigen Geflechts.
 | Feld                       | Einheit | Bemerkung                            |
 |----------------------------|---------|--------------------------------------|
 | Produktdurchmesser         | mm      |                                      |
-| Verlegelaenge              | mm      |                                      |
-| Klueppelzahl               | Stueck  | Aus Maschine uebernehmbar            |
+| Verlegelänge              | mm      |                                      |
+| Klüppelzahl               | Stück  | Aus Maschine übernehmbar            |
 
 ## Ergebnis
 
@@ -25,10 +25,10 @@ Optik, Festigkeit und Dehnung des fertigen Geflechts.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Beispielwerte fuer typische Anwendungen einfuegen (z. B. Flechtschlaeuche vs. Seile).*
+> :material-alert-circle-outline: **TODO** *Beispielwerte für typische Anwendungen einfügen (z. B. Flechtschläuche vs. Seile).*
 
 ## Verwandte Berechnungen
 
-* [Verlegelaenge](lay-length.md)
+* [Verlegelänge](lay-length.md)
 * [Flechtdichte umrechnen](picks-density.md)
 * [Produktdurchmesser](../product/product-diameter.md)

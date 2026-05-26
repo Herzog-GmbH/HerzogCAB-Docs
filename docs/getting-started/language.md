@@ -1,6 +1,6 @@
-# Sprache waehlen
+# Sprache wählen
 
-Herzog CAB ist in folgenden Sprachen verfuegbar:
+Herzog CAB ist in folgenden Sprachen verfügbar:
 
 | Sprache       | Code |
 |---------------|------|
@@ -11,16 +11,16 @@ Herzog CAB ist in folgenden Sprachen verfuegbar:
 | Polski        | pl   |
 | 中文 (Chinesisch) | cn   |
 
-## Sprache aendern
+## Sprache ändern
 
 Im laufenden Programm:
 
-1. Menue *Werkzeuge* (engl. *Tools*) > *Sprache aendern* (engl. *Change Language*).
-2. Gewuenschte Sprache aus der Liste waehlen.
+1. Menü *Werkzeuge* (engl. *Tools*) > *Sprache ändern* (engl. *Change Language*).
+2. Gewünschte Sprache aus der Liste wählen.
 
 > :material-image-area: *Screenshot: Sprachauswahl-Dialog*
 
-Die Aenderung wirkt sich sofort aus. Einige Texte (z. B. fest in
+Die Änderung wirkt sich sofort aus. Einige Texte (z. B. fest in
 Druckvorlagen eingetragene Beschriftungen) werden erst nach einem
 Programmneustart auf die neue Sprache umgestellt.
 
@@ -30,7 +30,7 @@ Programmneustart auf die neue Sprache umgestellt.
 
 ## Schnellumschaltung
 
-Im Menue *Werkzeuge* gibt es zusaetzlich einen direkten Eintrag fuer
-**English**. Damit koennen Sie schnell auf Englisch umschalten und
-zurueck - praktisch z. B. fuer ausweichende Bediener oder Service-
+Im Menü *Werkzeuge* gibt es zusätzlich einen direkten Eintrag für
+**English**. Damit können Sie schnell auf Englisch umschalten und
+zurück - praktisch z. B. für ausweichende Bediener oder Service-
 Techniker.

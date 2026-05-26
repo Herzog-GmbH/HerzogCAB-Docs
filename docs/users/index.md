@@ -6,6 +6,6 @@ Herzog CAB hat ein eingebautes Benutzer-Konzept mit Rollen und feiner Berechtigu
 * [Benutzer verwalten](manage.md)
 * [Rollen und Berechtigungen](roles.md)
 * [Eigenes Profil](my-profile.md)
-* [Profilbild aendern](avatar.md)
-* [Passwort zuruecksetzen](password-reset.md)
+* [Profilbild ändern](avatar.md)
+* [Passwort zurücksetzen](password-reset.md)
 

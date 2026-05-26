@@ -1,9 +1,9 @@
 # Materialien
 
 Im Materialeditor pflegen Sie die Materialien, die in Ihren Flechtungen
-zum Einsatz kommen - Draehte, Litzen, Garne, Faeden.
+zum Einsatz kommen - Drähte, Litzen, Garne, Fäden.
 
-> :material-image-area: *Screenshot: Materialeditor mit gefuellter Materialliste*
+> :material-image-area: *Screenshot: Materialeditor mit gefüllter Materialliste*
 
 ## Eigenschaften eines Materials
 
@@ -21,19 +21,19 @@ zum Einsatz kommen - Draehte, Litzen, Garne, Faeden.
 
 ## Material anlegen
 
-1. Im Navigationsbaum *Stammdaten > Materialien* oeffnen.
+1. Im Navigationsbaum *Stammdaten > Materialien* öffnen.
 2. Auf :material-plus: **Neu** klicken.
-3. Felder ausfuellen.
+3. Felder ausfüllen.
 4. **Speichern**.
 
 ## Material in einer Berechnung verwenden
 
-In den meisten Berechnungen koennen Sie statt manueller Eingabe ein
-Material aus der Liste waehlen. Die Werte (Durchmesser, lineare Dichte
-etc.) werden dann automatisch uebernommen.
+In den meisten Berechnungen können Sie statt manueller Eingabe ein
+Material aus der Liste wählen. Die Werte (Durchmesser, lineare Dichte
+etc.) werden dann automatisch übernommen.
 
 > :material-image-area: *Screenshot: Materialauswahl in einer Berechnung*
 
 !!! tip "Wiederkehrende Materialien einmal anlegen"
-    Pflegen Sie haeufig genutzte Materialien einmal sauber - das spart
+    Pflegen Sie häufig genutzte Materialien einmal sauber - das spart
     bei jeder Berechnung Tipparbeit und vermeidet Fehleingaben.

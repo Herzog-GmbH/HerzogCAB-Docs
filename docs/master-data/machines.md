@@ -2,10 +2,10 @@
 
 Im Maschinen-Modul pflegen Sie die Flechtmaschinen Ihres Werks. Pro
 Maschine speichert Herzog CAB technische Daten, optional Dokumente
-(Datenblaetter, Betriebsanleitungen) und einen QR-Code fuer die
+(Datenblätter, Betriebsanleitungen) und einen QR-Code für die
 Verwendung an der Maschine selbst.
 
-> :material-image-area: *Screenshot: Maschinen-Uebersicht (My Machines)*
+> :material-image-area: *Screenshot: Maschinen-Übersicht (My Machines)*
 
 ## Eigenschaften einer Maschine
 
@@ -16,21 +16,21 @@ Verwendung an der Maschine selbst.
 | Bezeichnung         | Eindeutiger Name (z. B. "Halle 2 - HM48")                   |
 | Hersteller          | z. B. Herzog GmbH                                            |
 | Modell              | Modellbezeichnung                                            |
-| Anzahl Klueppel     | Zahl der Spulentraeger                                       |
-| Fluegelteilkreis    | in mm                                                        |
-| Hoechstdrehzahl     | in U/min                                                     |
+| Anzahl Klüppel     | Zahl der Spulenträger                                       |
+| Flügelteilkreis    | in mm                                                        |
+| Höchstdrehzahl     | in U/min                                                     |
 | Bemerkung           | Frei-Text                                                    |
 
 ## Maschinenpark
 
 Die Liste **Maschinen-Park** zeigt alle erfassten Maschinen. Klicken Sie
-einen Eintrag an, um Details und Berechnungen fuer diese Maschine zu
-oeffnen.
+einen Eintrag an, um Details und Berechnungen für diese Maschine zu
+öffnen.
 
 ## Dokumente pro Maschine
 
-Pro Maschine koennen Sie Dokumente ablegen (z. B. PDFs mit Betriebs-
-anleitung, Wartungsplaene). Die Dateien werden im Workspace unter
+Pro Maschine können Sie Dokumente ablegen (z. B. PDFs mit Betriebs-
+anleitung, Wartungspläne). Die Dateien werden im Workspace unter
 
 ```
 <Workspace>\Machines\<MaschinenID>\documents\

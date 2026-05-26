@@ -1,4 +1,4 @@
-# Migration aus aelteren Versionen
+# Migration aus älteren Versionen
 
-Wenn Sie aus einer aelteren Version (vor 1.3) updaten, werden Benutzerdaten und Druckvorlagen automatisch ins neue Format migriert. Die Migration laeuft beim ersten Start einmalig im Hintergrund.
+Wenn Sie aus einer älteren Version (vor 1.3) updaten, werden Benutzerdaten und Druckvorlagen automatisch ins neue Format migriert. Die Migration läuft beim ersten Start einmalig im Hintergrund.
 

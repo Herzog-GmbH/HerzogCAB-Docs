@@ -1,18 +1,18 @@
 # Installation
 
-Dieses Kapitel fuehrt Sie durch die Erstinstallation von Herzog CAB unter
+Dieses Kapitel führt Sie durch die Erstinstallation von Herzog CAB unter
 Windows. Reservieren Sie sich rund 15 Minuten Zeit. Wenn Sie Updates
 installieren wollen, lesen Sie stattdessen das Kapitel
 [Updates](../updates/index.md).
 
-## Ablauf in Kuerze
+## Ablauf in Kürze
 
-1. [Systemvoraussetzungen pruefen](system-requirements.md)
-2. [Installer ausfuehren](installer.md)
-3. [Lizenz aktivieren](activate-license.md) (Wibu CodeMeter)
-4. [Erster Programmstart](first-start.md)
+1. [Systemvoraussetzungen prüfen](system-requirements.md)
+2. [Einsatz-Szenario klären](topology.md) (Single-User, Schicht, Netzwerk, RDP, Lizenzserver)
+3. [CodeMeter installieren](codemeter.md) (Wibu-Runtime, einmalig pro Rechner)
+4. [Herzog CAB installieren](installer.md)
+5. [Lizenz aktivieren](activate-license.md) (Dongle einstecken oder CmAct-Datei einspielen)
+6. [Erster Programmstart](first-start.md)
 
 !!! info "Sie haben kein Installationspaket erhalten?"
-    Wenden Sie sich an Ihren Herzog-Ansprechpartner oder schreiben Sie an
-    support@herzog-online.com. Sie erhalten von uns einen Download-Link
-    sowie Ihre Lizenzinformationen.
+    Wenden Sie sich an Ihren Herzog-Ansprechpartner oder schreiben Sie a

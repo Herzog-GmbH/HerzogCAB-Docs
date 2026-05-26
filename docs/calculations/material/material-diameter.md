@@ -22,6 +22,6 @@ Berechnet den Durchmesser eines Strangs aus der linearen Dichte und der Material
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

@@ -22,6 +22,6 @@ Berechnet Masse pro Meter und Gesamtmasse eines Seils.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

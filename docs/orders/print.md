@@ -1,4 +1,4 @@
 # Drucken
 
-Auftraege werden ueber eine [Druckvorlage](../print-templates/index.md) ausgedruckt. Ueblich sind Vorlagen fuer Produktionsbegleitschein, Materialliste und QR-Code-Etikett.
+Aufträge werden über eine [Druckvorlage](../print-templates/index.md) ausgedruckt. Üblich sind Vorlagen für Produktionsbegleitschein, Materialliste und QR-Code-Etikett.
 

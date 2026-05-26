@@ -8,7 +8,7 @@
 | Architektur           | x64                                     |
 
 Die aktuelle Version von Herzog CAB ist auf Windows 10 und 11 getestet.
-Aeltere Windows-Versionen werden nicht unterstuetzt.
+Ältere Windows-Versionen werden nicht unterstützt.
 
 ## Hardware
 
@@ -17,40 +17,35 @@ Aeltere Windows-Versionen werden nicht unterstuetzt.
 | Prozessor             | Dual-Core 2 GHz        | Quad-Core 2,5 GHz oder mehr |
 | Arbeitsspeicher       | 4 GB                   | 8 GB                        |
 | Freier Festplattenplatz | 500 MB              | 2 GB (Auftragsdaten)        |
-| Bildschirmaufloesung  | 1280 x 720             | 1920 x 1080 oder hoeher     |
+| Bildschirmauflösung  | 1280 x 720             | 1920 x 1080 oder höher     |
 
 ## Lizenz
 
-Fuer den Betrieb von Herzog CAB benoetigen Sie eine gueltige Lizenz.
-Diese wird ueber **Wibu CodeMeter** geprueft. Folgende Lizenzformen sind
-verfuegbar:
-
-- **Vollversion** (Artikel 88805) - alle Funktionen ohne Einschraenkung
-- **Demoversion** (Artikel 88806) - eingeschraenkter Funktionsumfang zum
-  Testen, mit zeitlicher Begrenzung
+Für den Betrieb von Herzog CAB benötigen Sie eine gültige Lizenz.
+Diese wird über **Wibu CodeMeter** geprüft. Aktuell verfügbar ist die
+**Vollversion** (Artikel 88805) mit allen Funktionen ohne Einschränkung.
 
 !!! info "Lizenz-Hinweise"
     Die Lizenz kann **lokal** auf einem CmDongle (USB-Stick) oder
-    **netzwerkweit** ueber einen Lizenzserver bereitgestellt werden.
-    Welche Variante bei Ihnen genutzt wird, klaert Ihr Herzog-Ansprechpartner.
+    **netzwerkweit** über einen Lizenzserver bereitgestellt werden.
+    Welche Variante bei Ihnen genutzt wird, klärt Ihr Herzog-Ansprechpartner.
 
 ## Berechtigungen
 
-Fuer die Installation benoetigen Sie **Administratorrechte** auf dem
-Zielrechner. Die taegliche Nutzung des Programms erfordert keine
+Für die Installation benötigen Sie **Administratorrechte** auf dem
+Zielrechner. Die tägliche Nutzung des Programms erfordert keine
 Administratorrechte.
 
 ## Internet
 
-Eine Internetverbindung ist nicht zwingend erforderlich. Sie wird benoetigt
-fuer:
+Eine Internetverbindung ist nicht zwingend erforderlich. Sie wird benötigt
+für:
 
-- Updates ueber das **Herzog CAB Maintenance**-Tool
-- Aktivierung einer Online-Lizenz
+- Updates über das **Herzog CAB Maintenance**-Tool
 - Senden von Feedback aus dem Programm
 
 ## Drucker
 
-Falls Sie Berechnungen oder Auftraege ausdrucken moechten, sollte ein
+Falls Sie Berechnungen oder Aufträge ausdrucken möchten, sollte ein
 Drucker installiert und unter Windows als Standarddrucker eingerichtet
 sein. Ein PDF-Drucker (z. B. *Microsoft Print to PDF*) reicht aus.

@@ -1,9 +1,9 @@
 # Kunden
 
 Im Kunden-Modul verwalten Sie die Stammdaten Ihrer Kunden, an die
-Herzog CAB-Auftraege gerichtet sind.
+Herzog CAB-Aufträge gerichtet sind.
 
-> :material-image-area: *Screenshot: Kunden-Uebersicht*
+> :material-image-area: *Screenshot: Kunden-Übersicht*
 
 ## Eigenschaften eines Kunden
 
@@ -13,14 +13,14 @@ Herzog CAB-Auftraege gerichtet sind.
 |---------------------|-------------------------------------------|
 | Kundenname          | Firmenname oder Privatkunde               |
 | Kundennummer        | Optional, frei vergebbar                  |
-| Anschrift           | Strasse, PLZ, Ort, Land                   |
+| Anschrift           | Straße, PLZ, Ort, Land                   |
 | Ansprechpartner     | Name, Position                            |
 | E-Mail              |                                           |
 | Telefon             |                                           |
 | Bemerkung           | Frei-Text                                 |
 
-## Verwendung in Auftraegen
+## Verwendung in Aufträgen
 
-Bei der Anlage eines [Auftrags](../orders/create.md) waehlen Sie den
+Bei der Anlage eines [Auftrags](../orders/create.md) wählen Sie den
 Kunden aus der Liste. Adresse und Ansprechpartner werden automatisch in
-die Druckvorlagen uebernommen.
+die Druckvorlagen übernommen.

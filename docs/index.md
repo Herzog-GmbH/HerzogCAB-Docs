@@ -6,13 +6,13 @@ hide:
 
 # Willkommen zum Herzog CAB Handbuch
 
-**Herzog CAB** ist die Kalkulations- und Designsoftware der Herzog GmbH fuer
+**Herzog CAB** ist die Kalkulations- und Designsoftware der Herzog GmbH für
 Flechtmaschinen. Mit Herzog CAB berechnen Sie Maschinen-, Material- und
-Produktparameter, entwerfen Flechtdesigns, verwalten Auftraege und drucken
+Produktparameter, entwerfen Flechtdesigns, verwalten Aufträge und drucken
 fertige Produktionsunterlagen.
 
-Dieses Handbuch richtet sich an **Anwender**, die Herzog CAB taeglich im
-Werk bedienen. Es fuehrt Sie von der Installation bis zur taeglichen Nutzung.
+Dieses Handbuch richtet sich an **Anwender**, die Herzog CAB täglich im
+Werk bedienen. Es führt Sie von der Installation bis zur täglichen Nutzung.
 
 ## Schnellnavigation
 
@@ -29,10 +29,10 @@ Werk bedienen. Es fuehrt Sie von der Installation bis zur taeglichen Nutzung.
 
     ---
 
-    Die [Erste Schritte](getting-started/index.md) zeigen Ihnen die Oberflaeche
+    Die [Erste Schritte](getting-started/index.md) zeigen Ihnen die Oberfläche
     und die wichtigsten Bedienelemente.
 
-- :material-calculator: __Sie wollen eine Berechnung durchfuehren?__
+- :material-calculator: __Sie wollen eine Berechnung durchführen?__
 
     ---
 
@@ -57,14 +57,14 @@ Werk bedienen. Es fuehrt Sie von der Installation bis zur taeglichen Nutzung.
 
     ---
 
-    Die Sektion [Hilfe und FAQ](help/index.md) sammelt Loesungen fuer
-    haeufige Probleme.
+    Die Sektion [Hilfe und FAQ](help/index.md) sammelt Lösungen für
+    häufige Probleme.
 
 </div>
 
 ## Was ist neu?
 
-Eine vollstaendige Liste aller Aenderungen finden Sie in den
+Eine vollständige Liste aller Änderungen finden Sie in den
 [Versionshinweisen](appendix/changelog.md).
 
 ## Support
@@ -74,4 +74,4 @@ Sie kommen nicht weiter? Lesen Sie zuerst die
 
 > :material-email: support@herzog-online.com
 
-oder benutzen Sie im Programm den Menuepunkt *Hilfe > Feedback*.
+oder benutzen Sie im Programm den Menüpunkt *Hilfe > Feedback*.

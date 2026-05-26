@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Rechnet zwischen den gebraeuchlichen Einheiten der linearen Dichte um (tex, dtex, denier, g/m).
+Rechnet zwischen den gebräuchlichen Einheiten der linearen Dichte um (tex, dtex, denier, g/m).
 
 > :material-image-area: *Screenshot: Berechnungsseite "Lineare Dichte umrechnen"*
 
@@ -22,6 +22,6 @@ Rechnet zwischen den gebraeuchlichen Einheiten der linearen Dichte um (tex, dtex
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

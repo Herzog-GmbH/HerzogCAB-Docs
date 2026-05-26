@@ -1,6 +1,6 @@
 # Auftrag anlegen
 
-> :material-alert-circle-outline: **TODO** *Inhalt fuer "Auftrag anlegen" ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Inhalt für "Auftrag anlegen" ergänzen.*
 
 Beschreibung folgt.
 

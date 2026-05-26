@@ -1,10 +1,10 @@
-# Fluegelteilkreis (Pitch Circle Diameter)
+# Flügelteilkreis (Pitch Circle Diameter)
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Der Teilkreisdurchmesser, auf dem die Klueppel ihre Bahnen ziehen.
+Der Teilkreisdurchmesser, auf dem die Klüppel ihre Bahnen ziehen.
 
-> :material-image-area: *Screenshot: Berechnungsseite "Fluegelteilkreis (Pitch Circle Diameter)"*
+> :material-image-area: *Screenshot: Berechnungsseite "Flügelteilkreis (Pitch Circle Diameter)"*
 
 ## Eingabe
 
@@ -22,6 +22,6 @@ Der Teilkreisdurchmesser, auf dem die Klueppel ihre Bahnen ziehen.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

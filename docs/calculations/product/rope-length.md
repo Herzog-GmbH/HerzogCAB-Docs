@@ -1,10 +1,10 @@
-# Seillaenge
+# Seillänge
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
 Wie viel fertiges Seil ergibt sich aus einem definierten Materialvorrat?
 
-> :material-image-area: *Screenshot: Berechnungsseite "Seillaenge"*
+> :material-image-area: *Screenshot: Berechnungsseite "Seillänge"*
 
 ## Eingabe
 
@@ -22,6 +22,6 @@ Wie viel fertiges Seil ergibt sich aus einem definierten Materialvorrat?
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

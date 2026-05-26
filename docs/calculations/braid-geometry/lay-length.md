@@ -1,10 +1,10 @@
-# Verlegelaenge
+# Verlegelänge
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Die **Verlegelaenge** (Lay Length) gibt den axialen Vorschub an, den ein Strang im Geflecht fuer eine volle Umdrehung um das Produkt benoetigt.
+Die **Verlegelänge** (Lay Length) gibt den axialen Vorschub an, den ein Strang im Geflecht für eine volle Umdrehung um das Produkt benötigt.
 
-> :material-image-area: *Screenshot: Berechnungsseite "Verlegelaenge"*
+> :material-image-area: *Screenshot: Berechnungsseite "Verlegelänge"*
 
 ## Eingabe
 
@@ -22,7 +22,7 @@ Die **Verlegelaenge** (Lay Length) gibt den axialen Vorschub an, den ein Strang 
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 ## Verwandte Berechnungen
 

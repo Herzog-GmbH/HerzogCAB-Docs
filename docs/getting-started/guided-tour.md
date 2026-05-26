@@ -1,14 +1,14 @@
 # Guided Tour
 
 Herzog CAB hat eingebaute, interaktive Touren, die Sie schrittweise durch
-einzelne Funktionsbereiche fuehren. Sie werden durch Pfeile und kurze
+einzelne Funktionsbereiche führen. Sie werden durch Pfeile und kurze
 Texte direkt im Programm geleitet.
 
 ## Tour starten
 
-* Menue *Werkzeuge > Tour anzeigen*
+* Menü *Werkzeuge > Tour anzeigen*
 
-Es oeffnet sich ein Auswahl-Dialog mit den verfuegbaren Touren:
+Es öffnet sich ein Auswahl-Dialog mit den verfügbaren Touren:
 
 > :material-image-area: *Screenshot: Tour-Auswahldialog*
 
@@ -21,13 +21,13 @@ Es oeffnet sich ein Auswahl-Dialog mit den verfuegbaren Touren:
 
 ## Tour durchlaufen
 
-* **Weiter** ueber den Pfeil rechts oder die Eingabetaste.
-* **Zurueck** ueber den Pfeil links.
-* **Abbrechen** ueber das X oben rechts in der Tour-Blase.
+* **Weiter** über den Pfeil rechts oder die Eingabetaste.
+* **Zurück** über den Pfeil links.
+* **Abbrechen** über das X oben rechts in der Tour-Blase.
 
 > :material-image-area: *Screenshot: Tour-Overlay im Hauptfenster*
 
-!!! tip "Tour fuer neue Bediener"
+!!! tip "Tour für neue Bediener"
     Wenn Sie einen neuen Bediener einlernen, lassen Sie ihn die "Erste
     Schritte"-Tour einmal komplett durchlaufen. Spart Ihnen viel
-    Erklaerzeit.
+    Erklärzeit.

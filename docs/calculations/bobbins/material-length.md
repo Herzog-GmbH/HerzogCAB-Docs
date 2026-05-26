@@ -1,10 +1,10 @@
-# Materiallaenge auf Spule
+# Materiallänge auf Spule
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
 Wie viel Material passt auf eine Spule? Auf Basis des Spulen-volumens und der linearen Dichte des Materials.
 
-> :material-image-area: *Screenshot: Berechnungsseite "Materiallaenge auf Spule"*
+> :material-image-area: *Screenshot: Berechnungsseite "Materiallänge auf Spule"*
 
 ## Eingabe
 
@@ -22,6 +22,6 @@ Wie viel Material passt auf eine Spule? Auf Basis des Spulen-volumens und der li
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

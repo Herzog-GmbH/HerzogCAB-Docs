@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Berechnet den Aussendurchmesser des fertigen Geflechts auf Basis der Materialeigenschaften und der Klueppelzahl.
+Berechnet den Aussendurchmesser des fertigen Geflechts auf Basis der Materialeigenschaften und der Klüppelzahl.
 
 > :material-image-area: *Screenshot: Berechnungsseite "Produktdurchmesser"*
 
@@ -22,6 +22,6 @@ Berechnet den Aussendurchmesser des fertigen Geflechts auf Basis der Materialeig
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

@@ -1,10 +1,10 @@
-# Rohrtraeger
+# Rohrträger
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Tube Carrier - Material- und Klueppel-Berechnung fuer das Umflechten von Rohren.
+Tube Carrier - Material- und Klüppel-Berechnung für das Umflechten von Rohren.
 
-> :material-image-area: *Screenshot: Berechnungsseite "Rohrtraeger"*
+> :material-image-area: *Screenshot: Berechnungsseite "Rohrträger"*
 
 ## Eingabe
 
@@ -22,6 +22,6 @@ Tube Carrier - Material- und Klueppel-Berechnung fuer das Umflechten von Rohren.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

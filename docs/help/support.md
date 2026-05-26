@@ -4,12 +4,11 @@
 
 **Telefon:** siehe Herzog-Website
 
-**Im Programm:** Menue *Hilfe > Feedback*
+**Im Programm:** Menü *Hilfe > Feedback*
 
 Bitte nennen Sie immer:
 
-* Versionsnummer (siehe *Hilfe > Ueber HerzogCAB*)
+* Versionsnummer (siehe *Hilfe > Über HerzogCAB*)
 * Betriebssystem (Windows 10 / 11)
-* Lizenztyp (Vollversion / Demo)
 * Eine Beschreibung, was Sie getan haben und was passiert ist.
 

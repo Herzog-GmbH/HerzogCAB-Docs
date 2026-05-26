@@ -1,10 +1,10 @@
-# Rohrueberzug
+# Rohrüberzug
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
 Tube Covering - Berechnung der Mantel-Schicht.
 
-> :material-image-area: *Screenshot: Berechnungsseite "Rohrueberzug"*
+> :material-image-area: *Screenshot: Berechnungsseite "Rohrüberzug"*
 
 ## Eingabe
 
@@ -22,6 +22,6 @@ Tube Covering - Berechnung der Mantel-Schicht.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Visualisierung des Flechtmusters auf Grundlage der Klueppel-Bahnen.
+Visualisierung des Flechtmusters auf Grundlage der Klüppel-Bahnen.
 
 > :material-image-area: *Screenshot: Berechnungsseite "Flechtmuster (Braid Mapping)"*
 
@@ -22,6 +22,6 @@ Visualisierung des Flechtmusters auf Grundlage der Klueppel-Bahnen.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

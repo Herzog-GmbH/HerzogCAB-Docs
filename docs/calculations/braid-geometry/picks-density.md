@@ -22,10 +22,10 @@ Die **Flechtdichte** (Picks per Inch / pro cm) ist eine wichtige Kennzahl, die u
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 ## Verwandte Berechnungen
 
 * [Flechtwinkel](braid-angle.md)
-* [Verlegelaenge](lay-length.md)
+* [Verlegelänge](lay-length.md)
 

@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Berechnet das verfuegbare Wickelvolumen einer Spule aus deren Geometrie (Aussen-, Innendurchmesser, Flanschbreite).
+Berechnet das verfügbare Wickelvolumen einer Spule aus deren Geometrie (Aussen-, Innendurchmesser, Flanschbreite).
 
 > :material-image-area: *Screenshot: Berechnungsseite "Spulenvolumen"*
 
@@ -22,6 +22,6 @@ Berechnet das verfuegbare Wickelvolumen einer Spule aus deren Geometrie (Aussen-
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

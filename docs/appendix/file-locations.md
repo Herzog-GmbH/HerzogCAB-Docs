@@ -1,13 +1,13 @@
 # Dateispeicherorte
 
-## Workspace (vom Benutzer waehlbar)
+## Workspace (vom Benutzer wählbar)
 
 ```
 <Workspace>\
 ├── customers.json           Kunden
 ├── machines.json            Maschinen
 ├── colors.json              Farben
-├── jobs.json                Auftraege
+├── jobs.json                Aufträge
 ├── products.json            Produkte
 ├── materials.json           (legacy) Materialliste
 ├── bobbins.json             (legacy) Spulenliste
@@ -15,7 +15,7 @@
 ├── Machines\<MaschinenID>\documents\
 ├── Printouts\
 │   ├── templates\           Druckvorlagen (eine .json je Vorlage)
-│   └── assets\              Bilder/Logos fuer Vorlagen
+│   └── assets\              Bilder/Logos für Vorlagen
 └── auth\
     └── assignments.json     Zuordnungen Benutzer <-> Rolle
 ```
@@ -33,7 +33,7 @@
 
 ## Benutzer-Registry
 
-Fenstergroessen, Spaltenbreiten und letzter Zustand der Oberflaeche werden in der Windows-Registry abgelegt unter
+Fenstergrößen, Spaltenbreiten und letzter Zustand der Oberfläche werden in der Windows-Registry abgelegt unter
 
 ```
 HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab

@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Berechnung der noetigen Garnbreite fuer eine geschlossene Mantel-Schicht.
+Berechnung der nötigen Garnbreite für eine geschlossene Mantel-Schicht.
 
 > :material-image-area: *Screenshot: Berechnungsseite "Garnbreite (Tube Yarn Width)"*
 
@@ -22,6 +22,6 @@ Berechnung der noetigen Garnbreite fuer eine geschlossene Mantel-Schicht.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

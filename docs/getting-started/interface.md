@@ -1,48 +1,48 @@
-# Oberflaeche im Ueberblick
+# Oberfläche im Überblick
 
 > :material-image-area: *Screenshot: Hauptfenster mit nummerierten Bereichen (1-5)*
 
-Das Hauptfenster von Herzog CAB ist in fuenf Bereiche gegliedert:
+Das Hauptfenster von Herzog CAB ist in fünf Bereiche gegliedert:
 
-## 1. Menueleiste (oben)
+## 1. Menüleiste (oben)
 
-Enthaelt die Top-Level-Menues:
+Enthält die Top-Level-Menüs:
 
-| Menue       | Inhalt                                                  |
+| Menü       | Inhalt                                                  |
 |-------------|---------------------------------------------------------|
 | **Datei**   | Drucken, Beenden                                        |
 | **Ansicht** | Navigationsleiste ein-/ausblenden, CAB-Calculation, CAB-Design |
-| **Werkzeuge** | Einstellungen, Sprache aendern, Tour anzeigen        |
-| **Hilfe**   | Ueber HerzogCAB, Ueber Qt, Feedback, Updates            |
+| **Werkzeuge** | Einstellungen, Sprache ändern, Tour anzeigen        |
+| **Hilfe**   | Über HerzogCAB, Über Qt, Feedback, Updates            |
 
 ## 2. Navigationsbaum (links)
 
-Hier waehlen Sie, welcher Bereich des Programms in der Mitte angezeigt
+Hier wählen Sie, welcher Bereich des Programms in der Mitte angezeigt
 wird. Aufgebaut als Baum:
 
 * **Stammdaten** - Materialien, Spulen, Maschinen, Kunden, Farben
 * **Berechnungen** - alle Kalkulations-Module
-* **Auftraege** - Auftragsverwaltung
+* **Aufträge** - Auftragsverwaltung
 * **Designer** - Flechtmuster entwerfen
-* **Druckvorlagen** - Vorlagen fuer Ausdrucke
+* **Druckvorlagen** - Vorlagen für Ausdrucke
 
-Die Navigation laesst sich ueber Menue *Ansicht > Navigation* ein- und
+Die Navigation lässt sich über Menü *Ansicht > Navigation* ein- und
 ausblenden.
 
 ## 3. Hauptbereich (Mitte)
 
-Zeigt den Inhalt der gerade gewaehlten Seite. Bei Berechnungen sind
+Zeigt den Inhalt der gerade gewählten Seite. Bei Berechnungen sind
 hier die Eingabefelder oben und die Ergebnisse unten.
 
 ## 4. Verlauf-Sidebar (rechts)
 
-Listet die zuletzt geoeffneten Berechnungen oder Seiten. Klicken Sie
-einen Eintrag an, um direkt dorthin zurueckzuspringen.
+Listet die zuletzt geöffneten Berechnungen oder Seiten. Klicken Sie
+einen Eintrag an, um direkt dorthin zurückzuspringen.
 
 ## 5. Profil-Leiste (unten links)
 
 Zeigt den aktuell angemeldeten Benutzer und das Profilbild. Klicken Sie
-darauf fuer:
+darauf für:
 
 * eigenes Profil bearbeiten (siehe [Eigenes Profil](../users/my-profile.md))
 * abmelden

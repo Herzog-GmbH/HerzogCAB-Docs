@@ -1,66 +1,99 @@
-# Installer ausfuehren
+# Herzog CAB installieren
 
-## 1. Installer starten
+!!! info "Voraussetzung"
+    Die [CodeMeter-Runtime](codemeter.md) sollte zuerst installiert
+    sein, sonst meldet das Programm beim ersten Start eine fehlende
+    Lizenz-Komponente.
 
-Doppelklicken Sie auf die Datei `HerzogCAB-Setup-x.y.z.exe` (`x.y.z` steht
-fuer die Versionsnummer, z. B. `1.3.4`). Windows fragt nach
-Administratorrechten - bestaetigen Sie mit **Ja**.
+## Woher bekommen Sie den Installer?
 
-> :material-image-area: *Screenshot: Windows-UAC-Dialog*
+Wie bei CodeMeter gibt es zwei Bezugsquellen:
 
-## 2. Willkommen-Seite
+| Bezugsquelle                       | Wann?                                                                 |
+|------------------------------------|-----------------------------------------------------------------------|
+| **Download vom Herzog-Feedback-Repo** | Immer möglich, liefert die aktuellste Version. **Empfohlen.** Öffnen Sie [github.com/Herzog-GmbH/HerzogCAB-Feedback](https://github.com/Herzog-GmbH/HerzogCAB-Feedback) und laden Sie den aktuellen Installer (z.B. `HerzogCAB_Installer_1.3.6.exe`) herunter. |
+| **Mitgelieferter USB-Stick**       | Nur wenn Sie einen **CmDongle** bestellt haben — auf dem mitgelieferten Software-USB-Stick liegt der Installer mit dabei. Praktisch, wenn der Rechner kein Internet hat. |
+
+Doppelklicken Sie die heruntergeladene oder vom USB-Stick gestartete
+Datei und bestätigen Sie die Windows-Abfrage nach Administratorrechten
+mit **Ja**.
+
+---
+
+## Setup-Assistent durchlaufen
+
+Der Einrichtungsassistent führt Sie in sieben Schritten durch die
+Installation. Die linke Seitenleiste zeigt jederzeit, wo Sie sich
+befinden.
+
+### Schritt 1 - Willkommen
+
+![Willkommen zum Herzog CAB-Einrichtungsassistenten.](../assets/screenshots/installer/1-willkommen.png)
 
 Klicken Sie auf **Weiter**.
 
-> :material-image-area: *Screenshot: Willkommen-Seite des Installers*
+### Schritt 2 - Installationsordner
 
-## 3. Installationsverzeichnis
+![Installationsordner mit Vorgabe C:\\Program Files\\Herzog\\HerzogCAB.](../assets/screenshots/installer/2-installationsordner.png)
 
-Standardmaessig wird Herzog CAB nach
+Standardmäßig wird Herzog CAB nach
 
 ```
 C:\Program Files\Herzog\HerzogCAB
 ```
 
-installiert. Sie koennen einen anderen Ordner waehlen - belassen Sie es
-aber besser bei der Vorgabe, sofern Sie keinen besonderen Grund haben.
-
-> :material-image-area: *Screenshot: Auswahl Installationsverzeichnis*
-
-## 4. Komponenten-Auswahl
-
-Lassen Sie alle Haken gesetzt. Die Hauptkomponente *Herzog CAB Main
-Component* ist Pflicht; das *Maintenance Tool* benoetigen Sie spaeter
-fuer Updates.
-
-> :material-image-area: *Screenshot: Komponenten-Auswahl*
-
-## 5. Lizenzvereinbarung
-
-Lesen Sie die Vereinbarung, akzeptieren Sie sie ueber das entsprechende
-Optionsfeld und klicken Sie auf **Weiter**.
-
-> :material-image-area: *Screenshot: Lizenzvereinbarung*
-
-## 6. Start-Menue-Eintrag
-
-Der Installer legt unter dem Start-Menue-Ordner *Herzog* zwei Eintraege an:
-
-- **HerzogCAB** - Hauptanwendung
-- **HerzogCAB Maintenance** - Tool fuer Updates und Deinstallation
+installiert. Sie können über **Durchsuchen** einen anderen Ordner
+wählen — wir empfehlen aber, die Vorgabe zu belassen, sofern kein
+besonderer Grund dagegen spricht.
 
 Klicken Sie auf **Weiter**.
 
-## 7. Installation durchfuehren
+### Schritt 3 - Komponenten auswählen
 
-Klicken Sie auf **Installieren**. Der Vorgang dauert je nach Rechner
-1-3 Minuten. Schliessen Sie den Installer am Ende mit **Fertigstellen**.
+![Komponentenauswahl mit Herzog Cab Main Component.](../assets/screenshots/installer/3-komponenten.png)
 
-!!! tip "Desktop-Verknuepfung"
-    Der Installer legt automatisch ein Desktop-Symbol fuer Herzog CAB an.
-    Falls Sie das nicht wuenschen, koennen Sie es spaeter ueber
-    Rechtsklick > **Loeschen** entfernen.
+Aktuell gibt es nur eine Komponente: **Herzog Cab Main Component**
+(die Hauptanwendung, ca. 82 MB). Lassen Sie das Häkchen gesetzt und
+klicken Sie auf **Weiter**.
 
-## Naechster Schritt
+### Schritt 4 - Lizenzabkommen
 
-Bevor Sie das Programm starten, sollten Sie die [Lizenz aktivieren](activate-license.md).
+![Lizenzabkommen mit Häkchen 'Ich akzeptiere die Lizenzvereinbarung'.](../assets/screenshots/installer/4-lizenzabkommen.png)
+
+Lesen Sie das *License Agreement* der Herzog GmbH, setzen Sie das
+Häkchen bei **Ich akzeptiere die Lizenzvereinbarung** und klicken Sie
+auf **Weiter**.
+
+### Schritt 5 - Verknüpfungen im Startmenü
+
+![Auswahl des Startmenü-Ordners mit Vorgabe 'Herzog'.](../assets/screenshots/installer/5-startmenue.png)
+
+Der Installer legt eine Verknüpfung im Windows-Startmenü an. Vorgegeben
+ist der Ordner-Name **Herzog**. Sie können einen anderen Namen tippen
+oder einen vorhandenen Ordner aus der Liste auswählen.
+
+Klicken Sie auf **Weiter**.
+
+### Schritt 6 - Bereit zum Installieren
+
+![Bereit zum Installieren - Bestätigungsseite vor dem Start.](../assets/screenshots/installer/6-bereit.png)
+
+Der Assistent fasst zusammen, was passieren wird (Festplattenbedarf,
+Zielordner). Klicken Sie auf **Installieren**.
+
+Der Vorgang dauert je nach Rechner eine bis zwei Minuten. Während der
+Installation sehen Sie einen Fortschrittsbalken.
+
+### Schritt 7 - Abschließen
+
+![Den Herzog CAB-Assistent abschließen.](../assets/screenshots/installer/7-abschliessen.png)
+
+Klicken Sie auf **Abschließen**. Herzog CAB ist jetzt installiert und
+über das Startmenü unter *Herzog > Herzog CAB* erreichbar.
+
+---
+
+## Nächster Schritt
+
+Bevor Sie das Programm zum ersten Mal starten, sollten Sie die
+[Lizenz aktivieren](activate-license.md).

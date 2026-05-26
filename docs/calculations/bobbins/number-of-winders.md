@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Wie viele Spulenwickler werden benoetigt, um den taeglichen Spulenbedarf zu decken?
+Wie viele Spulenwickler werden benötigt, um den täglichen Spulenbedarf zu decken?
 
 > :material-image-area: *Screenshot: Berechnungsseite "Anzahl Spulenwickler"*
 
@@ -22,6 +22,6 @@ Wie viele Spulenwickler werden benoetigt, um den taeglichen Spulenbedarf zu deck
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

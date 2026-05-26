@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Anordnung der Horn Gears fuer eine bestimmte Klueppelzahl.
+Anordnung der Horn Gears für eine bestimmte Klüppelzahl.
 
 > :material-image-area: *Screenshot: Berechnungsseite "Horn Gear Layout"*
 
@@ -22,6 +22,6 @@ Anordnung der Horn Gears fuer eine bestimmte Klueppelzahl.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

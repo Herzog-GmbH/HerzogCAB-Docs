@@ -1,10 +1,10 @@
-# Wechselraeder Gummiantrieb
+# Wechselräder Gummiantrieb
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Berechnet die noetige Zahnradkombination fuer eine gewuenschte Verlegelaenge (Change Gear Rubber Feed Device).
+Berechnet die nötige Zahnradkombination für eine gewünschte Verlegelänge (Change Gear Rubber Feed Device).
 
-> :material-image-area: *Screenshot: Berechnungsseite "Wechselraeder Gummiantrieb"*
+> :material-image-area: *Screenshot: Berechnungsseite "Wechselräder Gummiantrieb"*
 
 ## Eingabe
 
@@ -22,6 +22,6 @@ Berechnet die noetige Zahnradkombination fuer eine gewuenschte Verlegelaenge (Ch
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

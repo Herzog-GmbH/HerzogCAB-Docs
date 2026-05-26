@@ -9,4 +9,4 @@ Lineare Dichte, Materialdurchmesser, Kern-/Mantel-Berechnungen.
 * [Lineare Dichte](linear-density.md)
 * [Materialdurchmesser](material-diameter.md)
 
-> :material-image-area: *Screenshot: Uebersichtsseite "Material" mit Karten je Berechnung*
+> :material-image-area: *Screenshot: Übersichtsseite "Material" mit Karten je Berechnung*

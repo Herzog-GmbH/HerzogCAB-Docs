@@ -1,7 +1,7 @@
-# Designer-Oberflaeche
+# Designer-Oberfläche
 
-> :material-alert-circle-outline: **TODO** *Inhalt fuer "Designer-Oberflaeche" ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Inhalt für "Designer-Oberfläche" ergänzen.*
 
 Beschreibung folgt.
 
-> :material-image-area: *Screenshot: Designer-Oberflaeche*
+> :material-image-area: *Screenshot: Designer-Oberfläche*

@@ -1,10 +1,10 @@
-# Horn Gear Uebersicht
+# Horn Gear Übersicht
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Tabellarische Uebersicht moeglicher Horn-Gear-Konfigurationen.
+Tabellarische Übersicht möglicher Horn-Gear-Konfigurationen.
 
-> :material-image-area: *Screenshot: Berechnungsseite "Horn Gear Uebersicht"*
+> :material-image-area: *Screenshot: Berechnungsseite "Horn Gear Übersicht"*
 
 ## Eingabe
 
@@ -22,6 +22,6 @@ Tabellarische Uebersicht moeglicher Horn-Gear-Konfigurationen.
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

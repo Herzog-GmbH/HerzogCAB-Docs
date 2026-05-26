@@ -1,6 +1,6 @@
 # Farben und Muster
 
-> :material-alert-circle-outline: **TODO** *Inhalt fuer "Farben und Muster" ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Inhalt für "Farben und Muster" ergänzen.*
 
 Beschreibung folgt.
 

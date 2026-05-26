@@ -1,6 +1,6 @@
 # Auftrag bearbeiten
 
-> :material-alert-circle-outline: **TODO** *Inhalt fuer "Auftrag bearbeiten" ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Inhalt für "Auftrag bearbeiten" ergänzen.*
 
 Beschreibung folgt.
 

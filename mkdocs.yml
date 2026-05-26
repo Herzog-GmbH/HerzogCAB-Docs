@@ -9,7 +9,7 @@
 # =============================================================================
 
 site_name: Herzog CAB - Handbuch
-site_description: Anwenderhandbuch fuer Herzog CAB - die Kalkulations- und Designsoftware fuer Flechtmaschinen.
+site_description: Anwenderhandbuch für Herzog CAB - die Kalkulations- und Designsoftware für Flechtmaschinen.
 site_author: Herzog GmbH
 site_url: https://herzog-gmbh.github.io/HerzogCAB-Docs/
 
@@ -128,54 +128,10 @@ plugins:
   - search:
       lang:
         - de
-        - en
-  - i18n:
-      docs_structure: suffix
-      languages:
-        - locale: de
-          default: true
-          name: Deutsch
-          build: true
-          site_name: Herzog CAB - Handbuch
-        - locale: en
-          name: English
-          build: true
-          site_name: Herzog CAB - User Manual
-          nav_translations:
-            # Top-Tabs
-            Start: Home
-            Einrichten: Setup
-            Bedienen: Operation
-            Verwalten: Administration
-            Hilfe: Help
-            # Hauptkapitel
-            Installation: Installation
-            Erste Schritte: Getting Started
-            Updates: Updates
-            Deinstallation: Uninstallation
-            Stammdaten: Master Data
-            Berechnungen: Calculations
-            Design: Design
-            Auftraege: Orders
-            Druckvorlagen: Print Templates
-            Benutzer und Rollen: Users and Roles
-            Workspace und Profile: Workspace and Profiles
-            Einstellungen: Settings
-            Hilfe und FAQ: Help and FAQ
-            Anhang: Appendix
-            # Berechnungs-Subgruppen
-            Flechtgeometrie: Braid Geometry
-            Material: Material
-            Spulen: Bobbins
-            Maschine: Machine
-            Produkt: Product
-            Rohrgeflecht: Tubular Braid
-            Spezial: Advanced
-            # Weitere haeufige Begriffe
-            Materialien: Materials
-            Maschinen: Machines
-            Kunden: Customers
-            Farben: Colors
+  # i18n-Plugin und mehrsprachige Konfiguration sind vorerst entfernt.
+  # Wir pflegen die Doku zunaechst nur auf Deutsch und uebersetzen erst,
+  # wenn der DE-Stand stabil ist. Dann i18n wieder aktivieren und
+  # nav_translations/.en.md-Dateien anlegen.
   # - mike:                      # AKTIVIEREN fuer versionierte Doku (1.3, 1.4, latest)
   #     version_selector: true
   #     css_dir: css
@@ -209,7 +165,9 @@ nav:
       - Installation:
           - installation/index.md
           - Systemvoraussetzungen: installation/system-requirements.md
-          - Installer ausfuehren: installation/installer.md
+          - Einsatz-Szenarien: installation/topology.md
+          - CodeMeter installieren: installation/codemeter.md
+          - Herzog CAB installieren: installation/installer.md
           - Lizenz aktivieren: installation/activate-license.md
           - Erster Programmstart: installation/first-start.md
       - Erste Schritte:
@@ -288,11 +246,11 @@ nav:
           - Designer-Oberflaeche: design/designer.md
           - Farben und Muster: design/colors.md
           - Produkt-Design: design/product.md
-      - Auftraege:
+      - Aufträge:
           - orders/index.md
           - Auftrag anlegen: orders/create.md
           - Auftrag bearbeiten: orders/edit.md
-          - QR-Code fuer die Maschine: orders/qr-code.md
+          - QR-Code für die Maschine: orders/qr-code.md
           - Drucken: orders/print.md
       - Druckvorlagen:
           - print-templates/index.md

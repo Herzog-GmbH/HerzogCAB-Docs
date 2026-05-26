@@ -15,16 +15,16 @@ Administrator-Konto. Dieses Konto:
 |---------------------|------------------------------------------------------------------------------|
 | **Anmeldename**     | Wird im Login-Dialog eingegeben. Klein- und Grossbuchstaben werden nicht unterschieden. |
 | **Anzeigename**     | Voll ausgeschriebener Name, der im Programm angezeigt wird.                  |
-| **E-Mail** (optional) | Wird fuer Passwort-Reset verwendet (sofern eingerichtet).                  |
-| **Passwort**        | Mindestens 8 Zeichen. Enthaelt mindestens einen Buchstaben und eine Zahl.   |
-| **Passwort wiederholen** | Muss exakt mit "Passwort" uebereinstimmen.                              |
-| **Profilbild** (optional) | Bild aus Datei waehlen (JPG/PNG). Kann jederzeit geaendert werden.    |
+| **E-Mail** (optional) | Wird für Passwort-Reset verwendet (sofern eingerichtet).                  |
+| **Passwort**        | Mindestens 8 Zeichen. Enthält mindestens einen Buchstaben und eine Zahl.   |
+| **Passwort wiederholen** | Muss exakt mit "Passwort" übereinstimmen.                              |
+| **Profilbild** (optional) | Bild aus Datei wählen (JPG/PNG). Kann jederzeit geändert werden.    |
 
 ## Praktische Hinweise
 
 !!! tip "Wer sollte Administrator sein?"
-    Idealerweise eine Person, die **organisatorisch** fuer Herzog CAB im
-    Werk verantwortlich ist - z. B. ein Schichtfuehrer oder Werkstattleiter.
+    Idealerweise eine Person, die **organisatorisch** für Herzog CAB im
+    Werk verantwortlich ist - z. B. ein Schichtführer oder Werkstattleiter.
     Reine Maschinenbediener bekommen meist die Rolle *Produktion* oder
     *Nur lesen*.
 
@@ -34,8 +34,8 @@ Administrator-Konto. Dieses Konto:
 
 ## Wie geht es weiter?
 
-Nach dem Anlegen des Admins koennen Sie:
+Nach dem Anlegen des Admins können Sie:
 
-* Weitere Benutzer ueber [Benutzer verwalten](../users/manage.md)
-  anlegen - z. B. Maschinenbediener mit eingeschraenkten Rechten.
+* Weitere Benutzer über [Benutzer verwalten](../users/manage.md)
+  anlegen - z. B. Maschinenbediener mit eingeschränkten Rechten.
 * Direkt mit den [Stammdaten](../master-data/index.md) starten.

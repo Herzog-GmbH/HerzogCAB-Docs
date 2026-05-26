@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Berechnung fuer Geflechte, die aus Kernstraengen mit darum gefuehrten Mantelstraengen bestehen.
+Berechnung für Geflechte, die aus Kernsträngen mit darum geführten Mantelsträngen bestehen.
 
 > :material-image-area: *Screenshot: Berechnungsseite "Kern- und Mantelseile"*
 
@@ -22,6 +22,6 @@ Berechnung fuer Geflechte, die aus Kernstraengen mit darum gefuehrten Mantelstra
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

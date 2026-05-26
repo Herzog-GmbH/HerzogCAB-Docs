@@ -2,7 +2,7 @@
 
 > :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
 
-Berechnet, wie schnell das Produkt produziert wird - aus Drehzahl, Klueppelzahl und Verlegelaenge.
+Berechnet, wie schnell das Produkt produziert wird - aus Drehzahl, Klüppelzahl und Verlegelänge.
 
 > :material-image-area: *Screenshot: Berechnungsseite "Produktionsgeschwindigkeit"*
 
@@ -22,6 +22,6 @@ Berechnet, wie schnell das Produkt produziert wird - aus Drehzahl, Klueppelzahl 
 
 ## Hinweise zur Anwendung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergaenzen.*
+> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
 
 

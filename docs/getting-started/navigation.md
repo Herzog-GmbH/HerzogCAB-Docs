@@ -19,40 +19,40 @@ Berechnungen
   ├─ Produkt
   ├─ Rohrgeflecht
   └─ Spezial
-Auftraege
+Aufträge
 Designer
 Druckvorlagen
 Benutzer
 Einstellungen
 ```
 
-Klicken Sie einen Eintrag an, um die zugehoerige Seite zu oeffnen. Eintraege
+Klicken Sie einen Eintrag an, um die zugehörige Seite zu öffnen. Einträge
 mit Pfeil-Symbol enthalten Unterpunkte, die sich aufklappen lassen.
 
 ## Verlauf
 
-Beim Arbeiten merkt sich Herzog CAB die zuletzt geoeffneten Berechnungen
+Beim Arbeiten merkt sich Herzog CAB die zuletzt geöffneten Berechnungen
 und Seiten in einem **Verlauf** auf der rechten Seite. Vorteile:
 
-* Schneller Sprung zu kuerzlich geoeffneten Berechnungen.
+* Schneller Sprung zu kürzlich geöffneten Berechnungen.
 * Bei Berechnungen werden Ihre Eingabewerte zwischengespeichert - Sie
-  koennen also kurz auf eine andere Seite wechseln und die ursprueng-
-  liche Berechnung mit allen Werten wieder oeffnen.
+  können also kurz auf eine andere Seite wechseln und die ursprüng-
+  liche Berechnung mit allen Werten wieder öffnen.
 
 > :material-image-area: *Screenshot: Verlauf-Sidebar*
 
-!!! info "Verlauf zuruecksetzen"
+!!! info "Verlauf zurücksetzen"
     Beim Programmstart wird der Verlauf neu aufgebaut. Beim Beenden
     werden die Eingabewerte verworfen.
 
-## Tastenkuerzel zur Navigation
+## Tastenkürzel zur Navigation
 
 | Tastenkombination     | Wirkung                                  |
 |-----------------------|------------------------------------------|
 | ++ctrl+f++            | Schnellsuche im Navigationsbaum          |
-| ++alt+left++          | Zurueck im Verlauf                       |
-| ++alt+right++         | Vorwaerts im Verlauf                     |
+| ++alt+left++          | Zurück im Verlauf                       |
+| ++alt+right++         | Vorwärts im Verlauf                     |
 | ++ctrl+p++            | Drucken                                  |
-| ++f1++                | Online-Hilfe oeffnen                     |
+| ++f1++                | Online-Hilfe öffnen                     |
 
-Eine vollstaendige Liste finden Sie unter [Tastenkuerzel](../appendix/keyboard-shortcuts.md).
+Eine vollständige Liste finden Sie unter [Tastenkürzel](../appendix/keyboard-shortcuts.md).

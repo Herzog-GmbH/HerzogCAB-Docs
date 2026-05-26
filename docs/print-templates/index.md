@@ -1,6 +1,6 @@
 # Druckvorlagen
 
-Druckvorlagen bestimmen, wie Berechnungen, Auftraege oder Stammdaten ausgedruckt aussehen. Sie sind zentral pro Workspace abgelegt unter `Printouts/templates/`.
+Druckvorlagen bestimmen, wie Berechnungen, Aufträge oder Stammdaten ausgedruckt aussehen. Sie sind zentral pro Workspace abgelegt unter `Printouts/templates/`.
 
 * [Vorlagen verwalten](manage.md)
 * [Editor-Aufbau](editor.md)

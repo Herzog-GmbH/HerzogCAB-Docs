@@ -1,4 +1,4 @@
 # Speicherorte
 
-Anzeige (read-only) der aktuellen Pfade fuer Workspace, Druckvorlagen, Maschinendokumente und globale Daten (ProgramData).
+Anzeige (read-only) der aktuellen Pfade für Workspace, Druckvorlagen, Maschinendokumente und globale Daten (ProgramData).
 

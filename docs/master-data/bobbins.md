@@ -1,9 +1,9 @@
 # Spulen
 
 Im Spulen-Editor (Bobbin Editor) pflegen Sie die Spulentypen, die auf
-Ihren Maschinen zum Einsatz kommen. Ueber die Spuleneigenschaften (z. B.
-Volumen, Hub, Flanschdurchmesser) berechnet Herzog CAB anschliessend
-Materiallaengen, Standzeiten und Wechselintervalle.
+Ihren Maschinen zum Einsatz kommen. Über die Spuleneigenschaften (z. B.
+Volumen, Hub, Flanschdurchmesser) berechnet Herzog CAB anschließend
+Materiallängen, Standzeiten und Wechselintervalle.
 
 > :material-image-area: *Screenshot: Spulen-Editor (Bobbin Editor)*
 
@@ -25,5 +25,5 @@ Materiallaengen, Standzeiten und Wechselintervalle.
 Spulen werden in folgenden Berechnungen herangezogen:
 
 * [Spulenvolumen](../calculations/bobbins/bobbin-volume.md)
-* [Materiallaenge auf Spule](../calculations/bobbins/material-length.md)
+* [Materiallänge auf Spule](../calculations/bobbins/material-length.md)
 * [Laufzeit und Spulensatz](../calculations/machine/run-time-bobbin-set.md)
