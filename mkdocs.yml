@@ -11,7 +11,9 @@
 site_name: Herzog CAB - Handbuch
 site_description: Anwenderhandbuch für Herzog CAB - die Kalkulations- und Designsoftware für Flechtmaschinen.
 site_author: Herzog GmbH
-site_url: https://herzog-gmbh.github.io/HerzogCAB-Docs/
+# Das Handbuch wird unter /handbuch/ ausgeliefert; auf cab.herzog-online.com
+# umstellen, sobald die Custom Domain in den Pages-Settings aktiv ist.
+site_url: https://herzog-gmbh.github.io/HerzogCAB-Docs/handbuch/
 
 # -----------------------------------------------------------------------------
 # Repository (Edit-Buttons in der Doku)

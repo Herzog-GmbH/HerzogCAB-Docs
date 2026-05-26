@@ -1,4 +1,4 @@
-name: Build and Deploy Docs
+name: Build and Deploy Site
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'docs/**'
+      - 'homepage/**'
       - 'mkdocs.yml'
       - 'requirements.txt'
       - '.github/workflows/docs.yml'
@@ -38,8 +39,21 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Schritt 1: Landing-Page (homepage/) als Root des Sites kopieren.
+      # Das gibt uns cab.herzog-online.com/ -> Produkt-Uebersichtsseite.
+      - name: Stage homepage as site root
+        run: |
+          mkdir -p _site
+          if [ -d homepage ]; then
+            cp -r homepage/. _site/
+          else
+            echo "Hinweis: homepage/ fehlt - es wird nur das Handbuch gebaut."
+          fi
+
+      # Schritt 2: mkdocs in _site/handbuch/ bauen.
+      # Das gibt uns cab.herzog-online.com/handbuch/ -> Online-Handbuch.
       - name: Build documentation
-        run: mkdocs build --strict --site-dir ./_site
+        run: mkdocs build --strict --site-dir ./_site/handbuch
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

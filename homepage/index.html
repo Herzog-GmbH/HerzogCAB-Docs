@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Herzog CAB – Design- und Berechnungssoftware für Herzog Flechtmaschinen. Geflechte entwerfen, berechnen und produzieren.">
+<title>Herzog CAB – Software für Herzog Flechtmaschinen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+:root {
+  /* Herzog brand palette (angelehnt an herzog-online.com): #00459a Blau, #545e66 Grau */
+  --bg: #ffffff;
+  --bg-elev: #f6f8fb;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f2f5fa;
+  --border: rgba(10,15,35,0.09);
+  --border-strong: rgba(10,15,35,0.18);
+  --text: #0a0a0a;
+  --text-dim: #545e66;
+  --text-muted: #7a838c;
+  --accent: #00459a;
+  --accent-2: #0066cc;
+  --accent-glow: rgba(0,69,154,0.22);
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-lg: 22px;
+  --shadow-lg: 0 20px 50px rgba(10,15,35,0.10);
+  --gradient-hero: radial-gradient(1200px 600px at 85% -10%, rgba(0,69,154,0.14), transparent 60%),
+                   radial-gradient(900px 500px at 10% 10%, rgba(0,102,204,0.10), transparent 60%),
+                   radial-gradient(700px 400px at 50% 120%, rgba(84,94,102,0.08), transparent 60%);
+}
+html[data-theme="dark"] {
+  --bg: #0b1020;
+  --bg-elev: #121a33;
+  --bg-card: rgba(255,255,255,0.04);
+  --bg-card-hover: rgba(255,255,255,0.07);
+  --border: rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.16);
+  --text: #e9edf7;
+  --text-dim: #a9b3cc;
+  --text-muted: #6d7796;
+  --accent: #3e8dff;
+  --accent-2: #2563eb;
+  --accent-glow: rgba(62,141,255,0.26);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
+  --gradient-hero: radial-gradient(1200px 600px at 85% -10%, rgba(62,141,255,0.22), transparent 60%),
+                   radial-gradient(900px 500px at 10% 10%, rgba(37,99,235,0.14), transparent 60%),
+                   radial-gradient(700px 400px at 50% 120%, rgba(84,94,102,0.10), transparent 60%);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+code, pre { font-family: 'JetBrains Mono', monospace; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== NAV ===== */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255,255,255,0.85);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s;
+}
+html[data-theme="dark"] .nav { background: rgba(11,16,32,0.72); }
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 0; max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px;
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; }
+.nav-brand img { height: 28px; }
+.nav-brand .brand-name { color: var(--text); }
+.nav-brand .brand-accent { color: var(--accent); }
+.nav-links { display: flex; gap: 6px; align-items: center; }
+.nav-links a {
+  padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; color: var(--text-dim);
+  transition: all 0.2s;
+}
+.nav-links a:hover { color: var(--text); background: var(--bg-card); }
+.nav-right { display: flex; gap: 10px; align-items: center; }
+.theme-toggle {
+  width: 38px; height: 38px; display: grid; place-items: center;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+  cursor: pointer; color: var(--text-dim); transition: all 0.2s;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--border-strong); }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 18px; border-radius: 10px; font-weight: 600; font-size: 0.9rem;
+  border: 1px solid transparent; cursor: pointer; transition: all 0.2s;
+  text-decoration: none; white-space: nowrap;
+}
+.btn-primary {
+  background: var(--accent); color: white;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 28px var(--accent-glow); }
+.btn-outline { background: transparent; color: var(--text); border-color: var(--border-strong); }
+.btn-outline:hover { background: var(--bg-card); border-color: var(--text-dim); }
+.btn-ghost { background: var(--bg-card); color: var(--text); }
+.btn-ghost:hover { background: var(--bg-card-hover); }
+.btn-lg { padding: 14px 26px; font-size: 1rem; border-radius: 12px; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative; padding: 90px 0 100px;
+  background: var(--gradient-hero);
+  overflow: hidden;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  opacity: 0.35; pointer-events: none;
+}
+.hero-inner { position: relative; text-align: center; max-width: 900px; margin: 0 auto; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; border-radius: 999px;
+  background: var(--bg-card); border: 1px solid var(--border-strong);
+  color: var(--text-dim); font-size: 0.82rem; font-weight: 500;
+  margin-bottom: 28px;
+}
+.hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 3px rgba(34,197,94,0.18); }
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 800; letter-spacing: -0.035em; line-height: 1.05;
+  margin-bottom: 24px;
+}
+.hero h1 .grad {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero-sub {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem); color: var(--text-dim);
+  max-width: 680px; margin: 0 auto 40px; line-height: 1.55;
+}
+.hero-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.hero-meta {
+  display: flex; gap: 32px; justify-content: center; margin-top: 56px; flex-wrap: wrap;
+  padding-top: 36px; border-top: 1px solid var(--border);
+}
+.hero-meta .item { text-align: center; }
+.hero-meta .value {
+  font-size: 1.8rem; font-weight: 800; letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero-meta .label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+.hero-preview {
+  margin-top: 60px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elev);
+  box-shadow: 0 30px 80px rgba(0,69,154,0.18), 0 10px 30px rgba(10,15,35,0.08);
+  position: relative;
+  transform: perspective(1400px) rotateX(2deg);
+  transition: transform 0.4s ease;
+}
+.hero-preview:hover { transform: perspective(1400px) rotateX(0deg); }
+.hero-preview img { display: block; width: 100%; height: auto; }
+.hero-preview::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 85%, rgba(255,255,255,0.0) 100%);
+}
+
+/* ===== VIDEO SHOWCASE ===== */
+.video-showcase {
+  padding: 60px 0 90px;
+  background: linear-gradient(180deg, transparent 0%, var(--bg-elev) 100%);
+}
+.video-frame {
+  max-width: 1100px; margin: 0 auto;
+  position: relative; border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: #000;
+  box-shadow: 0 30px 80px rgba(0,69,154,0.22), 0 10px 30px rgba(10,15,35,0.12);
+}
+.video-frame video { display: block; width: 100%; height: auto; }
+.video-frame iframe {
+  display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;
+}
+.video-caption {
+  max-width: 900px; margin: 28px auto 0; text-align: center;
+  color: var(--text-dim); font-size: 1rem;
+}
+.video-caption strong { color: var(--text); }
+
+/* ===== SECTION ===== */
+section { padding: 90px 0; }
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 56px; }
+.eyebrow {
+  display: inline-block; font-size: 0.8rem; font-weight: 600;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+.section-head h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800;
+  letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 16px;
+}
+.section-head p { color: var(--text-dim); font-size: 1.05rem; }
+
+/* ===== FEATURES ===== */
+.features-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;
+}
+.feature {
+  padding: 28px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); transition: all 0.25s;
+  position: relative; overflow: hidden;
+}
+.feature::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(400px at var(--mx,0) var(--my,0), rgba(0,69,154,0.08), transparent 60%);
+  opacity: 0; transition: opacity 0.3s; pointer-events: none;
+}
+.feature:hover { transform: translateY(-3px); border-color: var(--border-strong); background: var(--bg-card-hover); }
+.feature:hover::before { opacity: 1; }
+.feature-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  display: grid; place-items: center; margin-bottom: 18px;
+  background: linear-gradient(135deg, rgba(0,69,154,0.12), rgba(0,102,204,0.08));
+  border: 1px solid rgba(0,69,154,0.18);
+  color: var(--accent);
+}
+.feature h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
+.feature p { color: var(--text-dim); font-size: 0.94rem; line-height: 1.55; }
+
+/* ===== MODULES SHOWCASE ===== */
+.modules { padding: 90px 0; border-top: 1px solid var(--border); }
+.module-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+  padding: 48px 0;
+}
+.module-row.reverse .module-text { order: 2; }
+.module-text .mod-tag {
+  display: inline-block; padding: 4px 10px; border-radius: 6px;
+  background: rgba(0,69,154,0.1); color: var(--accent);
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; margin-bottom: 14px;
+}
+.module-text h3 { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px; line-height: 1.2; }
+.module-text p { color: var(--text-dim); margin-bottom: 20px; font-size: 1.02rem; }
+.module-text ul { list-style: none; }
+.module-text li {
+  padding: 8px 0 8px 28px; position: relative; color: var(--text-dim); font-size: 0.96rem;
+}
+.module-text li::before {
+  content: ""; position: absolute; left: 0; top: 14px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.module-text li::after {
+  content: ""; position: absolute; left: 5px; top: 18px;
+  width: 4px; height: 7px; border-right: 2px solid white; border-bottom: 2px solid white;
+  transform: rotate(45deg);
+}
+.module-visual {
+  position: relative; border-radius: var(--radius-lg); overflow: hidden;
+  border: 1px solid var(--border-strong); background: var(--bg-elev);
+  box-shadow: var(--shadow-lg);
+  display: grid; place-items: center; padding: 18px;
+}
+.module-visual img { display: block; width: 100%; height: auto; max-height: 560px; object-fit: contain; }
+.module-visual .placeholder {
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(0,69,154,0.15), rgba(84,94,102,0.12));
+  display: grid; place-items: center; color: var(--text-muted); font-size: 0.9rem;
+}
+
+/* ===== RELEASES ===== */
+.releases { padding: 90px 0; background: var(--bg-elev); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.release-list { max-width: 900px; margin: 0 auto; }
+.release {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); margin-bottom: 14px;
+  overflow: hidden; transition: all 0.2s;
+}
+.release:hover { border-color: var(--border-strong); }
+.release-head {
+  display: flex; align-items: center; gap: 20px;
+  padding: 22px 26px; cursor: pointer; user-select: none;
+}
+.release-head:hover { background: var(--bg-card-hover); }
+.release-version {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px; border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white; font-weight: 700; font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.release-version.past { background: var(--bg-card); color: var(--text-dim); border: 1px solid var(--border); }
+.release-title { flex: 1; }
+.release-title h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+.release-title .date { color: var(--text-muted); font-size: 0.86rem; }
+.release-badge {
+  padding: 4px 10px; border-radius: 6px; background: rgba(34,197,94,0.12); color: var(--success);
+  font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+}
+.release-chev { color: var(--text-muted); transition: transform 0.25s; }
+.release.open .release-chev { transform: rotate(180deg); }
+.release-body {
+  max-height: 0; overflow: hidden; transition: max-height 0.4s ease;
+  border-top: 1px solid transparent;
+}
+.release.open .release-body { max-height: 5000px; border-top-color: var(--border); }
+.release-body-inner { padding: 26px 30px 30px; color: var(--text-dim); }
+.release-body-inner h2 { font-size: 1.1rem; color: var(--text); margin: 20px 0 10px; font-weight: 700; }
+.release-body-inner h2:first-child { margin-top: 0; }
+.release-body-inner h3 { font-size: 1rem; color: var(--text); margin: 16px 0 8px; font-weight: 700; }
+.release-body-inner ul, .release-body-inner ol { padding-left: 22px; margin: 10px 0; }
+.release-body-inner li { margin: 6px 0; font-size: 0.94rem; }
+.release-body-inner p { margin: 10px 0; font-size: 0.94rem; }
+.release-body-inner strong { color: var(--text); }
+.release-body-inner a { color: var(--accent); text-decoration: underline; }
+.release-body-inner blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 6px 16px; margin: 14px 0;
+  background: rgba(0,69,154,0.05); border-radius: 0 8px 8px 0;
+  color: var(--text-dim); font-style: italic;
+}
+.release-body-inner hr { border: 0; border-top: 1px solid var(--border); margin: 22px 0; }
+.release-body-inner img { border-radius: 10px; margin: 14px 0; border: 1px solid var(--border); }
+.release-body-inner code {
+  background: var(--bg-elev); padding: 2px 6px; border-radius: 4px;
+  font-size: 0.88em; border: 1px solid var(--border);
+}
+.release-body-inner a.release-download {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 16px; padding: 10px 16px;
+  background: var(--accent); color: #fff !important; border-radius: 10px;
+  font-weight: 600; font-size: 0.9rem; transition: all 0.2s;
+  text-decoration: none;
+}
+.release-body-inner a.release-download:hover { transform: translateY(-1px); box-shadow: 0 8px 24px var(--accent-glow); color: #fff !important; }
+
+/* ===== DOWNLOAD SECTION ===== */
+.download-section { padding: 90px 0; }
+.download-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 22px; max-width: 1000px; margin: 0 auto;
+  align-items: stretch;
+}
+.download-card {
+  padding: 40px 36px; border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  text-align: center; position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.download-card-primary {
+  background: linear-gradient(135deg, rgba(0,69,154,0.10), rgba(0,102,204,0.05));
+  border-color: var(--accent);
+}
+.download-card-primary::before {
+  content: ""; position: absolute; top: -80px; right: -80px;
+  width: 260px; height: 260px; border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+.download-card-secondary {
+  background: var(--bg-card);
+}
+.dl-badge {
+  display: inline-block; align-self: center;
+  padding: 5px 12px; border-radius: 999px;
+  background: var(--accent); color: #fff;
+  font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin-bottom: 18px; position: relative;
+}
+.dl-badge-muted { background: var(--text-dim); }
+.download-card h3 {
+  font-size: 1.5rem; font-weight: 800;
+  margin-bottom: 12px; letter-spacing: -0.02em; position: relative;
+}
+.download-card > p { color: var(--text-dim); margin-bottom: 24px; position: relative; flex-grow: 1; }
+.download-card .btn { position: relative; align-self: center; }
+.download-card .btn[aria-disabled="true"] {
+  opacity: 0.55; cursor: not-allowed; pointer-events: none;
+}
+.dl-note {
+  color: var(--text-muted); font-size: 0.82rem;
+  margin-top: 14px !important; margin-bottom: 0 !important;
+  position: relative; flex-grow: 0 !important;
+}
+.download-info {
+  display: flex; justify-content: center; gap: 22px; margin-top: 22px; flex-wrap: wrap;
+  color: var(--text-muted); font-size: 0.82rem; position: relative;
+}
+.download-info span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* ===== FEEDBACK ===== */
+.feedback-section { padding: 90px 0; border-top: 1px solid var(--border); }
+.feedback-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.feedback-card {
+  padding: 32px; border-radius: var(--radius);
+  background: var(--bg-card); border: 1px solid var(--border);
+  transition: all 0.25s;
+}
+.feedback-card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+.feedback-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
+.feedback-card p { color: var(--text-dim); margin-bottom: 18px; font-size: 0.95rem; }
+.feedback-card a { color: var(--accent); font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; }
+.feedback-card a:hover { text-decoration: underline; }
+
+/* ===== FOOTER ===== */
+footer { padding: 50px 0 30px; border-top: 1px solid var(--border); background: var(--bg-elev); }
+.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+.footer-brand p { color: var(--text-dim); font-size: 0.9rem; margin-top: 14px; max-width: 300px; }
+.footer-col h4 { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; color: var(--text-muted); }
+.footer-col a { display: block; padding: 5px 0; color: var(--text-dim); font-size: 0.92rem; }
+.footer-col a:hover { color: var(--accent); }
+.footer-bottom {
+  margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  color: var(--text-muted); font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .module-row { grid-template-columns: 1fr; gap: 30px; padding: 32px 0; }
+  .module-row.reverse .module-text { order: 0; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .hero { padding: 60px 0 80px; }
+  section, .releases, .modules, .feedback-section, .download-section { padding: 70px 0; }
+}
+@media (max-width: 520px) {
+  .hero-meta { gap: 20px; }
+  .release-head { flex-wrap: wrap; padding: 18px 20px; gap: 12px; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .download-card { padding: 30px 22px; }
+}
+
+/* ===== REVEAL ANIMATION ===== */
+.reveal { opacity: 0; transform: translateY(20px); transition: all 0.7s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">
+      <img src="data:image/png;base64,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" alt="Herzog">
+      <span><span class="brand-name">Herzog</span>&nbsp;<span class="brand-accent">CAB</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Funktionen</a>
+      <a href="#modules">Module</a>
+      <a href="#releases">Releases</a>
+      <a href="#download">Download</a>
+      <a href="#feedback">Feedback</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Theme umschalten">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="themeIcon">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
+      <a class="btn btn-primary" href="#download">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-badge reveal">
+      <span class="dot"></span>
+      <span id="heroVersionBadge">Aktuelle Version: v1.3.3 · veröffentlicht 15.04.2026</span>
+    </div>
+    <h1 class="reveal">Design, Berechnungen und Produktion für <span class="grad">Herzog Flechtmaschinen</span></h1>
+    <p class="hero-sub reveal">
+      Herzog CAB ist die Softwarelösung zum Entwerfen und Berechnen von Rund- und Flachgeflechten, zur Verwaltung Ihrer Maschinen, Materialien und Spulen sowie zur Steuerung Ihrer gesamten Fertigungsaufträge – alles aus einer Anwendung heraus.
+    </p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary btn-lg" href="#download">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Jetzt herunterladen
+      </a>
+      <a class="btn btn-outline btn-lg" href="#modules">Module ansehen</a>
+    </div>
+    <div class="hero-meta reveal">
+      <div class="item"><div class="value" id="metaReleases">6</div><div class="label">Releases</div></div>
+      <div class="item"><div class="value">6</div><div class="label">Sprachen</div></div>
+      <div class="item"><div class="value">10+</div><div class="label">Module</div></div>
+      <div class="item"><div class="value">Windows</div><div class="label">Plattform</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO SHOWCASE -->
+<section class="video-showcase">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Produktvorstellung</div>
+      <h2>Herzog CAB im Überblick</h2>
+      <p>Eine kompakte Videotour durch die aktuelle Version – vom Design bis zur Produktionsvorbereitung.</p>
+    </div>
+    <div class="video-frame reveal">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/RfBv-kayuIk?rel=0&modestbranding=1"
+        title="Herzog CAB - Produktvorstellung"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p class="video-caption reveal">
+      <strong>Version 1.3.3</strong> – komplette Übersicht über Designer, Berechnungen, Auftragsverwaltung, Druck-Editor und integrierten Web-Server für Maschinendisplays.
+    </p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Kernfunktionen</div>
+      <h2>Alles, was Sie für moderne Flechtfertigung brauchen</h2>
+      <p>Von der ersten Designidee bis zum fertigen Produktionsdokument – Herzog CAB deckt den gesamten Workflow ab.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature reveal">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+        <h3>3D Geflecht-Designer</h3>
+        <p>Entwerfen Sie Rund- und Flachgeflechte mit interaktiver 3D-Vorschau, stufenweiser Farbrotation und Bindungs-Tooltips.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H3v10h6V11zM21 3h-6v18h6V3zM15 8H9v13h6V8z"/></svg></div>
+        <h3>Vollständige Berechnungen</h3>
+        <p>Berechnen Sie alle relevanten Parameter wie Schlaglänge, Flechtwinkel, Produktionsgeschwindigkeit und Laufzeit.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18"/></svg></div>
+        <h3>Auftragsverwaltung</h3>
+        <p>Timeline-basierte Auftragsübersicht mit Status-Filtern (Entwurf, Freigegeben, In Produktion, Abgeschlossen) und vollständiger Historie.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+        <h3>Maschinendatenbank</h3>
+        <p>Verwalten Sie Ihre Maschinenflotte inkl. Fotos, technischen Daten, Seriennummern, Dokumenten und Wartungsaufzeichnungen.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3>Spulen, Material &amp; Farben</h3>
+        <p>Zentrale Datenbanken für Spulen (rund, quadratisch, horizontal, Carbon, Draht), Materialien mit linearer Dichte und Farbpaletten mit Pantone-Referenzen.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+        <h3>Druck-Editor</h3>
+        <p>Drag-and-Drop Layout-Editor für Maschineneinrichtblätter und Produktionsdokumente mit Firmenlogo, konfigurierbarem Raster und Live-Vorschau.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 113 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h3>Geführte Touren</h3>
+        <p>Zehn interaktive In-App-Touren führen neue Benutzer Schritt für Schritt durch alle Module – mit Overlay-Hinweisen direkt im Programm.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Integrierter Webserver</h3>
+        <p>Maschinen-Dashboard im Browser – ideal für Tablets oder Monitore direkt an der Flechtmaschine, inkl. QR-Code, Passwortschutz und Auto-Refresh.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULES -->
+<section class="modules" id="modules">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Module im Überblick</div>
+      <h2>Ein durchgängiger Workflow – vom Auftrag bis zum Druck</h2>
+      <p>Jedes Modul greift ineinander und teilt dieselben Stammdaten. Keine doppelte Eingabe, keine Medienbrüche.</p>
+    </div>
+
+    <div class="module-row">
+      <div class="module-text reveal">
+        <span class="mod-tag">3D Designer</span>
+        <h3>Rund- und Flachgeflechte interaktiv entwerfen</h3>
+        <p>Der Designer visualisiert jede Klöppelbelegung und Bindung sofort als echtes Geflecht. Drehen, zoomen, Farben rotieren – und die Live-Vorschau passt sich in Echtzeit an.</p>
+        <ul>
+          <li>3D-Zylinderansicht für Rundgeflechte</li>
+          <li>Stufenweise Farbrotation pro Träger</li>
+          <li>Bindungen Normal, Tandem, Half mit 1-1 / 2-2 / 1-3 Notation</li>
+          <li>Multi-Ansichten mit „Add View" für Varianten-Vergleich</li>
+        </ul>
+      </div>
+      <div class="module-visual reveal">
+        <img src="assets/designer_3d.png" alt="3D Designer mit Rundgeflecht-Vorschau">
+      </div>
+    </div>
+
+    <div class="module-row reverse">
+      <div class="module-text reveal">
+        <span class="mod-tag">Maschinendatenbank</span>
+        <h3>Ihre Maschinenflotte – vollständig dokumentiert</h3>
+        <p>Jede Flechtmaschine mit Foto, Typ, Trägerzahl, Seriennummer und Gruppe. Status-Ampel zeigt auf einen Blick, welche Maschinen produzieren, warten oder Fehler melden.</p>
+        <ul>
+          <li>Kartenansicht mit Maschinenfoto und Status-Ampel</li>
+          <li>Dokumente (Bedienungsanleitungen, Zeichnungen, Wartung) direkt an der Maschine</li>
+          <li>Seriennummer und Gruppenzuordnung</li>
+          <li>Verfügbar in allen Modulen – kein doppeltes Anlegen</li>
+        </ul>
+      </div>
+      <div class="module-visual reveal">
+        <img src="assets/machine_fleet.png" alt="Machine Fleet – Maschinenübersicht mit Ampel-Status">
+      </div>
+    </div>
+
+    <div class="module-row">
+      <div class="module-text reveal">
+        <span class="mod-tag">Druck-Editor</span>
+        <h3>Vom Design zum Produktionsblatt in Sekunden</h3>
+        <p>Drag-and-Drop Layout mit Besetzungs-Übersicht, Material-, Order- und Produkttabellen, Firmenlogo und Rasterausrichtung. Vorlagen speichern, wiederverwenden und zentral pflegen.</p>
+        <ul>
+          <li>Live-Vorschau synchron mit dem Designer</li>
+          <li>Besetzungsübersicht direkt aus der Berechnung</li>
+          <li>Parameter-Tokens aus Aufträgen, Material und Maschine</li>
+          <li>Einzelseitige Ausgabe auch für Geflechte mit 49+ Spulen</li>
+        </ul>
+      </div>
+      <div class="module-visual reveal">
+        <img src="assets/print_editor.png" alt="Druck-Editor mit Besetzungs- und Designer-Vorschau">
+      </div>
+    </div>
+
+    <div class="module-row reverse">
+      <div class="module-text reveal">
+        <span class="mod-tag">Berechnungen</span>
+        <h3>Alle Flechtparameter präzise berechnet</h3>
+        <p>Flechtwinkel, Schlaglänge, Produktionsgeschwindigkeit, Maschinenlaufzeit und mehr – mit korrekter Einheitenbehandlung und Übernahme aller Werte direkt aus Auftrag und Maschine.</p>
+        <ul>
+          <li>Vorgefüllte Parameter aus dem aktiven Auftrag</li>
+          <li>Lokalisierte Zahleneingabe inkl. Tausender­trennzeichen</li>
+          <li>Direkter Rücksprung in den Auftrag nach Abschluss</li>
+          <li>Ergebnisse mit korrekter Einheit (mm, °, m/min …)</li>
+        </ul>
+      </div>
+      <div class="module-visual reveal">
+        <img src="assets/calculation.png" alt="Berechnung Flechtwinkel mit Eingabe- und Ergebnisbereich">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELEASES -->
+<section class="releases" id="releases">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Aktuelle Versionen</div>
+      <h2>Release Timeline</h2>
+      <p>Alle aktuellen Releases aus dem GitHub-Feedback-Repository mit vollständigen Release Notes und direkten Download-Links.</p>
+    </div>
+    <div class="release-list" id="releaseList"></div>
+    <div style="text-align:center; margin-top: 30px;">
+      <a class="btn btn-ghost" href="https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases" target="_blank" rel="noopener">
+        Alle Releases auf GitHub ansehen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="download-section" id="download">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Download</div>
+      <h2>Testen oder loslegen</h2>
+      <p>Probieren Sie Herzog CAB kostenlos mit der Demo-Version aus – oder kontaktieren Sie uns für die Vollversion inklusive Support und Updates.</p>
+    </div>
+    <div class="download-grid">
+      <!-- Demo version -->
+      <div class="download-card download-card-primary reveal">
+        <span class="dl-badge">Kostenlos testen</span>
+        <h3>Demo-Version</h3>
+        <p>Testen Sie Herzog CAB unverbindlich: Designer, Berechnungen und alle Module zum Ausprobieren – ohne Lizenz und ohne Registrierung.</p>
+        <a class="btn btn-primary btn-lg" id="dlDemoButton" href="#" aria-disabled="true" onclick="return false;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span id="dlDemoButtonText">Demo herunterladen</span>
+        </a>
+        <div class="download-info">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Windows 10/11 (64-bit)</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> ca. 65 MB</span>
+        </div>
+        <p class="dl-note" id="dlDemoNote">🕓 Demo-Version wird in Kürze veröffentlicht.</p>
+      </div>
+
+      <!-- Full version -->
+      <div class="download-card download-card-secondary reveal">
+        <span class="dl-badge dl-badge-muted">Vollversion</span>
+        <h3>Herzog CAB komplett</h3>
+        <p>Die vollständige Softwarelösung für Ihren Produktivbetrieb – inklusive aller Module, technischem Support und kostenlosen Updates.</p>
+        <a class="btn btn-outline btn-lg" href="https://herzog-online.com/kontakt/" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Kontakt aufnehmen
+        </a>
+        <p class="dl-note">Bestandskunden finden alle Installer im <a href="#releases" style="color: var(--accent);">Release-Bereich</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section class="feedback-section" id="feedback">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Mitwirken</div>
+      <h2>Ihr Feedback formt die nächste Version</h2>
+      <p>Herzog CAB wird kontinuierlich weiterentwickelt. Melden Sie Fehler, schlagen Sie Verbesserungen vor oder verfolgen Sie den Entwicklungsfortschritt.</p>
+    </div>
+    <div class="feedback-grid">
+      <div class="feedback-card reveal">
+        <h3>🐞 Bug melden</h3>
+        <p>Problem gefunden? Erstellen Sie ein Issue mit Versionsnummer, Windows-Version, Reproduktionsschritten und – wenn möglich – Screenshot.</p>
+        <a href="https://github.com/Herzog-GmbH/HerzogCAB-Feedback/issues/new?template=bug_report.md" target="_blank" rel="noopener">
+          Bug Report erstellen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+      <div class="feedback-card reveal">
+        <h3>💡 Feature vorschlagen</h3>
+        <p>Haben Sie eine Idee? Beschreiben Sie Ihren Anwendungsfall und wir prüfen, wie sich die Funktion integrieren lässt.</p>
+        <a href="https://github.com/Herzog-GmbH/HerzogCAB-Feedback/issues/new?template=feature_request.md" target="_blank" rel="noopener">
+          Feature Request erstellen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+      <div class="feedback-card reveal">
+        <h3>⭐ GitHub-Repo</h3>
+        <p>Folgen Sie dem Repository für Release-Benachrichtigungen und sehen Sie sich die komplette Release-Historie und Issue-Diskussionen an.</p>
+        <a href="https://github.com/Herzog-GmbH/HerzogCAB-Feedback" target="_blank" rel="noopener">
+          Zum Repository
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="nav-brand" href="#top">
+        <img src="data:image/png;base64,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" alt="Herzog" style="height:32px;">
+        <span><span class="brand-name">Herzog</span>&nbsp;<span class="brand-accent">CAB</span></span>
+      </a>
+      <p>Design- und Berechnungssoftware für Herzog Flechtmaschinen. Entwickelt und gepflegt von Herzog GmbH.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Produkt</h4>
+      <a href="#features">Funktionen</a>
+      <a href="#modules">Module</a>
+      <a href="#releases">Releases</a>
+      <a href="#download">Download</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="https://github.com/Herzog-GmbH/HerzogCAB-Feedback/issues" target="_blank" rel="noopener">Issues</a>
+      <a href="#feedback">Feedback geben</a>
+      <a href="https://github.com/Herzog-GmbH/HerzogCAB-Feedback" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4>Unternehmen</h4>
+      <a href="https://herzog-online.com" target="_blank" rel="noopener">herzog-online.com</a>
+      <a href="https://herzog-online.com/impressum" target="_blank" rel="noopener">Impressum</a>
+      <a href="https://herzog-online.com/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> Herzog GmbH · Alle Rechte vorbehalten</span>
+      <span>Built with care for the braiding industry</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== EMBEDDED RELEASE DATA (statisch, wird ggf. live überschrieben) =====
+const EMBEDDED_RELEASES = [{"tag_name": "v1.3.3", "name": "Herzog CAB 1.3.3", "published_at": "2026-04-15T15:24:19Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.3.3", "body": "## What's New in 1.3.3\r\n\r\n### Improvements\r\n- **QR Code IP Selector** — Added a dropdown in Settings → Web Server to manually choose which network adapter IP is encoded in the QR code. Prevents wrong IPs (e.g. VirtualBox, VPN adapters) from appearing in the QR link. The selection is saved persistently per profile.\r\n- **Responsive Web Images** — Occupation overview and braid pattern images in the web interface now scale correctly on mobile devices and are no longer cut off on the right side.\r\n\r\n### Bugfixes\r\n- **Round Braid — All Occupation Types** — Round braid machines now correctly allow all three occupation types to be selected. Previously some occupation modes were incorrectly restricted.\r\n- **Lay Length translation (DE)** — Fixed incorrect German label \"Berechnung [#]\" in the result unit dropdown of the Lay Length calculation. Now correctly shows \"Schlaglänge [mm]\".\r\n- **QR Code reliability** — Improved QR code mask selection (penalty scoring N1–N4), corrected format information bit placement, and fixed a Reed-Solomon ECC index offset. QR codes are now reliably scannable by all standard apps.", "assets": [{"name": "Herzog_CAB_Installer_200006_V1.3.3.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.3.3/Herzog_CAB_Installer_200006_V1.3.3.exe", "size": 68638331}]}, {"tag_name": "v1.3.2", "name": "Herzog CAB 1.3.2", "published_at": "2026-04-13T12:39:50Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.3.2", "body": "<html>\r\n<body>\r\n<!--StartFragment--><html><head></head><body><h2>🆕 What's New</h2>\r\n<h3>🌐 Built-in Web Server — Machine Displays</h3>\r\n<p>HerzogCAB now includes an <strong>integrated web server</strong> that can be opened from any browser on the local network — perfect for a tablet or monitor mounted directly at the braiding machine.</p>\r\n<ul>\r\n<li><strong>Machine landing page</strong> with a grid overview of all your machines</li>\r\n<li><strong>Order view</strong> per machine showing assigned orders with status, customer, material and braid design</li>\r\n<li><strong>Occupation overview</strong> rendered as a live image directly from the calculation engine</li>\r\n<li><strong>Stocking table</strong> with color IDs and Pantone values</li>\r\n<li><strong>Machine documents</strong> tab — documents grouped by category with inline preview for PDFs and images</li>\r\n<li><strong>Machine info</strong> tab with name, type, serial number, group, max RPM, carriers and head count</li>\r\n<li><strong>Password protection</strong> with login page, session cookies, logout and automatic session invalidation when the password changes</li>\r\n<li><strong>Display settings</strong> per order section with auto-refresh and scroll preservation</li>\r\n<li>Modern responsive design with Herzog branding, sticky navbar and SVG icons</li>\r\n</ul>\r\n<h3>🔢 Machine Serial Number and Group</h3>\r\n<p>Braiding machines can now store a <strong>serial number</strong> and a <strong>group name</strong>.</p>\r\n<ul>\r\n<li>New fields in both machine creation and edit dialogs</li>\r\n<li>Shown in the job editor, machine overview and web UI order cards</li>\r\n<li>Available as data tokens in the print editor</li>\r\n</ul>\r\n<hr>\r\n<h2>✨ Improvements</h2>\r\n<h3>💬 Contextual Toast Notifications</h3>\r\n<p>Save and create actions across all editors now show <strong>inline toast messages with the name of the affected record</strong> — replacing the previous modal dialog boxes that interrupted the workflow.</p>\r\n\r\nModule | Toast content\r\n-- | --\r\nBraiding Machines | Machine name on create and save\r\nCustomers | Customer name (or company) on save, create and CSV import\r\nBobbins | Outer diameter on save and create\r\nMaterials | Material name on save and create\r\nColors | Color name or code on create\r\nOrders | Confirmation on save\r\n\r\n\r\n<h3>🏭 Machine Fleet — Card Redesign</h3>\r\n<p>The machine card view has been redesigned with a dedicated image header, centered text and badge chips, and compact dimensions for a tighter grid.</p>\r\n<h3>🧭 Navigation Redesign</h3>\r\n<ul>\r\n<li>Custom navigation delegate with pill-shaped backgrounds, accent bars and font weight hierarchy</li>\r\n<li>Group headers (Calculations, Master Data) visually separated with tinted full-width rows</li>\r\n<li>Favorites group highlighted in amber tones</li>\r\n<li>Modernized module headers across Machine Fleet and Parameter Explorer</li>\r\n</ul>\r\n<h3>🖨️ Print Editor</h3>\r\n<ul>\r\n<li>Renamed elements for clarity: Klöppel → Besetzung, Flechtmaschinen-Übersicht → Besetzungsübersicht</li>\r\n<li>New SVG icons for image, date/time and text field elements</li>\r\n<li>Fixed carrier_table bug that incorrectly displayed the bobbin table</li>\r\n</ul>\r\n<h3>📋 Order Overview</h3>\r\n<ul>\r\n<li>Redesigned as a two-column table with colored section headers</li>\r\n<li>New \"Order\" section with order name, number, dates and status</li>\r\n<li>All labels translatable in every supported language</li>\r\n</ul>\r\n<h3>🌍 Translations</h3>\r\n<ul>\r\n<li>Module title \"Maschinenpark\" correctly translated:\r\n🇬🇧 Machine Fleet · 🇪🇸 Flota de máquinas · 🇮🇹 Flotta macchine · 🇵🇱 Flota maszyn</li>\r\n<li>All new strings (toasts, web server UI, serial/group) fully translated in all 6 languages:\r\n🇩🇪 German · 🇬🇧 English · 🇪🇸 Spanish · 🇮🇹 Italian · 🇵🇱 Polish · 🇨🇳 Chinese</li>\r\n<li>Corrected: \"Verkürzung\" → Reduction (was Shortening)</li>\r\n</ul>\r\n<hr>\r\n<h2>🐞 Bugfixes</h2>\r\n<ul>\r\n<li>Fixed navbar logo disappearing after style attribute merge</li>\r\n<li>Fixed SVG quote escaping in web UI onerror attributes</li>\r\n<li>Fixed variable shadowing bug in web UI that prevented design and occupation rendering</li>\r\n<li>Removed unintended placeholder texts from serial number and group fields</li>\r\n</ul>\r\n<hr>\r\n<h2>📦 Updating from 1.3.0</h2>\r\n<p>Close the current version and run the installer.\r\n✅ All existing data is fully preserved — no manual migration needed.</p>\r\n<hr>\r\n<p>💬 Found a bug or have a suggestion? Please open an issue at <a href=\"https://github.com/Herzog-GmbH/HerzogCAB-Feedback\">github.com/Herzog-GmbH/HerzogCAB-Feedback</a></p></body></html><!--EndFragment-->\r\n</body>\r\n</html>## 🆕 What's New\r\n\r\n### 🌐 Built-in Web Server — Machine Displays\r\n\r\nHerzogCAB now includes an **integrated web server** that can be opened from any browser on the local network — perfect for a tablet or monitor mounted directly at the braiding machine.\r\n\r\n- **Machine landing page** with a grid overview of all your machines\r\n- **Order view** per machine showing assigned orders with status, customer, material and braid design\r\n- **Occupation overview** rendered as a live image directly from the calculation engine\r\n- **Stocking table** with color IDs and Pantone values\r\n- **Machine documents** tab — documents grouped by category with inline preview for PDFs and images\r\n- **Machine info** tab with name, type, serial number, group, max RPM, carriers and head count\r\n- **Password protection** with login page, session cookies, logout and automatic session invalidation when the password changes\r\n- **Display settings** per order section with auto-refresh and scroll preservation\r\n- Modern responsive design with Herzog branding, sticky navbar and SVG icons\r\n\r\n### 🔢 Machine Serial Number and Group\r\n\r\nBraiding machines can now store a **serial number** and a **group name**.\r\n\r\n- New fields in both machine creation and edit dialogs\r\n- Shown in the job editor, machine overview and web UI order cards\r\n- Available as data tokens in the print editor\r\n\r\n---\r\n\r\n## ✨ Improvements\r\n\r\n### 💬 Contextual Toast Notifications\r\n\r\nSave and create actions across all editors now show **inline toast messages with the name of the affected record** — replacing the previous modal dialog boxes that interrupted the workflow.\r\n\r\n| Module | Toast content |\r\n|---|---|\r\n| Braiding Machines | Machine name on create and save |\r\n| Customers | Customer name (or company) on save, create and CSV import |\r\n| Bobbins | Outer diameter on save and create |\r\n| Materials | Material name on save and create |\r\n| Colors | Color name or code on create |\r\n| Orders | Confirmation on save |\r\n\r\n### 🏭 Machine Fleet — Card Redesign\r\n\r\nThe machine card view has been redesigned with a dedicated image header, centered text and badge chips, and compact dimensions for a tighter grid.\r\n\r\n### 🧭 Navigation Redesign\r\n\r\n- Custom navigation delegate with pill-shaped backgrounds, accent bars and font weight hierarchy\r\n- Group headers (Calculations, Master Data) visually separated with tinted full-width rows\r\n- Favorites group highlighted in amber tones\r\n- Modernized module headers across Machine Fleet and Parameter Explorer\r\n\r\n### 🖨️ Print Editor\r\n\r\n- Renamed elements for clarity: Klöppel → Besetzung, Flechtmaschinen-Übersicht → Besetzungsübersicht\r\n- New SVG icons for image, date/time and text field elements\r\n- Fixed carrier_table bug that incorrectly displayed the bobbin table\r\n\r\n### 📋 Order Overview\r\n\r\n- Redesigned as a two-column table with colored section headers\r\n- New \"Order\" section with order name, number, dates and status\r\n- All labels translatable in every supported language\r\n\r\n### 🌍 Translations\r\n\r\n- Module title \"Maschinenpark\" correctly translated:\r\n  🇬🇧 Machine Fleet · 🇪🇸 Flota de máquinas · 🇮🇹 Flotta macchine · 🇵🇱 Flota maszyn\r\n- All new strings (toasts, web server UI, serial/group) fully translated in all 6 languages:\r\n  🇩🇪 German · 🇬🇧 English · 🇪🇸 Spanish · 🇮🇹 Italian · 🇵🇱 Polish · 🇨🇳 Chinese\r\n- Corrected: \"Verkürzung\" → Reduction (was Shortening)\r\n\r\n---\r\n\r\n## 🐞 Bugfixes\r\n\r\n- Fixed navbar logo disappearing after style attribute merge\r\n- Fixed SVG quote escaping in web UI onerror attributes\r\n- Fixed variable shadowing bug in web UI that prevented design and occupation rendering\r\n- Removed unintended placeholder texts from serial number and group fields\r\n\r\n---\r\n\r\n## 📦 Updating from 1.3.0\r\n\r\nClose the current version and run the installer.\r\n✅ All existing data is fully preserved — no manual migration needed.\r\n\r\n---\r\n\r\n💬 Found a bug or have a suggestion? Please open an issue at [[github.com/Herzog-GmbH/HerzogCAB-Feedback](https://github.com/Herzog-GmbH/HerzogCAB-Feedback)](https://github.com/Herzog-GmbH/HerzogCAB-Feedback)", "assets": [{"name": "Herzog_CAB_Installer_200006_V1.3.2.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.3.2/Herzog_CAB_Installer_200006_V1.3.2.exe", "size": 68551909}]}, {"tag_name": "v1.3.0", "name": "Herzog CAB 1.3.0", "published_at": "2026-04-09T12:34:36Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.3.0", "body": "## 🆕 What's New\r\n\r\n### 📋 Order Management\r\n> *Create, track and manage braiding orders end to end.*\r\n\r\nBrand-new order management module with a timeline-based card view. Filter orders by status (Draft, Released, In Production, Completed), time period or free-text search across order name, number, customer or machine. Each order links directly to its customer, machine, material, bobbin set and braid design — all in one place.\r\n\r\n---\r\n\r\n### ⚙️ Braiding Machine Database\r\n> *Your own machine fleet — fully documented.*\r\n\r\nBrand-new module to manage every braiding machine in your facility. Each entry stores a photo, machine type, carrier count, maximum RPM and year of manufacture. Attach documents such as operating manuals, technical drawings or maintenance records directly to the machine. Machine data is available throughout the application when creating orders and launching calculations.\r\n\r\n---\r\n\r\n### 👥 Customer Database\r\n> *All customer data organized and ready to use.*\r\n\r\nNew dedicated module to create, edit and search customers. Customer records are directly available when creating orders — no duplicate data entry needed.\r\n\r\n---\r\n\r\n### 🧵 Bobbin Database — Rebuilt\r\n> *Manage your bobbin inventory for every machine type.*\r\n\r\nThe bobbin database has been completely rebuilt with a new management interface. Filter by machine type (round, square, horizontal, carbon fiber, wire braiding) and manage outer diameter, bobbin volume and machine type assignments. Bobbins are available directly when configuring orders and machines.\r\n\r\n---\r\n\r\n### 🧪 Material Database — Rebuilt\r\n> *A central library for all your braiding materials.*\r\n\r\nThe material database has been completely rebuilt with a new management interface. Each entry stores technical properties including linear density and diameter. Materials link directly to orders and bobbin configurations.\r\n\r\n---\r\n\r\n### 🌈 Color Database — Rebuilt\r\n> *Manage colors with precision.*\r\n\r\nThe color database has been rebuilt from the ground up with a full management interface. New features include a **color picker** with live preview, **Pantone matching** for automatic assignment of Pantone reference colors, and support for multiple custom **color palettes**.\r\n\r\n---\r\n\r\n### 🖨️ Print Editor\r\n> *Design professional printouts with your own branding.*\r\n\r\nNew module for building custom print templates. Place elements freely on the canvas and use the built-in **Parameter Explorer** to insert live data tokens from orders, customers, machines, materials, products and calculations into your template. Save and reload as many templates as you need.\r\n\r\n---\r\n\r\n### 🧭 Guided Tours\r\n> *Learn HerzogCAB step by step — directly inside the app.*\r\n\r\nTen interactive tours walk you through every area of the application. Each tour highlights the relevant controls in real time and explains every step with overlay hint cards.\r\n\r\n**Available tours:** Navigation · Designer · Print Editor · Calculation · Color Database · Bobbin Database · Material Database · Customer Database · Braiding Machines · Order Editor\r\n\r\n---\r\n\r\n### 📁 First-Run Setup Assistant\r\n> *No more permission errors on first launch.*\r\n\r\nOn first launch — or when the saved working directory is not writable — a guided setup dialog appears automatically. It checks write access in real time, suggests `Documents\\HerzogCAB` as a safe default, and warns before choosing protected locations like `C:\\Program Files`.\r\n\r\n---\r\n\r\n## ✨ Improvements\r\n\r\n### Order Editor\r\nThe order editor has been reworked across all tabs. Machine configuration, braid density, material strand count and production data are now displayed in full detail. Calculations can be launched directly from an order with all relevant parameters pre-filled, and a return button brings you straight back to the originating order.\r\n\r\n### Wire Braiding Machine — Configurable Horn Gear Cuts\r\nThe number of horn gear cuts for wire braiding machines is now configurable directly in the machine setup.\r\n\r\n### Interface & Usability\r\n- New unified icon set across navigation and all modules\r\n- Adjustable font size (Standard / Large) in settings\r\n- Toast notifications for status feedback without interrupting the workflow\r\n- Consistent button sizing and styling across all master data modules\r\n\r\n### Localization\r\nHerzogCAB is now fully translated into **6 languages:**\r\n\r\n🇩🇪 German &nbsp;·&nbsp; 🇬🇧 English &nbsp;·&nbsp; 🇪🇸 Spanish &nbsp;·&nbsp; 🇮🇹 Italian &nbsp;·&nbsp; 🇵🇱 Polish &nbsp;·&nbsp; 🇨🇳 Chinese\r\n\r\nAll new modules and dialogs are fully translated in every language.\r\n\r\n---\r\n\r\n## 📦 Updating from 1.1.4\r\n\r\n1. Close the current version\r\n2. Run the installer and follow the steps\r\n3. On first launch, the **Setup Assistant** may appear to confirm your working directory\r\n4. ✅ All existing data (orders, machines, materials, colors) is fully preserved\r\n\r\n---\r\n\r\n> 💬 **Found a bug or have a suggestion?**\r\n> Please open an issue at [[github.com/Herzog-GmbH/HerzogCAB-Feedback](https://github.com/Herzog-GmbH/HerzogCAB-Feedback/issues/new)]\r\n\r\n---\r\n\r\n*Herzog GmbH*", "assets": [{"name": "Herzog_CAB_Installer_200006_V1.3.0.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.3.0/Herzog_CAB_Installer_200006_V1.3.0.exe", "size": 68195970}]}, {"tag_name": "v1.1.4", "name": "Herzog CAB v1.1.4", "published_at": "2025-12-18T13:33:20Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.1.4", "body": "## Herzog CAB 1.1.4 — 2025-12-17\r\n\r\n### **New**\r\n\r\n- **Additional cylindrical / 3D view for round braids**\r\n  - A new cylindrical 3D-style view has been added to improve spatial understanding of round braids.\r\n  - This view makes braid structures and color progressions easier to analyze.\r\n\r\n<p align=\"center\">\r\n<img width=\"60%\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2fd85d23-219e-422d-ba44-a81905996736\" /> \r\n</p>\r\n\r\n\r\n- **Interactive braid rotation**\r\n  - Braids can now be rotated directly in the view.\r\n  - This allows inspection of the pattern from all sides and improves visual verification of crossings and color shifts.\r\n  - Rotation is controlled via dedicated UI controls without altering braid dimensions.\r\n\r\n\r\n<p align=\"center\">\r\n  <img src=\"https://github.com/user-attachments/assets/65ae26d8-c354-43ab-9d00-b38a78f1b079\" alt=\"1216\">\r\n</p>\r\n\r\n- **Stepwise color rotation for carriers**\r\n  - New controls allow stepwise rotation of carrier colors.\r\n  - This makes it easy to test alternative color layouts and evaluate visual variants quickly.\r\n\r\n- **Extended multi-selection support**\r\n  - Multiple designs or folders can now be selected at once.\r\n  - Selected items can be deleted, copied, or moved in a single operation.\r\n\r\n\r\n### **Improvements**\r\n\r\n- **Keyboard shortcuts in the design browser**\r\n  - Common design browser actions are now accessible via keyboard shortcuts.\r\n  - Navigation and daily workflows are significantly faster.\r\n \r\n- **Extended multi-selection support**\r\n  - Multiple designs or folders can now be selected at once.\r\n  - Selected items can be deleted, copied, or moved in a single operation.\r\n\r\n\r\n\r\n### **Bugfixes**\r\n\r\n- **Fixed critical printout issue for single-page designs**\r\n  - Fixed a bug where the parameter table could be empty when printing single-page designs directly to a printer.\r\n  - All parameters are now reliably rendered and printed, matching the PDF export behavior.\r\n\r\n- **Fixed missing designs in root folder**\r\n  - Designs located in the root directory of the design browser were not displayed correctly.\r\n  - Root-level designs are now shown as expected.\r\n\r\n- **Fixed object connection and UI update issues**\r\n  - Resolved unique-connection errors in the designer.\r\n  - Improved stability of carrier table handlers and related UI updates.", "assets": [{"name": "Converter_GFL_JSON.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.4/Converter_GFL_JSON.exe", "size": 36864}, {"name": "HerzogCABInstaller_200006_V1.1.4.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.4/HerzogCABInstaller_200006_V1.1.4.exe", "size": 65135926}]}, {"tag_name": "v1.1.3", "name": "Herzog CAB v1.1.3 ", "published_at": "2025-12-10T06:13:37Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.1.3", "body": "## Herzog CAB 1.1.3 — 2025-12-10\r\n### **New**\r\n\r\n- **New designer home screen**\r\n  - The designer now has its own dedicated home screen.\r\n  - On the left, users find a short description explaining how to load braids or create new designs.\r\n  - On the right, all recently edited designs are listed and can be opened directly from this view.\r\n\r\n- **New “Load design” button in the designer**\r\n  - The designer now provides a dedicated **“Load design”** button.\r\n  - Clicking it opens the file dialog where you can select and load an existing design.\r\n\r\n- **Integrated feedback and update options**\r\n  - New buttons link directly from the application to the Herzog CAB GitHub page, where users can submit feedback, create issues or download the latest version.\r\n  - On startup, Herzog CAB now checks whether the installed version is outdated and whether a newer release is available on GitHub.\r\n  - A new startup message points to the feedback page and thanks users for helping to improve Herzog CAB.\r\n\r\n### **Improvements**\r\n\r\n- **Clearer designer structure with default design and “Add View”**\r\n  - A default design is now created automatically when the designer starts, so users no longer have to create a first design manually.\r\n  - With the new **“Add View”** button, additional design views can be added and adjusted dynamically.\r\n  - This makes working with multiple designs much more structured, readable and user-friendly.\r\n\r\n- **Printing for all open designs**\r\n  - It is now possible to print any of the open designs, not only the very first one.\r\n  - By switching between views, users can explicitly choose which of the open designs should be printed.\r\n\r\n- **Extended braid binding labels**\r\n  - Braid bindings now include the numeric notation, for example:\r\n    - Normal **1-1**\r\n    - Tandem **2-2**\r\n    - Half **1-3**\r\n  - This makes it easier to understand the binding type and bobbin distribution at a glance.\r\n\r\n- **Adjust braid angle in the designer without losing the design**\r\n  - The braid angle can now be changed directly in the designer without forcing a full redraw that would discard the current design.\r\n  - Pitch and braid angle are automatically updated in the active design.\r\n\r\n- **Multi-select in the product file browser**\r\n  - The product file browser now supports multi-select.\r\n  - Users can select multiple folders or designs at once and copy or delete them in a single operation.\r\n\r\n### **Bugfixes**\r\n\r\n- Fixed an issue where the working directory could point to a non-existing folder. The path is now set correctly and the required directory is created reliably.\r\n- Fixed an issue where the braid parameter table in the printout could be empty when printing directly from the application. The table is now properly populated with all parameters.\r\n- Added a logger to the printout process to better detect and diagnose issues related to missing or incorrect data.\r\n", "assets": [{"name": "Converter_GFL_JSON.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.3/Converter_GFL_JSON.exe", "size": 36864}, {"name": "HerzogCABInstaller_200006_V1.1.3.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.3/HerzogCABInstaller_200006_V1.1.3.exe", "size": 65114893}]}, {"tag_name": "v1.1.2", "name": "Herzog CAB v1.1.2", "published_at": "2025-11-27T15:17:12Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.1.2", "body": "**Herzog CAB 1.1.2 — 2025-11-27**\r\n\r\n**New**\r\n\r\n> Added a legacy Herzog CAB Design import so existing designs from the old application can be brought into version 1.1.2.\r\n> Introduced collapse labels and popups for the history sidebar and the new navigationbar.\r\n\r\n**Improvements**\r\n\r\n> Localized navigation titles, history labels, and import strings across the app and updated translation samples in the README.\r\n> Refined navigation labels for design types, JSON entries, and legacy selections while keeping node widths consistent in the UI.\r\n> Updated the README navigation-tree example by adding change-gear and settings nodes, removing obsolete entries, and refreshing tooltips.\r\n\r\n**Bugfixes**\r\n\r\n> Fixed history rendering for large entries, legacy calculations, and change-gear associations so results show correctly with units.\r\n> Corrected swapped legacy imports, collapsed-history states, and main window mappings for navigation labels.\r\n> Resolved product-table coloring in the model and aligned custom swatch widths with the narrowed navigation layout.\r\n\r\n**Full Changelog**: https://github.com/Herzog-GmbH/HerzogCAB-Feedback/commits/v1.1.2", "assets": [{"name": "Converter_GFL_JSON.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.2/Converter_GFL_JSON.exe", "size": 36864}, {"name": "HerzogCABInstaller_200006_V1.1.2.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.2/HerzogCABInstaller_200006_V1.1.2.exe", "size": 64968942}]}];
+
+// ===== Theme =====
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+const savedTheme = localStorage.getItem('hcab-theme');
+if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+updateThemeIcon();
+themeToggle.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('hcab-theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('hcab-theme', 'dark');
+  }
+  updateThemeIcon();
+});
+function updateThemeIcon() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  themeIcon.innerHTML = isDark
+    ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>'
+    : '<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>';
+}
+
+// ===== Year =====
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// ===== Feature hover glow =====
+document.querySelectorAll('.feature').forEach(f => {
+  f.addEventListener('mousemove', e => {
+    const r = f.getBoundingClientRect();
+    f.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    f.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  });
+});
+
+// ===== Reveal on scroll =====
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ===== Releases rendering =====
+function fmtDate(iso) {
+  try {
+    const d = new Date(iso);
+    return d.toLocaleDateString('de-DE', { day: '2-digit', month: 'long', year: 'numeric' });
+  } catch { return iso; }
+}
+function fmtShortDate(iso) {
+  try {
+    const d = new Date(iso);
+    return d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  } catch { return iso; }
+}
+function fmtSize(bytes) {
+  if (!bytes) return '';
+  return (bytes / 1024 / 1024).toFixed(1) + ' MB';
+}
+function sanitizeBody(body) {
+  if (!body) return '';
+  // Strip outer html/body wrappers that sometimes appear in GitHub release bodies
+  body = body.replace(/<!--[\s\S]*?-->/g, '');
+  body = body.replace(/<\/?html[^>]*>/gi, '');
+  body = body.replace(/<\/?body[^>]*>/gi, '');
+  body = body.replace(/<\/?head[^>]*>[\s\S]*?/gi, '');
+  return body.trim();
+}
+
+function renderReleases(releases) {
+  const list = document.getElementById('releaseList');
+  list.innerHTML = '';
+  // Sort newest first by published_at
+  releases = [...releases].sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
+
+  releases.forEach((r, idx) => {
+    const rel = document.createElement('article');
+    rel.className = 'release reveal';
+    if (idx === 0) rel.classList.add('open');
+
+    const isLatest = idx === 0;
+    const verClass = isLatest ? '' : ' past';
+    const installer = (r.assets || []).find(a => /installer/i.test(a.name) && /\.exe$/i.test(a.name));
+    const downloadBtn = installer
+      ? `<a class="release-download" href="${installer.url}" target="_blank" rel="noopener">
+           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+           Installer herunterladen (${fmtSize(installer.size)})
+         </a>` : '';
+
+    const bodyHtml = marked.parse(sanitizeBody(r.body || ''));
+    rel.innerHTML = `
+      <header class="release-head">
+        <span class="release-version${verClass}">${r.tag_name}</span>
+        <div class="release-title">
+          <h3>${r.name || r.tag_name}</h3>
+          <div class="date">${fmtDate(r.published_at)}</div>
+        </div>
+        ${isLatest ? '<span class="release-badge">Latest</span>' : ''}
+        <span class="release-chev">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </span>
+      </header>
+      <div class="release-body">
+        <div class="release-body-inner">
+          ${bodyHtml}
+          ${downloadBtn}
+          <p style="margin-top:18px"><a href="${r.html_url}" target="_blank" rel="noopener">Auf GitHub ansehen →</a></p>
+        </div>
+      </div>
+    `;
+    list.appendChild(rel);
+    io.observe(rel);
+
+    rel.querySelector('.release-head').addEventListener('click', () => {
+      rel.classList.toggle('open');
+    });
+  });
+
+  // Update hero badge with latest release info
+  if (releases.length) {
+    const latest = releases[0];
+    document.getElementById('heroVersionBadge').textContent =
+      `Aktuelle Version: ${latest.tag_name} · veröffentlicht ${fmtShortDate(latest.published_at)}`;
+    document.getElementById('metaReleases').textContent = releases.length;
+  }
+
+  // Optional: activate demo download button when a "demo" asset is published
+  // in the latest release (asset name must contain "demo"). Otherwise keep
+  // the placeholder "coming soon" state.
+  if (releases.length) {
+    const demoAsset = (releases[0].assets || []).find(a => /demo/i.test(a.name) && /\.exe$/i.test(a.name));
+    if (demoAsset) {
+      const demoBtn = document.getElementById('dlDemoButton');
+      const demoNote = document.getElementById('dlDemoNote');
+      const demoBtnText = document.getElementById('dlDemoButtonText');
+      if (demoBtn) {
+        demoBtn.href = demoAsset.url;
+        demoBtn.removeAttribute('aria-disabled');
+        demoBtn.removeAttribute('onclick');
+        demoBtn.target = '_blank';
+        demoBtn.rel = 'noopener';
+      }
+      if (demoBtnText) demoBtnText.textContent = `Demo ${releases[0].tag_name} herunterladen`;
+      if (demoNote) demoNote.textContent = `Größe: ${fmtSize(demoAsset.size)} · Windows 10/11 (64-bit)`;
+    }
+  }
+}
+
+// Render embedded data first for instant display, then try live refresh
+renderReleases(EMBEDDED_RELEASES);
+
+fetch('https://api.github.com/repos/Herzog-GmbH/HerzogCAB-Feedback/releases')
+  .then(r => r.ok ? r.json() : null)
+  .then(live => {
+    if (!live || !live.length) return;
+    const mapped = live.map(r => ({
+      tag_name: r.tag_name, name: r.name, published_at: r.published_at,
+      prerelease: r.prerelease, html_url: r.html_url, body: r.body,
+      assets: (r.assets || []).map(a => ({ name: a.name, url: a.browser_download_url, size: a.size }))
+    }));
+    renderReleases(mapped);
+  })
+  .catch(() => { /* offline fallback to embedded */ });
+</script>
+</body>
+</html>
