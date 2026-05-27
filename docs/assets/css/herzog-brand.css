@@ -102,6 +102,25 @@ body, .md-typeset {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Material-Default ist 0.8rem (12.8px) - wir gehen auf 16.4px hoch,
+   damit der Lesefluss zur Landing-Page passt und Absaetze nicht
+   gedraengt wirken. */
+.md-typeset {
+  font-size: 1.025rem;
+  line-height: 1.7;
+}
+
+.md-typeset p,
+.md-typeset li {
+  margin-bottom: 0.85em;
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+}
+
 code, kbd, pre, .md-typeset code, .md-typeset pre {
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular,
                Menlo, Consolas, monospace;
@@ -117,15 +136,17 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 }
 
 .md-typeset h1 {
-  font-size: 2.25rem;
+  font-size: 2.6rem;
   line-height: 1.15;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.025em;
 }
 
 .md-typeset h2 {
-  font-size: 1.625rem;
-  line-height: 1.2;
-  margin-top: 2.5rem;
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--herzog-border);
 }
@@ -135,8 +156,16 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
 }
 
 .md-typeset h3 {
-  font-size: 1.25rem;
-  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset h4 {
+  font-size: 1.15rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
 }
 
 /* -- Header + Tabs: durchgehend dunkler Block ------------------ */
