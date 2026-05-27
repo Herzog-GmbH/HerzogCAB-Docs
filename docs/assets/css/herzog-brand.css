@@ -509,6 +509,34 @@ code, kbd, pre, .md-typeset code, .md-typeset pre {
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
 }
 
+/* Code-Blocks immer mit pre-Whitespace + horizontal scrollen,
+   nie umbrechen lassen. Stellt sicher, dass ASCII-Tabellen wie
+   die Workspace-Struktur und mehrzeilige Code-Blocks ihre Form
+   behalten. Material's eigene Regeln werden mit !important
+   uebersteuert. */
+.md-typeset pre,
+.md-typeset pre code,
+.md-typeset .highlight,
+.md-typeset .highlight pre,
+.md-typeset .highlight code,
+.md-typeset .highlighttable,
+.md-typeset .highlighttable pre,
+.md-typeset .highlighttable td.code,
+.md-typeset .highlighttable td.code pre,
+.md-typeset .highlighttable td.code code {
+  white-space: pre !important;
+  word-wrap: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  tab-size: 4;
+}
+
+.md-typeset pre,
+.md-typeset .highlight pre,
+.md-typeset .highlighttable td.code pre {
+  overflow-x: auto !important;
+}
+
 /* -- Suche ----------------------------------------------------- */
 .md-search__icon[for="__search"] {
   color: var(--herzog-text-muted);
