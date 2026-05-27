@@ -170,7 +170,6 @@ nav:
           - CodeMeter installieren: installation/codemeter.md
           - Herzog CAB installieren: installation/installer.md
           - Lizenz aktivieren: installation/activate-license.md
-          - Erster Programmstart: installation/first-start.md
       - Erste Schritte:
           - getting-started/index.md
           - Workspace einrichten: getting-started/workspace.md

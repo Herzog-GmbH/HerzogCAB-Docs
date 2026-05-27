@@ -213,4 +213,6 @@ Wenn die Lizenzprüfung fehlschlägt, lesen Sie
 
 ## Nächster Schritt
 
-[Erster Programmstart](first-start.md)
+Mit der gültigen Lizenz ist die Installation abgeschlossen. Wie Sie das
+Programm einrichten und sich zurechtfinden, lesen Sie im Kapitel
+[Erste Schritte](../getting-started/index.md).

@@ -12,7 +12,8 @@ installieren wollen, lesen Sie stattdessen das Kapitel
 3. [CodeMeter installieren](codemeter.md) (Wibu-Runtime, einmalig pro Rechner)
 4. [Herzog CAB installieren](installer.md)
 5. [Lizenz aktivieren](activate-license.md) (Dongle einstecken oder CmAct-Datei einspielen)
-6. [Erster Programmstart](first-start.md)
+
+Danach sind Sie bereit für den ersten Programmstart — wie Sie das Programm einrichten und sich zurechtfinden, lesen Sie im Kapitel [Erste Schritte](../getting-started/index.md).
 
 !!! info "Sie haben kein Installationspaket erhalten?"
     Wenden Sie sich an Ihren Herzog-Ansprechpartner oder schreiben Sie a
