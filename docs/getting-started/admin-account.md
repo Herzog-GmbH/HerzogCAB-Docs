@@ -25,8 +25,8 @@ Administrator-Konto. Dieses Konto:
 !!! tip "Wer sollte Administrator sein?"
     Idealerweise eine Person, die **organisatorisch** für Herzog CAB im
     Werk verantwortlich ist - z. B. ein Schichtführer oder Werkstattleiter.
-    Reine Maschinenbediener bekommen meist die Rolle *Produktion* oder
-    *Nur lesen*.
+    Reine Maschinenbediener bekommen meist die Rolle *Bearbeiter* oder
+    *Betrachter* (siehe [Rollen und Berechtigungen](../users/roles.md)).
 
 !!! warning "Passwort sicher aufbewahren"
     Wenn Sie das Admin-Passwort vergessen, kann nur ein Eingriff von

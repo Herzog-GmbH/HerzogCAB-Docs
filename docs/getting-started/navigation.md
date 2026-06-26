@@ -1,58 +1,60 @@
 # Navigation und Verlauf
 
-## Navigationsbaum
+## Navigationsbereich
 
-Der Baum links ist nach Themen gegliedert:
+Die Navigation links ist nach Modulen gegliedert. Aufklappbare Gruppen sind mit
+einem Pfeil-Symbol markiert:
 
 ```
+Home
+Aufträge
+Maschinenpark
+Hallenplaner
+Designer
+Berechnungen
+  ├─ Material
+  ├─ Produkt
+  └─ Produktion
 Stammdaten
+  ├─ Kunden
+  ├─ Designs
+  ├─ Flechtmaschinen
+  ├─ Grundrisse
+  ├─ Medien
   ├─ Materialien
   ├─ Spulen
-  ├─ Maschinen
-  ├─ Kunden
   └─ Farben
-Berechnungen
-  ├─ Flechtgeometrie
-  ├─ Material
-  ├─ Spulen
-  ├─ Maschine
-  ├─ Produkt
-  ├─ Rohrgeflecht
-  └─ Spezial
-Aufträge
-Designer
-Druckvorlagen
-Benutzer
-Einstellungen
+Druck Editor
+Parameter-Übersicht
+Systemverwaltung
+  ├─ Benutzer
+  ├─ Rollen
+  ├─ Profile
+  └─ Firma
 ```
 
-Klicken Sie einen Eintrag an, um die zugehörige Seite zu öffnen. Einträge
-mit Pfeil-Symbol enthalten Unterpunkte, die sich aufklappen lassen.
+Klicken Sie einen Eintrag an, um die zugehörige Seite zu öffnen. Einträge mit
+Pfeil enthalten Unterpunkte, die sich auf- und zuklappen lassen.
 
-## Verlauf
+!!! tip "Favoriten anpinnen"
+    Per **Rechtsklick** auf einen Navigationseintrag pinnen Sie ihn als
+    **Favorit** an. Favoriten erscheinen oben in der Navigation und auf der
+    [Startseite](interface.md).
 
-Beim Arbeiten merkt sich Herzog CAB die zuletzt geöffneten Berechnungen
-und Seiten in einem **Verlauf** auf der rechten Seite. Vorteile:
+## Letzte Aktivitäten
 
-* Schneller Sprung zu kürzlich geöffneten Berechnungen.
-* Bei Berechnungen werden Ihre Eingabewerte zwischengespeichert - Sie
-  können also kurz auf eine andere Seite wechseln und die ursprüng-
-  liche Berechnung mit allen Werten wieder öffnen.
+Die **Startseite** zeigt unter *Letzte Berechnungen*, *Letzte Aufträge* und
+*Letzte Designs* die zuletzt geöffneten Elemente – ein schneller Weg zurück zur
+laufenden Arbeit.
 
-> :material-image-area: *Screenshot: Verlauf-Sidebar*
+!!! info "Eingabewerte bleiben erhalten"
+    Innerhalb einer Sitzung merkt sich Herzog CAB Ihre Eingaben in den
+    Berechnungen. Sie können kurz auf eine andere Seite wechseln und die
+    Berechnung später mit allen Werten wieder öffnen. Nach einem
+    Programm­neustart sind die Werte zurückgesetzt.
 
-!!! info "Verlauf zurücksetzen"
-    Beim Programmstart wird der Verlauf neu aufgebaut. Beim Beenden
-    werden die Eingabewerte verworfen.
+## Hilfe zur aktuellen Seite
 
-## Tastenkürzel zur Navigation
-
-| Tastenkombination     | Wirkung                                  |
-|-----------------------|------------------------------------------|
-| ++ctrl+f++            | Schnellsuche im Navigationsbaum          |
-| ++alt+left++          | Zurück im Verlauf                       |
-| ++alt+right++         | Vorwärts im Verlauf                     |
-| ++ctrl+p++            | Drucken                                  |
-| ++f1++                | Online-Hilfe öffnen                     |
-
-Eine vollständige Liste finden Sie unter [Tastenkürzel](../appendix/keyboard-shortcuts.md).
+Mit ++f1++ öffnen Sie die Hilfe zur Seite, auf der Sie sich gerade befinden.
+Eine vollständige Liste der Tastenkürzel finden Sie unter
+[Tastenkürzel](../appendix/keyboard-shortcuts.md).

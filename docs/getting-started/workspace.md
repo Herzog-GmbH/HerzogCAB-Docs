@@ -7,7 +7,7 @@ Ihre Stammdaten, Aufträge, Druckvorlagen und benutzerdefinierten Profile.
 
 Im Workspace-Ordner finden Sie:
 
-```
+```text
 <Workspace>\
 ├── customers.json           Kunden
 ├── machines.json            Maschinen

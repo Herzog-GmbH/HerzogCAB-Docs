@@ -1,27 +1,35 @@
-# Lineare Dichte umrechnen
+# Umrechnung Feinheit
 
-> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
+Mit der **Umrechnung Feinheit** rechnen Sie einen Feinheitswert (lineare Dichte) live zwischen den gebräuchlichen Garn-Einheiten um – von **tex** nach **dtex**, **den**, **Nr_Metrisch** oder **Nr_Englisch** und in jeder beliebigen Richtung. Das ist praktisch, wenn ein Garn in einer Einheit angegeben ist, Sie aber für Auftrag, Datenblatt oder Berechnung eine andere Einheit benötigen.
 
-Rechnet zwischen den gebräuchlichen Einheiten der linearen Dichte um (tex, dtex, denier, g/m).
+## Eingabewerte
 
-> :material-image-area: *Screenshot: Berechnungsseite "Lineare Dichte umrechnen"*
+Die Seite ist als Live-Umrechner mit einer **Von/Zu**-Karte aufgebaut: Sie tragen den Wert ein, wählen die Ausgangs- und Zieleinheit, das Ergebnis erscheint sofort.
 
-## Eingabe
+| Feld | Einheit | Bedeutung |
+|---|---|---|
+| **Eingabe:** | je nach gewählter Einheit | Umzurechnender Feinheitswert. Es wird nur ein positiver Wert (> 0) umgerechnet. |
+| **Von:** | tex, dtex, den, Nr_Metrisch, Nr_Englisch | Einheit, in der der eingegebene Wert vorliegt. Voreinstellung: **tex**. |
+| **Zu:** | tex, dtex, den, Nr_Metrisch, Nr_Englisch | Einheit, in die umgerechnet werden soll. Voreinstellung: **dtex**. |
 
-> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
-
-| Feld                       | Einheit | Bemerkung                            |
-|----------------------------|---------|--------------------------------------|
-|                            |         |                                      |
+!!! note "Einheiten tauschen"
+    Über den grünen Richtungs-Pfeil zwischen den beiden Feldern (Tooltip *„Einheiten tauschen"*) vertauschen Sie **Von** und **Zu** mit einem Klick und rechnen so direkt in die Gegenrichtung.
 
 ## Ergebnis
 
-| Wert                       | Einheit | Bemerkung                            |
-|----------------------------|---------|--------------------------------------|
-|                            |         |                                      |
+| Wert | Einheit | Bedeutung |
+|---|---|---|
+| **Ergebnis** | die unter **Zu:** gewählte Einheit | Der in die Zieleinheit umgerechnete Feinheitswert. Bei einer Eingabe ≤ 0 (oder einer ungültigen Umrechnung) wird **0** ausgegeben. |
 
-## Hinweise zur Anwendung
+## Berechnung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
+Herzog CAB rechnet den eingegebenen Feinheitswert intern zwischen den Einheiten **tex**, **dtex**, **den**, **Nr_Metrisch** und **Nr_Englisch** um. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
+!!! note "Beide Richtungen"
+    Der Umrechner arbeitet in beide Richtungen: Über die Auswahl von **Von** und **Zu** bzw. den Tausch-Pfeil können Sie jede der fünf Einheiten als Ausgangs- oder als Zieleinheit verwenden.
 
+## Verwandte Berechnungen
+
+* [Feinheit / Titer](./linear-density.md)
+* [Materialdurchmesser](./material-diameter.md)
+* [Materialien (Stammdaten)](../../master-data/materials.md)

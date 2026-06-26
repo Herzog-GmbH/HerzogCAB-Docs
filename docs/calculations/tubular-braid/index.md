@@ -1,13 +1,12 @@
-# Rohrgeflecht
+# Hohlgeflecht
 
-Berechnungen rund um das Umflechten von Rohren.
+Berechnungen für schlauch- bzw. rohrförmige Geflechte (Hohlgeflecht):
+Klöppelzahl, Durchmesser, Materialbreite und Bedeckung. In der App liegt diese
+Gruppe unter **Berechnungen → Produkt → Hohlgeflecht**.
 
-## Berechnungen in dieser Gruppe
+## Berechnungen
 
-* [Garnbreite (Tube Yarn Width)](yarn-width.md)
-* [Rohr](tube.md)
-* [Rohrdurchmesser](tube-diameter.md)
-* [Rohrträger](tube-carriers.md)
-* [Rohrüberzug](tube-cover.md)
-
-> :material-image-area: *Screenshot: Übersichtsseite "Rohrgeflecht" mit Karten je Berechnung*
+* [Anzahl Klöppel](tube-carriers.md)
+* [Durchmesser](tube-diameter.md)
+* [Materialbreite](yarn-width.md)
+* [Bedeckung](tube-cover.md)

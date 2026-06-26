@@ -1,12 +1,12 @@
 # Material
 
-Lineare Dichte, Materialdurchmesser, Kern-/Mantel-Berechnungen.
+Berechnungen rund um das Material und die Spule – Feinheit (Titer),
+Materialdurchmesser, Materiallänge und Spulvolumen.
 
-## Berechnungen in dieser Gruppe
+## Berechnungen
 
-* [Kern- und Mantelseile](core-sheath.md)
-* [Lineare Dichte umrechnen](linear-density-conversion.md)
-* [Lineare Dichte](linear-density.md)
+* [Feinheit / Titer](linear-density.md)
+* [Umrechnung Feinheit](linear-density-conversion.md)
 * [Materialdurchmesser](material-diameter.md)
-
-> :material-image-area: *Screenshot: Übersichtsseite "Material" mit Karten je Berechnung*
+* [Materiallänge auf Spule](../bobbins/material-length.md)
+* [Spulvolumen](../bobbins/bobbin-volume.md)

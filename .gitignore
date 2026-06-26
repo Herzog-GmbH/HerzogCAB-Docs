@@ -16,3 +16,11 @@ __pycache__/
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# Handbuch-Screenshot-Arbeitsdateien (Roh-Captures, Crops, Vorschau)
+/_shots/
+/_capture_test.png
+/b.txt
+/be.txt
+/build_out.txt
+/build_err.txt

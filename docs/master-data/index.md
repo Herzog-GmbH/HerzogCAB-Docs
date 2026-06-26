@@ -1,36 +1,46 @@
 # Stammdaten
 
 In den **Stammdaten** legen Sie alle Daten ab, die Sie immer wieder in
-Berechnungen und Aufträgen brauchen. Stammdaten gehören zum Workspace -
-sie werden also von allen Bedienern geteilt, die mit dem gleichen
+Berechnungen, im Designer und in Aufträgen brauchen. Stammdaten gehören zum
+Workspace – sie werden also von allen Bedienern geteilt, die mit demselben
 Workspace arbeiten.
+
+Sie erreichen die Bereiche über die Navigationsgruppe **Stammdaten** auf der
+linken Seite.
 
 ## Bereiche
 
-| Bereich                        | Inhalt                                              |
-|--------------------------------|-----------------------------------------------------|
-| [Materialien](materials.md)  | Drahtsorten, Garne, Fäden mit ihren Eigenschaften  |
-| [Spulen](bobbins.md)            | Spulenformen und ihre Volumen                       |
-| [Maschinen](machines.md)      | Flechtmaschinen Ihres Maschinenparks                |
-| [Kunden](customers.md)            | Kundenstammdaten für Aufträge                     |
-| [Farben](colors.md)            | Farb-Palette für Designs                           |
+| Bereich | Inhalt |
+|---|---|
+| [Kunden](customers.md) | Kundenstammdaten für Aufträge |
+| [Materialien](materials.md) | Garne, Drähte, Litzen und Fäden mit Dichte und Titer |
+| [Spulen](bobbins.md) | Spulentypen (Bobbins) und ihre Abmessungen |
+| [Flechtmaschinen](machines.md) | Maschinen Ihres Maschinenparks |
+| [Farben](colors.md) | Farb-Palette für den Designer |
+| Designs | Gespeicherte Flechtdesigns (siehe [Design](../design/index.md)) |
+| Grundrisse | Hallen-Grundrisse für den [Hallenplaner](../design/index.md) |
+| Medien | Bilder und Dokumente für Maschinen und Druckvorlagen |
 
 ## Allgemeine Bedienung
 
-Alle Stammdaten-Editoren sind ähnlich aufgebaut:
+Alle Stammdaten-Editoren sind gleich aufgebaut:
 
-* **Liste** auf der linken Seite - alle vorhandenen Einträge.
-* **Detail-Ansicht** rechts - Eigenschaften des gewählten Eintrags.
-* **Aktionsleiste** oben:
-  * :material-plus: **Neu** - Eintrag anlegen
-  * :material-content-copy: **Duplizieren** - bestehenden Eintrag kopieren
-  * :material-delete: **Löschen** - Eintrag löschen (Sicherheitsabfrage)
-  * :material-content-save: **Speichern** - Änderungen sichern
-  * :material-undo: **Verwerfen** - nicht gespeicherte Änderungen aufheben
+* **Liste** auf der linken Seite – ein Suchfeld und alle vorhandenen
+  Einträge als Karten. Unter dem Suchfeld steht, wie viele Einträge zur
+  aktuellen Suche passen.
+* **Detail-Ansicht** rechts – die Eigenschaften des in der Liste gewählten
+  Eintrags.
+* **Schaltflächen** unten:
+    * **Neu** (z. B. *Neues Material*, *Neue Spule*) – Eintrag anlegen
+    * **Speichern** – Änderungen sichern
+    * **Löschen** – Eintrag löschen (mit Sicherheitsabfrage)
 
-> :material-image-area: *Screenshot: Stammdaten-Übersicht (Materialeditor)*
+> Einige Editoren bieten zusätzliche Aktionen, z. B. **CSV importieren** bei
+> den Kunden.
+
+![Stammdaten-Übersicht am Beispiel des Materialeditors.](../assets/screenshots/master-data/materialien-uebersicht.png)
 
 !!! warning "Berechtigung erforderlich"
     Zum Anlegen, Ändern oder Löschen von Stammdaten benötigen Sie die
-    Berechtigung **Stammdaten bearbeiten**. Reine Bediener mit der Rolle
-    *Produktion* oder *Nur lesen* können die Daten nur ansehen.
+    entsprechende Berechtigung. Bediener mit reiner Leseberechtigung können
+    die Daten nur ansehen.

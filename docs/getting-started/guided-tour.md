@@ -1,33 +1,26 @@
 # Guided Tour
 
-Herzog CAB hat eingebaute, interaktive Touren, die Sie schrittweise durch
-einzelne Funktionsbereiche führen. Sie werden durch Pfeile und kurze
-Texte direkt im Programm geleitet.
+Herzog CAB enthält eingebaute, interaktive **Touren**, die neue Bediener
+schrittweise durch einzelne Funktionsbereiche führen. Die Hinweise erscheinen als
+Sprechblasen direkt im Programm und zeigen mit einem Pfeil auf das jeweilige
+Bedienelement.
 
-## Tour starten
+## Touren
 
-* Menü *Werkzeuge > Tour anzeigen*
+Touren sind an einzelne Module gekoppelt und erklären deren Bedienung direkt vor
+Ort – unter anderem für den **Auftrags-Editor**, die **Auftragsliste** und die
+**Maschinen-/Stammdatenverwaltung**.
 
-Es öffnet sich ein Auswahl-Dialog mit den verfügbaren Touren:
+## Eine Tour durchlaufen
 
-> :material-image-area: *Screenshot: Tour-Auswahldialog*
+* **Weiter** – über den Pfeil bzw. die Schaltfläche in der Sprechblase.
+* **Zurück** – zum vorherigen Schritt.
+* **Beenden** – über das Schließen-Symbol der Sprechblase.
 
-| Tour                       | Inhalt                                         |
-|----------------------------|------------------------------------------------|
-| Erste Schritte             | Allgemeine Bedienung                           |
-| Stammdaten anlegen         | Materialien und Maschinen                      |
-| Erste Berechnung           | Beispiel: Flechtwinkel                         |
-| Druckvorlage anpassen      | Vorlagen-Editor verstehen                      |
+!!! tip "Touren zum Einlernen nutzen"
+    Lassen Sie neue Bediener die Tour des jeweiligen Moduls einmal komplett
+    durchlaufen – das spart Erklärzeit und vermeidet Bedienfehler.
 
-## Tour durchlaufen
-
-* **Weiter** über den Pfeil rechts oder die Eingabetaste.
-* **Zurück** über den Pfeil links.
-* **Abbrechen** über das X oben rechts in der Tour-Blase.
-
-> :material-image-area: *Screenshot: Tour-Overlay im Hauptfenster*
-
-!!! tip "Tour für neue Bediener"
-    Wenn Sie einen neuen Bediener einlernen, lassen Sie ihn die "Erste
-    Schritte"-Tour einmal komplett durchlaufen. Spart Ihnen viel
-    Erklärzeit.
+!!! info "Lieber nachschlagen?"
+    Dieses Handbuch deckt dieselben Themen ausführlicher ab. Mit ++f1++ öffnen
+    Sie die Hilfe zur Seite, auf der Sie sich gerade befinden.

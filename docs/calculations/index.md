@@ -1,79 +1,70 @@
 # Berechnungen
 
-Das Herz von Herzog CAB sind die **Berechnungen**. Sie sind nach Themen-
-gruppen gegliedert und über den Navigationsbaum (*Berechnungen*) bzw.
-das Menü *Ansicht > CAB Calculation 2.0* erreichbar.
+Das Herz von Herzog CAB sind die **Berechnungen**. Sie sind über den
+Navigationspunkt *Berechnungen* erreichbar; dort öffnet sich zunächst eine
+Übersicht aller Rechner als Kacheln, gruppiert wie in der App.
 
-## Themengruppen
+![Berechnungen-Übersicht mit allen Rechnern, gruppiert nach Material, Produkt und Produktion.](../assets/screenshots/calculations/berechnungen-uebersicht.png)
+
+## Gruppen
 
 <div class="grid cards" markdown>
-
-- :material-rotate-3d-variant: __[Flechtgeometrie](braid-geometry/index.md)__
-
-    ---
-    Flechtwinkel, Verlegelänge, Flechtdichte
 
 - :material-tune-variant: __[Material](material/index.md)__
 
     ---
-    Lineare Dichte, Materialdurchmesser, Kern-/Mantel-Konstellationen
-
-- :material-cylinder: __[Spulen](bobbins/index.md)__
-
-    ---
-    Volumen, Materiallänge auf Spule, Anzahl Wickler
-
-- :material-cog-outline: __[Maschine](machine/index.md)__
-
-    ---
-    Abmessungen, Flügelteilkreis, Produktionsgeschwindigkeit, Laufzeit
+    Feinheit (Titer), Materialdurchmesser, Materiallänge auf Spule, Spulvolumen
 
 - :material-shape-outline: __[Produkt](product/index.md)__
 
     ---
-    Durchmesser, Seillänge, Seilgewicht
+    Flechtwinkel, Geflechtsdichte, Durchmesser, Länge, Gewicht – inkl.
+    [Hohlgeflecht](tubular-braid/index.md)
 
-- :material-hexagon-outline: __[Rohrgeflecht](tubular-braid/index.md)__
-
-    ---
-    Rohrträger, Rohrüberzug, Garnbreite
-
-- :material-star-four-points-outline: __[Spezial](advanced/index.md)__
+- :material-cog-outline: __[Produktion](machine/index.md)__
 
     ---
-    Horn Gear Layout, Carriers Rules, Braid Mapping
+    Geschwindigkeit, Maschinenmaße, Laufzeit, Spulmaschinen, Wechselräder
 
 </div>
 
 ## Bedienung der Berechnungen
 
-Alle Berechnungen sind nach dem gleichen Schema aufgebaut:
+Alle Berechnungen sind gleich aufgebaut: Eingabefelder oben, Ergebnis darunter,
+Schaltfläche **Berechnen**.
 
-> :material-image-area: *Screenshot: Beispiel-Berechnung mit beschrifteten Bereichen*
+![Beispiel-Berechnung „Feinheit / Titer": Eingabefelder, Ergebnis-Karte und Schaltfläche „Berechnen".](../assets/screenshots/calculations/beispiel-feinheit.png)
 
-| Bereich          | Inhalt                                                    |
-|------------------|-----------------------------------------------------------|
-| **Eingabe**      | Felder für die Eingangsgrößen (gelb hinterlegt).        |
-| **Auswahl**      | Optional: Material/Spule/Maschine aus den Stammdaten.     |
-| **Ergebnis**     | Ausgaberechnung (grau hinterlegt). Mehrere Werte gleichzeitig. |
-| **Aktionen**     | Drucken, in Auftrag übernehmen, Werte zurücksetzen.     |
+| Bereich | Inhalt |
+|---|---|
+| **Eingabe** | Felder für die Eingangsgrößen. |
+| **Auswahl** | Optional: Material/Spule/Maschine aus den Stammdaten übernehmen. |
+| **Ergebnis** | Berechnete Ausgabewerte (oft mehrere gleichzeitig). |
+| **Berechnen / Löschen** | Ergebnis berechnen bzw. Eingaben zurücksetzen. |
 
 !!! tip "Berechnungen rückwärts lösen"
-    Viele Berechnungen lassen sich umkehren. Beispiel: Sie kennen die
-    Produktionsgeschwindigkeit und wollen wissen, welche Drehzahl nötig
-    ist - tragen Sie die Geschwindigkeit ein, das Drehzahlfeld leer.
-    Herzog CAB rechnet automatisch in die andere Richtung.
+    Viele Berechnungen lassen sich umkehren: Lassen Sie das gesuchte Feld leer
+    und tragen Sie stattdessen das Ergebnis ein – Herzog CAB rechnet in die
+    andere Richtung.
+
+## Verlauf der Berechnungen (rechte Seitenleiste)
+
+Am rechten Fensterrand können Sie über den Pfeil die **Verlaufs-Leiste**
+auf- und zuklappen. Sie listet die **zuletzt durchgeführten Berechnungen** mit
+ihrem Ergebnis. Ein Klick auf einen Eintrag öffnet die Berechnung erneut – mit
+allen Eingabewerten, die Sie zuletzt verwendet haben. So springen Sie schnell
+zwischen mehreren Rechnern hin und her, ohne Werte neu einzugeben.
+
+![Berechnungsseite mit Eingabe und Ergebnis; rechts lässt sich der Verlauf einblenden.](../assets/screenshots/calculations/beispiel-feinheit.png)
 
 ## Werte zwischenspeichern
 
-Eingegebene Werte bleiben erhalten, solange das Programm läuft. Wechseln
-Sie auf eine andere Berechnung und kommen später zurück, finden Sie
-Ihre Eingaben unverändert vor. Nach einem Programmneustart sind die
-Werte zurückgesetzt.
+Eingegebene Werte bleiben erhalten, solange das Programm läuft. Wechseln Sie auf
+eine andere Berechnung und kommen später zurück, finden Sie Ihre Eingaben
+unverändert vor. Nach einem Programmneustart sind die Werte zurückgesetzt.
 
-## In Auftrag übernehmen
+## Im Auftrag rechnen
 
-Wenn Sie eine Berechnung im Rahmen eines [Auftrags](../orders/index.md)
-durchführen, können Sie das Ergebnis über **In Auftrag übernehmen**
-direkt mit dem Auftrag verknüpfen. So bleibt die Berechnungs-Spur
-nachvollziehbar.
+Im [Auftrag](../orders/create.md) öffnen Sie viele dieser Rechner direkt über
+das Rechner-Symbol neben den Feldern; das Ergebnis wird in den Auftrag
+zurückgeschrieben.

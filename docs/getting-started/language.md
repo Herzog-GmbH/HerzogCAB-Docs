@@ -13,24 +13,11 @@ Herzog CAB ist in folgenden Sprachen verfügbar:
 
 ## Sprache ändern
 
-Im laufenden Programm:
+1. Menü **Datei → Einstellungen** öffnen.
+2. Im Tab **Allgemein** unter **Sprache** die gewünschte Sprache wählen.
 
-1. Menü *Werkzeuge* (engl. *Tools*) > *Sprache ändern* (engl. *Change Language*).
-2. Gewünschte Sprache aus der Liste wählen.
+Details und Screenshot: [Sprache und Schriftgröße](../settings/language-font.md).
 
-> :material-image-area: *Screenshot: Sprachauswahl-Dialog*
-
-Die Änderung wirkt sich sofort aus. Einige Texte (z. B. fest in
-Druckvorlagen eingetragene Beschriftungen) werden erst nach einem
-Programmneustart auf die neue Sprache umgestellt.
-
-!!! info "Mehrere Bediener mit unterschiedlichen Sprachen"
-    Die Spracheinstellung gilt **pro Benutzer**. Loggt sich ein anderer
-    Bediener ein, wird seine bevorzugte Sprache verwendet.
-
-## Schnellumschaltung
-
-Im Menü *Werkzeuge* gibt es zusätzlich einen direkten Eintrag für
-**English**. Damit können Sie schnell auf Englisch umschalten und
-zurück - praktisch z. B. für ausweichende Bediener oder Service-
-Techniker.
+!!! info "Sprachwechsel startet Herzog CAB neu"
+    Damit alle Texte vollständig in der neuen Sprache geladen werden, startet
+    ein Sprachwechsel das Programm neu. Sichern Sie offene Eingaben vorher.

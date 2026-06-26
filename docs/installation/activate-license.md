@@ -70,7 +70,7 @@ mehrstufigen Dateiaustausch zwischen Ihnen und der Herzog GmbH.
 
 ### Überblick
 
-```
+```text
 1. Empty.WibuCmLif      Herzog GmbH  →  Sie    (leerer Lizenz-Container)
 2. Request.WibuCmRaC    Sie          →  Herzog (Anforderung mit Fingerabdruck)
 3. Update.WibuCmRaU     Herzog GmbH  →  Sie    (gültige Lizenz)

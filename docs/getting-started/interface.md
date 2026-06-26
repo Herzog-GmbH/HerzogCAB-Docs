@@ -1,56 +1,68 @@
 # Oberfläche im Überblick
 
-> :material-image-area: *Screenshot: Hauptfenster mit nummerierten Bereichen (1-5)*
+Nach der Anmeldung startet Herzog CAB mit der **Startseite (Home)**. Von hier aus
+erreichen Sie alle Bereiche über die Navigation links.
 
-Das Hauptfenster von Herzog CAB ist in fünf Bereiche gegliedert:
+![Startseite mit Navigation (links), Begrüßung, Auftrags-Kennzahlen und letzten Aktivitäten.](../assets/screenshots/getting-started/oberflaeche-home.png)
 
-## 1. Menüleiste (oben)
+## Aufbau des Hauptfensters
 
-Enthält die Top-Level-Menüs:
+### Menüleiste (oben)
 
-| Menü       | Inhalt                                                  |
-|-------------|---------------------------------------------------------|
-| **Datei**   | Drucken, Beenden                                        |
-| **Ansicht** | Navigationsleiste ein-/ausblenden, CAB-Calculation, CAB-Design |
-| **Werkzeuge** | Einstellungen, Sprache ändern, Tour anzeigen        |
-| **Hilfe**   | Über HerzogCAB, Über Qt, Feedback, Updates            |
+| Menü | Inhalt |
+|---|---|
+| **Datei** | Einstellungen, Drucken (++ctrl+p++), Beenden |
+| **Ansicht** | Anzeigeoptionen, Navigation ein-/ausblenden |
+| **Über** | Programm- und Versionsinformationen |
+| **Hilfe** | Hilfe, Feedback, Updates |
 
-## 2. Navigationsbaum (links)
+### Navigation (links)
 
-Hier wählen Sie, welcher Bereich des Programms in der Mitte angezeigt
-wird. Aufgebaut als Baum:
+Der seitliche Navigationsbereich führt zu allen Modulen. Aufklappbare Gruppen
+(Pfeil-Symbol) enthalten Unterpunkte:
 
-* **Stammdaten** - Materialien, Spulen, Maschinen, Kunden, Farben
-* **Berechnungen** - alle Kalkulations-Module
-* **Aufträge** - Auftragsverwaltung
-* **Designer** - Flechtmuster entwerfen
-* **Druckvorlagen** - Vorlagen für Ausdrucke
+* **Home** – die Startseite
+* **Aufträge** – [Auftragsverwaltung](../orders/index.md)
+* **Maschinenpark** – [Flotten-Übersicht](../master-data/machine-park.md)
+* **Hallenplaner** – Maschinen auf dem Hallen-Grundriss anordnen
+* **Designer** – [Flechtmuster entwerfen](../design/index.md)
+* **Berechnungen** – [alle Rechner](../calculations/index.md) (Gruppen Material, Produkt, Produktion)
+* **Stammdaten** – [Kunden, Designs, Flechtmaschinen, Grundrisse, Medien, Materialien, Spulen, Farben](../master-data/index.md)
+* **Druck Editor** – [Druckvorlagen](../print-templates/index.md)
+* **Parameter-Übersicht** – alle aktuellen Parameter auf einen Blick
+* **Systemverwaltung** – [Benutzer, Rollen, Profile, Firma](../users/index.md)
 
-Die Navigation lässt sich über Menü *Ansicht > Navigation* ein- und
-ausblenden.
+Über den Pfeil am oberen Rand der Navigation klappen Sie die Leiste ein, um mehr
+Platz für den Hauptbereich zu schaffen.
 
-## 3. Hauptbereich (Mitte)
+### Hauptbereich (Mitte)
 
-Zeigt den Inhalt der gerade gewählten Seite. Bei Berechnungen sind
-hier die Eingabefelder oben und die Ergebnisse unten.
+Zeigt den Inhalt der gewählten Seite – z. B. eine Stammdaten-Liste, eine
+Berechnung oder den Auftrags-Editor.
 
-## 4. Verlauf-Sidebar (rechts)
+### Verlauf / Historie (rechts)
 
-Listet die zuletzt geöffneten Berechnungen oder Seiten. Klicken Sie
-einen Eintrag an, um direkt dorthin zurückzuspringen.
+Am rechten Rand lässt sich über den Pfeil eine **Verlaufs-Leiste** ein- und
+ausklappen. Sie listet die zuletzt geöffneten Seiten – insbesondere die zuletzt
+durchgeführten [Berechnungen](../calculations/index.md) – und bringt Sie per
+Klick direkt dorthin zurück. Mehr dazu unter
+[Navigation und Verlauf](navigation.md).
 
-## 5. Profil-Leiste (unten links)
+### Profil-Leiste (unten links)
 
-Zeigt den aktuell angemeldeten Benutzer und das Profilbild. Klicken Sie
-darauf für:
+Unten links zeigt das **Benutzersymbol** den angemeldeten Benutzer mit Profilbild
+und Rolle (siehe [Eigenes Profil](../users/my-profile.md)).
 
-* eigenes Profil bearbeiten (siehe [Eigenes Profil](../users/my-profile.md))
-* abmelden
+## Die Startseite (Home)
+
+Die Startseite fasst das Wichtigste zusammen:
+
+* **Begrüßung** mit Ihrem Namen, Ihren Rollen und dem letzten Login.
+* **Aufträge** – Kennzahlen je Status (Entwürfe, Freigegeben, In Produktion, Abgeschlossen) und die anstehenden Produktionen der nächsten 14 Tage.
+* **Favoriten** – angepinnte Navigationspunkte (Rechtsklick auf einen Eintrag in der Navigation).
+* **Letzte Berechnungen / Aufträge / Designs** – schneller Wiedereinstieg.
 
 ## Toast-Meldungen
 
-Hinweise und Warnmeldungen erscheinen rechts unten als kurze, automatisch
-verschwindende **Toast-Benachrichtigungen**. Beispiel: "Auftrag gespeichert"
-oder "Webserver gestartet".
-
-> :material-image-area: *Screenshot: Toast-Meldung*
+Hinweise und Bestätigungen erscheinen kurz als **Toast-Benachrichtigung**
+(z. B. „Auftrag gespeichert") und verschwinden von selbst wieder.

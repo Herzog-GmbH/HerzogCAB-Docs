@@ -1,27 +1,39 @@
 # Materiallänge auf Spule
 
-> :material-alert-circle-outline: **TODO** *Beschreibung dieser Berechnung erst durch Eike validieren.*
+Diese Berechnung ermittelt, **wie viel Material auf eine Spule passt** – die
+nutzbare Fadenlänge auf der Spule. Grundlage sind das Wickelvolumen der Spule und
+die Materialdaten (Dichte, Feinheit bzw. Abmessungen).
 
-Wie viel Material passt auf eine Spule? Auf Basis des Spulen-volumens und der linearen Dichte des Materials.
+## Eingabewerte
 
-> :material-image-area: *Screenshot: Berechnungsseite "Materiallänge auf Spule"*
+Über **Berechnung über** wählen Sie die Rechenbasis; je nach Wahl werden
+unterschiedliche Felder eingeblendet.
 
-## Eingabe
-
-> :material-alert-circle-outline: **TODO** *Felder anhand des laufenden Dialogs eintragen.*
-
-| Feld                       | Einheit | Bemerkung                            |
-|----------------------------|---------|--------------------------------------|
-|                            |         |                                      |
+| Feld | Einheit | Bedeutung |
+|---|---|---|
+| **Berechnung über** | – | Rechenbasis: **Material**, **Durchmesser** oder **Rechteckfaden**. |
+| **Maschinentype** | – | Filtert die wählbaren Spulen. |
+| **Spule** | – | Spule aus den [Spulen-Stammdaten](../../master-data/bobbins.md); liefert die Abmessungen für das Wickelvolumen. |
+| **Material** | – | Optional: Material aus den Stammdaten; übernimmt die **Dichte** automatisch. |
+| **Dichte** | g/cm³ | Materialdichte. |
+| **Feinheit** | tex, dtex, den, Nr. metrisch, Nr. englisch | Feinheit des Materials (nur bei Rechenbasis *Material*). |
+| **Durchmesser** | mm | Materialdurchmesser (nur bei Rechenbasis *Durchmesser*). |
+| **Rechteckhöhe**, **Rechteckbreite** | mm | Maße des Flachfadens (nur bei Rechenbasis *Rechteckfaden*). |
+| **Füllungsgrad** | % | Anteil des Spulenvolumens, der tatsächlich bewickelt wird (Vorgabe 70). |
+| **Fachung** | Stück | Anzahl der Fäden je Klöppel. |
 
 ## Ergebnis
 
-| Wert                       | Einheit | Bemerkung                            |
-|----------------------------|---------|--------------------------------------|
-|                            |         |                                      |
+| Wert | Einheit | Bedeutung |
+|---|---|---|
+| **Materiallänge** | m | Auf die Spule passende Fadenlänge (2 Nachkommastellen). |
 
-## Hinweise zur Anwendung
+## Berechnung
 
-> :material-alert-circle-outline: **TODO** *Praktische Hinweise und typische Wertebereiche ergänzen.*
+Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
+## Verwandte Berechnungen
 
+* [Spulvolumen](bobbin-volume.md)
+* [Feinheit / Titer](../material/linear-density.md)
+* [Materialdurchmesser](../material/material-diameter.md)

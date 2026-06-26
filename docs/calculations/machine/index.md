@@ -1,13 +1,12 @@
-# Maschine
+# Produktion
 
-Abmessungen, Flügelteilkreis, Produktionsgeschwindigkeit, Laufzeit, Wechselräder.
+Berechnungen rund um die Produktion – Geschwindigkeit, Maschinenmaße, Laufzeit,
+Anzahl Spulmaschinen und Wechselräder.
 
-## Berechnungen in dieser Gruppe
+## Berechnungen
 
-* [Maschinenabmessungen](dimensions.md)
-* [Flügelteilkreis (Pitch Circle Diameter)](wing-pitch-circle.md)
-* [Laufzeit und Spulensatz](run-time-bobbin-set.md)
 * [Produktionsgeschwindigkeit](production-speed.md)
-* [Wechselräder Gummiantrieb](change-gears.md)
-
-> :material-image-area: *Screenshot: Übersichtsseite "Maschine" mit Karten je Berechnung*
+* [Maschinen-Dimensionierung](dimensions.md)
+* [Maschinenlaufzeit pro Spule-Satz](run-time-bobbin-set.md)
+* [Anzahl Spulmaschinen](../bobbins/number-of-winders.md)
+* [Wechselräder Gummibandkette](change-gears.md)
