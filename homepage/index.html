@@ -291,6 +291,134 @@ section { padding: 90px 0; }
   display: grid; place-items: center; color: var(--text-muted); font-size: 0.9rem;
 }
 
+/* ===== LICENSE GUIDE ===== */
+.lg-teaser {
+  max-width: 880px; margin: 0 auto; text-align: center;
+  padding: 44px 40px; border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  background: linear-gradient(135deg, rgba(0,69,154,0.08), rgba(0,102,204,0.04));
+  box-shadow: var(--shadow-lg);
+}
+.lg-teaser-paths {
+  display: grid; grid-template-columns: 1fr auto 1fr; gap: 22px; align-items: center;
+  margin-bottom: 34px; text-align: left;
+}
+.lg-teaser-path { display: flex; gap: 16px; align-items: flex-start; }
+.lg-teaser-icon {
+  flex-shrink: 0; width: 46px; height: 46px; border-radius: 12px;
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, rgba(0,69,154,0.14), rgba(0,102,204,0.08));
+  border: 1px solid rgba(0,69,154,0.2); color: var(--accent);
+}
+.lg-teaser-path h4 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+.lg-teaser-path p { color: var(--text-dim); font-size: 0.88rem; line-height: 1.5; }
+.lg-teaser-divider {
+  color: var(--text-muted); font-size: 0.8rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.lg-teaser-note { margin-top: 16px; color: var(--text-muted); font-size: 0.85rem; }
+
+/* Overlay + modal */
+.lg-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+  background: rgba(6,10,22,0.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  opacity: 0; visibility: hidden; transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.lg-overlay.open { opacity: 1; visibility: visible; }
+.lg-modal {
+  position: relative; width: 100%; max-width: 720px; max-height: 88vh; overflow-y: auto;
+  background: var(--bg-card); border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg); padding: 44px 46px;
+  transform: scale(0.94) translateY(10px); transition: transform 0.3s ease;
+}
+.lg-overlay.open .lg-modal { transform: scale(1) translateY(0); }
+.lg-close {
+  position: absolute; top: 18px; right: 18px; width: 36px; height: 36px;
+  display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--border);
+  background: var(--bg-elev); color: var(--text-dim); cursor: pointer; transition: all 0.2s;
+}
+.lg-close:hover { color: var(--text); border-color: var(--border-strong); }
+
+/* Trail */
+.lg-trail { display: flex; align-items: flex-start; justify-content: center; gap: 6px; margin-bottom: 38px; flex-wrap: wrap; }
+.lg-node { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 64px; animation: lgPop 0.35s ease both; }
+.lg-node-circle {
+  width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  font-size: 0.8rem; font-weight: 700; color: var(--text-muted);
+  background: var(--bg-elev); border: 1px solid var(--border-strong);
+}
+.lg-node-label { font-size: 0.72rem; color: var(--text-muted); text-align: center; max-width: 84px; line-height: 1.3; }
+.lg-node.done .lg-node-circle { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; border-color: transparent; }
+.lg-node.done .lg-node-label { color: var(--text-dim); font-weight: 500; }
+.lg-node.active .lg-node-circle { border: 2px solid var(--accent); color: var(--accent); background: var(--bg-card); animation: lgPulse 1.6s ease-in-out infinite; }
+.lg-node.active .lg-node-label { color: var(--text); font-weight: 600; }
+.lg-line { flex: 1 1 28px; min-width: 16px; height: 2px; margin-top: 15px; background: var(--border); transition: background 0.3s ease; }
+.lg-line.done { background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+
+/* Question stage */
+.lg-stage { opacity: 0; transform: translateY(10px); transition: opacity 0.35s ease, transform 0.35s ease; }
+.lg-stage.lg-anim { opacity: 1; transform: translateY(0); }
+.lg-back {
+  display: inline-flex; align-items: center; gap: 6px; background: none; border: none; cursor: pointer;
+  color: var(--text-muted); font-size: 0.85rem; font-weight: 600; padding: 0; margin-bottom: 18px; transition: color 0.2s;
+}
+.lg-back:hover { color: var(--accent); }
+.lg-step-label { font-size: 0.78rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; }
+.lg-q-title { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; line-height: 1.25; }
+.lg-q-sub { color: var(--text-dim); font-size: 0.96rem; margin-bottom: 26px; }
+.lg-options { display: flex; flex-direction: column; gap: 12px; }
+.lg-option {
+  display: flex; align-items: center; gap: 18px; width: 100%; text-align: left;
+  padding: 18px 20px; border-radius: var(--radius); border: 1px solid var(--border);
+  background: var(--bg-card); cursor: pointer; transition: all 0.2s;
+  font-family: inherit; color: var(--text);
+  animation: lgFadeUp 0.4s ease both; animation-delay: calc(var(--i, 0) * 70ms);
+}
+.lg-option:hover { transform: translateY(-2px); border-color: var(--accent); background: var(--bg-card-hover); box-shadow: 0 8px 24px var(--accent-glow); }
+.lg-option-icon {
+  flex-shrink: 0; width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center;
+  background: linear-gradient(135deg, rgba(0,69,154,0.12), rgba(0,102,204,0.08));
+  border: 1px solid rgba(0,69,154,0.18); color: var(--accent);
+}
+.lg-option-title { display: block; font-weight: 700; font-size: 1rem; margin-bottom: 3px; }
+.lg-option-desc { display: block; color: var(--text-dim); font-size: 0.86rem; line-height: 1.4; }
+
+/* Result */
+.lg-result { text-align: left; }
+.lg-result-icon {
+  width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center; margin-bottom: 18px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff;
+}
+.lg-result-badge { font-size: 0.78rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+.lg-result-title { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 20px; line-height: 1.25; }
+.lg-reasons { list-style: none; margin-bottom: 22px; }
+.lg-reasons li { padding: 7px 0 7px 28px; position: relative; color: var(--text-dim); font-size: 0.95rem; line-height: 1.5; }
+.lg-reasons li::before {
+  content: ""; position: absolute; left: 0; top: 13px; width: 15px; height: 15px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.lg-reasons li::after {
+  content: ""; position: absolute; left: 4.5px; top: 16.5px; width: 4px; height: 7px;
+  border-right: 2px solid white; border-bottom: 2px solid white; transform: rotate(45deg);
+}
+.lg-access-box {
+  background: var(--bg-elev); border-left: 3px solid var(--accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 16px 20px; margin-bottom: 18px;
+}
+.lg-access-box strong { display: block; margin-bottom: 6px; font-size: 0.9rem; }
+.lg-access-box p { color: var(--text-dim); font-size: 0.92rem; line-height: 1.55; }
+.lg-note {
+  background: rgba(245,158,11,0.08); border-left: 3px solid var(--warning); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 14px 20px; margin-bottom: 22px; color: var(--text-dim); font-size: 0.9rem; line-height: 1.5;
+}
+.lg-result-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.lg-disclaimer { color: var(--text-muted); font-size: 0.8rem; line-height: 1.5; }
+
+@keyframes lgPop { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+@keyframes lgFadeUp { from { transform: translateY(8px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes lgPulse { 0%, 100% { box-shadow: 0 0 0 0 var(--accent-glow); } 50% { box-shadow: 0 0 0 6px transparent; } }
+
 /* ===== RELEASES ===== */
 .releases { padding: 90px 0; background: var(--bg-elev); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .release-list { max-width: 900px; margin: 0 auto; }
@@ -447,12 +575,19 @@ footer { padding: 50px 0 30px; border-top: 1px solid var(--border); background: 
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 30px; }
   .hero { padding: 60px 0 80px; }
   section, .releases, .modules, .feedback-section, .download-section { padding: 70px 0; }
+  .lg-teaser-paths { grid-template-columns: 1fr; }
+  .lg-teaser-divider { display: none; }
 }
 @media (max-width: 520px) {
   .hero-meta { gap: 20px; }
   .release-head { flex-wrap: wrap; padding: 18px 20px; gap: 12px; }
   .footer-inner { grid-template-columns: 1fr; }
   .download-card { padding: 30px 22px; }
+  .lg-teaser { padding: 32px 22px; }
+  .lg-modal { padding: 32px 20px; }
+  .lg-node-label { display: none; }
+  .lg-q-title { font-size: 1.25rem; }
+  .lg-option { padding: 14px 16px; gap: 12px; }
 }
 
 /* ===== REVEAL ANIMATION ===== */
@@ -472,6 +607,7 @@ footer { padding: 50px 0 30px; border-top: 1px solid var(--border); background: 
     <div class="nav-links">
       <a href="#features">Funktionen</a>
       <a href="#modules">Module</a>
+      <a href="#license-guide">Lizenz-Guide</a>
       <a href="#releases">Releases</a>
       <a href="#download">Download</a>
       <a href="/handbuch/">Handbuch</a>
@@ -603,11 +739,62 @@ footer { padding: 50px 0 30px; border-top: 1px solid var(--border); background: 
   <div class="container">
     <div class="section-head reveal">
       <div class="eyebrow">Module im Überblick</div>
-      <h2>Ein durchgängiger Workflow – vom Auftrag bis zum Druck</h2>
-      <p>Jedes Modul greift ineinander und teilt dieselben Stammdaten. Keine doppelte Eingabe, keine Medienbrüche.</p>
+      <h2>Ein durchgängiger Workflow – von den Stammdaten bis zum Maschinen-Dashboard</h2>
+      <p>Die acht Module von Herzog CAB greifen ineinander und teilen dieselben Stammdaten – keine doppelte Eingabe, keine Medienbrüche.</p>
     </div>
 
     <div class="module-row">
+      <div class="module-text reveal">
+        <span class="mod-tag">Stammdaten</span>
+        <h3>Eine Datenbasis für Spulen, Material und Farben</h3>
+        <p>Pflegen Sie Ihre Stammdaten einmal zentral – jedes weitere Modul greift darauf zu. Keine doppelte Eingabe, keine widersprüchlichen Werte.</p>
+        <ul>
+          <li>Spulen in allen Bauformen: rund, quadratisch, horizontal, Carbon, Draht</li>
+          <li>Materialien mit linearer Dichte und Kennwerten</li>
+          <li>Farbpaletten mit Pantone-Referenzen</li>
+          <li>Einmal anlegen – in jedem Modul sofort verfügbar</li>
+        </ul>
+      </div>
+      <div class="module-visual reveal">
+        <img src="assets/master_data.png" alt="Stammdaten – Spulenübersicht">
+      </div>
+    </div>
+
+    <div class="module-row reverse">
+      <div class="module-text reveal">
+        <span class="mod-tag">Maschinendatenbank</span>
+        <h3>Ihre Maschinenflotte – vollständig dokumentiert</h3>
+        <p>Jede Flechtmaschine mit Foto, Typ, Trägerzahl, Seriennummer und Gruppe. Die Status-Ampel zeigt auf einen Blick, welche Maschinen produzieren, warten oder Fehler melden.</p>
+        <ul>
+          <li>Kartenansicht mit Maschinenfoto und Status-Ampel</li>
+          <li>Dokumente (Anleitungen, Zeichnungen, Wartung) direkt an der Maschine</li>
+          <li>Seriennummer und Gruppenzuordnung</li>
+          <li>Verfügbar in allen Modulen – kein doppeltes Anlegen</li>
+        </ul>
+      </div>
+      <div class="module-visual reveal">
+        <img src="assets/machine_fleet.png" alt="Maschinendatenbank – Maschinenübersicht mit Ampel-Status">
+      </div>
+    </div>
+
+    <div class="module-row">
+      <div class="module-text reveal">
+        <span class="mod-tag">Hallenplaner</span>
+        <h3>Ihre Produktionshalle als Grundriss</h3>
+        <p>Platzieren Sie Ihre Flechtmaschinen per Drag-and-Drop auf dem Hallen-Grundriss und behalten Sie den Überblick über Ihren gesamten Maschinenpark – Standort für Standort.</p>
+        <ul>
+          <li>Maschinen visuell auf dem Hallenplan anordnen</li>
+          <li>Mehrere Hallen und Grundrisse verwalten</li>
+          <li>Standort jeder Maschine auf einen Blick</li>
+          <li>Direkt mit der Maschinendatenbank verknüpft</li>
+        </ul>
+      </div>
+      <div class="module-visual reveal">
+        <img src="assets/hall_planner.png" alt="Hallenplaner – Maschinen auf dem Hallen-Grundriss">
+      </div>
+    </div>
+
+    <div class="module-row reverse">
       <div class="module-text reveal">
         <span class="mod-tag">3D Designer</span>
         <h3>Rund- und Flachgeflechte interaktiv entwerfen</h3>
@@ -624,20 +811,37 @@ footer { padding: 50px 0 30px; border-top: 1px solid var(--border); background: 
       </div>
     </div>
 
-    <div class="module-row reverse">
+    <div class="module-row">
       <div class="module-text reveal">
-        <span class="mod-tag">Maschinendatenbank</span>
-        <h3>Ihre Maschinenflotte – vollständig dokumentiert</h3>
-        <p>Jede Flechtmaschine mit Foto, Typ, Trägerzahl, Seriennummer und Gruppe. Status-Ampel zeigt auf einen Blick, welche Maschinen produzieren, warten oder Fehler melden.</p>
+        <span class="mod-tag">Berechnungen</span>
+        <h3>Alle Flechtparameter präzise berechnet</h3>
+        <p>Flechtwinkel, Schlaglänge, Produktionsgeschwindigkeit, Maschinenlaufzeit und mehr – mit korrekter Einheitenbehandlung und Übernahme aller Werte direkt aus Auftrag und Maschine.</p>
         <ul>
-          <li>Kartenansicht mit Maschinenfoto und Status-Ampel</li>
-          <li>Dokumente (Bedienungsanleitungen, Zeichnungen, Wartung) direkt an der Maschine</li>
-          <li>Seriennummer und Gruppenzuordnung</li>
-          <li>Verfügbar in allen Modulen – kein doppeltes Anlegen</li>
+          <li>Vorgefüllte Parameter aus dem aktiven Auftrag</li>
+          <li>Lokalisierte Zahleneingabe inkl. Tausender­trennzeichen</li>
+          <li>Direkter Rücksprung in den Auftrag nach Abschluss</li>
+          <li>Ergebnisse mit korrekter Einheit (mm, °, m/min …)</li>
         </ul>
       </div>
       <div class="module-visual reveal">
-        <img src="assets/machine_fleet.png" alt="Machine Fleet – Maschinenübersicht mit Ampel-Status">
+        <img src="assets/calculation.png" alt="Berechnung Flechtwinkel mit Eingabe- und Ergebnisbereich">
+      </div>
+    </div>
+
+    <div class="module-row reverse">
+      <div class="module-text reveal">
+        <span class="mod-tag">Auftragsverwaltung</span>
+        <h3>Vom Entwurf bis zur Auslieferung</h3>
+        <p>Die Timeline-basierte Auftragsübersicht hält jeden Fertigungsauftrag mit Status und Historie fest. Berechnungen und Designs hängen direkt am Auftrag – alles an einem Ort.</p>
+        <ul>
+          <li>Timeline-Übersicht mit Status-Filtern</li>
+          <li>Entwurf, Freigegeben, In Produktion, Abgeschlossen</li>
+          <li>Berechnungen und Designs direkt am Auftrag</li>
+          <li>Vollständige Historie je Auftrag</li>
+        </ul>
+      </div>
+      <div class="module-visual reveal">
+        <img src="assets/orders.png" alt="Auftragsverwaltung – Auftragsübersicht mit Status">
       </div>
     </div>
 
@@ -660,19 +864,58 @@ footer { padding: 50px 0 30px; border-top: 1px solid var(--border); background: 
 
     <div class="module-row reverse">
       <div class="module-text reveal">
-        <span class="mod-tag">Berechnungen</span>
-        <h3>Alle Flechtparameter präzise berechnet</h3>
-        <p>Flechtwinkel, Schlaglänge, Produktionsgeschwindigkeit, Maschinenlaufzeit und mehr – mit korrekter Einheitenbehandlung und Übernahme aller Werte direkt aus Auftrag und Maschine.</p>
+        <span class="mod-tag">Web-Server &amp; Dashboard</span>
+        <h3>Live-Daten direkt an der Maschine</h3>
+        <p>Der integrierte Web-Server bringt das Maschinen-Dashboard in jeden Browser – ideal für Tablets und Monitore direkt an der Flechtmaschine. Kein zusätzliches Programm nötig.</p>
         <ul>
-          <li>Vorgefüllte Parameter aus dem aktiven Auftrag</li>
-          <li>Lokalisierte Zahleneingabe inkl. Tausender­trennzeichen</li>
-          <li>Direkter Rücksprung in den Auftrag nach Abschluss</li>
-          <li>Ergebnisse mit korrekter Einheit (mm, °, m/min …)</li>
+          <li>Maschinen-Dashboard im Browser</li>
+          <li>QR-Code für schnellen Zugriff</li>
+          <li>Passwortschutz und Auto-Refresh</li>
+          <li>Ideal für Tablets und Monitore in der Halle</li>
         </ul>
       </div>
       <div class="module-visual reveal">
-        <img src="assets/calculation.png" alt="Berechnung Flechtwinkel mit Eingabe- und Ergebnisbereich">
+        <img src="assets/webserver.png" alt="Integrierter Web-Server – Maschinen-Dashboard">
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- LICENSE GUIDE -->
+<section id="license-guide">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Lizenzberatung</div>
+      <h2>Welche Lizenz passt zu Ihnen?</h2>
+      <p>Dongle oder Software-Lizenz? Einzelplatz oder mehrere aktive Nutzer? Beantworten Sie ein paar kurze Fragen – der Guide zeigt Ihnen die passende Lösung.</p>
+    </div>
+    <div class="lg-teaser reveal">
+      <div class="lg-teaser-paths">
+        <div class="lg-teaser-path">
+          <div class="lg-teaser-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="14" rx="2"/><path d="M10 16v3M14 16v3"/><path d="M9 19h6a1 1 0 011 1v2H8v-2a1 1 0 011-1z"/></svg>
+          </div>
+          <div>
+            <h4>Dongle-Lizenz</h4>
+            <p>Physischer USB-Dongle – als Einzelplatz oder als Netzwerk-Lizenzserver für mehrere aktive Nutzer.</p>
+          </div>
+        </div>
+        <div class="lg-teaser-divider">oder</div>
+        <div class="lg-teaser-path">
+          <div class="lg-teaser-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11c.5-1 2-1 2.5 0s.2 2.5-.5 3.5"/><path d="M8.5 10.5c1-2 3-3 5-2.5"/><path d="M6.5 14c-.5-3 1-6 4-7"/><path d="M9 17c-1.5-1.5-2.5-4-2-6.5"/><path d="M12 20c-3-.5-5.5-3-6-6.5"/><path d="M12 4c4.5 0 8 3.5 8 8 0 2-.5 3.5-1.5 5"/><path d="M15 15.5c.7-1 1-2 1-3.5"/></svg>
+          </div>
+          <div>
+            <h4>Software-Lizenz</h4>
+            <p>Bindung per Hardware-Fingerabdruck, ganz ohne Dongle – ideal für Cloud-VMs oder wenn USB nicht möglich ist.</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg" id="lgOpenBtn" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        Lizenz-Guide starten
+      </button>
+      <p class="lg-teaser-note">Dauert unter einer Minute · unverbindliche Empfehlung</p>
     </div>
   </div>
 </section>
@@ -810,6 +1053,17 @@ footer { padding: 50px 0 30px; border-top: 1px solid var(--border); background: 
   </div>
 </footer>
 
+<!-- LICENSE GUIDE MODAL -->
+<div class="lg-overlay" id="lgOverlay">
+  <div class="lg-modal" role="dialog" aria-modal="true" aria-label="Lizenz-Guide">
+    <button class="lg-close" id="lgCloseBtn" type="button" aria-label="Schließen">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lg-trail" id="lgTrail"></div>
+    <div class="lg-stage" id="lgStage"></div>
+  </div>
+</div>
+
 <script>
 // ===== EMBEDDED RELEASE DATA (statisch, wird ggf. live überschrieben) =====
 const EMBEDDED_RELEASES = [{"tag_name": "v1.3.3", "name": "Herzog CAB 1.3.3", "published_at": "2026-04-15T15:24:19Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.3.3", "body": "## What's New in 1.3.3\r\n\r\n### Improvements\r\n- **QR Code IP Selector** — Added a dropdown in Settings → Web Server to manually choose which network adapter IP is encoded in the QR code. Prevents wrong IPs (e.g. VirtualBox, VPN adapters) from appearing in the QR link. The selection is saved persistently per profile.\r\n- **Responsive Web Images** — Occupation overview and braid pattern images in the web interface now scale correctly on mobile devices and are no longer cut off on the right side.\r\n\r\n### Bugfixes\r\n- **Round Braid — All Occupation Types** — Round braid machines now correctly allow all three occupation types to be selected. Previously some occupation modes were incorrectly restricted.\r\n- **Lay Length translation (DE)** — Fixed incorrect German label \"Berechnung [#]\" in the result unit dropdown of the Lay Length calculation. Now correctly shows \"Schlaglänge [mm]\".\r\n- **QR Code reliability** — Improved QR code mask selection (penalty scoring N1–N4), corrected format information bit placement, and fixed a Reed-Solomon ECC index offset. QR codes are now reliably scannable by all standard apps.", "assets": [{"name": "Herzog_CAB_Installer_200006_V1.3.3.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.3.3/Herzog_CAB_Installer_200006_V1.3.3.exe", "size": 68638331}]}, {"tag_name": "v1.3.2", "name": "Herzog CAB 1.3.2", "published_at": "2026-04-13T12:39:50Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.3.2", "body": "<html>\r\n<body>\r\n<!--StartFragment--><html><head></head><body><h2>🆕 What's New</h2>\r\n<h3>🌐 Built-in Web Server — Machine Displays</h3>\r\n<p>HerzogCAB now includes an <strong>integrated web server</strong> that can be opened from any browser on the local network — perfect for a tablet or monitor mounted directly at the braiding machine.</p>\r\n<ul>\r\n<li><strong>Machine landing page</strong> with a grid overview of all your machines</li>\r\n<li><strong>Order view</strong> per machine showing assigned orders with status, customer, material and braid design</li>\r\n<li><strong>Occupation overview</strong> rendered as a live image directly from the calculation engine</li>\r\n<li><strong>Stocking table</strong> with color IDs and Pantone values</li>\r\n<li><strong>Machine documents</strong> tab — documents grouped by category with inline preview for PDFs and images</li>\r\n<li><strong>Machine info</strong> tab with name, type, serial number, group, max RPM, carriers and head count</li>\r\n<li><strong>Password protection</strong> with login page, session cookies, logout and automatic session invalidation when the password changes</li>\r\n<li><strong>Display settings</strong> per order section with auto-refresh and scroll preservation</li>\r\n<li>Modern responsive design with Herzog branding, sticky navbar and SVG icons</li>\r\n</ul>\r\n<h3>🔢 Machine Serial Number and Group</h3>\r\n<p>Braiding machines can now store a <strong>serial number</strong> and a <strong>group name</strong>.</p>\r\n<ul>\r\n<li>New fields in both machine creation and edit dialogs</li>\r\n<li>Shown in the job editor, machine overview and web UI order cards</li>\r\n<li>Available as data tokens in the print editor</li>\r\n</ul>\r\n<hr>\r\n<h2>✨ Improvements</h2>\r\n<h3>💬 Contextual Toast Notifications</h3>\r\n<p>Save and create actions across all editors now show <strong>inline toast messages with the name of the affected record</strong> — replacing the previous modal dialog boxes that interrupted the workflow.</p>\r\n\r\nModule | Toast content\r\n-- | --\r\nBraiding Machines | Machine name on create and save\r\nCustomers | Customer name (or company) on save, create and CSV import\r\nBobbins | Outer diameter on save and create\r\nMaterials | Material name on save and create\r\nColors | Color name or code on create\r\nOrders | Confirmation on save\r\n\r\n\r\n<h3>🏭 Machine Fleet — Card Redesign</h3>\r\n<p>The machine card view has been redesigned with a dedicated image header, centered text and badge chips, and compact dimensions for a tighter grid.</p>\r\n<h3>🧭 Navigation Redesign</h3>\r\n<ul>\r\n<li>Custom navigation delegate with pill-shaped backgrounds, accent bars and font weight hierarchy</li>\r\n<li>Group headers (Calculations, Master Data) visually separated with tinted full-width rows</li>\r\n<li>Favorites group highlighted in amber tones</li>\r\n<li>Modernized module headers across Machine Fleet and Parameter Explorer</li>\r\n</ul>\r\n<h3>🖨️ Print Editor</h3>\r\n<ul>\r\n<li>Renamed elements for clarity: Klöppel → Besetzung, Flechtmaschinen-Übersicht → Besetzungsübersicht</li>\r\n<li>New SVG icons for image, date/time and text field elements</li>\r\n<li>Fixed carrier_table bug that incorrectly displayed the bobbin table</li>\r\n</ul>\r\n<h3>📋 Order Overview</h3>\r\n<ul>\r\n<li>Redesigned as a two-column table with colored section headers</li>\r\n<li>New \"Order\" section with order name, number, dates and status</li>\r\n<li>All labels translatable in every supported language</li>\r\n</ul>\r\n<h3>🌍 Translations</h3>\r\n<ul>\r\n<li>Module title \"Maschinenpark\" correctly translated:\r\n🇬🇧 Machine Fleet · 🇪🇸 Flota de máquinas · 🇮🇹 Flotta macchine · 🇵🇱 Flota maszyn</li>\r\n<li>All new strings (toasts, web server UI, serial/group) fully translated in all 6 languages:\r\n🇩🇪 German · 🇬🇧 English · 🇪🇸 Spanish · 🇮🇹 Italian · 🇵🇱 Polish · 🇨🇳 Chinese</li>\r\n<li>Corrected: \"Verkürzung\" → Reduction (was Shortening)</li>\r\n</ul>\r\n<hr>\r\n<h2>🐞 Bugfixes</h2>\r\n<ul>\r\n<li>Fixed navbar logo disappearing after style attribute merge</li>\r\n<li>Fixed SVG quote escaping in web UI onerror attributes</li>\r\n<li>Fixed variable shadowing bug in web UI that prevented design and occupation rendering</li>\r\n<li>Removed unintended placeholder texts from serial number and group fields</li>\r\n</ul>\r\n<hr>\r\n<h2>📦 Updating from 1.3.0</h2>\r\n<p>Close the current version and run the installer.\r\n✅ All existing data is fully preserved — no manual migration needed.</p>\r\n<hr>\r\n<p>💬 Found a bug or have a suggestion? Please open an issue at <a href=\"https://github.com/Herzog-GmbH/HerzogCAB-Feedback\">github.com/Herzog-GmbH/HerzogCAB-Feedback</a></p></body></html><!--EndFragment-->\r\n</body>\r\n</html>## 🆕 What's New\r\n\r\n### 🌐 Built-in Web Server — Machine Displays\r\n\r\nHerzogCAB now includes an **integrated web server** that can be opened from any browser on the local network — perfect for a tablet or monitor mounted directly at the braiding machine.\r\n\r\n- **Machine landing page** with a grid overview of all your machines\r\n- **Order view** per machine showing assigned orders with status, customer, material and braid design\r\n- **Occupation overview** rendered as a live image directly from the calculation engine\r\n- **Stocking table** with color IDs and Pantone values\r\n- **Machine documents** tab — documents grouped by category with inline preview for PDFs and images\r\n- **Machine info** tab with name, type, serial number, group, max RPM, carriers and head count\r\n- **Password protection** with login page, session cookies, logout and automatic session invalidation when the password changes\r\n- **Display settings** per order section with auto-refresh and scroll preservation\r\n- Modern responsive design with Herzog branding, sticky navbar and SVG icons\r\n\r\n### 🔢 Machine Serial Number and Group\r\n\r\nBraiding machines can now store a **serial number** and a **group name**.\r\n\r\n- New fields in both machine creation and edit dialogs\r\n- Shown in the job editor, machine overview and web UI order cards\r\n- Available as data tokens in the print editor\r\n\r\n---\r\n\r\n## ✨ Improvements\r\n\r\n### 💬 Contextual Toast Notifications\r\n\r\nSave and create actions across all editors now show **inline toast messages with the name of the affected record** — replacing the previous modal dialog boxes that interrupted the workflow.\r\n\r\n| Module | Toast content |\r\n|---|---|\r\n| Braiding Machines | Machine name on create and save |\r\n| Customers | Customer name (or company) on save, create and CSV import |\r\n| Bobbins | Outer diameter on save and create |\r\n| Materials | Material name on save and create |\r\n| Colors | Color name or code on create |\r\n| Orders | Confirmation on save |\r\n\r\n### 🏭 Machine Fleet — Card Redesign\r\n\r\nThe machine card view has been redesigned with a dedicated image header, centered text and badge chips, and compact dimensions for a tighter grid.\r\n\r\n### 🧭 Navigation Redesign\r\n\r\n- Custom navigation delegate with pill-shaped backgrounds, accent bars and font weight hierarchy\r\n- Group headers (Calculations, Master Data) visually separated with tinted full-width rows\r\n- Favorites group highlighted in amber tones\r\n- Modernized module headers across Machine Fleet and Parameter Explorer\r\n\r\n### 🖨️ Print Editor\r\n\r\n- Renamed elements for clarity: Klöppel → Besetzung, Flechtmaschinen-Übersicht → Besetzungsübersicht\r\n- New SVG icons for image, date/time and text field elements\r\n- Fixed carrier_table bug that incorrectly displayed the bobbin table\r\n\r\n### 📋 Order Overview\r\n\r\n- Redesigned as a two-column table with colored section headers\r\n- New \"Order\" section with order name, number, dates and status\r\n- All labels translatable in every supported language\r\n\r\n### 🌍 Translations\r\n\r\n- Module title \"Maschinenpark\" correctly translated:\r\n  🇬🇧 Machine Fleet · 🇪🇸 Flota de máquinas · 🇮🇹 Flotta macchine · 🇵🇱 Flota maszyn\r\n- All new strings (toasts, web server UI, serial/group) fully translated in all 6 languages:\r\n  🇩🇪 German · 🇬🇧 English · 🇪🇸 Spanish · 🇮🇹 Italian · 🇵🇱 Polish · 🇨🇳 Chinese\r\n- Corrected: \"Verkürzung\" → Reduction (was Shortening)\r\n\r\n---\r\n\r\n## 🐞 Bugfixes\r\n\r\n- Fixed navbar logo disappearing after style attribute merge\r\n- Fixed SVG quote escaping in web UI onerror attributes\r\n- Fixed variable shadowing bug in web UI that prevented design and occupation rendering\r\n- Removed unintended placeholder texts from serial number and group fields\r\n\r\n---\r\n\r\n## 📦 Updating from 1.3.0\r\n\r\nClose the current version and run the installer.\r\n✅ All existing data is fully preserved — no manual migration needed.\r\n\r\n---\r\n\r\n💬 Found a bug or have a suggestion? Please open an issue at [[github.com/Herzog-GmbH/HerzogCAB-Feedback](https://github.com/Herzog-GmbH/HerzogCAB-Feedback)](https://github.com/Herzog-GmbH/HerzogCAB-Feedback)", "assets": [{"name": "Herzog_CAB_Installer_200006_V1.3.2.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.3.2/Herzog_CAB_Installer_200006_V1.3.2.exe", "size": 68551909}]}, {"tag_name": "v1.3.0", "name": "Herzog CAB 1.3.0", "published_at": "2026-04-09T12:34:36Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.3.0", "body": "## 🆕 What's New\r\n\r\n### 📋 Order Management\r\n> *Create, track and manage braiding orders end to end.*\r\n\r\nBrand-new order management module with a timeline-based card view. Filter orders by status (Draft, Released, In Production, Completed), time period or free-text search across order name, number, customer or machine. Each order links directly to its customer, machine, material, bobbin set and braid design — all in one place.\r\n\r\n---\r\n\r\n### ⚙️ Braiding Machine Database\r\n> *Your own machine fleet — fully documented.*\r\n\r\nBrand-new module to manage every braiding machine in your facility. Each entry stores a photo, machine type, carrier count, maximum RPM and year of manufacture. Attach documents such as operating manuals, technical drawings or maintenance records directly to the machine. Machine data is available throughout the application when creating orders and launching calculations.\r\n\r\n---\r\n\r\n### 👥 Customer Database\r\n> *All customer data organized and ready to use.*\r\n\r\nNew dedicated module to create, edit and search customers. Customer records are directly available when creating orders — no duplicate data entry needed.\r\n\r\n---\r\n\r\n### 🧵 Bobbin Database — Rebuilt\r\n> *Manage your bobbin inventory for every machine type.*\r\n\r\nThe bobbin database has been completely rebuilt with a new management interface. Filter by machine type (round, square, horizontal, carbon fiber, wire braiding) and manage outer diameter, bobbin volume and machine type assignments. Bobbins are available directly when configuring orders and machines.\r\n\r\n---\r\n\r\n### 🧪 Material Database — Rebuilt\r\n> *A central library for all your braiding materials.*\r\n\r\nThe material database has been completely rebuilt with a new management interface. Each entry stores technical properties including linear density and diameter. Materials link directly to orders and bobbin configurations.\r\n\r\n---\r\n\r\n### 🌈 Color Database — Rebuilt\r\n> *Manage colors with precision.*\r\n\r\nThe color database has been rebuilt from the ground up with a full management interface. New features include a **color picker** with live preview, **Pantone matching** for automatic assignment of Pantone reference colors, and support for multiple custom **color palettes**.\r\n\r\n---\r\n\r\n### 🖨️ Print Editor\r\n> *Design professional printouts with your own branding.*\r\n\r\nNew module for building custom print templates. Place elements freely on the canvas and use the built-in **Parameter Explorer** to insert live data tokens from orders, customers, machines, materials, products and calculations into your template. Save and reload as many templates as you need.\r\n\r\n---\r\n\r\n### 🧭 Guided Tours\r\n> *Learn HerzogCAB step by step — directly inside the app.*\r\n\r\nTen interactive tours walk you through every area of the application. Each tour highlights the relevant controls in real time and explains every step with overlay hint cards.\r\n\r\n**Available tours:** Navigation · Designer · Print Editor · Calculation · Color Database · Bobbin Database · Material Database · Customer Database · Braiding Machines · Order Editor\r\n\r\n---\r\n\r\n### 📁 First-Run Setup Assistant\r\n> *No more permission errors on first launch.*\r\n\r\nOn first launch — or when the saved working directory is not writable — a guided setup dialog appears automatically. It checks write access in real time, suggests `Documents\\HerzogCAB` as a safe default, and warns before choosing protected locations like `C:\\Program Files`.\r\n\r\n---\r\n\r\n## ✨ Improvements\r\n\r\n### Order Editor\r\nThe order editor has been reworked across all tabs. Machine configuration, braid density, material strand count and production data are now displayed in full detail. Calculations can be launched directly from an order with all relevant parameters pre-filled, and a return button brings you straight back to the originating order.\r\n\r\n### Wire Braiding Machine — Configurable Horn Gear Cuts\r\nThe number of horn gear cuts for wire braiding machines is now configurable directly in the machine setup.\r\n\r\n### Interface & Usability\r\n- New unified icon set across navigation and all modules\r\n- Adjustable font size (Standard / Large) in settings\r\n- Toast notifications for status feedback without interrupting the workflow\r\n- Consistent button sizing and styling across all master data modules\r\n\r\n### Localization\r\nHerzogCAB is now fully translated into **6 languages:**\r\n\r\n🇩🇪 German &nbsp;·&nbsp; 🇬🇧 English &nbsp;·&nbsp; 🇪🇸 Spanish &nbsp;·&nbsp; 🇮🇹 Italian &nbsp;·&nbsp; 🇵🇱 Polish &nbsp;·&nbsp; 🇨🇳 Chinese\r\n\r\nAll new modules and dialogs are fully translated in every language.\r\n\r\n---\r\n\r\n## 📦 Updating from 1.1.4\r\n\r\n1. Close the current version\r\n2. Run the installer and follow the steps\r\n3. On first launch, the **Setup Assistant** may appear to confirm your working directory\r\n4. ✅ All existing data (orders, machines, materials, colors) is fully preserved\r\n\r\n---\r\n\r\n> 💬 **Found a bug or have a suggestion?**\r\n> Please open an issue at [[github.com/Herzog-GmbH/HerzogCAB-Feedback](https://github.com/Herzog-GmbH/HerzogCAB-Feedback/issues/new)]\r\n\r\n---\r\n\r\n*Herzog GmbH*", "assets": [{"name": "Herzog_CAB_Installer_200006_V1.3.0.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.3.0/Herzog_CAB_Installer_200006_V1.3.0.exe", "size": 68195970}]}, {"tag_name": "v1.1.4", "name": "Herzog CAB v1.1.4", "published_at": "2025-12-18T13:33:20Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.1.4", "body": "## Herzog CAB 1.1.4 — 2025-12-17\r\n\r\n### **New**\r\n\r\n- **Additional cylindrical / 3D view for round braids**\r\n  - A new cylindrical 3D-style view has been added to improve spatial understanding of round braids.\r\n  - This view makes braid structures and color progressions easier to analyze.\r\n\r\n<p align=\"center\">\r\n<img width=\"60%\" alt=\"image\" src=\"https://github.com/user-attachments/assets/2fd85d23-219e-422d-ba44-a81905996736\" /> \r\n</p>\r\n\r\n\r\n- **Interactive braid rotation**\r\n  - Braids can now be rotated directly in the view.\r\n  - This allows inspection of the pattern from all sides and improves visual verification of crossings and color shifts.\r\n  - Rotation is controlled via dedicated UI controls without altering braid dimensions.\r\n\r\n\r\n<p align=\"center\">\r\n  <img src=\"https://github.com/user-attachments/assets/65ae26d8-c354-43ab-9d00-b38a78f1b079\" alt=\"1216\">\r\n</p>\r\n\r\n- **Stepwise color rotation for carriers**\r\n  - New controls allow stepwise rotation of carrier colors.\r\n  - This makes it easy to test alternative color layouts and evaluate visual variants quickly.\r\n\r\n- **Extended multi-selection support**\r\n  - Multiple designs or folders can now be selected at once.\r\n  - Selected items can be deleted, copied, or moved in a single operation.\r\n\r\n\r\n### **Improvements**\r\n\r\n- **Keyboard shortcuts in the design browser**\r\n  - Common design browser actions are now accessible via keyboard shortcuts.\r\n  - Navigation and daily workflows are significantly faster.\r\n \r\n- **Extended multi-selection support**\r\n  - Multiple designs or folders can now be selected at once.\r\n  - Selected items can be deleted, copied, or moved in a single operation.\r\n\r\n\r\n\r\n### **Bugfixes**\r\n\r\n- **Fixed critical printout issue for single-page designs**\r\n  - Fixed a bug where the parameter table could be empty when printing single-page designs directly to a printer.\r\n  - All parameters are now reliably rendered and printed, matching the PDF export behavior.\r\n\r\n- **Fixed missing designs in root folder**\r\n  - Designs located in the root directory of the design browser were not displayed correctly.\r\n  - Root-level designs are now shown as expected.\r\n\r\n- **Fixed object connection and UI update issues**\r\n  - Resolved unique-connection errors in the designer.\r\n  - Improved stability of carrier table handlers and related UI updates.", "assets": [{"name": "Converter_GFL_JSON.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.4/Converter_GFL_JSON.exe", "size": 36864}, {"name": "HerzogCABInstaller_200006_V1.1.4.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.4/HerzogCABInstaller_200006_V1.1.4.exe", "size": 65135926}]}, {"tag_name": "v1.1.3", "name": "Herzog CAB v1.1.3 ", "published_at": "2025-12-10T06:13:37Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.1.3", "body": "## Herzog CAB 1.1.3 — 2025-12-10\r\n### **New**\r\n\r\n- **New designer home screen**\r\n  - The designer now has its own dedicated home screen.\r\n  - On the left, users find a short description explaining how to load braids or create new designs.\r\n  - On the right, all recently edited designs are listed and can be opened directly from this view.\r\n\r\n- **New “Load design” button in the designer**\r\n  - The designer now provides a dedicated **“Load design”** button.\r\n  - Clicking it opens the file dialog where you can select and load an existing design.\r\n\r\n- **Integrated feedback and update options**\r\n  - New buttons link directly from the application to the Herzog CAB GitHub page, where users can submit feedback, create issues or download the latest version.\r\n  - On startup, Herzog CAB now checks whether the installed version is outdated and whether a newer release is available on GitHub.\r\n  - A new startup message points to the feedback page and thanks users for helping to improve Herzog CAB.\r\n\r\n### **Improvements**\r\n\r\n- **Clearer designer structure with default design and “Add View”**\r\n  - A default design is now created automatically when the designer starts, so users no longer have to create a first design manually.\r\n  - With the new **“Add View”** button, additional design views can be added and adjusted dynamically.\r\n  - This makes working with multiple designs much more structured, readable and user-friendly.\r\n\r\n- **Printing for all open designs**\r\n  - It is now possible to print any of the open designs, not only the very first one.\r\n  - By switching between views, users can explicitly choose which of the open designs should be printed.\r\n\r\n- **Extended braid binding labels**\r\n  - Braid bindings now include the numeric notation, for example:\r\n    - Normal **1-1**\r\n    - Tandem **2-2**\r\n    - Half **1-3**\r\n  - This makes it easier to understand the binding type and bobbin distribution at a glance.\r\n\r\n- **Adjust braid angle in the designer without losing the design**\r\n  - The braid angle can now be changed directly in the designer without forcing a full redraw that would discard the current design.\r\n  - Pitch and braid angle are automatically updated in the active design.\r\n\r\n- **Multi-select in the product file browser**\r\n  - The product file browser now supports multi-select.\r\n  - Users can select multiple folders or designs at once and copy or delete them in a single operation.\r\n\r\n### **Bugfixes**\r\n\r\n- Fixed an issue where the working directory could point to a non-existing folder. The path is now set correctly and the required directory is created reliably.\r\n- Fixed an issue where the braid parameter table in the printout could be empty when printing directly from the application. The table is now properly populated with all parameters.\r\n- Added a logger to the printout process to better detect and diagnose issues related to missing or incorrect data.\r\n", "assets": [{"name": "Converter_GFL_JSON.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.3/Converter_GFL_JSON.exe", "size": 36864}, {"name": "HerzogCABInstaller_200006_V1.1.3.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.3/HerzogCABInstaller_200006_V1.1.3.exe", "size": 65114893}]}, {"tag_name": "v1.1.2", "name": "Herzog CAB v1.1.2", "published_at": "2025-11-27T15:17:12Z", "prerelease": false, "html_url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/tag/v1.1.2", "body": "**Herzog CAB 1.1.2 — 2025-11-27**\r\n\r\n**New**\r\n\r\n> Added a legacy Herzog CAB Design import so existing designs from the old application can be brought into version 1.1.2.\r\n> Introduced collapse labels and popups for the history sidebar and the new navigationbar.\r\n\r\n**Improvements**\r\n\r\n> Localized navigation titles, history labels, and import strings across the app and updated translation samples in the README.\r\n> Refined navigation labels for design types, JSON entries, and legacy selections while keeping node widths consistent in the UI.\r\n> Updated the README navigation-tree example by adding change-gear and settings nodes, removing obsolete entries, and refreshing tooltips.\r\n\r\n**Bugfixes**\r\n\r\n> Fixed history rendering for large entries, legacy calculations, and change-gear associations so results show correctly with units.\r\n> Corrected swapped legacy imports, collapsed-history states, and main window mappings for navigation labels.\r\n> Resolved product-table coloring in the model and aligned custom swatch widths with the narrowed navigation layout.\r\n\r\n**Full Changelog**: https://github.com/Herzog-GmbH/HerzogCAB-Feedback/commits/v1.1.2", "assets": [{"name": "Converter_GFL_JSON.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.2/Converter_GFL_JSON.exe", "size": 36864}, {"name": "HerzogCABInstaller_200006_V1.1.2.exe", "url": "https://github.com/Herzog-GmbH/HerzogCAB-Feedback/releases/download/v1.1.2/HerzogCABInstaller_200006_V1.1.2.exe", "size": 64968942}]}];
@@ -940,25 +1194,23 @@ function renderReleases(releases) {
     document.getElementById('metaReleases').textContent = releases.length;
   }
 
-  // Optional: activate demo download button when a "demo" asset is published
-  // in the latest release (asset name must contain "demo"). Otherwise keep
-  // the placeholder "coming soon" state.
-  if (releases.length) {
-    const demoAsset = (releases[0].assets || []).find(a => /demo/i.test(a.name) && /\.exe$/i.test(a.name));
-    if (demoAsset) {
-      const demoBtn = document.getElementById('dlDemoButton');
-      const demoNote = document.getElementById('dlDemoNote');
-      const demoBtnText = document.getElementById('dlDemoButtonText');
-      if (demoBtn) {
-        demoBtn.href = demoAsset.url;
-        demoBtn.removeAttribute('aria-disabled');
-        demoBtn.removeAttribute('onclick');
-        demoBtn.target = '_blank';
-        demoBtn.rel = 'noopener';
-      }
-      if (demoBtnText) demoBtnText.textContent = `Demo ${releases[0].tag_name} herunterladen`;
-      if (demoNote) demoNote.textContent = `Größe: ${fmtSize(demoAsset.size)} · Windows 10/11 (64-bit)`;
+  // Trial-Zugang laeuft ueber das Kontaktformular auf herzog-online.com, NICHT per
+  // Direkt-Download-Link aus einem GitHub-Release-Asset -- die Demo-Version wird
+  // bewusst nicht zum direkten Download angeboten, sondern nur auf Anfrage vergeben.
+  const TRIAL_REQUEST_URL = 'https://herzog-online.com/vertretungen/#kontakt';
+  if (TRIAL_REQUEST_URL) {
+    const demoBtn = document.getElementById('dlDemoButton');
+    const demoNote = document.getElementById('dlDemoNote');
+    const demoBtnText = document.getElementById('dlDemoButtonText');
+    if (demoBtn) {
+      demoBtn.href = TRIAL_REQUEST_URL;
+      demoBtn.removeAttribute('aria-disabled');
+      demoBtn.removeAttribute('onclick');
+      demoBtn.target = '_blank';
+      demoBtn.rel = 'noopener';
     }
+    if (demoBtnText) demoBtnText.textContent = 'Demo-Version anfragen';
+    if (demoNote) demoNote.textContent = 'Kontaktieren Sie uns über das Formular – wir besprechen mit Ihnen den Zugang zur Demo-Version.';
   }
 }
 
@@ -977,6 +1229,287 @@ fetch('https://api.github.com/repos/Herzog-GmbH/HerzogCAB-Feedback/releases')
     renderReleases(mapped);
   })
   .catch(() => { /* offline fallback to embedded */ });
+
+// ===== License Guide (decision wizard) =====
+(function() {
+  const lgOpenBtn = document.getElementById('lgOpenBtn');
+  if (!lgOpenBtn) return;
+
+  const ICON_DONGLE = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="14" rx="2"/><path d="M10 16v3M14 16v3"/><path d="M9 19h6a1 1 0 011 1v2H8v-2a1 1 0 011-1z"/></svg>`;
+  const ICON_FINGERPRINT = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11c.5-1 2-1 2.5 0s.2 2.5-.5 3.5"/><path d="M8.5 10.5c1-2 3-3 5-2.5"/><path d="M6.5 14c-.5-3 1-6 4-7"/><path d="M9 17c-1.5-1.5-2.5-4-2-6.5"/><path d="M12 20c-3-.5-5.5-3-6-6.5"/><path d="M12 4c4.5 0 8 3.5 8 8 0 2-.5 3.5-1.5 5"/><path d="M15 15.5c.7-1 1-2 1-3.5"/></svg>`;
+  const ICON_NETWORK = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-5.5 5M12 12l5.5 5"/></svg>`;
+  const ICON_NETWORK_MULTI = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><circle cx="5" cy="10" r="2"/><circle cx="19" cy="10" r="2"/><circle cx="8" cy="19" r="2"/><circle cx="16" cy="19" r="2"/><path d="M12 6v2M6.5 11.5L9 16M17.5 11.5L15 16"/></svg>`;
+  const ICON_CLOUD = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a5 5 0 01-1-9.9V9a5 5 0 019.9-1A4.5 4.5 0 0117.5 19z"/></svg>`;
+  const ICON_BACK = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>`;
+  const ICON_CHECK = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+
+  const STEPS = {
+    hardwareAllowed: {
+      shortLabel: 'Dongle möglich?',
+      title: 'Ist ein physischer USB-Dongle in Ihrer Umgebung grundsätzlich einsetzbar?',
+      subtitle: 'Zum Beispiel nicht möglich bei Cloud-VMs/Terminalservern ohne USB-Weiterleitung oder wenn Ihre IT-Richtlinien externe USB-Geräte untersagen.',
+      options: [
+        { label: 'Ja, normale Windows- oder Mac-Arbeitsplätze', desc: 'Ein USB-Dongle kann problemlos eingesteckt werden.', icon: ICON_DONGLE, next: 'network' },
+        { label: 'Nein – Cloud/VM, Terminalserver oder USB-Verbot', desc: 'Kein physisches USB-Gerät möglich.', icon: ICON_CLOUD, next: 'concurrencyNoHw' }
+      ]
+    },
+    concurrencyNoHw: {
+      shortLabel: 'Nutzer',
+      title: 'Wie viele Nutzer arbeiten typischerweise gleichzeitig mit Herzog CAB?',
+      subtitle: 'Das bestimmt die Anzahl der aktiven Nutzer Ihrer Software-Lizenz.',
+      options: [
+        { label: '1 Nutzer', desc: 'Ein fester Arbeitsplatz bzw. eine feste VM.', icon: ICON_FINGERPRINT, next: 'resultSoftwareSingle' },
+        { label: '2–4 gleichzeitig', desc: 'Ein kleines Team arbeitet parallel.', icon: ICON_NETWORK_MULTI, next: 'resultSoftware5' },
+        { label: '5 oder mehr gleichzeitig', desc: 'Größeres Team arbeitet parallel.', icon: ICON_NETWORK_MULTI, next: 'resultSoftware10' }
+      ]
+    },
+    network: {
+      shortLabel: 'Netzwerk',
+      title: 'Gibt es ein gemeinsames Netzwerk (LAN), über das sich mehrere PCs eine Lizenz teilen könnten?',
+      subtitle: 'Entscheidet, ob mehrere Arbeitsplätze sich einen Lizenz-Pool teilen können.',
+      options: [
+        { label: 'Nein, kein gemeinsames Netzwerk', desc: 'Jeder Arbeitsplatz steht für sich allein.', icon: ICON_DONGLE, next: 'seatsOffline' },
+        { label: 'Ja, LAN vorhanden', desc: 'PCs sind lokal miteinander vernetzt.', icon: ICON_NETWORK, next: 'concurrencyNetwork' }
+      ]
+    },
+    seatsOffline: {
+      shortLabel: 'Arbeitsplätze',
+      title: 'Wie viele Arbeitsplätze sollen Herzog CAB gleichzeitig nutzen?',
+      subtitle: 'Ohne Netzwerk braucht jeder gleichzeitige Arbeitsplatz eine eigene Lizenz.',
+      options: [
+        { label: '1 Arbeitsplatz', desc: 'Genau ein PC nutzt Herzog CAB.', icon: ICON_DONGLE, next: 'mobility' },
+        { label: 'Mehrere Arbeitsplätze', desc: 'Mehrere PCs, aber ohne gemeinsames Netzwerk.', icon: ICON_NETWORK_MULTI, next: 'resultMultiDongle' }
+      ]
+    },
+    mobility: {
+      shortLabel: 'Unterwegs?',
+      title: 'Wird mit Herzog CAB gereist – ganz ohne Verbindung zum eigenen Netzwerk?',
+      subtitle: 'Zum Beispiel Laptop beim Kunden, auf Messen oder im Homeoffice, ganz ohne Zugriff auf Ihr Firmennetzwerk.',
+      options: [
+        { label: 'Ja, unterwegs ganz ohne Netzwerkverbindung', desc: 'Die Lizenz muss überall sofort funktionieren, ganz ohne Netzwerk.', icon: ICON_DONGLE, next: 'resultDongleSingle' },
+        { label: 'Nein, fester Arbeitsplatz', desc: 'Der PC bleibt immer derselbe und ist nicht unterwegs im Einsatz.', icon: ICON_FINGERPRINT, next: 'resultFingerprintSingle' }
+      ]
+    },
+    concurrencyNetwork: {
+      shortLabel: 'Nutzer',
+      title: 'Wie viele Nutzer arbeiten typischerweise gleichzeitig mit Herzog CAB?',
+      subtitle: 'Das bestimmt, wie viele aktiven Nutzer Ihre Netzwerk-Lizenz braucht.',
+      options: [
+        { label: '1 Nutzer', desc: 'Mehrere PCs greifen abwechselnd zu, aber nie gleichzeitig.', icon: ICON_NETWORK, next: 'resultNetworkSingle' },
+        { label: '2–4 gleichzeitig', desc: 'Mehrere Personen arbeiten parallel.', icon: ICON_NETWORK_MULTI, next: 'resultNetwork5' },
+        { label: '5 oder mehr gleichzeitig', desc: 'Größeres Team arbeitet parallel.', icon: ICON_NETWORK_MULTI, next: 'resultNetwork10' }
+      ]
+    }
+  };
+
+  const RESULTS = {
+    resultDongleSingle: {
+      icon: ICON_DONGLE,
+      title: '1-Platz-Lizenz mit Dongle',
+      reasons: [
+        'Sie reisen mit Herzog CAB und haben unterwegs keine Verbindung zu Ihrem Netzwerk.',
+        'Der Einsatzort bzw. der genutzte PC kann wechseln – z. B. beim Kunden, auf Messen oder im Homeoffice.',
+        'Der Dongle funktioniert vollständig offline und lässt sich ohne Reaktivierung auf jeden PC mitnehmen.'
+      ],
+      access: 'Der USB-Dongle wird einfach in den jeweils genutzten Rechner gesteckt. Herzog CAB läuft, solange der Dongle eingesteckt ist – unabhängig davon, an welchem PC Sie gerade arbeiten und ganz ohne Verbindung zu Ihrem Netzwerk.'
+    },
+    resultFingerprintSingle: {
+      icon: ICON_FINGERPRINT,
+      title: '1-Platz-Lizenz – Dongle oder Fingerabdruck',
+      reasons: [
+        'Nur ein fester Arbeitsplatz benötigt dauerhaften Zugriff.',
+        'Der PC wechselt nicht und ist nicht unterwegs im Einsatz.',
+        'Beide Lizenzarten funktionieren hier gleich gut – die Wahl ist reine Vorliebssache.'
+      ],
+      access: 'Sie haben die freie Wahl: Ein USB-Dongle wird einfach eingesteckt und lässt sich jederzeit auf einen anderen PC mitnehmen. Eine Lizenz per Hardware-Fingerabdruck bindet sich einmalig an diesen PC und läuft danach dauerhaft – ganz ohne physisches Gerät. Beide Varianten laufen komplett offline, ganz ohne Netzwerk.',
+      note: 'Tipp: Bevorzugen Sie ein physisches Sicherheitsobjekt oder möchten Sie die Lizenz gelegentlich doch mitnehmen – dann ist der Dongle die naheliegendere Wahl.'
+    },
+    resultMultiDongle: {
+      icon: ICON_NETWORK_MULTI,
+      title: 'Mehrere 1-Platz-Lizenzen (Dongle oder Fingerabdruck)',
+      reasons: [
+        'Mehrere Arbeitsplätze benötigen gleichzeitig Zugriff auf Herzog CAB.',
+        'Es besteht kein gemeinsames Netzwerk, über das sich eine Lizenz teilen ließe.',
+        'Jede Lizenz deckt genau einen Arbeitsplatz ab – unabhängig von den anderen.'
+      ],
+      access: 'Jeder Arbeitsplatz erhält eine eigene 1-Platz-Lizenz – entweder als Dongle (portabel, sofort auf jedem PC einsetzbar) oder per Hardware-Fingerabdruck (fest gebunden, kein physisches Gerät nötig). Ohne Netzwerk lässt sich kein gemeinsamer Lizenz-Pool nutzen.',
+      note: '💡 Tipp: Mit einem gemeinsamen Netzwerk lässt sich das oft durch eine einzige Netzwerk-Lizenz mit mehreren aktiven Nutzern ersetzen – sprechen Sie uns darauf an.'
+    },
+    resultNetworkSingle: {
+      icon: ICON_NETWORK,
+      title: 'Netzwerk-Lizenz, 1 aktiver Nutzer',
+      reasons: [
+        'Mehrere PCs sollen grundsätzlich Zugriff erhalten können.',
+        'Es arbeitet aber immer nur eine Person gleichzeitig mit Herzog CAB.',
+        'Alle PCs teilen sich über das Netzwerk einen gemeinsamen, freien Lizenzplatz.'
+      ],
+      access: 'Der eine verfügbare Platz wird zentral bereitgestellt – entweder über einen Dongle, der als Netzwerk-Lizenzserver eingesteckt wird, oder per Software-Lizenz auf einem Server. Wer zuerst startet, belegt den Platz; alle anderen erhalten einen Hinweis, sobald er wieder frei ist.'
+    },
+    resultNetwork5: {
+      icon: ICON_NETWORK_MULTI,
+      title: 'Netzwerk-Lizenz, 5 aktive Nutzer',
+      reasons: [
+        'Mehrere Personen arbeiten regelmäßig mit Herzog CAB.',
+        'Typischerweise sind 2 bis 4 Personen gleichzeitig aktiv – 5 Plätze bieten Puffer.',
+        'Alle Arbeitsplätze teilen sich die Lizenz über das lokale Netzwerk.'
+      ],
+      access: 'Beliebig viele PCs können Herzog CAB installiert haben, gleichzeitig aktiv dürfen bis zu 5 Nutzer sein. Die Lizenz läuft wahlweise als Dongle im Netzwerk-Lizenzserver oder als Software-Lizenz auf einem Server – beide teilen den Pool von 5 Plätzen an alle PCs im LAN.'
+    },
+    resultNetwork10: {
+      icon: ICON_NETWORK_MULTI,
+      title: 'Netzwerk-Lizenz, größeres Nutzerkontingent',
+      reasons: [
+        'Ein größeres Team arbeitet parallel mit Herzog CAB.',
+        '5 oder mehr Personen sind typischerweise gleichzeitig aktiv.',
+        'Ein individuell skaliertes Nutzerkontingent passt hier am besten.'
+      ],
+      access: 'Wir konfigurieren die Anzahl aktiver Nutzer passend zu Ihrem Team – wahlweise als Netzwerk-Dongle oder als Software-Lizenz auf Ihrem Server.',
+      note: 'Für die genaue Nutzeranzahl sprechen wir Details am besten im persönlichen Gespräch durch.'
+    },
+    resultSoftwareSingle: {
+      icon: ICON_FINGERPRINT,
+      title: 'Software-Lizenz, 1 Nutzer',
+      reasons: [
+        'Ein physischer USB-Dongle ist in Ihrer Umgebung nicht einsetzbar.',
+        'Nur ein Arbeitsplatz bzw. eine virtuelle Maschine benötigt Zugriff.',
+        'Die Lizenz bindet sich rein softwareseitig an die Hardware- bzw. VM-Kennung.'
+      ],
+      access: 'Die Lizenz wird an den Hardware-Fingerabdruck Ihres PCs oder Ihrer virtuellen Maschine gebunden – ganz ohne physisches Gerät. Ideal für Cloud-VMs, Terminalserver oder Umgebungen ohne USB-Zugriff.',
+      note: 'Wichtig bei Cloud-VMs: Bleibt die Hardware-Kennung der VM stabil, bleibt auch die Lizenzbindung erhalten. Planen Sie einen Wechsel des Hosts oder eine Neu-Provisionierung, sprechen Sie uns vorher an.'
+    },
+    resultSoftware5: {
+      icon: ICON_NETWORK_MULTI,
+      title: 'Software-Lizenz, 5 aktive Nutzer',
+      reasons: [
+        'Ein physischer USB-Dongle ist in Ihrer Umgebung nicht einsetzbar.',
+        'Mehrere Personen arbeiten regelmäßig mit Herzog CAB.',
+        'Typischerweise sind 2 bis 4 Personen gleichzeitig aktiv – 5 Plätze bieten Puffer.'
+      ],
+      access: 'Die Lizenz läuft rein softwareseitig auf einem zentralen Server und wird an dessen Hardware-Kennung gebunden. Bis zu 5 Nutzer können gleichzeitig aktiv sein – ganz ohne physischen Dongle.'
+    },
+    resultSoftware10: {
+      icon: ICON_NETWORK_MULTI,
+      title: 'Software-Lizenz, größeres Nutzerkontingent',
+      reasons: [
+        'Ein physischer USB-Dongle ist in Ihrer Umgebung nicht einsetzbar.',
+        'Ein größeres Team arbeitet parallel mit Herzog CAB.',
+        '5 oder mehr Personen sind typischerweise gleichzeitig aktiv.'
+      ],
+      access: 'Wir konfigurieren die Anzahl aktiver Nutzer softwareseitig passend zu Ihrem Team – zentral über Ihren Server, ganz ohne physischen Dongle.',
+      note: 'Für die genaue Nutzeranzahl sprechen wir Details am besten im persönlichen Gespräch durch.'
+    }
+  };
+
+  let lgHistory = [];
+  let lgCurrentStepId = 'hardwareAllowed';
+  let lgResultId = null;
+
+  const lgOverlay = document.getElementById('lgOverlay');
+  const lgTrail = document.getElementById('lgTrail');
+  const lgStage = document.getElementById('lgStage');
+  const lgCloseBtn = document.getElementById('lgCloseBtn');
+
+  function lgReset() {
+    lgHistory = [];
+    lgCurrentStepId = 'hardwareAllowed';
+    lgResultId = null;
+    lgRender();
+  }
+  function lgOpen() {
+    lgReset();
+    lgOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function lgClose() {
+    lgOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function lgChoose(option) {
+    lgHistory.push({ stepId: lgCurrentStepId, label: option.label });
+    if (RESULTS[option.next]) {
+      lgResultId = option.next;
+      lgCurrentStepId = null;
+    } else {
+      lgCurrentStepId = option.next;
+    }
+    lgRender();
+  }
+  function lgBack() {
+    if (!lgHistory.length) return;
+    const last = lgHistory.pop();
+    lgCurrentStepId = last.stepId;
+    lgResultId = null;
+    lgRender();
+  }
+
+  function lgRenderTrail() {
+    let html = '';
+    lgHistory.forEach(h => {
+      html += `<div class="lg-node done"><span class="lg-node-circle">${ICON_CHECK}</span><span class="lg-node-label">${h.label}</span></div><div class="lg-line done"></div>`;
+    });
+    if (lgResultId) {
+      html += `<div class="lg-node done"><span class="lg-node-circle">${ICON_CHECK}</span><span class="lg-node-label">Empfehlung</span></div>`;
+    } else {
+      html += `<div class="lg-node active"><span class="lg-node-circle">${lgHistory.length + 1}</span><span class="lg-node-label">${STEPS[lgCurrentStepId].shortLabel}</span></div>`;
+    }
+    lgTrail.innerHTML = html;
+  }
+
+  function lgRenderStage() {
+    lgStage.classList.remove('lg-anim');
+    void lgStage.offsetWidth;
+    if (lgResultId) {
+      const r = RESULTS[lgResultId];
+      lgStage.innerHTML = `
+        <div class="lg-result">
+          <div class="lg-result-icon">${r.icon}</div>
+          <div class="lg-result-badge">Empfehlung</div>
+          <h3 class="lg-result-title">${r.title}</h3>
+          <ul class="lg-reasons">${r.reasons.map(x => `<li>${x}</li>`).join('')}</ul>
+          <div class="lg-access-box"><strong>So bekommen Nutzer Zugriff:</strong><p>${r.access}</p></div>
+          ${r.note ? `<div class="lg-note">${r.note}</div>` : ''}
+          <div class="lg-result-cta">
+            <a class="btn btn-primary" href="https://herzog-online.com/vertretungen/#kontakt" target="_blank" rel="noopener">Beratung anfragen</a>
+            <button class="btn btn-outline" type="button" id="lgRestartBtn">${ICON_BACK} Neu starten</button>
+          </div>
+          <p class="lg-disclaimer">Unverbindliche Erst-Einschätzung basierend auf Ihren Angaben – die passenden Details klären wir gemeinsam im persönlichen Gespräch.</p>
+        </div>`;
+      document.getElementById('lgRestartBtn').addEventListener('click', lgReset);
+    } else {
+      const s = STEPS[lgCurrentStepId];
+      lgStage.innerHTML = `
+        ${lgHistory.length ? `<button class="lg-back" type="button" id="lgBackBtn">${ICON_BACK} Zurück</button>` : ''}
+        <div class="lg-step-label">Frage ${lgHistory.length + 1}</div>
+        <h3 class="lg-q-title">${s.title}</h3>
+        <p class="lg-q-sub">${s.subtitle}</p>
+        <div class="lg-options">
+          ${s.options.map((o, i) => `
+            <button class="lg-option" type="button" data-i="${i}" style="--i:${i}">
+              <span class="lg-option-icon">${o.icon}</span>
+              <span class="lg-option-text">
+                <span class="lg-option-title">${o.label}</span>
+                <span class="lg-option-desc">${o.desc}</span>
+              </span>
+            </button>`).join('')}
+        </div>`;
+      if (lgHistory.length) document.getElementById('lgBackBtn').addEventListener('click', lgBack);
+      lgStage.querySelectorAll('.lg-option').forEach(btn => {
+        btn.addEventListener('click', () => lgChoose(s.options[+btn.dataset.i]));
+      });
+    }
+    requestAnimationFrame(() => lgStage.classList.add('lg-anim'));
+  }
+
+  function lgRender() {
+    lgRenderTrail();
+    lgRenderStage();
+  }
+
+  lgOpenBtn.addEventListener('click', lgOpen);
+  lgCloseBtn.addEventListener('click', lgClose);
+  lgOverlay.addEventListener('click', e => { if (e.target === lgOverlay) lgClose(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && lgOverlay.classList.contains('open')) lgClose(); });
+})();
 </script>
 </body>
 </html>
