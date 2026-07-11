@@ -1,5 +1,7 @@
 # Systemvoraussetzungen
 
+!!! abstract "Referenz — Welche Windows-Version, Hardware und Berechtigungen Herzog CAB benötigt"
+
 ## Betriebssystem
 
 | Anforderung           | Empfehlung                              |
@@ -49,3 +51,9 @@ für:
 Falls Sie Berechnungen oder Aufträge ausdrucken möchten, sollte ein
 Drucker installiert und unter Windows als Standarddrucker eingerichtet
 sein. Ein PDF-Drucker (z. B. *Microsoft Print to PDF*) reicht aus.
+
+## Nächster Schritt
+
+Klären Sie als Nächstes, welches [Einsatz-Szenario](topology.md) zu Ihrem
+Werk passt — das entscheidet mit, wie CodeMeter und der spätere
+Daten-Speicherort eingerichtet werden.

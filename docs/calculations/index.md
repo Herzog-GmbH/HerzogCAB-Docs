@@ -1,12 +1,18 @@
 # Berechnungen
 
+!!! abstract "Referenz — Übersicht aller Berechnungen in Herzog CAB"
+
+## Wofür Sie diesen Bereich nutzen
+
 Das Herz von Herzog CAB sind die **Berechnungen**. Sie sind über den
 Navigationspunkt *Berechnungen* erreichbar; dort öffnet sich zunächst eine
-Übersicht aller Rechner als Kacheln, gruppiert wie in der App.
+Übersicht aller Rechner als Kacheln, gruppiert wie in der App. Ob Feinheit,
+Geflechtsdichte, Produktionsgeschwindigkeit oder Spulzeit — jede Berechnung
+hat eine eigene Referenzseite mit allen Feldern.
 
 ![Berechnungen-Übersicht mit allen Rechnern, gruppiert nach Material, Produkt und Produktion.](../assets/screenshots/calculations/berechnungen-uebersicht.png)
 
-## Gruppen
+## Die fünf Gruppen
 
 <div class="grid cards" markdown>
 
@@ -18,13 +24,22 @@ Navigationspunkt *Berechnungen* erreichbar; dort öffnet sich zunächst eine
 - :material-shape-outline: __[Produkt](product/index.md)__
 
     ---
-    Flechtwinkel, Geflechtsdichte, Durchmesser, Länge, Gewicht – inkl.
-    [Hohlgeflecht](tubular-braid/index.md)
+    Flechtwinkel, Geflechtsdichte, Durchmesser, Länge, Gewicht, Kern-Mantel-Produkt
 
-- :material-cog-outline: __[Produktion](machine/index.md)__
+- :material-pipe: __[Hohlgeflecht](tubular-braid/index.md)__
 
     ---
-    Geschwindigkeit, Maschinenmaße, Laufzeit, Spulmaschinen, Wechselräder
+    Klöppelanzahl, Durchmesser, Materialbreite und Bedeckung von Rohr-/Schlauchgeflechten
+
+- :material-cog-outline: __[Produktion](production/index.md)__
+
+    ---
+    Geschwindigkeit, Maschinenmaße, Laufzeit pro Spulensatz, Wechselräder
+
+- :material-tray-full: __[Spulerei](winding/index.md)__
+
+    ---
+    Spulzeit, Fadengeschwindigkeit, Spulenkapazität, Materialbedarf und mehr — neu seit 07/2026
 
 </div>
 
@@ -47,24 +62,19 @@ Schaltfläche **Berechnen**.
     und tragen Sie stattdessen das Ergebnis ein – Herzog CAB rechnet in die
     andere Richtung.
 
-## Verlauf der Berechnungen (rechte Seitenleiste)
+Den vollständigen, für alle Berechnungsseiten gültigen Aufbau (Eingabetypen,
+Ergebnis-Kacheln, Einheiten-Umschalter, Testversion-Kontingente) finden Sie
+unter [So sind Berechnungsseiten aufgebaut](../basics/calc-page-anatomy.md).
 
-Am rechten Fensterrand können Sie über den Pfeil die **Verlaufs-Leiste**
-auf- und zuklappen. Sie listet die **zuletzt durchgeführten Berechnungen** mit
-ihrem Ergebnis. Ein Klick auf einen Eintrag öffnet die Berechnung erneut – mit
-allen Eingabewerten, die Sie zuletzt verwendet haben. So springen Sie schnell
-zwischen mehreren Rechnern hin und her, ohne Werte neu einzugeben.
+## Verlauf der Berechnungen
 
-![Berechnungsseite mit Eingabe und Ergebnis; rechts lässt sich der Verlauf einblenden.](../assets/screenshots/calculations/beispiel-feinheit.png)
-
-## Werte zwischenspeichern
-
-Eingegebene Werte bleiben erhalten, solange das Programm läuft. Wechseln Sie auf
-eine andere Berechnung und kommen später zurück, finden Sie Ihre Eingaben
-unverändert vor. Nach einem Programmneustart sind die Werte zurückgesetzt.
+Am rechten Fensterrand blenden Sie über den Pfeil die **Verlaufs-Leiste** ein,
+die zuletzt durchgeführte Berechnungen mit ihrem Ergebnis auflistet und per
+Klick wieder öffnet. Details dazu finden Sie unter
+[Verlauf der Berechnungen](../basics/history.md).
 
 ## Im Auftrag rechnen
 
-Im [Auftrag](../orders/create.md) öffnen Sie viele dieser Rechner direkt über
-das Rechner-Symbol neben den Feldern; das Ergebnis wird in den Auftrag
-zurückgeschrieben.
+Im [Flechtauftrag](../orders/braiding-order.md) öffnen Sie viele dieser Rechner
+direkt über das Rechner-Symbol neben den Feldern; das Ergebnis wird in den
+Auftrag zurückgeschrieben.

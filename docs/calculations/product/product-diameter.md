@@ -1,6 +1,14 @@
 # Produktdurchmesser
 
-Berechnet den Außendurchmesser des fertigen Geflechts aus den Garn- bzw. Materialeigenschaften, der Klöppelzahl, dem Flechtwinkel und dem Füllungsgrad. So lässt sich schon vor dem Flechten abschätzen, welchen Durchmesser ein geplantes Produkt erreicht – nützlich für Auslegung, Maschinenwahl und Angebotskalkulation.
+!!! abstract "Referenz — Berechnung: Außendurchmesser des fertigen Geflechts"
+
+## Wofür
+
+Berechnet den Außendurchmesser des fertigen Geflechts aus den Garn- bzw.
+Materialeigenschaften, der Klöppelzahl, dem Flechtwinkel und dem
+Füllungsgrad. So lässt sich schon vor dem Flechten abschätzen, welchen
+Durchmesser ein geplantes Produkt erreicht – nützlich für Auslegung,
+Maschinenwahl und Angebotskalkulation.
 
 ## Eingabewerte
 
@@ -23,16 +31,24 @@ Berechnet den Außendurchmesser des fertigen Geflechts aus den Garn- bzw. Materi
 |---|---|---|
 | **Produktdurchmesser:** | mm | Berechneter Außendurchmesser des fertigen Geflechts (zwei Nachkommastellen). |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Es wird nur gerechnet, wenn Dichte, Feinheit, Fachung, Klöppelanzahl,
+Flechtwinkel und Füllungsgrad sinnvolle Werte (> 0 bzw. innerhalb der
+genannten Grenzen) enthalten. Fehlt ein Wert oder liegt er außerhalb des
+zulässigen Bereichs, wird das Feld rot markiert und es erscheint kein
+Ergebnis.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
-
-!!! note "Vollständige Eingabe nötig"
-    Es wird nur gerechnet, wenn Dichte, Feinheit, Fachung, Klöppelanzahl, Flechtwinkel und Füllungsgrad sinnvolle Werte (> 0 bzw. innerhalb der genannten Grenzen) enthalten. Fehlt ein Wert oder liegt er außerhalb des zulässigen Bereichs, wird das Feld rot markiert und es erscheint kein Ergebnis.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Flechtwinkel](../braid-geometry/braid-angle.md)
-* [Materialdurchmesser](../material/material-diameter.md)
-* [Feinheit / Titer](../material/linear-density.md)
-* [Produktgewicht](./rope-weight.md)
+- [Flechtwinkel](braid-angle.md)
+- [Materialdurchmesser über Material](../material/material-diameter.md)
+- [Feinheit / Titer](../material/linear-density.md)
+- [Produktgewicht](rope-weight.md)

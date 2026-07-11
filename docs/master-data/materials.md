@@ -1,23 +1,29 @@
 # Materialien
 
-Im **Materialeditor** pflegen Sie alle Garne, Drähte, Litzen und Fäden, die
-Sie immer wieder in Berechnungen und Aufträgen verwenden. Einmal angelegt,
-lassen sich die hinterlegten Werte (Dichte und Titer) in jeder Berechnung
-per Auswahl übernehmen – das spart Tipparbeit und vermeidet Eingabefehler.
+!!! abstract "Referenz — Garne, Drähte, Litzen und Fäden mit Dichte und Titer pflegen; die Werte lassen sich in Berechnungen und Aufträgen per Auswahl übernehmen."
+
+## Wofür Sie diesen Bereich nutzen
+
+Im **Materialeditor** pflegen Sie alle Garne, Drähte, Litzen und Fäden, die Sie
+immer wieder in Berechnungen und Aufträgen verwenden. Einmal angelegt, lassen
+sich die hinterlegten Werte (Dichte und Titer) in jeder Berechnung per Auswahl
+übernehmen – das spart Tipparbeit und vermeidet Eingabefehler.
+
+## Der Bildschirm im Überblick
 
 ![Materialeditor: links die Materialdatenbank, rechts der Bearbeitungsbereich.](../assets/screenshots/master-data/materialien-uebersicht.png)
 
-## Aufbau der Seite
-
-Wie alle Stammdaten-Editoren ist die Seite zweigeteilt:
+Wie die meisten Stammdaten-Editoren ist die Seite zweigeteilt:
 
 * **Materialdatenbank** (links) – Suchfeld und Liste aller vorhandenen
-  Materialien. Unter dem Suchfeld steht, wie viele Materialien zur
-  aktuellen Suche passen. Jede Karte zeigt Name, Dichte und Titer.
-* **Material bearbeiten** (rechts) – die Eigenschaften des in der Liste
-  gewählten Materials.
+  Materialien. Unter dem Suchfeld steht, wie viele Materialien zur aktuellen
+  Suche passen. Jede Karte zeigt Name, Dichte und Titer.
+* **Material bearbeiten** (rechts) – die Eigenschaften des in der Liste gewählten
+  Materials.
 
-## Eigenschaften eines Materials
+## Bedienelemente im Detail
+
+### Felder eines Materials
 
 | Feld | Einheit | Beschreibung |
 |---|---|---|
@@ -25,41 +31,38 @@ Wie alle Stammdaten-Editoren ist die Seite zweigeteilt:
 | **Marke** | – | Optionaler Hersteller- oder Markenname (z. B. „Kevlar"). |
 | **Notiz** | – | Optionale Bemerkung. |
 | **Dichte** | g/cm³ | Materialdichte mit zwei Nachkommastellen. Grundlage u. a. für die Gewichtsberechnung. |
-| **Titer** | tex, dtex, den, Nm, Ne | Feinheit (lineare Dichte) des Materials. Die Einheit wählen Sie im Auswahlfeld rechts daneben. |
+| **Titer** | tex, dtex, den, Nm, Ne | Feinheit des Materials. Die Einheit wählen Sie im Auswahlfeld rechts daneben. |
 
 !!! note "Ein Material hat keinen festen Durchmesser"
-    Materialien werden über **Dichte** und **Titer** beschrieben, nicht
-    über einen festen Durchmesser. Der Materialdurchmesser ergibt sich aus
-    diesen Werten und wird bei Bedarf in der Berechnung
-    [Materialdurchmesser](../calculations/material/material-diameter.md)
-    ermittelt.
+    Materialien werden über **Dichte** und **Titer** beschrieben, nicht über
+    einen festen Durchmesser. Der Materialdurchmesser ergibt sich aus diesen
+    Werten und wird bei Bedarf in der Berechnung
+    [Materialdurchmesser](../calculations/material/material-diameter.md) ermittelt.
 
-## Material anlegen
+### Neues Material
 
-1. Klicken Sie unten links auf **Neues Material**.
-2. Im Dialog *Neues Material in der Datenbank anlegen* tragen Sie Name,
-   optional Marke und Notiz sowie Dichte und Titer ein.
-3. Bestätigen Sie mit **Material erstellen**. Das neue Material erscheint
-   sofort in der Liste.
+Die Schaltfläche **Neues Material** (unten links) öffnet den Dialog *Neues
+Material in der Datenbank anlegen*. Dort tragen Sie Name, optional Marke und
+Notiz sowie Dichte und Titer ein und bestätigen mit **Material erstellen**. Das
+neue Material erscheint sofort in der Liste.
 
 ![Dialog „Neues Material in der Datenbank anlegen".](../assets/screenshots/master-data/materialien-neu-dialog.png)
 
-## Material bearbeiten oder löschen
+### Löschen und Speichern
 
-1. Wählen Sie das Material in der Liste an – seine Werte erscheinen rechts.
-2. Ändern Sie die Felder und sichern Sie mit **Speichern**.
-3. Mit **Löschen** entfernen Sie das Material (mit Sicherheitsabfrage).
+* **Speichern** – sichert die Änderungen am gewählten Material.
+* **Löschen** – entfernt das gewählte Material (mit Sicherheitsabfrage).
 
-## Materialien durchsuchen
+### Suche
 
-Tippen Sie im Feld **Suche** einen Namen, eine Marke oder einen Teil der
-Notiz ein – die Liste wird sofort gefiltert.
+Tippen Sie im Feld **Suche** einen Namen, eine Marke oder einen Teil der Notiz
+ein – die Liste wird sofort gefiltert.
 
 ## Verwendung in Berechnungen
 
-In vielen Berechnungen können Sie statt manueller Eingabe ein Material aus
-der Datenbank wählen; Dichte und Titer werden dann automatisch übernommen.
-Das betrifft z. B.:
+In vielen Berechnungen können Sie statt manueller Eingabe ein Material aus der
+Datenbank wählen; Dichte und Titer werden dann automatisch übernommen. Das
+betrifft z. B.:
 
 * [Feinheit / Titer](../calculations/material/linear-density.md)
 * [Materialdurchmesser](../calculations/material/material-diameter.md)
@@ -67,5 +70,11 @@ Das betrifft z. B.:
 
 !!! tip "Häufige Materialien einmal sauber pflegen"
     Legen Sie wiederkehrende Materialien einmal mit korrekter Dichte und
-    korrektem Titer an. Bei jeder Berechnung wählen Sie sie dann nur noch
-    aus – das ist schneller und verlässlicher als die manuelle Eingabe.
+    korrektem Titer an. Bei jeder Berechnung wählen Sie sie dann nur noch aus –
+    das ist schneller und verlässlicher als die manuelle Eingabe.
+
+## Verwandte Seiten
+
+* [Feinheit / Titer](../calculations/material/linear-density.md)
+* [Umrechnung Feinheit](../calculations/material/linear-density-conversion.md)
+* [Suchen und Filtern](../basics/search-filter.md)

@@ -1,5 +1,7 @@
 # Einsatz-Szenarien
 
+!!! info "Konzept — Welche Topologie (Single-Client, Server, Mixed Setup) zu Ihrem Werk passt"
+
 Bevor Sie loslegen, lohnt sich ein Blick auf die typischen Aufbauten.
 Herzog CAB hat eine eingebaute Userverwaltung — **mehrere Bediener
 können sich also in jeder Variante mit eigenem Konto anmelden**. Die

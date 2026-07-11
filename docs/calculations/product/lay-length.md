@@ -1,6 +1,14 @@
 # Geflechtsdichte (Schlaglänge)
 
-Die **Geflechtsdichte** beschreibt, wie dicht ein Geflecht erscheint. Diese Berechnung ermittelt aus Geflechtsmaß und Flechtwinkel die **Schlaglänge** – also den axialen Vorschub für eine volle Umdrehung eines Strangs um das Produkt – und kann das Ergebnis wahlweise direkt in gängige Dichte-Einheiten (Flechten je Längeneinheit) umrechnen.
+!!! abstract "Referenz — Berechnung: Schlaglänge bzw. Flechtdichte aus Geflechtsmaß und Flechtwinkel"
+
+## Wofür
+
+Die **Geflechtsdichte** beschreibt, wie dicht ein Geflecht erscheint. Diese
+Berechnung ermittelt aus Geflechtsmaß und Flechtwinkel die **Schlaglänge** –
+also den axialen Vorschub für eine volle Umdrehung eines Strangs um das
+Produkt – und kann das Ergebnis wahlweise direkt in gängige Dichte-Einheiten
+(Flechten je Längeneinheit) umrechnen.
 
 ## Eingabewerte
 
@@ -26,14 +34,21 @@ Die **Geflechtsdichte** beschreibt, wie dicht ein Geflecht erscheint. Diese Bere
 
 Die Ergebnisbeschriftung und -einheit passen sich automatisch der gewählten **Ergebnis-Einheit** an.
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Über die **Ergebnis-Einheit** erhalten Sie aus denselben Eingaben entweder
+die reine Schlaglänge oder die in der Praxis übliche Flechtdichte (Flechten
+je 10 mm, Zoll oder französischem Zoll) – ohne die Werte neu eingeben zu
+müssen.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
-
-!!! tip "Gleiche Eingaben, vier Sichtweisen"
-    Über die **Ergebnis-Einheit** erhalten Sie aus denselben Eingaben entweder die reine Schlaglänge oder die in der Praxis übliche Flechtdichte (Flechten je 10 mm, Zoll oder französischem Zoll) – ohne die Werte neu eingeben zu müssen.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Flechtwinkel](braid-angle.md)
-* [Flechtdichte](picks-density.md)
+- [Flechtwinkel](braid-angle.md)
+- [Umrechnung Geflechtsdichte](picks-density.md)

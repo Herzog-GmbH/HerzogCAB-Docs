@@ -1,5 +1,7 @@
 # Vorschau und Druck
 
+!!! abstract "Referenz — Vorlagen-Vorschau im Editor und der tatsächliche Ausdruck"
+
 ## Live-Vorschau im Editor
 
 Die Seiten-Canvas im Druck-Editor ist zugleich die Vorschau: Sie zeigt die
@@ -17,14 +19,18 @@ hinzufügen**.
 
 ## Drucken und PDF-Export
 
-Den eigentlichen Druck lösen Sie nicht im Editor aus, sondern beim Auftrag:
-Über **Drucken** im [Auftrag](../orders/print.md) wird die zugeordnete Vorlage
-mit den echten Auftragsdaten gefüllt und in der Druckvorschau angezeigt. Von
-dort drucken Sie auf einem Drucker oder geben als **PDF** aus.
+Den eigentlichen Druck lösen Sie nicht im Editor aus, sondern an der Stelle,
+für die die Vorlage bestimmt ist (siehe **Verwendung**) — dort wird sie mit
+den echten Daten gefüllt und in einer Druckvorschau angezeigt. Von dort
+drucken Sie auf einem Drucker oder geben als **PDF** aus.
 
-→ Ablauf siehe [Aufträge → Drucken](../orders/print.md).
+| Verwendung | Wo Sie drucken |
+|---|---|
+| **Auftrag** | Über **Drucken** im [Auftrag](../orders/print.md). |
+| **Design** | Über [Designer → Speichern und Drucken](../designer/save-print.md). |
+| **Berechnung** | Über *Datei > Drucken…* (++ctrl+p++) bei geöffneter Berechnung. Gibt es mehrere passende Vorlagen, wählen Sie zuvor aus, welche verwendet werden soll. |
 
 !!! tip "Vor dem Serieneinsatz testen"
-    Drucken Sie eine neue Vorlage einmal mit einem echten Auftrag (oder als
-    PDF), um Platzierung, Seitenumbrüche und Ränder zu prüfen, bevor Sie sie in
-    der Produktion einsetzen.
+    Drucken Sie eine neue Vorlage einmal mit echten Daten (oder als PDF), um
+    Platzierung, Seitenumbrüche und Ränder zu prüfen, bevor Sie sie in der
+    Produktion einsetzen.

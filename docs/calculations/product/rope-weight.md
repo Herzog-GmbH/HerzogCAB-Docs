@@ -1,6 +1,13 @@
 # Produktgewicht
 
-Berechnet das Gesamtgewicht eines geflochtenen Produkts (Seil, Litze, Schlauch) aus der Materialfeinheit, der Klöppelanzahl, dem Flechtwinkel und der Produktlänge. So lässt sich vor der Produktion abschätzen, wie viel Material ein Auftrag benötigt und wie schwer das fertige Produkt wird.
+!!! abstract "Referenz — Berechnung: Gesamtgewicht eines geflochtenen Produkts"
+
+## Wofür
+
+Berechnet das Gesamtgewicht eines geflochtenen Produkts (Seil, Litze,
+Schlauch) aus der Materialfeinheit, der Klöppelanzahl, dem Flechtwinkel und
+der Produktlänge. So lässt sich vor der Produktion abschätzen, wie viel
+Material ein Auftrag benötigt und wie schwer das fertige Produkt wird.
 
 ## Eingabewerte
 
@@ -20,15 +27,21 @@ Berechnet das Gesamtgewicht eines geflochtenen Produkts (Seil, Litze, Schlauch) 
 |---|---|---|
 | **Produktgewicht** | kg | Gesamtgewicht des Produkts über die angegebene Produktlänge. |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Je flacher der Flechtwinkel (kleinerer Wert), desto höher das
+Produktgewicht. Achten Sie daher auf einen realistischen, zur Maschine
+passenden Flechtwinkel.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
-
-!!! tip "Flechtwinkel beeinflusst das Gewicht spürbar"
-    Je flacher der Flechtwinkel (kleinerer Wert), desto höher das Produktgewicht. Achten Sie daher auf einen realistischen, zur Maschine passenden Flechtwinkel.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Feinheit / Titer](../material/linear-density.md)
-* [Materialdurchmesser](../material/material-diameter.md)
-* [Materialien](../../master-data/materials.md) – Feinheit (Titer) je Material zentral pflegen und in die Berechnung übernehmen.
+- [Feinheit / Titer](../material/linear-density.md)
+- [Materialdurchmesser über Material](../material/material-diameter.md)
+- [Materialien](../../master-data/materials.md) – Feinheit (Titer) je Material zentral pflegen und in die Berechnung übernehmen.

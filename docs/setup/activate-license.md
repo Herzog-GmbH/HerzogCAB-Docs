@@ -1,5 +1,7 @@
 # Lizenz aktivieren
 
+!!! example "Anleitung — Herzog-CAB-Lizenz per Dongle oder Software-Lizenz aktiviert"
+
 Herzog CAB nutzt **Wibu CodeMeter** als Lizenzsystem. Ohne gültige Lizenz
 lässt sich die Anwendung nicht starten.
 
@@ -42,13 +44,23 @@ So gehen Sie vor:
 Sie erkennen den Erfolg am **CodeMeter-Tray-Icon** unten rechts in der
 Taskleiste: es wechselt von grau auf blau.
 
-> :material-image-area: *Screenshot: Tray-Icon-Farbwechsel grau → blau*
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** CodeMeter-Tray-Icon im Windows-Infobereich vor und nach dem
+    Einstecken des Dongles (Farbwechsel grau → blau).
+    **So erzeugen:** Dongle abgezogen fotografieren, dann einstecken und
+    nach ein paar Sekunden erneut fotografieren.
+    **Ziel-Datei:** `assets/screenshots/activate-license/tray-icon-farbwechsel.png`
 
 4. Öffnen Sie das **CodeMeter Kontrollzentrum** (Doppelklick auf das
    Tray-Symbol) und prüfen Sie, dass eine Lizenz mit Firmencode
    **6001037** und Artikel **88805** (Vollversion) angezeigt wird.
 
-> :material-image-area: *Screenshot: Kontrollzentrum mit erkanntem Dongle*
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** CodeMeter Kontrollzentrum mit erkanntem CmDongle, Firmencode
+    6001037 und Artikel 88805 in der Lizenzliste.
+    **So erzeugen:** Dongle einstecken, CodeMeter Kontrollzentrum öffnen,
+    Lizenzliste zeigen.
+    **Ziel-Datei:** `assets/screenshots/activate-license/kontrollzentrum-dongle-erkannt.png`
 
 !!! warning "Dongle muss eingesteckt bleiben"
     Der Dongle muss während des Betriebs von Herzog CAB **eingesteckt
@@ -101,7 +113,13 @@ Im Kontrollzentrum erscheint jetzt unter *Lizenz* ein Eintrag
 **„Aktivierung ungültig"** - das ist nach diesem Schritt korrekt, die
 Aktivierung folgt erst in Schritt 3.
 
-> :material-image-area: *Screenshot: Kontrollzentrum direkt nach Doppelklick auf den `.WibuCmLif`-Container*
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** CodeMeter Kontrollzentrum direkt nach dem Doppelklick auf
+    den `.WibuCmLif`-Container — Eintrag „Herzog GmbH", Status
+    „Aktivierung ungültig".
+    **So erzeugen:** `.WibuCmLif`-Datei doppelklicken, Kontrollzentrum
+    fotografieren.
+    **Ziel-Datei:** `assets/screenshots/activate-license/kontrollzentrum-leerer-container.png`
 
 ### Schritt 2 - Lizenzanforderung erzeugen
 
@@ -112,7 +130,12 @@ Aktivierung folgt erst in Schritt 3.
 4. Im **CmFAS-Assistenten** wählen Sie als Aktion
    **Lizenzanforderung erzeugen** und klicken auf **Weiter**.
 
-> :material-image-area: *Screenshot: CmFAS-Assistent mit ausgewählter Option „Lizenzanforderung erzeugen"*
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** CmFAS-Assistent mit ausgewählter Option „Lizenzanforderung
+    erzeugen".
+    **So erzeugen:** Im CodeMeter Kontrollzentrum **Lizenz aktivieren**
+    anklicken, ersten Assistenten-Schritt fotografieren.
+    **Ziel-Datei:** `assets/screenshots/activate-license/cmfas-lizenzanforderung-erzeugen.png`
 
 5. Als Hersteller **Herzog GmbH** auswählen (steht nach Schritt 1 in der
    Liste) und auf **Weiter** klicken.
@@ -213,6 +236,7 @@ Wenn die Lizenzprüfung fehlschlägt, lesen Sie
 
 ## Nächster Schritt
 
-Mit der gültigen Lizenz ist die Installation abgeschlossen. Wie Sie das
-Programm einrichten und sich zurechtfinden, lesen Sie im Kapitel
-[Erste Schritte](../getting-started/index.md).
+Mit der gültigen Lizenz ist die Installation abgeschlossen. Starten Sie
+jetzt Herzog CAB zum ersten Mal — der [Erststart-Assistent](first-run.md)
+führt Sie durch die Einrichtung von Administrator-Konto und
+Arbeitsverzeichnis.

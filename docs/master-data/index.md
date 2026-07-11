@@ -1,46 +1,118 @@
 # Stammdaten
 
 In den **Stammdaten** legen Sie alle Daten ab, die Sie immer wieder in
-Berechnungen, im Designer und in Aufträgen brauchen. Stammdaten gehören zum
-Workspace – sie werden also von allen Bedienern geteilt, die mit demselben
-Workspace arbeiten.
+Berechnungen, im Designer und in Aufträgen brauchen: Kunden, Designs, Maschinen,
+Materialien, Spulen und Farben. Stammdaten gehören zum Arbeitsbereich – sie
+werden also von allen Bedienern geteilt, die mit demselben Arbeitsbereich
+arbeiten.
 
-Sie erreichen die Bereiche über die Navigationsgruppe **Stammdaten** auf der
-linken Seite.
+Sie erreichen die Bereiche über den Navigationspunkt **Stammdaten**. Dort öffnet
+sich zunächst eine Übersicht mit einer Kachel je Stammdatenbereich.
 
-## Bereiche
+![Stammdaten-Übersicht mit den Kacheln aller Stammdatenbereiche.](../assets/screenshots/master-data/materialien-uebersicht.png)
 
-| Bereich | Inhalt |
-|---|---|
-| [Kunden](customers.md) | Kundenstammdaten für Aufträge |
-| [Materialien](materials.md) | Garne, Drähte, Litzen und Fäden mit Dichte und Titer |
-| [Spulen](bobbins.md) | Spulentypen (Bobbins) und ihre Abmessungen |
-| [Flechtmaschinen](machines.md) | Maschinen Ihres Maschinenparks |
-| [Farben](colors.md) | Farb-Palette für den Designer |
-| Designs | Gespeicherte Flechtdesigns (siehe [Design](../design/index.md)) |
-| Grundrisse | Hallen-Grundrisse für den [Hallenplaner](../design/index.md) |
-| Medien | Bilder und Dokumente für Maschinen und Druckvorlagen |
+## Die Bereiche
+
+<div class="grid cards" markdown>
+
+- :material-account-group: **Kunden**
+
+    ---
+
+    Firmen- und Kontaktdaten Ihrer Kunden für Aufträge und Druckvorlagen.
+
+    [:octicons-arrow-right-24: Kunden](customers.md)
+
+- :material-view-grid-outline: **Designs**
+
+    ---
+
+    Die Design-Bibliothek: gespeicherte Flechtmuster in Ordnern verwalten.
+
+    [:octicons-arrow-right-24: Designs](designs.md)
+
+- :material-robot-industrial: **Flechtmaschinen**
+
+    ---
+
+    Flechtmaschinen anlegen – mit Kategorie, Geflechtsart, Klöppeln, Bild und
+    Dokumenten.
+
+    [:octicons-arrow-right-24: Flechtmaschinen](braiding-machines.md)
+
+- :material-floor-plan: **Grundrisse**
+
+    ---
+
+    Hallen-Grundrisse (Wände und Flächen) für den Hallenplaner zeichnen.
+
+    [:octicons-arrow-right-24: Grundrisse](floor-plans.md)
+
+- :material-image-multiple: **Medien**
+
+    ---
+
+    Zentrale Bildablage für Maschinen, Druckvorlagen und die Firma.
+
+    [:octicons-arrow-right-24: Medien](media.md)
+
+- :material-cube-outline: **Materialien**
+
+    ---
+
+    Garne, Drähte, Litzen und Fäden mit Dichte und Titer.
+
+    [:octicons-arrow-right-24: Materialien](materials.md)
+
+- :material-record-circle-outline: **Spulen**
+
+    ---
+
+    Spulenformate (Abmessungen und Volumen) und ihre Maschinentypen.
+
+    [:octicons-arrow-right-24: Spulen](bobbins.md)
+
+- :material-reel: **Spulmaschinen**
+
+    ---
+
+    Spulmaschinen der Baureihen SP, SPA und HLM mit Wickeltechnik.
+
+    [:octicons-arrow-right-24: Spulmaschinen](winding-machines.md)
+
+- :material-palette: **Farben**
+
+    ---
+
+    Farbpalette für den Designer, mit RAL- und Pantone-Referenzfarben.
+
+    [:octicons-arrow-right-24: Farben](colors.md)
+
+</div>
 
 ## Allgemeine Bedienung
 
-Alle Stammdaten-Editoren sind gleich aufgebaut:
+Die meisten Stammdaten-Editoren sind gleich aufgebaut:
 
-* **Liste** auf der linken Seite – ein Suchfeld und alle vorhandenen
-  Einträge als Karten. Unter dem Suchfeld steht, wie viele Einträge zur
-  aktuellen Suche passen.
+* **Liste** auf der linken Seite – ein Suchfeld und alle vorhandenen Einträge
+  als Karten. Unter dem Suchfeld steht, wie viele Einträge zur aktuellen Suche
+  passen.
 * **Detail-Ansicht** rechts – die Eigenschaften des in der Liste gewählten
   Eintrags.
-* **Schaltflächen** unten:
-    * **Neu** (z. B. *Neues Material*, *Neue Spule*) – Eintrag anlegen
-    * **Speichern** – Änderungen sichern
-    * **Löschen** – Eintrag löschen (mit Sicherheitsabfrage)
+* **Schaltflächen** – zum Anlegen (z. B. **Neues Material**, **Neue Spule**),
+  **Speichern** und **Löschen** (mit Sicherheitsabfrage).
 
-> Einige Editoren bieten zusätzliche Aktionen, z. B. **CSV importieren** bei
-> den Kunden.
+Wie Sie Listen durchsuchen und filtern, ist bereichsübergreifend in
+[Suchen und Filtern](../basics/search-filter.md) beschrieben.
 
-![Stammdaten-Übersicht am Beispiel des Materialeditors.](../assets/screenshots/master-data/materialien-uebersicht.png)
+!!! info "Sonderfälle"
+    Drei Bereiche weichen von diesem Aufbau ab: **Designs** ist eine
+    Ordner-Bibliothek (wie ein Datei-Explorer), **Flechtmaschinen** und
+    **Spulmaschinen** öffnen zum Anlegen und Bearbeiten einen eigenen Dialog.
 
 !!! warning "Berechtigung erforderlich"
     Zum Anlegen, Ändern oder Löschen von Stammdaten benötigen Sie die
-    entsprechende Berechtigung. Bediener mit reiner Leseberechtigung können
-    die Daten nur ansehen.
+    Berechtigung **Stammdaten bearbeiten**. Bediener mit reiner
+    Leseberechtigung können die Daten nur ansehen. In der
+    [Testversion](../basics/trial-quotas.md) sind Kunden, Designs und Maschinen
+    zahlenmäßig begrenzt.

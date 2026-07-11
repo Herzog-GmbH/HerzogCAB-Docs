@@ -1,6 +1,13 @@
 # Produktlänge
 
-Berechnet, wie viel fertiges Geflecht (Länge in Meter) sich aus dem auf den Spulen vorrätigen Material ergibt. So lässt sich vor dem Flechten abschätzen, welche Produktlänge eine Spulenbestückung liefert, ohne dass die Maschine leerlaufen muss.
+!!! abstract "Referenz — Berechnung: erzielbare Geflechtlänge aus einem Spulensatz"
+
+## Wofür
+
+Berechnet, wie viel fertiges Geflecht (Länge in Meter) sich aus dem auf den
+Spulen vorrätigen Material ergibt. So lässt sich vor dem Flechten
+abschätzen, welche Produktlänge eine Spulenbestückung liefert, ohne dass die
+Maschine leerlaufen muss.
 
 ## Eingabewerte
 
@@ -19,18 +26,24 @@ Berechnet, wie viel fertiges Geflecht (Länge in Meter) sich aus dem auf den Spu
 |---|---|---|
 | **Produktlänge:** | m | Aus dem gesamten Spulenvorrat erzielbare Geflechtlänge (zwei Nachkommastellen). |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Das Volumen geht in cm³, der Produktdurchmesser in mm ein; das Ergebnis wird
+in Meter ausgegeben. Die Berechnung läuft nur in eine Richtung: Die
+**Produktlänge** wird stets aus den drei Eingabewerten ermittelt. Ein
+Rückrechnen eines leeren Eingabefelds aus der Produktlänge ist nicht
+vorgesehen.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
-
-!!! note "Einheiten beachten"
-    Das Volumen geht in cm³, der Produktdurchmesser in mm ein; das Ergebnis wird in Meter ausgegeben.
-
-Die Berechnung läuft nur in eine Richtung: Die **Produktlänge** wird stets aus den drei Eingabewerten ermittelt. Ein Rückrechnen eines leeren Eingabefelds aus der Produktlänge ist nicht vorgesehen.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Produktgewicht](./rope-weight.md)
-* [Produktdurchmesser](./product-diameter.md)
-* [Produktlänge pro Trommel](./rope-length-on-drum.md)
-* [Spulen-Volumen](../bobbins/bobbin-volume.md)
+- [Produktgewicht](rope-weight.md)
+- [Produktdurchmesser](product-diameter.md)
+- [Produktlänge pro Trommel](rope-length-on-drum.md)
+- [Spulvolumen](../material/bobbin-volume.md)

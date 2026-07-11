@@ -1,8 +1,12 @@
 # Materiallänge auf Spule
 
+!!! abstract "Referenz — Berechnung: nutzbare Fadenlänge auf einer bestückten Spule"
+
+## Wofür
+
 Diese Berechnung ermittelt, **wie viel Material auf eine Spule passt** – die
-nutzbare Fadenlänge auf der Spule. Grundlage sind das Wickelvolumen der Spule und
-die Materialdaten (Dichte, Feinheit bzw. Abmessungen).
+nutzbare Fadenlänge auf der Spule. Grundlage sind das Wickelvolumen der Spule
+und die Materialdaten (Dichte, Feinheit bzw. Abmessungen).
 
 ## Eingabewerte
 
@@ -28,12 +32,21 @@ unterschiedliche Felder eingeblendet.
 |---|---|---|
 | **Materiallänge** | m | Auf die Spule passende Fadenlänge (2 Nachkommastellen). |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Die Spule kann aus einem Auftrag heraus auch automatisch anhand ihrer
+Abmessungen vorausgewählt werden, statt sie hier manuell zu suchen.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Spulvolumen](bobbin-volume.md)
-* [Feinheit / Titer](../material/linear-density.md)
-* [Materialdurchmesser](../material/material-diameter.md)
+- [Spulvolumen](bobbin-volume.md)
+- [Feinheit / Titer](linear-density.md)
+- [Materialdurchmesser über Material](material-diameter.md)
+- [Spulenformate (Stammdaten)](../../master-data/bobbins.md)

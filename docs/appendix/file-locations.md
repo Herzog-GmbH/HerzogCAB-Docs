@@ -1,51 +1,27 @@
 # Dateispeicherorte
 
-Die genauen Pfade zeigt Herzog CAB auch unter
-[Einstellungen → Speicherorte](../settings/file-locations.md).
+!!! abstract "Referenz — Kurzübersicht, wo Herzog CAB welche Daten ablegt"
 
-## Arbeitsverzeichnis (pro Profil wählbar)
+Diese Seite ist die schnelle Übersicht. Die vollständige, für Ihre
+Installation aktuelle Liste mit allen Datei- und Ordnerpfaden zeigt Herzog
+CAB selbst unter [Speicherort](../admin/storage-location.md) an
+(*Systemverwaltung → Speicherort*) – das ist die maßgebliche Quelle, diese
+Seite dupliziert sie nicht.
 
-```
-<Arbeitsverzeichnis>\
-├── materials.json                Materialien
-├── bobbins.json                  Spulen
-├── colors.json                   Farben
-├── customers.json                Kunden
-├── orders.json                   Aufträge
-├── my_machines.json              Maschinen
-├── designer_palette_state.json   Farbpalette des Designers
-├── index.json                    Design-Index
-├── folders.json                  Ordnerliste der Designs
-├── previews\                     Vorschaubilder der Designs
-├── machines\                     Maschinen-Dokumente
-└── Printouts\
-    ├── templates\                Druckvorlagen (eine .json je Vorlage)
-    └── assets\                   Bilder/Logos für Vorlagen
-```
+## Auf einen Blick
 
-Die Log-Datei liegt – sofern das Protokoll aktiviert ist – unter
-`logs\herzogcab.log` im Arbeitsverzeichnis.
+| Ebene | Inhalt | Ort |
+|---|---|---|
+| **Arbeitsverzeichnis** (pro Profil wählbar) | Stammdaten, Aufträge, Designs, Druckvorlagen, Protokoll | frei wählbar – siehe [Profile](../admin/profiles.md) |
+| **Maschinenweit** (`%ProgramData%`) | Benutzerkonten, Profile, Profilbilder | rechnerweit, unabhängig vom Arbeitsverzeichnis |
+| **Windows-Registry** | Fenstergrößen, Spaltenbreiten, letzter Oberflächen-Zustand | `HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab` |
 
-## Maschinenweit (ProgramData)
+!!! info "Arbeitsverzeichnis ändern"
+    Der Ort des Arbeitsverzeichnisses wird nicht hier, sondern in den
+    [Profilen](../admin/profiles.md) festgelegt.
 
-Benutzer- und Profildaten gelten rechnerweit, unabhängig vom Arbeitsverzeichnis:
+## Verwandte Seiten
 
-```
-%ProgramData%\Herzog GmbH\Herzog Cab\
-├── (Benutzerkonten und Profile)
-└── auth\
-    └── avatars\                  Profilbilder
-```
-
-## Benutzer-Registry
-
-Fenstergrößen, Spaltenbreiten und der letzte Zustand der Oberfläche werden in der
-Windows-Registry abgelegt unter:
-
-```
-HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab
-```
-
-!!! info "Arbeitsverzeichnis festlegen"
-    Wo das Arbeitsverzeichnis liegt, bestimmen Sie pro Profil in der
-    [Profilverwaltung](../workspace/change-path.md).
+* [Speicherort (Systemverwaltung)](../admin/storage-location.md)
+* [Profile (Arbeitsbereiche)](../admin/profiles.md)
+* [Update-Fehler](../help/update-errors.md) – warum Ihre Daten bei einem Update erhalten bleiben

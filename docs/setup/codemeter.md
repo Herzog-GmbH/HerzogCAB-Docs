@@ -1,5 +1,7 @@
 # CodeMeter installieren
 
+!!! example "Anleitung — Wibu CodeMeter Runtime installiert und einsatzbereit"
+
 Herzog CAB nutzt für die Lizenzprüfung das System **Wibu CodeMeter**.
 Bevor Sie Herzog CAB selbst installieren, muss auf dem Rechner die
 **CodeMeter User Runtime** vorhanden sein. Sie bringt das *CodeMeter

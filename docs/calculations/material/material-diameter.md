@@ -1,6 +1,14 @@
-# Materialdurchmesser
+# Materialdurchmesser über Material
 
-Berechnet den Durchmesser eines einzelnen Materialstrangs (Garn, Litze oder Draht) aus seiner Feinheit, der Materialdichte, der Fachung und dem Füllungsgrad. So lässt sich abschätzen, wie dick ein Strang auf dem Klöppel tatsächlich aufträgt – etwa um Klöppelbelegung, Spulenfüllung oder die Geometrie eines Geflechts einzuschätzen.
+!!! abstract "Referenz — Berechnung: Strangdurchmesser aus Feinheit und Dichte"
+
+## Wofür
+
+Berechnet den Durchmesser eines einzelnen Materialstrangs (Garn, Litze oder
+Draht) aus seiner Feinheit, der Materialdichte, der Fachung und dem
+Füllungsgrad. So lässt sich abschätzen, wie dick ein Strang auf dem Klöppel
+tatsächlich aufträgt – etwa um Klöppelbelegung, Spulenfüllung oder die
+Geometrie eines Geflechts einzuschätzen.
 
 ## Eingabewerte
 
@@ -24,18 +32,22 @@ Berechnet den Durchmesser eines einzelnen Materialstrangs (Garn, Litze oder Drah
 |---|---|---|
 | **Materialdurchmesser:** | mm | Berechneter Durchmesser des Strangs aus allen gefachten Enden, gerundet auf 2 Nachkommastellen. |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Geben Sie die Feinheit immer in der Einheit ein, die im Auswahlfeld
+eingestellt ist. dtex, den, Nm und Ne werden vor der Rechnung intern nach tex
+umgerechnet – eine falsch gewählte Einheit verfälscht den Durchmesser.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
-
-!!! tip "Einheit der Feinheit beachten"
-    Geben Sie die Feinheit immer in der Einheit ein, die im Auswahlfeld
-    eingestellt ist. dtex, den, Nm und Ne werden vor der Rechnung intern
-    nach tex umgerechnet – eine falsch gewählte Einheit verfälscht den
-    Durchmesser.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* **Materialdurchmesser über Produkt** (auf dieser Seite mitbeschrieben) – ermittelt umgekehrt aus Produktdurchmesser bzw. -breite und den Geflechtsparametern die benötigte Feinheit, den Materialdurchmesser und einen Material-Vorschlag.
-* [Feinheit / Titer](./linear-density.md) – Umrechnung und Bestimmung der Feinheit.
-* [Materialien](../../master-data/materials.md) – Pflege von Dichte und Titer in den Stammdaten.
+- [Materialdurchmesser über Produkt](material-diameter-product.md) – ermittelt umgekehrt aus Produktdurchmesser bzw. -breite und den Geflechtsparametern die benötigte Feinheit, den Materialdurchmesser und einen Material-Vorschlag.
+- [Fachung über Produkt](required-ply.md) – ermittelt für ein gewähltes Material die benötigte Fachung.
+- [Feinheit / Titer](linear-density.md) – Umrechnung und Bestimmung der Feinheit.
+- [Materialien](../../master-data/materials.md) – Pflege von Dichte und Titer in den Stammdaten.

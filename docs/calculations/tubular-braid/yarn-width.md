@@ -1,5 +1,9 @@
 # Hohlgeflecht – Materialbreite
 
+!!! abstract "Referenz — Berechnung: ermittelt die nötige Materialbreite bzw. den nötigen Materialdurchmesser für ein Hohlgeflecht"
+
+## Wofür
+
 Die Berechnung schätzt, wie breit ein Garn (Multifil) bzw. wie groß ein Monofil/Draht sein muss, damit das Hohlgeflecht bei vorgegebenem Durchmesser, Flechtwinkel und Klöppelzahl die gewünschte **Bedeckung** erreicht. So lässt sich vor dem Flechten beurteilen, ob ein verfügbares Material zur gewünschten Mantel-Schicht passt.
 
 ## Eingabewerte
@@ -24,9 +28,13 @@ Die Berechnung schätzt, wie breit ein Garn (Multifil) bzw. wie groß ein Monofi
 | **Materialbreite (Multifil)** | mm | Benötigte Garnbreite pro Garn für die gewünschte Bedeckung. Bei Garnart **Monofil** trägt dieselbe Kachel die Bezeichnung **Materialdurchmesser**. |
 | **Materialdurchmesser** | mm | Aus der Breite abgeleiteter Durchmesser. Nur bei Multifil als zusätzliche Kachel sichtbar; bei Monofil entspricht er der Hauptkennzahl. |
 
+## Bedienung
+
+Auch hier begleitet eine live mitlaufende **Schema-Skizze** rechts die Eingabe und hebt das gerade bearbeitete Feld hervor. Die Hauptkachel benennt sich abhängig von der **Garnart** automatisch um (*Materialbreite* bei Multifil, *Materialdurchmesser* bei Monofil) – Sie müssen dafür nichts einstellen. Allgemeines zum Aufbau der Berechnungsseiten steht in [So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 !!! tip "Faktor Breite/Ø richtig wählen"
     Bei Multifil-Garnen ist die abgeplattete Breite typischerweise größer als der runde Durchmesser. Der Faktor Breite/Ø (Vorgabe 1,25) bildet dieses Verhältnis ab. Passen Sie ihn an Ihr tatsächliches Garn an, wenn der abgeleitete Materialdurchmesser realistischer werden soll.
@@ -36,5 +44,8 @@ Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue
 
 ## Verwandte Berechnungen
 
+* [Hohlgeflecht – Anzahl Klöppel](tube-carriers.md)
+* [Hohlgeflecht – Durchmesser](tube-diameter.md)
+* [Hohlgeflecht – Bedeckung](tube-cover.md)
 * [Materialdurchmesser](../material/material-diameter.md)
 * [Feinheit / Titer](../material/linear-density.md)

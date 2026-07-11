@@ -1,8 +1,17 @@
 # Umrechnung Geflechtsdichte
 
-Mit der **Umrechnung Geflechtsdichte** wandeln Sie die Dichte eines Geflechts zwischen verschiedenen Bezugsmaßen um – zwischen der **Schlaglänge** und der Anzahl **Flechten** (Flechtungen) je Bezugslänge (10 mm, 25,4 mm bzw. 27 mm). So vergleichen Sie Angaben aus unterschiedlichen Quellen auf einen Blick, ohne von Hand umzurechnen.
+!!! abstract "Referenz — Berechnung: Geflechtsdichte live zwischen Schlaglänge und Flechten-Einheiten umrechnen"
 
-Die Funktion arbeitet als Live-Umrechner: Sie geben einen Wert ein, wählen die Ausgangs- und die Zieleinheit, und das Ergebnis erscheint sofort.
+## Wofür
+
+Mit der **Umrechnung Geflechtsdichte** wandeln Sie die Dichte eines
+Geflechts zwischen verschiedenen Bezugsmaßen um – zwischen der
+**Schlaglänge** und der Anzahl **Flechten** (Flechtungen) je Bezugslänge
+(10 mm, 25,4 mm bzw. 27 mm). So vergleichen Sie Angaben aus unterschiedlichen
+Quellen auf einen Blick, ohne von Hand umzurechnen.
+
+Die Funktion arbeitet als Live-Umrechner: Sie geben einen Wert ein, wählen
+die Ausgangs- und die Zieleinheit, und das Ergebnis erscheint sofort.
 
 ## Eingabewerte
 
@@ -25,11 +34,19 @@ Die Funktion arbeitet als Live-Umrechner: Sie geben einen Wert ein, wählen die 
 
 Fehlt bei der Umrechnung Schlaglänge ↔ Flechten die **Klöppelanzahl** (Wert 0), kann nicht gerechnet werden und es wird kein Ergebnis (–) angezeigt.
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md). Diese
+Seite ist ein **Live-Umrechner**: Es gibt keine Schaltfläche **Berechnen**,
+das Ergebnis aktualisiert sich bei jeder Eingabe sofort, und es wird kein
+Eintrag in der Verlaufs-Leiste angelegt.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Flechtwinkel](braid-angle.md)
-* [Geflechtsdichte](lay-length.md)
+- [Flechtwinkel](braid-angle.md)
+- [Geflechtsdichte](lay-length.md)

@@ -1,10 +1,21 @@
 # Anzahl Spulmaschinen
 
-Diese Berechnung ermittelt, wie viele Spulmaschinen nötig sind, um eine Flechtmaschine kontinuierlich mit gefüllten Spulen zu versorgen. Sie verbindet die Geflechtkennzahlen (Flechtwinkel, Leistung, Maschinenlaufzeit) mit der Spulleistung der Spulmaschinen und zeigt so das Verhältnis von Flecht- zu Spulmaschinen im Schichtbetrieb.
+!!! abstract "Referenz — Berechnung: Verhältnis von Flecht- zu Spulmaschinen im Schichtbetrieb"
+
+## Wofür
+
+Diese Berechnung ermittelt, wie viele Spulmaschinen nötig sind, um eine
+Flechtmaschine kontinuierlich mit gefüllten Spulen zu versorgen. Sie
+verbindet die Geflechtkennzahlen (Flechtwinkel, Leistung, Maschinenlaufzeit)
+mit der Spulleistung der Spulmaschinen und zeigt so das Verhältnis von
+Flecht- zu Spulmaschinen im Schichtbetrieb — hilfreich bei der Planung, wie
+viele Spulmaschinen für einen bestimmten Maschinenpark an Flechtmaschinen
+vorzuhalten sind.
 
 ## Eingabewerte
 
-Die Eingaben sind in drei Bereiche gegliedert: **Flechtmaschine**, **Spulmaschine** und **Produktdaten**.
+Die Eingaben sind in drei Bereiche gegliedert: **Flechtmaschine**,
+**Spulmaschine** und **Produktdaten**.
 
 | Feld | Einheit | Bedeutung |
 |---|---|---|
@@ -21,11 +32,15 @@ Die Eingaben sind in drei Bereiche gegliedert: **Flechtmaschine**, **Spulmaschin
 | **Geflechtsdurchmesser:** | mm | Durchmesser des Geflechts. |
 
 !!! note "Pflichtfelder"
-    Spulgeschwindigkeit, Länge auf Spule, Schlaglänge und Geflechtsdurchmesser müssen größer als 0 sein; Anzahl Klöppel, Anzahl Köpfe und Spindeln pro Spulmaschine mindestens 1, die Flügelrad-Drehzahl größer als 0. Sind nicht alle Werte gesetzt, bleiben die Ergebnisse leer.
+    Spulgeschwindigkeit, Länge auf Spule, Schlaglänge und Geflechtsdurchmesser
+    müssen größer als 0 sein; Anzahl Klöppel, Anzahl Köpfe und Spindeln pro
+    Spulmaschine mindestens 1, die Flügelrad-Drehzahl größer als 0. Sind nicht
+    alle Werte gesetzt, bleiben die Ergebnisse leer.
 
 ## Ergebnis
 
-Hauptergebnis ist **Flechtmaschinen / Spulmaschine**; die übrigen Werte werden als Kennzahl-Kacheln ausgegeben.
+Hauptergebnis ist **Flechtmaschinen / Spulmaschine**; die übrigen Werte
+werden als Kennzahl-Kacheln ausgegeben.
 
 | Wert | Einheit | Bedeutung |
 |---|---|---|
@@ -37,15 +52,28 @@ Hauptergebnis ist **Flechtmaschinen / Spulmaschine**; die übrigen Werte werden 
 | **Flechtwinkel:** | ° | Aus Schlaglänge und Geflechtsdurchmesser berechneter Flechtwinkel. |
 | **Länge Geflecht:** | m | Aus Länge auf Spule und Flechtwinkel berechnete Geflechtlänge. |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten (Eingabe-Karte,
+Ergebnis-Kacheln, Schaltflächen **Berechnen**/**Löschen**, Verlauf) steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md) —
+hier nur die Besonderheiten dieser Seite.
+
+Die Eingabe ist in die drei Sektionen **Flechtmaschine**, **Spulmaschine**
+und **Produktdaten** gegliedert; die Ergebnis-Kacheln fassen sowohl
+Zwischenwerte (Flechtwinkel, Leistung, Maschinenlaufzeit, Spulzeit) als auch
+das Hauptergebnis zusammen, sodass Sie den gesamten Rechenweg auf einen
+Blick nachvollziehen können.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Materiallänge auf Spule](./material-length.md)
-* [Spulvolumen](./bobbin-volume.md)
-* [Flechtwinkel](../braid-geometry/braid-angle.md)
-* [Schlaglänge](../braid-geometry/lay-length.md)
-* [Produktionsgeschwindigkeit](../machine/production-speed.md)
-* [Laufzeit eines Spulensatzes](../machine/run-time-bobbin-set.md)
+* [Spulzeit](winding-time.md)
+* [Spulenkapazität](bobbin-capacity.md)
+* [Flechtwinkel](../product/braid-angle.md)
+* [Geflechtsdichte](../product/lay-length.md)
+* [Produktionsgeschwindigkeit](../production/production-speed.md)
+* [Maschinenlaufzeit pro Spule-Satz](../production/run-time-bobbin-set.md)

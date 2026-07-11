@@ -1,5 +1,7 @@
 # Herzog CAB installieren
 
+!!! example "Anleitung — Herzog CAB über den Einrichtungsassistenten installiert"
+
 !!! info "Voraussetzung"
     Die [CodeMeter-Runtime](codemeter.md) sollte zuerst installiert
     sein, sonst meldet das Programm beim ersten Start eine fehlende

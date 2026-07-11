@@ -1,5 +1,9 @@
 # Hohlgeflecht – Anzahl Klöppel
 
+!!! abstract "Referenz — Berechnung: ermittelt die benötigte Klöppelanzahl für ein Hohlgeflecht"
+
+## Wofür
+
 Diese Berechnung ermittelt für ein Hohlgeflecht (Schlauchgeflecht) die benötigte **Anzahl Klöppel** aus Geflechtsdurchmesser, Flechtwinkel, Materialbreite und gewünschter Bedeckung. So legen Sie schon bei der Auftragsvorbereitung fest, mit wie vielen Klöppeln eine Flechtmaschine bestückt werden muss, um die geforderte Geometrie und Deckung zu erreichen.
 
 ## Eingabewerte
@@ -26,9 +30,13 @@ Diese Berechnung ermittelt für ein Hohlgeflecht (Schlauchgeflecht) die benötig
 |---|---|---|
 | **Anzahl Klöppel** | stk. | Erforderliche Klöppelzahl, **aufgerundet auf das nächste Vielfache von 4**. |
 
+## Bedienung
+
+Rechts auf der Seite läuft eine **Schema-Skizze** des Geflechts mit (abgewickelter Mantel). Sie zeigt live, wie sich Ihre Eingaben auf die Geometrie auswirken, und hebt das gerade bearbeitete Feld farbig hervor. Der Umschalter **Garnart** wirkt sich sofort auf Beschriftung und Sichtbarkeit der übrigen Felder aus (siehe oben). Der allgemeine Aufbau von Berechnungsseiten ist in [So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md) beschrieben.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 Das Ergebnis wird zum Schluss auf das nächste **Vielfache von 4** aufgerundet (z. B. wird aus 18 → 20). Ergibt sich kein sinnvoller positiver Wert, bleibt das Feld leer.
 
@@ -45,6 +53,8 @@ Die Berechnung ist **nicht umkehrbar**: Die Anzahl Klöppel ist stets das Ergebn
 
 ## Verwandte Berechnungen
 
-* [Hohlgeflecht – Durchmesser](./tube-diameter.md)
+* [Hohlgeflecht – Durchmesser](tube-diameter.md)
+* [Hohlgeflecht – Materialbreite](yarn-width.md)
+* [Hohlgeflecht – Bedeckung](tube-cover.md)
 * [Materialdurchmesser](../material/material-diameter.md)
 * [Feinheit / Titer](../material/linear-density.md)

@@ -1,22 +1,79 @@
-# Eigenes Profil
+# Mein Profil
 
-Jeder Benutzer hat ein persönliches Konto mit **Anzeigename**, **E-Mail**,
-**Passwort** und **Profilbild**. Diese Daten bearbeiten Administratoren in der
-[Benutzerverwaltung](manage.md); Ihren Anmeldenamen und Ihr Bild sehen Sie
-außerdem unten links in der Navigationsleiste.
+!!! abstract "Referenz — Der Dialog „Mein Profil": Profilbild, Anzeigename, E-Mail und Passwort selbst ändern, Konto-Infos einsehen, abmelden."
 
-![Benutzer-Editor mit Anzeigename, E-Mail und Passwort.](../assets/screenshots/users/benutzer.png)
+## Wofür Sie diesen Bereich nutzen
 
-## Was zum Konto gehört
+Jeder angemeldete Benutzer kann sein eigenes Konto ohne Administrator
+pflegen: Profilbild, Anzeigename, E-Mail-Adresse und Passwort. Außerdem
+melden Sie sich hier ab. Für Änderungen an **fremden** Konten ist dagegen die
+[Benutzerverwaltung](users.md) zuständig (Recht **Benutzer verwalten**
+erforderlich).
+
+## Den Dialog öffnen
+
+Klicken Sie unten links in der Navigationsleiste auf Ihre **Benutzerkarte**
+(Profilbild + Name). Bei eingeklappter Navigation übernimmt das die kompakte
+Schaltfläche mit Ihren Initialen an derselben Stelle. Es öffnet sich der
+Dialog **Mein Profil** mit drei Reitern.
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Dialog „Mein Profil", Reiter „Profil" mit Profilbild, Anzeigename und E-Mail
+    **So erzeugen:** unten links in der Navigation auf die eigene Benutzerkarte klicken
+    **Ziel-Datei:** `assets/screenshots/admin/mein-profil.png`
+
+## Tab „Profil"
+
+| Element | Beschreibung |
+|---|---|
+| **Bild...** | Wählt ein Profilbild (Foto/Avatar) aus einer Bilddatei. |
+| **Entfernen** | Löscht das aktuelle Profilbild. |
+| **Anzeigename** | Name, der in der Oberfläche und auf Ausdrucken erscheint. |
+| **E-Mail** | Optionale Kontaktadresse. |
+| **Speichern** | Sichert die Änderungen; die Statuszeile meldet *„Profil gespeichert."* |
+
+!!! tip "Wiedererkennung an gemeinsamen Rechnern"
+    Gerade an Arbeitsplätzen, die mehrere Bediener teilen, hilft ein
+    Profilbild, auf einen Blick zu sehen, wer gerade angemeldet ist.
+
+!!! info "Profilbild gilt überall"
+    Das Profilbild wird zusammen mit den zentralen Benutzerdaten gespeichert
+    (siehe [Speicherort](storage-location.md)), nicht im Arbeitsbereich —
+    Sie haben also in jedem [Profil](profiles.md) dasselbe Bild.
+
+## Tab „Passwort"
+
+| Element | Beschreibung |
+|---|---|
+| **Aktuelles Passwort** | Zur Bestätigung, dass Sie es selbst sind. |
+| **Neues Passwort** / **Neues Passwort bestätigen** | Beide Eingaben müssen übereinstimmen, sonst erscheint *„Die neuen Passwörter stimmen nicht überein."* |
+| **Ändern** | Führt die Änderung aus; bei Erfolg: *„Passwort erfolgreich geändert."* |
+
+!!! info "Microsoft- und Domänenkonten"
+    Melden Sie sich [mit Microsoft](login.md#mit-microsoft-anmelden) oder
+    über das Firmenverzeichnis an, verwaltet Ihr Unternehmen das Passwort
+    dort — nicht in Herzog CAB.
+
+## Tab „Info"
+
+Reine Anzeige, nicht änderbar:
 
 | Angabe | Beschreibung |
 |---|---|
-| **Login** | Anmeldename (wird zum Einloggen verwendet). |
-| **Anzeigename** | Name, der in der Oberfläche und auf Ausdrucken erscheint. |
-| **E-Mail** | Optionale Kontaktadresse. |
-| **Passwort** | Über **Passwort zurücksetzen…** ändern – siehe [Passwort zurücksetzen](password-reset.md). |
-| **Profilbild** | Foto/Avatar – siehe [Profilbild ändern](avatar.md). |
+| **Login** | Ihr Anmeldename. |
+| **Rolle(n)** | Ihre [Rollen](roles.md) im aktuellen Profil; globale Administratoren sehen zusätzlich *Administrator (System)*. |
+| **Firma** | Die hinterlegten [Firmendaten](company.md). |
+| **Arbeitsbereich** | Das Arbeitsverzeichnis des aktiven [Profils](profiles.md). |
 
-!!! note "Wer darf was ändern?"
-    Das Bearbeiten fremder Konten erfordert das Recht **Benutzer verwalten**.
-    Ohne dieses Recht wenden Sie sich für Änderungen an Ihren Administrator.
+## Abmelden und Schließen
+
+* **Abmelden** meldet Sie nach einer Sicherheitsabfrage (*„Wirklich
+  abmelden?"*) vom Programm ab — es erscheint wieder das
+  [Anmeldefenster](login.md).
+* **Schließen** schließt den Dialog, Sie bleiben angemeldet.
+
+## Verwandte Seiten
+
+* [Anmeldung und Abmelden](login.md)
+* [Benutzer](users.md) — Konten anderer Benutzer verwalten
+* [Speicherort](storage-location.md) — wo Benutzerdaten und Profilbilder liegen

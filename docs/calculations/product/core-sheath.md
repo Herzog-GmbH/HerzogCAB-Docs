@@ -1,10 +1,21 @@
 # Kern-Mantel-Produkt
 
-Berechnet ein zweilagiges Flechtprodukt aus einer geflochtenen **Seele (Kern)** und einem darüber geführten **Mantel**. Aus Außendurchmesser, der prozentualen Aufteilung zwischen Seele und Mantel sowie den Flechtparametern beider Lagen ermittelt die Funktion Geometrie, Litzenfeinheit, Spulenlängen, Produktion und Gewicht – getrennt für Kern und Mantel sowie als Gesamtwert. So lässt sich ein Kern-Mantel-Seil in einem Schritt vollständig durchkalkulieren.
+!!! abstract "Referenz — Berechnung: zweilagiges Produkt aus Seele und Mantel"
+
+## Wofür
+
+Berechnet ein zweilagiges Flechtprodukt aus einer geflochtenen **Seele
+(Kern)** und einem darüber geführten **Mantel**. Aus Außendurchmesser, der
+prozentualen Aufteilung zwischen Seele und Mantel sowie den Flechtparametern
+beider Lagen ermittelt die Funktion Geometrie, Litzenfeinheit, Spulenlängen,
+Produktion und Gewicht – getrennt für Kern und Mantel sowie als Gesamtwert.
+So lässt sich ein Kern-Mantel-Seil in einem Schritt vollständig
+durchkalkulieren.
 
 ## Eingabewerte
 
-Die Eingaben sind in drei Bereiche gegliedert: gemeinsame **Produkt**-Daten sowie zwei gleich aufgebaute Panels für **Seele** und **Mantel**.
+Die Eingaben sind in drei Bereiche gegliedert: gemeinsame **Produkt**-Daten
+sowie zwei gleich aufgebaute Panels für **Seele** und **Mantel**.
 
 ### Produkt
 
@@ -32,7 +43,9 @@ Die Eingaben sind in drei Bereiche gegliedert: gemeinsame **Produkt**-Daten sowi
 
 ## Ergebnis
 
-Spitzenwerte sind **Leistung (Gesamt)** und **Seilgewicht (Gesamt)**; darunter werden **Seeldurchmesser** und **Mantelstärke** sowie alle übrigen Werte paarweise für Kern und Mantel ausgewiesen.
+Spitzenwerte sind **Leistung (Gesamt)** und **Seilgewicht (Gesamt)**;
+darunter werden **Seeldurchmesser** und **Mantelstärke** sowie alle übrigen
+Werte paarweise für Kern und Mantel ausgewiesen.
 
 | Wert | Einheit | Bedeutung |
 |---|---|---|
@@ -51,19 +64,29 @@ Spitzenwerte sind **Leistung (Gesamt)** und **Seilgewicht (Gesamt)**; darunter w
 | **Produktion (Kern)** / **Produktion (Mantel)** | m/h | Fertigungsgeschwindigkeit der jeweiligen Lage. |
 | **Flechtzeit (Kern)** / **Flechtzeit (Mantel)** | h | Flechtdauer bis zum Leerlaufen einer Spule. |
 
-## Berechnung
+## Bedienung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md). Bei
+diesem rechenintensiven Produkt steht die Ergebnis-Karte rechts neben der
+Eingabe.
 
-Die Funktion rechnet rein **vorwärts**: Aus allen Eingaben werden sämtliche Ergebnisse berechnet. Sie ist nicht umkehrbar – es wird kein leeres Eingabefeld aus den Ergebnissen rückgerechnet. Fehlen oder sind Eingaben ungültig (keine Spule gewählt, Wert ≤ 0), werden die Ergebnisse geleert.
+Die Funktion rechnet rein **vorwärts**: Aus allen Eingaben werden sämtliche
+Ergebnisse berechnet. Sie ist nicht umkehrbar – es wird kein leeres
+Eingabefeld aus den Ergebnissen rückgerechnet. Fehlen oder sind Eingaben
+ungültig (keine Spule gewählt, Wert ≤ 0), werden die Ergebnisse geleert.
 
 !!! tip "Material einmal pflegen, Dichte automatisch übernehmen"
     Wählen Sie in beiden Panels ein [Material](../../master-data/materials.md) aus den Stammdaten – die **Dichte** wird dann automatisch gesetzt. Das ist schneller und vermeidet Tippfehler bei diesem rechenintensiven Produkt.
 
+## Berechnung
+
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
+
 ## Verwandte Berechnungen
 
-* [Materialdurchmesser](./material-diameter.md) – Durchmesser aus Dichte und Titer eines Einzelmaterials.
-* [Feinheit / Titer](./linear-density.md) – Feinheit (tex) einzelner Garne.
-* [Produktgewicht](../product/rope-weight.md) – Gewichtsberechnung für einlagige Produkte.
-* [Produktdurchmesser](../product/product-diameter.md) – Außendurchmesser eines Flechtprodukts.
-* [Produktionsgeschwindigkeit](../machine/production-speed.md) – Fertigungsgeschwindigkeit einer Flechtmaschine.
+- [Materialdurchmesser über Material](../material/material-diameter.md) – Durchmesser aus Dichte und Titer eines Einzelmaterials.
+- [Feinheit / Titer](../material/linear-density.md) – Feinheit (tex) einzelner Garne.
+- [Produktgewicht](rope-weight.md) – Gewichtsberechnung für einlagige Produkte.
+- [Produktdurchmesser](product-diameter.md) – Außendurchmesser eines Flechtprodukts.
+- [Produktionsgeschwindigkeit](../production/production-speed.md) – Fertigungsgeschwindigkeit einer Flechtmaschine.

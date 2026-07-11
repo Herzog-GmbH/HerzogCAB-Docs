@@ -1,6 +1,14 @@
 # Flechtwinkel
 
-Der **Flechtwinkel** ist der Winkel, unter dem ein einzelner Strang im Geflecht zur Längsachse des Produkts verläuft. Er bestimmt maßgeblich Optik, Festigkeit und Dehnung des fertigen Geflechts. Die Berechnung ermittelt diesen Winkel aus Flechtbezeichnung und Produktmaß – getrennt für Rundgeflecht und Litzengeflecht.
+!!! abstract "Referenz — Berechnung: Flechtwinkel aus Flechtbezeichnung und Produktmaß"
+
+## Wofür
+
+Der **Flechtwinkel** ist der Winkel, unter dem ein einzelner Strang im
+Geflecht zur Längsachse des Produkts verläuft. Er bestimmt maßgeblich Optik,
+Festigkeit und Dehnung des fertigen Geflechts. Die Berechnung ermittelt
+diesen Winkel aus Flechtbezeichnung und Produktmaß – getrennt für
+Rundgeflecht und Litzengeflecht.
 
 ## Eingabewerte
 
@@ -20,15 +28,20 @@ Der **Flechtwinkel** ist der Winkel, unter dem ein einzelner Strang im Geflecht 
 |---|---|---|
 | **Flechtwinkel** | ° | Winkel des Strangs zur Längsachse des Produkts, auf zwei Nachkommastellen. |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Produktmaß und Flechtbezeichnung müssen größer als 0 sein, sonst ist keine
+Berechnung möglich.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
-
-!!! note "Pflichteingaben"
-    Produktmaß und Flechtbezeichnung müssen größer als 0 sein, sonst ist keine Berechnung möglich.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Geflechtsdichte](lay-length.md)
-* [Flechtdichte umrechnen](picks-density.md)
-* [Produktdurchmesser](../product/product-diameter.md)
+- [Geflechtsdichte](lay-length.md)
+- [Umrechnung Geflechtsdichte](picks-density.md)
+- [Produktdurchmesser](product-diameter.md)

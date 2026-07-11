@@ -1,50 +1,177 @@
 # Flechtmaschinen
 
-Unter **Stammdaten → Flechtmaschinen** legen Sie die Flechtmaschinen Ihres Werks
+!!! abstract "Referenz — Flechtmaschinen des Werks anlegen und pflegen: technische Daten, Bild, zulässige Spulen und Dokumente. Die Daten werden in Maschinenpark, Hallenplaner, Aufträgen und Berechnungen herangezogen."
+
+## Wofür Sie diesen Bereich nutzen
+
+Unter *Stammdaten > Flechtmaschinen* legen Sie die Flechtmaschinen Ihres Werks
 an und verwalten sie. Pro Maschine speichert Herzog CAB technische Daten,
-optional ein Bild, Dokumente (Datenblätter, Betriebsanleitungen) und die
-zulässigen Spulen. Diese Daten werden im [Maschinenpark](machine-park.md), im
-[Hallenplaner](hall-planner.md), in [Aufträgen](../orders/create.md) und in den
-[Berechnungen](../calculations/index.md) herangezogen.
+optional ein Bild, Ansichts-Bilder für die Halle sowie Dokumente wie
+Abzugstabellen oder Betriebsanleitungen. Diese Stammdaten werden im
+[Maschinenpark](../machine-park/index.md), im [Hallenplaner](../hall-planner/index.md),
+in [Aufträgen](../orders/braiding-order.md) und in den
+[Berechnungen](../calculations/index.md) verwendet.
+
+!!! note "Stammdaten hier – Betriebsstatus im Maschinenpark"
+    Auf dieser Seite pflegen Sie die *Stammdaten* der Maschine (was sie kann).
+    Den aktuellen *Betriebsstatus* (welche Aufträge laufen, Ampel) sehen Sie im
+    [Maschinenpark](../machine-park/index.md); auf einem Hallen-Grundriss ordnen
+    Sie die Maschinen im [Hallenplaner](../hall-planner/index.md) an.
+
+## Der Bildschirm im Überblick
 
 ![Flechtmaschinen: Maschinenliste in den Stammdaten.](../assets/screenshots/master-data/flechtmaschinen.png)
 
-## Maschine anlegen und bearbeiten
+Oben steht eine Werkzeugleiste, darunter die **Maschinenliste** als Karten. Jede
+Karte zeigt Bild, Kategorie, Geflechtsart, Köpfe und die wichtigsten
+technischen Daten (Klöppelzahl, Drehzahl).
 
-Über die Maschinenliste legen Sie neue Maschinen an und bearbeiten bestehende.
-Bild, Dokumente, Spule und Stammwerte werden im Workspace gespeichert.
+### Werkzeugleiste
 
-## Eigenschaften einer Maschine
-
-| Feld | Beschreibung |
+| Schaltfläche | Wirkung |
 |---|---|
-| **Name** | Anzeigename der Maschine. |
-| **Maschinentyp / Modell** | Typbezeichnung (z. B. „SENG 1/40-140"). |
-| **Kategorie** | Maschinenkategorie (z. B. RU = Rund, SE = Seil, GL …). |
-| **Geflechtart** | Rundgeflecht oder Litzengeflecht. |
-| **Klöppel (gesamt / aktiv)** | Maximale und aktive Klöppelzahl; die aktive Zahl ergibt sich aus der Besetzung. |
+| **Suche** | Filtert die Liste nach Name, Typ, Kategorie oder Standort. |
+| **Neu** | Öffnet den Dialog *Neue Maschine erstellen* (siehe unten). |
+| **Importieren** | Übernimmt Maschinen aus einer CSV-Datei (Bilder im selben Ordner wie die CSV). |
+| **Bearbeiten** | Öffnet die gewählte Maschine zum Ändern. |
+| **Löschen** | Entfernt die gewählte(n) Maschine(n) mit Sicherheitsabfrage. |
+
+Ein Rechtsklick auf eine Karte öffnet ein Kontextmenü mit **Öffnen**,
+**Bearbeiten**, **Duplizieren** und **Löschen**. **Öffnen** zeigt die
+Maschinendetails (Metadaten und technische Angaben) in einer Leseansicht.
+
+## Der Dialog „Neue Maschine erstellen"
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Der Dialog *Neue Maschine erstellen* mit Bild, dem Formular
+    „Maschinendaten" und dem Abschnitt „Dokumente".
+    **So erzeugen:** In **Flechtmaschinen** auf **Neu** klicken und den Dialog
+    mit Demo-Daten „Musterbetrieb" ausfüllen.
+    **Ziel-Datei:** `assets/screenshots/master-data/flechtmaschine-neu-dialog.png`
+
+Der Dialog ist in mehrere Abschnitte gegliedert (von oben nach unten).
+
+### Bild
+
+* **Bild hochladen** – wählt ein Maschinenbild aus der
+  [Medienbibliothek](media.md).
+* **Bild entfernen** – nimmt das Bild wieder weg.
+
+Das Bild wird beim Speichern in den Arbeitsbereich kopiert und mit der Maschine
+verknüpft.
+
+### Maschinendaten
+
+Die Felder werden **kategorieabhängig** angeboten – je nach gewählter Kategorie
+ändern sich die Auswahllisten für Köpfe, Einschnitte und Klöppel (siehe
+[Kategorieabhängige Felder](#kategorieabhangige-felder)).
+
+| Feld | Bedeutung |
+|---|---|
+| **Name** | Anzeigename der Maschine. Pflichtfeld. |
+| **Maschinentyp** | Typbezeichnung (z. B. „SENG 1/40-140"). Pflichtfeld. Aus dem Typ leitet das Programm bei Bedarf die Kategorie ab. |
+| **Kategorie** | Maschinenkategorie aus der Auswahlliste (z. B. Rundflechtmaschine, Seilflechtmaschine, Soutacheflechtmaschine, Quadratflechtmaschine, Packungsflechtmaschine …) oder *Nicht gesetzt*. |
+| **Seriennummer** | Seriennummer der Maschine. |
+| **Gruppe** | Frei vergebbare Gruppierung (z. B. Maschinengruppe). |
+| **Standort** | Halle/Werk/Abteilung (z. B. „Halle 2, Werk Nord"). Auch für den Hallenplaner. |
+| **Geflechtsart** | **Rundgeflecht** oder **Litzengeflecht**. |
+| **Einschnitte Endflügelrad** | Nur bei Litzengeflecht sichtbar; Auswahl der Einschnittzahl (Standard 5 oder 6). |
+| **Baujahr** | Baujahr der Maschine (oder *Nicht gesetzt*). |
+| **Max. Klöppel pro Kopf** | Höchstzahl der Klöppel je Flechtkopf. |
 | **Köpfe** | Anzahl der Flechtköpfe. |
-| **Besetzung / Bindung** | Mögliche Besetzungsarten (Normal, Tandem, Halbe Besetzung). |
-| **Max. Drehzahl** | Höchstdrehzahl in U/min. |
-| **Spule(n)** | Zugeordnete Spulentypen aus den [Spulen-Stammdaten](bobbins.md). |
-| **Baujahr / Seriennummer / Gruppe** | Identifikations- und Verwaltungsdaten. |
-| **Standort** | Halle/Werk/Abteilung (auch für den Hallenplaner). |
-| **Maße (L × B × H)** | Maschinenmaße in cm (u. a. für die Darstellung im Hallenplaner). |
-| **Bild / Dokumente** | Maschinenbild und beliebige Dokumente (PDF, Datenblätter …). |
+| **Stich** | Stich (Teilung) der Maschine. |
+| **Klöppelart** | Bezeichnung der verwendeten Klöppelart (frei). |
+| **Aufwicklung** | **Ja** oder **Nein** – ob die Maschine eine Aufwicklung hat. |
+| **Ölmenge** | Ölmenge (oder *Nicht gesetzt*). |
+| **Spulen** | Mehrfachauswahl der zulässigen Spulentypen aus den [Spulen-Stammdaten](bobbins.md). Mindestens eine Spule ist erforderlich. |
+| **Drehzahl** | Höchstdrehzahl in U/min (oder *Nicht gesetzt*). |
+| **Meterzähler** | **Ja** oder **Nein**. |
+| **Länge / Breite / Höhe** | Maschinenmaße in cm (u. a. für die Grundfläche im Hallenplaner). |
 
-!!! info "Maschine, Auftrag und Design passen zusammen"
-    Die Maschinendaten (Klöppelzahl, Besetzung, Geflechtart) bestimmen, welche
+!!! tip "Maße überschlägig berechnen"
+    Neben den Maßfeldern liegt die Schaltfläche **Maße berechnen**. Sie schätzt
+    Länge und Breite überschlägig aus Köpfen, Klöppeln und Stich – dieselbe
+    Logik wie die Berechnung [Maschinendimensionierung](../calculations/production/dimensions.md).
+    Dafür sind mindestens 3 Klöppel pro Kopf nötig.
+
+### Box-Ansichten (Bilder)
+
+Für die Darstellung im 3D-Hallenplaner können Sie der Maschine eine
+**Ersatz-Box** mit Ansichts-Bildern geben. Über **Box-Ansichten bearbeiten…**
+öffnet sich ein Editor mit Live-Vorschau, in dem Sie bis zu **fünf** Bilder
+zuweisen:
+
+* **Vorderseite**
+* **Rückansicht**
+* **Linke Seite**
+* **Rechte Seite**
+* **Draufsicht (oben)**
+
+Ein Statustext zeigt, wie viele der fünf Bilder hinterlegt sind. Die Bilder
+werden im 3D-Hallenplaner auf die Maschinenbox gelegt.
+
+### Dokumente
+
+Zu jeder Maschine können Sie Unterlagen ablegen. Die Liste zeigt je Dokument
+**Kategorie**, **Datei** und **Beschreibung**. Beim Hinzufügen wählen Sie eine
+der folgenden Kategorien:
+
+* Abzugstabelle
+* Fadenspannfedertabelle
+* Übersichtszeichnung
+* Bedienungsanleitung
+* Wartungsblatt
+* Schaltplan
+* Prüfprotokoll
+* Sonstiges
+
+Über die Schaltflächen darunter verwalten Sie die Liste:
+
+* **Dokument hinzufügen** – Datei wählen, Kategorie und optionale Beschreibung
+  vergeben.
+* **Öffnen** – das gewählte Dokument im zugehörigen Programm öffnen.
+* **Dokument entfernen** – das gewählte Dokument aus der Liste nehmen.
+
+Die Dokumente werden beim Speichern in den Arbeitsbereich kopiert (siehe
+[Speicherorte](../appendix/file-locations.md)).
+
+### Speichern
+
+Unten schließen Sie den Dialog mit **Maschine erstellen** ab oder verwerfen ihn
+mit **Abbrechen**. Beim Bearbeiten heißt die Schaltfläche **Speichern**.
+
+## Kategorieabhängige Felder
+
+Die meisten Maschinen folgen der Rund-/Litzenlogik. Vier Kategorien bringen
+eigene Wertelisten für **Köpfe**, **Einschnitte** und **max. Klöppel pro Kopf**
+mit – die Auswahllisten passen sich automatisch an, sobald Sie die Kategorie
+wählen:
+
+| Kategorie | Köpfe | Einschnitte | Klöppel pro Kopf |
+|---|---|---|---|
+| **Standard** (Rund-/Litzenflechter) | 1, 2 | 5, 6 (nur bei Litzengeflecht) | Standardlogik |
+| **Soutache** (ST) | 1, 2, 3, 4, 6, 8 | 3, 5, 7, 9, 11 | 3, 5, 7, 9, 11 |
+| **Quadrat** (QU, QSE) | 1, 2 | 4, 6 | 4, 6, 8, 10, 12, 14, 16 |
+| **Packung** (PA) | 1 | 4, 9 | 8, 12, 36 |
+
+!!! info "Hinweis zur Darstellung im Designer"
+    Im Dialog erscheint bei bestimmten Kombinationen ein Hinweis, ob sich die
+    Maschine im [Designer](../designer/index.md) darstellen lässt – z. B. beim
+    Quadratflechter das 8er-Quadratgeflecht, beim Packungsflechter das 3×3
+    (12 Klöppel) und 4×4 (36 Klöppel) als Packungsgeflecht.
+
+## Maschinendaten und Auftrag passen zusammen
+
+!!! info "Abgleich beim Auftrag"
+    Die Maschinendaten (Klöppelzahl, Besetzung, Geflechtsart) bestimmen, welche
     Designs und Produkte gefertigt werden können. Herzog CAB gleicht diese Werte
-    beim Anlegen eines Auftrags ab.
+    beim Anlegen eines [Auftrags](../orders/braiding-order.md) ab.
 
-## Dokumente pro Maschine
+## Verwandte Seiten
 
-Pro Maschine können Sie Dokumente ablegen (z. B. Betriebsanleitung,
-Wartungspläne). Sie werden im Workspace unter dem Maschinen-Ordner gespeichert
-(siehe [Speicherorte](../settings/file-locations.md)) und stehen an der Maschine
-über die [mobile Auftragssicht](../orders/qr-code.md) zur Verfügung.
-
-!!! note "Wo sehe ich meine Maschinen im Überblick?"
-    Die Flotten-Übersicht aller Maschinen finden Sie im
-    [Maschinenpark](machine-park.md); auf einem Hallen-Grundriss ordnen Sie sie
-    im [Hallenplaner](hall-planner.md) an.
+* [Maschinenpark](../machine-park/index.md) – Flotten- und Betriebsübersicht
+* [Hallenplaner](../hall-planner/index.md) – Maschinen auf dem Grundriss anordnen
+* [Spulen](bobbins.md) – zulässige Spulentypen der Maschine
+* [Spulmaschinen](winding-machines.md) – Stammdaten der Spulmaschinen
+* [Auftrag auf den Maschinenschein](../tasks/order-to-machine-sheet.md) – Ablauf
+  vom Auftrag zur Maschine

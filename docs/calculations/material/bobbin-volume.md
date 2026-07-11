@@ -1,6 +1,12 @@
 # Spulvolumen
 
-Berechnet das Wickelvolumen einer Spule aus ihrer Geometrie. Das Ergebnis hilft im Flecht-Alltag abzuschätzen, wie viel Material auf eine Spule passt und ob die gewählte Spule für ein Garn ausreicht.
+!!! abstract "Referenz — Berechnung: Wickelvolumen einer Spule aus ihrer Geometrie"
+
+## Wofür
+
+Berechnet das Wickelvolumen einer Spule aus ihrer Geometrie. Das Ergebnis
+hilft im Flecht-Alltag abzuschätzen, wie viel Material auf eine Spule passt
+und ob die gewählte Spule für ein Garn ausreicht.
 
 ## Eingabewerte
 
@@ -19,12 +25,19 @@ Berechnet das Wickelvolumen einer Spule aus ihrer Geometrie. Das Ergebnis hilft 
 |---|---|---|
 | **Spule-Volumen** | ccm (cm³) | Volumen des Wickelraums, also der Hohlraum zwischen Kern und Außendurchmesser über die Wickellänge. Anzeige mit zwei Nachkommastellen. |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md). Diese
+Seite hat darüber hinaus keine Besonderheiten – drei Maße, ein Ergebnis.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Feinheit / Titer](../material/linear-density.md)
-* [Materialdurchmesser](../material/material-diameter.md)
-* [Produktgewicht](../product/rope-weight.md)
+- [Materiallänge auf Spule](material-length.md)
+- [Feinheit / Titer](linear-density.md)
+- [Materialdurchmesser über Material](material-diameter.md)
+- [Produktgewicht](../product/rope-weight.md)

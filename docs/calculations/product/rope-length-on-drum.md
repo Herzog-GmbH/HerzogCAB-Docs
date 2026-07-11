@@ -1,6 +1,14 @@
 # Produktlänge pro Trommel
 
-Diese Berechnung ermittelt, wie viel Produkt (Seil, Litze, Geflecht) auf eine Trommel aufgewickelt werden kann. Aus der Trommelgeometrie und dem Produktdurchmesser wird die gesamte aufgewickelte Länge in Metern bestimmt – nützlich für die Planung von Trommelgrößen, Liefermengen und Wickelaufträgen.
+!!! abstract "Referenz — Berechnung: aufwickelbare Produktlänge auf eine Trommel"
+
+## Wofür
+
+Diese Berechnung ermittelt, wie viel Produkt (Seil, Litze, Geflecht) auf
+eine Trommel aufgewickelt werden kann. Aus der Trommelgeometrie und dem
+Produktdurchmesser wird die gesamte aufgewickelte Länge in Metern bestimmt –
+nützlich für die Planung von Trommelgrößen, Liefermengen und
+Wickelaufträgen.
 
 ## Eingabewerte
 
@@ -21,14 +29,21 @@ Diese Berechnung ermittelt, wie viel Produkt (Seil, Litze, Geflecht) auf eine Tr
 |---|---|---|
 | **Produktlänge:** | m | Gesamte aufgewickelte Produktlänge, die unter den angegebenen Maßen auf die Trommel passt. |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Werden mehrere Stränge gleichzeitig nebeneinander aufgewickelt (Fachung > 1),
+teilt sich die verfügbare Wickelbreite auf alle Stränge auf – die Länge pro
+Strang sinkt entsprechend.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
-
-!!! tip "Fachung beachten"
-    Werden mehrere Stränge gleichzeitig nebeneinander aufgewickelt (Fachung > 1), teilt sich die verfügbare Wickelbreite auf alle Stränge auf – die Länge pro Strang sinkt entsprechend.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-* [Produktgewicht](./rope-weight.md)
-* [Materialdurchmesser](../material/material-diameter.md)
+- [Produktgewicht](rope-weight.md)
+- [Materialdurchmesser über Material](../material/material-diameter.md)
+- [Produktlänge](rope-length.md)

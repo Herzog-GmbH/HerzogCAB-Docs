@@ -1,6 +1,14 @@
 # Feinheit / Titer
 
-Diese Berechnung ermittelt die **Feinheit (Titer) eines Einzelfadens**, die nötig ist, um ein Geflecht mit den gewünschten geometrischen Eigenschaften zu erzeugen. Aus Produktdurchmesser, Flechtwinkel, Klöppelanzahl, Füllungsgrad und Materialdichte wird die lineare Dichte je Träger berechnet – praktisch, um vor der Produktion das passende Garn bzw. den passenden Draht auszuwählen.
+!!! abstract "Referenz — Berechnung: benötigte Garnfeinheit für ein gewünschtes Geflecht"
+
+## Wofür
+
+Diese Berechnung ermittelt die **Feinheit (Titer) eines Einzelfadens**, die
+nötig ist, um ein Geflecht mit den gewünschten geometrischen Eigenschaften zu
+erzeugen. Aus Produktdurchmesser, Flechtwinkel, Klöppelanzahl, Füllungsgrad
+und Materialdichte wird die lineare Dichte je Träger berechnet – praktisch,
+um vor der Produktion das passende Garn bzw. den passenden Draht auszuwählen.
 
 ## Eingabewerte
 
@@ -23,16 +31,27 @@ Diese Berechnung ermittelt die **Feinheit (Titer) eines Einzelfadens**, die nöt
 |---|---|---|
 | **Feinheit:** | folgt der Auswahl *Feinheit* (tex, dtex, den, Nr_metrisch, Nr_englisch) | Berechnete Feinheit (Titer) je Einzelfaden/Träger, auf 2 Nachkommastellen. |
 
+## Bedienung
+
+Der gemeinsame Aufbau aller Berechnungsseiten steht in
+[So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
+
+Diese Berechnung läuft nur in eine Richtung – aus den Eingaben wird die
+Feinheit ermittelt; einzelne Eingabefelder werden nicht rückwärts aus dem
+Ergebnis berechnet. Es wird nur gerechnet, wenn Dichte, Füllungsgrad,
+Klöppelanzahl, Flechtwinkel und Produktdurchmesser positiv ausgefüllt sind.
+Fehlt ein Wert, bleibt das Ergebnisfeld leer. Werte außerhalb der genannten
+Grenzen (z. B. Klöppelanzahl unter 8 oder Flechtwinkel unter 5°) werden rot
+markiert.
+
 ## Berechnung
 
-Herzog CAB ermittelt das Ergebnis intern aus den eingegebenen Werten. Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
-
-!!! note "Vollständige Eingaben erforderlich"
-    Es wird nur gerechnet, wenn Dichte, Füllungsgrad, Klöppelanzahl, Flechtwinkel und Produktdurchmesser positiv ausgefüllt sind. Fehlt ein Wert, bleibt das Ergebnisfeld leer. Werte außerhalb der genannten Grenzen (z. B. Klöppelanzahl unter 8 oder Flechtwinkel unter 5°) werden rot markiert. Diese Berechnung läuft nur in eine Richtung – aus den Eingaben wird die Feinheit ermittelt; einzelne Eingabefelder werden nicht rückwärts aus dem Ergebnis berechnet.
+> Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
 ## Verwandte Berechnungen
 
-- [Feinheit umrechnen](./linear-density-conversion.md)
-- [Materialdurchmesser](./material-diameter.md)
-- [Flechtwinkel](../braid-geometry/braid-angle.md)
+- [Feinheit umrechnen](linear-density-conversion.md)
+- [Materialdurchmesser über Material](material-diameter.md)
+- [Materialdurchmesser über Produkt](material-diameter-product.md)
+- [Flechtwinkel](../product/braid-angle.md)
 - [Produktgewicht](../product/rope-weight.md)
