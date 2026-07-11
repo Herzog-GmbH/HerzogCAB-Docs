@@ -4,7 +4,7 @@
 
 ## Wofür
 
-Diese Berechnung beantwortet die zentrale Planungsfrage am Flechter: **Wie lange läuft die Maschine, bis ein voller Spulensatz aufgebraucht ist?** Dazu führt sie drei Teilwerte zusammen – die Fadenlänge auf einer Spule, die Produktionsleistung der Maschine und den Flechtwinkel – und gibt neben der Laufzeit auch die produzierte Seillänge je Spulensatz sowie die Verkürzung durch den Flechtwinkel aus.
+Diese Berechnung beantwortet die zentrale Planungsfrage am Flechter: **Wie lange läuft die Maschine, bis ein voller Spulensatz aufgebraucht ist?** Dazu führt sie drei Teilwerte zusammen – die Fadenlänge auf einer Spule, die Produktionsleistung der Maschine und den Flechtwinkel – und gibt neben der Laufzeit auch die produzierte Produktlänge je Spulensatz sowie die Verkürzung durch den Flechtwinkel aus.
 
 ## Eingabewerte
 
@@ -58,7 +58,7 @@ Im Modus *Berechnen* sichtbar; im Modus *Wert eingeben* genügt **Flechtwinkel**
 | Wert | Einheit | Bedeutung |
 |---|---|---|
 | **Maschinenlaufzeit** | h | Laufzeit, bis der Spulensatz aufgebraucht ist (Hauptergebnis). |
-| **Seillänge / Spule-Satz** | m | Aus einem Spulensatz produzierbare Seillänge (Fadenlänge unter Berücksichtigung des Flechtwinkels). |
+| **Produktlänge pro Spulensatz** | m | Aus einem Spulensatz produzierbare Produktlänge (Fadenlänge unter Berücksichtigung des Flechtwinkels). |
 | **Verkürzung** | % | Längenverlust gegenüber der reinen Fadenlänge durch den Flechtwinkel. |
 
 ## Bedienung
@@ -74,7 +74,7 @@ Sie müssen nicht alle drei Blöcke auf *Berechnen* stellen. Kennen Sie z. B. di
 
 > Die genaue Berechnungsformel ist nicht Bestandteil dieser Dokumentation.
 
-Das Hauptergebnis (**Maschinenlaufzeit**) sowie **Seillänge / Spule-Satz** und **Verkürzung** entstehen aus den drei Teilwerten **Fadenlänge / Spule**, **Produktionsleistung** und **Flechtwinkel**. Ist einer der drei Teilwerte 0 oder kleiner, bleiben die Ergebnisse leer.
+Das Hauptergebnis (**Maschinenlaufzeit**) sowie **Produktlänge pro Spulensatz** und **Verkürzung** entstehen aus den drei Teilwerten **Fadenlänge / Spule**, **Produktionsleistung** und **Flechtwinkel**. Ist einer der drei Teilwerte 0 oder kleiner, bleiben die Ergebnisse leer.
 
 ## Verwandte Berechnungen
 

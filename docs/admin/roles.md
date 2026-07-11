@@ -30,7 +30,7 @@ Herzog CAB liefert drei Standardrollen mit:
 |---|---|---|
 | **Administrator** | IT / Fachverantwortlicher | Vollzugriff inklusive Benutzer-, Rollen- und Systemverwaltung („Alle Rechte"). |
 | **Bearbeiter** | Datenpflege / Arbeitsvorbereitung | Darf in allen Arbeitsbereichen voll arbeiten: Stammdaten, Aufträge, Designer, Druckvorlagen bearbeiten, Berechnungen ausführen. |
-| **Betrachter** | Auszubildende / Gäste | Ausschließlich Lesezugriff; darf Berechnungen ansehen, aber nichts verändern. |
+| **Betrachter** | Auszubildende / Gäste | Ausschließlich Lesezugriff auf alle Bereiche; darf zusätzlich Berechnungen ausführen sowie drucken/exportieren, aber keine Daten anlegen oder ändern. |
 
 !!! info "Standardrollen sind schreibgeschützt"
     Bei Standardrollen werden Name, Beschreibung und Rechte **bei jedem

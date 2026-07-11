@@ -28,8 +28,8 @@ Spulmaschine über eine Schicht einzuschätzen.
 
 | Wert | Einheit | Bedeutung |
 |---|---|---|
-| **Spulzeit pro Spule:** | min | Hauptergebnis: reine Spulzeit einer Spule (Länge auf Spule ÷ Spulgeschwindigkeit), auf zwei Nachkommastellen. |
-| **Gesamtzeit:** | h | Zeit für den kompletten Posten (Spulzeit pro Spule zzgl. Spulenwechselzeit, multipliziert mit der Anzahl Spulen), auf zwei Nachkommastellen. |
+| **Spulzeit pro Spule:** | min | Hauptergebnis: reine Spulzeit einer Spule (ohne Wechselzeit), auf zwei Nachkommastellen. |
+| **Gesamtzeit:** | h | Zeit für den kompletten Posten inkl. Spulenwechsel, auf zwei Nachkommastellen. |
 | **Spulen pro Stunde:** | stk. | Durchsatz der Spulmaschine bei laufendem Wechsel, auf eine Nachkommastelle. |
 
 ## Bedienung

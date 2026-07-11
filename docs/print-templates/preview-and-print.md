@@ -34,3 +34,12 @@ drucken Sie auf einem Drucker oder geben als **PDF** aus.
     Drucken Sie eine neue Vorlage einmal mit echten Daten (oder als PDF), um
     Platzierung, Seitenumbrüche und Ränder zu prüfen, bevor Sie sie in der
     Produktion einsetzen.
+
+## Verwandte Seiten
+
+* [Editor-Aufbau](editor.md) – Element-Palette, Filter, Seiteneinstellungen
+* [Elemente und Platzhalter](elements.md) – alle Bausteine der Element-Palette im Detail
+* [Vorlagen verwalten](manage.md) – Vorlagen anlegen, wählen, löschen
+* [Eine Druckvorlage erstellen](../tasks/create-print-template.md) – Schritt-für-Schritt-Anleitung
+* [Aufträge → Drucken](../orders/print.md) – wo Auftrags-Vorlagen zum Einsatz kommen
+* [Designer → Speichern und Drucken](../designer/save-print.md) – wo Design-Vorlagen zum Einsatz kommen

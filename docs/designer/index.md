@@ -16,14 +16,14 @@ als Maschinenbelegblatt.
 
 <div class="grid cards" markdown>
 
-- :material-tune: **Geflechtart und Parameter**
+- :material-tune: **Geflechtsart und Parameter**
 
     ---
 
     Rund-, Litzen-, Quadrat- und Packungsgeflecht; Bindung, Klöppelzahl,
     Flechtwinkel, Fachung.
 
-    [:octicons-arrow-right-24: Geflechtart und Parameter](parameters.md)
+    [:octicons-arrow-right-24: Geflechtsart und Parameter](parameters.md)
 
 - :material-palette: **Färben und Texturieren**
 

@@ -1,5 +1,7 @@
 # Anhang
 
+!!! abstract "Referenz — Nachschlagewerk: Tastenkürzel, Speicherorte, Glossar, Versionen"
+
 Nachschlagewerk zu Herzog CAB: Tastenkürzel, Dateispeicherorte, Fachbegriffe
 und die Versionshistorie.
 

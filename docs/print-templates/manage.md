@@ -40,3 +40,12 @@ austauschen, die denselben Workspace nutzen.
     **Vorlagen ansehen** genügt die Berechtigung **Druckvorlagen anzeigen**.
     Zum Anlegen, Ändern, Speichern und Löschen benötigen Sie zusätzlich
     **Druckvorlagen bearbeiten**. Mehr dazu unter [Rollen](../admin/roles.md).
+
+## Verwandte Seiten
+
+* [Editor-Aufbau](editor.md) – Element-Palette, Filter, Seiteneinstellungen
+* [Elemente und Platzhalter](elements.md) – alle Bausteine der Element-Palette im Detail
+* [Vorschau und Druck](preview-and-print.md) – Seitenformat, Vorschau, Ausgabe
+* [Eine Druckvorlage erstellen](../tasks/create-print-template.md) – Schritt-für-Schritt-Anleitung
+* [Aufträge → Drucken](../orders/print.md) – wo Auftrags-Vorlagen zum Einsatz kommen
+* [Designer → Speichern und Drucken](../designer/save-print.md) – wo Design-Vorlagen zum Einsatz kommen

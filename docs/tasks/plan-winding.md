@@ -56,7 +56,7 @@ Spulerei-Berechnungen als Auswahl angeboten.
 
 ## Schritt 3: Sollwerte berechnen
 
-Im Tab **Spulerei** des Spulauftrags sitzen Berechnen-Schaltflächen direkt an
+Im Tab **Spulerei** des Spulauftrags sitzen **Rechner-Symbole** direkt an
 den Sollwert-Feldern:
 
 * An **Länge pro Spule**: öffnet die Berechnung

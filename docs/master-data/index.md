@@ -1,5 +1,7 @@
 # Stammdaten
 
+!!! abstract "Referenz — Übersicht aller Stammdaten-Bereiche"
+
 In den **Stammdaten** legen Sie alle Daten ab, die Sie immer wieder in
 Berechnungen, im Designer und in Aufträgen brauchen: Kunden, Designs, Maschinen,
 Materialien, Spulen und Farben. Stammdaten gehören zum Arbeitsbereich – sie

@@ -1,5 +1,7 @@
 # Tastenkürzel
 
+!!! abstract "Referenz — Alle Tastenkürzel im Überblick"
+
 ## Global
 
 Diese Tasten wirken unabhängig davon, welcher Programmbereich gerade

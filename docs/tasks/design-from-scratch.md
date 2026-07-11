@@ -10,7 +10,7 @@
 
 ```mermaid
 flowchart LR
-  A["Designer öffnen"] --> B["Geflechtart & Parameter"]
+  A["Designer öffnen"] --> B["Geflechtsart & Parameter"]
   B --> C["Färben & Texturieren"]
   C --> D["Besetzung & Animation prüfen"]
   D --> E["3D-Rundansicht"]
@@ -22,8 +22,8 @@ flowchart LR
 
 1. Öffnen Sie den Navigationspunkt **Designer** (Referenz:
    [Designer](../designer/index.md)).
-2. Klicken Sie auf **Neues Designfenster öffnen**. Ein leeres Design mit
-   Standardwerten wird angelegt.
+2. Klicken Sie in der Startansicht auf **Design erstellen** (++ctrl+n++). Ein
+   leeres Design mit Standardwerten wird angelegt.
 
 Ein bestehendes Design öffnen Sie stattdessen über **Design laden** oder per
 Doppelklick in der Liste „Zuletzt bearbeitet". Sie können zwei Design-Fenster
@@ -34,19 +34,19 @@ nebeneinander öffnen, um Varianten direkt zu vergleichen.
     [geführte Tour](../basics/guided-tour.md) an, die Schritt für Schritt
     durch das Anlegen eines Designs führt.
 
-## Schritt 2: Geflechtart und Parameter festlegen
+## Schritt 2: Geflechtsart und Parameter festlegen
 
-Stellen Sie im linken Panel die Grunddaten des Designs ein: Produktbezeichnung,
-**Geflechtart** (Rundgeflecht, Litzengeflecht, Quadratgeflecht oder
-Packungsgeflecht), **Bindung/Besetzung**, **Flechtwinkel**, **Anzahl Klöppel**
+Stellen Sie im linken Panel die Grunddaten des Designs ein: **Designname**,
+**Geflechtsart** (Rundgeflecht, Litzengeflecht, Quadratgeflecht oder
+Packungsgeflecht), **Bindung/Besetzung**, **Anzahl Klöppel**, **Flechtwinkel**
 und **Fachung**. Jede Änderung baut das Flechtbild sofort neu auf.
 
 Alle Parameter und ihre zulässigen Werte sind auf der Referenzseite
-[Geflechtart & Parameter](../designer/parameters.md) erklärt.
+[Geflechtsart & Parameter](../designer/parameters.md) erklärt.
 
 ## Schritt 3: Färben und Texturieren
 
-1. Aktivieren Sie das Werkzeug **Malen**.
+1. Aktivieren Sie das Werkzeug **Färben**.
 2. Wählen Sie eine Farbe aus der Palette (oder aus einer Bibliothek der
    [Farbdatenbank](../master-data/colors.md)).
 3. Klicken Sie im Flechtbild oder in der Klöppeltabelle auf die Positionen,

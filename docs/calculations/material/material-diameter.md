@@ -16,7 +16,7 @@ Geometrie eines Geflechts einzuschätzen.
 |---|---|---|
 | **Material:** | – | Optionale Auswahl aus der [Materialdatenbank](../../master-data/materials.md). Bei Auswahl wird die **Dichte** automatisch in das Dichte-Feld übernommen. |
 | **Dichte:** | g/cm³ | Materialdichte (muss größer als 0 sein). Wird durch die Materialauswahl gefüllt oder manuell eingetragen. |
-| **Feinheit:** | tex, dtex, den, Nr_metrisch, Nr_englisch | Feinheit (lineare Dichte) des Materials. Die Einheit wählen Sie im Auswahlfeld rechts daneben (Standard: tex). Mindestwert 1. |
+| **Feinheit:** | tex, dtex, den, Nr_metrisch, Nr_englisch | Feinheit (Titer) des Materials. Die Einheit wählen Sie im Auswahlfeld rechts daneben (Standard: tex). Mindestwert 1. |
 | **Fachung:** | stk. | Anzahl der parallel geführten Enden, die den Strang bilden. Mindestwert 1. |
 | **Füllungsgrad:** | % | Wie dicht das Material im Strangquerschnitt gepackt ist (1–100 %, Startwert 80 %). |
 

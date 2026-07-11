@@ -1,4 +1,4 @@
-# Geflechtart und Parameter
+# Geflechtsart und Parameter
 
 !!! abstract "Referenz — das Parameter-Panel des Designers: Geflechtsart, Geflechtsbindung, Klöppelzahl, Flechtwinkel und Fachung."
 
@@ -98,10 +98,8 @@ Musters im Flechtbild. Der aktuelle Wert steht auch in der Dokument-Kopfzeile.
 ### Fachung
 
 Zahlenfeld für die Anzahl der Fäden je Klöppelposition (**1 bis 100**). Die
-Fachung wird im Flechtbild dargestellt — die
-[Texturpalette](painting.md) bietet automatisch die zur eingestellten Fachung
-passenden Faser-Texturen an, sodass die Fadenzahl auch in der Texturansicht
-sichtbar ist.
+Fachung wird im Flechtbild dargestellt; zum Einfärben und Texturieren der
+Fäden siehe [Färben und Texturieren](painting.md).
 
 ## Verwandte Seiten
 

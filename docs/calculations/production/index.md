@@ -1,5 +1,7 @@
 # Produktion
 
+!!! abstract "Referenz — Übersicht der Berechnungen rund um die Fertigung"
+
 Berechnungen rund um die Fertigung auf der Flechtmaschine – Geschwindigkeit,
 Aufstellmaße, Laufzeit pro Spulensatz und die Wechselräder des
 Gummibandvorschubs. In der App liegt diese Gruppe unter **Berechnungen →

@@ -31,8 +31,8 @@ Favoriten-Bereich oder am ursprünglichen Ort) und wählen Sie
 
 ## Wo Favoriten erscheinen
 
-* **Navigation:** Kategorie *Favoriten* ganz oben — sie ist nur sichtbar,
-  wenn mindestens ein Favorit angepinnt ist.
+* **Navigation:** Kategorie *Favoriten* ganz oben — dort sammeln sich Ihre
+  angepinnten Einträge.
 * **Startseite:** Bereich *Favoriten* mit einer Karte je Eintrag (Symbol,
   Name und Herkunftsbereich), siehe [Startseite (Home)](home.md).
 

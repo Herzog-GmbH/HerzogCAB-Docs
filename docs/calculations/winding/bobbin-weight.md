@@ -29,7 +29,7 @@ Wiegekontrolle beim Wareneingang nützlich.
 | Wert | Einheit | Bedeutung |
 |---|---|---|
 | **Nettogewicht Material:** | kg | Hauptergebnis: reines Materialgewicht ohne Spulenkörper, auf drei Nachkommastellen. |
-| **Bruttogewicht (mit Spule):** | kg | Nettogewicht zuzüglich Leergewicht Spule, auf drei Nachkommastellen. |
+| **Bruttogewicht (mit Spule):** | kg | Gesamtgewicht der bespulten Spule einschließlich Spulenkörper, auf drei Nachkommastellen. |
 
 ## Bedienung
 

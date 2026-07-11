@@ -102,6 +102,12 @@ Reihenfolge per Ziehen ändern) ist im Programmcode vorhanden
 der Oberfläche verdrahtet — kein Zahnrad-Symbol auf der Home-Seite gefunden.
 Erst dokumentieren, wenn der Aufruf in der App sichtbar ist. -->
 
+!!! info "Hinweis-Dialog „Informiert bleiben""
+    Von Zeit zu Zeit zeigt Herzog CAB nach dem Start den Dialog
+    **Informiert bleiben** mit einem Verweis auf die GitHub-Seite von
+    Herzog CAB (Neuigkeiten, Downloads, Feedback). Sie können ihn einfach
+    schließen — er hat keinen Einfluss auf Ihre Daten oder Einstellungen.
+
 ## Verwandte Seiten
 
 * [Oberfläche im Überblick](interface.md)

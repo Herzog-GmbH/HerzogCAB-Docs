@@ -7,7 +7,7 @@
 Diese Berechnung ermittelt die **Feinheit (Titer) eines Einzelfadens**, die
 nötig ist, um ein Geflecht mit den gewünschten geometrischen Eigenschaften zu
 erzeugen. Aus Produktdurchmesser, Flechtwinkel, Klöppelanzahl, Füllungsgrad
-und Materialdichte wird die lineare Dichte je Träger berechnet – praktisch,
+und Materialdichte wird die Feinheit (Titer) je Träger berechnet – praktisch,
 um vor der Produktion das passende Garn bzw. den passenden Draht auszuwählen.
 
 ## Eingabewerte

@@ -16,7 +16,7 @@ Maschinenwahl und Angebotskalkulation.
 |---|---|---|
 | **Material:** | – | Optionale Auswahl eines Materials aus der [Materialdatenbank](../../master-data/materials.md). **Dichte** und **Feinheit** werden dann automatisch übernommen. |
 | **Dichte:** | g/cm³ | Materialdichte (drei Nachkommastellen, max. 25). Muss größer als 0 sein. |
-| **Feinheit:** | tex, dtex, den, Nr metrisch, Nr englisch | Feinheit (lineare Dichte) des Garns. Die Einheit wählen Sie im Auswahlfeld rechts daneben; intern wird der Wert nach tex umgerechnet. Mindestwert 1. |
+| **Feinheit:** | tex, dtex, den, Nr metrisch, Nr englisch | Feinheit (Titer) des Garns. Die Einheit wählen Sie im Auswahlfeld rechts daneben; intern wird der Wert nach tex umgerechnet. Mindestwert 1. |
 | **Fachung:** | stk. | Anzahl der parallel geführten Fäden je Klöppel. Mindestwert 1. |
 | **Klöppelanzahl:** | stk. | Anzahl der Klöppel der Flechtmaschine (max. 1500). Mindestwert 5. |
 | **Flechtwinkel:** | ° | Winkel der Stränge zur Längsachse. Zulässig 5° bis 85°. |

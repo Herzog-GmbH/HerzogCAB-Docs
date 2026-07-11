@@ -1,5 +1,7 @@
 # Hilfe und FAQ
 
+!!! question "Problemlösung — Einstieg in die Fehlersuche"
+
 Hier finden Sie Lösungen für die häufigsten Probleme rund um Lizenz, Anmeldung,
 Druck und Updates. Kommen Sie mit dieser Seite nicht weiter, lesen Sie
 [Support kontaktieren](support.md).

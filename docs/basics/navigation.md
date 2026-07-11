@@ -10,7 +10,7 @@ Sie ihn bedienen.
 
 ```
 Home
-Favoriten                        (erscheint nur, wenn Favoriten angepinnt sind)
+Favoriten                        (Ihre angepinnten Einträge)
 Aufträge
 Maschinenpark
 Hallenplaner

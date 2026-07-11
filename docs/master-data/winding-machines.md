@@ -38,7 +38,6 @@ Karte zeigt Bild, Baureihe und die wichtigsten Angaben: **Spulstellen**,
 |---|---|
 | **Suche** | Filtert die Liste. |
 | **Neu** | Öffnet den Dialog *Neue Spulmaschine erstellen* (siehe unten). |
-| **Importieren** | Übernimmt Maschinen aus einer CSV-Datei. |
 | **Bearbeiten** | Öffnet die gewählte Maschine zum Ändern. |
 | **Löschen** | Entfernt die gewählte(n) Maschine(n) mit Sicherheitsabfrage. |
 

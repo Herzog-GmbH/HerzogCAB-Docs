@@ -1,5 +1,7 @@
 # Loslegen
 
+!!! example "Anleitung — Von der Installation bis zum ersten Programmstart"
+
 Dieses Kapitel begleitet Sie von der Erstinstallation bis zum ersten
 Programmstart. Rechnen Sie für die komplette Strecke mit rund 15 Minuten.
 Wenn Herzog CAB bei Ihnen bereits läuft und Sie nur ein **Update**

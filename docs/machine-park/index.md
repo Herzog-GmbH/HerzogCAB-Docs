@@ -28,7 +28,7 @@ Auftragsdaten ändern — Sie müssen die Seite nicht neu laden.
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Maschinenpark-Übersicht (Kartenansicht) mit der aktuellen Filterzeile inklusive Filter **Maschinenart** und einem gemischten Park aus Flecht- und Spulmaschinen
     **So erzeugen:** *Maschinenpark* öffnen; Datenbestand mit mindestens einer Spulmaschine, damit der Filter „Maschinenart" relevant ist; Kartenansicht aktiv
-    **Ziel-Datei:** `assets/screenshots/master-data/maschinenpark.png`
+    **Ziel-Datei:** `assets/screenshots/machine-park/maschinenpark.png`
 
 Der Bildschirm besteht aus drei Bereichen:
 

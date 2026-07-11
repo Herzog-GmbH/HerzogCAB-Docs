@@ -1,5 +1,7 @@
 # Versionshinweise
 
+!!! abstract "Referenz — Was sich in welcher Version geändert hat"
+
 ## Version 1.4.5 (Juli 2026)
 
 ### Neu

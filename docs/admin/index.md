@@ -1,5 +1,7 @@
 # Systemverwaltung
 
+!!! abstract "Referenz — Übersicht der Systemverwaltung"
+
 In der **Systemverwaltung** (unterster Bereich der linken Navigation) verwalten
 Sie alles, was nicht zum Tagesgeschäft gehört: Benutzerkonten, Rollen und
 Rechte, die Anmeldung über Microsoft oder das Firmennetz, Profile

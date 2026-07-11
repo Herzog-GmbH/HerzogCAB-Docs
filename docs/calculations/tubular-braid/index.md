@@ -1,5 +1,7 @@
 # Hohlgeflecht
 
+!!! abstract "Referenz — Übersicht der Hohlgeflecht-Berechnungen"
+
 Berechnungen für schlauch- bzw. rohrförmige Geflechte (Hohlgeflecht):
 Klöppelzahl, Durchmesser, Materialbreite und Bedeckung. In der App liegt diese
 Gruppe unter **Berechnungen → Produkt → Hohlgeflecht**. Alle vier

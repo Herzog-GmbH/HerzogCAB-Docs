@@ -4,7 +4,7 @@
 
 ## Wofür
 
-Diese Berechnung ermittelt die passende Wechselrad-Kombination für die Gummibandkette des Abzugs. Aus der gewünschten Dehnung, dem Durchmesser der Abzugsscheibe und der Übersetzung berechnet die Software die beiden Zähnezahlen, mit denen Sie die Maschine bestücken – so erreichen Sie im Flechtbetrieb die gewünschte Verlegelänge bzw. den geplanten Vorschub.
+Diese Berechnung ermittelt die passende Wechselrad-Kombination für die Gummibandkette des Abzugs. Aus der gewünschten Dehnung, dem Durchmesser der Abzugsscheibe und der Übersetzung berechnet die Software die beiden Zähnezahlen, mit denen Sie die Maschine bestücken – so erreichen Sie im Flechtbetrieb die gewünschte Geflechtsdichte bzw. den geplanten Vorschub.
 
 ## Eingabewerte
 

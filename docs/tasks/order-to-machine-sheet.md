@@ -67,7 +67,7 @@ sofort in der Kunden-Auswahl des Auftrags-Editors zur Verfügung.
 
 ## Schritt 4: Berechnungen nutzen
 
-Viele Felder im Auftrag haben direkt daneben eine Berechnen-Schaltfläche, die
+Viele Felder im Auftrag haben direkt daneben ein **Rechner-Symbol**, das
 die passende Berechnung als Fenster öffnet (z. B. Flechtwinkel oder
 Produktlänge) — das Ergebnis wird in den Auftrag übernommen. Der gemeinsame
 Aufbau aller Berechnungsseiten ist unter

@@ -25,7 +25,7 @@ Reihenfolge* Sie vorgehen, sind Sie hier richtig.
 
     ---
 
-    Vom leeren Designer über Geflechtart, Farben und Gangbahn-Animation bis
+    Vom leeren Designer über Geflechtsart, Farben und Gangbahn-Animation bis
     zum gespeicherten und gedruckten Design.
 
     [:octicons-arrow-right-24: Zum Ablauf](design-from-scratch.md)

@@ -13,7 +13,7 @@ Material ein Auftrag benötigt und wie schwer das fertige Produkt wird.
 
 | Feld | Einheit | Bedeutung |
 |---|---|---|
-| **Feinheit** | tex, dtex, den, Nr_metrisch, Nr_englisch | Lineare Dichte des verwendeten Garns/Fadens. Die Einheit wählen Sie im Auswahlfeld rechts daneben (Standard: tex). Für die Berechnung wird der Wert intern nach tex umgerechnet. |
+| **Feinheit** | tex, dtex, den, Nr_metrisch, Nr_englisch | Feinheit (Titer) des verwendeten Garns/Fadens. Die Einheit wählen Sie im Auswahlfeld rechts daneben (Standard: tex). Für die Berechnung wird der Wert intern nach tex umgerechnet. |
 | **Klöppelanzahl** | stk. | Anzahl der mitflechtenden Klöppel (= Anzahl der Einzelfäden im Geflecht). |
 | **Flechtwinkel** | ° | Winkel, unter dem die Fäden zur Produktachse verlaufen. |
 | **Produktlänge** | m | Länge des fertigen Produkts, für das das Gewicht berechnet wird. |

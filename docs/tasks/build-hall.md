@@ -77,8 +77,10 @@ auf der Referenzseite
 
 ## Schritt 5: Ist-Belegung festlegen
 
+Die **erste** Belegung eines Grundrisses wird automatisch zur Ist-Belegung —
+dieser Schritt ist also nur nötig, wenn Sie mehrere Belegungen angelegt haben.
 Zurück in der [Belegungs-Übersicht](../hall-planner/index.md) markieren Sie
-die fertige Belegung über ihr Kontextmenü mit **Als Ist-Belegung setzen**.
+die gewünschte Belegung über ihr Kontextmenü mit **Als Ist-Belegung setzen**.
 Die Ist-Belegung ist das Szenario, das den tatsächlichen Hallenzustand
 abbildet; die Status-Ampeln der Maschinen zeigen darin den aktuellen
 Auftragsstatus aus den [Aufträgen](../orders/index.md).

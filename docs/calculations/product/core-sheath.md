@@ -9,7 +9,7 @@ Berechnet ein zweilagiges Flechtprodukt aus einer geflochtenen **Seele
 prozentualen Aufteilung zwischen Seele und Mantel sowie den Flechtparametern
 beider Lagen ermittelt die Funktion Geometrie, Litzenfeinheit, Spulenlängen,
 Produktion und Gewicht – getrennt für Kern und Mantel sowie als Gesamtwert.
-So lässt sich ein Kern-Mantel-Seil in einem Schritt vollständig
+So lässt sich ein Kern-Mantel-Produkt in einem Schritt vollständig
 durchkalkulieren.
 
 ## Eingabewerte
@@ -43,19 +43,19 @@ sowie zwei gleich aufgebaute Panels für **Seele** und **Mantel**.
 
 ## Ergebnis
 
-Spitzenwerte sind **Leistung (Gesamt)** und **Seilgewicht (Gesamt)**;
+Spitzenwerte sind **Leistung (Gesamt)** und **Gewicht (Gesamt)**;
 darunter werden **Seeldurchmesser** und **Mantelstärke** sowie alle übrigen
 Werte paarweise für Kern und Mantel ausgewiesen.
 
 | Wert | Einheit | Bedeutung |
 |---|---|---|
 | **Leistung (Gesamt)** | kg/h | Gesamtdurchsatz des Produkts in Masse pro Stunde. |
-| **Seilgewicht (Gesamt)** | kg/100m | Gewicht des fertigen Kern-Mantel-Seils je 100 m. |
+| **Gewicht (Gesamt)** | kg/100m | Gewicht des fertigen Kern-Mantel-Produkts je 100 m. |
 | **Seeldurchmesser** | mm | Durchmesser der Seele (Kern). |
 | **Mantelstärke** | mm | Wandstärke des Mantels (radial). |
 | **Leistung (Kern)** / **Leistung (Mantel)** | kg/h | Durchsatz der jeweiligen Lage. |
-| **Seilgewicht (Kern)** / **Seilgewicht (Mantel)** | kg/100m | Gewichtsanteil der jeweiligen Lage je 100 m. |
-| **Litze (Kern)** / **Litze (Mantel)** | tex | Feinheit (lineare Dichte) der Litze je Lage. |
+| **Gewicht (Kern)** / **Gewicht (Mantel)** | kg/100m | Gewichtsanteil der jeweiligen Lage je 100 m. |
+| **Litze (Kern)** / **Litze (Mantel)** | tex | Feinheit (Titer) der Litze je Lage. |
 | **Litzendurchmesser (Kern)** / **Litzendurchmesser (Mantel)** | mm | Durchmesser der Einzellitze je Lage. |
 | **Länge pro Spule (Kern)** / **Länge pro Spule (Mantel)** | m | Aufwickelbare Materiallänge je Spule. |
 | **Länge Geflecht (Kern)** / **Länge Geflecht (Mantel)** | m | Pro Spule erzeugbare Geflechtlänge. |

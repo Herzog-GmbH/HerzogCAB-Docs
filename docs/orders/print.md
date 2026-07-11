@@ -5,7 +5,7 @@
 ## Wofür Sie diesen Bereich nutzen
 
 Der Ausdruck bringt den Auftrag in die Werkstatt: als
-Produktionsbegleitschein an der Flechtmaschine oder als Arbeitsblatt für die
+Produktionsbegleitschein („Maschinenzettel") an der Flechtmaschine oder als Arbeitsblatt für die
 Spulerei. Sie drucken direkt aus dem [Flechtauftrag-Editor](braiding-order.md)
 oder dem [Spulauftrag-Editor](winding-order.md) über die Schaltfläche
 **Drucken** (oben rechts).

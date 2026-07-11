@@ -1,5 +1,7 @@
 # Glossar
 
+!!! abstract "Referenz — Fachbegriffe rund um Herzog CAB und das Flechten"
+
 | Begriff | Bedeutung |
 |---|---|
 | **Besetzung** | Muster, nach dem die Klöppel die Positionen einer Flechtmaschine belegen. Herzog CAB unterscheidet **Normale Besetzung** (1-1, alle Positionen belegt), **Tandem-Besetzung** (2-2, siehe **Tandem**) und **Halbe Besetzung** (1-3, nur jede zweite Position belegt). |

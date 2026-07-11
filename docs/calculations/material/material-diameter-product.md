@@ -33,7 +33,7 @@ Garn durchzuprobieren.
 |---|---|---|
 | **Materialdurchmesser:** | mm | Hauptkachel: benötigter Durchmesser des Einzelgarns, auf 3 Nachkommastellen. |
 | **Benötigte Feinheit:** | tex, dtex, den, Nr_metrisch oder Nr_englisch | Feinheit, die das Garn je Klöppel und Ende haben muss. Über einen Umschalter direkt in der Kachel-Kopfzeile wählen Sie die Anzeige-Einheit, ohne neu zu rechnen. |
-| **Banddicke (Litze):** | mm | Nur bei Geflechtstyp *Litzengeflecht* sichtbar: Dicke des vollen Bandes aus allen Enden eines Klöppels (Strangdurchmesser × 2). Bei Rundgeflecht bleibt die Kachel ausgeblendet. |
+| **Banddicke (Litze):** | mm | Nur bei Geflechtstyp *Litzengeflecht* sichtbar: Dicke des vollen Bandes aus allen Enden eines Klöppels. Bei Rundgeflecht bleibt die Kachel ausgeblendet. |
 | **Material-Vorschlag:** | Text | Nennt das Material aus der Datenbank, dessen Feinheit der benötigten Feinheit am nächsten kommt – eingeschränkt auf denselben Werkstoff wie das oben gewählte Material (gleicher Name, sonst gleiche Dichte). Findet sich keines, erscheint der Hinweis „kein passendes Material gleichen Typs gefunden". |
 
 ## Bedienung
