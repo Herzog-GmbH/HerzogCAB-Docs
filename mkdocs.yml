@@ -3,9 +3,16 @@
 # MkDocs Konfiguration
 # =============================================================================
 #
-# Lokal bauen:    mkdocs serve     (http://127.0.0.1:8000)
-# Statisch bauen: mkdocs build     -> Ausgabe in ./site/
+# Lokal bauen:    python -m mkdocs serve -a 127.0.0.1:8800   (mkdocs.exe-Shim ist kaputt)
+# Statisch bauen: python -m mkdocs build     -> Ausgabe in ./site/
 # Deploy GH:      Wird automatisch via GitHub Actions auf gh-pages gepusht.
+#
+# Struktur seit 07/2026 (Neuaufbau): 6 Top-Tabs
+#   Loslegen | Grundlagen | Funktionen (= F1-Referenz) | Aufgaben & Abläufe |
+#   Verwaltung | Hilfe
+# Regeln: How-To verlinkt, Referenz beschreibt. Jedes Feld an genau EINER Stelle.
+# Keine Berechnungsformeln (Policy) - Standardsatz siehe STYLEGUIDE.md.
+# F1-Zuordnung App-Key -> Seite: f1-mapping.json (kanonisch, Repo-Root).
 # =============================================================================
 
 site_name: Herzog CAB - Handbuch
@@ -32,8 +39,8 @@ copyright: Copyright &copy; Herzog GmbH
 theme:
   name: material
   language: de
-  logo: assets/logo.png            # noch optional - siehe assets/README.md
-  favicon: assets/favicon.png      # noch optional
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   font:
     text: Inter
     code: JetBrains Mono
@@ -42,11 +49,14 @@ theme:
     edit: material/pencil
     view: material/eye
   features:
-    # navigation.instant ist mit i18n-Sprachschalter nicht kompatibel - deaktiviert
+    # SPA-artiges Laden - moeglich, solange i18n aus ist (nur Deutsch)
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.prefetch
     - navigation.tracking        # Anker in URL
-    # Tabs bewusst AUS: gesamte Navigation in der linken Seitenleiste
-    # (wie im Programm). Gruppen sind auf-/zuklappbar (kein
-    # navigation.sections, damit nicht alles dauerhaft aufgeklappt ist).
+    # Tabs seit Neuaufbau 07/2026 AN: 6 aufgabenorientierte Einstiege in der
+    # Kopfleiste, kuerzere Sidebar je Tab (Brand-CSS stylt .md-tabs).
+    - navigation.tabs
     - navigation.indexes         # index.md als Sektions-Startseite
     - navigation.top             # "Nach oben"-Button
     - navigation.footer          # Vor/Zurueck im Footer
@@ -57,6 +67,7 @@ theme:
     - content.action.edit        # Edit-Button
     - content.code.copy          # Code-Block kopieren
     - content.tabs.link          # Tabs sind verlinkt
+    - content.tooltips           # Glossar-Tooltips (abbr)
   palette:
     # Hell - Herzog-Brand: Primary #00459a, Accent #ffb800
     - media: "(prefers-color-scheme: light)"
@@ -110,7 +121,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys                # ++ctrl+s++ Notation
   - pymdownx.mark
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossar-tooltips.md   # zentrale Abkuerzungs-/Glossar-Tooltips
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -129,18 +142,83 @@ plugins:
   - search:
       lang:
         - de
-  # i18n-Plugin und mehrsprachige Konfiguration sind vorerst entfernt.
-  # Wir pflegen die Doku zunaechst nur auf Deutsch und uebersetzen erst,
-  # wenn der DE-Stand stabil ist. Dann i18n wieder aktivieren und
-  # nav_translations/.en.md-Dateien anlegen.
-  # - mike:                      # AKTIVIEREN fuer versionierte Doku (1.3, 1.4, latest)
+  # Screenshot-Zoom/Lightbox - Klick auf Bild oeffnet Vollbild
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      auto_caption: false
+  # Alte URLs (Struktur vor 07/2026) -> neue Seiten. Wichtig fuer Lesezeichen
+  # und alte Support-Links. F1 war zu diesem Zeitpunkt noch nicht verdrahtet.
+  - redirects:
+      redirect_maps:
+        installation/index.md: setup/index.md
+        installation/system-requirements.md: setup/system-requirements.md
+        installation/topology.md: setup/topology.md
+        installation/codemeter.md: setup/codemeter.md
+        installation/installer.md: setup/installer.md
+        installation/activate-license.md: setup/activate-license.md
+        updates/index.md: setup/update.md
+        updates/install.md: setup/update.md
+        updates/version-history.md: appendix/changelog.md
+        uninstallation/index.md: setup/uninstall.md
+        uninstallation/maintenance-tool.md: setup/uninstall.md
+        uninstallation/windows-settings.md: setup/uninstall.md
+        uninstallation/remove-data.md: setup/uninstall.md
+        getting-started/index.md: basics/index.md
+        getting-started/interface.md: basics/interface.md
+        getting-started/navigation.md: basics/navigation.md
+        getting-started/workspace.md: admin/profiles.md
+        getting-started/admin-account.md: setup/first-run.md
+        getting-started/language.md: admin/settings/appearance.md
+        getting-started/guided-tour.md: basics/guided-tour.md
+        master-data/machine-park.md: machine-park/index.md
+        master-data/hall-planner.md: hall-planner/index.md
+        master-data/machines.md: master-data/braiding-machines.md
+        master-data/parameter-overview.md: parameter-overview/index.md
+        design/index.md: designer/index.md
+        design/designer.md: designer/index.md
+        design/product.md: designer/parameters.md
+        design/colors.md: designer/painting.md
+        calculations/braid-geometry/braid-angle.md: calculations/product/braid-angle.md
+        calculations/braid-geometry/lay-length.md: calculations/product/lay-length.md
+        calculations/braid-geometry/picks-density.md: calculations/product/picks-density.md
+        calculations/material/core-sheath.md: calculations/product/core-sheath.md
+        calculations/bobbins/material-length.md: calculations/material/material-length.md
+        calculations/bobbins/bobbin-volume.md: calculations/material/bobbin-volume.md
+        calculations/bobbins/number-of-winders.md: calculations/winding/number-of-winders.md
+        calculations/machine/index.md: calculations/production/index.md
+        calculations/machine/production-speed.md: calculations/production/production-speed.md
+        calculations/machine/dimensions.md: calculations/production/dimensions.md
+        calculations/machine/run-time-bobbin-set.md: calculations/production/run-time-bobbin-set.md
+        calculations/machine/change-gears.md: calculations/production/change-gears.md
+        orders/create.md: orders/braiding-order.md
+        orders/edit.md: orders/braiding-order.md
+        orders/qr-code.md: orders/print.md
+        users/index.md: admin/index.md
+        users/login.md: admin/login.md
+        users/manage.md: admin/users.md
+        users/my-profile.md: admin/my-profile.md
+        users/avatar.md: admin/my-profile.md
+        users/password-reset.md: admin/my-profile.md
+        users/roles.md: admin/roles.md
+        workspace/index.md: admin/profiles.md
+        workspace/concept.md: admin/profiles.md
+        workspace/switch-profile.md: admin/profiles.md
+        workspace/change-path.md: admin/profiles.md
+        workspace/migration.md: admin/profiles.md
+        settings/index.md: admin/settings/index.md
+        settings/language-font.md: admin/settings/appearance.md
+        settings/file-locations.md: admin/storage-location.md
+        settings/company.md: admin/company.md
+        settings/web-server.md: admin/settings/web-server.md
+  # - mike:                      # AKTIVIEREN fuer versionierte Doku (1.4, latest)
   #     version_selector: true
   #     css_dir: css
   #     javascript_dir: js
   #     canonical_version: latest
 
 # -----------------------------------------------------------------------------
-# Extra (Versionsanzeige, Sprachschalter)
+# Extra (Versionsanzeige, Social)
 # -----------------------------------------------------------------------------
 extra:
   # version:                     # AKTIVIEREN, sobald mike-Plugin (oben) eingeschaltet ist
@@ -156,147 +234,156 @@ extra:
   generator: false               # "Made with MkDocs" ausblenden
 
 # -----------------------------------------------------------------------------
-# Navigation
+# Navigation  (6 Tabs; "Funktionen" spiegelt die Programm-Navigation = F1-Ziele)
 # -----------------------------------------------------------------------------
 nav:
   - Start: index.md
 
-  # ----- Installation ------------------------------------------------------
-  - Installation:
-      - installation/index.md
-      - Systemvoraussetzungen: installation/system-requirements.md
-      - Einsatz-Szenarien: installation/topology.md
-      - CodeMeter installieren: installation/codemeter.md
-      - Herzog CAB installieren: installation/installer.md
-      - Lizenz aktivieren: installation/activate-license.md
-      - Updates:
-          - updates/index.md
-          - Updates installieren: updates/install.md
-          - Versionsverlauf: updates/version-history.md
-      - Deinstallation:
-          - uninstallation/index.md
-          - Über das Maintenance Tool: uninstallation/maintenance-tool.md
-          - Über die Windows-Einstellungen: uninstallation/windows-settings.md
-          - Daten entfernen: uninstallation/remove-data.md
+  # ----- TAB 1: Loslegen ----------------------------------------------------
+  - Loslegen:
+      - setup/index.md
+      - Systemvoraussetzungen: setup/system-requirements.md
+      - Einsatz-Szenarien: setup/topology.md
+      - CodeMeter installieren: setup/codemeter.md
+      - Herzog CAB installieren: setup/installer.md
+      - Lizenz aktivieren: setup/activate-license.md
+      - Erststart und Einrichtung: setup/first-run.md
+      - Updates installieren: setup/update.md
+      - Deinstallation: setup/uninstall.md
 
-  # ----- Erste Schritte ----------------------------------------------------
-  - Erste Schritte:
-      - getting-started/index.md
-      - Oberfläche im Überblick: getting-started/interface.md
-      - Navigation und Verlauf: getting-started/navigation.md
-      - Workspace einrichten: getting-started/workspace.md
-      - Erstes Admin-Konto: getting-started/admin-account.md
-      - Sprache wählen: getting-started/language.md
-      - Guided Tour: getting-started/guided-tour.md
+  # ----- TAB 2: Grundlagen (Bedienkonzepte) ----------------------------------
+  - Grundlagen:
+      - basics/index.md
+      - Oberfläche im Überblick: basics/interface.md
+      - Navigieren in der App: basics/navigation.md
+      - Startseite (Home): basics/home.md
+      - Favoriten: basics/favorites.md
+      - Verlauf der Berechnungen: basics/history.md
+      - Suchen und Filtern: basics/search-filter.md
+      - So sind Berechnungsseiten aufgebaut: basics/calc-page-anatomy.md
+      - Guided Tour: basics/guided-tour.md
+      - Testversion und Kontingente: basics/trial-quotas.md
 
-  # ----- Stammdaten --------------------------------------------------------
-  - Stammdaten:
-      - master-data/index.md
-      - Kunden: master-data/customers.md
-      - Designs:
-          - design/index.md
-          - Designer-Oberfläche: design/designer.md
-          - Farben und Muster: design/colors.md
-          - Produkt-Design: design/product.md
-      - Flechtmaschinen: master-data/machines.md
-      - Grundrisse: master-data/floor-plans.md
-      - Medien: master-data/media.md
-      - Materialien: master-data/materials.md
-      - Spulen: master-data/bobbins.md
-      - Farben: master-data/colors.md
+  # ----- TAB 3: Funktionen (Referenz, Reihenfolge = Programm-Navigation) -----
+  - Funktionen:
+      - Aufträge:
+          - orders/index.md
+          - Flechtauftrag: orders/braiding-order.md
+          - Spulauftrag: orders/winding-order.md
+          - Auftrag drucken und QR-Code: orders/print.md
+      - Maschinenpark: machine-park/index.md
+      - Hallenplaner:
+          - hall-planner/index.md
+          - Editor – Grundriss und Bestückung: hall-planner/editor.md
+          - 3D-Hallenansicht: hall-planner/view-3d.md
+      - Designer:
+          - designer/index.md
+          - Geflechtart und Parameter: designer/parameters.md
+          - Färben und Texturieren: designer/painting.md
+          - Besetzung und Gangbahn-Animation: designer/animation.md
+          - 3D-Ansicht: designer/view-3d.md
+          - Speichern und Drucken: designer/save-print.md
+      - Berechnungen:
+          - calculations/index.md
+          - Material:
+              - calculations/material/index.md
+              - Feinheit / Titer: calculations/material/linear-density.md
+              - Umrechnung Feinheit: calculations/material/linear-density-conversion.md
+              - Materialdurchmesser über Material: calculations/material/material-diameter.md
+              - Materialdurchmesser über Produkt: calculations/material/material-diameter-product.md
+              - Fachung über Produkt: calculations/material/required-ply.md
+              - Materiallänge auf Spule: calculations/material/material-length.md
+              - Spulvolumen: calculations/material/bobbin-volume.md
+          - Produkt:
+              - calculations/product/index.md
+              - Flechtwinkel: calculations/product/braid-angle.md
+              - Geflechtsdichte: calculations/product/lay-length.md
+              - Umrechnung Geflechtsdichte: calculations/product/picks-density.md
+              - Produktdurchmesser: calculations/product/product-diameter.md
+              - Produktlänge: calculations/product/rope-length.md
+              - Produktlänge pro Trommel: calculations/product/rope-length-on-drum.md
+              - Produktgewicht: calculations/product/rope-weight.md
+              - Kern-Mantel-Produkt: calculations/product/core-sheath.md
+              - Hohlgeflecht:
+                  - calculations/tubular-braid/index.md
+                  - Anzahl Klöppel: calculations/tubular-braid/tube-carriers.md
+                  - Durchmesser: calculations/tubular-braid/tube-diameter.md
+                  - Materialbreite: calculations/tubular-braid/yarn-width.md
+                  - Bedeckung: calculations/tubular-braid/tube-cover.md
+          - Produktion:
+              - calculations/production/index.md
+              - Produktionsgeschwindigkeit: calculations/production/production-speed.md
+              - Maschinen-Dimensionierung: calculations/production/dimensions.md
+              - Maschinenlaufzeit pro Spulensatz: calculations/production/run-time-bobbin-set.md
+              - Wechselräder Gummibandkette: calculations/production/change-gears.md
+          - Spulerei:
+              - calculations/winding/index.md
+              - Spulzeit: calculations/winding/winding-time.md
+              - Fadengeschwindigkeit: calculations/winding/line-speed.md
+              - Fadenspannung: calculations/winding/yarn-tension.md
+              - Spulenkapazität: calculations/winding/bobbin-capacity.md
+              - Spulengewicht: calculations/winding/bobbin-weight.md
+              - Materialbedarf: calculations/winding/material-demand.md
+              - Spulen aus Liefergebinde: calculations/winding/from-supplier-spool.md
+              - Restlänge über Gewicht: calculations/winding/residual-length.md
+              - Anzahl Spulmaschinen: calculations/winding/number-of-winders.md
+      - Stammdaten:
+          - master-data/index.md
+          - Kunden: master-data/customers.md
+          - Designs (Bibliothek): master-data/designs.md
+          - Flechtmaschinen: master-data/braiding-machines.md
+          - Spulmaschinen: master-data/winding-machines.md
+          - Grundrisse: master-data/floor-plans.md
+          - Medien: master-data/media.md
+          - Materialien: master-data/materials.md
+          - Spulen: master-data/bobbins.md
+          - Farben: master-data/colors.md
+      - Druck-Editor:
+          - print-templates/index.md
+          - Vorlagen verwalten: print-templates/manage.md
+          - Editor-Aufbau: print-templates/editor.md
+          - Elemente und Platzhalter: print-templates/elements.md
+          - Vorschau und Druck: print-templates/preview-and-print.md
+      - Parameter-Übersicht: parameter-overview/index.md
 
-  # ----- Berechnungen ------------------------------------------------------
-  - Berechnungen:
-      - calculations/index.md
-      - Material:
-          - calculations/material/index.md
-          - Feinheit / Titer: calculations/material/linear-density.md
-          - Umrechnung Feinheit: calculations/material/linear-density-conversion.md
-          - Materialdurchmesser: calculations/material/material-diameter.md
-          - Materiallänge auf Spule: calculations/bobbins/material-length.md
-          - Spulvolumen: calculations/bobbins/bobbin-volume.md
-      - Produkt:
-          - calculations/product/index.md
-          - Flechtwinkel: calculations/braid-geometry/braid-angle.md
-          - Geflechtsdichte: calculations/braid-geometry/lay-length.md
-          - Umrechnung Geflechtsdichte: calculations/braid-geometry/picks-density.md
-          - Produktdurchmesser: calculations/product/product-diameter.md
-          - Produktlänge: calculations/product/rope-length.md
-          - Produktlänge pro Trommel: calculations/product/rope-length-on-drum.md
-          - Produktgewicht: calculations/product/rope-weight.md
-          - Kern-Mantel-Produkt: calculations/material/core-sheath.md
-          - Hohlgeflecht:
-              - calculations/tubular-braid/index.md
-              - Anzahl Klöppel: calculations/tubular-braid/tube-carriers.md
-              - Durchmesser: calculations/tubular-braid/tube-diameter.md
-              - Materialbreite: calculations/tubular-braid/yarn-width.md
-              - Bedeckung: calculations/tubular-braid/tube-cover.md
-      - Produktion:
-          - calculations/machine/index.md
-          - Produktionsgeschwindigkeit: calculations/machine/production-speed.md
-          - Maschinen-Dimensionierung: calculations/machine/dimensions.md
-          - Maschinenlaufzeit pro Spule-Satz: calculations/machine/run-time-bobbin-set.md
-          - Anzahl Spulmaschinen: calculations/bobbins/number-of-winders.md
-          - Wechselräder Gummibandkette: calculations/machine/change-gears.md
+  # ----- TAB 4: Aufgaben & Abläufe (Workflows) --------------------------------
+  - Aufgaben & Abläufe:
+      - tasks/index.md
+      - Vom Kundenauftrag zum Maschinenzettel: tasks/order-to-machine-sheet.md
+      - Ein Design entwerfen und drucken: tasks/design-from-scratch.md
+      - Spulen für einen Flechtauftrag planen: tasks/plan-winding.md
+      - Eine Produktionshalle aufbauen: tasks/build-hall.md
+      - Material richtig kalkulieren: tasks/material-calculation.md
+      - Eine Druckvorlage erstellen: tasks/create-print-template.md
+      - Benutzer und Rollen einrichten: tasks/setup-users.md
 
-  # ----- Hallenplaner ------------------------------------------------------
-  - Hallenplaner: master-data/hall-planner.md
+  # ----- TAB 5: Verwaltung ----------------------------------------------------
+  - Verwaltung:
+      - admin/index.md
+      - Anmelden und Abmelden: admin/login.md
+      - Benutzer verwalten: admin/users.md
+      - Rollen und Berechtigungen: admin/roles.md
+      - Authentifizierung (Entra ID / LDAP): admin/authentication.md
+      - Eigenes Profil: admin/my-profile.md
+      - Profile (Arbeitsbereiche): admin/profiles.md
+      - Speicherort: admin/storage-location.md
+      - Firma: admin/company.md
+      - Einstellungen:
+          - admin/settings/index.md
+          - Darstellung, Sprache und Diagnose: admin/settings/appearance.md
+          - Dateien und Ordner: admin/settings/files.md
+          - Legacy-Designimport: admin/settings/legacy-import.md
+          - Webserver und QR-Code: admin/settings/web-server.md
 
-  # ----- Aufträge ----------------------------------------------------------
-  - Aufträge:
-      - orders/index.md
-      - Auftrag anlegen: orders/create.md
-      - Auftrag bearbeiten: orders/edit.md
-      - QR-Code für die Maschine: orders/qr-code.md
-      - Drucken: orders/print.md
-
-  # ----- Maschinenpark -----------------------------------------------------
-  - Maschinenpark: master-data/machine-park.md
-
-  # ----- Druck Editor ------------------------------------------------------
-  - Druck Editor:
-      - print-templates/index.md
-      - Vorlagen verwalten: print-templates/manage.md
-      - Editor-Aufbau: print-templates/editor.md
-      - Elemente (Text, Tabellen, Bilder): print-templates/elements.md
-      - Vorschau und Druck: print-templates/preview-and-print.md
-
-  # ----- Systemverwaltung --------------------------------------------------
-  - Systemverwaltung:
-      - Benutzer:
-          - users/index.md
-          - Login und Abmelden: users/login.md
-          - Benutzer verwalten: users/manage.md
-          - Eigenes Profil: users/my-profile.md
-          - Profilbild ändern: users/avatar.md
-          - Passwort zurücksetzen: users/password-reset.md
-      - Rollen und Berechtigungen: users/roles.md
-      - Profile:
-          - workspace/index.md
-          - Workspace-Konzept: workspace/concept.md
-          - Profil wechseln: workspace/switch-profile.md
-          - Workspace-Pfad ändern: workspace/change-path.md
-          - Migration aus älteren Versionen: workspace/migration.md
-      - Firma: settings/company.md
-      - Parameter-Übersicht: master-data/parameter-overview.md
-
-  # ----- Einstellungen -----------------------------------------------------
-  - Einstellungen:
-      - settings/index.md
-      - Sprache und Schriftgröße: settings/language-font.md
-      - Speicherorte: settings/file-locations.md
-      - Webserver und QR-Code: settings/web-server.md
-
-  # ----- TAB: Hilfe --------------------------------------------------------
+  # ----- TAB 6: Hilfe ---------------------------------------------------------
   - Hilfe:
-      - Hilfe und FAQ:
-          - help/index.md
-          - Lizenzprobleme: help/license-problems.md
-          - Login-Probleme: help/login-problems.md
-          - Druckprobleme: help/print-problems.md
-          - Update-Fehler: help/update-errors.md
-          - Bekannte Einschränkungen: help/limitations.md
-          - Support kontaktieren: help/support.md
+      - help/index.md
+      - Lizenzprobleme: help/license-problems.md
+      - Login-Probleme: help/login-problems.md
+      - Druckprobleme: help/print-problems.md
+      - Update-Fehler: help/update-errors.md
+      - Bekannte Einschränkungen: help/limitations.md
+      - Support kontaktieren: help/support.md
       - Anhang:
           - appendix/index.md
           - Tastenkürzel: appendix/keyboard-shortcuts.md

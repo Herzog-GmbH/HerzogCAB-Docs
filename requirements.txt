@@ -3,10 +3,12 @@
 #   python -m venv .venv
 #   .venv\Scripts\activate
 #   pip install -r requirements.txt
-# Lokal anzeigen:
-#   mkdocs serve
+# Lokal anzeigen (mkdocs.exe-Shim ist kaputt -> immer python -m mkdocs):
+#   python -m mkdocs serve -a 127.0.0.1:8800
 mkdocs==1.6.1
 mkdocs-material==9.5.49
 mkdocs-static-i18n==1.2.3
 mike==2.1.3
 pymdown-extensions==10.12
+mkdocs-glightbox==0.4.0
+mkdocs-redirects==1.2.2
