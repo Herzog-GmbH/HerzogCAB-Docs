@@ -114,7 +114,7 @@ Schritt für Schritt ans Ziel.
 
     ---
 
-    Von der Geflechtart über die Besetzung und Färbung bis zum gedruckten
+    Von der Geflechtsart über die Besetzung und Färbung bis zum gedruckten
     Design-Blatt.
 
     [:octicons-arrow-right-24: Ablauf öffnen](tasks/design-from-scratch.md)
@@ -161,7 +161,7 @@ Schritt für Schritt ans Ziel.
     Der Designer beherrscht jetzt zusätzlich Quadratgeflechte und
     Packungsgeflechte mit ihren Besetzungsvarianten.
 
-    [:octicons-arrow-right-24: Geflechtart und Parameter](designer/parameters.md)
+    [:octicons-arrow-right-24: Geflechtsart und Parameter](designer/parameters.md)
 
 - :material-animation-play: __Gangbahn-Animation__
 

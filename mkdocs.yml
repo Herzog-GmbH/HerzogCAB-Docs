@@ -278,7 +278,7 @@ nav:
           - 3D-Hallenansicht: hall-planner/view-3d.md
       - Designer:
           - designer/index.md
-          - Geflechtart und Parameter: designer/parameters.md
+          - Geflechtsart und Parameter: designer/parameters.md
           - Färben und Texturieren: designer/painting.md
           - Besetzung und Gangbahn-Animation: designer/animation.md
           - 3D-Ansicht: designer/view-3d.md

@@ -138,5 +138,5 @@ umfasst alle Farb- und Texturzuweisungen seit dem Öffnen des Designs.
 
 * [Farben (Stammdaten)](../master-data/colors.md) — Paletten und Farben mit Pantone-/RAL-Referenz pflegen
 * [Besetzung und Gangbahn-Animation](animation.md) — Farbbelegung entlang der Gangbahn rotieren
-* [Geflechtart und Parameter](parameters.md) — Fachung und Geflechtsart einstellen
+* [Geflechtsart und Parameter](parameters.md) — Fachung und Geflechtsart einstellen
 * [Ein Design von Grund auf entwerfen](../tasks/design-from-scratch.md)

@@ -16,7 +16,7 @@
   Spulmaschinen). Der Hallenplaner gruppiert Maschinen jetzt nach Flecht- und
   Spulmaschinen, und die Startseite unterscheidet beide Auftragsarten.
 * **Quadratgeflecht und Packungsgeflecht im Designer** – zwei neue
-  Geflechtarten mit eigenen Besetzungsvarianten und Gangbahn-Animation.
+  Geflechtsarten mit eigenen Besetzungsvarianten und Gangbahn-Animation.
 * **Gangbahn-Animation** – der Designer zeigt jetzt animiert, wie sich die
   Klöppel durch die Maschine bewegen und das Geflecht Lage für Lage
   entsteht, mit Geschwindigkeits-Buttons. Verfügbar für Rund-, Quadrat-,

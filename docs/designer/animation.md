@@ -114,5 +114,5 @@ Versatzmuster. Flechtbild, Klöppeltabelle und Übersicht wandern gemeinsam mit.
 ## Verwandte Seiten
 
 * [Färben und Texturieren](painting.md) — die Farben, die hier rotiert und animiert werden
-* [Geflechtart und Parameter](parameters.md) — Radanordnung und Klöppelzahl festlegen
+* [Geflechtsart und Parameter](parameters.md) — Radanordnung und Klöppelzahl festlegen
 * [3D-Ansicht](view-3d.md) — das fertige Muster am runden Strang betrachten

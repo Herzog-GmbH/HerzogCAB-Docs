@@ -56,4 +56,4 @@ schaltet der Designer automatisch auf die 2D-Darstellung zurück.
 
 * [Designer-Überblick](index.md) — Zoomen und Verschieben der Vorschau
 * [Färben und Texturieren](painting.md) — Texturdarstellung für den realistischen Eindruck
-* [Geflechtart und Parameter](parameters.md) — Geflechtsart wählen
+* [Geflechtsart und Parameter](parameters.md) — Geflechtsart wählen

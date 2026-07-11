@@ -17,7 +17,7 @@
 | **Klöppel** | Spulenträger an einer Flechtmaschine (engl. *Carrier*). |
 | **LDAP** | *Lightweight Directory Access Protocol* – Standardprotokoll für Verzeichnisdienste wie Active Directory. Herzog CAB kann Benutzer darüber anmelden und importieren, siehe [Authentifizierung](../admin/authentication.md). |
 | **Maintenance-Tool** | Update-/Deinstallationswerkzeug von Herzog CAB. |
-| **Packungsgeflecht** | Geflechtart mit besonders dichter Klöppelpackung (z. B. 12 oder 36 Klöppel je nach Ausführung), geflochten über mehrere Gangbahnen. |
+| **Packungsgeflecht** | Geflechtsart mit besonders dichter Klöppelpackung (z. B. 12 oder 36 Klöppel je nach Ausführung), geflochten über mehrere Gangbahnen. |
 | **PCD** | Pitch Circle Diameter (Flügelteilkreis-Durchmesser). |
 | **Profil** | Mandant/Arbeitsbereich – verbindet einen Benutzer mit einem Workspace und den Webserver-Optionen. |
 | **Quadratgeflecht** | Flachgeflecht mit quadratischem Querschnitt, geflochten aus 8 Klöppeln auf 2 Gangbahnen. |
