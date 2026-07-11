@@ -55,6 +55,29 @@ jobs:
       - name: Build documentation
         run: mkdocs build --strict --site-dir ./_site/handbuch
 
+      # Schritt 2b: F1-Mapping validieren - jeder Pfad in f1-mapping.json
+      # muss auf eine real gebaute Seite zeigen (Drift-Schutz App <-> Handbuch).
+      - name: Validate F1 mapping
+        run: |
+          python - <<'EOF'
+          import json, os, sys
+          with open('f1-mapping.json', encoding='utf-8') as f:
+              mapping = json.load(f)
+          site = os.path.join('_site', 'handbuch')
+          errors = []
+          for key, path in mapping.items():
+              if key.startswith('_') or key == '$comment':
+                  continue
+              target = os.path.join(site, path.strip('/'), 'index.html') if path else os.path.join(site, 'index.html')
+              if not os.path.isfile(target):
+                  errors.append(f"  {key} -> {path} (fehlt: {target})")
+          if errors:
+              print("F1-Mapping zeigt auf nicht existierende Seiten:")
+              print("\n".join(errors))
+              sys.exit(1)
+          print(f"F1-Mapping OK: {sum(1 for k in mapping if not k.startswith('_') and k != '$comment')} Keys validiert.")
+          EOF
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

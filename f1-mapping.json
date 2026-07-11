@@ -1,0 +1,98 @@
+{
+  "$comment": "KANONISCHE F1-Zuordnung App-Nav-Key -> Handbuch-Pfad (relativ zur Basis-URL, mit Trailing-Slash). Diese Datei wird in die App als Qt-Ressource vendored (Resources/help/f1-mapping.json). Beim Verschieben/Umbenennen von Handbuch-Seiten IMMER mitpflegen - der CI-Check in .github/workflows/docs.yml validiert jeden Pfad gegen die gebaute Site. Unbekannter/leerer Key -> Startseite (leerer Pfad).",
+  "_baseUrlOnline": "https://cab.herzog-online.com/handbuch/",
+  "_baseUrlLocal": "http://127.0.0.1:8800/handbuch/",
+  "_fallback": "",
+
+  "home": "basics/home/",
+  "favorites": "basics/favorites/",
+
+  "uiJobs": "orders/",
+  "jobs": "orders/",
+  "jobEditor": "orders/braiding-order/",
+  "windingOrderEditor": "orders/winding-order/",
+
+  "machinePark": "machine-park/",
+  "machines": "master-data/braiding-machines/",
+
+  "productionLayout": "hall-planner/",
+  "productionLayoutEditor": "hall-planner/editor/",
+
+  "uiDesigner": "designer/",
+  "designs": "designer/",
+  "designer": "designer/",
+
+  "calculations": "calculations/",
+  "material": "calculations/material/",
+  "product": "calculations/product/",
+  "hollowBraid": "calculations/tubular-braid/",
+  "production": "calculations/production/",
+  "windingCalcs": "calculations/winding/",
+
+  "masterdata": "master-data/",
+  "uiCustomers": "master-data/customers/",
+  "customers": "master-data/customers/",
+  "uiProduct": "master-data/designs/",
+  "braidingMachines": "master-data/braiding-machines/",
+  "braiding_machines": "master-data/braiding-machines/",
+  "windingMachines": "master-data/winding-machines/",
+  "floorPlans": "master-data/floor-plans/",
+  "mediaLibrary": "master-data/media/",
+  "materials": "master-data/materials/",
+  "bobbins": "master-data/bobbins/",
+  "uiColors": "master-data/colors/",
+  "colors": "master-data/colors/",
+
+  "output": "print-templates/",
+  "uiPrintEditor": "print-templates/",
+  "print_editor": "print-templates/",
+
+  "experts": "parameter-overview/",
+  "parameterExplorer": "parameter-overview/",
+
+  "systemAdmin": "admin/",
+  "userManagement": "admin/users/",
+  "roleManagement": "admin/roles/",
+  "loginSettings": "admin/authentication/",
+  "profileManagement": "admin/profiles/",
+  "storageLocation": "admin/storage-location/",
+  "companyData": "admin/company/",
+  "settingsDialog": "admin/settings/",
+
+  "linearDensity": "calculations/material/linear-density/",
+  "conversionOfLinearDensity": "calculations/material/linear-density-conversion/",
+  "materialDiameter": "calculations/material/material-diameter/",
+  "requiredMaterial": "calculations/material/material-diameter-product/",
+  "requiredPly": "calculations/material/required-ply/",
+  "materialLengthOnBobbin": "calculations/material/material-length/",
+  "bobinVolume": "calculations/material/bobbin-volume/",
+
+  "braidAngle": "calculations/product/braid-angle/",
+  "layLength": "calculations/product/lay-length/",
+  "conversionOfBraidDensity": "calculations/product/picks-density/",
+  "productDiameter": "calculations/product/product-diameter/",
+  "productLength": "calculations/product/rope-length/",
+  "productLengthOnDrum": "calculations/product/rope-length-on-drum/",
+  "productWeight": "calculations/product/rope-weight/",
+  "coreCoverProduct": "calculations/product/core-sheath/",
+
+  "numberOfCarriers": "calculations/tubular-braid/tube-carriers/",
+  "diameter": "calculations/tubular-braid/tube-diameter/",
+  "materialWidth": "calculations/tubular-braid/yarn-width/",
+  "covering": "calculations/tubular-braid/tube-cover/",
+
+  "productionSpeed": "calculations/production/production-speed/",
+  "machineDimensons": "calculations/production/dimensions/",
+  "machineRunningTimePerBobbinSet": "calculations/production/run-time-bobbin-set/",
+  "changeGearRubberFeedDevice": "calculations/production/change-gears/",
+
+  "windingTime": "calculations/winding/winding-time/",
+  "windingLineSpeed": "calculations/winding/line-speed/",
+  "yarnTension": "calculations/winding/yarn-tension/",
+  "bobbinCapacity": "calculations/winding/bobbin-capacity/",
+  "bobbinWeight": "calculations/winding/bobbin-weight/",
+  "windingMaterialDemand": "calculations/winding/material-demand/",
+  "bobbinsFromSupplierSpool": "calculations/winding/from-supplier-spool/",
+  "residualLength": "calculations/winding/residual-length/",
+  "numberOfWindingMachines": "calculations/winding/number-of-winders/"
+}
