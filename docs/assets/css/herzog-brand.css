@@ -134,12 +134,22 @@ body, .md-typeset {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Material-Default ist 0.8rem (12.8px) - wir gehen auf 16.4px hoch,
-   damit der Lesefluss zur Landing-Page passt und Absaetze nicht
-   gedraengt wirken. */
+/* Gesamt-Skalierung (07/2026, Wunsch Elke: alles ~80%).
+   Material setzt die Root-Schrift auf 125% (20px) und erhoeht sie auf
+   sehr breiten Monitoren sogar auf 137,5%/150% - dadurch wirkte alles
+   zu gross. Wir pinnen die Root-Groesse auf 100% (16px): SAEMTLICHE
+   rem-basierten Groessen (Text, Navigation, Tabs, Karten, Abstaende)
+   skalieren damit einheitlich auf ~80% - wie Browser-Zoom 80%, nur
+   dauerhaft. Diese Regel gewinnt auch gegen Materials Breakpoint-
+   Erhoehungen, weil unser Stylesheet nach Materials geladen wird. */
+html {
+  font-size: 100%;
+}
+
+/* Fliesstext: 1.025rem = 16.4px bei Root 100% (vorher 20.5px). */
 .md-typeset {
   font-size: 1.025rem;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .md-typeset p,
