@@ -1150,12 +1150,27 @@ function renderReleases(releases) {
 
     const isLatest = idx === 0;
     const verClass = isLatest ? '' : ' past';
-    const installer = (r.assets || []).find(a => /installer/i.test(a.name) && /\.exe$/i.test(a.name));
-    const downloadBtn = installer
-      ? `<a class="release-download" href="${installer.url}" target="_blank" rel="noopener">
-           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-           Installer herunterladen (${fmtSize(installer.size)})
-         </a>` : '';
+    // Ein Release kann mehrere Editionen tragen: Vollversion und Designer.
+    // Die Reihenfolge der Assets kommt von der GitHub-API und ist alphabetisch,
+    // "Designer" stuende also VOR "Installer" - deshalb hier fest sortieren,
+    // damit die Vollversion immer zuerst steht. Frueher nahm ein .find() nur
+    // das erste Treffer-Asset, was den Designer zum Hauptdownload gemacht haette.
+    const isDesignerAsset = a => /designer/i.test(a.name);
+    const installers = (r.assets || [])
+      .filter(a => /installer/i.test(a.name) && /\.exe$/i.test(a.name))
+      .sort((a, b) => (isDesignerAsset(a) ? 1 : 0) - (isDesignerAsset(b) ? 1 : 0));
+    const dlIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
+    const downloadBtn = installers.map(a => {
+      // Bei nur einer Datei bleibt die bisherige Beschriftung - aeltere
+      // Releases sollen unveraendert aussehen.
+      const label = installers.length > 1
+        ? (isDesignerAsset(a) ? 'Herzog CAB Designer' : 'Herzog CAB')
+        : 'Installer';
+      return `<a class="release-download" href="${a.url}" target="_blank" rel="noopener">
+           ${dlIcon}
+           ${label} herunterladen (${fmtSize(a.size)})
+         </a>`;
+    }).join('');
 
     const bodyHtml = marked.parse(sanitizeBody(r.body || ''));
     rel.innerHTML = `
