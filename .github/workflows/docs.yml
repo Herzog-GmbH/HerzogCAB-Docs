@@ -9,6 +9,7 @@ on:
       - 'homepage/**'
       - 'mkdocs.yml'
       - 'requirements.txt'
+      - '_tools/embed_releases.py'
       - '.github/workflows/docs.yml'
   workflow_dispatch:
 
@@ -49,6 +50,18 @@ jobs:
           else
             echo "Hinweis: homepage/ fehlt - es wird nur das Handbuch gebaut."
           fi
+
+      # Schritt 1b: Release-Fallback in die kopierte index.html einbetten.
+      # Die Seite holt die Releases im Browser live von der GitHub-API.
+      # Schlaegt das fehl - unauthentifiziert erlaubt GitHub nur 60 Abrufe
+      # pro Stunde und IP - rendert sie aus EMBEDDED_RELEASES. Diese Liste
+      # war frueher von Hand gepflegt und hing vier Versionen hinterher,
+      # jetzt entsteht sie bei jedem Build neu. Ist die API nicht erreichbar,
+      # bricht der Build ab und der bisherige Stand der Seite bleibt online.
+      - name: Embed release fallback
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python _tools/embed_releases.py _site/index.html
 
       # Schritt 2: mkdocs in _site/handbuch/ bauen.
       # Das gibt uns cab.herzog-online.com/handbuch/ -> Online-Handbuch.
