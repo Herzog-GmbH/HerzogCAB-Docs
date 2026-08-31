@@ -136,6 +136,13 @@ img,video{max-width:100%;display:block}
 .nav-links a{display:flex;align-items:center;color:var(--ink-2);font-weight:400;
   transition:color .3s cubic-bezier(.455,.03,.515,.955)}
 .nav-links a:hover{color:var(--blue);text-decoration:none}
+/* Das Handbuch ist noch nicht freigegeben. Es steht sichtbar in der Leiste,
+   damit man weiss, dass es kommt — aber ausgegraut und nicht anklickbar. */
+.nav-links .bald{display:flex;align-items:center;gap:.4rem;color:var(--muted);
+  opacity:.55;cursor:default;user-select:none}
+.nav-links .bald .marke{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.08em;
+  text-transform:uppercase;border:1px solid currentColor;border-radius:1280px;
+  padding:.1em .45em;line-height:1.4}
 .nav-right{display:flex;align-items:center;gap:.7rem;margin-left:auto;flex:none}
 .tt{width:36px;height:36px;display:grid;place-items:center;border-radius:4px;
   border:1px solid var(--rule);background:transparent;color:var(--ink-2);cursor:pointer}
@@ -675,7 +682,7 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
       <a href="#download">Download</a>
       <a href="#lizenz">Lizenz</a>
       <a href="#releases">Versionen</a>
-      <a href="/handbuch/">Handbuch</a>
+      <span class="bald" title="Das Handbuch wird gerade fertiggestellt">Handbuch<span class="marke">bald</span></span>
     </div>
     <div class="nav-right">
       <button class="tt" id="tt" type="button" aria-label="Helle oder dunkle Darstellung">
@@ -1105,8 +1112,9 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
     <div class="karten">
       <div class="karte reveal">
         <h3>Handbuch</h3>
-        <p>Alle Module Schritt für Schritt, mit Bildern und den Rechenwegen hinter den Formeln.</p>
-        <a class="btn btn-outline" href="/handbuch/">Handbuch öffnen</a>
+        <p>Alle Module Schritt für Schritt, mit Bildern und den Rechenwegen hinter den Formeln. Wir stellen es gerade fertig.</p>
+        <span class="btn btn-outline" aria-disabled="true"
+              style="opacity:.5;cursor:default;pointer-events:none">Bald verfügbar</span>
       </div>
       <div class="karte reveal">
         <h3>Fehler melden</h3>
