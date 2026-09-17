@@ -24,3 +24,7 @@ desktop.ini
 /be.txt
 /build_out.txt
 /build_err.txt
+
+# Sitzungs-Cookies des Screenshot-Skripts (nie einchecken)
+/_tools/state.json
+/_tools/stop_login
