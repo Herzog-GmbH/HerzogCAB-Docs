@@ -13,8 +13,13 @@ Verbindliche Schreibregeln für alle Handbuch-Seiten (seit Neuaufbau 07/2026).
 ## Die drei Inhaltsebenen (WICHTIGSTE Regel)
 
 1. **Grundlagen** (`basics/`) — bereichsübergreifende Bedienkonzepte. Werden verlinkt, nie kopiert.
-2. **Funktionen** (`orders/ … parameter-overview/`) — je App-Bildschirm GENAU EINE Referenzseite. Hier — und nur hier — wird jedes Feld und jede Schaltfläche erklärt. Das sind die F1-Zielseiten.
+2. **Desktop-App** (`orders/ … parameter-overview/`) — je App-Bildschirm GENAU EINE Referenzseite. Hier — und nur hier — wird jedes Feld und jede Schaltfläche erklärt. Das sind die F1-Zielseiten.
 3. **Aufgaben & Abläufe** (`tasks/`) — Workflows über mehrere Module. Verlinken auf Referenz + Grundlagen, erklären selbst KEINE Felder.
+
+Dazu seit 09/2026 zwei Ergänzungen, die dieselbe Regel einhalten:
+
+* **Web-App** (`web/`) — je Modul der Web-App eine Seite mit Bedienung im Browser und den *Unterschieden* zur Desktop-App. Felder, die es in beiden gibt (Auftrags-Reiter, Rechner, Maschinendaten), werden **nicht** wiederholt, sondern auf die Desktop-Referenz verlinkt. Nur Web-eigene Bildschirme (Konto und Benutzer, Abo, Rollen, Import, Registrierung) werden dort vollständig beschrieben.
+* **Lizenzportal** (`portal/`) — je Portal-Seite eine Referenzseite (Konto, Benutzer, Anfragen, Download, Sicherheit).
 
 **How-To verlinkt, Referenz beschreibt.** Jedes Feld an genau einer Stelle.
 
@@ -121,6 +126,8 @@ Wo ein Bild hingehört, aber noch fehlt, IMMER exakt dieses Muster (auffindbar �
 ```
 
 Bestehende, noch gültige Screenshots weiterverwenden (`docs/assets/screenshots/…`); Bildpfade relativ zur Seite (`../assets/…` bzw. `../../assets/…`).
+
+**Web-App und Lizenzportal** werden nicht per Platzhalter, sondern per Skript bebildert: `_tools/web_screenshots.py` (Playwright) rendert die lokale Testumgebung (Docker + Vite) mit 1440 × 900 px in `docs/assets/screenshots/web/` und `…/portal/`. Bei Oberflächenänderungen das Skript erneut laufen lassen statt von Hand zu fotografieren.
 
 ## Screenshot-Stil (für die Aufnahme)
 

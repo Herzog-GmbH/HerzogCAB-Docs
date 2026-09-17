@@ -12,8 +12,9 @@ Druck und Updates. Kommen Sie mit dieser Seite nicht weiter, lesen Sie
 
     ---
 
-    Herzog CAB startet nicht oder meldet, dass keine gültige Lizenz gefunden
-    wurde – per Dongle, Software-Lizenz oder im Netzwerk.
+    Herzog CAB startet nicht, findet keinen freien Platz im Kundenkonto oder
+    meldet, dass keine gültige Lizenz gefunden wurde – Konto, Dongle,
+    Software-Lizenz oder Netzwerk.
 
     [:octicons-arrow-right-24: Lösungen ansehen](license-problems.md)
 
@@ -21,8 +22,9 @@ Druck und Updates. Kommen Sie mit dieser Seite nicht weiter, lesen Sie
 
     ---
 
-    Passwort oder Login falsch, Konto gesperrt oder deaktiviert – sowie
-    Probleme bei der Anmeldung mit Microsoft Entra ID.
+    Passwort falsch, Code der Authenticator-App abgelehnt, Benutzer
+    deaktiviert, alle Web-Plätze belegt – sowie Probleme bei der Anmeldung
+    mit Microsoft Entra ID.
 
     [:octicons-arrow-right-24: Lösungen ansehen](login-problems.md)
 

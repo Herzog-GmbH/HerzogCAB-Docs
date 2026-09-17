@@ -142,9 +142,15 @@ dargestellt wird:
 
 | Feld | Auswahl |
 |---|---|
-| **Geflechtsart** | Automatisch, Rund, Litze |
+| **Geflechtsart** | **Automatisch**, **Rund**, **Litze**, **Pro Bahn (mehrspaltig)**. *Automatisch* wählt für Rundgeflecht die zwei Spalten Linkslauf/Rechtslauf, für Litze eine durchlaufende Spalte und für Packungs- und Spiralflechter **eine Spalte je Gangbahn** (Kopf *Bahn 1*, *Bahn 2*, …; Zeilennummer je Bahn ab 1). *Litze* erzwingt stattdessen eine einzelne Spalte. |
 | **Angezeigte Läufe** | Beide Spalten, Nur linker Lauf, Nur rechter Lauf (nur bei Rundgeflecht wählbar) |
 | **Angezeigter Wert** | Farb-ID, Farbname, Hex-Wert, Pantone |
+| **Zellendarstellung** | **Farbfläche**: Zelle vollflächig in der Klöppelfarbe (klassisch). **Farbfeld + Nummer**: weiße Zelle mit Nummer und Wert links und einem kleinen, abgerundeten Farbfeld rechts — kompakte Zeilen, Zebra-Streifen, helles Gitter und der Kopf im Herzog-Blau, wie die übrigen Datentabellen. |
+
+!!! info "Direktdruck ohne Vorlage"
+    Drucken Sie ein Design direkt aus dem Designer ohne Vorlage, nutzt
+    Herzog CAB immer die **Farbfläche** und wählt die Spalten automatisch.
+    Die Umschalter gibt es nur am Vorlagen-Element.
 
 ### Automatisch befüllte Elemente ohne eigenen Dialog
 

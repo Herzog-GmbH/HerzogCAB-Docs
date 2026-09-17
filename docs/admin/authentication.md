@@ -4,6 +4,13 @@
 
 ## Wofür Sie diesen Bereich nutzen
 
+!!! info "Nur bei Dongle-Installationen"
+    Microsoft Entra ID und LDAP ergänzen die **lokale** Benutzerverwaltung
+    der Desktop-App. Bezieht Herzog CAB seine Lizenz aus dem
+    [Kundenkonto](../setup/account.md), kommen Benutzer und Passwörter aus
+    dem Konto und dieser Bereich ist ohne Wirkung; die Web-App kennt
+    ausschließlich Kontobenutzer.
+
 Unter *Systemverwaltung > Authentifizierung* binden Sie Herzog CAB an das
 Benutzerverzeichnis Ihres Unternehmens an. Danach können sich Mitarbeiter
 zusätzlich zu den lokalen Konten

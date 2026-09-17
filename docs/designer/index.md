@@ -20,8 +20,8 @@ als Maschinenbelegblatt.
 
     ---
 
-    Rund-, Litzen-, Quadrat- und Packungsgeflecht; Bindung, Klöppelzahl,
-    Flechtwinkel, Fachung.
+    Rund-, Litzen-, Quadrat-, Spiral-, Packungs- und Soutachegeflecht;
+    Bindung, Klöppelzahl, Flechtwinkel, Fachung, Maßzeile.
 
     [:octicons-arrow-right-24: Geflechtsart und Parameter](parameters.md)
 
@@ -43,13 +43,14 @@ als Maschinenbelegblatt.
 
     [:octicons-arrow-right-24: Besetzung und Animation](animation.md)
 
-- :material-rotate-3d: **3D-Ansicht**
+- :material-rotate-3d: **Ansichten und 3D-Ansicht**
 
     ---
 
-    Das Flechtbild als runder Geflechtstrang statt als flacher Ausschnitt.
+    Volle und halbe Abwicklung, die drehbaren Projektionen Zylinder, Vierkant
+    und Kante und das echte 3D-Modell des Geflechts.
 
-    [:octicons-arrow-right-24: 3D-Ansicht](view-3d.md)
+    [:octicons-arrow-right-24: Ansichten und 3D-Ansicht](view-3d.md)
 
 - :material-content-save-outline: **Speichern und Drucken**
 
@@ -86,9 +87,10 @@ aus fünf Bereichen:
 
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Designer-Bearbeitungsansicht mit geöffnetem Rundgeflecht-Design:
-    Werkzeugleiste oben, Dokument-Kopfzeile, links Parameter-Panel mit allen
-    vier Geflechtsarten und Besetzungsübersicht, Mitte Klöppeltabelle, rechts
-    Flechtbild-Vorschau.
+    Werkzeugleiste oben (mit den Ansichts-Schaltern Voll/Halb/Zylinder/3D),
+    Dokument-Kopfzeile, links Parameter-Panel mit den Auswahllisten
+    Geflechtsart und Geflechtsbindung und der Besetzungsübersicht, Mitte
+    Klöppeltabelle, rechts Flechtbild-Vorschau mit Maßzeile.
     **So erzeugen:** *Designer* öffnen, **Neu** klicken, Fenster breit ziehen
     (Farb- und Texturpalette sichtbar in der Werkzeugleiste), einige Klöppel
     einfärben.
@@ -100,7 +102,7 @@ aus fünf Bereichen:
 | **Dokument-Kopfzeile** (je Design-Fenster) | Zusammenfassung des Designs und die Aktionen **Drucken**, **Speichern**, **Speichern unter neuem Namen**, **Ansicht schließen**. |
 | **Parameter-Panel** (links) | Designname, [Geflechtsart und Parameter](parameters.md) sowie darunter die [Besetzungsübersicht](animation.md). |
 | **Klöppeltabelle** (Mitte) | Alle Klöppelpositionen mit ihrer aktuellen Farbe — hier können Sie auch direkt färben. |
-| **Vorschau** (rechts) | Das Flechtbild, das aus der aktuellen Farbbelegung entsteht, mit eigenen Zoom-Schaltflächen. |
+| **Vorschau** (rechts) | Das Flechtbild, das aus der aktuellen Farbbelegung entsteht, mit eigenen Zoom-Schaltflächen und der [Maßzeile](parameters.md#mazeile-in-der-vorschau) (Material-Ø, Bedeckung, Geflechts-Ø); in der 3D-Ansicht das räumliche Modell. |
 
 ## Bedienelemente im Detail
 
@@ -108,14 +110,14 @@ aus fünf Bereichen:
 
 | Schaltfläche | Funktion |
 |---|---|
-| **Neu** (++ctrl+n++) | Öffnet ein neues Designfenster mit Standardwerten (Rundgeflecht, Normale Besetzung 1-1). Ist bereits ein Design geöffnet, entsteht ein zweites Fenster daneben (siehe unten). |
+| **Neu** (++ctrl+n++) | Öffnet ein neues Designfenster mit den Vorgaben aus [Einstellungen > Design](../admin/settings/legacy-import.md) (Standard: Rundgeflecht, 16 Klöppel, 45°, Normale Besetzung 1-1). Ist bereits ein Design geöffnet, entsteht ein zweites Fenster daneben (siehe unten). |
 | **Laden** (++ctrl+o++) | Wechselt in die [Design-Bibliothek](../master-data/designs.md), wo Sie ein gespeichertes Design auswählen und öffnen. |
 | **Färben** | Malmodus: Klicks im Flechtbild oder in der Klöppeltabelle färben Klöppel mit der aktiven Farbe ein — siehe [Färben und Texturieren](painting.md). |
 | **Bewegen** | Verschiebemodus: mit gedrückter linker Maustaste verschieben Sie die Ansicht, ohne zu färben. |
 | **Linkslauf** / **Rechtslauf** | Seitenfilter für das Färben: legt fest, welche Laufrichtung ein Klick einfärbt. Nur bei Rund- und Quadratgeflecht sichtbar (zwei Läufe). |
 | **Zurück** (++ctrl+z++) / **Vor** (++ctrl+y++) | Macht den letzten Färbeschritt rückgängig bzw. stellt ihn wieder her. |
 | **Labels** | Blendet die Klöppelbezeichnungen im Flechtbild ein oder aus (Standard: ein). |
-| **3D** | Schaltet die [3D-Ansicht](view-3d.md) ein oder aus (nur Rund- und Quadratgeflecht). |
+| **Voll** / **Halb** / **Zylinder** (bzw. **Vierkant**, **Kante**) / **3D** | Die Ansichts-Schalter: flache Abwicklung, halbe Abwicklung, drehbare Projektion und das echte 3D-Modell — welche erscheinen, hängt von der Geflechtsart ab, siehe [Ansichten und 3D-Ansicht](view-3d.md). |
 | **Textur** | Schaltet die Texturdarstellung im Flechtbild ein oder aus (Standard: ein). |
 | **Muster** | Öffnet die Texturpalette zur Auswahl der Faser-Textur. |
 | **Farbe** / **Farbpalette** | Die Farbpalette mit aktiver Farbe, Bibliotheksfarben und Benutzerfarben. |
@@ -139,7 +141,9 @@ Jedes Design-Fenster hat eine eigene Kopfzeile:
   [Design-Bibliothek](../master-data/designs.md) ab, siehe
   [Speichern und Drucken](save-print.md).
 * **Ansicht schließen** (✕) — schließt dieses Design-Fenster. Bei
-  ungespeicherten Änderungen fragt die App vorher nach.
+  ungespeicherten Änderungen fragt die App vorher nach — oder speichert
+  automatisch, wenn das unter [Einstellungen > Design](../admin/settings/legacy-import.md)
+  so eingestellt ist.
 
 ### Zwei Designs nebeneinander vergleichen
 
@@ -184,3 +188,5 @@ Bearbeitungsansicht.
 * [Design-Bibliothek](../master-data/designs.md) — gespeicherte Designs verwalten
 * [Farben (Stammdaten)](../master-data/colors.md) — Farbpaletten für den Designer pflegen
 * [Flechtauftrag](../orders/braiding-order.md) — Designs im Auftrag verwenden
+* [Design (Einstellungen)](../admin/settings/legacy-import.md) — Vorgaben, Ansicht, Animation, Speichern
+* [Designs und Designer in der Web-App](../web/designer.md)

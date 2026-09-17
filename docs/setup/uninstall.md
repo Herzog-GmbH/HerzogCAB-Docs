@@ -10,11 +10,23 @@ standardmäßig **unangetastet**.
 
 ```mermaid
 flowchart LR
-  A[Herzog CAB beenden] --> B[Programm deinstallieren]
-  B --> C{Daten auch entfernen?}
-  C -- Nein --> D[Fertig — Daten bleiben erhalten]
-  C -- Ja --> E[Arbeitsverzeichnis + ProgramData manuell löschen]
+  A[Vom Konto abmelden] --> B[Herzog CAB beenden]
+  B --> C[Programm deinstallieren]
+  C --> D{Daten auch entfernen?}
+  D -- Nein --> E[Fertig — Daten bleiben erhalten]
+  D -- Ja --> F[Arbeitsverzeichnis + ProgramData manuell löschen]
 ```
+
+## Schritt 0: Rechner vom Kundenkonto abmelden
+
+Bezieht Herzog CAB seine Lizenz aus dem [Kundenkonto](account.md), belegt
+dieser Rechner dort Plätze. Geben Sie sie vor der Deinstallation frei:
+*Datei > Einstellungen*, Tab **Lizenz**, Schaltfläche **Von diesem Rechner
+abmelden** (siehe [Lizenz und Cloud](../admin/settings/license.md)).
+Vergessen ist kein Beinbruch — ein Administrator kann die Plätze im
+[Lizenzportal](../portal/licenses.md) freigeben, und nach sieben Tagen ohne
+Programmstart werden sie von selbst frei. Bestandskunden mit Dongle
+überspringen diesen Schritt.
 
 ## Schritt 1: Herzog CAB beenden
 

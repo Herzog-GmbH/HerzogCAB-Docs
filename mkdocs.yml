@@ -7,16 +7,16 @@
 # Statisch bauen: python -m mkdocs build     -> Ausgabe in ./site/
 # Deploy GH:      Wird automatisch via GitHub Actions auf gh-pages gepusht.
 #
-# Struktur seit 07/2026 (Neuaufbau): 6 Top-Tabs
-#   Loslegen | Grundlagen | Funktionen (= F1-Referenz) | Aufgaben & Abläufe |
-#   Verwaltung | Hilfe
+# Struktur seit 07/2026 (Neuaufbau), erweitert 09/2026 (2.0 + Web-App): 7 Top-Tabs
+#   Loslegen | Grundlagen | Desktop-App (= F1-Referenz) | Web-App |
+#   Aufgaben & Abläufe | Verwaltung (inkl. Lizenzportal) | Hilfe
 # Regeln: How-To verlinkt, Referenz beschreibt. Jedes Feld an genau EINER Stelle.
 # Keine Berechnungsformeln (Policy) - Standardsatz siehe STYLEGUIDE.md.
 # F1-Zuordnung App-Key -> Seite: f1-mapping.json (kanonisch, Repo-Root).
 # =============================================================================
 
 site_name: Herzog CAB - Handbuch
-site_description: Anwenderhandbuch für Herzog CAB - die Kalkulations- und Designsoftware für Flechtmaschinen.
+site_description: Anwenderhandbuch für Herzog CAB - die Kalkulations- und Designsoftware für Flechtmaschinen, als Desktop-App und Web-App.
 site_author: Herzog GmbH
 # Custom Domain aktiv seit 2026-05-26 (cab.herzog-online.com → GitHub Pages).
 site_url: https://cab.herzog-online.com/handbuch/
@@ -54,7 +54,7 @@ theme:
     - navigation.instant.progress
     - navigation.instant.prefetch
     - navigation.tracking        # Anker in URL
-    # Tabs seit Neuaufbau 07/2026 AN: 6 aufgabenorientierte Einstiege in der
+    # Tabs seit Neuaufbau 07/2026 AN: 7 aufgabenorientierte Einstiege in der
     # Kopfleiste, kuerzere Sidebar je Tab (Brand-CSS stylt .md-tabs).
     - navigation.tabs
     - navigation.indexes         # index.md als Sektions-Startseite
@@ -234,7 +234,7 @@ extra:
   generator: false               # "Made with MkDocs" ausblenden
 
 # -----------------------------------------------------------------------------
-# Navigation  (6 Tabs; "Funktionen" spiegelt die Programm-Navigation = F1-Ziele)
+# Navigation  (7 Tabs; "Desktop-App" spiegelt die Programm-Navigation = F1-Ziele)
 # -----------------------------------------------------------------------------
 nav:
   - Start: index.md
@@ -244,9 +244,10 @@ nav:
       - setup/index.md
       - Systemvoraussetzungen: setup/system-requirements.md
       - Einsatz-Szenarien: setup/topology.md
-      - CodeMeter installieren: setup/codemeter.md
+      - Kundenkonto und Einladung: setup/account.md
       - Herzog CAB installieren: setup/installer.md
-      - Lizenz aktivieren: setup/activate-license.md
+      - Anmelden und Lizenz beziehen: setup/activate-license.md
+      - CodeMeter installieren (Dongle): setup/codemeter.md
       - Erststart und Einrichtung: setup/first-run.md
       - Updates installieren: setup/update.md
       - Deinstallation: setup/uninstall.md
@@ -263,9 +264,10 @@ nav:
       - So sind Berechnungsseiten aufgebaut: basics/calc-page-anatomy.md
       - Guided Tour: basics/guided-tour.md
       - Testversion und Kontingente: basics/trial-quotas.md
+      - Desktop-App oder Web-App?: basics/platforms.md
 
-  # ----- TAB 3: Funktionen (Referenz, Reihenfolge = Programm-Navigation) -----
-  - Funktionen:
+  # ----- TAB 3: Desktop-App (Referenz, Reihenfolge = Programm-Navigation) -----
+  - Desktop-App:
       - Aufträge:
           - orders/index.md
           - Flechtauftrag: orders/braiding-order.md
@@ -281,7 +283,7 @@ nav:
           - Geflechtsart und Parameter: designer/parameters.md
           - Färben und Texturieren: designer/painting.md
           - Besetzung und Gangbahn-Animation: designer/animation.md
-          - 3D-Ansicht: designer/view-3d.md
+          - Ansichten und 3D-Ansicht: designer/view-3d.md
           - Speichern und Drucken: designer/save-print.md
       - Berechnungen:
           - calculations/index.md
@@ -297,6 +299,7 @@ nav:
           - Produkt:
               - calculations/product/index.md
               - Flechtwinkel: calculations/product/braid-angle.md
+              - Flechtwinkel über Abzug: calculations/product/braid-angle-takeup.md
               - Geflechtsdichte: calculations/product/lay-length.md
               - Umrechnung Geflechtsdichte: calculations/product/picks-density.md
               - Produktdurchmesser: calculations/product/product-diameter.md
@@ -346,7 +349,30 @@ nav:
           - Vorschau und Druck: print-templates/preview-and-print.md
       - Parameter-Übersicht: parameter-overview/index.md
 
-  # ----- TAB 4: Aufgaben & Abläufe (Workflows) --------------------------------
+  # ----- TAB 4: Web-App (app.herzog-cab.com) ---------------------------------
+  - Web-App:
+      - web/index.md
+      - Anmelden und Konto wählen: web/login.md
+      - Oberfläche: web/interface.md
+      - Startseite: web/start.md
+      - Aufträge: web/orders.md
+      - Berechnungen: web/calculations.md
+      - Designs und Designer: web/designer.md
+      - Maschinen: web/machines.md
+      - Stammdaten: web/master-data.md
+      - Hallenplaner: web/hall-planner.md
+      - Drucken: web/print.md
+      - Benutzermenü:
+          - Einstellungen: web/settings.md
+          - Konto und Benutzer: web/account.md
+          - Abo und Kauf: web/subscription.md
+          - Firma: web/company.md
+          - Medienbibliothek: web/media.md
+          - Rollen: web/roles.md
+          - Import aus dem Desktop: web/import.md
+      - Testphase und Registrierung: web/trial.md
+
+  # ----- TAB 5: Aufgaben & Abläufe (Workflows) --------------------------------
   - Aufgaben & Abläufe:
       - tasks/index.md
       - Vom Kundenauftrag zum Maschinenzettel: tasks/order-to-machine-sheet.md
@@ -356,10 +382,18 @@ nav:
       - Material richtig kalkulieren: tasks/material-calculation.md
       - Eine Druckvorlage erstellen: tasks/create-print-template.md
       - Benutzer und Rollen einrichten: tasks/setup-users.md
+      - Daten vom Desktop in die Web-App bringen: tasks/desktop-to-web.md
 
-  # ----- TAB 5: Verwaltung ----------------------------------------------------
+  # ----- TAB 6: Verwaltung ----------------------------------------------------
   - Verwaltung:
       - admin/index.md
+      - Kundenkonto (Lizenzportal):
+          - portal/index.md
+          - Mein Konto — Bausteine, Rechner, Plätze: portal/licenses.md
+          - Benutzer einladen und verwalten: portal/users.md
+          - Lizenz anfordern: portal/requests.md
+          - Herunterladen: portal/download.md
+          - Passwort und zweiter Faktor: portal/security.md
       - Anmelden und Abmelden: admin/login.md
       - Benutzer verwalten: admin/users.md
       - Rollen und Berechtigungen: admin/roles.md
@@ -370,12 +404,13 @@ nav:
       - Firma: admin/company.md
       - Einstellungen:
           - admin/settings/index.md
-          - Darstellung, Sprache und Diagnose: admin/settings/appearance.md
+          - Allgemein — Sprache, Darstellung, Diagnose, Planung: admin/settings/appearance.md
           - Dateien und Ordner: admin/settings/files.md
-          - Legacy-Designimport: admin/settings/legacy-import.md
+          - Design — Designer-Vorgaben und Legacy-Import: admin/settings/legacy-import.md
+          - Lizenz und Cloud: admin/settings/license.md
           - Webserver und QR-Code: admin/settings/web-server.md
 
-  # ----- TAB 6: Hilfe ---------------------------------------------------------
+  # ----- TAB 7: Hilfe ---------------------------------------------------------
   - Hilfe:
       - help/index.md
       - Lizenzprobleme: help/license-problems.md

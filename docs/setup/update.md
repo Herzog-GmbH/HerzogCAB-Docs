@@ -68,12 +68,33 @@ Der Dialog **„Update verfügbar"** zeigt:
     4. Folgen Sie den Anweisungen, klicken Sie am Ende auf **Fertigstellen**.
     5. Starten Sie Herzog CAB neu.
 
+=== "Installer aus dem Lizenzportal"
+
+    Wer ein [Kundenkonto](account.md) hat, kann jede Version auch ohne
+    Maintenance-Tool einspielen:
+
+    1. Im [Lizenzportal](https://license.herzog-cab.com) auf
+       **Herunterladen** klicken und den aktuellen Installer laden.
+    2. Herzog CAB beenden und den Installer ausführen — er aktualisiert die
+       bestehende Installation an Ort und Stelle.
+    3. Herzog CAB neu starten. Die Anmeldung am Konto bleibt erhalten.
+
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Maintenance-Tool-Assistent im Schritt „Komponenten
     aktualisieren".
     **So erzeugen:** Maintenance-Tool über *Herzog > Herzog CAB
     Maintenance* öffnen und den Update-Schritt fotografieren.
     **Ziel-Datei:** `assets/screenshots/setup/maintenance-tool-update.png`
+
+!!! info "Update von Version 1.x auf 2.0"
+    Version 2.0 bringt das Kundenkonto mit. Bestandskunden mit **Dongle oder
+    CmAct-Lizenz** ändern nichts — der Dongle wird weiterhin erkannt und die
+    lokale Benutzerverwaltung bleibt. Nur wer von Herzog auf das
+    Kundenkonto umgestellt wurde, meldet den Rechner nach dem Update einmal
+    am Konto an (siehe [Anmelden und Lizenz beziehen](activate-license.md)).
+    Installationen der Version 1.0 (ohne Maintenance-Tool) lassen sich nicht
+    aktualisieren — dort ist eine Neuinstallation nötig; das
+    Arbeitsverzeichnis kann übernommen werden.
 
 ## Ergebnis
 

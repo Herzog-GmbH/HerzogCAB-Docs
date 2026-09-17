@@ -38,6 +38,18 @@ Herzog CAB liefert drei Standardrollen mit:
     verloren. Wenn Sie abweichende Rechte brauchen, legen Sie eine **eigene
     Rolle** an.
 
+!!! info "Rollen im Kontomodell"
+    Bezieht Herzog CAB seine Lizenz aus dem [Kundenkonto](../setup/account.md),
+    bringt jeder Benutzer seine Rolle aus dem Konto mit: **Administrator**
+    im Konto = globaler Administrator im Programm, **Bearbeiter** und
+    **Betrachter** = die gleichnamigen Standardrollen; Benutzer ohne Rolle
+    arbeiten als Bearbeiter. Diese Zuweisung gilt in allen Profilen und wird
+    bei jeder Online-Anmeldung bzw. über **Vom Kundenkonto aktualisieren**
+    in der [Benutzerverwaltung](users.md) nachgezogen. Eigene Rollen, die Sie
+    hier anlegen, können Sie einem Kontobenutzer zusätzlich je Profil
+    zuweisen. In der Web-App werden eigene Rollen getrennt gepflegt — siehe
+    [Rollen (Web-App)](../web/roles.md).
+
 ## Einzelne Rechte
 
 Eine Rolle setzt sich aus Einzelrechten zusammen, gruppiert nach Bereichen:

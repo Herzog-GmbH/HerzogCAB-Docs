@@ -2,11 +2,52 @@
 
 !!! question "Problemlösung — Anmeldung bei Herzog CAB schlägt fehl"
 
-Herzog CAB verlangt vor dem Öffnen des Arbeitsbereichs eine Anmeldung – lokal
-mit Login und Passwort, oder über **Microsoft Entra ID**. Grundlagen zur
-Anmeldung finden Sie unter [Login und Abmelden](../admin/login.md).
+Herzog CAB verlangt vor dem Öffnen des Arbeitsbereichs eine Anmeldung — mit
+dem **Kontobenutzer** (Regelfall seit 2.0), bei Dongle-Installationen lokal
+mit Login und Passwort oder über **Microsoft Entra ID**. Grundlagen zur
+Anmeldung finden Sie unter [Anmeldung und Abmelden](../admin/login.md).
 
-## Lokale Anmeldung (Login und Passwort)
+## Anmeldung mit dem Kontobenutzer (Desktop-App, Web-App, Lizenzportal)
+
+**„E-Mail-Adresse oder Passwort stimmen nicht."**
+Prüfen Sie die Adresse und die Feststelltaste. Das Passwort setzen Sie selbst
+über **Passwort vergessen** auf der Anmeldeseite des
+[Lizenzportals](../portal/index.md) zurück — der Link gilt eine Stunde. Das
+neue Passwort gilt sofort auch für Desktop- und Web-App.
+
+**Das Feld „Code (Authenticator-App)" erscheint.**
+Kein Fehler: Für Ihren Benutzer ist der [zweite Faktor](../portal/security.md)
+eingerichtet. Tragen Sie den aktuellen sechsstelligen Code ein. Stimmt der
+Code nicht, prüfen Sie die Uhrzeit des Handys; ist die App verloren, setzt
+Herzog den zweiten Faktor zurück ([Support](support.md)).
+
+**„Dieser Benutzer ist deaktiviert."**
+Ein Administrator Ihres Kontos hat den Zugang im Lizenzportal deaktiviert —
+siehe [Benutzer einladen und verwalten](../portal/users.md).
+
+**„Zu viele Fehlversuche. Bitte später erneut versuchen."**
+Der Lizenzserver bremst nach mehreren Fehlversuchen. Warten Sie einige
+Minuten.
+
+**„Der Lizenzserver ist nicht erreichbar … Offline anmelden kann sich nur, wer sich auf diesem Rechner schon einmal online angemeldet hat."**
+Ohne Verbindung lässt die Desktop-App nur Benutzer herein, die auf diesem
+Rechner schon einmal online angemeldet waren — mit dem Passwort von damals.
+Verbindung prüfen oder mit einem solchen Benutzer anmelden.
+
+**Einladungslink abgelaufen.**
+Der Link aus der Einladungsmail gilt drei Tage. Ein Administrator erneuert
+die Einladung im Lizenzportal unter **Benutzer**.
+
+**Die Web-App meldet „Belegt: n von m Plätzen".**
+Alle Web-Plätze des Kontos sind belegt. Ein Platz wird nach 15 Minuten ohne
+Aktivität oder beim Abmelden eines Kollegen frei; weitere Plätze fragt ein
+Administrator [an](../portal/requests.md).
+
+**Nach dem Anmelden erscheint „Kein Zugang zur Webapp".**
+Dem Konto fehlt der Web-Baustein oder die Testphase ist abgelaufen — siehe
+[Abo und Kauf](../web/subscription.md).
+
+## Lokale Anmeldung (Login und Passwort) — Dongle-Installationen
 
 **„Login oder Passwort ist falsch."**
 Prüfen Sie Groß-/Kleinschreibung und Feststelltaste. Nur ein Administrator
@@ -92,7 +133,9 @@ Konto umbenennen oder auflösen, bevor Sie sich mit Microsoft anmelden können.
 
 ## Verwandte Seiten
 
-* [Login und Abmelden](../admin/login.md)
+* [Anmeldung und Abmelden](../admin/login.md)
+* [Anmelden und Konto wählen (Web-App)](../web/login.md)
+* [Passwort und zweiter Faktor (Lizenzportal)](../portal/security.md)
 * [Authentifizierung (Entra ID / LDAP)](../admin/authentication.md)
 * [Eigenes Profil](../admin/my-profile.md)
 * [Rollen und Berechtigungen](../admin/roles.md)

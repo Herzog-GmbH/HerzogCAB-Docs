@@ -68,6 +68,7 @@
   "bobinVolume": "calculations/material/bobbin-volume/",
 
   "braidAngle": "calculations/product/braid-angle/",
+  "braidProcess": "calculations/product/braid-angle-takeup/",
   "layLength": "calculations/product/lay-length/",
   "conversionOfBraidDensity": "calculations/product/picks-density/",
   "productDiameter": "calculations/product/product-diameter/",

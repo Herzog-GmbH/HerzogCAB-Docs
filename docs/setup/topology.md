@@ -1,6 +1,6 @@
 # Einsatz-Szenarien
 
-!!! info "Konzept — Welche Topologie (Single-Client, Server, Mixed Setup) zu Ihrem Werk passt"
+!!! info "Konzept — Welche Topologie (Single-Client, Server, Mixed Setup, Web-App) zu Ihrem Werk passt"
 
 Bevor Sie loslegen, lohnt sich ein Blick auf die typischen Aufbauten.
 Herzog CAB hat eine eingebaute Userverwaltung — **mehrere Bediener
@@ -11,10 +11,13 @@ spannende Frage ist nicht „wie viele Bediener?", sondern **wo läuft was**:
 * **Workspace** (Aufträge, Stammdaten, Druckvorlagen) — lokal oder
   auf einem Datei-Server?
 * **Benutzer-DB** — pro PC oder zentral auf dem Anwendungs-Server?
-* **Lizenz** — lokal pro Rechner (CmDongle / CmActLicense) oder zentral
-  über einen **Wibu-Lizenzserver**?
+* **Lizenz** — seit Version 2.0 normalerweise aus dem **Kundenkonto**
+  (jeder Rechner zieht sich beim Start seinen Platz); bei Bestandskunden
+  lokal pro Rechner (CmDongle / CmActLicense) oder zentral über einen
+  **Wibu-Lizenzserver**.
 
-Daraus ergeben sich drei Setups, die in der Praxis vorkommen.
+Daraus ergeben sich vier Setups, die in der Praxis vorkommen — die ersten
+drei mit der Desktop-App, das vierte mit der Web-App im Browser.
 
 ---
 
@@ -48,12 +51,14 @@ liegen ebenfalls auf dem Server.
 ![Variant 2 — Single-Server: Bediener verbinden sich per RDP zu einem zentralen Server, der Herzog CAB, CodeMeter, Benutzer-DB und Workspace beherbergt.](../assets/topology/variant-2-single-server.png)
 
 !!! warning "Lizenz für Terminal-Server / RDP"
-    Standard-Einzelplatz-Lizenzen (CmDongle oder CmActLicense) decken
-    **keine parallelen RDP-Sitzungen** ab. Wenn mehrere Anwender
-    gleichzeitig Herzog CAB über RDP nutzen sollen, muss die Lizenz
-    explizit als **Terminal-Server-Lizenz** mit der gewünschten
-    Sitzungs-Anzahl ausgestellt sein. Sprechen Sie das mit Ihrem
-    Herzog-Ansprechpartner ab, bevor Sie diese Variante aufbauen.
+    Im **Kontomodell** belegt der Server als ein Rechner **einen Platz je
+    Baustein** — egal wie viele Bediener sich nacheinander anmelden.
+    Sollen mehrere Anwender **gleichzeitig** in eigenen RDP-Sitzungen
+    arbeiten, klären Sie die nötige Platzzahl mit Ihrem
+    Herzog-Ansprechpartner. Standard-Einzelplatz-Lizenzen per CodeMeter
+    (CmDongle oder CmActLicense) decken **keine parallelen RDP-Sitzungen**
+    ab; dafür muss die Lizenz explizit als **Terminal-Server-Lizenz** mit
+    der gewünschten Sitzungs-Anzahl ausgestellt sein.
 
 **Wann passend:** Bediener mit eigenen Geräten (auch Tablets oder
 Laptops außerhalb des Werks), die auf eine zentrale Installation
@@ -80,10 +85,14 @@ Die anspruchsvollste Variante kombiniert mehrere Strategien:
 ![Variant 3 — Mixed Setup: RDP-Bediener verbinden sich zum Application Server, ein lokaler Client arbeitet parallel direkt von seinem PC. Mehrere File Server liefern Workspaces, ein License Server verteilt Floating-Lizenzen an Application Server und Client.](../assets/topology/variant-3-mixed-setup.png)
 
 !!! info "Wann lohnt sich ein License Server?"
-    Lizenzserver sind sinnvoll, wenn deutlich **mehr Bediener als
+    Ein eigener Wibu-Lizenzserver betrifft nur **Bestandskunden mit
+    CodeMeter**. Er ist sinnvoll, wenn deutlich **mehr Bediener als
     parallel benötigte Lizenzen** existieren — z. B. 10 Bediener, aber
-    nie mehr als 3 gleichzeitig im Programm. Statt 10 Einzellizenzen
-    kommen Sie dann mit 3 Floating-Lizenzen aus.
+    nie mehr als 3 gleichzeitig im Programm. Im **Kundenkonto** übernimmt
+    der Herzog-Lizenzserver diese Rolle von selbst: Die Plätze eines
+    Bausteins sind ein Pool, aus dem sich jeder Rechner bedient; ein
+    Rechner, der sieben Tage nicht gestartet wird, gibt seinen Platz
+    automatisch zurück.
 
 !!! warning "Mehrere Workspaces"
     Wenn Sie mit mehreren Workspaces arbeiten (z. B. einer pro Werk
@@ -106,6 +115,35 @@ Datei-Verwaltung.
 
 ---
 
+## Variante 4 — Web-App im Browser
+
+Seit Version 2.0 läuft Herzog CAB auch komplett im Browser:
+[app.herzog-cab.com](https://app.herzog-cab.com). Es gibt nichts zu
+installieren, keinen Workspace-Pfad und keine lokale Benutzer-DB — alle
+Daten liegen im **Arbeitsbereich Ihres Kundenkontos** auf dem Herzog-Server,
+und jeder Benutzer meldet sich mit seinem Kontobenutzer an.
+
+* **Programm:** im Browser, auf PC, Tablet oder Smartphone.
+* **Workspace:** zentral im Konto — alle Benutzer sehen dieselben Aufträge,
+  Designs, Maschinen und Stammdaten.
+* **Benutzer und Rollen:** aus dem Kundenkonto (Lizenzportal).
+* **Lizenz:** Baustein *Herzog CAB Web*; ein Platz je gleichzeitig
+  angemeldetem Benutzer.
+
+Die Web-App lässt sich mit jeder der drei Desktop-Varianten kombinieren:
+Die Desktop-App kann ihr Arbeitsverzeichnis automatisch in die Cloud
+hochladen (siehe [Lizenz und Cloud](../admin/settings/license.md)), oder Sie
+importieren den Arbeitsbereich einmalig als ZIP
+([Import aus dem Desktop](../web/import.md)).
+
+**Wann passend:** Bediener an wechselnden Orten oder mit Tablets, Werke ohne
+eigene Server, Zugriff für Kollegen im Vertrieb oder in der Arbeitsvorbereitung
+— und alle, die keine Installation pflegen möchten. Was die Web-App im
+Vergleich zur Desktop-App kann, steht unter
+[Desktop-App oder Web-App?](../basics/platforms.md).
+
+---
+
 ## Welche Variante ist die richtige?
 
 | Ihre Situation                                                      | Empfehlung   |
@@ -113,13 +151,15 @@ Datei-Verwaltung.
 | Ein einzelner PC, keine Server-Infrastruktur nötig                  | Variante 1   |
 | Bediener mit eigenen Geräten, alles zentral auf einem Server        | Variante 2   |
 | Bestehende Server-Landschaft, RDP + lokale Clients, Floating-Lizenz | Variante 3   |
+| Keine Installation, Zugriff von überall, gemeinsamer Datenbestand   | Variante 4 (Web-App) |
 
 Im Zweifel sprechen Sie kurz mit Ihrem Herzog-Ansprechpartner — die
-Entscheidung wirkt sich auch auf die Lizenz-Bestellung aus (Single,
-Terminal-Server oder Floating) und ist nachträglich aufwendiger zu
+Entscheidung wirkt sich auch auf die Bestellung aus (Anzahl der Plätze je
+Baustein, Desktop und/oder Web) und ist nachträglich aufwendiger zu
 ändern.
 
 ## Nächster Schritt
 
 Wenn Sie wissen, welche Variante zu Ihrem Setup passt, geht es weiter
+mit dem [Kundenkonto](account.md) — oder, für Bestandskunden mit Dongle,
 mit der [CodeMeter-Installation](codemeter.md).

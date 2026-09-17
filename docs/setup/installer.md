@@ -2,19 +2,24 @@
 
 !!! example "Anleitung — Herzog CAB über den Einrichtungsassistenten installiert"
 
-!!! info "Voraussetzung"
-    Die [CodeMeter-Runtime](codemeter.md) sollte zuerst installiert
-    sein, sonst meldet das Programm beim ersten Start eine fehlende
-    Lizenz-Komponente.
+!!! info "Voraussetzung nur bei Dongle-Lizenzen"
+    Bestandskunden mit **CmDongle** oder **CmAct-Lizenz** installieren zuerst
+    die [CodeMeter-Runtime](codemeter.md), sonst meldet das Programm beim
+    ersten Start eine fehlende Lizenz-Komponente. Beim
+    [Kundenkonto](account.md) entfällt dieser Schritt.
 
 ## Woher bekommen Sie den Installer?
 
-Wie bei CodeMeter gibt es zwei Bezugsquellen:
-
 | Bezugsquelle                       | Wann?                                                                 |
 |------------------------------------|-----------------------------------------------------------------------|
-| **Download vom Herzog-Feedback-Repo** | Immer möglich, liefert die aktuellste Version. **Empfohlen.** Öffnen Sie [github.com/Herzog-GmbH/HerzogCAB-Feedback](https://github.com/Herzog-GmbH/HerzogCAB-Feedback) und laden Sie den aktuellen Installer (z.B. `HerzogCAB_Installer_1.3.6.exe`) herunter. |
+| **Lizenzportal → Herunterladen** | **Empfohlen** für alle mit Kundenkonto. Melden Sie sich unter [license.herzog-cab.com](https://license.herzog-cab.com) an und klicken Sie auf **Herunterladen** — die Seite zeigt die neueste Version mit Veröffentlichungsdatum, den Neuerungen und je einem Installer für Windows (`Herzog_CAB_Installer_<Version>.exe`) und macOS (`.dmg`). Siehe [Herunterladen](../portal/download.md). |
+| **Download vom Herzog-Feedback-Repo** | Ohne Kundenkonto. Öffnen Sie [github.com/Herzog-GmbH/HerzogCAB-Feedback](https://github.com/Herzog-GmbH/HerzogCAB-Feedback) und laden Sie unter *Releases* den aktuellen Installer herunter. Die Produktseite [cab.herzog-online.com](https://cab.herzog-online.com) verlinkt dieselben Dateien. |
 | **Mitgelieferter USB-Stick**       | Nur wenn Sie einen **CmDongle** bestellt haben — auf dem mitgelieferten Software-USB-Stick liegt der Installer mit dabei. Praktisch, wenn der Rechner kein Internet hat. |
+
+!!! info "Ein Installer für alle Editionen"
+    Seit Version 2.0 gibt es **einen** Installer. Ob Vollversion,
+    Designer-Edition oder Testversion läuft, entscheidet die Lizenz —
+    die Bausteine im Kundenkonto bzw. der Feature Code des Dongles.
 
 Doppelklicken Sie die heruntergeladene oder vom USB-Stick gestartete
 Datei und bestätigen Sie die Windows-Abfrage nach Administratorrechten
@@ -97,5 +102,7 @@ Klicken Sie auf **Abschließen**. Herzog CAB ist jetzt installiert und
 
 ## Nächster Schritt
 
-Bevor Sie das Programm zum ersten Mal starten, sollten Sie die
-[Lizenz aktivieren](activate-license.md).
+Starten Sie Herzog CAB und [melden Sie den Rechner am Kundenkonto
+an](activate-license.md). Bestandskunden mit Dongle stecken vorher den
+CmDongle ein bzw. aktivieren ihre CmAct-Lizenz — ebenfalls auf dieser Seite
+beschrieben.

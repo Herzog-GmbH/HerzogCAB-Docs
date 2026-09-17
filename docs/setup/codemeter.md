@@ -2,9 +2,16 @@
 
 !!! example "Anleitung — Wibu CodeMeter Runtime installiert und einsatzbereit"
 
-Herzog CAB nutzt für die Lizenzprüfung das System **Wibu CodeMeter**.
-Bevor Sie Herzog CAB selbst installieren, muss auf dem Rechner die
-**CodeMeter User Runtime** vorhanden sein. Sie bringt das *CodeMeter
+!!! info "Nur für Bestandskunden mit Dongle oder Software-Lizenz"
+    Diese Seite betrifft nur Installationen, deren Lizenz auf einem
+    **CmDongle** oder einer **CmAct-Software-Lizenz** liegt. Wer sein
+    Herzog CAB über das [Kundenkonto](account.md) lizenziert (Regelfall seit
+    Version 2.0), braucht **kein CodeMeter** und kann diese Seite
+    überspringen.
+
+Für Dongle- und CmAct-Lizenzen nutzt Herzog CAB das System **Wibu
+CodeMeter**. Bevor Sie Herzog CAB selbst installieren, muss auf dem Rechner
+die **CodeMeter User Runtime** vorhanden sein. Sie bringt das *CodeMeter
 Control Center* und das *CodeMeter WebAdmin* mit, über die Lizenzen
 verwaltet werden.
 

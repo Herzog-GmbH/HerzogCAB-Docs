@@ -2,10 +2,18 @@
 
 !!! info "Konzept — Was die Testversion kann, welche Mengen begrenzt sind und wie es zur Vollversion geht"
 
-Die **Testversion** von Herzog CAB enthält den vollen Funktionsumfang, ist
+Die **Testversion** der Desktop-App enthält den vollen Funktionsumfang, ist
 aber zeitlich befristet und in den Mengen begrenzt. So können Sie alle
 Bereiche realistisch ausprobieren, bevor Sie sich für die Vollversion
 entscheiden.
+
+!!! info "So kommen Sie an die Testversion"
+    Seit Version 2.0 ist die Testversion ein Baustein des
+    [Kundenkontos](../setup/account.md): **Herzog CAB Testversion** (30 Tage).
+    Herzog legt das Konto an und lädt Sie ein; Sie installieren den
+    normalen Installer und melden den Rechner am Konto an — mehr ist nicht
+    nötig. Die [Web-App](../web/index.md) hat eine eigene
+    [Testphase](../web/trial.md) mit anderen Grenzen.
 
 ## Woran Sie die Testversion erkennen
 
@@ -52,10 +60,14 @@ Kachel **Testversion** mit:
 Die Vollversion hebt alle Grenzen auf; Ihre in der Testversion angelegten
 Daten bleiben erhalten und werden weiterverwendet.
 
-1. Wenden Sie sich an Herzog, um eine Vollversions-Lizenz zu erwerben —
+1. Fragen Sie im [Lizenzportal](../portal/requests.md) den Baustein
+   **Herzog CAB Vollversion** an — oder wenden Sie sich an Herzog,
    Kontaktwege unter [Support](../help/support.md).
-2. Aktivieren Sie die erhaltene Lizenz wie unter
-   [Lizenz aktivieren](../setup/activate-license.md) beschrieben.
+2. Sobald Herzog freigeschaltet hat, holt sich Herzog CAB beim nächsten
+   Start die Vollversion von selbst; unter *Einstellungen > Lizenz* steht
+   dann *Edition: Vollversion*. Bei einer Dongle-Lizenz aktivieren Sie den
+   Dongle wie unter [Anmelden und Lizenz beziehen](../setup/activate-license.md)
+   beschrieben.
 
 Bei Problemen mit der Lizenz (z. B. wird die Vollversion nicht erkannt)
 hilft die Seite [Lizenzprobleme](../help/license-problems.md).
@@ -64,5 +76,6 @@ hilft die Seite [Lizenzprobleme](../help/license-problems.md).
 
 * [Startseite (Home)](home.md)
 * [So sind Berechnungsseiten aufgebaut](calc-page-anatomy.md)
-* [Lizenz aktivieren](../setup/activate-license.md)
+* [Anmelden und Lizenz beziehen](../setup/activate-license.md)
+* [Testphase und Registrierung (Web-App)](../web/trial.md)
 * [Lizenzprobleme](../help/license-problems.md)

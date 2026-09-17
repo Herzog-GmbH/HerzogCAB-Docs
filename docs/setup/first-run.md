@@ -1,9 +1,10 @@
 # Erststart und Einrichtung
 
-!!! example "Anleitung — Administrator-Konto, Speicherort und Arbeitsverzeichnis beim ersten Programmstart eingerichtet"
+!!! example "Anleitung — Speicherort, Benutzer und Arbeitsverzeichnis beim ersten Programmstart eingerichtet"
 
-**Voraussetzungen:** Herzog CAB ist [installiert](installer.md), die
-[Lizenz ist aktiviert](activate-license.md).
+**Voraussetzungen:** Herzog CAB ist [installiert](installer.md) und der
+Rechner ist [am Kundenkonto angemeldet](activate-license.md) — bzw. bei
+Bestandskunden: der Dongle steckt oder die CmAct-Lizenz ist aktiviert.
 
 Wenn Sie Herzog CAB zum ersten Mal auf einem Rechner starten, führt Sie das
 Programm durch eine kurze Einrichtung. Je nachdem, ob Sie der **erste**
@@ -11,19 +12,37 @@ Anwender in Ihrem Werk sind oder einem bereits bestehenden Setup beitreten
 (z. B. weil die Benutzerverwaltung schon auf einem Netzlaufwerk liegt),
 sehen Sie unterschiedlich viele der folgenden Dialoge.
 
-```mermaid
-flowchart LR
-  A[Speicherort wählen] --> B[Administrator anlegen]
-  B --> C[Profil einrichten]
-  C --> D[Herzog CAB startet]
-```
+=== "Kundenkonto"
+
+    ```mermaid
+    flowchart LR
+      A[Anmeldung am<br>Kundenkonto] --> B[Speicherort wählen]
+      B --> C[Profil einrichten]
+      C --> D[Herzog CAB startet]
+    ```
+
+    Der Benutzer, mit dem Sie den Rechner am Konto angemeldet haben, ist
+    zugleich Ihr Programmbenutzer — ein Administrator-Konto legen Sie
+    **nicht** mehr an. Schritt 2 unten entfällt.
+
+=== "Dongle / CmAct-Lizenz"
+
+    ```mermaid
+    flowchart LR
+      A[Speicherort wählen] --> B[Administrator anlegen]
+      B --> C[Profil einrichten]
+      C --> D[Herzog CAB startet]
+    ```
+
+    Ohne Kundenkonto verwaltet Herzog CAB seine Benutzer lokal. Beim ersten
+    Start legen Sie den ersten Administrator an (Schritt 2).
 
 !!! info "Diese Dialoge erscheinen nur bei Bedarf"
-    Jeder der drei Dialoge wird **nur dann** angezeigt, wenn der jeweilige
-    Zustand noch nicht existiert. Auf einem zweiten oder dritten Rechner,
-    der auf dieselbe (bereits eingerichtete) Benutzerverwaltung zugreift,
-    sehen Sie meist nur noch den normalen [Anmeldedialog](../admin/login.md)
-    und ggf. die [Profil-Auswahl](#profil-auswahlen-statt-einrichten).
+    Jeder Dialog wird **nur dann** angezeigt, wenn der jeweilige Zustand
+    noch nicht existiert. Auf einem zweiten oder dritten Rechner, der auf
+    dieselbe (bereits eingerichtete) Benutzerverwaltung zugreift, sehen Sie
+    meist nur noch den normalen [Anmeldedialog](../admin/login.md) und ggf.
+    die [Profil-Auswahl](#profil-auswahlen-statt-einrichten).
 
 ## Schritt 1: Speicherort für die Benutzerverwaltung wählen
 
@@ -50,10 +69,18 @@ Er legt fest, wo Benutzerkonten, Profile und Rollen gespeichert werden.
 Der gewählte Speicherort lässt sich später jederzeit unter
 [Speicherort](../admin/storage-location.md) in der Systemverwaltung ändern.
 
-## Schritt 2: Administrator-Konto anlegen
+## Schritt 2: Administrator-Konto anlegen (nur Dongle / CmAct)
 
-Existiert in der Benutzerverwaltung noch **kein** Konto, zeigt Herzog CAB
-den Dialog **„Benutzerverwaltung einrichten"**. Das hier angelegte Konto
+!!! info "Entfällt beim Kundenkonto"
+    Im Kontomodell kommen Benutzer, Passwörter und Rollen aus dem
+    [Kundenkonto](account.md). Wer den Rechner angemeldet hat, ist sofort im
+    Programm angemeldet; Kollegen melden sich beim nächsten Start mit ihrem
+    eigenen Kontobenutzer an (siehe [Anmelden und Abmelden](../admin/login.md)).
+    Ihre Rolle im Programm entspricht der Rolle im Konto — ein
+    Konto-Administrator hat alle Rechte.
+
+Existiert in der lokalen Benutzerverwaltung noch **kein** Konto, zeigt
+Herzog CAB den Dialog **„Benutzerverwaltung einrichten"**. Das hier angelegte Konto
 wird automatisch zum ersten **SuperAdmin** und ist danach sofort
 angemeldet — eine erneute Anmeldung ist nicht nötig.
 
@@ -127,8 +154,8 @@ Weitere Profile anlegen, umbenennen oder löschen erledigen Sie später unter
 
 ## Ergebnis
 
-Herzog CAB öffnet das Hauptfenster, angemeldet mit dem neuen
-Administrator-Konto und dem eingerichteten Profil. Im Arbeitsverzeichnis
+Herzog CAB öffnet das Hauptfenster, angemeldet mit Ihrem Benutzer und dem
+eingerichteten Profil. Im Arbeitsverzeichnis
 legt das Programm die nötigen Grunddateien automatisch an (u. a. für
 Aufträge, Flechtmaschinen, Materialien und Farben) — Details dazu finden
 Sie unter [Profile (Arbeitsbereiche)](../admin/profiles.md).
@@ -163,5 +190,6 @@ aus, damit das Programm in jedem Fall startfähig bleibt.
 * [Einsatz-Szenarien](topology.md) — welche Topologie zu Ihrem Werk passt
 * [Speicherort](../admin/storage-location.md) — Speicherort nachträglich ändern
 * [Profile (Arbeitsbereiche)](../admin/profiles.md) — weitere Profile anlegen und verwalten
-* [Benutzer verwalten](../admin/users.md) — weitere Benutzer anlegen, Passwörter zurücksetzen
+* [Benutzer verwalten](../admin/users.md) — weitere Benutzer anlegen bzw. aus dem Kundenkonto übernehmen
+* [Kundenkonto und Einladung](account.md) — Kollegen ins Konto einladen
 * [Oberfläche im Überblick](../basics/interface.md) — wie es nach dem Start weitergeht

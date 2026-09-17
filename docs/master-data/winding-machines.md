@@ -93,6 +93,8 @@ Diese Angaben gelten für alle Baureihen.
 | **Verlegeschritt (min–max)** | Kleinster und größter Verlegeschritt in mm. |
 | **Verlegebreite max.** | Maximale Verlegebreite in mm. |
 | **Spulengewicht max.** | Höchstgewicht einer vollen Spule in kg. |
+| **Einrichtzeit je Auftrag** | Rüstzeit in Minuten, die einmal je Spulauftrag anfällt. Vorbelegung für die Spulzeit-Hochrechnung im [Spulauftrag](../orders/winding-order.md#spulmaschinen-verteiltabelle); dort je Auftrag übersteuerbar. |
+| **Bestückungszeit je Spule** | Zeit in Minuten für den Spulenwechsel je Spule — bei vollautomatischem Spulenwechsel die Wechselzeit des Automaten. Ebenfalls Vorbelegung für den Spulauftrag. |
 | **Zähler** | Ankreuzfelder *Meterzähler*, *Lagenzähler*, *Betriebsstundenzähler*, *Produktdatenbank*. |
 | **Überwachung** | Ankreuzfelder *Fadenbruchüberwachung*, *Knotenüberwachung*, *Leerlaufüberwachung*. |
 | **Materialien** | Ankreuzfelder für verarbeitbare Materialien: *Garn*, *Draht*, *Kohlefaser*, *Litze*, *Geflecht*. |

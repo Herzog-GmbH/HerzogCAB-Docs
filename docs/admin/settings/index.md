@@ -6,8 +6,8 @@
 
 Der Einstellungen-Dialog bündelt die Programmeinstellungen, die nicht in der
 [Systemverwaltung](../index.md) liegen: Sprache und Darstellung, Diagnose und
-Datenschutz, die Pfadübersicht, den Import von Altdaten sowie den
-eingebauten Webserver. Sie öffnen ihn über das Menü *Datei > Einstellungen*.
+Datenschutz, die Pfadübersicht, die Designer-Vorgaben und den Import von
+Altdaten, Lizenz und Cloud sowie den eingebauten Webserver. Sie öffnen ihn über das Menü *Datei > Einstellungen*.
 
 ![Einstellungen-Dialog, Tab „Allgemein".](../../assets/screenshots/settings/einstellungen-allgemein.png)
 
@@ -15,9 +15,10 @@ eingebauten Webserver. Sie öffnen ihn über das Menü *Datei > Einstellungen*.
 
 | Tab | Inhalt |
 |---|---|
-| **Allgemein** | Profil (aktives Profil, **Profil wechseln …**, **Profile verwalten …**), Darstellung (Sprache, Schriftgröße, Design), Diagnose und Datenschutz — siehe [Allgemein: Sprache, Darstellung und Datenschutz](appearance.md) |
+| **Allgemein** | Profil (aktives Profil, **Profil wechseln …**, **Profile verwalten …**), Darstellung (Sprache, Schriftgröße, Design), Diagnose, Datenschutz und Produktionsplanung — siehe [Allgemein](appearance.md) |
 | **Speicherorte** | Anzeige aller Datei- und Ordnerpfade des Arbeitsbereichs (nur Information) — siehe [Speicherorte (Dateien und Ordner)](files.md) |
-| **Design** | Import von Design-Altdaten aus früheren Herzog-CAB-Versionen — siehe [Legacy-Designimport](legacy-import.md) |
+| **Design** | Vorgaben für neue Designs, Ansicht, Animation und Speichern im Designer sowie der Import von Design-Altdaten — siehe [Design](legacy-import.md) |
+| **Lizenz** | Nur im Kontomodell: Lizenzstatus, Konto, Offline-Miete, Abmelden vom Rechner und Cloud-Upload in die Web-App — siehe [Lizenz und Cloud](license.md) |
 | **Webserver** | Serverstatus, IP-Auswahl, QR-Code, Port und Passwortschutz — siehe [Webserver und QR-Code](web-server.md) |
 
 ## Schaltflächen des Dialogs

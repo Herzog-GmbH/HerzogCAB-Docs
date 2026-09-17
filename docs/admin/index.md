@@ -1,13 +1,41 @@
-# Systemverwaltung
+# Verwaltung
 
-!!! abstract "Referenz — Übersicht der Systemverwaltung"
+!!! abstract "Referenz — Übersicht: Kundenkonto und Lizenzportal, Systemverwaltung der Desktop-App, Einstellungen-Dialog"
 
-In der **Systemverwaltung** (unterster Bereich der linken Navigation) verwalten
-Sie alles, was nicht zum Tagesgeschäft gehört: Benutzerkonten, Rollen und
-Rechte, die Anmeldung über Microsoft oder das Firmennetz, Profile
-(Arbeitsbereiche), den Speicherort der Daten und die Firmenstammdaten.
-Dazu kommt der Einstellungen-Dialog unter *Datei > Einstellungen* mit
-Sprache, Darstellung und Webserver.
+Die Verwaltung von Herzog CAB verteilt sich seit Version 2.0 auf zwei Orte:
+
+* Das **Kundenkonto** im [Lizenzportal](../portal/index.md) — Bausteine,
+  Plätze, Rechner, Benutzer und Passwörter. Es gilt für die Desktop-App
+  **und** die Web-App und wird im Browser gepflegt.
+* Die **Systemverwaltung** der Desktop-App (unterster Bereich der linken
+  Navigation) — Rollen-Zuweisung je Arbeitsbereich, Profile, Speicherort
+  und Firmenstammdaten; bei Dongle-Installationen zusätzlich die lokalen
+  Benutzerkonten und die Anmeldung über Microsoft oder das Firmennetz. Dazu
+  kommt der Einstellungen-Dialog unter *Datei > Einstellungen* mit Sprache,
+  Darstellung, Designer-Vorgaben, Lizenz, Cloud und Webserver.
+
+Die Verwaltung der **Web-App** (Firma, Medien, Rollen, Import) steckt in
+deren Benutzermenü — siehe [Web-App](../web/index.md).
+
+<div class="grid cards" markdown>
+
+- :material-account-key-outline: **Kundenkonto und Lizenzportal**
+
+    Bausteine und Plätze, angemeldete Rechner, Benutzer einladen, Lizenzen
+    anfordern, Passwort und zweiter Faktor.
+
+    [:octicons-arrow-right-24: Lizenzportal](../portal/index.md)
+
+- :material-cog-outline: **Lizenz und Cloud (Einstellungen)**
+
+    Lizenzstatus in der Desktop-App, Offline-Miete, Abmelden und der
+    Cloud-Upload des Arbeitsverzeichnisses in die Web-App.
+
+    [:octicons-arrow-right-24: Lizenz und Cloud](settings/license.md)
+
+</div>
+
+## Systemverwaltung der Desktop-App
 
 !!! info "Sichtbarkeit hängt von Ihren Rechten ab"
     Die Gruppe **Systemverwaltung** erscheint in der Navigation nur, wenn Ihr
@@ -32,15 +60,16 @@ Sprache, Darstellung und Webserver.
 
 - :material-login: **Anmeldung und Abmelden**
 
-    Das Anmeldefenster: lokales Konto, **Mit Microsoft anmelden**,
-    Kontosperre und Profil-Auswahl nach dem Login.
+    Das Anmeldefenster: Kontobenutzer, lokales Konto, **Mit Microsoft
+    anmelden**, Kontosperre und Profil-Auswahl nach dem Login.
 
     [:octicons-arrow-right-24: Weiter](login.md)
 
 - :material-account-multiple: **Benutzer**
 
-    Benutzerkonten anlegen, bearbeiten, deaktivieren — inklusive Import aus
-    Microsoft Entra oder LDAP und Passwort-Zurücksetzen.
+    Benutzer aus dem Kundenkonto übernehmen und Arbeitsbereichen zuweisen;
+    bei Dongle-Installationen lokale Konten anlegen, aus Microsoft Entra
+    oder LDAP importieren und Passwörter zurücksetzen.
 
     [:octicons-arrow-right-24: Weiter](users.md)
 
@@ -53,8 +82,8 @@ Sprache, Darstellung und Webserver.
 
 - :material-key-chain: **Authentifizierung**
 
-    Anmeldung über Microsoft Entra ID oder LDAP / Active Directory
-    einrichten — mit Gruppen-zu-Rollen-Zuordnung.
+    Nur bei Dongle-Installationen: Anmeldung über Microsoft Entra ID oder
+    LDAP / Active Directory einrichten — mit Gruppen-zu-Rollen-Zuordnung.
 
     [:octicons-arrow-right-24: Weiter](authentication.md)
 
@@ -88,7 +117,8 @@ Sprache, Darstellung und Webserver.
 - :material-cog-outline: **Einstellungen (Dialog)**
 
     Der Dialog unter *Datei > Einstellungen*: Sprache, Schriftgröße, Design,
-    Datenschutz, Speicherorte, Altdaten-Import und Webserver.
+    Datenschutz, Speicherorte, Designer-Vorgaben, Altdaten-Import, Lizenz
+    und Cloud, Webserver.
 
     [:octicons-arrow-right-24: Weiter](settings/index.md)
 
@@ -96,6 +126,8 @@ Sprache, Darstellung und Webserver.
 
 ## Typische Aufgaben
 
-Für den kompletten Ablauf „Benutzer und Rechte für ein Werk einrichten" gibt
-es eine Schritt-für-Schritt-Anleitung:
-[Benutzer und Rollen einrichten](../tasks/setup-users.md).
+* [Benutzer und Rollen einrichten](../tasks/setup-users.md) — der komplette
+  Ablauf „Benutzer und Rechte für ein Werk einrichten", für Kontomodell und
+  Dongle-Installation.
+* [Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md) —
+  Cloud-Upload oder ZIP-Import.

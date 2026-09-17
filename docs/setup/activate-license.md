@@ -1,40 +1,134 @@
-# Lizenz aktivieren
+# Anmelden und Lizenz beziehen
 
-!!! example "Anleitung — Herzog-CAB-Lizenz per Dongle oder Software-Lizenz aktiviert"
+!!! example "Anleitung — Herzog CAB auf diesem Rechner freigeschaltet: über das Kundenkonto oder über eine CodeMeter-Lizenz"
 
-Herzog CAB nutzt **Wibu CodeMeter** als Lizenzsystem. Ohne gültige Lizenz
-lässt sich die Anwendung nicht starten.
+Ohne gültige Lizenz lässt sich Herzog CAB nicht starten. Seit Version 2.0
+gibt es dafür zwei Wege — Herzog CAB erkennt beim Start selbst, welcher
+zutrifft:
+
+| Weg | Für wen | Was Sie brauchen |
+|---|---|---|
+| **Kundenkonto** (Regelfall) | Alle Neukunden ab Version 2.0 und alle, die vom Dongle auf das Konto umgestellt haben. | Ihren Benutzer im [Kundenkonto](account.md) und eine Internetverbindung beim ersten Start. |
+| **CodeMeter** (Bestandskunden) | Kunden mit **CmDongle** oder **CmAct-Software-Lizenz** aus Version 1.x. | Die [CodeMeter-Runtime](codemeter.md) und den Dongle bzw. die Lizenzdateien. |
+
+!!! info "Beides vorhanden?"
+    Findet Herzog CAB einen CodeMeter-Container mit gültiger Lizenz, nutzt
+    es diesen — das Kundenkonto kommt nur zum Zug, wenn **kein** Container
+    vorhanden ist. Bestandskunden ändern also nichts.
+
+---
+
+## Regelfall: Anmeldung am Kundenkonto
+
+**Voraussetzungen:** Sie haben die [Einladung ins Kundenkonto](account.md)
+angenommen und ein Passwort gesetzt; Herzog CAB ist
+[installiert](installer.md); der Rechner ist online.
+
+### Schritt 1: Ersten Start abwarten
+
+Starten Sie Herzog CAB. Auf einem Rechner, der noch nicht freigeschaltet
+ist, erscheint der Dialog **Herzog CAB – Anmeldung am Kundenkonto** mit dem
+Hinweis *„Herzog CAB ist auf diesem Rechner noch nicht freigeschaltet."*
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Dialog „Herzog CAB – Anmeldung am Kundenkonto" mit
+    Erklärtext, den Feldern **E-Mail-Adresse** und **Passwort** sowie den
+    Schaltflächen **Anmelden** und **Beenden**.
+    **So erzeugen:** Kunden-Build auf einem Rechner ohne `license.json`
+    starten (oder vorher unter *Einstellungen > Lizenz* **Von diesem Rechner
+    abmelden** wählen).
+    **Ziel-Datei:** `assets/screenshots/setup/konto-anmeldung-geraet.png`
+
+### Schritt 2: Anmelden
+
+| Feld / Schaltfläche | Bedeutung |
+|---|---|
+| **E-Mail-Adresse** | Die Adresse Ihres Benutzers im Kundenkonto (dieselbe wie im Lizenzportal). |
+| **Passwort** | Ihr Konto-Passwort (verdeckte Eingabe). |
+| **Code (Authenticator-App)** | Erscheint erst nach dem Klick auf **Anmelden**, wenn für Ihren Benutzer die [Zwei-Faktor-Anmeldung](../portal/security.md) eingerichtet ist. Tragen Sie den aktuellen sechsstelligen Code ein und klicken Sie erneut auf **Anmelden**. |
+| **Anmelden** | Prüft die Zugangsdaten am Lizenzserver, meldet den Rechner am Konto an und zieht je Baustein einen Platz. |
+| **Beenden** | Schließt Herzog CAB ohne Anmeldung. |
+
+Nach erfolgreicher Anmeldung startet Herzog CAB direkt — **Sie sind mit
+demselben Benutzer auch im Programm angemeldet**, ein zweiter
+Anmeldedialog folgt nicht. Beim allerersten Start auf einem Rechner richten
+Sie anschließend noch das [Arbeitsverzeichnis](first-run.md) ein.
+
+!!! tip "Passwort-Manager"
+    Windows-Passwort-Manager füllen diesen Dialog nicht automatisch aus.
+    Mit **Auto-Type** (z. B. 1Password: ++ctrl+shift+space++, KeePass:
+    ++ctrl+alt+a++) tippt der Manager E-Mail und Passwort in das Feld, das
+    gerade den Fokus hat — ein Klick in das Feld **E-Mail-Adresse** markiert
+    dafür den vorausgefüllten Inhalt.
+
+### Schritt 3: Prüfen
+
+Unter *Datei > Einstellungen*, Tab **Lizenz**, sehen Sie jetzt Ihr Konto,
+den angemeldeten Benutzer, die Edition, die freigeschalteten Bausteine und
+die Miete mit Ablaufdatum — siehe
+[Lizenz und Cloud](../admin/settings/license.md).
+
+### Was danach passiert
+
+* **Regelmiete:** Der Rechner hält seine Plätze als *Miete*, die sich bei
+  jedem Programmstart und alle sechs Stunden von selbst verlängert. Ohne
+  Verbindung läuft Herzog CAB normalerweise **sieben Tage** weiter.
+* **Länger offline:** Wer länger ohne Netz arbeitet (Messe, Baustelle),
+  zieht vorher unter *Einstellungen > Lizenz* eine **Offline-Miete** für
+  bis zu 30 Tage.
+* **Weitere Bediener am selben Rechner:** Beim nächsten Start erscheint der
+  kürzere Dialog **Herzog CAB – Anmelden**. Jeder Kollege meldet sich dort
+  mit seinem eigenen Kontobenutzer an; der Rechner belegt trotzdem nur einen
+  Platz. Siehe [Anmelden und Abmelden](../admin/login.md).
+* **Rechner abgeben oder neu aufsetzen:** Vorher **Von diesem Rechner
+  abmelden** (Tab Lizenz) — dann sind die Plätze sofort wieder frei.
+  Vergessen ist nicht schlimm: Ein Administrator kann die Plätze im
+  [Lizenzportal](../portal/licenses.md) jederzeit freigeben, und nach sieben
+  Tagen ohne Start werden sie ohnehin frei.
+
+### Meldungen bei der Anmeldung
+
+| Meldung | Bedeutung / Abhilfe |
+|---|---|
+| *E-Mail-Adresse oder Passwort stimmen nicht.* | Zugangsdaten prüfen; Passwort über **Passwort vergessen** im Lizenzportal zurücksetzen. |
+| *Für diesen Benutzer ist die Zwei-Faktor-Anmeldung eingerichtet …* | Kein Fehler — den Code aus der Authenticator-App eintragen. |
+| *Der Code stimmt nicht.* | Uhrzeit des Handys prüfen, neuen Code abwarten. |
+| *Kein freier Platz für: …* | Alle Plätze des Bausteins sind belegt — im Lizenzportal einen Rechner freigeben oder [Plätze anfragen](../portal/requests.md). |
+| *Dieser Benutzer ist deaktiviert.* | Ein Administrator hat den Benutzer im Portal deaktiviert. |
+| *Zu viele Fehlversuche. Bitte später erneut versuchen.* | Der Lizenzserver bremst nach mehreren Fehlversuchen — ein paar Minuten warten. |
+| *Der Lizenzserver ist nicht erreichbar …* | Internetverbindung, Proxy und Firewall prüfen (Ziel: `license.herzog-cab.com`, Port 443). Für die **erste** Anmeldung eines Rechners ist eine Verbindung Pflicht. |
+
+Weitere Fälle: [Lizenzprobleme](../help/license-problems.md).
+
+---
+
+## Bestandskunden: Dongle oder CmAct-Lizenz
+
+Herzog CAB nutzt für diese Lizenzen **Wibu CodeMeter**.
 
 !!! info "Voraussetzung"
     Die [CodeMeter-Runtime](codemeter.md) muss bereits installiert sein.
 
-## Lizenztyp
+### Lizenztyp
 
 | Typ            | Artikel  | Product Code | Umfang                                              |
 |----------------|----------|--------------|-----------------------------------------------------|
 | Vollversion    | 88805    | 200006       | Alle Funktionen, unbefristet                        |
+| Designer-Edition | 88805  | 200006, Feature Code 4 | Nur der Designer                          |
 
 Der Firmencode bei Wibu CodeMeter ist immer **6001037** (Herzog GmbH).
 
-## Bezugswege
-
-Es gibt zwei gängige Wege, die Lizenz auf den Rechner zu bekommen:
+### Bezugswege
 
 | Bezugsweg                       | Wann?                                                                 |
 |---------------------------------|-----------------------------------------------------------------------|
 | **CmDongle** (USB-Lizenzstick)  | Wenn Sie einen physischen Dongle bestellt haben.                      |
 | **CmActLicense** (Software-Lizenz) | Wenn Ihre Lizenz an den **Fingerabdruck** des Rechners gebunden ist. |
 
----
-
-## Variante A - Lizenz per USB-Dongle
+### Variante A - Lizenz per USB-Dongle
 
 Sie haben mit Ihrer Bestellung einen kleinen Wibu-Dongle erhalten. Die
-Lizenz ist bereits auf dem Dongle vorinstalliert. Voraussetzung ist,
-dass auf dem Rechner die [CodeMeter-Runtime](codemeter.md) bereits
-installiert ist.
-
-So gehen Sie vor:
+Lizenz ist bereits auf dem Dongle vorinstalliert.
 
 1. Schließen Sie das Programm Herzog CAB, falls es läuft.
 2. Stecken Sie den **CmDongle** in einen freien USB-Anschluss.
@@ -72,15 +166,13 @@ Taskleiste: es wechselt von grau auf blau.
     Rechnern wechseln - aber immer nur an einem Rechner zur gleichen
     Zeit.
 
----
-
-## Variante B - Software-Lizenz per CmAct-Dateiaustausch
+### Variante B - Software-Lizenz per CmAct-Dateiaustausch
 
 Software-Lizenzen sind an den **Fingerabdruck** Ihres Rechners
 (Hardware-Merkmale) gebunden. Die Aktivierung läuft über einen
 mehrstufigen Dateiaustausch zwischen Ihnen und der Herzog GmbH.
 
-### Überblick
+#### Überblick
 
 ```text
 1. Empty.WibuCmLif      Herzog GmbH  →  Sie    (leerer Lizenz-Container)
@@ -91,9 +183,9 @@ mehrstufigen Dateiaustausch zwischen Ihnen und der Herzog GmbH.
 
 Der Vorteil: Ihr Rechner braucht **keine direkte Internetverbindung**
 zu Wibu - der Austausch läuft per E-Mail. Der Nachteil: ein bisschen
-Hin-und-Her, plant ungefähr einen Arbeitstag ein.
+Hin-und-Her, planen Sie ungefähr einen Arbeitstag ein.
 
-### Schritt 1 - Leeren Container einspielen
+#### Schritt 1 - Leeren Container einspielen
 
 Sie erhalten von Herzog GmbH per E-Mail eine Datei mit dem Namensschema
 
@@ -121,7 +213,7 @@ Aktivierung folgt erst in Schritt 3.
     fotografieren.
     **Ziel-Datei:** `assets/screenshots/activate-license/kontrollzentrum-leerer-container.png`
 
-### Schritt 2 - Lizenzanforderung erzeugen
+#### Schritt 2 - Lizenzanforderung erzeugen
 
 1. Öffnen Sie das **CodeMeter Kontrollzentrum**.
 2. Wählen Sie den Container *Herzog GmbH* aus.
@@ -144,7 +236,7 @@ Aktivierung folgt erst in Schritt 3.
 7. Wählen Sie einen Speicherort - die erzeugte Datei hat die Endung
    `.WibuCmRaC`.
 
-### Schritt 3 - Anforderung zurücksenden
+#### Schritt 3 - Anforderung zurücksenden
 
 Senden Sie die `.WibuCmRaC`-Datei als E-Mail-Anhang an Ihren
 Herzog-Ansprechpartner. Die Standard-Adresse ist:
@@ -153,7 +245,7 @@ Herzog-Ansprechpartner. Die Standard-Adresse ist:
 e.siemering@herzog-online.com
 ```
 
-### Schritt 4 - Aktivierungsdatei einspielen
+#### Schritt 4 - Aktivierungsdatei einspielen
 
 Sie erhalten kurzfristig eine Datei mit der Endung `.WibuCmRaU` zurück.
 
@@ -163,7 +255,7 @@ Sie erhalten kurzfristig eine Datei mit der Endung `.WibuCmRaU` zurück.
     ist an den Fingerabdruck dieses Rechners gebunden und funktioniert
     auf keinem anderen Rechner.
 
-So geht's:
+So geht es:
 
 1. **Doppelklick** auf die `.WibuCmRaU`-Datei reicht - die Lizenz wird
    automatisch eingespielt.
@@ -185,14 +277,14 @@ Alternativ über das Kontrollzentrum:
 4. Wählen Sie die `.WibuCmRaU`-Datei aus und folgen Sie den Anweisungen
    des Assistenten bis zum Ende.
 
-### Schritt 5 - Erfolg prüfen
+#### Schritt 5 - Erfolg prüfen
 
 Im CodeMeter Kontrollzentrum sollte unter *Herzog GmbH* jetzt die
 aktive Lizenz **Herzog CAB** mit Product Code **200006** (Vollversion)
 erscheinen. Beim nächsten Start von Herzog CAB ist die Vollversion
 freigeschaltet.
 
-### Schritt 6 - Quittung erzeugen und zurücksenden
+#### Schritt 6 - Quittung erzeugen und zurücksenden
 
 Damit Herzog GmbH die erfolgreiche Aktivierung dokumentieren kann,
 erzeugen Sie zum Abschluss eine Quittung:
@@ -204,9 +296,7 @@ erzeugen Sie zum Abschluss eine Quittung:
    `.WibuCmRaC`.
 4. Schicken Sie diese Quittung per E-Mail an Ihren Herzog-Ansprechpartner.
 
----
-
-## Wichtige Hinweise zu CmActLicense
+### Wichtige Hinweise zu CmActLicense
 
 !!! warning "Rechner-Bindung"
     CmActLicenses sind an den Rechner gebunden, auf dem Sie die
@@ -217,7 +307,8 @@ erzeugen Sie zum Abschluss eine Quittung:
     (Mainboard, Festplatte), muss die Lizenz **vor dem Umzug** über
     eine separate Umzugs-Prozedur zurückgegeben und danach neu
     aktiviert werden. Wenden Sie sich dafür rechtzeitig an Ihren
-    Herzog-Ansprechpartner.
+    Herzog-Ansprechpartner — oder sprechen Sie mit ihm über den Wechsel auf
+    das [Kundenkonto](account.md), das ohne Rechnerbindung auskommt.
 
 ---
 
@@ -227,16 +318,17 @@ Beim Start prüft Herzog CAB, ob eine gültige Lizenz vorhanden ist:
 
 | Status                      | Verhalten                                       |
 |-----------------------------|-------------------------------------------------|
-| Lizenz vorhanden, gültig    | Programm startet normal.                        |
-| Lizenz abgelaufen           | Hinweis-Dialog, Programm startet nicht.         |
-| Keine Lizenz gefunden       | Hinweis-Dialog, Programm startet nicht.         |
+| CodeMeter-Lizenz vorhanden, gültig | Programm startet normal (Dongle-Weg).    |
+| Kein CodeMeter-Container, Rechner am Konto angemeldet | Programm startet normal; die Miete wird im Hintergrund verlängert. |
+| Kein CodeMeter-Container, Rechner noch nicht angemeldet | Dialog *Anmeldung am Kundenkonto*. |
+| Miete abgelaufen und kein Server erreichbar | Hinweis-Dialog; sobald wieder eine Verbindung besteht, startet das Programm normal. |
+| Lizenz abgelaufen (Dongle) oder Baustein beendet | Hinweis-Dialog, Programm startet nicht. |
 
 Wenn die Lizenzprüfung fehlschlägt, lesen Sie
 [Lizenzprobleme](../help/license-problems.md).
 
 ## Nächster Schritt
 
-Mit der gültigen Lizenz ist die Installation abgeschlossen. Starten Sie
-jetzt Herzog CAB zum ersten Mal — der [Erststart-Assistent](first-run.md)
-führt Sie durch die Einrichtung von Administrator-Konto und
-Arbeitsverzeichnis.
+Mit der gültigen Lizenz ist die Installation abgeschlossen. Beim ersten
+Programmstart richten Sie noch Ihr Arbeitsverzeichnis ein — siehe
+[Erststart und Einrichtung](first-run.md).

@@ -81,13 +81,25 @@ sind gesperrt — Änderungen an den Kundendaten nehmen Sie über
 | **Auftragsnummer** | Ihre Auftrags- oder Belegnummer, z. B. *A-2026-015*. |
 | **Auftragslänge [m]** | Insgesamt zu produzierende Geflechtslänge. Basis für die Hochrechnung im Tab **Produktion** (dort erscheint dasselbe Feld noch einmal — beide sind synchron). |
 | **Auftragsdatum** | Datum des Auftragseingangs. Über das Kalendersymbol rechts im Feld wählen Sie das Datum aus einem Kalender. Vorbelegt mit dem aktuellen Datum. |
-| **Produktionsdatum** | Geplanter Produktionstermin, ebenfalls per Kalendersymbol wählbar. |
+| **Produktion von** | Geplanter Produktionsbeginn, ebenfalls per Kalendersymbol wählbar. |
+| **Produktion bis** | Geplantes Produktionsende. Entweder von Hand wählen oder mit **Produktionsende aus Hochrechnung übernehmen** berechnen lassen: Produktionsbeginn + Gesamtlaufzeit aus dem Tab **Produktion**, umgerechnet über die *Produktionsstunden je Arbeitstag* aus den [Einstellungen](../admin/settings/appearance.md#produktionsplanung) (Standard 8 h); Wochenenden werden übersprungen. Liegt noch keine Laufzeit-Hochrechnung vor, weist eine Meldung darauf hin. |
 | **Status** | *Entwurf* (Standard), *Freigegeben*, *In Produktion*, *Abgeschlossen* oder *Fehler*. Der Status erscheint als farbiger Chip in der [Auftragsübersicht](index.md) und in den Status-Kacheln auf [Home](../basics/home.md). |
 
 !!! tip "Status *Fehler*"
     Mit dem Status *Fehler* markieren Sie Aufträge, bei denen in der
     Produktion etwas schiefgelaufen ist. In der Auftragsübersicht finden Sie
     solche Aufträge über den Status-Filter *Alle Status*.
+
+### Spulaufträge (Vorstufe)
+
+Unter den Auftragsdaten listet der Bereich **Spulaufträge (Vorstufe)** alle
+[Spulaufträge](winding-order.md), die mit diesem Flechtauftrag verknüpft
+sind — mit Name bzw. Nummer, Status und Spulenzahl. Ein **Doppelklick**
+öffnet den Spulauftrag. Solange keiner verknüpft ist, steht hier *Noch kein
+Spulauftrag verknüpft*. Neue Spulaufträge legen Sie nach dem Speichern über
+**Spulauftrag erstellen** in der [Auftragsübersicht](index.md) an; beim
+Erzeugen aus dem Flechtauftrag terminiert Herzog CAB rückwärts — das
+Spul-Ende liegt am Flechtbeginn.
 
 ## Tab „Maschine"
 

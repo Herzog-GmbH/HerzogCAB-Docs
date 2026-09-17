@@ -49,6 +49,14 @@ Dialog **Mein Profil** mit drei Reitern.
 | **Neues Passwort** / **Neues Passwort bestätigen** | Beide Eingaben müssen übereinstimmen, sonst erscheint *„Die neuen Passwörter stimmen nicht überein."* |
 | **Ändern** | Führt die Änderung aus; bei Erfolg: *„Passwort erfolgreich geändert."* |
 
+!!! info "Kontobenutzer: Passwort gehört zum Kundenkonto"
+    Melden Sie sich mit Ihrem Benutzer aus dem [Kundenkonto](../setup/account.md)
+    an, sind die Felder dieses Tabs gesperrt und ein Hinweis erklärt: *„Ihr
+    Passwort gehört zum Kundenbenutzer und gilt auch für das Lizenzportal
+    und Herzog CAB Web. Ändern Sie es im Lizenzportal (Einstellungen →
+    Lizenz → Lizenzportal öffnen)."* — siehe
+    [Passwort und zweiter Faktor](../portal/security.md).
+
 !!! info "Microsoft- und Domänenkonten"
     Melden Sie sich [mit Microsoft](login.md#mit-microsoft-anmelden) oder
     über das Firmenverzeichnis an, verwaltet Ihr Unternehmen das Passwort

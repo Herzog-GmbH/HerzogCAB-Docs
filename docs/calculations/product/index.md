@@ -16,6 +16,11 @@ rohr-/schlauchförmige Geflechte gibt es die eigene Untergruppe
     ---
     Flechtwinkel aus Flechtbezeichnung und Produktmaß
 
+- :material-cog-sync-outline: __[Flechtwinkel über Abzug](braid-angle-takeup.md)__
+
+    ---
+    Flechtwinkel aus Flügelraddrehzahl und Abzug — oder der nötige Abzug bzw. die nötige Drehzahl für einen Soll-Winkel
+
 - :material-chart-bell-curve: __[Geflechtsdichte](lay-length.md)__
 
     ---

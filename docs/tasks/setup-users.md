@@ -6,16 +6,49 @@
 
 * Sie sind mit einem Administrator-Konto angemeldet (die Kategorie
   **Systemverwaltung** ist nur mit entsprechenden Berechtigungen sichtbar).
-* Für die Anbindung an Microsoft Entra ID oder LDAP/Active Directory:
-  die Zugangsdaten Ihrer IT (z. B. Tenant und Client-ID bzw. LDAP-URL und
-  Bind-Konto) liegen bereit.
+* Im Kontomodell: Sie sind **Administrator des Kundenkontos** im
+  [Lizenzportal](../portal/index.md).
+* Für die Anbindung an Microsoft Entra ID oder LDAP/Active Directory
+  (nur Dongle-Installationen): die Zugangsdaten Ihrer IT (z. B. Tenant und
+  Client-ID bzw. LDAP-URL und Bind-Konto) liegen bereit.
 
-```mermaid
-flowchart LR
-  A["Rollen prüfen/anlegen"] --> B["Benutzer anlegen oder importieren"]
-  B --> C["Profile & Rollen zuordnen"]
-  C --> D["Anmeldung testen"]
-```
+=== "Kundenkonto (Regelfall seit 2.0)"
+
+    ```mermaid
+    flowchart LR
+      A["Benutzer im Lizenzportal einladen"] --> B["Rolle im Konto festlegen"]
+      B --> C["Desktop: Profile zuordnen<br>Web: Web-Rollen ankreuzen"]
+      C --> D["Anmeldung testen"]
+    ```
+
+    1. **Einladen:** Im Lizenzportal unter **Benutzer** die E-Mail-Adresse
+       eintragen, Rolle wählen (Administrator, Bearbeiter, Betrachter) und
+       auf **Einladen** klicken — siehe
+       [Benutzer einladen und verwalten](../portal/users.md). Die Person
+       setzt über den Link ihr Passwort selbst.
+    2. **Desktop-App:** Unter *Systemverwaltung > Benutzer* auf **Vom
+       Kundenkonto aktualisieren** klicken (oder den nächsten Start des
+       Benutzers abwarten) und im Bereich **Profile und Rollen** die
+       Arbeitsbereiche zuordnen — siehe [Benutzer](../admin/users.md). Die
+       Rolle selbst kommt aus dem Konto; eigene Rollen aus
+       *Systemverwaltung > Rollen* können Sie zusätzlich je Profil zuweisen.
+    3. **Web-App:** Unter *Benutzermenü > Konto und Benutzer* die
+       Web-Rollen ankreuzen — siehe [Konto und Benutzer](../web/account.md);
+       eigene Web-Rollen legen Sie unter [Rollen](../web/roles.md) an.
+    4. **Testen:** Die Person meldet sich in der Desktop-App (E-Mail und
+       Passwort) bzw. in der Web-App an und sieht die Bereiche ihrer Rolle.
+
+    Die Schritte unten gelten für **Dongle-Installationen** mit lokaler
+    Benutzerverwaltung.
+
+=== "Dongle-Installation (lokale Benutzer)"
+
+    ```mermaid
+    flowchart LR
+      A["Rollen prüfen/anlegen"] --> B["Benutzer anlegen oder importieren"]
+      B --> C["Profile & Rollen zuordnen"]
+      C --> D["Anmeldung testen"]
+    ```
 
 ## Schritt 1: Rollen prüfen oder anlegen
 

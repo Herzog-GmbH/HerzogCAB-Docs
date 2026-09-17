@@ -28,8 +28,33 @@ Benutzer und Berechnungen je Berechnungsart begrenzt, und die Lizenz läuft
 nach Ablauf der Testzeit endgültig aus. Details dazu finden Sie unter
 [Testversion und Kontingente](../basics/trial-quotas.md).
 
+## Cloud-Upload nur in eine Richtung
+
+Der Cloud-Upload der Desktop-App bringt das Arbeitsverzeichnis in die
+Web-App, aber nicht zurück: Änderungen aus der Web-App überschreibt der
+nächste Upload. Das ist Absicht — der Desktop ist führend. Wer die Web-App
+führend nutzen will, schaltet den Upload aus und holt den Stand per ZIP —
+siehe [Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md).
+
+## Web-App: nicht enthaltene Funktionen
+
+Die Web-App enthält keinen Druckvorlagen-Editor, keinen Flechtsimulator,
+keine Mischdesigns und Texturen im Designer, keinen Zwei-Fenster-Vergleich,
+keinen Verlauf und keine Favoriten sowie nicht den Rechner *Flechtwinkel
+über Abzug*. Im Hallenplaner fehlen Kontextmenüs, *Wände verbinden*, die
+automatische Flächenerkennung und Wandtexturen. Einzelne Dateien über 25 MB
+werden vom Cloud-Upload übersprungen. Die vollständige Gegenüberstellung
+steht unter [Web-App](../web/index.md).
+
+## Web-Testphase: 25 Einträge je Art
+
+In der Testphase der Web-App sind je Datenart (Aufträge, Designs, Maschinen,
+Kunden …) höchstens 25 Einträge möglich — auch beim ZIP-Import. Details unter
+[Testphase und Registrierung](../web/trial.md).
+
 ## Verwandte Seiten
 
 * [Lizenzprobleme](license-problems.md)
 * [Druckprobleme](print-problems.md)
 * [Testversion und Kontingente](../basics/trial-quotas.md)
+* [Desktop-App oder Web-App?](../basics/platforms.md)

@@ -70,10 +70,20 @@ Reihenfolge* Sie vorgehen, sind Sie hier richtig.
 
     ---
 
-    Rollen festlegen und Benutzer anlegen — lokal oder per Microsoft Entra ID
-    bzw. LDAP/Active Directory — und die Anmeldung testen.
+    Kollegen ins Kundenkonto einladen, Rollen festlegen, Arbeitsbereiche
+    zuordnen — oder bei Dongle-Installationen lokale Benutzer anlegen bzw.
+    per Microsoft Entra ID / LDAP importieren.
 
     [:octicons-arrow-right-24: Zum Ablauf](setup-users.md)
+
+-   :material-cloud-upload-outline:{ .lg .middle } **Daten vom Desktop in die Web-App bringen**
+
+    ---
+
+    Den Arbeitsbereich der Desktop-App per Cloud-Upload laufend oder per
+    ZIP einmalig in die Web-App übernehmen — und wer danach führend ist.
+
+    [:octicons-arrow-right-24: Zum Ablauf](desktop-to-web.md)
 
 </div>
 

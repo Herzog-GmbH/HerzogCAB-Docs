@@ -1,6 +1,6 @@
 # Anmeldung und Abmelden
 
-!!! abstract "Referenz — Das Anmeldefenster von Herzog CAB: lokale Anmeldung, Microsoft-Anmeldung, Kontosperre und Profil-Auswahl."
+!!! abstract "Referenz — Das Anmeldefenster der Desktop-App: Kontobenutzer, lokale Anmeldung, Microsoft-Anmeldung, Kontosperre und Profil-Auswahl."
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -10,12 +10,78 @@ ist nachvollziehbar, wer welche Daten bearbeitet, und die
 Anmeldung wählen Sie das [Profil](profiles.md) (den Arbeitsbereich), mit dem
 Sie arbeiten möchten.
 
+Welches Anmeldefenster Sie sehen, hängt vom Lizenzweg ab:
+
+| Lizenzweg | Anmeldefenster | Benutzer kommen aus … |
+|---|---|---|
+| **Kundenkonto** (Regelfall seit 2.0) | **Herzog CAB – Anmelden** mit E-Mail-Adresse, Passwort und ggf. Code | dem [Kundenkonto](../setup/account.md) — dieselben Zugangsdaten wie im Lizenzportal und in der Web-App. |
+| **Dongle / CmAct-Lizenz** | **Herzog CAB – Anmelden** mit Login und Passwort, ggf. **Mit Microsoft anmelden** | der lokalen [Benutzerverwaltung](users.md), Microsoft Entra ID oder LDAP. |
+
 !!! info "Erstanmeldung"
-    Bei einer frischen Installation legen Sie beim ersten Programmstart
-    zunächst ein Administrator-Konto an — siehe
+    Beim Kundenkonto ist der Benutzer, der den Rechner angemeldet hat, sofort
+    im Programm angemeldet — siehe
+    [Anmelden und Lizenz beziehen](../setup/activate-license.md). Bei einer
+    Dongle-Installation legen Sie beim ersten Programmstart zunächst ein
+    Administrator-Konto an — siehe
     [Erststart und Einrichtung](../setup/first-run.md).
 
-## Der Bildschirm im Überblick
+---
+
+## Anmeldung mit dem Kontobenutzer
+
+Beim Start erscheint das Fenster **Herzog CAB – Anmelden** mit dem Hinweis
+*„Melden Sie sich mit Ihrem Benutzer im Kundenkonto an – mit denselben
+Zugangsdaten wie im Lizenzportal und in Herzog CAB Web."* Darunter steht
+der Name Ihres Kontos (*Konto: <Firma>*).
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Anmeldefenster „Herzog CAB – Anmelden" im Kontomodell: Hinweistext, Zeile „Konto: <Firma>", Felder E-Mail-Adresse und Passwort, Schaltflächen Anmelden und Beenden.
+    **So erzeugen:** Kunden-Build auf einem am Konto angemeldeten Rechner ein zweites Mal starten.
+    **Ziel-Datei:** `assets/screenshots/admin/anmelden-konto.png`
+
+### Bedienelemente
+
+| Element | Beschreibung |
+|---|---|
+| **E-Mail-Adresse** | Ihr Anmeldename im Kundenkonto. Herzog CAB füllt hier den zuletzt an diesem Rechner angemeldeten Benutzer vor, beim ersten Mal den Benutzer, der den Rechner angemeldet hat. Ein Klick in das Feld markiert den Inhalt, damit Sie ihn direkt überschreiben können. |
+| **Passwort** | Ihr Konto-Passwort (verdeckte Eingabe). Mit ++enter++ lösen Sie die Anmeldung direkt aus. |
+| **Code (Authenticator-App)** | Erscheint nur, wenn für Ihren Benutzer der [zweite Faktor](../portal/security.md) eingerichtet ist — nach dem ersten Klick auf **Anmelden**. Sechs Ziffern aus der Authenticator-App. |
+| **Anmelden** | Prüft die Zugangsdaten am Lizenzserver und öffnet bei Erfolg die Profil-Auswahl. |
+| **Beenden** | Beendet Herzog CAB. |
+
+### Rollen und Rechte
+
+Ihre Rolle im Programm entspricht Ihrer Rolle im Kundenkonto:
+**Administrator** = globaler Administrator mit allen Rechten in allen
+Profilen, **Bearbeiter** und **Betrachter** = die gleichnamigen
+Standardrollen. Ändert ein Administrator Ihre Rolle im Lizenzportal, gilt
+das ab der nächsten Online-Anmeldung. Welche Profile Sie sehen, legt
+weiterhin die lokale [Benutzerverwaltung](users.md) fest.
+
+### Anmelden ohne Internet
+
+Ist der Lizenzserver nicht erreichbar, lässt Herzog CAB die Anmeldung
+trotzdem zu — für Benutzer, die sich **auf diesem Rechner schon einmal
+online angemeldet** haben, mit dem Passwort von damals. Nach der Anmeldung
+erscheint der Hinweis *„Der Lizenzserver ist nicht erreichbar. Sie sind mit
+den zuletzt bekannten Rollen angemeldet …"*. Änderungen an Benutzern und
+Rollen im Konto kommen erst beim nächsten Online-Start an.
+
+### Meldungen des Anmeldefensters (Kontobenutzer)
+
+| Meldung | Bedeutung |
+|---|---|
+| *E-Mail-Adresse oder Passwort stimmen nicht.* | Zugangsdaten prüfen; das Passwort setzen Sie über **Passwort vergessen** im [Lizenzportal](../portal/index.md) zurück. |
+| *Für diesen Benutzer ist die Zwei-Faktor-Anmeldung eingerichtet. Bitte den aktuellen Code …* | Kein Fehler — den Code aus der Authenticator-App eintragen. |
+| *Der Code stimmt nicht.* | Uhrzeit des Handys prüfen und den nächsten Code abwarten. |
+| *Dieser Benutzer ist deaktiviert.* | Ein Administrator hat den Benutzer im Lizenzportal deaktiviert. |
+| *Zu viele Fehlversuche. Bitte später erneut versuchen.* | Der Lizenzserver bremst nach mehreren Fehlversuchen — einige Minuten warten. |
+| *Der Lizenzserver ist nicht erreichbar (…). Offline anmelden kann sich nur, wer sich auf diesem Rechner schon einmal online angemeldet hat …* | Verbindung prüfen — oder einen Benutzer nehmen, der hier schon einmal online war. |
+| *Die Anmeldung am Kundenkonto war erfolgreich, aber der Benutzer konnte im Programm nicht angemeldet werden …* | Selten; meist ist die lokale Benutzerdatei nicht beschreibbar — siehe [Login-Probleme](../help/login-problems.md). |
+
+---
+
+## Anmeldung bei Dongle-Installationen
 
 Beim Start erscheint das Anmeldefenster **Herzog CAB – Anmelden** mit dem
 HERZOG-Logo, den Eingabefeldern und — falls eingerichtet — der
@@ -23,10 +89,8 @@ Microsoft-Schaltfläche.
 
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Anmeldefenster „Herzog CAB – Anmelden" mit Logo, Feldern Login/Passwort und der Schaltfläche „Mit Microsoft anmelden"
-    **So erzeugen:** Herzog CAB starten (Entra-Anmeldung muss unter *Systemverwaltung > Authentifizierung* aktiviert sein, sonst fehlt die Microsoft-Schaltfläche)
+    **So erzeugen:** Herzog CAB mit Dongle starten (Entra-Anmeldung muss unter *Systemverwaltung > Authentifizierung* aktiviert sein, sonst fehlt die Microsoft-Schaltfläche)
     **Ziel-Datei:** `assets/screenshots/admin/anmelden.png`
-
-## Bedienelemente im Detail
 
 ### Login und Passwort
 
@@ -74,14 +138,7 @@ Bricht die Microsoft-Anmeldung ab oder dauert sie zu lange, zeigt das
 Anmeldefenster eine Meldung (z. B. *„Zeitüberschreitung bei der
 Microsoft-Anmeldung."*) und Sie können es erneut versuchen.
 
-### Profil-Auswahl nach der Anmeldung
-
-Direkt nach der erfolgreichen Anmeldung fragt der Dialog **Profil auswählen**,
-welcher Arbeitsbereich geöffnet werden soll. Mit **Profil öffnen** starten
-Sie in das gewählte Profil; **Profile verwalten …** führt in die
-[Profilverwaltung](profiles.md).
-
-## Kontosperre bei Fehlversuchen
+### Kontosperre bei Fehlversuchen
 
 Nach **fünf** fehlgeschlagenen Anmeldeversuchen kurz hintereinander wird die
 Anmeldung für dieses Konto vorübergehend gesperrt (*„Zu viele Fehlversuche.
@@ -91,7 +148,7 @@ es erneut — die Sperre löst sich von selbst. Ist das Passwort tatsächlich
 vergessen, kann ein Administrator es
 [zurücksetzen](users.md#passwort-zurucksetzen).
 
-## Meldungen des Anmeldefensters
+### Meldungen des Anmeldefensters (lokale Konten)
 
 | Meldung | Bedeutung |
 |---|---|
@@ -101,18 +158,33 @@ vergessen, kann ein Administrator es
 | *Dieses Konto meldet sich über einen anderen Anbieter an.* | Für dieses Konto ist z. B. die Microsoft-Anmeldung vorgesehen — nutzen Sie **Mit Microsoft anmelden** statt des Passwort-Felds. |
 | *Die Microsoft-Anmeldung ist nicht konfiguriert.* | Die Einrichtung unter [Authentifizierung](authentication.md) ist unvollständig — wenden Sie sich an Ihren Administrator. |
 
+---
+
+## Profil-Auswahl nach der Anmeldung
+
+Direkt nach der erfolgreichen Anmeldung fragt der Dialog **Profil auswählen**,
+welcher Arbeitsbereich geöffnet werden soll — sofern Ihnen mehr als ein
+Profil zugewiesen ist. Mit **Profil öffnen** starten Sie in das gewählte
+Profil; **Profile verwalten …** führt in die [Profilverwaltung](profiles.md).
+Ist genau ein Profil zugewiesen, öffnet Herzog CAB es ohne Nachfrage.
+
 ## Abmelden und Profil wechseln
 
 * **Abmelden:** Klicken Sie unten links in der Navigationsleiste auf Ihren
   Namen bzw. Ihr Profilbild und wählen Sie im Dialog
-  [Mein Profil](my-profile.md) die Schaltfläche **Abmelden**.
+  [Mein Profil](my-profile.md) die Schaltfläche **Abmelden**. Das meldet nur
+  den **Benutzer** ab — der Rechner bleibt am Kundenkonto angemeldet und
+  behält seine Plätze. Den Rechner selbst melden Sie unter
+  [*Einstellungen > Lizenz*](settings/license.md) ab.
 * **Profil wechseln:** erfolgt über einen Programmneustart, damit keine
   ungespeicherten Eingaben verloren gehen — siehe
   [Profile (Arbeitsbereiche)](profiles.md#profil-wechseln).
 
 ## Verwandte Seiten
 
-* [Benutzer](users.md) — Konten anlegen, Passwort zurücksetzen
-* [Authentifizierung](authentication.md) — Microsoft Entra ID und LDAP einrichten
+* [Anmelden und Lizenz beziehen](../setup/activate-license.md) — Rechner am Kundenkonto anmelden
+* [Passwort und zweiter Faktor](../portal/security.md) — Passwort ändern, Authenticator-App
+* [Benutzer](users.md) — Konten anlegen bzw. aus dem Kundenkonto übernehmen
+* [Authentifizierung](authentication.md) — Microsoft Entra ID und LDAP einrichten (Dongle-Installationen)
 * [Mein Profil](my-profile.md) — eigenes Konto und Abmelden
 * [Probleme bei der Anmeldung](../help/login-problems.md)

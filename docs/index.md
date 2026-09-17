@@ -28,13 +28,15 @@ Bedienung bis zur Verwaltung im Werk.
 für Flechtmaschinen. Sie berechnen damit Material-, Produkt-, Produktions-
 und Spulerei-Parameter, entwerfen Flechtdesigns, verwalten Flecht- und
 Spulaufträge, planen Maschinenpark und Produktionshalle und drucken fertige
-Produktionsunterlagen.
+Produktionsunterlagen. Seit Version 2.0 gibt es Herzog CAB als
+**Desktop-App** für Windows und macOS und als **Web-App** im Browser —
+beide mit einem gemeinsamen Kundenkonto.
 
 Dieses Handbuch richtet sich an **Anwender** im Werk — Bediener,
-Arbeitsvorbereitung und Administratoren. Es ist in sechs Bereiche gegliedert,
+Arbeitsvorbereitung und Administratoren. Es ist in sieben Bereiche gegliedert,
 die Sie oben in der Kopfleiste wiederfinden.
 
-## Die sechs Bereiche des Handbuchs
+## Die sieben Bereiche des Handbuchs
 
 <div class="grid cards" markdown>
 
@@ -42,8 +44,8 @@ die Sie oben in der Kopfleiste wiederfinden.
 
     ---
 
-    Von den Systemvoraussetzungen über CodeMeter und Installation bis zur
-    Lizenz und zum Erststart — alles für die erste Inbetriebnahme.
+    Von den Systemvoraussetzungen über Kundenkonto und Installation bis zur
+    Anmeldung und zum Erststart — alles für die erste Inbetriebnahme.
 
     [:octicons-arrow-right-24: Zum Bereich](setup/index.md)
 
@@ -52,11 +54,12 @@ die Sie oben in der Kopfleiste wiederfinden.
     ---
 
     Die bereichsübergreifenden Bedienkonzepte: Oberfläche, Navigation,
-    Startseite, Favoriten, Suche und der Aufbau der Berechnungsseiten.
+    Startseite, Favoriten, Suche, Berechnungsseiten — und Desktop-App oder
+    Web-App?
 
     [:octicons-arrow-right-24: Zum Bereich](basics/index.md)
 
-- :material-apps: __Funktionen__
+- :material-monitor: __Desktop-App__
 
     ---
 
@@ -64,6 +67,15 @@ die Sie oben in der Kopfleiste wiederfinden.
     Hallenplaner, Designer, alle Berechnungen, Stammdaten und Druck-Editor.
 
     [:octicons-arrow-right-24: Zum Bereich](orders/index.md)
+
+- :material-web: __Web-App__
+
+    ---
+
+    Herzog CAB im Browser unter app.herzog-cab.com: Anmelden, Oberfläche,
+    Module, Konto und Abo, Import aus dem Desktop.
+
+    [:octicons-arrow-right-24: Zum Bereich](web/index.md)
 
 - :material-map-marker-path: __Aufgaben & Abläufe__
 
@@ -78,8 +90,8 @@ die Sie oben in der Kopfleiste wiederfinden.
 
     ---
 
-    Benutzer, Rollen und Anmeldung, Profile und Speicherorte, Firmendaten
-    sowie alle programmweiten Einstellungen.
+    Kundenkonto und Lizenzportal, Benutzer, Rollen und Anmeldung, Profile
+    und Speicherorte, Firmendaten sowie alle programmweiten Einstellungen.
 
     [:octicons-arrow-right-24: Zum Bereich](admin/index.md)
 
@@ -139,47 +151,50 @@ Schritt für Schritt ans Ziel.
 
 </div>
 
-## Neu in Version 1.4.5
+## Neu in Version 2.0
 
 <div class="grid cards" markdown>
 
-- :material-sync-circle: __Spulerei komplett__
+- :material-account-key-outline: __Kundenkonto statt Dongle__
 
     ---
 
-    Spulmaschinen sind jetzt eigene Stammdaten, Sie legen dedizierte
-    Spulaufträge an und rechnen mit neun neuen Spulerei-Berechnungen.
+    Herzog CAB meldet sich am Kundenkonto Ihrer Firma an und zieht seine
+    Lizenz aus dem Vorrat — ein Login für Desktop-App, Web-App und Portal,
+    auf Wunsch mit zweitem Faktor. Bestandskunden mit Dongle ändern nichts.
 
-    [:octicons-arrow-right-24: Spulmaschinen](master-data/winding-machines.md)<br>
-    [:octicons-arrow-right-24: Spulauftrag](orders/winding-order.md)<br>
-    [:octicons-arrow-right-24: Spulerei-Berechnungen](calculations/winding/index.md)
+    [:octicons-arrow-right-24: Kundenkonto und Einladung](setup/account.md)<br>
+    [:octicons-arrow-right-24: Lizenzportal](portal/index.md)
 
-- :material-grid: __Quadrat- und Packungsgeflecht im Designer__
-
-    ---
-
-    Der Designer beherrscht jetzt zusätzlich Quadratgeflechte und
-    Packungsgeflechte mit ihren Besetzungsvarianten.
-
-    [:octicons-arrow-right-24: Geflechtsart und Parameter](designer/parameters.md)
-
-- :material-animation-play: __Gangbahn-Animation__
+- :material-web: __Herzog CAB Web__
 
     ---
 
-    Sehen Sie im Designer zu, wie sich die Klöppel auf den Gangbahnen bewegen
-    und das Geflecht Lage für Lage entsteht.
+    Das komplette Programm im Browser — Aufträge, Berechnungen, Designer mit
+    3D, Maschinen, Stammdaten, Hallenplaner und Druck, auch am Tablet.
+    30 Tage kostenlos testbar.
 
-    [:octicons-arrow-right-24: Besetzung und Animation](designer/animation.md)
+    [:octicons-arrow-right-24: Web-App](web/index.md)
 
-- :material-microsoft: __Anmeldung mit Microsoft Entra ID__
+- :material-rotate-3d: __Echte 3D-Ansicht im Designer__
 
     ---
 
-    Melden Sie sich mit Ihrem Firmenkonto über Microsoft Entra ID an —
-    Benutzer und Rollen werden dabei automatisch übernommen.
+    Der Schalter **3D** zeigt das Geflecht als räumliches Modell aus den
+    Klöppelbahnen — für alle sechs Geflechtsarten, mit Material und
+    Bedeckung.
 
-    [:octicons-arrow-right-24: Authentifizierung](admin/authentication.md)
+    [:octicons-arrow-right-24: Ansichten und 3D-Ansicht](designer/view-3d.md)
+
+- :material-cloud-upload-outline: __Cloud-Upload__
+
+    ---
+
+    Die Desktop-App lädt ihr Arbeitsverzeichnis automatisch in die Web-App
+    hoch — Aufträge, Designs, Maschinen und Stammdaten sind dort immer
+    aktuell.
+
+    [:octicons-arrow-right-24: Lizenz und Cloud](admin/settings/license.md)
 
 </div>
 

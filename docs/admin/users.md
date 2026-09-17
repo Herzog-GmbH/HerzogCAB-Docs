@@ -1,14 +1,18 @@
 # Benutzer
 
-!!! abstract "Referenz — Benutzerkonten anlegen, bearbeiten, importieren, deaktivieren und Passwörter zurücksetzen."
+!!! abstract "Referenz — Benutzer aus dem Kundenkonto übernehmen und Profilen zuweisen; bei Dongle-Installationen Konten anlegen, importieren, deaktivieren und Passwörter zurücksetzen."
 
 ## Wofür Sie diesen Bereich nutzen
 
-In der Benutzerverwaltung (*Systemverwaltung > Benutzer*) pflegen Sie alle
-Konten, mit denen sich Kolleginnen und Kollegen an Herzog CAB anmelden.
-Konten können lokal angelegt oder aus **Microsoft Entra** bzw.
-**LDAP / Active Directory** importiert werden. Hier weisen Sie außerdem pro
-[Profil](profiles.md) die [Rollen](roles.md) zu.
+In der Benutzerverwaltung (*Systemverwaltung > Benutzer*) sehen Sie alle
+Benutzer, die sich an Herzog CAB anmelden können, und weisen ihnen pro
+[Profil](profiles.md) (Arbeitsbereich) die [Rollen](roles.md) zu. Was Sie
+darüber hinaus hier tun können, hängt vom Lizenzweg ab:
+
+| Lizenzweg | Benutzer kommen aus … | Hier pflegen Sie … |
+|---|---|---|
+| **Kundenkonto** (Regelfall seit 2.0) | dem [Kundenkonto](../setup/account.md) — eingeladen im [Lizenzportal](../portal/users.md). | nur die **Zuweisung zu Profilen**. Stammdaten, Passwörter, Aktiv-Kennzeichen und Rollen gehören dem Konto. |
+| **Dongle / CmAct-Lizenz** | der lokalen Benutzerverwaltung, **Microsoft Entra** oder **LDAP / Active Directory**. | alles: anlegen, importieren, bearbeiten, deaktivieren, Passwort zurücksetzen. |
 
 !!! warning "Berechtigung erforderlich"
     Diesen Bereich sehen und nutzen nur Benutzer mit dem Recht
@@ -17,12 +21,37 @@ Konten können lokal angelegt oder aus **Microsoft Entra** bzw.
 ## Der Bildschirm im Überblick
 
 Links steht die **Benutzerliste** mit Suchfeld und den Schaltflächen zum
-Anlegen und Importieren, rechts der **Editor** des gewählten Benutzers.
+Anlegen und Importieren bzw. Aktualisieren, rechts der **Editor** des
+gewählten Benutzers.
 
 !!! warning "📷 Screenshot fehlt"
-    **Motiv:** Benutzerverwaltung — Benutzerliste links (mit den Schaltflächen „Neuer Benutzer", „Aus Entra importieren", „Aus LDAP importieren"), Benutzer-Editor rechts
-    **So erzeugen:** *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen
+    **Motiv:** Benutzerverwaltung im Kontomodell — Benutzerliste links mit dem Hinweistext „Benutzer, Passwörter und Rollen kommen aus dem Kundenkonto …" und den Schaltflächen „Vom Kundenkonto aktualisieren" und „Lizenzportal öffnen", Benutzer-Editor rechts mit ausgegrauten Stammdatenfeldern und der Infozeile „Kontobenutzer (Lizenzserver)"
+    **So erzeugen:** Kunden-Build mit Kontoanmeldung, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen
+    **Ziel-Datei:** `assets/screenshots/admin/benutzer-konto.png`
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Benutzerverwaltung bei Dongle-Installation — Benutzerliste links (mit den Schaltflächen „Neuer Benutzer", „Aus Entra importieren", „Aus LDAP importieren"), Benutzer-Editor rechts
+    **So erzeugen:** Build mit Dongle, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen
     **Ziel-Datei:** `assets/screenshots/admin/benutzer.png`
+
+## Im Kontomodell: Benutzer aus dem Kundenkonto
+
+Bezieht Herzog CAB seine Lizenz aus dem Kundenkonto, steht über der
+Benutzerliste der Hinweis *„Benutzer, Passwörter und Rollen kommen aus dem
+Kundenkonto „<Firma>" – dieselben wie im Lizenzportal und in Herzog CAB Web.
+Neue Benutzer werden im Lizenzportal eingeladen; hier bleibt nur die
+Zuweisung zu Arbeitsbereichen."*
+
+| Element | Beschreibung |
+|---|---|
+| **Vom Kundenkonto aktualisieren** | Holt die aktuelle Benutzerliste samt Rollen vom Lizenzserver: neu eingeladene Benutzer kommen hinzu, deaktivierte werden inaktiv, geänderte Rollen übernommen. Die Erfolgsmeldung nennt die Zahl der übernommenen Benutzer bzw. *„Benutzerliste ist auf dem Stand des Kundenkontos."* Auch ohne diesen Klick wird jeder Benutzer bei seiner nächsten Online-Anmeldung aktualisiert. |
+| **Lizenzportal öffnen** | Öffnet das [Lizenzportal](../portal/users.md) im Browser — dort laden Sie neue Benutzer ein und ändern Rollen. |
+| Infozeile *Kontobenutzer (Lizenzserver)* | Kennzeichnet einen Benutzer aus dem Konto. **Login**, **Anzeigename** und **E-Mail** sind nur lesbar; **Aktiv**, **Passwort zurücksetzen…**, **Deaktivieren** und **Endgültig löschen** sind ausgeblendet. |
+| **Profile und Rollen** | Wie unten beschrieben — die Zuweisung zu Arbeitsbereichen bleibt lokal. Die **Rolle** selbst kommt aus dem Konto (Administrator = globaler Administrator, Bearbeiter, Betrachter); Benutzer ohne Rolle arbeiten als Bearbeiter. |
+
+Die Schaltflächen **Neuer Benutzer**, **Aus Entra importieren** und **Aus
+LDAP importieren** gibt es im Kontomodell nicht. Alles Weitere auf dieser
+Seite gilt für **Dongle-Installationen** mit lokaler Benutzerverwaltung.
 
 ## Bedienelemente im Detail
 
@@ -107,7 +136,8 @@ Hat ein Benutzer sein Passwort vergessen, setzen Sie es hier neu:
 !!! tip "Eigenes Passwort ändern"
     Das eigene Passwort ändert jeder Benutzer selbst im Dialog
     [Mein Profil](my-profile.md#tab-passwort) — dafür ist kein Administrator
-    nötig.
+    nötig. Kontobenutzer ändern ihr Passwort im
+    [Lizenzportal](../portal/security.md).
 
 ## Benutzer aus Microsoft Entra importieren
 
@@ -159,6 +189,7 @@ Mit **Übernehmen** werden die angehakten Benutzer angelegt bzw. deaktiviert.
 
 ## Verwandte Seiten
 
+* [Benutzer einladen und verwalten (Lizenzportal)](../portal/users.md) — Benutzer im Kontomodell
 * [Rollen und Berechtigungen](roles.md) — was eine Rolle darf
 * [Authentifizierung](authentication.md) — Microsoft Entra ID und LDAP einrichten
 * [Mein Profil](my-profile.md) — was jeder Benutzer selbst ändern kann

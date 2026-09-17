@@ -95,4 +95,13 @@ Wenn Sie Herzog CAB zum ersten Mal bedienen, lesen Sie am besten zuerst
 
     [:octicons-arrow-right-24: Testversion und Kontingente](trial-quotas.md)
 
+- :material-laptop: **Desktop-App oder Web-App?**
+
+    ---
+
+    Die beiden Formen von Herzog CAB, ihre Stärken und wie sie über das
+    Kundenkonto zusammenarbeiten.
+
+    [:octicons-arrow-right-24: Desktop-App oder Web-App?](platforms.md)
+
 </div>

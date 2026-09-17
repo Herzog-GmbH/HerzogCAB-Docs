@@ -1,4 +1,4 @@
-# Allgemein: Sprache, Darstellung und Datenschutz
+# Allgemein: Sprache, Darstellung, Datenschutz und Produktionsplanung
 
 !!! abstract "Referenz — Tab „Allgemein" des Einstellungen-Dialogs: Profil-Schnellzugriff, Sprache, Schriftgröße, Design, Diagnose-Protokoll und anonyme Nutzungsstatistik."
 
@@ -65,6 +65,12 @@ Sie oder Ihr Unternehmen ist nicht möglich.
     (Dialog *„Herzog CAB verbessern"*). Ihre Wahl können Sie hier jederzeit
     ändern. In der **Testversion** ist die Statistik standardmäßig
     eingeschaltet, lässt sich aber ebenfalls hier abschalten.
+
+### Produktionsplanung
+
+| Einstellung | Wirkung |
+|---|---|
+| **Produktionsstunden je Arbeitstag** | Wie viele Stunden pro Arbeitstag produziert wird (1–24 h in Halbstundenschritten, Standard **8 h**). Damit rechnet Herzog CAB die Laufzeit-Hochrechnung eines Auftrags in Kalendertage um, wenn Sie im [Flechtauftrag](../../orders/braiding-order.md#tab-auftrag) oder [Spulauftrag](../../orders/winding-order.md) das **Produktionsende aus der Hochrechnung übernehmen**. Wochenenden werden dabei übersprungen. |
 
 ## Verwandte Seiten
 

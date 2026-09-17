@@ -1,13 +1,32 @@
 # Lizenzprobleme
 
-!!! question "Problemlösung — Herzog CAB startet nicht oder meldet einen Lizenzfehler"
+!!! question "Problemlösung — Herzog CAB startet nicht, meldet einen Lizenzfehler oder findet keinen freien Platz"
 
-Herzog CAB nutzt **Wibu CodeMeter** als Lizenzsystem. Ohne gültige Lizenz lässt
-sich das Programm nicht starten. Die folgenden Abschnitte helfen bei den
-häufigsten Fehlerbildern. Grundlagen zur Aktivierung finden Sie unter
-[Lizenz aktivieren](../setup/activate-license.md).
+Ohne gültige Lizenz lässt sich Herzog CAB nicht starten. Seit Version 2.0
+gibt es zwei Lizenzwege — das **Kundenkonto** (Regelfall) und **Wibu
+CodeMeter** (Bestandskunden mit Dongle oder CmAct-Lizenz). Die folgenden
+Abschnitte helfen bei den häufigsten Fehlerbildern beider Wege. Grundlagen
+finden Sie unter [Anmelden und Lizenz beziehen](../setup/activate-license.md).
 
-## „Keine gültige Lizenz" beim Programmstart
+## Kundenkonto: Meldungen beim Start
+
+| Meldung | Ursache | Abhilfe |
+|---|---|---|
+| Dialog **Anmeldung am Kundenkonto** erscheint, obwohl der Rechner schon angemeldet war | Die Anmeldung wurde aufgehoben — über **Von diesem Rechner abmelden**, **Plätze freigeben** bzw. **Sperren** im Lizenzportal, oder die Miete ist nach längerer Zeit ohne Verbindung abgelaufen. | Erneut anmelden; ist der Rechner im Portal gesperrt, muss ihn ein Administrator [entsperren](../portal/licenses.md#rechner). |
+| *E-Mail-Adresse oder Passwort stimmen nicht.* | Tippfehler oder geändertes Passwort. | Passwort über **Passwort vergessen** im [Lizenzportal](../portal/index.md) zurücksetzen. |
+| *Der Code stimmt nicht.* | Zweiter Faktor: Code abgelaufen oder Uhrzeit des Handys weicht ab. | Nächsten Code abwarten; Uhrzeit des Handys automatisch stellen lassen. Ist die Authenticator-App verloren, setzt Herzog den zweiten Faktor zurück ([Support](support.md)). |
+| *Kein freier Platz für: <Baustein>. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* | Alle Plätze des Bausteins sind von anderen Rechnern belegt. | Ein Administrator gibt im [Lizenzportal](../portal/licenses.md) einen Rechner frei (z. B. einen ausgemusterten) oder [fragt Plätze an](../portal/requests.md). Rechner, die sieben Tage nicht gestartet wurden, geben ihren Platz von selbst frei. |
+| *Dieser Benutzer ist deaktiviert.* | Der Benutzer wurde im Portal deaktiviert. | Administrator des Kontos ansprechen ([Benutzer](../portal/users.md)). |
+| *Zu viele Fehlversuche. Bitte später erneut versuchen.* | Der Lizenzserver bremst nach mehreren Fehlversuchen aus derselben Verbindung. | Einige Minuten warten. |
+| *Der Lizenzserver ist nicht erreichbar …* | Keine Verbindung zu `license.herzog-cab.com` (Internet, Proxy, Firewall). | Verbindung prüfen. Ein bereits angemeldeter Rechner läuft mit seiner Miete weiter (sieben Tage, mit Offline-Miete bis 30 Tage); für die **erste** Anmeldung ist eine Verbindung Pflicht. |
+| *keine gültige Bestätigung* unter *Einstellungen > Lizenz > Miete* | Die Miete konnte zuletzt nicht verlängert werden (Server nicht erreichbar oder Freischaltung beendet). | Verbindung prüfen und **Miete jetzt verlängern**; ist der Baustein im Portal *abgelaufen* oder *beendet*, [verlängern](../portal/requests.md). |
+| Dieses Konto ist gesperrt (Meldung im Portal) | Herzog hat das Konto gesperrt; es gibt keine neuen Lizenzen mehr aus. | [Support](support.md) kontaktieren. |
+
+!!! tip "Länger ohne Internet unterwegs?"
+    Ziehen Sie vorher unter *Einstellungen > Lizenz* eine
+    [Offline-Miete](../admin/settings/license.md) für bis zu 30 Tage.
+
+## CodeMeter: „Keine gültige Lizenz" beim Programmstart
 
 1. Öffnen Sie das **CodeMeter Kontrollzentrum** (Doppelklick auf das
    Tray-Symbol unten rechts, oder über die Windows-Suche).
@@ -71,10 +90,20 @@ So gehen Sie vor:
 
 | Status | Verhalten |
 |---|---|
-| Lizenz vorhanden, gültig | Programm startet normal. |
-| Lizenz abgelaufen | Hinweis-Dialog, Programm startet nicht. |
+| CodeMeter-Lizenz vorhanden, gültig | Programm startet normal. |
+| Kein CodeMeter-Container, Rechner am Konto angemeldet | Programm startet normal; Miete wird im Hintergrund verlängert. |
+| Kein CodeMeter-Container, Rechner nicht angemeldet | Dialog *Anmeldung am Kundenkonto*. |
+| Miete abgelaufen, Server nicht erreichbar | Hinweis-Dialog; mit Verbindung startet das Programm wieder. |
+| Lizenz abgelaufen / Baustein beendet | Hinweis-Dialog, Programm startet nicht. |
 | Keine gültige Lizenz | Hinweis-Dialog, Programm startet nicht. |
 | Firm Access Counter = 0 (Error 38) | Programm startet nicht, Support-Fall (siehe oben). |
+
+## Web-App: kein Zugang
+
+| Meldung | Abhilfe |
+|---|---|
+| *Für das Konto … ist Herzog CAB Web nicht freigeschaltet oder die Testphase ist abgelaufen.* | Web-Baustein unter [Abo und Kauf](../web/subscription.md) kaufen bzw. anfragen oder im [Lizenzportal](../portal/requests.md) anfordern. Die Daten bleiben erhalten. |
+| *Belegt: n von m Plätzen.* | Alle Web-Plätze sind belegt; ein Platz wird nach 15 Minuten ohne Aktivität frei — oder mehr Plätze anfragen. |
 
 ## Verwandte Seiten
 
