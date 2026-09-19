@@ -16,7 +16,11 @@ schaltet frei, und die Änderung erscheint in Ihrem Konto unter
 
 ## Der Bildschirm im Überblick
 
-![Lizenz anfordern im Lizenzportal mit den drei Anfragearten Plätze, Verlängern und Baustein.](../assets/screenshots/portal/anfordern.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Lizenz anfordern im Lizenzportal mit den drei Anfragearten Plätze, Verlängern und Baustein.
+    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/anfordern`; automatisch per `python _tools/web_screenshots.py shots nur:portal-anfordern`
+    **Ziel-Datei:** `assets/screenshots/portal/anfordern.png`
+    <!-- web-bild ../assets/screenshots/portal/anfordern.png -->
 
 Die Seite bietet drei Anfragearten als eigene Abschnitte. Sie füllen nur
 den passenden aus und klicken dort auf **Anfrage senden**.

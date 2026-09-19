@@ -13,7 +13,11 @@ Felder auf die Referenzseiten der Desktop-App.
 
 ## Auftragsliste
 
-![Auftragsliste der Web-App mit Suche, Filtern und Statusspalte.](../assets/screenshots/web/auftraege.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Auftragsliste der Web-App mit Suche, Filtern und Statusspalte.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/auftraege`; automatisch per `python _tools/web_screenshots.py shots nur:auftraege`
+    **Ziel-Datei:** `assets/screenshots/web/auftraege.png`
+    <!-- web-bild ../assets/screenshots/web/auftraege.png -->
 
 | Element | Bedeutung |
 |---|---|
@@ -49,7 +53,11 @@ Der Editor hat dieselben neun Reiter wie der
 **Produktion**, **Design**, **Übersicht**. Die Bedeutung jedes Felds steht
 dort — hier nur die Besonderheiten der Web-App:
 
-![Flechtauftrag-Editor der Web-App, Reiter „Auftrag".](../assets/screenshots/web/flechtauftrag.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Flechtauftrag-Editor der Web-App, Reiter „Auftrag".
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/auftraege/<id>, Reiter Auftrag`; automatisch per `python _tools/web_screenshots.py shots nur:flechtauftrag`
+    **Ziel-Datei:** `assets/screenshots/web/flechtauftrag.png`
+    <!-- web-bild ../assets/screenshots/web/flechtauftrag.png -->
 
 * Die Kopfzeile zeigt Auftragsname und Nummer, den Vermerk *ungespeichert*
   bei offenen Änderungen sowie **Zur Auftragsliste**, **Drucken** und
@@ -81,7 +89,11 @@ Gesamtlänge, Farbaufschlüsselung, Wickelparameter) und **Maschinen und
 Zeitplan** (Spulmaschinen, Verteilung, Spulzeit, Produktionszeitraum). Die
 Felder erklärt der [Spulauftrag-Editor der Desktop-App](../orders/winding-order.md).
 
-![Spulauftrag-Editor der Web-App mit Farbaufschlüsselung.](../assets/screenshots/web/spulauftrag.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Spulauftrag-Editor der Web-App mit Farbaufschlüsselung.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/auftraege/<id> (Spulauftrag)`; automatisch per `python _tools/web_screenshots.py shots nur:spulauftrag`
+    **Ziel-Datei:** `assets/screenshots/web/spulauftrag.png`
+    <!-- web-bild ../assets/screenshots/web/spulauftrag.png -->
 
 Besonderheiten der Web-App:
 

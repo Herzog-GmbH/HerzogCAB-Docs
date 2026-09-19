@@ -13,7 +13,11 @@ im Browser.
 
 ## Übersicht der Grundrisse
 
-![Hallenplaner der Web-App: Grundrisse mit ihren Belegungen.](../assets/screenshots/web/hallenplaner.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Hallenplaner der Web-App: Grundrisse mit ihren Belegungen.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/hallenplaene`; automatisch per `python _tools/web_screenshots.py shots nur:hallenplaner`
+    **Ziel-Datei:** `assets/screenshots/web/hallenplaner.png`
+    <!-- web-bild ../assets/screenshots/web/hallenplaner.png -->
 
 | Element | Bedeutung |
 |---|---|
@@ -33,7 +37,11 @@ im Browser.
 
 ## Der Editor
 
-![Hallenplan-Editor der Web-App mit Werkzeugleiste, Zeichenfläche und Seitenleiste.](../assets/screenshots/web/hallenplan-editor.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Hallenplan-Editor der Web-App mit Werkzeugleiste, Zeichenfläche und Seitenleiste.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/hallenplaene/<grundriss>/<belegung>`; automatisch per `python _tools/web_screenshots.py shots nur:hallenplan-editor`
+    **Ziel-Datei:** `assets/screenshots/web/hallenplan-editor.png`
+    <!-- web-bild ../assets/screenshots/web/hallenplan-editor.png -->
 
 Oben die **Werkzeugleiste**, links die **Zeichenfläche**, rechts die
 **Seitenleiste** mit den Reitern **Werkzeuge**, **Katalog**, **Eigenschaften**

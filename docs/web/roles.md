@@ -16,7 +16,11 @@ dem Recht **Rollen verwalten** oder **Benutzer verwalten**.
 
 ## Der Bildschirm im Überblick
 
-![Rollen in der Web-App: Liste der Standard- und eigenen Rollen mit Rechtezahl und Benutzerzahl.](../assets/screenshots/web/rollen.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Rollen in der Web-App: Liste der Standard- und eigenen Rollen mit Rechtezahl und Benutzerzahl.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/rollen`; automatisch per `python _tools/web_screenshots.py shots nur:rollen`
+    **Ziel-Datei:** `assets/screenshots/web/rollen.png`
+    <!-- web-bild ../assets/screenshots/web/rollen.png -->
 
 | Element | Bedeutung |
 |---|---|

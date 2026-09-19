@@ -12,7 +12,11 @@ Stand ihrer Anfragen an Herzog.
 
 ## Der Bildschirm im Überblick
 
-![Mein Konto im Lizenzportal: Firmenkarte, Bausteine mit Plätzen, angemeldete Rechner und Anfragen.](../assets/screenshots/portal/mein-konto.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Mein Konto im Lizenzportal: Firmenkarte, Bausteine mit Plätzen, angemeldete Rechner und Anfragen.
+    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/`; automatisch per `python _tools/web_screenshots.py shots nur:portal-mein-konto`
+    **Ziel-Datei:** `assets/screenshots/portal/mein-konto.png`
+    <!-- web-bild ../assets/screenshots/portal/mein-konto.png -->
 
 Die Seite besteht aus vier Karten, von oben nach unten:
 

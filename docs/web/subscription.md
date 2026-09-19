@@ -17,7 +17,11 @@ zur Webapp*.
 
 ## Der Bildschirm im Überblick
 
-![Abo und Kauf in der Web-App: Hinweisbox zur Testphase, Freischaltungen des Kontos und die Karten Herzog CAB Web und Web Designer.](../assets/screenshots/web/abo.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Abo und Kauf in der Web-App: Hinweisbox zur Testphase, Freischaltungen des Kontos und die Karten Herzog CAB Web und Web Designer.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/abo`; automatisch per `python _tools/web_screenshots.py shots nur:abo`
+    **Ziel-Datei:** `assets/screenshots/web/abo.png`
+    <!-- web-bild ../assets/screenshots/web/abo.png -->
 
 ### Hinweise oben
 

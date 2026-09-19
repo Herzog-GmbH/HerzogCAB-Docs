@@ -15,7 +15,11 @@ Kachel **Konto und Benutzer** auf der Startseite.
 
 ## Der Bildschirm im Überblick
 
-![Konto und Benutzer in der Web-App: Edition, Plätze, Bausteine und die Benutzerliste mit Rollen-Kästchen.](../assets/screenshots/web/konto-benutzer.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Konto und Benutzer in der Web-App: Edition, Plätze, Bausteine und die Benutzerliste mit Rollen-Kästchen.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/konto`; automatisch per `python _tools/web_screenshots.py shots nur:konto-benutzer`
+    **Ziel-Datei:** `assets/screenshots/web/konto-benutzer.png`
+    <!-- web-bild ../assets/screenshots/web/konto-benutzer.png -->
 
 | Element | Bedeutung |
 |---|---|

@@ -18,7 +18,11 @@ Bedienung im Browser.
 
 ## Rechnerübersicht
 
-![Rechnerübersicht der Web-App: Suchfeld und Kacheln je Gruppe.](../assets/screenshots/web/berechnungen.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Rechnerübersicht der Web-App: Suchfeld und Kacheln je Gruppe.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/berechnungen`; automatisch per `python _tools/web_screenshots.py shots nur:berechnungen`
+    **Ziel-Datei:** `assets/screenshots/web/berechnungen.png`
+    <!-- web-bild ../assets/screenshots/web/berechnungen.png -->
 
 | Element | Bedeutung |
 |---|---|
@@ -28,7 +32,11 @@ Bedienung im Browser.
 
 ## Rechnerseite
 
-![Rechnerseite der Web-App am Beispiel Flechtwinkel: Eingaben links, Ergebnis rechts.](../assets/screenshots/web/rechner-flechtwinkel.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Rechnerseite der Web-App am Beispiel Flechtwinkel: Eingaben links, Ergebnis rechts.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/berechnungen/braidAngle (10 / 5 mm, Berechnen)`; automatisch per `python _tools/web_screenshots.py shots nur:rechner-flechtwinkel`
+    **Ziel-Datei:** `assets/screenshots/web/rechner-flechtwinkel.png`
+    <!-- web-bild ../assets/screenshots/web/rechner-flechtwinkel.png -->
 
 | Element | Bedeutung |
 |---|---|

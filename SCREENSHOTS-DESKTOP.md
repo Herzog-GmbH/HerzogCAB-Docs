@@ -1,6 +1,6 @@
 # Screenshots Desktop-App — Liste für Elke
 
-Stand: 17.09.2026, Handbuch 2.0 (Zweig `handbuch-2.0`). Insgesamt **43** Platzhalter auf 29 Seiten.
+Stand: 19.09.2026, Handbuch 2.0. Insgesamt **43** Platzhalter auf 29 Seiten.
 
 
 Jeder Platzhalter steht im Handbuch als Admonition `!!! warning "📷 Screenshot fehlt"` (Suche nach „Screenshot fehlt") mit
@@ -9,7 +9,8 @@ Jeder Platzhalter steht im Handbuch als Admonition `!!! warning "📷 Screenshot
 
 **Aufnahme-Regeln (STYLEGUIDE.md):** helles Theme, ~1600 px Fensterbreite, 100 % Skalierung, Demodaten „Musterbetrieb"
 (keine echten Kunden/Preise), Kunden-Build mit Kontoanmeldung (`CONFIG+=customer account`), soweit nicht anders angegeben.
-Die Web-App- und Portal-Screenshots (Ordner `web/`, `portal/`) hat Claude selbst aus der lokalen Testumgebung erzeugt.
+Die Web-App- und Portal-Screenshots (Ordner `web/`, `portal/`) entstehen per `_tools/web_screenshots.py` aus der lokalen
+Testumgebung und stehen deshalb NICHT in dieser Liste (Suche nach „web_screenshots.py" zeigt die offenen).
 
 ## Zusätzlich zu ersetzen: veraltete Bestandsbilder
 

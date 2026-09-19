@@ -10,7 +10,11 @@ Installationspaket per E-Mail oder USB-Stick ist damit nicht mehr nötig.
 
 ## Der Bildschirm im Überblick
 
-![Herunterladen im Lizenzportal: neueste Version mit Datum, Installer für Windows und macOS und der Liste „Was ist neu".](../assets/screenshots/portal/herunterladen.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Herunterladen im Lizenzportal: neueste Version mit Datum, Installer für Windows und macOS und der Liste „Was ist neu".
+    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/download`; automatisch per `python _tools/web_screenshots.py shots nur:portal-herunterladen`
+    **Ziel-Datei:** `assets/screenshots/portal/herunterladen.png`
+    <!-- web-bild ../assets/screenshots/portal/herunterladen.png -->
 
 | Element | Bedeutung |
 |---|---|

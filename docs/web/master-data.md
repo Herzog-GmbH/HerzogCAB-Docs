@@ -16,7 +16,11 @@ Die Bedeutung der Felder entspricht der Desktop-App — siehe
 
 ## Der Bildschirm im Überblick
 
-![Stammdaten der Web-App, Reiter „Materialien" mit Liste und Suchfeld.](../assets/screenshots/web/stammdaten.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Stammdaten der Web-App, Reiter „Materialien" mit Liste und Suchfeld.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/stammdaten/material`; automatisch per `python _tools/web_screenshots.py shots nur:stammdaten`
+    **Ziel-Datei:** `assets/screenshots/web/stammdaten.png`
+    <!-- web-bild ../assets/screenshots/web/stammdaten.png -->
 
 Jeder Reiter hat denselben Aufbau:
 

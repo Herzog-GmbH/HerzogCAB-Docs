@@ -127,7 +127,7 @@ Wo ein Bild hingehört, aber noch fehlt, IMMER exakt dieses Muster (auffindbar �
 
 Bestehende, noch gültige Screenshots weiterverwenden (`docs/assets/screenshots/…`); Bildpfade relativ zur Seite (`../assets/…` bzw. `../../assets/…`).
 
-**Web-App und Lizenzportal** werden nicht per Platzhalter, sondern per Skript bebildert: `_tools/web_screenshots.py` (Playwright) rendert die lokale Testumgebung (Docker + Vite) mit 1440 × 900 px in `docs/assets/screenshots/web/` und `…/portal/`. Bei Oberflächenänderungen das Skript erneut laufen lassen statt von Hand zu fotografieren.
+**Web-App und Lizenzportal** werden per Skript bebildert: `_tools/web_screenshots.py` (Playwright) rendert die lokale Testumgebung (Docker + Vite) mit 1440 × 900 px in `docs/assets/screenshots/web/` und `…/portal/`. Solange ein Bild fehlt, steht in der Seite derselbe Platzhalter wie oben, ergänzt um die Zeile `<!-- web-bild <pfad> -->`; `python _tools/web_platzhalter.py zurueck` tauscht Platzhalter gegen Bild, sobald die Datei existiert (`… ohne Argument` macht aus fehlenden Bildern wieder Platzhalter). Bei Oberflächenänderungen das Skript erneut laufen lassen statt von Hand zu fotografieren.
 
 ## Screenshot-Stil (für die Aufnahme)
 

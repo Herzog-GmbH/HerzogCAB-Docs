@@ -18,7 +18,11 @@ auf jeder [Rechnerseite](calculations.md).
 
 ## Der Bildschirm im Überblick
 
-![Druckseite der Web-App mit Vorlagenauswahl und Vorschau eines Flechtauftrags.](../assets/screenshots/web/druck.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Druckseite der Web-App mit Vorlagenauswahl und Vorschau eines Flechtauftrags.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/druck/auftrag/<id>`; automatisch per `python _tools/web_screenshots.py shots nur:druck`
+    **Ziel-Datei:** `assets/screenshots/web/druck.png`
+    <!-- web-bild ../assets/screenshots/web/druck.png -->
 
 | Element | Bedeutung |
 |---|---|

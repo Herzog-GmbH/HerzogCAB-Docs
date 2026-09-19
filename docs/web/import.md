@@ -23,7 +23,11 @@ Kachel auf der Startseite; sie erfordert das Recht
 
 ## Der Bildschirm im Überblick
 
-![Import aus dem Desktop in der Web-App: ZIP-Auswahl, Optionen und das Ergebnis eines Imports.](../assets/screenshots/web/import.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Import aus dem Desktop in der Web-App: ZIP-Auswahl, Optionen und das Ergebnis eines Imports.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/import`; automatisch per `python _tools/web_screenshots.py shots nur:import`
+    **Ziel-Datei:** `assets/screenshots/web/import.png`
+    <!-- web-bild ../assets/screenshots/web/import.png -->
 
 | Element | Bedeutung |
 |---|---|

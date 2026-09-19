@@ -15,7 +15,11 @@ in der Kopfleiste des Portals.
 
 ## Der Bildschirm im Überblick
 
-![Passwort und zweiter Faktor im Lizenzportal: Formular zum Passwortwechsel und die Karte „Zweiter Faktor".](../assets/screenshots/portal/passwort.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Passwort und zweiter Faktor im Lizenzportal: Formular zum Passwortwechsel und die Karte „Zweiter Faktor".
+    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/passwort`; automatisch per `python _tools/web_screenshots.py shots nur:portal-passwort`
+    **Ziel-Datei:** `assets/screenshots/portal/passwort.png`
+    <!-- web-bild ../assets/screenshots/portal/passwort.png -->
 
 ## Bedienelemente im Detail
 

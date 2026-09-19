@@ -16,7 +16,11 @@ Sie öffnen die Seite über *Benutzermenü > Medienbibliothek*.
 
 ## Der Bildschirm im Überblick
 
-![Medienbibliothek der Web-App mit Suchfeld, Artfilter und Dateiliste.](../assets/screenshots/web/medien.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Medienbibliothek der Web-App mit Suchfeld, Artfilter und Dateiliste.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/medien`; automatisch per `python _tools/web_screenshots.py shots nur:medien`
+    **Ziel-Datei:** `assets/screenshots/web/medien.png`
+    <!-- web-bild ../assets/screenshots/web/medien.png -->
 
 | Element | Bedeutung |
 |---|---|

@@ -14,7 +14,11 @@ Herzog CAB nutzen.
 
 ## Der Bildschirm im Überblick
 
-![Benutzerliste im Lizenzportal mit Rolle, letzter Anmeldung und Status; darunter das Formular „Benutzer einladen".](../assets/screenshots/portal/benutzer.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Benutzerliste im Lizenzportal mit Rolle, letzter Anmeldung und Status; darunter das Formular „Benutzer einladen".
+    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/benutzer`; automatisch per `python _tools/web_screenshots.py shots nur:portal-benutzer`
+    **Ziel-Datei:** `assets/screenshots/portal/benutzer.png`
+    <!-- web-bild ../assets/screenshots/portal/benutzer.png -->
 
 Oben steht die **Benutzerliste**, darunter das Formular **Benutzer
 einladen**. Bearbeiter und Betrachter sehen die Liste nur; verwalten können

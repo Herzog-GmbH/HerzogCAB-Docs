@@ -12,7 +12,11 @@ der unteren Leiste am Smartphone.
 
 ## Der Bildschirm im Überblick
 
-![Startseite der Web-App mit den vier Kennzahlen und den Schnellzugriff-Kacheln.](../assets/screenshots/web/startseite.png)
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Startseite der Web-App mit den vier Kennzahlen und den Schnellzugriff-Kacheln.
+    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/`; automatisch per `python _tools/web_screenshots.py shots nur:startseite`
+    **Ziel-Datei:** `assets/screenshots/web/startseite.png`
+    <!-- web-bild ../assets/screenshots/web/startseite.png -->
 
 ### Überblick (Kennzahlen)
 
