@@ -15,11 +15,7 @@ die Bedienung im Browser.
 
 ## Design-Bibliothek
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Design-Bibliothek der Web-App mit Vorschaubildern, Chips und Ordnerfilter.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/designs`; automatisch per `python _tools/web_screenshots.py shots nur:designs`
-    **Ziel-Datei:** `assets/screenshots/web/designs.png`
-    <!-- web-bild ../assets/screenshots/web/designs.png -->
+![Design-Bibliothek der Web-App mit Vorschaubildern, Chips und Ordnerfilter.](../assets/screenshots/web/designs.png)
 
 | Element | Bedeutung |
 |---|---|
@@ -34,11 +30,7 @@ Designs aus der Desktop-App erscheinen hier nach dem
 
 ## Der Designer im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Designer der Web-App: Geometrie links, Flechtbild und Besetzungsübersicht in der Mitte, Farben und Klöppeltabelle rechts.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/designs/<id>`; automatisch per `python _tools/web_screenshots.py shots nur:designer`
-    **Ziel-Datei:** `assets/screenshots/web/designer.png`
-    <!-- web-bild ../assets/screenshots/web/designer.png -->
+![Designer der Web-App: Geometrie links, Flechtbild und Besetzungsübersicht in der Mitte, Farben und Klöppeltabelle rechts.](../assets/screenshots/web/designer.png)
 
 Am Desktop ist der Designer dreispaltig: **Geometrie** links, **Flechtbild**
 mit **Besetzungsübersicht** in der Mitte, **Farben** und **Klöppeltabelle**
@@ -67,8 +59,8 @@ Breite; darunter schalten die Reiter **Geometrie**, **Farben** und
 | **Geflechtsart** | Rundgeflecht, Litzengeflecht, Quadratgeflecht, Spiralgeflecht, Packungsgeflecht, Soutachegeflecht. |
 | **Bahn-Art** | Nur Packungsgeflecht: Familie (2-, 3-, 4-bahnig, rund). |
 | **Besetzung** | Bindung: Normal, Halb, Tandem usw. — je nach Geflechtsart. |
-| **Klöppelanzahl** | Zulässige Klöppelzahlen der gewählten Geflechtsart und Bindung. |
-| **Flechtwinkel** | Wirkt auf das Flechtbild und live auf die 3D-Ansicht. |
+| **Klöppelanzahl** | Auswahlliste mit den zulässigen Klöppelzahlen der gewählten Geflechtsart und Bindung. |
+| **Flechtwinkel** | Schieberegler; wirkt auf das Flechtbild und live auf die 3D-Ansicht. |
 | **Fachung** | Anzahl der Fäden je Klöppel. |
 | **Seelenfäden** | Nur Soutache: Seelen durch die Radachsen. |
 | **Material-Ø** / **Bedeckung %** | Materialdurchmesser und Bedeckung; die Bedeckung steuert in der 3D-Ansicht die gezeichnete Fadendicke. |

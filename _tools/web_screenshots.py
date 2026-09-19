@@ -14,6 +14,7 @@ Zwei Schritte:
 
 Zugangsdaten werden vom Skript nie eingegeben oder gespeichert - nur die Sitzungs-Cookies in state.json.
 """
+import re
 import sys
 import time
 from pathlib import Path
@@ -132,32 +133,33 @@ def run_web(ctx):
         page.goto(WEB + "/auftraege"); settle(page, 1500)
         if want("auftraege"):
             shot(page, "web", "auftraege")
-        href = first_link(page, "/auftraege/")
-        if href and want("flechtauftrag"):
-            page.goto(WEB + href); settle(page, 1500)
-            try:
-                page.get_by_role("button", name="Auftrag", exact=True).first.click(); time.sleep(0.6)
-            except Exception:
-                pass
-            shot(page, "web", "flechtauftrag")
-            if want("druck"):
-                page.goto(WEB + "/druck/auftrag/" + href.rsplit("/", 1)[-1]); settle(page, 2500)
+        # Zeilen sind keine Links: der Stift "Oeffnen" fuehrt in den Editor.
+        def ersten_oeffnen(art_chip: str) -> str | None:
+            page.goto(WEB + "/auftraege"); settle(page, 1200)
+            zeile = page.locator("tr:visible").filter(has=page.get_by_text(art_chip, exact=True))
+            if zeile.count() == 0:
+                return None
+            knopf = zeile.first.locator("button[title='Öffnen']:visible")
+            if knopf.count() == 0:
+                return None
+            knopf.first.click(); settle(page, 1500)
+            return page.url
+        if want("flechtauftrag") or want("druck"):
+            url = ersten_oeffnen("Flechtauftrag")
+            if url and want("flechtauftrag"):
+                try:
+                    page.locator("[role='tab']:visible, button:visible").filter(has_text=re.compile(r"^Auftrag$")).first.click(); time.sleep(0.6)
+                except Exception as e:
+                    print("  Reiter Auftrag:", e)
+                shot(page, "web", "flechtauftrag")
+            if url and want("druck"):
+                page.goto(WEB + "/druck/auftrag/" + url.rstrip("/").rsplit("/", 1)[-1]); settle(page, 2500)
                 shot(page, "web", "druck")
         if want("spulauftrag"):
-            page.goto(WEB + "/auftraege"); settle(page, 1200)
-            # Filter Auftragsart -> Spulauftraege
-            try:
-                sel = page.locator("select").nth(0)
-                sel.select_option(label="Spulaufträge"); time.sleep(0.8)
-            except Exception:
-                pass
-            h2 = first_link(page, "/auftraege/")
-            if h2:
-                page.goto(WEB + h2); settle(page, 1500)
-                shot(page, "web", "spulauftrag")
-            else:
+            url = ersten_oeffnen("Spulauftrag")
+            if not url:
                 page.goto(WEB + "/auftraege/neu?art=winding"); settle(page, 1500)
-                shot(page, "web", "spulauftrag")
+            shot(page, "web", "spulauftrag")
 
     if want("berechnungen"):
         page.goto(WEB + "/berechnungen"); settle(page)

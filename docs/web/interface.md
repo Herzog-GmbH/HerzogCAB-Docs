@@ -4,11 +4,7 @@
 
 ## Der Rahmen
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Rahmen der Web-App: Seitenleiste links mit einem Eintrag je Modul, Kopfzeile mit Firma, Sprache und Benutzermenü, Inhalt rechts.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/ (Benutzermenü geöffnet)`; automatisch per `python _tools/web_screenshots.py shots nur:oberflaeche`
-    **Ziel-Datei:** `assets/screenshots/web/oberflaeche.png`
-    <!-- web-bild ../assets/screenshots/web/oberflaeche.png -->
+![Rahmen der Web-App: Seitenleiste links mit einem Eintrag je Modul, Kopfzeile mit Firma, Sprache und Benutzermenü, Inhalt rechts.](../assets/screenshots/web/oberflaeche.png)
 
 | Bereich | Inhalt |
 |---|---|

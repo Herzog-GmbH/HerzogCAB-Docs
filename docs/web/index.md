@@ -17,11 +17,7 @@ Die Web-App ist ein eigener Baustein im Abo (**Herzog CAB Web**, alternativ
 Benutzer. Ohne Konto können Sie die Web-App 30 Tage lang
 [kostenlos testen](trial.md).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite der Web-App mit Seitenleiste, Kennzahlen und Schnellzugriff.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/`; automatisch per `python _tools/web_screenshots.py shots nur:startseite`
-    **Ziel-Datei:** `assets/screenshots/web/startseite.png`
-    <!-- web-bild ../assets/screenshots/web/startseite.png -->
+![Startseite der Web-App mit Seitenleiste, Kennzahlen und Schnellzugriff.](../assets/screenshots/web/startseite.png)
 
 ## Die Module
 

@@ -13,11 +13,7 @@ Felder auf die Referenzseiten der Desktop-App.
 
 ## Auftragsliste
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Auftragsliste der Web-App mit Suche, Filtern und Statusspalte.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/auftraege`; automatisch per `python _tools/web_screenshots.py shots nur:auftraege`
-    **Ziel-Datei:** `assets/screenshots/web/auftraege.png`
-    <!-- web-bild ../assets/screenshots/web/auftraege.png -->
+![Auftragsliste der Web-App mit Suche, Filtern und Statusspalte.](../assets/screenshots/web/auftraege.png)
 
 | Element | Bedeutung |
 |---|---|
@@ -28,18 +24,19 @@ Felder auf die Referenzseiten der Desktop-App.
 | **Maschine** | *Alle Maschinen* oder eine Maschine aus Ihrem Maschinenpark. |
 | Trefferzahl | *n Aufträge im Workspace* bzw. *n von m Aufträgen sichtbar*. |
 
-Die Tabelle zeigt **Nr.**, **Auftragsname**, **Kunde**, **Zeitraum**
-(Produktion von–bis), **Design** (Name oder *Kein Design verknüpft*) und
-**Status**. Den Status ändern Sie direkt in der Zeile über die Auswahlliste —
-die Änderung wird sofort gespeichert. Spulaufträge tragen den Zusatz
-*Schritt 1 (Spulen) für Flechtauftrag: …*, Flechtaufträge nennen die Zahl
-ihrer verknüpften Spulaufträge.
+Die Tabelle zeigt **Nr.**, **Auftragsname**, **Auftragsart** (Chip
+*Flechtauftrag* oder *Spulauftrag*), **Kunde**, **Design** (Name oder *–*),
+**Maschine**, **Zeitraum** (Produktion von–bis) und **Status**. Den Status
+ändern Sie direkt in der Zeile über die Auswahlliste — die Änderung wird
+sofort gespeichert. Spulaufträge tragen den Zusatz *Schritt 1 (Spulen) für
+Flechtauftrag: …*, Flechtaufträge nennen die Zahl ihrer verknüpften
+Spulaufträge.
 
-| Aktion in der Zeile | Wirkung |
+| Symbol in der Zeile | Wirkung |
 |---|---|
-| **Öffnen** (oder Klick auf die Zeile) | Öffnet den Editor. |
-| **Spulauftrag erstellen** | Nur bei Flechtaufträgen: legt einen verknüpften Spulauftrag an, vorbelegt mit Kunde, Material, Spulenformat, Termin und Sollwerten. |
-| **Löschen** | Mit Sicherheitsabfrage. Hat ein Flechtauftrag verknüpfte Spulaufträge, bleiben diese bestehen und verlieren nur die Verknüpfung. |
+| **Öffnen** (Stift) | Öffnet den Editor. |
+| **Spulauftrag erstellen** (Spule) | Nur bei Flechtaufträgen mit Schreibrecht: legt einen verknüpften Spulauftrag an, vorbelegt mit Kunde, Material, Spulenformat, Termin und Sollwerten. |
+| **Löschen** (Papierkorb) | Mit Schreibrecht; Sicherheitsabfrage. Hat ein Flechtauftrag verknüpfte Spulaufträge, bleiben diese bestehen und verlieren nur die Verknüpfung. |
 
 Auf schmalen Bildschirmen erscheint die Liste als Karten. Ein Zeitraumfilter
 und **Duplizieren** gibt es — anders als in der Desktop-App — in der Web-App
@@ -53,15 +50,11 @@ Der Editor hat dieselben neun Reiter wie der
 **Produktion**, **Design**, **Übersicht**. Die Bedeutung jedes Felds steht
 dort — hier nur die Besonderheiten der Web-App:
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Flechtauftrag-Editor der Web-App, Reiter „Auftrag".
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/auftraege/<id>, Reiter Auftrag`; automatisch per `python _tools/web_screenshots.py shots nur:flechtauftrag`
-    **Ziel-Datei:** `assets/screenshots/web/flechtauftrag.png`
-    <!-- web-bild ../assets/screenshots/web/flechtauftrag.png -->
+![Flechtauftrag-Editor der Web-App, Reiter „Auftrag" mit der Karte „Spulaufträge (Vorstufe)".](../assets/screenshots/web/flechtauftrag.png)
 
 * Die Kopfzeile zeigt Auftragsname und Nummer, den Vermerk *ungespeichert*
-  bei offenen Änderungen sowie **Zur Auftragsliste**, **Drucken** und
-  **Auftrag speichern**.
+  bei offenen Änderungen sowie **Zur Auftragsliste**, **Drucken**,
+  **Löschen** und **Auftrag speichern**.
 * **Kunde**, **Maschine**, **Material** und **Spule** wählen Sie aus den
   Stammdaten des Kontos; die Schaltflächen **Kunden öffnen**,
   **Flechtmaschinen öffnen**, **Materialverwaltung öffnen** und
@@ -77,23 +70,21 @@ dort — hier nur die Besonderheiten der Web-App:
 * Der Reiter **Design** zeigt das verknüpfte Design mit Vorschau und der
   Klöppel-Tabelle; **Design öffnen** wechselt in den [Designer](designer.md),
   **Neues Design** legt ein neues an.
-* **Spulaufträge (Vorstufe)** listet die verknüpften Spulaufträge; neue
-  legen Sie nach dem Speichern über die Auftragsliste an.
+* Die Karte **Spulaufträge (Vorstufe)** neben dem Reiter *Auftrag* listet
+  die verknüpften Spulaufträge mit Status und Spulenzahl; **Spulauftrag
+  erstellen** legt nach dem Speichern einen neuen an.
 
 ## Spulauftrag-Editor
 
-Der Spulauftrag ist wie in der Desktop-App in drei Bereiche gegliedert —
-**Auftrag** (Verknüpfung, Grunddaten, Kunde), **Material und Spule**
+Der Spulauftrag ist eine Scroll-Seite mit den Karten **Verknüpfter
+Flechtauftrag**, **Auftrag** (Grunddaten, Kunde), **Material und Spule**
 (Standardmaterial, Spulenformat, Länge pro Spule, Zielspulenzahl,
-Gesamtlänge, Farbaufschlüsselung, Wickelparameter) und **Maschinen und
-Zeitplan** (Spulmaschinen, Verteilung, Spulzeit, Produktionszeitraum). Die
+Gesamtlänge), **Farbaufschlüsselung**, **Wickelparameter** (einklappbar)
+und **Maschinen und Zeitplan** (Spulmaschinen, Verteilung, Spulzeit,
+Produktionszeitraum) — dieselbe Reihenfolge wie in der Desktop-App. Die
 Felder erklärt der [Spulauftrag-Editor der Desktop-App](../orders/winding-order.md).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Spulauftrag-Editor der Web-App mit Farbaufschlüsselung.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/auftraege/<id> (Spulauftrag)`; automatisch per `python _tools/web_screenshots.py shots nur:spulauftrag`
-    **Ziel-Datei:** `assets/screenshots/web/spulauftrag.png`
-    <!-- web-bild ../assets/screenshots/web/spulauftrag.png -->
+![Spulauftrag-Editor der Web-App mit verknüpftem Flechtauftrag, Grunddaten und Material.](../assets/screenshots/web/spulauftrag.png)
 
 Besonderheiten der Web-App:
 

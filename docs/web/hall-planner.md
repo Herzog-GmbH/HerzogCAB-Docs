@@ -13,11 +13,7 @@ im Browser.
 
 ## Übersicht der Grundrisse
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Hallenplaner der Web-App: Grundrisse mit ihren Belegungen.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/hallenplaene`; automatisch per `python _tools/web_screenshots.py shots nur:hallenplaner`
-    **Ziel-Datei:** `assets/screenshots/web/hallenplaner.png`
-    <!-- web-bild ../assets/screenshots/web/hallenplaner.png -->
+![Hallenplaner der Web-App: Grundrisse mit ihren Belegungen.](../assets/screenshots/web/hallenplaner.png)
 
 | Element | Bedeutung |
 |---|---|
@@ -37,16 +33,15 @@ im Browser.
 
 ## Der Editor
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Hallenplan-Editor der Web-App mit Werkzeugleiste, Zeichenfläche und Seitenleiste.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/hallenplaene/<grundriss>/<belegung>`; automatisch per `python _tools/web_screenshots.py shots nur:hallenplan-editor`
-    **Ziel-Datei:** `assets/screenshots/web/hallenplan-editor.png`
-    <!-- web-bild ../assets/screenshots/web/hallenplan-editor.png -->
+![Hallenplan-Editor der Web-App mit Werkzeugleiste, Zeichenfläche und Seitenleiste.](../assets/screenshots/web/hallenplan-editor.png)
 
-Oben die **Werkzeugleiste**, links die **Zeichenfläche**, rechts die
-**Seitenleiste** mit den Reitern **Werkzeuge**, **Katalog**, **Eigenschaften**
-und **Layout**. Unten zeigt eine Statuszeile Werkzeug, Raster, Winkel,
-Auswahl und beim Messen die Länge.
+Oben die **Kopfzeile** mit dem Namen des Grundrisses und dem Umschalter
+**Grundriss** / **Belegung**, darunter die **Werkzeugleiste**. Links liegt
+im Modus *Grundriss* die Palette **Werkzeuge** (Werkzeuge, Wände, Flächen,
+Objekte), im Modus *Belegung* der **Katalog** Ihrer Maschinen; in der Mitte
+die **Zeichenfläche**, rechts die Reiter **Auswahl** (Eigenschaften des
+markierten Objekts) und **Layout**. Unten zeigt eine Statuszeile die
+Mausposition, das Werkzeug, das Raster und beim Messen die Länge.
 
 ### Werkzeugleiste
 
@@ -61,7 +56,7 @@ Auswahl und beim Messen die Länge.
 | **Bearbeiten** | Bei Auswahl: 90° nach links/rechts drehen, Auswahl duplizieren oder löschen; bei mehreren Maschinen horizontal/vertikal gleichmäßig verteilen und aneinanderreihen. |
 | **Speichern** | Speichert Grundriss bzw. Belegung (*Aktuelles Layout speichern*). |
 
-### Reiter „Werkzeuge"
+### Palette „Werkzeuge" (Modus Grundriss)
 
 | Gruppe | Werkzeuge |
 |---|---|
@@ -71,7 +66,7 @@ Auswahl und beim Messen die Länge.
 | **Objekte** | **Tür**, **Tor**, **Fenster** auf eine Wand setzen; **Treppe** auf eine freie Stelle; **Banner/Logo**. |
 | **Maßstab setzen** | Referenzstrecke auf dem Grundrissbild anklicken und die tatsächliche Länge in Metern eingeben. |
 
-### Reiter „Katalog"
+### Palette „Katalog" (Modus Belegung)
 
 Ihre **Flechtmaschinen** und **Spulmaschinen** aus dem
 [Maschinenpark](machines.md) mit Suchfeld und Typfilter. Ziehen Sie eine
@@ -79,10 +74,11 @@ Maschine in den Grundriss oder platzieren Sie sie per Doppelklick in der
 Bildmitte. Maschinen ohne Abmessungen sind mit *Maße fehlen* markiert —
 tragen Sie Länge und Breite auf der Maschinenseite nach.
 
-### Reiter „Eigenschaften"
+### Reiter „Auswahl"
 
 Eigenschaften des ausgewählten Objekts (Name, Maße, Drehung, Wandart, Tür-
-oder Torbreite usw.). Ohne Auswahl bleibt der Reiter leer.
+oder Torbreite usw.). Ohne Auswahl steht hier der Hinweis *Maschine oder
+Wand anklicken, um deren Eigenschaften zu sehen.*
 
 ### Reiter „Layout"
 

@@ -15,11 +15,7 @@ das Recht **Firmendaten verwalten**; sonst ist die Seite nur lesbar.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Firma in der Web-App: Karten Firma, Adresse, Kontakt, Rechtliches und Firmenlogo.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/firma`; automatisch per `python _tools/web_screenshots.py shots nur:firma`
-    **Ziel-Datei:** `assets/screenshots/web/firma.png`
-    <!-- web-bild ../assets/screenshots/web/firma.png -->
+![Firma in der Web-App: Karten Firma, Adresse, Kontakt, Rechtliches und Firmenlogo.](../assets/screenshots/web/firma.png)
 
 | Karte | Felder |
 |---|---|

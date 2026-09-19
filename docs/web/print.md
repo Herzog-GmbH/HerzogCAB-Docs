@@ -18,18 +18,14 @@ auf jeder [Rechnerseite](calculations.md).
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Druckseite der Web-App mit Vorlagenauswahl und Vorschau eines Flechtauftrags.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/druck/auftrag/<id>`; automatisch per `python _tools/web_screenshots.py shots nur:druck`
-    **Ziel-Datei:** `assets/screenshots/web/druck.png`
-    <!-- web-bild ../assets/screenshots/web/druck.png -->
+![Druckseite der Web-App mit Vorlagenauswahl und Vorschau eines Flechtauftrags.](../assets/screenshots/web/druck.png)
 
 | Element | Bedeutung |
 |---|---|
 | **Zurück** | Zurück zum Auftrag, Design bzw. Rechner. |
 | **Druckvorlage wählen** | Alle passenden Vorlagen des Arbeitsbereichs; vorbelegt ist die Standardvorlage für Flechtauftrag, Spulauftrag, Design bzw. Berechnung. Gibt es noch keine Vorlagen, sagt die Seite das — importieren Sie den Arbeitsbereich der Desktop-App. |
-| **Ansicht** (nur Design) | **Abwicklung** oder **3D** — welches Bild des Designs auf der Vorlage erscheint. |
-| Vorschau | Die Seiten der Vorlage mit den Daten des Auftrags bzw. Designs (*n Seiten*). |
+| **Ansicht** | **Abwicklung** oder **3D** — welches Bild des Designs auf der Vorlage erscheint (bei Designs und bei Aufträgen mit verknüpftem Design). |
+| Vorschau | Die Seiten der Vorlage mit den Daten des Auftrags bzw. Designs; darüber Seitenzahl und Format (*2 Seiten · 210 × 297 mm*). |
 | **Drucken** | Öffnet den Druckdialog des Browsers — Drucker oder *Als PDF speichern*. |
 | **PDF speichern** | Erzeugt direkt eine PDF-Datei und lädt sie herunter. |
 

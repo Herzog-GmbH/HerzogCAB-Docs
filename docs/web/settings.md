@@ -13,11 +13,7 @@ Sie öffnen die Seite über *Benutzermenü > Einstellungen*.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Einstellungen der Web-App: Sprache, Angemeldet als, Passwort und Sicherheit.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/einstellungen`; automatisch per `python _tools/web_screenshots.py shots nur:einstellungen`
-    **Ziel-Datei:** `assets/screenshots/web/einstellungen.png`
-    <!-- web-bild ../assets/screenshots/web/einstellungen.png -->
+![Einstellungen der Web-App: Sprache, Angemeldet als, Passwort und Sicherheit.](../assets/screenshots/web/einstellungen.png)
 
 | Karte | Inhalt |
 |---|---|

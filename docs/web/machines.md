@@ -15,11 +15,7 @@ im Browser.
 
 ## Reiter „Park"
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Maschinenpark der Web-App in der Kartenansicht mit Filterleiste.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/maschinen`; automatisch per `python _tools/web_screenshots.py shots nur:maschinen`
-    **Ziel-Datei:** `assets/screenshots/web/maschinen.png`
-    <!-- web-bild ../assets/screenshots/web/maschinen.png -->
+![Maschinenpark der Web-App in der Kartenansicht mit Filterleiste.](../assets/screenshots/web/maschinen.png)
 
 | Element | Bedeutung |
 |---|---|
@@ -37,11 +33,7 @@ rechts, **← Zurück zum Maschinenpark** führt zur Liste. Zum Ändern brauchen
 Sie das Recht *Stammdaten bearbeiten* — sonst ist die Seite nur lesbar und
 nennt das fehlende Recht.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Maschinenseite der Web-App, Reiter „Allgemein".
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/maschinen/<id>`; automatisch per `python _tools/web_screenshots.py shots nur:maschine`
-    **Ziel-Datei:** `assets/screenshots/web/maschine.png`
-    <!-- web-bild ../assets/screenshots/web/maschine.png -->
+![Maschinenseite der Web-App, Reiter „Allgemein".](../assets/screenshots/web/maschine.png)
 
 | Reiter | Inhalt |
 |---|---|

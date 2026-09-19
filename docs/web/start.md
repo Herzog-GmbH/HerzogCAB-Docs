@@ -12,11 +12,7 @@ der unteren Leiste am Smartphone.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite der Web-App mit den vier Kennzahlen und den Schnellzugriff-Kacheln.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/`; automatisch per `python _tools/web_screenshots.py shots nur:startseite`
-    **Ziel-Datei:** `assets/screenshots/web/startseite.png`
-    <!-- web-bild ../assets/screenshots/web/startseite.png -->
+![Startseite der Web-App mit den vier Kennzahlen und den Schnellzugriff-Kacheln.](../assets/screenshots/web/startseite.png)
 
 ### Überblick (Kennzahlen)
 
@@ -39,6 +35,12 @@ Kacheln mit kurzer Beschreibung für alle Module — **Aufträge**
 (*Flecht- und Spulaufträge*), **Berechnungen** (*32 Rechner in 5 Gruppen*),
 **Designer**, **Maschinenpark**, **Hallenplaner**, **Stammdaten** — sowie,
 je nach Recht, **Import aus dem Desktop** und **Konto und Benutzer**.
+
+### Berechnungen
+
+Darunter listet der Abschnitt **Berechnungen** je Gruppe (Material,
+Produkt, Hohlgeflecht, Produktion, Spulerei) die einzelnen Rechner — ein
+Klick öffnet die [Rechnerseite](calculations.md) direkt.
 
 !!! info "Unterschied zur Desktop-App"
     Die Startseite der Desktop-App zeigt zusätzlich Favoriten, den Verlauf
