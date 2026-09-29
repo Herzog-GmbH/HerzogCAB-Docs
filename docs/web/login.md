@@ -7,8 +7,9 @@
 Die Web-App verlangt vor dem Einstieg eine Anmeldung mit Ihrem Benutzer aus
 dem [Kundenkonto](../setup/account.md) — dieselben Zugangsdaten wie im
 Lizenzportal und in der Desktop-App. Mit der Anmeldung belegen Sie einen
-**Platz** des Web-Bausteins; er wird beim Abmelden oder nach 15 Minuten
-ohne Aktivität wieder frei.
+**Platz** Ihres Abos. Er wird beim Abmelden oder nach 15 Minuten ohne
+Aktivität wieder frei. Arbeiten Sie zugleich im Programm, belegen Sie zwei
+Plätze.
 
 ## Der Bildschirm im Überblick
 
@@ -35,7 +36,7 @@ unter der Markenfläche.
 |---|---|
 | *E-Mail-Adresse oder Passwort stimmen nicht.* | Zugangsdaten prüfen; Passwort über **Passwort vergessen?** zurücksetzen. |
 | *Bitte den Code aus der Authenticator-App eingeben.* | Kein Fehler — der zweite Faktor ist eingerichtet. |
-| *Belegt: n von m Plätzen.* | Alle Plätze des Kontos sind gerade belegt. Warten Sie, bis ein Kollege sich abmeldet oder 15 Minuten inaktiv war. Oder ein Administrator [bestellt weitere Plätze](subscription.md). |
+| *Alle Plätze dieses Kontos sind gerade belegt. Belegt: n von m Plätzen.* | Alle Plätze des Kontos sind gerade belegt, im Programm oder im Browser. Warten Sie, bis ein Kollege Herzog CAB beendet, sich abmeldet oder 15 Minuten inaktiv war. Oder ein Administrator [bestellt weitere Plätze](subscription.md). |
 | *Dieser Benutzer ist deaktiviert.* | Ein Administrator hat den Benutzer im Lizenzportal deaktiviert. |
 | *Zu viele Fehlversuche.* | Der Lizenzserver bremst nach mehreren Fehlversuchen — einige Minuten warten. |
 
@@ -68,7 +69,7 @@ erhalten.
 * über **Abmelden** im [Benutzermenü](interface.md#benutzermenu) der
   Kopfzeile.
 
-Beim Abmelden wird Ihr Web-Platz sofort frei. Ohne Abmeldung endet die
+Beim Abmelden wird Ihr Platz sofort frei. Ohne Abmeldung endet die
 Sitzung nach längerer Inaktivität von selbst.
 
 ## Verwandte Seiten

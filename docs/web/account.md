@@ -19,9 +19,10 @@ Kachel **Konto und Benutzer** auf der Startseite.
 
 | Element | Bedeutung |
 |---|---|
-| **Edition** | Der wirksame Web-Baustein: *Herzog CAB Web*, *Herzog CAB Web Designer* oder *Herzog CAB Web Testphase*; bei internen Konten der Vermerk *internes Konto*. |
-| **Plätze** | Gleichzeitig angemeldete Benutzer und die Platzzahl des Bausteins. |
-| **Bausteine** | Alle Freischaltungen des Kontos (auch die Desktop-Bausteine) mit Laufzeit (*bis &lt;Datum&gt;* oder *Lebenszeit*). |
+| **Edition** | Welche Ausführung der Web-App für das Konto gilt: Vollversion, Designer oder Testphase. Bei internen Konten der Vermerk *internes Konto*. |
+| **Plätze** | Belegte und vorhandene Plätze, zum Beispiel *2 / 3*. Programm und Web-App zählen zusammen. |
+| **Bausteine** | Die Bausteine, die die Web-App öffnen, mit der Zahl der Plätze und der Laufzeit (*bis &lt;Datum&gt;* oder *Lebenszeit*). |
+| **Gerade angemeldet** | Wer gerade einen Platz belegt und wo: Rechnername, *Web* oder *(offline)*. |
 | **Rollen verwalten** | Wechselt zu [Rollen](roles.md). |
 | **Lizenzportal öffnen** | Öffnet [license.herzog-cab.com](https://license.herzog-cab.com) in einem neuen Tab. |
 

@@ -12,9 +12,11 @@ sehen dieselben Aufträge, Designs, Maschinen und Stammdaten. Die Rechner
 liefern dieselben Ergebnisse wie die Desktop-App, der Designer zeichnet
 dieselben Flechtbilder, und der Druck nutzt dieselben Druckvorlagen.
 
-Die Web-App ist ein eigener Baustein im Abo (**Herzog CAB Web**, alternativ
-**Herzog CAB Web Designer**); ein Platz ist ein gleichzeitig angemeldeter
-Benutzer. Ohne Konto können Sie die Web-App 30 Tage lang
+Die Web-App gehört zum Jahresabo (**Herzog CAB Vollversion** oder
+**Herzog CAB Designer**) und teilt sich dessen Plätze mit dem Programm. Ein
+Platz ist eine Person, die gerade arbeitet. Wer im Programm und im Browser
+zugleich arbeitet, belegt zwei Plätze. Ohne Konto können Sie die Web-App
+30 Tage lang
 [kostenlos testen](trial.md).
 
 ![Startseite der Web-App mit Seitenleiste, Kennzahlen und Schnellzugriff.](../assets/screenshots/web/startseite.png)
@@ -139,7 +141,7 @@ gibt es in beiden — die wichtigsten Unterschiede:
 
 | | Desktop-App | Web-App |
 |---|---|---|
-| Installation | Windows, Installer (macOS auf Anfrage) | keine — Browser |
+| Installation | Windows / macOS, Installer | keine — Browser |
 | Daten | Arbeitsverzeichnis auf Rechner oder Netzlaufwerk, je Profil | zentral im Kundenkonto, ein Arbeitsbereich je Konto |
 | Benutzer | Kontobenutzer (oder lokal / Entra / LDAP bei Dongle) | ausschließlich Kontobenutzer |
 | Berechnungen | 33 Rechner, Verlauf, Favoriten | 32 Rechner (ohne *Flechtwinkel über Abzug*), Suche |
@@ -149,7 +151,7 @@ gibt es in beiden — die wichtigsten Unterschiede:
 | Hallenplaner | 2D-Editor mit Wandtexturen, Kontextmenüs, automatische Flächen, 3D | 2D-Editor (Wände, Flächen, Türen, Tore, Fenster, Treppen, Kalibrieren), 3D-Ansicht |
 | Maschinen | Maschinenpark, Stammdaten-Dialoge, 3D-Modelle | Maschinenpark mit Karten/Liste, Katalog, volle Maschinenpflege |
 | Mobile Nutzung | Webserver mit QR-Code (Auftragsansicht) | die ganze App, angepasst an Tablet und Smartphone |
-| Lizenz | Baustein *Herzog CAB Vollversion* u. a., Platz je Rechner | Baustein *Herzog CAB Web*, Platz je angemeldetem Benutzer |
+| Lizenz | Jahresabo, ein Platz je laufendem Programm | dasselbe Jahresabo, ein Platz je Person im Browser |
 
 Eine Gegenüberstellung für die Entscheidung im Werk steht unter
 [Desktop-App oder Web-App?](../basics/platforms.md).

@@ -6,7 +6,8 @@
 
 Der Tab **Lizenz** (*Datei > Einstellungen*) zeigt, woher Herzog CAB seine
 Lizenz bezieht, welches Konto und welcher Benutzer angemeldet sind, welche
-Bausteine freigeschaltet sind und wie lange die Miete noch gilt. Hier ziehen
+Bausteine freigeschaltet sind, wie viele Plätze belegt sind und wie lange
+die Miete noch gilt. Hier ziehen
 Sie eine Offline-Miete, verlängern die Miete von Hand, melden den Rechner
 vom Kundenkonto ab und schalten den automatischen Upload des
 Arbeitsverzeichnisses in die [Web-App](../../web/index.md) ein.
@@ -21,7 +22,7 @@ Arbeitsverzeichnisses in die [Web-App](../../web/index.md) ein.
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Tab „Lizenz" mit den drei Karten „Lizenz – Kundenkonto
     (Lizenzserver)", „Konto" und „Cloud (app.herzog-cab.com)"; Konto, Benutzer,
-    Edition, Bausteine und Miete gefüllt, Cloud-Schalter aktiv.
+    Edition, Bausteine, Miete und Plätze gefüllt, Cloud-Schalter aktiv.
     **So erzeugen:** Kunden-Build mit Kontoanmeldung, *Datei > Einstellungen*,
     Tab **Lizenz**.
     **Ziel-Datei:** `assets/screenshots/settings/einstellungen-lizenz.png`
@@ -41,24 +42,28 @@ Der Kartentitel nennt die Quelle der Lizenz: **Kundenkonto (Lizenzserver)**,
 | **Konto** | Name Ihres Kundenkontos (Firma). |
 | **Angemeldet als** | Der Benutzer, der gerade im Programm angemeldet ist, mit seiner Rolle (z. B. *Administrator*). |
 | **Edition** | Was diese Installation gerade ist: *Vollversion*, *Designer-Version* oder *Testversion* — abgeleitet aus den Bausteinen. |
-| **Bausteine** | Alle Bausteine, für die dieser Rechner einen Platz hält, mit lesbaren Namen (z. B. *Vollversion, Flechtsimulator*; Web-Bausteine des Kontos erscheinen zur Auskunft mit, belegen aber keinen Rechnerplatz). |
-| **Miete** | *Regelmiete bis &lt;Datum&gt; (noch n Tage), verlängert sich automatisch* — oder *Offline-Miete bis &lt;Datum&gt; (noch n Tage); danach braucht das Programm wieder Verbindung zum Lizenzserver*. Steht hier *keine gültige Bestätigung*, konnte die Miete zuletzt nicht verlängert werden. |
-| Roter Hinweis | *Kein freier Platz für: &lt;Baustein&gt;. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* — erscheint, wenn ein Baustein des Kontos für diesen Rechner keinen Platz mehr hatte. |
+| **Bausteine** | Die Bausteine dieses Rechners mit lesbaren Namen, zum Beispiel *Vollversion, Herzog CAB Web*. *Herzog CAB Web* steht dabei, wenn Ihr Abo die Web-App umfasst. |
+| **Miete** | Normalerweise *Platz belegt, solange Herzog CAB läuft; beim Beenden wird er frei. Ohne Verbindung gültig bis &lt;Datum&gt; (noch n Tage).* Mit Offline-Miete: *Offline-Miete bis &lt;Datum&gt; (noch n Tage); danach braucht das Programm wieder Verbindung zum Lizenzserver.* Steht hier *keine gültige Bestätigung*, konnte die Miete zuletzt nicht verlängert werden. |
+| **Plätze** | *n von m belegt (Programm und Herzog CAB Web zusammen)*. So viele Plätze des Abos sind gerade belegt, im Programm und im Browser. |
+| Roter Hinweis | *Kein freier Platz für: &lt;Baustein&gt;. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* Darunter steht, wer gerade arbeitet. Erscheint, wenn ein Baustein des Kontos für diesen Rechner keinen Platz mehr hatte. |
 
 ### Karte „Konto"
 
 | Element | Wirkung |
 |---|---|
 | **Lizenzportal öffnen** | Öffnet [license.herzog-cab.com](https://license.herzog-cab.com) im Browser — dort verwalten Sie Benutzer, Rechner und Bausteine mit denselben Zugangsdaten. |
-| **Ohne Internet:** *für n Tage* + **Offline-Miete ziehen** | Holt vorab eine Miete für **1 bis 30 Tage** (Standard 30). Danach läuft Herzog CAB so lange ohne Verbindung; die Erfolgsmeldung nennt die Zahl der Tage. Ohne Offline-Miete gilt die Regelmiete, die sich beim Start und alle sechs Stunden von selbst verlängert und ohne Verbindung sieben Tage hält. |
-| **Miete jetzt verlängern** | Verlängert die Regelmiete sofort von Hand — z. B. kurz bevor Sie den Rechner für ein paar Tage vom Netz nehmen. |
-| **Von diesem Rechner abmelden** | Gibt alle Plätze dieses Rechners im Konto frei (mit Sicherheitsabfrage). Beim nächsten Start ist eine neue Anmeldung nötig. Sinnvoll vor einer Neuinstallation, einem Rechnerwechsel oder wenn ein anderer Rechner den Platz braucht. |
+| **Ohne Internet:** *für n Tage* + **Offline-Miete ziehen** | Holt vorab eine Miete für **1 bis 30 Tage** (Standard 30). Danach läuft Herzog CAB so lange ohne Verbindung. Der Platz bleibt so lange belegt, auch wenn das Programm geschlossen ist. Die Erfolgsmeldung nennt die Zahl der Tage. Ohne Offline-Miete hält das Programm seinen Platz nur, solange es läuft, und arbeitet ohne Verbindung bis zu sieben Tage weiter. |
+| **Miete jetzt verlängern** | Verlängert die Miete sofort von Hand, zum Beispiel kurz bevor Sie den Rechner für ein paar Tage vom Netz nehmen. |
+| **Von diesem Rechner abmelden** | Meldet den Rechner vom Kundenkonto ab und gibt seine Plätze frei, nach der Rückfrage *Vom Kundenkonto abmelden?* Beim nächsten Start ist eine neue Anmeldung nötig. Sinnvoll vor einer Neuinstallation, einem Rechnerwechsel oder um eine Offline-Miete vorzeitig zu beenden. |
 
-!!! tip "Kein freier Platz?"
-    Ein Administrator gibt im [Lizenzportal](../../portal/licenses.md) einen
-    Rechner frei, der den Platz nicht mehr braucht, oder
-    [fragt weitere Plätze an](../../portal/requests.md). Beim nächsten Start
-    holt sich Herzog CAB den Platz von selbst.
+!!! tip "Alle Plätze belegt?"
+    Ein Platz wird frei, sobald jemand Herzog CAB beendet oder sich in der
+    Web-App abmeldet, spätestens 15 Minuten nach der letzten Aktivität. Wer
+    gerade arbeitet, zeigt das [Lizenzportal](../../portal/licenses.md#wer-gerade-arbeitet).
+    Ein Administrator kann dort auch einen Rechner freigeben oder unter
+    [Abo und Bestellung](../../web/subscription.md) weitere Plätze
+    bestellen. Die Meldungen im Einzelnen stehen unter
+    [Lizenzprobleme](../../help/license-problems.md).
 
 ### Karte „Cloud (app.herzog-cab.com)"
 
@@ -73,10 +78,12 @@ Designs, Hallenpläne und Druckvorlagen samt zugehöriger Dateien.
 | **Stand** | *Aus.*, *Bereit, noch nichts hochgeladen.*, *Arbeitsverzeichnis wird gelesen …*, *Wird hochgeladen …*, *Zuletzt hochgeladen: &lt;Zeit&gt;* oder *Fehler: …*. |
 | **Jetzt hochladen** | Stößt sofort einen vollständigen Abgleich an. |
 
-**Voraussetzungen:** Das Konto braucht den Baustein **Herzog CAB Web**
-(Abo) — sonst bleibt der Schalter grau und der Hinweis lautet *„Dafür braucht
-das Konto den Baustein „Herzog CAB Web" (Abo)."*. Außerdem muss der Rechner
-am Kundenkonto angemeldet sein.
+**Voraussetzungen:** Das Konto braucht ein Abo, das die Web-App umfasst.
+Das sind das Jahresabo und die Testversion. Eine Lizenz ohne Enddatum
+(Lebenszeit) reicht nicht. Fehlt das Abo, bleibt der Schalter grau, und der
+Hinweis lautet *„Dafür braucht das Konto den Baustein „Herzog CAB Web" (Abo).
+Er lässt sich im Lizenzportal bestellen."* Außerdem muss der Rechner am
+Kundenkonto angemeldet sein.
 
 !!! info "Einbahnstraße: Desktop → Web-App"
     Der Upload ist bewusst **nur in eine Richtung** gebaut. Was Sie in der

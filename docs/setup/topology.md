@@ -12,7 +12,7 @@ spannende Frage ist nicht „wie viele Bediener?", sondern **wo läuft was**:
   auf einem Datei-Server?
 * **Benutzer-DB** — pro PC oder zentral auf dem Anwendungs-Server?
 * **Lizenz** — seit Version 2.0 normalerweise aus dem **Kundenkonto**
-  (jeder Rechner zieht sich beim Start seinen Platz); bei Bestandskunden
+  (jeder Rechner belegt einen Platz, solange Herzog CAB läuft); bei Bestandskunden
   lokal pro Rechner (CmDongle / CmActLicense) oder zentral über einen
   **Wibu-Lizenzserver**.
 
@@ -51,8 +51,9 @@ liegen ebenfalls auf dem Server.
 ![Variant 2 — Single-Server: Bediener verbinden sich per RDP zu einem zentralen Server, der Herzog CAB, CodeMeter, Benutzer-DB und Workspace beherbergt.](../assets/topology/variant-2-single-server.png)
 
 !!! warning "Lizenz für Terminal-Server / RDP"
-    Im **Kontomodell** belegt der Server als ein Rechner **einen Platz je
-    Baustein** — egal wie viele Bediener sich nacheinander anmelden.
+    Im **Kontomodell** belegt der Server als ein Rechner **einen Platz**,
+    solange Herzog CAB dort läuft. Das gilt auch, wenn sich mehrere Bediener
+    nacheinander anmelden.
     Sollen mehrere Anwender **gleichzeitig** in eigenen RDP-Sitzungen
     arbeiten, klären Sie die nötige Platzzahl mit Ihrem
     Herzog-Ansprechpartner. Standard-Einzelplatz-Lizenzen per CodeMeter
@@ -90,9 +91,8 @@ Die anspruchsvollste Variante kombiniert mehrere Strategien:
     parallel benötigte Lizenzen** existieren — z. B. 10 Bediener, aber
     nie mehr als 3 gleichzeitig im Programm. Im **Kundenkonto** übernimmt
     der Herzog-Lizenzserver diese Rolle von selbst: Die Plätze eines
-    Bausteins sind ein Pool, aus dem sich jeder Rechner bedient; ein
-    Rechner, der sieben Tage nicht gestartet wird, gibt seinen Platz
-    automatisch zurück.
+    Abos sind ein Pool für alle, die gerade arbeiten, im Programm oder im
+    Browser. Das Programm gibt seinen Platz beim Beenden zurück.
 
 !!! warning "Mehrere Workspaces"
     Wenn Sie mit mehreren Workspaces arbeiten (z. B. einer pro Werk
@@ -127,8 +127,8 @@ und jeder Benutzer meldet sich mit seinem Kontobenutzer an.
 * **Workspace:** zentral im Konto — alle Benutzer sehen dieselben Aufträge,
   Designs, Maschinen und Stammdaten.
 * **Benutzer und Rollen:** aus dem Kundenkonto (Lizenzportal).
-* **Lizenz:** Baustein *Herzog CAB Web*; ein Platz je gleichzeitig
-  angemeldetem Benutzer.
+* **Lizenz:** dasselbe Jahresabo wie die Desktop-App, ein Platz je Person
+  im Browser. Wer zugleich im Programm arbeitet, belegt zwei Plätze.
 
 Die Web-App lässt sich mit jeder der drei Desktop-Varianten kombinieren:
 Die Desktop-App kann ihr Arbeitsverzeichnis automatisch in die Cloud
@@ -154,9 +154,9 @@ Vergleich zur Desktop-App kann, steht unter
 | Keine Installation, Zugriff von überall, gemeinsamer Datenbestand   | Variante 4 (Web-App) |
 
 Im Zweifel sprechen Sie kurz mit Ihrem Herzog-Ansprechpartner — die
-Entscheidung wirkt sich auch auf die Bestellung aus (Anzahl der Plätze je
-Baustein, Desktop und/oder Web) und ist nachträglich aufwendiger zu
-ändern.
+Entscheidung wirkt sich auch auf die Bestellung aus (Anzahl der Plätze,
+die Programm und Web-App gemeinsam nutzen) und ist nachträglich
+aufwendiger zu ändern.
 
 ## Nächster Schritt
 

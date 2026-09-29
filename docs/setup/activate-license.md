@@ -32,8 +32,9 @@ Hinweis *„Herzog CAB ist auf diesem Rechner noch nicht freigeschaltet."*
 
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Dialog „Herzog CAB – Anmeldung am Kundenkonto" mit
-    Erklärtext, den Feldern **E-Mail-Adresse** und **Passwort** sowie den
-    Schaltflächen **Anmelden** und **Beenden**.
+    Erklärtext, den Feldern **E-Mail-Adresse** und **Passwort**, dem Häkchen
+    **Angemeldet bleiben** sowie den Schaltflächen **Anmelden** und
+    **Beenden**.
     **So erzeugen:** Kunden-Build auf einem Rechner ohne `license.json`
     starten (oder vorher unter *Einstellungen > Lizenz* **Von diesem Rechner
     abmelden** wählen).
@@ -46,7 +47,8 @@ Hinweis *„Herzog CAB ist auf diesem Rechner noch nicht freigeschaltet."*
 | **E-Mail-Adresse** | Die Adresse Ihres Benutzers im Kundenkonto (dieselbe wie im Lizenzportal). |
 | **Passwort** | Ihr Konto-Passwort (verdeckte Eingabe). |
 | **Code (Authenticator-App)** | Erscheint erst nach dem Klick auf **Anmelden**, wenn für Ihren Benutzer die [Zwei-Faktor-Anmeldung](../portal/security.md) eingerichtet ist. Tragen Sie den aktuellen sechsstelligen Code ein und klicken Sie erneut auf **Anmelden**. |
-| **Anmelden** | Prüft die Zugangsdaten am Lizenzserver, meldet den Rechner am Konto an und zieht je Baustein einen Platz. |
+| **Angemeldet bleiben** | Voreingestellt an. Herzog CAB startet auf diesem Rechner dann ohne neue Anmeldung, bis Sie sich im Programm abmelden, Ihr Passwort ändern oder 30 Tage nicht damit arbeiten. Gilt nur für Ihren Windows-Benutzer. Arbeiten mehrere Personen mit demselben Windows-Benutzer am Rechner, schalten Sie es aus. |
+| **Anmelden** | Prüft die Zugangsdaten am Lizenzserver, meldet den Rechner am Konto an und belegt einen Platz. |
 | **Beenden** | Schließt Herzog CAB ohne Anmeldung. |
 
 Nach erfolgreicher Anmeldung startet Herzog CAB direkt — **Sie sind mit
@@ -70,21 +72,27 @@ die Miete mit Ablaufdatum — siehe
 
 ### Was danach passiert
 
-* **Regelmiete:** Der Rechner hält seine Plätze als *Miete*, die sich bei
-  jedem Programmstart und alle sechs Stunden von selbst verlängert. Ohne
-  Verbindung läuft Herzog CAB normalerweise **sieben Tage** weiter.
+* **Platz und Miete:** Solange Herzog CAB läuft, belegt der Rechner einen
+  Platz im Konto. Beim Beenden wird er frei, nach einem Absturz spätestens
+  nach 15 Minuten. Die Miete verlängert sich bei jedem Programmstart und
+  alle sechs Stunden von selbst. Ohne Verbindung läuft Herzog CAB bis zu
+  **sieben Tage** weiter.
+* **Alle Plätze belegt:** Dann zeigt Herzog CAB beim Start den Dialog
+  **Alle Plätze belegt** mit der Liste, wer gerade arbeitet. Siehe
+  [Lizenzprobleme](../help/license-problems.md).
 * **Länger offline:** Wer länger ohne Netz arbeitet (Messe, Baustelle),
   zieht vorher unter *Einstellungen > Lizenz* eine **Offline-Miete** für
-  bis zu 30 Tage.
+  bis zu 30 Tage. Der Platz bleibt dann so lange belegt.
 * **Weitere Bediener am selben Rechner:** Beim nächsten Start erscheint der
   kürzere Dialog **Herzog CAB – Anmelden**. Jeder Kollege meldet sich dort
   mit seinem eigenen Kontobenutzer an; der Rechner belegt trotzdem nur einen
   Platz. Siehe [Anmelden und Abmelden](../admin/login.md).
 * **Rechner abgeben oder neu aufsetzen:** Vorher **Von diesem Rechner
-  abmelden** (Tab Lizenz) — dann sind die Plätze sofort wieder frei.
-  Vergessen ist nicht schlimm: Ein Administrator kann die Plätze im
-  [Lizenzportal](../portal/licenses.md) jederzeit freigeben, und nach sieben
-  Tagen ohne Start werden sie ohnehin frei.
+  abmelden** (Tab Lizenz). Das hebt die Anmeldung des Rechners auf und gibt
+  auch eine Offline-Miete frei. Vergessen ist nicht schlimm: Der Platz ist
+  ohnehin frei, sobald das Programm beendet ist. Ein Administrator kann den
+  Rechner im [Lizenzportal](../portal/licenses.md) außerdem freigeben oder
+  sperren.
 
 ### Meldungen bei der Anmeldung
 
@@ -93,7 +101,7 @@ die Miete mit Ablaufdatum — siehe
 | *E-Mail-Adresse oder Passwort stimmen nicht.* | Zugangsdaten prüfen; Passwort über **Passwort vergessen** im Lizenzportal zurücksetzen. |
 | *Für diesen Benutzer ist die Zwei-Faktor-Anmeldung eingerichtet …* | Kein Fehler — den Code aus der Authenticator-App eintragen. |
 | *Der Code stimmt nicht.* | Uhrzeit des Handys prüfen, neuen Code abwarten. |
-| *Kein freier Platz für: …* | Alle Plätze des Bausteins sind belegt — im Lizenzportal einen Rechner freigeben oder [Plätze anfragen](../portal/requests.md). |
+| *Die Anmeldung war erfolgreich, aber alle Plätze des Kontos „…" sind gerade belegt.* | Die Zugangsdaten stimmen, aber alle Plätze sind gerade belegt, im Programm oder im Browser. Darunter steht, wer gerade arbeitet. Warten Sie, bis jemand Herzog CAB beendet, oder bestellen Sie unter [Abo und Bestellung](../web/subscription.md) weitere Plätze. |
 | *Dieser Benutzer ist deaktiviert.* | Ein Administrator hat den Benutzer im Portal deaktiviert. |
 | *Zu viele Fehlversuche. Bitte später erneut versuchen.* | Der Lizenzserver bremst nach mehreren Fehlversuchen — ein paar Minuten warten. |
 | *Der Lizenzserver ist nicht erreichbar …* | Internetverbindung, Proxy und Firewall prüfen (Ziel: `license.herzog-cab.com`, Port 443). Für die **erste** Anmeldung eines Rechners ist eine Verbindung Pflicht. |

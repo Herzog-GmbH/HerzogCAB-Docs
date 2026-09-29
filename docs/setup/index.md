@@ -10,7 +10,7 @@ zur passenden Karte unten.
 
 !!! info "Desktop-App oder Web-App?"
     Herzog CAB gibt es seit Version 2.0 in zwei Formen: als **Desktop-App**
-    für Windows (macOS auf Anfrage) und als **Web-App** im Browser unter
+    für Windows und macOS und als **Web-App** im Browser unter
     [app.herzog-cab.com](https://app.herzog-cab.com). Dieses Kapitel beschreibt
     die Installation der Desktop-App. Für die Web-App gibt es nichts zu
     installieren — Sie brauchen nur Ihr Kundenkonto, siehe

@@ -38,10 +38,13 @@ Verbindung prüfen oder mit einem solchen Benutzer anmelden.
 Der Link aus der Einladungsmail gilt drei Tage. Ein Administrator erneuert
 die Einladung im Lizenzportal unter **Benutzer**.
 
-**Die Web-App meldet „Belegt: n von m Plätzen".**
-Alle Plätze des Kontos sind belegt. Ein Platz wird nach 15 Minuten ohne
-Aktivität oder beim Abmelden eines Kollegen frei. Weitere Plätze bestellt ein
-Administrator unter [Abo und Bestellung](../web/subscription.md).
+**Die Web-App meldet „Alle Plätze dieses Kontos sind gerade belegt".**
+Alle Plätze des Kontos sind belegt, im Programm oder im Browser. Ein Platz
+wird frei, sobald ein Kollege Herzog CAB beendet oder sich in der Web-App
+abmeldet, im Web spätestens nach 15 Minuten ohne Aktivität. Wer gerade
+arbeitet, zeigt das [Lizenzportal](../portal/licenses.md#wer-gerade-arbeitet).
+Weitere Plätze bestellt ein Administrator unter
+[Abo und Bestellung](../web/subscription.md).
 
 **Nach dem Anmelden erscheint „Kein Zugang zur Webapp".**
 Dem Konto fehlt ein Abo mit Web-App, oder die Testphase ist abgelaufen. Siehe

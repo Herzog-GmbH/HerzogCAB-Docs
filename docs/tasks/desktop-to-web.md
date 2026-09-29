@@ -4,8 +4,8 @@
 
 **Voraussetzungen:**
 
-* Ihr [Kundenkonto](../setup/account.md) hat den Baustein **Herzog CAB Web**
-  (oder die Web-Testphase), und Sie können sich in der
+* Ihr [Kundenkonto](../setup/account.md) hat ein Jahresabo, das die Web-App
+  umfasst (oder die Testversion), und Sie können sich in der
   [Web-App](../web/login.md) anmelden.
 * Für den Cloud-Upload: Die Desktop-App ist am Kundenkonto angemeldet
   (Version 2.0 oder neuer) und der Rechner ist online.
@@ -28,14 +28,14 @@ flowchart LR
 | Wann | Die Desktop-App bleibt das führende System, die Web-App soll immer den aktuellen Stand zeigen. | Einmaliger Umzug oder gelegentliches Nachziehen; auch ohne laufende Desktop-App. |
 | Richtung | Desktop → Web, automatisch, wenige Sekunden nach dem Speichern und alle 15 Minuten | Desktop → Web (Upload) und Web → Desktop (Download), jeweils von Hand |
 | Löschungen | werden übernommen, sofern der Eintrag vom Desktop stammt | werden nicht übernommen |
-| Voraussetzung | Desktop-App am Konto angemeldet, Web-Baustein | Web-Baustein, Recht *Workspace-Einstellungen* |
+| Voraussetzung | Desktop-App am Konto angemeldet, Abo mit Web-App | Abo mit Web-App, Recht *Workspace-Einstellungen* |
 
 ## Weg A: Cloud-Upload einschalten
 
 1. Öffnen Sie in der Desktop-App *Datei > Einstellungen*, Tab **Lizenz**.
 2. Haken Sie in der Karte **Cloud (app.herzog-cab.com)** die Option
    **Arbeitsverzeichnis automatisch in die Cloud hochladen** an. Ist der
-   Schalter grau, fehlt dem Konto der Web-Baustein — der Hinweis nennt den
+   Schalter grau, fehlt dem Konto ein Abo mit Web-App. Der Hinweis nennt den
    Grund (Referenz: [Lizenz und Cloud](../admin/settings/license.md)).
 3. Klicken Sie auf **Jetzt hochladen**. Der Stand wechselt von
    *Arbeitsverzeichnis wird gelesen …* über *Wird hochgeladen …* zu

@@ -23,7 +23,7 @@ Druck und Updates. Kommen Sie mit dieser Seite nicht weiter, lesen Sie
     ---
 
     Passwort falsch, Code der Authenticator-App abgelehnt, Benutzer
-    deaktiviert, alle Web-Plätze belegt – sowie Probleme bei der Anmeldung
+    deaktiviert, alle Plätze belegt – sowie Probleme bei der Anmeldung
     mit Microsoft Entra ID.
 
     [:octicons-arrow-right-24: Lösungen ansehen](login-problems.md)

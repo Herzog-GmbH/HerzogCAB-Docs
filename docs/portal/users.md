@@ -8,9 +8,9 @@ Jeder, der sich in der Desktop-App, in der Web-App oder im Lizenzportal
 anmelden soll, braucht einen **Benutzer im Kundenkonto**. Administratoren
 laden hier Kollegen per E-Mail ein, legen ihre Rolle fest und schalten
 ausgeschiedene Zugänge ab. Die Plätze gehören dem Konto, nicht dem
-Benutzer — Sie können also beliebig viele Benutzer anlegen; die Plätze
-begrenzen nur, wie viele Rechner bzw. gleichzeitige Browser-Sitzungen
-Herzog CAB nutzen.
+Benutzer. Sie können also beliebig viele Benutzer anlegen. Die Plätze
+begrenzen nur, wie viele Personen gleichzeitig arbeiten, im Programm oder
+im Browser.
 
 ## Der Bildschirm im Überblick
 

@@ -4,7 +4,7 @@
 
 Seit Version 2.0 gibt es Herzog CAB zweimal:
 
-* Die **Desktop-App** — installiert unter Windows (macOS auf Anfrage), arbeitet mit
+* Die **Desktop-App** — installiert auf Windows oder macOS, arbeitet mit
   einem Arbeitsverzeichnis auf dem Rechner oder Netzlaufwerk, lizenziert
   über das Kundenkonto oder (Bestand) einen Dongle.
 * Die **Web-App** — im Browser unter

@@ -8,14 +8,14 @@
 
 | Anforderung           | Empfehlung                              |
 |-----------------------|-----------------------------------------|
-| Betriebssystem        | Windows 10 (64-bit) oder Windows 11; macOS auf Anfrage |
+| Betriebssystem        | Windows 10 (64-bit) oder Windows 11; macOS 13 oder neuer (ab Version 2.1.0) |
 | Architektur           | x64 (Windows)                            |
 
 Die aktuelle Version von Herzog CAB ist auf Windows 10 und 11 getestet.
-Sie läuft nur unter 64-Bit-Windows. Ältere Windows-Versionen werden nicht
-unterstützt. Für Version 2 gibt es kein fertiges Installationspaket für
-macOS. Brauchen Sie Herzog CAB auf einem Mac, fragen Sie beim Vertrieb
-nach.
+Unter Windows läuft sie nur als 64-Bit-Programm. Ältere Windows-Versionen
+werden nicht unterstützt. Ab Version 2.1.0 gibt es Herzog CAB auch für
+macOS 13 oder neuer, als eigenes Installationspaket (`.dmg`). Die
+Bedienung ist identisch.
 
 ### Hardware
 

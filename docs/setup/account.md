@@ -18,8 +18,8 @@ Zugangsdaten gelten für die Desktop-App und für die
 flowchart LR
   K[Kundenkonto<br>Ihrer Firma] --> B[Bausteine<br>mit Plätzen]
   K --> U[Benutzer<br>mit Rollen]
-  B --> D[Desktop-App<br>je Rechner ein Platz]
-  B --> W[Web-App<br>je angemeldetem Benutzer ein Platz]
+  B --> D[Desktop-App<br>ein Platz je laufendem Programm]
+  B --> W[Web-App<br>ein Platz je Person im Browser]
   U --> D
   U --> W
   U --> P[Lizenzportal]
@@ -63,33 +63,56 @@ Desktop-App unter *Einstellungen > Lizenz*.
 
 | Baustein | Umfang | Laufzeit |
 |---|---|---|
-| **Herzog CAB Vollversion** | Das komplette Desktop-Programm. Entspricht der bisherigen Dongle-Vollversion. | Lebenszeit oder befristet |
-| **Herzog CAB Designer** | Nur der Geflechts-Designer in der Desktop-App (Designer-Edition). | Lebenszeit oder befristet |
-| **Herzog CAB Testversion** | 30 Tage Desktop-App mit den [Mengenbegrenzungen der Testversion](../basics/trial-quotas.md). | 30 Tage |
-| **Flechtsimulator** | Zusatzbaustein für die Vollversion; wird gesondert freigeschaltet. | Abo |
-| **Herzog CAB Web** | Das komplette Programm im Browser unter app.herzog-cab.com. | Abo |
-| **Herzog CAB Web Designer** | Nur der Designer im Browser. | Abo |
-| **Herzog CAB Web Testphase** | 30 Tage Web-App mit Mengenbegrenzungen, siehe [Testphase und Registrierung](../web/trial.md). | 30 Tage |
+| **Herzog CAB Vollversion** | Das komplette Programm, auf dem Rechner und im Browser. | Jahresabo |
+| **Herzog CAB Designer** | Nur der Geflechts-Designer, auf dem Rechner und im Browser. | Jahresabo |
+| **Herzog CAB Testversion** | 30 Tage auf dem Rechner und im Browser, mit den [Mengenbegrenzungen der Testversion](../basics/trial-quotas.md). | 30 Tage |
+| **Flechtsimulator** | Zusatzbaustein zur Vollversion, nur im Programm. Herzog liefert die fertige Konfiguration Ihrer Flechtmaschine. Darauf erstellen Sie Zeitprogramme und simulieren den Lauf der Klöppel. Die Maschine selbst konstruieren Sie nicht. Der Flechtsimulator hat eigene Plätze. | Abo |
+| **Herzog CAB Web Testphase** | 30 Tage nur im Browser, nach der [Selbstregistrierung](../web/trial.md). | 30 Tage |
 
-!!! info "Desktop und Web sind getrennte Bausteine"
-    Die Desktop-Vollversion enthält die Web-App **nicht** automatisch und
-    umgekehrt. Wer beides nutzen möchte, braucht beide Bausteine — fragen Sie
-    im Lizenzportal einfach [eine Erweiterung an](../portal/requests.md).
+Das Jahresabo bestellen, verlängern oder um Plätze erweitern Sie unter
+[Abo und Bestellung](../web/subscription.md).
+
+!!! info "Ein Abo für Programm und Web-App"
+    Das Jahresabo gilt für das Programm auf dem Rechner und für die
+    [Web-App](../web/index.md). Im Lizenzportal steht beim Baustein dann
+    *Programm und Web*. Beide teilen sich die Plätze des Abos.
+
+!!! info "Ältere Freischaltungen"
+    * Eine **Vollversion oder Designer-Version ohne Enddatum** (Lebenszeit,
+      auch als Dongle-Ersatz) gilt nur für das Programm, nicht für die
+      Web-App. Im Portal steht *nur Programm*. Sie hat eigene Plätze.
+    * Die früheren Bausteine **Herzog CAB Web** und **Herzog CAB Web
+      Designer** gelten nur für die Web-App. Im Portal steht *nur Web*. Sie
+      werden nicht mehr verkauft, weil das Jahresabo die Web-App enthält.
 
 ## Plätze
 
-Jeder Baustein hat eine Anzahl **Plätze**. Was ein Platz ist, unterscheidet
-sich zwischen Desktop und Web:
+Jeder Baustein hat eine Anzahl **Plätze**. Ein Platz ist eine **Person,
+die gerade arbeitet**. Beliebig viele Mitarbeiter teilen sich die Plätze,
+nur nicht gleichzeitig. Programm und Web-App teilen sich die Plätze eines
+Abos.
 
-| | Desktop-App | Web-App |
+| | Programm auf dem Rechner | Web-App |
 |---|---|---|
-| Ein Platz ist … | ein **Rechner**, auf dem Herzog CAB angemeldet ist — je Baustein einer. | ein **gleichzeitig angemeldeter Benutzer**. |
-| Belegt wird … | beim Anmelden des Rechners am Konto (erster Programmstart). | beim Anmelden im Browser. |
-| Frei wird … | von selbst nach **sieben Tagen** ohne Programmstart, bei *Offline arbeiten* nach bis zu 30 Tagen; sofort über **Von diesem Rechner abmelden** in den Einstellungen oder **Plätze freigeben** im Portal. | nach **15 Minuten** ohne Aktivität oder beim Abmelden. |
-| Wenn alles belegt ist … | meldet Herzog CAB *Kein freier Platz* — ein Administrator gibt im Portal einen Rechner frei oder fragt weitere Plätze an. | meldet die Web-App, dass gerade alle Plätze belegt sind. |
+| Belegt wird … | beim Programmstart, ein Platz je Rechner. | bei der Anmeldung im Browser, ein Platz je Person. |
+| Frei wird … | beim Beenden des Programms. Nach einem Absturz spätestens nach **15 Minuten**. Mit einer **Offline-Miete** bleibt der Platz bis zu 30 Tage belegt. Sofort frei über **Von diesem Rechner abmelden** in den Einstellungen oder **Plätze freigeben** im Portal. | beim Abmelden oder nach **15 Minuten** ohne Aktivität. |
+| Wenn alles belegt ist … | zeigt Herzog CAB beim Start den Dialog **Alle Plätze belegt** mit der Liste, wer gerade arbeitet. | meldet die Web-App *Alle Plätze dieses Kontos sind gerade belegt.* |
 
-Mehrere Bediener können sich am selben Rechner nacheinander anmelden — der
-Rechner belegt trotzdem nur **einen** Platz.
+Wer im Programm und im Browser zugleich arbeitet, belegt **zwei** Plätze.
+Mehrere Browserfenster derselben Person belegen nur einen. Melden sich am
+selben Rechner mehrere Bediener nacheinander an, belegt der Rechner
+ebenfalls nur **einen** Platz.
+
+Wer gerade arbeitet, sehen Sie im Lizenzportal unter
+[Mein Konto](../portal/licenses.md#wer-gerade-arbeitet). In der Desktop-App
+zeigt *Einstellungen > Lizenz* in der Zeile **Plätze**, wie viele belegt
+sind.
+
+!!! info "Programmversionen bis 2.0.0"
+    Bis Version 2.0.0 hält ein Rechner seinen Platz sieben Tage, auch wenn
+    das Programm geschlossen ist. Erst ab Version 2.1.0 wird der Platz beim
+    Beenden frei. Aktualisieren Sie deshalb alle Rechner auf die aktuelle
+    Version.
 
 ## Benutzer und Rollen
 

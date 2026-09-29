@@ -23,9 +23,9 @@ Bezieht Herzog CAB seine Lizenz aus dem [Kundenkonto](account.md), belegt
 dieser Rechner dort Plätze. Geben Sie sie vor der Deinstallation frei:
 *Datei > Einstellungen*, Tab **Lizenz**, Schaltfläche **Von diesem Rechner
 abmelden** (siehe [Lizenz und Cloud](../admin/settings/license.md)).
-Vergessen ist kein Beinbruch — ein Administrator kann die Plätze im
-[Lizenzportal](../portal/licenses.md) freigeben, und nach sieben Tagen ohne
-Programmstart werden sie von selbst frei. Bestandskunden mit Dongle
+Vergessen ist kein Beinbruch. Der Platz ist ohnehin frei, sobald das
+Programm beendet ist. Eine Offline-Miete gibt ein Administrator im
+[Lizenzportal](../portal/licenses.md) frei. Bestandskunden mit Dongle
 überspringen diesen Schritt.
 
 ## Schritt 1: Herzog CAB beenden

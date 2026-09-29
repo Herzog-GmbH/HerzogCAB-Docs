@@ -4,7 +4,7 @@
 
 | Begriff | Bedeutung |
 |---|---|
-| **Baustein** | Lizenzierter Funktionsumfang im Kundenkonto – z. B. *Herzog CAB Vollversion*, *Herzog CAB Designer*, *Herzog CAB Testversion*, *Flechtsimulator*, *Herzog CAB Web*. Jeder Baustein hat Plätze und eine Laufzeit, siehe [Kundenkonto und Einladung](../setup/account.md). |
+| **Baustein** | Lizenzierter Funktionsumfang im Kundenkonto, z. B. *Herzog CAB Vollversion*, *Herzog CAB Designer*, *Herzog CAB Testversion* oder *Flechtsimulator*. Jeder Baustein hat Plätze und eine Laufzeit, siehe [Kundenkonto und Einladung](../setup/account.md). |
 | **Besetzung** | Muster, nach dem die Klöppel die Positionen einer Flechtmaschine belegen. Herzog CAB unterscheidet **Normale Besetzung** (1-1, alle Positionen belegt), **Tandem-Besetzung** (2-2, siehe **Tandem**) und **Halbe Besetzung** (1-3, nur jede zweite Position belegt). |
 | **Cloud-Upload** | Automatischer Abgleich des Arbeitsverzeichnisses der Desktop-App in den Arbeitsbereich der Web-App – nur in diese Richtung, siehe [Lizenz und Cloud](../admin/settings/license.md). |
 | **CmActLicense** | Software-Lizenz von Wibu CodeMeter, gebunden an den Fingerabdruck des Rechners (Bestandskunden). |
@@ -13,7 +13,7 @@
 | **Entra ID** | Microsoft Entra ID (früher Azure Active Directory) – Cloud-Verzeichnisdienst von Microsoft. Herzog CAB kann Benutzer darüber anmelden lassen, siehe [Authentifizierung](../admin/authentication.md). |
 | **Fachung** | Anzahl der Fäden je Klöppel. |
 | **Feinheit / Titer** | App-Begriff für die **lineare Dichte** – Masse pro Längeneinheit (tex, dtex, den …). |
-| **Flechtsimulator** | Zusatzbaustein für die Vollversion: Flechtmaschinen frei konstruieren und die Klöppelbewegung simulieren. |
+| **Flechtsimulator** | Zusatzbaustein zur Vollversion. Herzog liefert die fertige Konfiguration Ihrer Flechtmaschine. Darauf erstellen Sie Zeitprogramme und simulieren den Lauf der Klöppel. |
 | **Flechtwinkel** | Winkel zwischen Strang und Längsachse des Produkts. |
 | **Gangbahn** | Die Bahn, auf der die Klöppel durch die Flechtmaschine laufen. Im Designer lässt sich die Bewegung der Klöppel auf der Gangbahn animiert darstellen, siehe [Besetzung und Gangbahn-Animation](../designer/animation.md). |
 | **Geflechtsdichte** | App-Begriff für die Flechtdichte; das zugehörige Maß ist die **Schlaglänge** (engl. *lay length*, auch „Verlegelänge"). |
@@ -25,10 +25,10 @@
 | **LDAP** | *Lightweight Directory Access Protocol* – Standardprotokoll für Verzeichnisdienste wie Active Directory. Herzog CAB kann Benutzer darüber anmelden und importieren, siehe [Authentifizierung](../admin/authentication.md). |
 | **Lizenzportal** | Web-Oberfläche zum Kundenkonto unter license.herzog-cab.com, siehe [Lizenzportal](../portal/index.md). |
 | **Maintenance-Tool** | Update-/Deinstallationswerkzeug von Herzog CAB. |
-| **Miete** | Die zeitlich befristete Belegung eines Platzes durch einen Rechner. Die **Regelmiete** verlängert sich beim Start und alle sechs Stunden von selbst und hält ohne Verbindung sieben Tage; eine **Offline-Miete** gilt bis zu 30 Tage. |
+| **Miete** | Die Bestätigung des Lizenzservers, mit der ein Rechner seinen Platz hält und auch ohne Verbindung arbeiten darf. Ab Version 2.1.0 hält das Programm seinen Platz, solange es läuft, und arbeitet ohne Verbindung bis zu sieben Tage weiter. Eine **Offline-Miete** hält den Platz bis zu 30 Tage, auch wenn das Programm geschlossen ist. Bis Version 2.0.0 hieß die normale Miete **Regelmiete** und hielt den Platz sieben Tage. |
 | **Packungsgeflecht** | Geflechtsart des Packungsflechters mit Flügelrädern im Raster (2-, 3-, 4-bahnig oder rund; 8 bis 52 Klöppel je nach Ausführung), geflochten über mehrere Gangbahnen. |
 | **PCD** | Pitch Circle Diameter (Flügelteilkreis-Durchmesser). |
-| **Platz** | Einheit der Lizenz eines Bausteins: bei Desktop-Bausteinen ein Rechner, bei Web-Bausteinen ein gleichzeitig angemeldeter Benutzer. |
+| **Platz** | Einheit der Lizenz: eine Person, die gerade arbeitet. Jeder Rechner, auf dem Herzog CAB läuft, belegt einen Platz, ebenso jede Person im Browser. Programm und Browser zugleich belegen zwei Plätze. |
 | **Profil** | Mandant/Arbeitsbereich – verbindet einen Benutzer mit einem Workspace und den Webserver-Optionen. |
 | **Quadratgeflecht** | Geflecht mit quadratischem Querschnitt, geflochten aus 8 bis 36 Klöppeln auf 2 Gangbahnen. |
 | **Regelmiete** | Siehe **Miete**. |

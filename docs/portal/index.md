@@ -22,8 +22,8 @@ Lizenzportal öffnen*.
 
     ---
 
-    Bausteine mit Plätzen und Laufzeit, angemeldete Rechner mit ihren
-    Mieten, Benutzer im Browser, laufende Anfragen.
+    Bausteine mit Plätzen und Laufzeit, angemeldete Rechner, wer gerade
+    arbeitet, laufende Anfragen.
 
     [:octicons-arrow-right-24: Mein Konto](licenses.md)
 
@@ -36,11 +36,20 @@ Lizenzportal öffnen*.
 
     [:octicons-arrow-right-24: Benutzer](users.md)
 
+- :material-cart-outline: **Bestellen**
+
+    ---
+
+    Jahresabo bestellen, Plätze dazukaufen oder verlängern. Der Ablauf ist
+    derselbe wie in der Web-App.
+
+    [:octicons-arrow-right-24: Abo und Bestellung](../web/subscription.md)
+
 - :material-cart-plus: **Lizenz anfordern**
 
     ---
 
-    Mehr Plätze, eine Verlängerung oder einen weiteren Baustein direkt bei
+    Mehr Plätze, eine Verlängerung oder einen anderen Baustein direkt bei
     Herzog anfragen.
 
     [:octicons-arrow-right-24: Lizenz anfordern](requests.md)
@@ -49,7 +58,7 @@ Lizenzportal öffnen*.
 
     ---
 
-    Die neueste Version der Desktop-App für Windows samt
+    Die neueste Version der Desktop-App für Windows und macOS samt
     Versionshinweisen.
 
     [:octicons-arrow-right-24: Herunterladen](download.md)
@@ -102,11 +111,11 @@ Seite **Mein Konto**.
 
 | Menüpunkt | Inhalt |
 |---|---|
-| **Mein Konto** | Startseite: Firma, Kundennummer, [Bausteine, Rechner, Browser-Sitzungen und Anfragen](licenses.md). |
-| **Herunterladen** | [Neueste Version der Desktop-App](download.md). |
+| **Mein Konto** | Startseite: Firma, Kundennummer, [Bausteine, Rechner, wer gerade arbeitet, Anfragen](licenses.md). |
+| **Herunterladen** | [Neueste Version der Desktop-App](download.md). Nur mit einem Baustein für das Programm. |
 | **Benutzer** | [Benutzerliste, Einladungen, Rollen](users.md). |
-| **Lizenz anfordern** | [Anfrage an Herzog](requests.md) — nur für Administratoren. |
-| **Web-App** | Öffnet [app.herzog-cab.com](https://app.herzog-cab.com) in einem neuen Tab. |
+| **Bestellen** | Jahresabo bestellen, Plätze dazukaufen oder verlängern, wie unter [Abo und Bestellung](../web/subscription.md) beschrieben. Bestellen können nur Administratoren. |
+| **Web-App** | Öffnet [app.herzog-cab.com](https://app.herzog-cab.com) in einem neuen Tab. Nur, wenn das Konto die Web-App nutzen darf. |
 | **Sprache** | Deutsch oder Englisch — die Wahl gilt für Ihren Benutzer. |
 | **Passwort und zweiter Faktor** | [Sicherheitseinstellungen](security.md) Ihres Benutzers. |
 | **Abmelden** | Beendet die Portal-Sitzung. |
@@ -114,8 +123,9 @@ Seite **Mein Konto**.
 !!! info "Wer sieht was?"
     **Administratoren** sehen und verwalten alles. **Bearbeiter** und
     **Betrachter** sehen das Konto und ihre eigenen Sicherheitseinstellungen,
-    können aber weder Rechner freigeben noch Benutzer einladen oder Lizenzen
-    anfragen — das Portal blendet die entsprechenden Schaltflächen aus.
+    können aber weder Rechner freigeben noch Benutzer einladen, bestellen
+    oder Lizenzen anfragen. Das Portal blendet die entsprechenden
+    Schaltflächen aus.
 
 ## Verwandte Seiten
 

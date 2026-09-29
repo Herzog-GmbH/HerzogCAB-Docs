@@ -13,7 +13,7 @@
 | **Inhalt** | Die aktuelle Seite mit **Seitentitel**, Aktionen rechts daneben (z. B. **Neuer Flechtauftrag**) und darunter **Reitern** für Unterseiten (z. B. *Park* und *Katalog* unter Maschinen, *Materialien*, *Spulen*, *Farben*, *Kunden* unter Stammdaten). |
 
 Welche Einträge Sie sehen, richtet sich nach Ihren Rechten
-([Rollen](roles.md)) und dem Baustein: Mit *Herzog CAB Web Designer* fehlen
+([Rollen](roles.md)) und dem Baustein: Mit *Herzog CAB Designer* fehlen
 Aufträge und Berechnungen.
 
 ## Benutzermenü

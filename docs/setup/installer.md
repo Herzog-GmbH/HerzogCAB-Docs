@@ -12,7 +12,7 @@
 
 | Bezugsquelle                       | Wann?                                                                 |
 |------------------------------------|-----------------------------------------------------------------------|
-| **Lizenzportal → Herunterladen** | **Empfohlen** für alle mit Kundenkonto. Melden Sie sich unter [license.herzog-cab.com](https://license.herzog-cab.com) an und klicken Sie auf **Herunterladen** — die Seite zeigt die neueste Version mit Veröffentlichungsdatum, den Neuerungen und den Installer für Windows (`Herzog_CAB_Installer_<Version>.exe`). Siehe [Herunterladen](../portal/download.md). |
+| **Lizenzportal → Herunterladen** | **Empfohlen** für alle mit Kundenkonto. Melden Sie sich unter [license.herzog-cab.com](https://license.herzog-cab.com) an und klicken Sie auf **Herunterladen** — die Seite zeigt die neueste Version mit Veröffentlichungsdatum, den Neuerungen und je einem Installer für Windows (`Herzog_CAB_Installer_<Version>.exe`) und macOS (`.dmg`, ab Version 2.1.0). Siehe [Herunterladen](../portal/download.md). |
 | **Download vom Herzog-Feedback-Repo** | Ohne Kundenkonto. Öffnen Sie [github.com/Herzog-GmbH/HerzogCAB-Feedback](https://github.com/Herzog-GmbH/HerzogCAB-Feedback) und laden Sie unter *Releases* den aktuellen Installer herunter. Die Produktseite [cab.herzog-online.com](https://cab.herzog-online.com) verlinkt dieselben Dateien. |
 | **Mitgelieferter USB-Stick**       | Nur wenn Sie einen **CmDongle** bestellt haben — auf dem mitgelieferten Software-USB-Stick liegt der Installer mit dabei. Praktisch, wenn der Rechner kein Internet hat. |
 
