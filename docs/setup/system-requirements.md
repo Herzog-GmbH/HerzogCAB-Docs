@@ -8,12 +8,14 @@
 
 | Anforderung           | Empfehlung                              |
 |-----------------------|-----------------------------------------|
-| Betriebssystem        | Windows 10 (64-bit) oder Windows 11; macOS (aktuelle Versionen) |
+| Betriebssystem        | Windows 10 (64-bit) oder Windows 11; macOS auf Anfrage |
 | Architektur           | x64 (Windows)                            |
 
 Die aktuelle Version von Herzog CAB ist auf Windows 10 und 11 getestet.
-Ältere Windows-Versionen werden nicht unterstützt. Für macOS steht ein
-eigenes Installationspaket (`.dmg`) bereit; die Bedienung ist identisch.
+Sie läuft nur unter 64-Bit-Windows. Ältere Windows-Versionen werden nicht
+unterstützt. Für Version 2 gibt es kein fertiges Installationspaket für
+macOS. Brauchen Sie Herzog CAB auf einem Mac, fragen Sie beim Vertrieb
+nach.
 
 ### Hardware
 
@@ -83,8 +85,11 @@ Die [Web-App](../web/index.md) unter
 | Internet | Dauerhafte Verbindung — die Web-App arbeitet direkt auf dem Server. |
 | Drucken | Über den Druckdialog des Browsers oder als PDF-Datei. |
 
-Ein Platz der Web-App ist ein **gleichzeitig angemeldeter Benutzer**; wie
-viele Plätze Ihr Konto hat, sehen Sie im [Lizenzportal](../portal/licenses.md).
+Ein Platz ist eine **Person, die gerade arbeitet**. Programm und Web-App
+teilen sich die Plätze des Abos. Wer beides zugleich nutzt, belegt zwei
+Plätze. Wie viele Plätze Ihr Konto hat, sehen Sie im
+[Lizenzportal](../portal/licenses.md) und unter
+[Abo und Bestellung](../web/subscription.md).
 
 ## Nächster Schritt
 

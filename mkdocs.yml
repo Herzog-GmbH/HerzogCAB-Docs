@@ -365,7 +365,7 @@ nav:
       - Benutzermenü:
           - Einstellungen: web/settings.md
           - Konto und Benutzer: web/account.md
-          - Abo und Kauf: web/subscription.md
+          - Abo und Bestellung: web/subscription.md
           - Firma: web/company.md
           - Medienbibliothek: web/media.md
           - Rollen: web/roles.md
