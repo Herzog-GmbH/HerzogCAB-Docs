@@ -39,13 +39,13 @@ Der Link aus der Einladungsmail gilt drei Tage. Ein Administrator erneuert
 die Einladung im Lizenzportal unter **Benutzer**.
 
 **Die Web-App meldet „Belegt: n von m Plätzen".**
-Alle Web-Plätze des Kontos sind belegt. Ein Platz wird nach 15 Minuten ohne
-Aktivität oder beim Abmelden eines Kollegen frei; weitere Plätze fragt ein
-Administrator [an](../portal/requests.md).
+Alle Plätze des Kontos sind belegt. Ein Platz wird nach 15 Minuten ohne
+Aktivität oder beim Abmelden eines Kollegen frei. Weitere Plätze bestellt ein
+Administrator unter [Abo und Bestellung](../web/subscription.md).
 
 **Nach dem Anmelden erscheint „Kein Zugang zur Webapp".**
-Dem Konto fehlt der Web-Baustein oder die Testphase ist abgelaufen — siehe
-[Abo und Kauf](../web/subscription.md).
+Dem Konto fehlt ein Abo mit Web-App, oder die Testphase ist abgelaufen. Siehe
+[Abo und Bestellung](../web/subscription.md).
 
 ## Lokale Anmeldung (Login und Passwort) — Dongle-Installationen
 

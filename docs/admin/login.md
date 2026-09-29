@@ -32,10 +32,10 @@ Welches Anmeldefenster Sie sehen, hängt vom Lizenzweg ab:
 Beim Start erscheint das Fenster **Herzog CAB – Anmelden** mit dem Hinweis
 *„Melden Sie sich mit Ihrem Benutzer im Kundenkonto an – mit denselben
 Zugangsdaten wie im Lizenzportal und in Herzog CAB Web."* Darunter steht
-der Name Ihres Kontos (*Konto: <Firma>*).
+der Name Ihres Kontos (*Konto: &lt;Firma&gt;*).
 
 !!! warning "📷 Screenshot fehlt"
-    **Motiv:** Anmeldefenster „Herzog CAB – Anmelden" im Kontomodell: Hinweistext, Zeile „Konto: <Firma>", Felder E-Mail-Adresse und Passwort, Schaltflächen Anmelden und Beenden.
+    **Motiv:** Anmeldefenster „Herzog CAB – Anmelden" im Kontomodell: Hinweistext, Zeile „Konto: &lt;Firma&gt;", Felder E-Mail-Adresse und Passwort, Schaltflächen Anmelden und Beenden.
     **So erzeugen:** Kunden-Build auf einem am Konto angemeldeten Rechner ein zweites Mal starten.
     **Ziel-Datei:** `assets/screenshots/admin/anmelden-konto.png`
 

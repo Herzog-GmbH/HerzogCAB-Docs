@@ -35,7 +35,7 @@ unter der Markenfläche.
 |---|---|
 | *E-Mail-Adresse oder Passwort stimmen nicht.* | Zugangsdaten prüfen; Passwort über **Passwort vergessen?** zurücksetzen. |
 | *Bitte den Code aus der Authenticator-App eingeben.* | Kein Fehler — der zweite Faktor ist eingerichtet. |
-| *Belegt: n von m Plätzen.* | Alle Web-Plätze des Kontos sind gerade belegt. Warten Sie, bis ein Kollege sich abmeldet oder 15 Minuten inaktiv war — oder ein Administrator [fragt weitere Plätze an](../portal/requests.md). |
+| *Belegt: n von m Plätzen.* | Alle Plätze des Kontos sind gerade belegt. Warten Sie, bis ein Kollege sich abmeldet oder 15 Minuten inaktiv war. Oder ein Administrator [bestellt weitere Plätze](subscription.md). |
 | *Dieser Benutzer ist deaktiviert.* | Ein Administrator hat den Benutzer im Lizenzportal deaktiviert. |
 | *Zu viele Fehlversuche.* | Der Lizenzserver bremst nach mehreren Fehlversuchen — einige Minuten warten. |
 
@@ -54,11 +54,11 @@ Konto im [Benutzermenü](interface.md#benutzermenu) über die Auswahl
 
 ## Kein Zugang zur Web-App
 
-Hat Ihr Konto keinen Web-Baustein oder ist die Testphase abgelaufen, zeigt
+Hat Ihr Konto kein Abo mit Web-App oder ist die Testphase abgelaufen, zeigt
 die Web-App nach der Anmeldung die Seite **Kein Zugang zur Webapp** mit dem
-Hinweis *„Für das Konto <Firma> ist Herzog CAB Web nicht freigeschaltet oder
+Hinweis *„Für das Konto &lt;Firma&gt; ist Herzog CAB Web nicht freigeschaltet oder
 die Testphase ist abgelaufen."* Von dort gelangen Sie zu
-[Abo und Kauf](subscription.md) oder melden sich ab. Ihre Daten bleiben
+[Abo und Bestellung](subscription.md) oder melden sich ab. Ihre Daten bleiben
 erhalten.
 
 ## Abmelden

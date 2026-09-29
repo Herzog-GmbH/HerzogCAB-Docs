@@ -32,7 +32,7 @@ Die Seite besteht aus vier Karten, von oben nach unten:
 |---|---|
 | **Baustein** | Name des Bausteins (z. B. *Herzog CAB Vollversion*, *Herzog CAB Web*), darunter ggf. Ihre Bestellreferenz. Welche Bausteine es gibt, steht unter [Kundenkonto und Einladung](../setup/account.md#bausteine). |
 | **Plätze** | *belegt von gesamt* und darunter die Zahl der freien Plätze. Ein Platz ist bei Desktop-Bausteinen ein Rechner, bei Web-Bausteinen ein gleichzeitig angemeldeter Benutzer. |
-| **Gültig** | *Lebenszeit* oder *bis <Datum>*. Läuft eine Freischaltung in **30 Tagen oder weniger** ab, steht das gelb dabei und Administratoren sehen die Schaltfläche **Verlängern**. |
+| **Gültig** | *Lebenszeit* oder *bis &lt;Datum&gt;*. Läuft eine Freischaltung in **30 Tagen oder weniger** ab, steht das gelb dabei und Administratoren sehen die Schaltfläche **Verlängern**. |
 | **Art** | Woher die Freischaltung stammt: *Kauf*, *Abo*, *Testversion*, *Dongle-Ersatz* oder *Kulanz*. |
 | Status | **aktiv**, **abgelaufen** (Laufzeit vorbei) oder **beendet** (von Herzog beendet). |
 
@@ -55,10 +55,10 @@ mit seinem Windows-Rechnernamen.
 
 | Spalte | Bedeutung |
 |---|---|
-| **Rechner** | Rechnername (ohne Namen: *Unbenannt*), darunter *angemeldet von <E-Mail>* — der Benutzer, der den Rechner zuletzt angemeldet hat. Gesperrte oder abgemeldete Rechner sind entsprechend markiert. |
+| **Rechner** | Rechnername (ohne Namen: *Unbenannt*), darunter *angemeldet von &lt;E-Mail&gt;* — der Benutzer, der den Rechner zuletzt angemeldet hat. Gesperrte oder abgemeldete Rechner sind entsprechend markiert. |
 | **Belegte Plätze** | Die Bausteine, für die dieser Rechner je einen Platz hält. |
 | **Zuletzt gesehen** | Wann sich der Rechner zuletzt beim Lizenzserver gemeldet hat. |
-| Miete | *Regelmiete bis <Zeit>* oder *Offline bis <Zeit>* — solange gilt die Lizenz auf dem Rechner auch ohne Verbindung. |
+| Miete | *Regelmiete bis &lt;Zeit&gt;* oder *Offline bis &lt;Zeit&gt;* — solange gilt die Lizenz auf dem Rechner auch ohne Verbindung. |
 
 | Schaltfläche | Wirkung |
 |---|---|

@@ -46,10 +46,11 @@ automatische Flächenerkennung und Wandtexturen. Einzelne Dateien über 25 MB
 werden vom Cloud-Upload übersprungen. Die vollständige Gegenüberstellung
 steht unter [Web-App](../web/index.md).
 
-## Web-Testphase: 25 Einträge je Art
+## Web-Testphase: begrenzte Mengen
 
-In der Testphase der Web-App sind je Datenart (Aufträge, Designs, Maschinen,
-Kunden …) höchstens 25 Einträge möglich — auch beim ZIP-Import. Details unter
+In der Testphase der Web-App sind höchstens 2 Designs, 2 Maschinen,
+4 Aufträge und 3 Kunden möglich, dazu ein Benutzer und 100 Berechnungen je
+Berechnungsart. Das gilt auch beim ZIP-Import. Details unter
 [Testphase und Registrierung](../web/trial.md).
 
 ## Verwandte Seiten

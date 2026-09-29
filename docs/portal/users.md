@@ -30,7 +30,7 @@ sie die Administratoren.
 | **Name** | Anzeigename (optional). |
 | **Rolle** | **Administrator**, **Bearbeiter** oder **Betrachter** — Administratoren ändern sie direkt in der Zeile mit **Ändern**. Was die Rollen bedeuten, steht unter [Kundenkonto und Einladung](../setup/account.md#benutzer-und-rollen). |
 | **Letzte Anmeldung** | Zeitpunkt der letzten Anmeldung (Portal, Desktop oder Web) oder *noch nie*. |
-| **Status** | **aktiv**, **deaktiviert**, **Einladung offen bis <Zeit>** oder **Einladung abgelaufen**. |
+| **Status** | **aktiv**, **deaktiviert**, **Einladung offen bis &lt;Zeit&gt;** oder **Einladung abgelaufen**. |
 
 | Schaltfläche | Wirkung |
 |---|---|

@@ -4,7 +4,7 @@
 
 ## Wofür Sie diesen Bereich nutzen
 
-Die Startseite begrüßt Sie nach der Anmeldung (*Willkommen, <Name>*) und
+Die Startseite begrüßt Sie nach der Anmeldung (*Willkommen, &lt;Name&gt;*) und
 zeigt auf einen Blick, wie viel im Arbeitsbereich Ihres Kontos liegt. Von
 hier springen Sie in jedes Modul. Sie erreichen die Startseite jederzeit
 über **Startseite** in der Seitenleiste, das Herzog-Logo oder **Start** in

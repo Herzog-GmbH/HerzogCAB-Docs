@@ -110,12 +110,12 @@ Benutzer. Ohne Konto können Sie die Web-App 30 Tage lang
 
     ---
 
-    Einstellungen, Konto und Benutzer, Abo und Kauf, Firma,
+    Einstellungen, Konto und Benutzer, Abo und Bestellung, Firma,
     Medienbibliothek, Rollen und der Import aus dem Desktop.
 
     [:octicons-arrow-right-24: Einstellungen](settings.md) ·
     [Konto und Benutzer](account.md) ·
-    [Abo und Kauf](subscription.md) ·
+    [Abo und Bestellung](subscription.md) ·
     [Firma](company.md) ·
     [Medienbibliothek](media.md) ·
     [Rollen](roles.md) ·
@@ -139,7 +139,7 @@ gibt es in beiden — die wichtigsten Unterschiede:
 
 | | Desktop-App | Web-App |
 |---|---|---|
-| Installation | Windows / macOS, Installer | keine — Browser |
+| Installation | Windows, Installer (macOS auf Anfrage) | keine — Browser |
 | Daten | Arbeitsverzeichnis auf Rechner oder Netzlaufwerk, je Profil | zentral im Kundenkonto, ein Arbeitsbereich je Konto |
 | Benutzer | Kontobenutzer (oder lokal / Entra / LDAP bei Dongle) | ausschließlich Kontobenutzer |
 | Berechnungen | 33 Rechner, Verlauf, Favoriten | 32 Rechner (ohne *Flechtwinkel über Abzug*), Suche |

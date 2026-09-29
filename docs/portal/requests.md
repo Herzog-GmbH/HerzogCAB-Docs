@@ -67,11 +67,11 @@ auf einen anderen wechseln (z. B. von der Testversion zur Vollversion).
   Programmstart zur Verfügung, eine Verlängerung verschiebt das Enddatum,
   ein neuer Baustein erscheint in der Bausteintabelle.
 
-!!! tip "Web-App-Bausteine auch aus der Web-App"
-    Abo-Bausteine für die Web-App können Sie alternativ direkt in der
-    Web-App unter *Benutzermenü > Abo und Kauf* anfragen oder — sobald der
-    Kauf im Browser freigeschaltet ist — dort kaufen. Siehe
-    [Abo und Kauf](../web/subscription.md).
+!!! tip "Jahresabo direkt bestellen"
+    Das Jahresabo bestellen, Plätze dazukaufen oder verlängern können Sie
+    auch direkt. Im Lizenzportal geht das unter *Bestellen*, in der Web-App
+    unter *Benutzermenü > Abo und Bestellung*. Siehe
+    [Abo und Bestellung](../web/subscription.md).
 
 ## Verwandte Seiten
 

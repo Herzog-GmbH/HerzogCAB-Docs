@@ -1,6 +1,6 @@
 # Herunterladen
 
-!!! abstract "Referenz — Die Seite „Herunterladen" im Lizenzportal: die neueste Version der Desktop-App für Windows und macOS"
+!!! abstract "Referenz — Die Seite „Herunterladen" im Lizenzportal: die neueste Version der Desktop-App für Windows"
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -10,13 +10,13 @@ Installationspaket per E-Mail oder USB-Stick ist damit nicht mehr nötig.
 
 ## Der Bildschirm im Überblick
 
-![Herunterladen im Lizenzportal: neueste Version mit Datum, Installer für Windows und macOS und der Liste „Was ist neu".](../assets/screenshots/portal/herunterladen.png)
+![Herunterladen im Lizenzportal: neueste Version mit Datum, Installer für Windows, Hinweis zu macOS und die Liste „Was ist neu".](../assets/screenshots/portal/herunterladen.png)
 
 | Element | Bedeutung |
 |---|---|
 | **Version** und Datum | Die neueste veröffentlichte Version von Herzog CAB und ihr Veröffentlichungsdatum. |
 | **Herunterladen** (Windows) | Lädt `Herzog_CAB_Installer_<Version>.exe`. |
-| **Herunterladen** (macOS) | Lädt das `.dmg`-Paket. Steht für die neueste Version noch kein macOS-Paket bereit, sagt die Seite das — fragen Sie bei Bedarf beim Vertrieb nach. |
+| **macOS** | Für Version 2 gibt es kein macOS-Paket. Die Karte zeigt dann *Für diese Version noch nicht verfügbar*. macOS gibt es auf Anfrage beim Vertrieb. |
 | **Was ist neu** | Die Neuerungen der Version in Kurzform; die vollständigen Versionshinweise stehen auf der Release-Seite (Link **Alle Versionen**). |
 
 Nach der Installation melden Sie sich im Programm mit Ihrem Konto an — die

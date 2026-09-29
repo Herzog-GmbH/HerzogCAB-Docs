@@ -15,7 +15,7 @@ finden Sie unter [Anmelden und Lizenz beziehen](../setup/activate-license.md).
 | Dialog **Anmeldung am Kundenkonto** erscheint, obwohl der Rechner schon angemeldet war | Die Anmeldung wurde aufgehoben — über **Von diesem Rechner abmelden**, **Plätze freigeben** bzw. **Sperren** im Lizenzportal, oder die Miete ist nach längerer Zeit ohne Verbindung abgelaufen. | Erneut anmelden; ist der Rechner im Portal gesperrt, muss ihn ein Administrator [entsperren](../portal/licenses.md#rechner). |
 | *E-Mail-Adresse oder Passwort stimmen nicht.* | Tippfehler oder geändertes Passwort. | Passwort über **Passwort vergessen** im [Lizenzportal](../portal/index.md) zurücksetzen. |
 | *Der Code stimmt nicht.* | Zweiter Faktor: Code abgelaufen oder Uhrzeit des Handys weicht ab. | Nächsten Code abwarten; Uhrzeit des Handys automatisch stellen lassen. Ist die Authenticator-App verloren, setzt Herzog den zweiten Faktor zurück ([Support](support.md)). |
-| *Kein freier Platz für: <Baustein>. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* | Alle Plätze des Bausteins sind von anderen Rechnern belegt. | Ein Administrator gibt im [Lizenzportal](../portal/licenses.md) einen Rechner frei (z. B. einen ausgemusterten) oder [fragt Plätze an](../portal/requests.md). Rechner, die sieben Tage nicht gestartet wurden, geben ihren Platz von selbst frei. |
+| *Kein freier Platz für: &lt;Baustein&gt;. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* | Alle Plätze des Bausteins sind von anderen Rechnern belegt. | Ein Administrator gibt im [Lizenzportal](../portal/licenses.md) einen Rechner frei (z. B. einen ausgemusterten) oder [fragt Plätze an](../portal/requests.md). Rechner, die sieben Tage nicht gestartet wurden, geben ihren Platz von selbst frei. |
 | *Dieser Benutzer ist deaktiviert.* | Der Benutzer wurde im Portal deaktiviert. | Administrator des Kontos ansprechen ([Benutzer](../portal/users.md)). |
 | *Zu viele Fehlversuche. Bitte später erneut versuchen.* | Der Lizenzserver bremst nach mehreren Fehlversuchen aus derselben Verbindung. | Einige Minuten warten. |
 | *Der Lizenzserver ist nicht erreichbar …* | Keine Verbindung zu `license.herzog-cab.com` (Internet, Proxy, Firewall). | Verbindung prüfen. Ein bereits angemeldeter Rechner läuft mit seiner Miete weiter (sieben Tage, mit Offline-Miete bis 30 Tage); für die **erste** Anmeldung ist eine Verbindung Pflicht. |
@@ -102,8 +102,8 @@ So gehen Sie vor:
 
 | Meldung | Abhilfe |
 |---|---|
-| *Für das Konto … ist Herzog CAB Web nicht freigeschaltet oder die Testphase ist abgelaufen.* | Web-Baustein unter [Abo und Kauf](../web/subscription.md) kaufen bzw. anfragen oder im [Lizenzportal](../portal/requests.md) anfordern. Die Daten bleiben erhalten. |
-| *Belegt: n von m Plätzen.* | Alle Web-Plätze sind belegt; ein Platz wird nach 15 Minuten ohne Aktivität frei — oder mehr Plätze anfragen. |
+| *Für das Konto … ist Herzog CAB Web nicht freigeschaltet oder die Testphase ist abgelaufen.* | Jahresabo unter [Abo und Bestellung](../web/subscription.md) bestellen oder beim Vertrieb anfragen. Die Daten bleiben erhalten. |
+| *Belegt: n von m Plätzen.* | Alle Plätze des Kontos sind belegt. Ein Platz wird nach 15 Minuten ohne Aktivität frei. Weitere Plätze bestellt ein Administrator unter [Abo und Bestellung](../web/subscription.md). |
 
 ## Verwandte Seiten
 

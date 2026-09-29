@@ -12,8 +12,9 @@ entscheiden.
     [Kundenkontos](../setup/account.md): **Herzog CAB Testversion** (30 Tage).
     Herzog legt das Konto an und lädt Sie ein; Sie installieren den
     normalen Installer und melden den Rechner am Konto an — mehr ist nicht
-    nötig. Die [Web-App](../web/index.md) hat eine eigene
-    [Testphase](../web/trial.md) mit anderen Grenzen.
+    nötig. Die Testversion gilt auch für die
+    [Web-App](../web/index.md), mit denselben Grenzen. Siehe
+    [Testphase](../web/trial.md).
 
 ## Woran Sie die Testversion erkennen
 
@@ -37,7 +38,7 @@ Kachel **Testversion** mit:
 | Aufträge | höchstens 4 | unbegrenzt |
 | Benutzerkonten | 1 | unbegrenzt |
 | Berechnungsläufe | 100 je Berechnungsart | unbegrenzt |
-| Laufzeit | 30 Tage | unbefristet |
+| Laufzeit | 30 Tage | Jahresabo, verlängerbar |
 
 ## Was an der Grenze passiert
 
@@ -60,10 +61,11 @@ Kachel **Testversion** mit:
 Die Vollversion hebt alle Grenzen auf; Ihre in der Testversion angelegten
 Daten bleiben erhalten und werden weiterverwendet.
 
-1. Fragen Sie im [Lizenzportal](../portal/requests.md) den Baustein
-   **Herzog CAB Vollversion** an — oder wenden Sie sich an Herzog,
-   Kontaktwege unter [Support](../help/support.md).
-2. Sobald Herzog freigeschaltet hat, holt sich Herzog CAB beim nächsten
+1. Bestellen Sie das Jahresabo **Herzog CAB**, in der Web-App unter
+   [Abo und Bestellung](../web/subscription.md) oder im Lizenzportal unter
+   *Bestellen*. Oder wenden Sie sich an Herzog, Kontaktwege unter
+   [Support](../help/support.md).
+2. Sobald das Abo freigeschaltet ist, holt sich Herzog CAB beim nächsten
    Start die Vollversion von selbst; unter *Einstellungen > Lizenz* steht
    dann *Edition: Vollversion*. Bei einer Dongle-Lizenz aktivieren Sie den
    Dongle wie unter [Anmelden und Lizenz beziehen](../setup/activate-license.md)

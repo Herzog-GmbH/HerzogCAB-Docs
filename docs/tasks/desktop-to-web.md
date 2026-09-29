@@ -39,7 +39,7 @@ flowchart LR
    Grund (Referenz: [Lizenz und Cloud](../admin/settings/license.md)).
 3. Klicken Sie auf **Jetzt hochladen**. Der Stand wechselt von
    *Arbeitsverzeichnis wird gelesen …* über *Wird hochgeladen …* zu
-   *Zuletzt hochgeladen: <Zeit>*.
+   *Zuletzt hochgeladen: &lt;Zeit&gt;*.
 4. Klicken Sie auf **Sichern**.
 
 Ab jetzt lädt die Desktop-App jede gespeicherte Änderung von selbst hoch.
@@ -94,13 +94,14 @@ Die Web-App zeigt Ihren Arbeitsbereich; beim Cloud-Upload steht unter
 ## Wenn etwas nicht klappt
 
 * Schalter grau, Hinweis *Dafür braucht das Konto den Baustein „Herzog CAB
-  Web"* → Baustein im [Lizenzportal anfragen](../portal/requests.md) oder in
-  der Web-App unter [Abo und Kauf](../web/subscription.md) bestellen.
+  Web"* → Jahresabo in der Web-App unter
+  [Abo und Bestellung](../web/subscription.md) bestellen. Das Abo umfasst
+  Programm und Web-App.
 * *Fehler: Keine Verbindung zum Server* → Internet, Proxy und Firewall
   prüfen (`app.herzog-cab.com`, HTTPS).
 * *Die Anmeldung am Kundenkonto gilt nicht mehr* → Desktop-App neu starten
   und am Konto anmelden.
 * ZIP-Upload scheitert → Ordner `machines/` ausschließen oder **Nur Daten**
   wählen; Bilder später über die [Medienbibliothek](../web/media.md) nachladen.
-* Einträge fehlen in der Web-App → in der Testphase gilt die Grenze von
-  25 Einträgen je Art ([Testphase](../web/trial.md)).
+* Einträge fehlen in der Web-App → in der Testphase gelten Mengengrenzen,
+  zum Beispiel höchstens 2 Designs und 4 Aufträge ([Testphase](../web/trial.md)).

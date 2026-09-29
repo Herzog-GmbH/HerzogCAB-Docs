@@ -29,7 +29,7 @@ für Flechtmaschinen. Sie berechnen damit Material-, Produkt-, Produktions-
 und Spulerei-Parameter, entwerfen Flechtdesigns, verwalten Flecht- und
 Spulaufträge, planen Maschinenpark und Produktionshalle und drucken fertige
 Produktionsunterlagen. Seit Version 2.0 gibt es Herzog CAB als
-**Desktop-App** für Windows und macOS und als **Web-App** im Browser —
+**Desktop-App** für Windows und als **Web-App** im Browser —
 beide mit einem gemeinsamen Kundenkonto.
 
 Dieses Handbuch richtet sich an **Anwender** im Werk — Bediener,

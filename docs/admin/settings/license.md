@@ -42,8 +42,8 @@ Der Kartentitel nennt die Quelle der Lizenz: **Kundenkonto (Lizenzserver)**,
 | **Angemeldet als** | Der Benutzer, der gerade im Programm angemeldet ist, mit seiner Rolle (z. B. *Administrator*). |
 | **Edition** | Was diese Installation gerade ist: *Vollversion*, *Designer-Version* oder *Testversion* — abgeleitet aus den Bausteinen. |
 | **Bausteine** | Alle Bausteine, für die dieser Rechner einen Platz hält, mit lesbaren Namen (z. B. *Vollversion, Flechtsimulator*; Web-Bausteine des Kontos erscheinen zur Auskunft mit, belegen aber keinen Rechnerplatz). |
-| **Miete** | *Regelmiete bis <Datum> (noch n Tage), verlängert sich automatisch* — oder *Offline-Miete bis <Datum> (noch n Tage); danach braucht das Programm wieder Verbindung zum Lizenzserver*. Steht hier *keine gültige Bestätigung*, konnte die Miete zuletzt nicht verlängert werden. |
-| Roter Hinweis | *Kein freier Platz für: <Baustein>. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* — erscheint, wenn ein Baustein des Kontos für diesen Rechner keinen Platz mehr hatte. |
+| **Miete** | *Regelmiete bis &lt;Datum&gt; (noch n Tage), verlängert sich automatisch* — oder *Offline-Miete bis &lt;Datum&gt; (noch n Tage); danach braucht das Programm wieder Verbindung zum Lizenzserver*. Steht hier *keine gültige Bestätigung*, konnte die Miete zuletzt nicht verlängert werden. |
+| Roter Hinweis | *Kein freier Platz für: &lt;Baustein&gt;. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* — erscheint, wenn ein Baustein des Kontos für diesen Rechner keinen Platz mehr hatte. |
 
 ### Karte „Konto"
 
@@ -70,7 +70,7 @@ Designs, Hallenpläne und Druckvorlagen samt zugehöriger Dateien.
 |---|---|
 | **Arbeitsverzeichnis automatisch in die Cloud hochladen** | Schaltet den Upload ein oder aus. Aktiv beobachtet Herzog CAB das Arbeitsverzeichnis und lädt Änderungen wenige Sekunden nach dem Speichern hoch; zusätzlich läuft alle 15 Minuten ein vollständiger Abgleich. |
 | Hinweistext | Erklärt die Richtung: *„… Nur in diese Richtung – der Desktop hat immer recht."* Fehlt die Voraussetzung, steht hier der Grund (siehe unten) mit einem Link ins Lizenzportal. |
-| **Stand** | *Aus.*, *Bereit, noch nichts hochgeladen.*, *Arbeitsverzeichnis wird gelesen …*, *Wird hochgeladen …*, *Zuletzt hochgeladen: <Zeit>* oder *Fehler: …*. |
+| **Stand** | *Aus.*, *Bereit, noch nichts hochgeladen.*, *Arbeitsverzeichnis wird gelesen …*, *Wird hochgeladen …*, *Zuletzt hochgeladen: &lt;Zeit&gt;* oder *Fehler: …*. |
 | **Jetzt hochladen** | Stößt sofort einen vollständigen Abgleich an. |
 
 **Voraussetzungen:** Das Konto braucht den Baustein **Herzog CAB Web**

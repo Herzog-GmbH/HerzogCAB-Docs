@@ -38,7 +38,7 @@ gewählten Benutzers.
 
 Bezieht Herzog CAB seine Lizenz aus dem Kundenkonto, steht über der
 Benutzerliste der Hinweis *„Benutzer, Passwörter und Rollen kommen aus dem
-Kundenkonto „<Firma>" – dieselben wie im Lizenzportal und in Herzog CAB Web.
+Kundenkonto „&lt;Firma&gt;" – dieselben wie im Lizenzportal und in Herzog CAB Web.
 Neue Benutzer werden im Lizenzportal eingeladen; hier bleibt nur die
 Zuweisung zu Arbeitsbereichen."*
 

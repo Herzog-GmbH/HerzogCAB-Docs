@@ -49,7 +49,7 @@ Lizenzportal öffnen*.
 
     ---
 
-    Die neueste Version der Desktop-App für Windows und macOS samt
+    Die neueste Version der Desktop-App für Windows samt
     Versionshinweisen.
 
     [:octicons-arrow-right-24: Herunterladen](download.md)

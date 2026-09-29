@@ -27,7 +27,7 @@ Benutzermenü:
 | **Sprache** | Am Smartphone hier statt in der Kopfzeile. |
 | **Einstellungen** | [Sprache, Benutzer, Passwort-Hinweis](settings.md). |
 | **Konto und Benutzer** | [Edition, Bausteine, Plätze, Benutzer und Rollen](account.md). |
-| **Abo und Kauf** | [Freischaltungen, Testphase, Kauf oder Anfrage](subscription.md). |
+| **Abo und Bestellung** | [Freischaltungen, Testphase, Jahresabo bestellen oder Anfrage](subscription.md). |
 | **Firma** | [Firmendaten und Logo für Druckvorlagen](company.md). |
 | **Medienbibliothek** | [Hochgeladene Bilder und Dokumente](media.md). |
 | **Rollen** | [Rollen und Rechte](roles.md) — nur mit den Rechten *Rollen verwalten* bzw. *Benutzer verwalten*. |

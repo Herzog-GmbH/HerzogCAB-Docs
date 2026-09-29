@@ -4,13 +4,13 @@
 
 Seit Version 2.0 gibt es Herzog CAB zweimal:
 
-* Die **Desktop-App** — installiert auf Windows oder macOS, arbeitet mit
+* Die **Desktop-App** — installiert unter Windows (macOS auf Anfrage), arbeitet mit
   einem Arbeitsverzeichnis auf dem Rechner oder Netzlaufwerk, lizenziert
   über das Kundenkonto oder (Bestand) einen Dongle.
 * Die **Web-App** — im Browser unter
   [app.herzog-cab.com](https://app.herzog-cab.com), arbeitet im
   Arbeitsbereich des Kundenkontos auf dem Herzog-Server, lizenziert über
-  den Abo-Baustein *Herzog CAB Web*.
+  dasselbe Jahresabo wie die Desktop-App.
 
 Beide teilen sich das **Kundenkonto** (ein Login), das **Datenmodell**
 (Aufträge, Designs, Maschinen, Stammdaten, Druckvorlagen) und die

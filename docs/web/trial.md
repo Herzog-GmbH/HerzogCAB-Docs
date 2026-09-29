@@ -6,8 +6,8 @@
 
 | Weg | Für wen |
 |---|---|
-| **Herzog schaltet den Baustein *Herzog CAB Web Testphase* frei** | Bestehende Kunden mit Kundenkonto — Sie melden sich wie gewohnt an; die Testphase gilt für das ganze Konto. |
-| **Selbstregistrierung** über **Kostenlos testen** auf der [Anmeldeseite](login.md) | Interessenten ohne Konto. Legt ein neues Konto mit Ihnen als Administrator an. Die Schaltfläche erscheint nur, wenn Herzog die Selbstregistrierung freigeschaltet hat; sonst nennt die Seite die Kontaktadresse des Vertriebs. |
+| **Herzog schaltet den Baustein *Herzog CAB Testversion* frei** | Bestehende Kunden mit Kundenkonto. Sie melden sich wie gewohnt an. Die Testversion gilt 30 Tage für das ganze Konto, auf dem Rechner und im Browser. |
+| **Selbstregistrierung** über **Kostenlos testen** auf der [Anmeldeseite](login.md) | Interessenten ohne Konto. Legt ein neues Konto mit Ihnen als Administrator an. Das Konto bekommt den Baustein *Herzog CAB Web Testphase* (30 Tage, nur im Browser). Die Schaltfläche erscheint nur, wenn Herzog die Selbstregistrierung freigeschaltet hat. Sonst nennt die Seite die Kontaktadresse des Vertriebs. |
 
 ## Selbstregistrierung
 
@@ -30,11 +30,11 @@ Danach:
    trotzdem sofort nutzbar.
 2. Der Link führt zur Seite **E-Mail bestätigen** (*Die E-Mail-Adresse ist
    bestätigt.*) und von dort zur Anwendung. Kam keine Mail an, schicken Sie
-   sie unter [Abo und Kauf](subscription.md) erneut.
+   sie unter [Abo und Bestellung](subscription.md) erneut.
 3. Ihr Konto hat den Baustein **Herzog CAB Web Testphase** mit **einem
-   Platz** für **30 Tage**. Weitere Benutzer laden Sie im
-   [Lizenzportal](../portal/users.md) ein; gleichzeitig angemeldet sein kann
-   in der Testphase aber nur einer.
+   Platz** für **30 Tage**. In der Testphase ist nur **ein Benutzer**
+   möglich. Weitere Benutzer laden Sie nach dem Abo im
+   [Lizenzportal](../portal/users.md) ein.
 
 !!! info "Begrenzung der Registrierungen"
     Von einer Internetadresse aus sind höchstens drei Registrierungen pro
@@ -44,28 +44,44 @@ Danach:
 
 * **Voller Funktionsumfang** der Web-App: alle Rechner, Designer mit allen
   Geflechtsarten, Aufträge, Maschinen, Hallenplaner, Druck, Import.
-* **Mengenbegrenzung:** höchstens **25 Einträge je Art** — also z. B. 25
-  Aufträge, 25 Designs, 25 Maschinen, 25 Kunden. Beim 26. Eintrag meldet die
-  Web-App die Grenze; auch der ZIP-Import hält sie ein.
+* **Mengenbegrenzung:** Einige Datenarten sind begrenzt, siehe die Tabelle
+  unten.
 * **Restlaufzeit:** Der Chip *Testphase: noch n Tage* in der Kopfzeile führt
-  zu [Abo und Kauf](subscription.md).
-* **Nach Ablauf** sperrt die Web-App den Zugang (*Kein Zugang zur Webapp*);
+  zu [Abo und Bestellung](subscription.md).
+* **Nach Ablauf** sperrt die Web-App den Zugang (*Kein Zugang zur Webapp*).
   Ihre Daten bleiben erhalten und stehen nach dem Abo sofort wieder zur
   Verfügung.
 
+### Mengenbegrenzung
+
+| Bereich | Höchstens |
+|---|---|
+| Designs | 2 |
+| Maschinen (Flecht-, Spul- und Aufwickelmaschinen zusammen) | 2 |
+| Aufträge (Spulaufträge eingeschlossen) | 4 |
+| Kunden | 3 |
+| Benutzer | 1 |
+| Berechnungen | 100 je Berechnungsart |
+
+Materialien, Spulen, Trommeln, Farben, Hallenpläne und Druckvorlagen sind
+nicht begrenzt. Die Startseite zeigt den Stand, zum Beispiel *1 / 2*. Ist
+eine Grenze erreicht, meldet die Web-App das. Auch der ZIP-Import und der
+Abgleich aus der Desktop-App halten die Grenzen ein.
+
 ## Der Weg zum Abo
 
-Unter [Abo und Kauf](subscription.md) wählen Sie Plätze und Laufzeit und
-gehen zur Kasse — oder Sie fragen ein Angebot beim Vertrieb an. Mit der
-Freischaltung entfällt die Mengenbegrenzung; alle in der Testphase
+Unter [Abo und Bestellung](subscription.md) bestellen Sie das Jahresabo.
+Ein Platz gilt dann wahlweise für die Web-App oder für das Programm auf dem
+Rechner. Freigeschaltet wird nach dem Zahlungseingang. Mit der
+Freischaltung entfällt die Mengenbegrenzung. Alle in der Testphase
 angelegten Daten bleiben.
 
 !!! info "Testversion der Desktop-App"
-    Die Desktop-App hat eine eigene Testversion mit anderen Grenzen — siehe
+    Die Testversion der Desktop-App hat dieselben Grenzen. Siehe
     [Testversion und Kontingente](../basics/trial-quotas.md).
 
 ## Verwandte Seiten
 
 * [Anmelden und Konto wählen](login.md)
-* [Abo und Kauf](subscription.md)
+* [Abo und Bestellung](subscription.md)
 * [Kundenkonto und Einladung](../setup/account.md)

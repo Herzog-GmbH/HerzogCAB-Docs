@@ -21,7 +21,7 @@ Kachel **Konto und Benutzer** auf der Startseite.
 |---|---|
 | **Edition** | Der wirksame Web-Baustein: *Herzog CAB Web*, *Herzog CAB Web Designer* oder *Herzog CAB Web Testphase*; bei internen Konten der Vermerk *internes Konto*. |
 | **Plätze** | Gleichzeitig angemeldete Benutzer und die Platzzahl des Bausteins. |
-| **Bausteine** | Alle Freischaltungen des Kontos (auch die Desktop-Bausteine) mit Laufzeit (*bis <Datum>* oder *Lebenszeit*). |
+| **Bausteine** | Alle Freischaltungen des Kontos (auch die Desktop-Bausteine) mit Laufzeit (*bis &lt;Datum&gt;* oder *Lebenszeit*). |
 | **Rollen verwalten** | Wechselt zu [Rollen](roles.md). |
 | **Lizenzportal öffnen** | Öffnet [license.herzog-cab.com](https://license.herzog-cab.com) in einem neuen Tab. |
 
@@ -49,5 +49,5 @@ und je Rolle ein **Kästchen**.
 
 * [Rollen (Web-App)](roles.md) — eigene Rollen mit einzelnen Rechten
 * [Benutzer einladen und verwalten (Lizenzportal)](../portal/users.md)
-* [Abo und Kauf](subscription.md) — Web-Bausteine erweitern
+* [Abo und Bestellung](subscription.md): Jahresabo bestellen und verlängern
 * [Kundenkonto und Einladung](../setup/account.md)
