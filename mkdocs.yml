@@ -382,6 +382,7 @@ nav:
       - Material richtig kalkulieren: tasks/material-calculation.md
       - Eine Druckvorlage erstellen: tasks/create-print-template.md
       - Benutzer und Rollen einrichten: tasks/setup-users.md
+      - Einen weiteren Rechner einrichten: tasks/add-workstation.md
       - Daten vom Desktop in die Web-App bringen: tasks/desktop-to-web.md
 
   # ----- TAB 6: Verwaltung ----------------------------------------------------

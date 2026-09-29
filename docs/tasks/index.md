@@ -76,6 +76,15 @@ Reihenfolge* Sie vorgehen, sind Sie hier richtig.
 
     [:octicons-arrow-right-24: Zum Ablauf](setup-users.md)
 
+-   :material-monitor-multiple:{ .lg .middle } **Einen weiteren Rechner einrichten**
+
+    ---
+
+    Daten bei Bedarf auf das Netzlaufwerk verschieben, dann den neuen
+    Rechner installieren, anmelden und mit dem Ordner der Firma verbinden.
+
+    [:octicons-arrow-right-24: Zum Ablauf](add-workstation.md)
+
 -   :material-cloud-upload-outline:{ .lg .middle } **Daten vom Desktop in die Web-App bringen**
 
     ---

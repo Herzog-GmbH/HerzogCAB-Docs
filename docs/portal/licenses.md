@@ -81,6 +81,12 @@ Die Schaltflächen sehen nur Administratoren.
 Jeder Rechner, auf dem Herzog CAB am Konto angemeldet ist, erscheint hier
 mit seinem Rechnernamen.
 
+Über der Liste steht der **Speicherort der Firma**, sobald einer hinterlegt
+ist: der Ordner auf Ihrem Fileserver, mit dem sich neue Rechner beim ersten
+Start verbinden. Festgelegt wird er in der Desktop-App
+([Speicherort](../admin/storage-location.md)) oder in der Web-App unter
+[Konto und Benutzer](../web/account.md#speicherort-der-firma).
+
 | Spalte | Bedeutung |
 |---|---|
 | **Rechner** | Rechnername (ohne Namen: *Unbenannt*), darunter *angemeldet von &lt;E-Mail&gt;*. Das ist der Benutzer, der den Rechner zuletzt angemeldet hat. Gesperrte oder abgemeldete Rechner sind entsprechend markiert. |

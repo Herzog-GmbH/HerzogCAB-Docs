@@ -92,8 +92,10 @@ Status-Kachel mit:
   Anzahl der Arbeitsbereichs-Profile und dem letzten Login im System.
 * **Speicherort** — ob der zentrale Datenspeicher erreichbar ist (bei
   Netzwerk-Speicherort) bzw. der Hinweis „Speicher: lokal auf dieser
-  Maschine". Ist der zentrale Speicher **nicht** erreichbar, erscheint die
-  Meldung rot — prüfen Sie dann die Verbindung, siehe
+  Maschine". Mit Kundenkonto steht hier, wo die Daten liegen: „Daten: auf
+  dem Netzlaufwerk (…)" oder „Daten: nur auf diesem Rechner (…)". Ist der
+  zentrale Speicher **nicht** erreichbar, erscheint die Meldung rot —
+  prüfen Sie dann die Verbindung, siehe
   [Speicherort](../admin/storage-location.md).
 
 <!-- TODO(Verifikation): Ein Dialog „Home anpassen" (Bereiche ein-/ausblenden,

@@ -42,7 +42,7 @@ Der Kartentitel nennt die Quelle der Lizenz: **Kundenkonto (Lizenzserver)**,
 | **Konto** | Name Ihres Kundenkontos (Firma). |
 | **Angemeldet als** | Der Benutzer, der gerade im Programm angemeldet ist, mit seiner Rolle (z. B. *Administrator*). |
 | **Edition** | Was diese Installation gerade ist: *Vollversion*, *Designer-Version* oder *Testversion* — abgeleitet aus den Bausteinen. |
-| **Bausteine** | Die Bausteine dieses Rechners mit lesbaren Namen, zum Beispiel *Vollversion, Herzog CAB Web*. *Herzog CAB Web* steht dabei, wenn Ihr Abo die Web-App umfasst. |
+| **Bausteine** | Die Bausteine dieses Rechners mit lesbaren Namen, zum Beispiel *Vollversion (Programm und Web)*. Ein Abo gilt für Programm und Web-App zusammen, als **ein** Kontingent; darum steht es als ein Eintrag da. |
 | **Miete** | Normalerweise *Platz belegt, solange Herzog CAB läuft; beim Beenden wird er frei. Ohne Verbindung gültig bis &lt;Datum&gt; (noch n Tage).* Mit Offline-Miete: *Offline-Miete bis &lt;Datum&gt; (noch n Tage); danach braucht das Programm wieder Verbindung zum Lizenzserver.* Steht hier *keine gültige Bestätigung*, konnte die Miete zuletzt nicht verlängert werden. |
 | **Plätze** | *n von m belegt (Programm und Herzog CAB Web zusammen)*. So viele Plätze des Abos sind gerade belegt, im Programm und im Browser. |
 | Roter Hinweis | *Kein freier Platz für: &lt;Baustein&gt;. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* Darunter steht, wer gerade arbeitet. Erscheint, wenn ein Baustein des Kontos für diesen Rechner keinen Platz mehr hatte. |

@@ -1,6 +1,6 @@
 # Konto und Benutzer (Web-App)
 
-!!! abstract "Referenz — Die Seite „Konto und Benutzer" im Benutzermenü der Web-App: Edition, Bausteine, Plätze, Benutzer und ihre Rollen"
+!!! abstract "Referenz — Die Seite „Konto und Benutzer" im Benutzermenü der Web-App: Edition, Bausteine, Plätze, Speicherort der Firma, Benutzer und ihre Rollen"
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -19,9 +19,28 @@ Kachel **Konto und Benutzer** auf der Startseite.
 
 | Element | Bedeutung |
 |---|---|
-| **Edition** | Welche Ausführung der Web-App für das Konto gilt: Vollversion, Designer oder Testphase. Bei internen Konten der Vermerk *internes Konto*. |
+| **Edition** | Mit welchem Abo Sie arbeiten: *Vollversion*, *Designer* oder *Testversion*. Bei internen Konten der Vermerk *internes Konto*. |
 | **Plätze** | Belegte und vorhandene Plätze, zum Beispiel *2 / 3*. Programm und Web-App zählen zusammen. |
-| **Bausteine** | Die Bausteine, die die Web-App öffnen, mit der Zahl der Plätze und der Laufzeit (*bis &lt;Datum&gt;* oder *Lebenszeit*). |
+| **Bausteine** | Die Bausteine, die die Web-App öffnen, mit der Zahl der Plätze und der Laufzeit (*bis &lt;Datum&gt;* oder *Lebenszeit*). *Programm und Web* heißt: ein Kontingent für Desktop-App und Web-App zusammen. |
+
+### Speicherort der Firma
+
+Der Ordner auf Ihrem Fileserver, in dem die Firma mit der Desktop-App
+arbeitet, z. B. `\\fileserver\freigabe\HerzogCAB`. Ein neuer Rechner
+verbindet sich beim ersten Start damit, ohne dass jemand den Pfad kennen
+muss (siehe [Erststart](../setup/first-run.md#kundenkonto-arbeitsverzeichnis-der-firma)).
+Meist trägt die Desktop-App den Ordner selbst ein, sobald ein Administrator
+dort arbeitet.
+
+| Element | Bedeutung |
+|---|---|
+| Pfad und *festgelegt …* | Der hinterlegte Ordner und wann er zuletzt festgelegt wurde. Ohne Eintrag steht hier *Noch kein Speicherort hinterlegt*. |
+| **Festlegen** / **Ändern** | Öffnet das Feld **Netzwerkpfad**. Nur Netzwerkpfade wie `\\server\freigabe\ordner` sind erlaubt, keine Laufwerksbuchstaben. **Speichern** übernimmt, **Abbrechen** verwirft. |
+| **Entfernen** | Löscht den Eintrag. Neue Rechner fragen dann wieder nach dem Ordner. |
+
+Festlegen, Ändern und Entfernen dürfen nur Benutzer mit dem Recht
+**Workspace-Einstellungen** (z. B. Administratoren); alle anderen sehen den
+Ordner nur.
 | **Gerade angemeldet** | Wer gerade einen Platz belegt und wo: Rechnername, *Web* oder *(offline)*. |
 | **Rollen verwalten** | Wechselt zu [Rollen](roles.md). |
 | **Lizenzportal öffnen** | Öffnet [license.herzog-cab.com](https://license.herzog-cab.com) in einem neuen Tab. |

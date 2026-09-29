@@ -16,14 +16,16 @@ sehen Sie unterschiedlich viele der folgenden Dialoge.
 
     ```mermaid
     flowchart LR
-      A[Anmeldung am<br>Kundenkonto] --> B[Speicherort wählen]
-      B --> C[Profil einrichten]
-      C --> D[Herzog CAB startet]
+      A[Anmeldung am<br>Kundenkonto] --> B[Arbeitsverzeichnis<br>der Firma]
+      B --> D[Herzog CAB startet]
     ```
 
     Der Benutzer, mit dem Sie den Rechner am Konto angemeldet haben, ist
     zugleich Ihr Programmbenutzer — ein Administrator-Konto legen Sie
-    **nicht** mehr an. Schritt 2 unten entfällt.
+    **nicht** mehr an. Statt der Schritte 1 bis 3 unten erscheint nur ein
+    Dialog: [Arbeitsverzeichnis der Firma](#kundenkonto-arbeitsverzeichnis-der-firma).
+    Kennt Ihr Kundenkonto den Ordner Ihrer Firma schon, klicken Sie dort nur
+    auf **Verbinden**.
 
 === "Dongle / CmAct-Lizenz"
 
@@ -44,7 +46,58 @@ sehen Sie unterschiedlich viele der folgenden Dialoge.
     meist nur noch den normalen [Anmeldedialog](../admin/login.md) und ggf.
     die [Profil-Auswahl](#profil-auswahlen-statt-einrichten).
 
-## Schritt 1: Speicherort für die Benutzerverwaltung wählen
+## Kundenkonto: Arbeitsverzeichnis der Firma
+
+Im Kontomodell fragt Herzog CAB nach der Anmeldung nur noch, wo die Daten
+der Firma liegen — Designs, Aufträge, Maschinen und Stammdaten. Den
+Speicherort merkt sich Ihr [Kundenkonto](account.md): Der erste Rechner der
+Firma legt ihn fest, jeder weitere Rechner verbindet sich damit. Niemand
+muss dafür den Netzwerkpfad kennen.
+
+### Das Konto kennt den Ordner: verbinden
+
+Hat Ihre Firma schon einen Speicherort, zeigt der Dialog
+**„Arbeitsverzeichnis einrichten"** diesen Ordner und prüft sofort, ob er
+von diesem Rechner aus erreichbar ist.
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Dialog „Arbeitsverzeichnis einrichten" mit dem Ordner der Firma, grünem Haken „erreichbar" und der Schaltfläche **Verbinden**
+    **So erzeugen:** Auf einem zweiten Rechner mit einem Konto, das schon einen Speicherort hat, zum ersten Mal anmelden
+    **Ziel-Datei:** `assets/screenshots/setup/arbeitsverzeichnis-verbinden.png`
+
+| Element | Bedeutung |
+|---|---|
+| Ordner der Firma | Der Netzwerkpfad aus dem Kundenkonto, z. B. `\\fileserver\freigabe\HerzogCAB`. |
+| Prüfergebnis | ✔ = der Ordner ist erreichbar. ✘ = nicht erreichbar; dann ist meist das Netzlaufwerk nicht verbunden (im Homeoffice: VPN) oder Ihr Windows-Benutzer darf dort nicht schreiben. |
+| **Verbinden** | Richtet den Ordner auf diesem Rechner ein und startet Herzog CAB. Nur aktiv, wenn der Ordner erreichbar ist. |
+| **Erneut prüfen** | Erscheint, wenn der Ordner nicht erreichbar ist. Prüft nach dem Verbinden des Netzlaufwerks noch einmal. |
+| **Anderen Ordner wählen …** | Nur für Benutzer mit dem Recht **Workspace-Einstellungen**. Öffnet die Auswahl unten, z. B. für einen Test-Ordner. |
+| **Beenden** | Beendet Herzog CAB, ohne etwas einzurichten. |
+
+!!! info "Kein stilles Ausweichen"
+    Ist der Ordner nicht erreichbar, legt Herzog CAB **keinen** lokalen
+    Ersatzordner an. So entstehen keine zwei getrennten Datenbestände.
+
+### Erster Rechner der Firma: Speicherort festlegen
+
+Kennt das Konto noch keinen Speicherort, fragt der Dialog einmal:
+
+| Element | Bedeutung |
+|---|---|
+| **Nur auf diesem Rechner** | Für einen einzelnen Arbeitsplatz. Vorbelegt mit *Dokumente\HerzogCAB*, über **Durchsuchen …** änderbar. Kommt später ein zweiter Rechner dazu, verschieben Sie den Ordner unter [Speicherort](../admin/storage-location.md#auf-netzlaufwerk-verschieben) auf ein Netzlaufwerk. |
+| **Auf einem Netzlaufwerk, für mehrere Rechner** | Für mehrere Arbeitsplätze. Pfad eintragen oder über **Auswählen …** wählen. Ein verbundenes Laufwerk wie `Z:\HerzogCAB` wandelt Herzog CAB selbst in den Netzwerkpfad um, damit jeder Rechner ihn findet. |
+| **Übernehmen** | Richtet den Ordner ein. Mit dem Recht **Workspace-Einstellungen** wird ein Netzlaufwerk zugleich als Speicherort der Firma im Kundenkonto hinterlegt. |
+
+!!! tip "Speicherort vorab festlegen"
+    Administratoren können den Speicherort auch in der Web-App unter
+    [Konto und Benutzer](../web/account.md#speicherort-der-firma)
+    eintragen, bevor der erste Rechner eingerichtet wird.
+
+## Schritt 1: Speicherort für die Benutzerverwaltung wählen (nur Dongle / CmAct)
+
+!!! info "Entfällt beim Kundenkonto"
+    Im Kontomodell kommen die Benutzer aus dem Kundenkonto. Den Ordner der
+    Daten legt der Dialog [Arbeitsverzeichnis der Firma](#kundenkonto-arbeitsverzeichnis-der-firma) fest.
 
 Dieser Dialog **„Daten-Speicherort einrichten"** erscheint nur beim
 allerersten Start auf einem Rechner, der noch keine Benutzerverwaltung
@@ -114,7 +167,11 @@ ausgefüllt sind — der Button ist bis dahin gesperrt.
     zurücksetzen. Gibt es noch keinen zweiten SuperAdmin, notieren Sie das
     Passwort an einem sicheren Ort.
 
-## Schritt 3: Profil einrichten
+## Schritt 3: Profil einrichten (nur Dongle / CmAct)
+
+!!! info "Entfällt beim Kundenkonto"
+    Das Profil legt dort der Dialog [Arbeitsverzeichnis der Firma](#kundenkonto-arbeitsverzeichnis-der-firma)
+    selbst an; es heißt wie Ihre Firma.
 
 Ein **Profil** ist ein eigenständiger Arbeitsbereich mit eigenem
 Arbeitsverzeichnis (Aufträge, Stammdaten, Druckvorlagen) und eigenem
