@@ -193,6 +193,31 @@ def run_web(ctx):
             page.goto(WEB + href); settle(page, 1500)
             shot(page, "web", "maschine")
 
+    if want("katalog") or want("katalog-dialog") or want("katalog-anlegen"):
+        page.goto(WEB + "/katalog"); settle(page, 2000)
+        try:
+            page.get_by_role("tab", name=re.compile(r"^Flechtmaschinen")).first.click(); time.sleep(0.6)
+        except Exception as e:
+            print("  Reiter Flechtmaschinen:", e)
+        if want("katalog"):
+            shot(page, "web", "katalog")
+        if want("katalog-dialog") or want("katalog-anlegen"):
+            # Beispiel wie im Desktop: KB 1/12-80 hat Zubehoer, Abzug und drei Besetzungen.
+            try:
+                page.locator("input[type='search']").first.fill("KB 1/12-80"); time.sleep(0.8)
+                page.get_by_text("Feindrahtflechtmaschine KB 1/12-80", exact=True).first.click(); settle(page, 1200)
+                dialog = page.locator("dialog[open]")
+                if want("katalog-dialog"):
+                    shot(page, "web", "katalog-dialog")
+                if want("katalog-anlegen"):
+                    for eintrag in ("Meterzähler", "Kabine"):
+                        dialog.locator("label", has_text=eintrag).first.click(); time.sleep(0.2)
+                    dialog.get_by_text("Als eigene Maschine anlegen", exact=True).scroll_into_view_if_needed(); time.sleep(0.4)
+                    shot(page, "web", "katalog-anlegen")
+                page.keyboard.press("Escape"); time.sleep(0.3)
+            except Exception as e:
+                print("  Katalog-Dialog:", e)
+
     if want("stammdaten"):
         page.goto(WEB + "/stammdaten/material"); settle(page)
         shot(page, "web", "stammdaten")

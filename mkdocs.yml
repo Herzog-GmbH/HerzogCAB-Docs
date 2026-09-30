@@ -359,6 +359,7 @@ nav:
       - Berechnungen: web/calculations.md
       - Designs und Designer: web/designer.md
       - Maschinen: web/machines.md
+      - Herzog-Katalog: web/catalog.md
       - Stammdaten: web/master-data.md
       - Hallenplaner: web/hall-planner.md
       - Drucken: web/print.md

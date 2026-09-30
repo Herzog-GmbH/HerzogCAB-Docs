@@ -10,7 +10,7 @@
 |---|---|
 | **Seitenleiste** (links) | Ein Eintrag je Modul: **Startseite**, **Aufträge**, **Berechnungen**, **Designs**, **Maschinen**, **Stammdaten**, **Hallenplaner**. Unten Ihr Name, das Konto und das **Abmelden**-Symbol. Die Leiste beantwortet nur die Frage „in welchem Modul bin ich" — Unterseiten und Aktionen liegen in der Seite selbst. |
 | **Kopfzeile** (oben) | Links der Name des Kontos mit Kennzeichen (z. B. *intern*, die Edition oder *Testphase: noch n Tage*), rechts die **Sprachauswahl** und das **Benutzermenü**. |
-| **Inhalt** | Die aktuelle Seite mit **Seitentitel**, Aktionen rechts daneben (z. B. **Neuer Flechtauftrag**) und darunter **Reitern** für Unterseiten (z. B. *Park* und *Katalog* unter Maschinen, *Materialien*, *Spulen*, *Farben*, *Kunden* unter Stammdaten). |
+| **Inhalt** | Die aktuelle Seite mit **Seitentitel**, Aktionen rechts daneben (z. B. **Neuer Flechtauftrag**) und darunter **Reitern** für Unterseiten (z. B. *Materialien*, *Spulen*, *Farben*, *Kunden* unter Stammdaten oder die Maschinenarten im Herzog-Katalog). |
 
 Welche Einträge Sie sehen, richtet sich nach Ihren Rechten
 ([Rollen](roles.md)) und dem Baustein: Mit *Herzog CAB Designer* fehlen

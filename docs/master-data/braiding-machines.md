@@ -38,7 +38,8 @@ technischen Daten (Klöppelzahl, Drehzahl).
 
 Ein Rechtsklick auf eine Karte öffnet ein Kontextmenü mit **Öffnen**,
 **Bearbeiten**, **Duplizieren** und **Löschen**. **Öffnen** zeigt die
-Maschinendetails (Metadaten und technische Angaben) in einer Leseansicht.
+Maschinendetails (Metadaten und technische Angaben, dazu Abzug und Zubehör)
+in einer Leseansicht.
 
 ## Der Dialog „Neue Maschine erstellen"
 
@@ -82,6 +83,7 @@ Die Felder werden **kategorieabhängig** angeboten – je nach gewählter Katego
 | **Stich** | Stich (Teilung) der Maschine. |
 | **Klöppelart** | Bezeichnung der verwendeten Klöppelart (frei). |
 | **Aufwicklung** | **Ja** oder **Nein** – ob die Maschine eine Aufwicklung hat. |
+| **Abzug** | Der Abzug der Maschine, z. B. *Abzugsscheibe Ø 313 x 76 mm*. Frei beschreibbar; ist der Herzog-Katalog freigeschaltet und entspricht der Maschinentyp einem Katalogmodell, bietet die Liste dessen Abzüge zur Auswahl an. Leer lassen, wenn nichts festgelegt ist. |
 | **Ölmenge** | Ölmenge (oder *Nicht gesetzt*). |
 | **Spulen** | Mehrfachauswahl der zulässigen Spulentypen aus den [Spulen-Stammdaten](bobbins.md). Mindestens eine Spule ist erforderlich. |
 | **Drehzahl** | Höchstdrehzahl in U/min (oder *Nicht gesetzt*). |
@@ -93,6 +95,23 @@ Die Felder werden **kategorieabhängig** angeboten – je nach gewählter Katego
     Länge und Breite überschlägig aus Köpfen, Klöppeln und Stich – dieselbe
     Logik wie die Berechnung [Maschinendimensionierung](../calculations/production/dimensions.md).
     Dafür sind mindestens 3 Klöppel pro Kopf nötig.
+
+### Zubehör
+
+Das Zubehör der Maschine zum Ankreuzen, zweispaltig:
+
+* **Vorschläge aus dem Herzog-Katalog** – ist der Katalog freigeschaltet und
+  entspricht der **Maschinentyp** einem Katalogmodell, stehen dessen
+  Zubehörteile gruppiert zur Auswahl (z. B. *Überwachung und Steuerung*,
+  *Schutz und Kabine*). Ändern Sie den Maschinentyp, wechseln die Vorschläge
+  mit; bereits Angekreuztes bleibt angekreuzt.
+* **Eigenes Zubehör** – was nicht im Katalog steht. Tragen Sie es in das Feld
+  unter der Liste ein und klicken Sie auf **Hinzufügen** (oder drücken Sie
+  ++enter++); es erscheint angekreuzt in der Liste, neben Katalogvorschlägen
+  unter der Überschrift *Eigenes Zubehör*.
+
+Gespeichert wird, was angekreuzt ist. Ohne Katalogmodell steht dort
+*Noch kein Zubehör hinterlegt.*, bis Sie eigenes Zubehör eintragen.
 
 ### Box-Ansichten (Bilder)
 

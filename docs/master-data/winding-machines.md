@@ -119,6 +119,15 @@ Dieser Abschnitt erscheint nur, wenn als Baureihe **HLM** gewählt ist.
 | **Litzendurchmesser (min–max)** | Kleinster und größter Litzendurchmesser in mm. |
 | **Schlagrichtung** | *S-Schlag*, *Z-Schlag* oder *S- und Z-Schlag*. |
 
+### Zubehör
+
+Das Zubehör der Spulmaschine zum Ankreuzen — wie bei den
+[Flechtmaschinen](braiding-machines.md#zubehor): Vorschläge aus dem
+Herzog-Katalog (sofern freigeschaltet und der Maschinentyp einem Katalogmodell
+entspricht, gruppiert z. B. nach *Überwachung und Steuerung*, *Spulen und
+Formate*) und eigenes Zubehör über das Feld unter der Liste mit
+**Hinzufügen**. Gespeichert wird, was angekreuzt ist.
+
 ### Abmessungen
 
 Länge, Breite und Höhe in cm. **Länge und Breite** bestimmen die Grundfläche der

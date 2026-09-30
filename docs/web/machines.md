@@ -1,19 +1,19 @@
 # Maschinen (Web-App)
 
-!!! abstract "Referenz — Das Modul Maschinen der Web-App: Maschinenpark mit Karten- und Listenansicht, Maschinenseite und Herzog-Katalog"
+!!! abstract "Referenz — Das Modul Maschinen der Web-App: Maschinenpark mit Karten- und Listenansicht und die Maschinenseite"
 
 ## Wofür Sie diesen Bereich nutzen
 
-Unter **Maschinen** pflegen Sie die Flecht- und Spulmaschinen Ihres Werks —
-die Stammdaten, mit denen Aufträge, Designer und Hallenplaner arbeiten. Zwei
-Reiter: **Park** (Ihre eigenen Maschinen) und **Katalog** (die Herzog-Modelle
-als Vorlage). Die Bedeutung der Maschinendaten steht in der Referenz der
-Desktop-App ([Flechtmaschinen](../master-data/braiding-machines.md),
+Unter **Maschinen** pflegen Sie die Maschinen Ihres Werks — die Stammdaten,
+mit denen Aufträge, Designer und Hallenplaner arbeiten. Die Herzog-Modelle
+als Vorlage stehen im eigenen Bereich [Herzog-Katalog](catalog.md); von dort
+legen Sie eine Maschine direkt an. Die Bedeutung der Maschinendaten steht in
+der Referenz der Desktop-App ([Flechtmaschinen](../master-data/braiding-machines.md),
 [Spulmaschinen](../master-data/winding-machines.md),
 [Maschinenpark](../machine-park/index.md)); hier geht es um die Bedienung
 im Browser.
 
-## Reiter „Park"
+## Maschinenpark
 
 ![Maschinenpark der Web-App in der Kartenansicht mit Filterleiste.](../assets/screenshots/web/maschinen.png)
 
@@ -38,9 +38,17 @@ nennt das fehlende Recht.
 | Reiter | Inhalt |
 |---|---|
 | **Allgemein** | Bild (**Bild hochladen** / **Bild entfernen**), **Modell (Herzog-Katalog)** — ein Katalogmodell belegt Typ, Kategorie, Geflechtsart, Köpfe, Klöppel, Stich, Drehzahl und Bindungen vor —, Maschinendaten (**Name**, **Baureihe**, **Kategorie**, **Maschinentyp**, **Seriennummer**, **Gruppe**, **Standort**, **Baujahr**, **Status**) und die laufenden Aufträge dieser Maschine. |
-| **Technik** | Flechtmaschine: **Geflechtsart**, **Einschnitte Endflügelrad**, **Max. Klöppel pro Kopf**, **Köpfe**, **Stich**, **Klöppelart**, **Drehzahl**, **Ölmenge**, **Klöppel gesamt**, **Bindungen**, **Passende Spulen**, **Abmessungen** (Länge, Breite, Höhe — mit **Maße berechnen** überschlägig aus Köpfen, Klöppeln und Stich), Aufwicklung, Abzugsoption und Zubehör. Spulmaschine: **Wickeltechnik** (Spulstellen, Spulendurchmesser, Spullänge, Drehzahl, Verlegung, Wickelart, Geschwindigkeitsführung, Fadenspannung, Steuerung, Antrieb, Verlegeschritt, Verlegebreite, Spulengewicht, **Einrichtzeit je Auftrag**, **Bestückungszeit je Spule**), Zähler, Überwachung, Materialien, automatischer Spulenwechsel (SPA), Fadenhandling, Litzenschlag (HLM). |
+| **Technik** | Flechtmaschine: **Geflechtsart**, **Einschnitte Endflügelrad**, **Max. Klöppel pro Kopf**, **Köpfe**, **Stich**, **Klöppelart**, **Drehzahl**, **Ölmenge**, **Klöppel gesamt**, **Bindungen**, **Passende Spulen**, **Abmessungen** (Länge, Breite, Höhe — mit **Maße berechnen** überschlägig aus Köpfen, Klöppeln und Stich), **Aufwicklung**, **Abzugsoption** (frei oder aus den Vorschlägen des Katalogmodells; das Umschalten der Aufwicklung lässt einen gewählten Abzug stehen), **Meterzähler** und **Zubehör**. Spulmaschine: **Wickeltechnik** (Spulstellen, Spulendurchmesser, Spullänge, Drehzahl, Verlegung, Wickelart, Geschwindigkeitsführung, Fadenspannung, Steuerung, Antrieb, Verlegeschritt, Verlegebreite, Spulengewicht, **Einrichtzeit je Auftrag**, **Bestückungszeit je Spule**), Zähler, Überwachung, Materialien, automatischer Spulenwechsel (SPA), Fadenhandling, Litzenschlag (HLM) und **Zubehör**. Aufwickler, Abwickler und Gatter: ihre Bauart- und Maßangaben und **Zubehör**. |
 | **Bilder & 3D** | **Box-Ansichten**: bis zu fünf Bilder (Vorderseite, Rückansicht, links, rechts, Draufsicht) für die Ersatz-Box in der 3D-Halle; **3D-Modell** (OBJ) nur für interne Konten, **Massstab**, **Drehung X/Y/Z**, **Ausrichtung vorne**. |
 | **Dokumente & Notizen** | **Beschreibung**, **Dokumente** (Bedienungsanleitungen, Datenblätter, Abzugstabellen … über **Dokument hinzufügen**, mit **Öffnen** und **Dokument entfernen**) und **Notizen**. |
+
+**Zubehör** steht bei allen Maschinenarten im Reiter **Technik** als Liste zum
+Ankreuzen: die Vorschläge des Katalogmodells, gruppiert wie im
+[Herzog-Katalog](catalog.md) (sofern er für Ihr Konto freigeschaltet ist),
+dazu eigenes Zubehör — neben Katalogvorschlägen unter *Eigenes Zubehör*.
+Neues tragen Sie in das Feld **Zubehör hinzufügen** ein und bestätigen mit
+**Hinzufügen** oder der Eingabetaste; es erscheint gleich angekreuzt.
+Gespeichert wird, was angekreuzt ist.
 
 Bilder und Dokumente landen in der [Medienbibliothek](media.md) des Kontos.
 **Löschen** entfernt die Maschine samt Bild, Dokumenten und 3D-Modell — mit
@@ -51,20 +59,18 @@ Sicherheitsabfrage.
     Spulmaschine sind die Vorgaben für die Spulzeit-Hochrechnung im
     [Spulauftrag](orders.md); dort lassen sie sich je Auftrag übersteuern.
 
-## Reiter „Katalog"
+## Maschine aus dem Herzog-Katalog
 
-Der Herzog-Katalog zeigt die aktuellen Maschinenmodelle mit Bild,
-**Maschinentyp**, **Kategorie**, **Klöppel gesamt**, **Drehzahl**, **Spule**,
-**Bindungen**, **Spezifikationen**, **Zubehör** und **Abzugsoptionen**.
-**Suchen** und der Filter **Kategorie** grenzen die Liste ein.
-
-| Schaltfläche | Wirkung |
-|---|---|
-| **Produktseite** | Öffnet die Produktseite auf herzog-online.com. |
-| **Als eigene Maschine anlegen** | Legt eine neue Maschine im Park an, vorbelegt mit den Katalogdaten — Sie ergänzen Seriennummer, Standort und Ihre Einstellungen. |
+Statt eine Maschine von Hand anzulegen, übernehmen Sie ein Herzog-Modell: Im
+[Herzog-Katalog](catalog.md) wählen Sie Zubehör, Abzug und Besetzung, tragen
+Gruppe, Seriennummer und Namen ein und legen die Maschine mit
+**Zu Flechtmaschinen hinzufügen** (bzw. **Zu Spulmaschinen hinzufügen** …)
+direkt an — mit der Technik und dem Bild aus dem Katalog. Danach steht sie im
+Maschinenpark; alles Weitere ergänzen Sie auf der Maschinenseite.
 
 ## Verwandte Seiten
 
+* [Herzog-Katalog (Web-App)](catalog.md)
 * [Maschinenpark (Desktop-App)](../machine-park/index.md)
 * [Flechtmaschinen (Stammdaten)](../master-data/braiding-machines.md) · [Spulmaschinen (Stammdaten)](../master-data/winding-machines.md)
 * [Hallenplaner (Web-App)](hall-planner.md) — Maschinen in der Halle platzieren
