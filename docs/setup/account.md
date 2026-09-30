@@ -66,7 +66,6 @@ Desktop-App unter *Einstellungen > Lizenz*.
 | **Herzog CAB Vollversion** | Das komplette Programm, auf dem Rechner und im Browser. | Jahresabo |
 | **Herzog CAB Designer** | Nur der Geflechts-Designer, auf dem Rechner und im Browser. | Jahresabo |
 | **Herzog CAB Testversion** | 30 Tage auf dem Rechner und im Browser, mit den [Mengenbegrenzungen der Testversion](../basics/trial-quotas.md). | 30 Tage |
-| **Flechtsimulator** | Zusatzbaustein zur Vollversion, nur im Programm. Herzog liefert die fertige Konfiguration Ihrer Flechtmaschine. Darauf erstellen Sie Zeitprogramme und simulieren den Lauf der Klöppel. Die Maschine selbst konstruieren Sie nicht. Der Flechtsimulator hat eigene Plätze. | Abo |
 | **Herzog CAB Web Testphase** | 30 Tage nur im Browser, nach der [Selbstregistrierung](../web/trial.md). | 30 Tage |
 
 Das Jahresabo bestellen, verlängern oder um Plätze erweitern Sie unter

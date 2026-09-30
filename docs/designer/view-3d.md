@@ -9,7 +9,7 @@ Ausschnitt. Für die Beurteilung eines Musters am fertigen Produkt bietet der
 Designer weitere Ansichten: die **Projektionen** legen die Abwicklung drehbar
 auf einen Zylinder oder Vierkant, das echte **3D-Modell** baut das Geflecht
 Faden für Faden aus den Klöppelbahnen der Besetzungsübersicht auf — mit
-Kreuzungen, Material und Bedeckung, drehbar wie im Flechtsimulator. So
+Kreuzungen, Material und Bedeckung, frei drehbar. So
 beurteilen Sie Spiralen, Ringe, Übergänge und Kanten realistisch, bevor das
 Design auf die Maschine geht.
 

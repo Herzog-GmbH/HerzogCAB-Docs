@@ -38,8 +38,7 @@ siehe [Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md).
 
 ## Web-App: nicht enthaltene Funktionen
 
-Die Web-App enthält keinen Druckvorlagen-Editor, keinen Flechtsimulator,
-keine Mischdesigns und Texturen im Designer, keinen Zwei-Fenster-Vergleich,
+Die Web-App enthält keinen Druckvorlagen-Editor, keine Mischdesigns und Texturen im Designer, keinen Zwei-Fenster-Vergleich,
 keinen Verlauf und keine Favoriten sowie nicht den Rechner *Flechtwinkel
 über Abzug*. Im Hallenplaner fehlen Kontextmenüs, *Wände verbinden*, die
 automatische Flächenerkennung und Wandtexturen. Einzelne Dateien über 25 MB
