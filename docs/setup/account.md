@@ -66,7 +66,6 @@ Desktop-App unter *Einstellungen > Lizenz*.
 | **Herzog CAB Vollversion** | Das komplette Desktop-Programm. Entspricht der bisherigen Dongle-Vollversion. | Lebenszeit oder befristet |
 | **Herzog CAB Designer** | Nur der Geflechts-Designer in der Desktop-App (Designer-Edition). | Lebenszeit oder befristet |
 | **Herzog CAB Testversion** | 30 Tage Desktop-App mit den [Mengenbegrenzungen der Testversion](../basics/trial-quotas.md). | 30 Tage |
-| **Flechtsimulator** | Zusatzbaustein für die Vollversion; wird gesondert freigeschaltet. | Abo |
 | **Herzog CAB Web** | Das komplette Programm im Browser unter app.herzog-cab.com. | Abo |
 | **Herzog CAB Web Designer** | Nur der Designer im Browser. | Abo |
 | **Herzog CAB Web Testphase** | 30 Tage Web-App mit Mengenbegrenzungen, siehe [Testphase und Registrierung](../web/trial.md). | 30 Tage |

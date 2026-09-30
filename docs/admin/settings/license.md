@@ -41,7 +41,7 @@ Der Kartentitel nennt die Quelle der Lizenz: **Kundenkonto (Lizenzserver)**,
 | **Konto** | Name Ihres Kundenkontos (Firma). |
 | **Angemeldet als** | Der Benutzer, der gerade im Programm angemeldet ist, mit seiner Rolle (z. B. *Administrator*). |
 | **Edition** | Was diese Installation gerade ist: *Vollversion*, *Designer-Version* oder *Testversion* — abgeleitet aus den Bausteinen. |
-| **Bausteine** | Alle Bausteine, für die dieser Rechner einen Platz hält, mit lesbaren Namen (z. B. *Vollversion, Flechtsimulator*; Web-Bausteine des Kontos erscheinen zur Auskunft mit, belegen aber keinen Rechnerplatz). |
+| **Bausteine** | Alle Bausteine, für die dieser Rechner einen Platz hält, mit lesbaren Namen (z. B. *Vollversion*; Web-Bausteine des Kontos erscheinen zur Auskunft mit, belegen aber keinen Rechnerplatz). |
 | **Miete** | *Regelmiete bis <Datum> (noch n Tage), verlängert sich automatisch* — oder *Offline-Miete bis <Datum> (noch n Tage); danach braucht das Programm wieder Verbindung zum Lizenzserver*. Steht hier *keine gültige Bestätigung*, konnte die Miete zuletzt nicht verlängert werden. |
 | Roter Hinweis | *Kein freier Platz für: <Baustein>. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* — erscheint, wenn ein Baustein des Kontos für diesen Rechner keinen Platz mehr hatte. |
 

@@ -55,7 +55,7 @@ können kaufen oder anfragen.
 | **Lizenzportal** | Öffnet [license.herzog-cab.com](https://license.herzog-cab.com) — dort werden Desktop-Lizenzen, Rechnungen des Vertriebs und Benutzer verwaltet. |
 
 !!! info "Desktop-Bausteine"
-    Die Desktop-Bausteine (Vollversion, Designer, Flechtsimulator) kaufen
+    Die Desktop-Bausteine (Vollversion, Designer) kaufen
     oder erweitern Sie nicht hier, sondern über
     [Lizenz anfordern](../portal/requests.md) im Lizenzportal.
 
