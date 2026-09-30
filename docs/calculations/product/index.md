@@ -46,6 +46,11 @@ rohr-/schlauchförmige Geflechte gibt es die eigene Untergruppe
     ---
     Aufwickelbare Produktlänge auf eine Trommel
 
+- :material-tape-drive: __[Trommel- und Aufwicklerwahl](drum-take-up-selection.md)__
+
+    ---
+    Trommelvorschlag und passende Aufwickler aus Klöppelbestückung und Produktdurchmesser
+
 - :material-weight-kilogram: __[Produktgewicht](rope-weight.md)__
 
     ---

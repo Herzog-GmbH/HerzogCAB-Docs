@@ -56,10 +56,19 @@ Der Dialog ist in mehrere Abschnitte gegliedert (von oben nach unten).
 
 * **Bild hochladen** – wählt ein Maschinenbild aus der
   [Medienbibliothek](media.md).
+* **Bild aus Katalog übernehmen** – erscheint nur, solange die Maschine
+  kein Bild hat und ihr **Maschinentyp** einem Modell aus dem
+  [Herzog-Katalog](../catalog/index.md) entspricht. Lädt das Katalogbild
+  aus dem Internet (ab Version 2.1.0, nicht in Herzog CAB Designer).
 * **Bild entfernen** – nimmt das Bild wieder weg.
 
 Das Bild wird beim Speichern in den Arbeitsbereich kopiert und mit der Maschine
 verknüpft.
+
+!!! tip "Flechtmaschine aus dem Herzog-Katalog"
+    Herzog-Flechtmaschinen legen Sie am schnellsten über den
+    [Herzog-Katalog](../catalog/index.md) an: Technik, Stich und Bild kommen
+    von dort, Abzug, Besetzung und Zubehör wählen Sie per Klick.
 
 ### Maschinendaten
 
@@ -192,5 +201,7 @@ wählen:
 * [Hallenplaner](../hall-planner/index.md) – Maschinen auf dem Grundriss anordnen
 * [Spulen](bobbins.md) – zulässige Spulentypen der Maschine
 * [Spulmaschinen](winding-machines.md) – Stammdaten der Spulmaschinen
+* [Aufwickler](take-up-machines.md) · [Abwickler](pay-off-machines.md) · [Gatter](creels.md) – die übrigen Maschinenarten
+* [Herzog-Katalog](../catalog/index.md) – Flechtmaschinen von Herzog übernehmen
 * [Auftrag auf den Maschinenschein](../tasks/order-to-machine-sheet.md) – Ablauf
   vom Auftrag zur Maschine

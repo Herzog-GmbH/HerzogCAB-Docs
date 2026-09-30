@@ -8,7 +8,7 @@
 
 | Bereich | Inhalt |
 |---|---|
-| **Seitenleiste** (links) | Ein Eintrag je Modul: **Startseite**, **Aufträge**, **Berechnungen**, **Designs**, **Maschinen**, **Stammdaten**, **Hallenplaner**. Unten Ihr Name, das Konto und das **Abmelden**-Symbol. Die Leiste beantwortet nur die Frage „in welchem Modul bin ich" — Unterseiten und Aktionen liegen in der Seite selbst. |
+| **Seitenleiste** (links) | Ein Eintrag je Modul: **Startseite**, **Aufträge**, **Berechnungen**, **Designs**, **Maschinen**, **Katalog**, **Stammdaten**, **Hallenplaner**, **Druck Editor** — jeweils nur mit dem passenden Recht. Unten Ihr Name, das Konto und das **Abmelden**-Symbol. Die Leiste beantwortet nur die Frage „in welchem Modul bin ich" — Unterseiten und Aktionen liegen in der Seite selbst. |
 | **Kopfzeile** (oben) | Links der Name des Kontos mit Kennzeichen (z. B. *intern*, die Edition oder *Testphase: noch n Tage*), rechts die **Sprachauswahl** und das **Benutzermenü**. |
 | **Inhalt** | Die aktuelle Seite mit **Seitentitel**, Aktionen rechts daneben (z. B. **Neuer Flechtauftrag**) und darunter **Reitern** für Unterseiten (z. B. *Materialien*, *Spulen*, *Farben*, *Kunden* unter Stammdaten oder die Maschinenarten im Herzog-Katalog). |
 

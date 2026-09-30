@@ -16,7 +16,7 @@ Seriennummer und Namen ein.
     Der Herzog-Katalog steht allen Konten mit Maschinen zur Verfügung, in
     Herzog CAB Designer gibt es ihn nicht. Im Programm finden Sie ihn ab
     Version 2.1.0 ebenfalls, als eigenen Punkt **Katalog** unter dem
-    Maschinenpark.
+    Maschinenpark — siehe [Herzog-Katalog (Desktop-App)](../catalog/index.md).
 
 ## Die Übersicht
 
@@ -103,3 +103,4 @@ schon, sagt der Dialog das und die Schaltfläche bleibt grau.
 * [Maschinen (Web-App)](machines.md) — Maschinenpark und Maschinenseite
 * [Flechtmaschinen (Stammdaten)](../master-data/braiding-machines.md) · [Spulmaschinen (Stammdaten)](../master-data/winding-machines.md) — Bedeutung der Maschinendaten
 * [Stammdaten (Web-App)](master-data.md) — Spulen und Trommeln
+* [Herzog-Katalog (Desktop-App)](../catalog/index.md) — derselbe Katalog im Programm

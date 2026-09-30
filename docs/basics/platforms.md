@@ -22,7 +22,8 @@ Beide teilen sich das **Kundenkonto** (ein Login), das **Datenmodell**
 |---|---|
 | Ein fester Arbeitsplatz in der Arbeitsvorbereitung, Daten sollen im Haus bleiben | Desktop-App |
 | Bediener an mehreren Orten, Tablets in der Halle, Home-Office | Web-App |
-| Druckvorlagen gestalten, Mischdesigns, Texturen | Desktop-App (nur dort enthalten) |
+| Mischdesigns, Texturen | Desktop-App (nur dort enthalten) |
+| Druckvorlagen gestalten | Beide: Druck-Editor im Programm oder [Druck Editor](../web/print-editor.md) im Browser (Vorlagen aus der Web-App kommen ab Programmversion 2.1.0 auch ins Programm) |
 | Ein Team soll gleichzeitig auf denselben Datenbestand sehen | Web-App (ein Arbeitsbereich je Konto) — oder Desktop-App mit Arbeitsverzeichnis auf dem Netzlaufwerk |
 | Kein Rechner mit Adminrechten, keine Installation möglich | Web-App |
 | Arbeit ohne Internet (Messe, Baustelle) | Desktop-App mit Offline-Miete |
@@ -62,11 +63,10 @@ flowchart LR
 
 | Nur Desktop-App | Nur Web-App |
 |---|---|
-| Druck-Editor für Druckvorlagen | Bedienung am Tablet und Smartphone |
-| Mischdesigns, Texturen, Zwei-Fenster-Vergleich im Designer | Eigene Rollen je Konto mit Kästchen-Zuweisung |
-| Rechner *Flechtwinkel über Abzug*, Verlauf, Favoriten | Selbstregistrierung und Abo im Browser |
-| Mehrere Profile (Arbeitsbereiche), lokale Benutzer, Entra/LDAP | Ein gemeinsamer Arbeitsbereich je Konto ohne Pfade |
-| Eingebauter Webserver mit QR-Code | — |
+| Mischdesigns, Texturen, Zwei-Fenster-Vergleich im Designer | Bedienung am Tablet und Smartphone |
+| Rechner *Flechtwinkel über Abzug*, Verlauf, Favoriten | Eigene Rollen je Konto mit Kästchen-Zuweisung |
+| Mehrere Profile (Arbeitsbereiche), lokale Benutzer, Entra/LDAP | Selbstregistrierung und Abo im Browser |
+| Eingebauter Webserver mit QR-Code | Ein gemeinsamer Arbeitsbereich je Konto ohne Pfade |
 
 Die vollständige Gegenüberstellung steht unter [Web-App](../web/index.md).
 

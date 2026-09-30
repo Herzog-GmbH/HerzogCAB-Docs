@@ -31,10 +31,12 @@ Baustein *Web Designer* fehlt die Kachel **Aufträge**.
 
 ### Schnellzugriff
 
-Kacheln mit kurzer Beschreibung für alle Module — **Aufträge**
-(*Flecht- und Spulaufträge*), **Berechnungen** (*32 Rechner in 5 Gruppen*),
-**Designer**, **Maschinenpark**, **Hallenplaner**, **Stammdaten** — sowie,
-je nach Recht, **Import aus dem Desktop** und **Konto und Benutzer**.
+Kacheln mit kurzer Beschreibung für die Module — je nach Recht
+**Aufträge** (*Flecht- und Spulaufträge*), **Hallenansicht**,
+**Berechnungen** (*… Rechner in 5 Gruppen*), **Designer**,
+**Maschinenpark**, **Herzog-Katalog**, **Hallenplaner**, **Druck Editor**
+(*Druckvorlagen für Aufträge, Designs und Berechnungen*), **Stammdaten**
+und **Import aus dem Desktop** — sowie **Konto und Benutzer**.
 
 ### Berechnungen
 

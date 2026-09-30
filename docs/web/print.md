@@ -5,12 +5,12 @@
 ## Wofür Sie diesen Bereich nutzen
 
 Die Web-App druckt mit denselben **Druckvorlagen** wie die Desktop-App —
-mitgeliefert oder aus Ihrem Arbeitsbereich importiert. Die Druckseite baut
-die Vorlage im Browser auf, zeigt die Vorschau und gibt sie über den
-Druckdialog des Browsers aus oder speichert sie als PDF. Einen Editor für
-Druckvorlagen gibt es in der Web-App nicht; Vorlagen gestalten Sie im
-[Druck-Editor der Desktop-App](../print-templates/index.md) und übernehmen
-sie per [Import](import.md) oder Cloud-Upload.
+mitgeliefert, aus Ihrem Arbeitsbereich übernommen oder im Browser
+gestaltet. Die Druckseite baut die Vorlage im Browser auf, zeigt die
+Vorschau und gibt sie über den Druckdialog des Browsers aus oder speichert
+sie als PDF. Vorlagen gestalten Sie im [Druck Editor der Web-App](print-editor.md)
+oder im [Druck-Editor der Desktop-App](../print-templates/index.md); aus
+dem Programm kommen sie per [Import](import.md) oder Cloud-Abgleich.
 
 Sie erreichen die Druckseite über **Drucken** im
 [Flechtauftrag und Spulauftrag](orders.md), im [Designer](designer.md) und
@@ -23,7 +23,8 @@ auf jeder [Rechnerseite](calculations.md).
 | Element | Bedeutung |
 |---|---|
 | **Zurück** | Zurück zum Auftrag, Design bzw. Rechner. |
-| **Druckvorlage wählen** | Alle passenden Vorlagen des Arbeitsbereichs; vorbelegt ist die Standardvorlage für Flechtauftrag, Spulauftrag, Design bzw. Berechnung. Gibt es noch keine Vorlagen, sagt die Seite das — importieren Sie den Arbeitsbereich der Desktop-App. |
+| **Vorlage bearbeiten** | Nur mit dem Recht **Druckvorlagen bearbeiten**: öffnet die gewählte Vorlage im [Druck Editor](print-editor.md). |
+| **Druckvorlage wählen** | Die mitgelieferten Standardvorlagen — in der Fassung Ihres Kontos, falls Sie sie angepasst haben — und Ihre eigenen Vorlagen, soweit sie zum Druckziel passen; vorbelegt ist die Standardvorlage für Flechtauftrag, Spulauftrag, Design bzw. Berechnung. |
 | **Ansicht** | **Abwicklung** oder **3D** — welches Bild des Designs auf der Vorlage erscheint (bei Designs und bei Aufträgen mit verknüpftem Design). |
 | Vorschau | Die Seiten der Vorlage mit den Daten des Auftrags bzw. Designs; darüber Seitenzahl und Format (*2 Seiten · 210 × 297 mm*). |
 | **Drucken** | Öffnet den Druckdialog des Browsers — Drucker oder *Als PDF speichern*. |
@@ -40,7 +41,8 @@ kommen aus dem Auftrag bzw. Design.
 
 ## Verwandte Seiten
 
+* [Druck Editor (Web-App)](print-editor.md) — Vorlagen im Browser gestalten
 * [Auftrag drucken und QR-Code (Desktop-App)](../orders/print.md)
-* [Druck-Editor (Desktop-App)](../print-templates/index.md) — Vorlagen gestalten
+* [Druck-Editor (Desktop-App)](../print-templates/index.md) — Vorlagen im Programm gestalten
 * [Firma (Web-App)](company.md) — Firmendaten für Briefkopf und Fußzeile
 * [Druckprobleme](../help/print-problems.md)

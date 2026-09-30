@@ -111,3 +111,22 @@ Testumgebung und stehen deshalb NICHT in dieser Liste (Suche nach „web_screens
 | 41 | `admin/storage-location.md` | Bildschirm „Speicherort" mit Badge NETZWERK/LOKAL, Pfad der zentralen Benutzerdaten und Abschnitt „Arbeitsbereich (aktives Profil)" | *Systemverwaltung > Speicherort* öffnen | `assets/screenshots/admin/speicherort.png` |
 | 42 | `admin/users.md` | Benutzerverwaltung im Kontomodell — Benutzerliste links mit dem Hinweistext „Benutzer, Passwörter und Rollen kommen aus dem Kundenkonto …" und den Schaltflächen „Vom Kundenkonto aktualisieren" und „Lizenzportal öffnen", Benutzer-Editor rechts mit ausgegrauten Stammdatenfeldern und der Infozeile „Kontobenutzer (Lizenzserver)" | Kunden-Build mit Kontoanmeldung, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen | `assets/screenshots/admin/benutzer-konto.png` |
 | 43 | `admin/users.md` | Benutzerverwaltung bei Dongle-Installation — Benutzerliste links (mit den Schaltflächen „Neuer Benutzer", „Aus Entra importieren", „Aus LDAP importieren"), Benutzer-Editor rechts | Build mit Dongle, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen | `assets/screenshots/admin/benutzer.png` |
+
+## Nachtrag Handbuch 2.1.0 (30.09.2026) — 11 Bilder
+
+Neue Platzhalter auf den 2.1.0-Seiten (Kunden-Build 2.1.0 mit Kontoanmeldung, Vollversion). Außerdem veraltet:
+`assets/screenshots/orders/auftrag-editor-kunde.png` zeigt neun Tabs — seit 2.1.0 hat der Flechtauftrag zehn (neuer Tab „Aufwicklung").
+
+| # | Seite | Motiv | So erzeugen | Ziel-Datei |
+|---|---|---|---|---|
+| N1 | `master-data/take-up-machines.md` | Aufwickler-Liste als Karten (Bild, Baureihe, „Trommel bis Ø … mm", Traglast, Verlegebreite) samt Werkzeugleiste. | *Stammdaten > Aufwickler*; einige Aufwickler AW, AWS, AWH anlegen, einer mit Haspel. | `assets/screenshots/master-data/aufwickler.png` |
+| N2 | `master-data/take-up-machines.md` | Dialog „Neuen Aufwickler erstellen" mit „Maschinendaten", „Maße und Grenzen", „Bauart". | **Neu**, Baureihe AWS, Demo-Maße, bis „Bauart" scrollen. | `assets/screenshots/master-data/aufwickler-neu-dialog.png` |
+| N3 | `master-data/pay-off-machines.md` | Abwickler-Liste als Karten samt Werkzeugleiste. | *Stammdaten > Abwickler*; einige Abwickler AB, ABS anlegen. | `assets/screenshots/master-data/abwickler.png` |
+| N4 | `master-data/pay-off-machines.md` | Dialog „Neuen Abwickler erstellen" mit „Maße und Grenzen" und „Bauart". | **Neu**, Baureihe ABS, Demo-Maße. | `assets/screenshots/master-data/abwickler-neu-dialog.png` |
+| N5 | `master-data/creels.md` | Gatter-Liste als Karten samt Werkzeugleiste. | *Stammdaten > Gatter*; einige Gatter GU, GR anlegen. | `assets/screenshots/master-data/gatter.png` |
+| N6 | `master-data/creels.md` | Dialog „Neues Gatter erstellen" mit „Ablaufstellen und Spulen" und „Bauart". | **Neu**, Baureihe GU, Ablaufstellen 8, davon aktiv 4. | `assets/screenshots/master-data/gatter-neu-dialog.png` |
+| N7 | `master-data/drums.md` | Seite „Trommeln": Trommeldatenbank links, „Trommel bearbeiten" rechts inkl. „Trommelaufnahme". | Trommeln über **Aus Herzog-Katalog …** übernehmen, eine auswählen. | `assets/screenshots/master-data/trommeln.png` |
+| N8 | `catalog/index.md` | Herzog-Katalog, Kachelansicht, Reiter Flechtmaschinen, mit Suche, Baureihe, Kacheln/Liste. | Navigationspunkt **Katalog**, Bilder laden lassen. | `assets/screenshots/catalog/katalog.png` |
+| N9 | `catalog/index.md` | Detailfenster einer Flechtmaschine (z. B. KB 1/12-80) mit Kennzahlen, Technischen Daten, Zubehör, „Abzug und Aufnahme". | „KB 1/12-80" suchen, Kachel anklicken. | `assets/screenshots/catalog/katalog-details.png` |
+| N10 | `catalog/index.md` | Unterer Teil des Detailfensters: „Als eigene Maschine anlegen" mit Besetzung, Maschinengruppe, Seriennummer, Name, Spulen-Haken; **Zu Flechtmaschinen hinzufügen**. | Flechtmaschine mit mehreren Besetzungen, Arbeitsverzeichnis ohne passende Spule, ans Ende scrollen. | `assets/screenshots/catalog/katalog-anlegen.png` |
+| N11 | `orders/braiding-order.md` | Tab „Aufwicklung" mit Aufwickler, Trommel, Seele, **Vorschlag berechnen** und grüner Prüfzeile. | Flechtauftrag mit Auftragslänge, Produkt-Ø und Produktgewicht; **Vorschlag berechnen**. | `assets/screenshots/orders/auftrag-tab-aufwicklung.png` |

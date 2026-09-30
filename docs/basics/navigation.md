@@ -13,6 +13,7 @@ Home
 Favoriten                        (Ihre angepinnten Einträge)
 Aufträge
 Maschinenpark
+Katalog                          (Herzog-Katalog, nicht in Herzog CAB Designer)
 Hallenplaner
 Designer
 Berechnungen
@@ -29,6 +30,7 @@ Berechnungen
   │    ├─ Geflechtsdichte
   │    ├─ Produktlänge
   │    ├─ Produktlänge pro Trommel
+  │    ├─ Trommel- und Aufwicklerwahl
   │    ├─ Produktgewicht
   │    ├─ Produktdurchmesser
   │    ├─ Kern-Mantel-Produkt
@@ -62,7 +64,11 @@ Stammdaten
   ├─ Materialien
   ├─ Medien
   ├─ Spulen
-  └─ Spulmaschinen
+  ├─ Trommeln
+  ├─ Spulmaschinen
+  ├─ Aufwickler
+  ├─ Abwickler
+  └─ Gatter
 Druck Editor
 Parameter Explorer
 Systemverwaltung                 (nur mit Verwaltungsrechten sichtbar)
@@ -76,7 +82,7 @@ Systemverwaltung                 (nur mit Verwaltungsrechten sichtbar)
 
 Die Zielseiten der Einträge finden Sie im Handbuch unter
 [Aufträge](../orders/index.md), [Maschinenpark](../machine-park/index.md),
-[Hallenplaner](../hall-planner/index.md), [Designer](../designer/index.md),
+[Herzog-Katalog](../catalog/index.md), [Hallenplaner](../hall-planner/index.md), [Designer](../designer/index.md),
 [Berechnungen](../calculations/index.md),
 [Stammdaten](../master-data/index.md),
 [Druck-Editor](../print-templates/index.md),

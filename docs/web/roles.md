@@ -49,7 +49,7 @@ dem Recht **Rollen verwalten** oder **Benutzer verwalten**.
 | Hallenplaner | **Hallenplaner anzeigen** / **bearbeiten** | [Hallenplaner](hall-planner.md). |
 | Aufträge | **Aufträge anzeigen** / **bearbeiten** | [Aufträge](orders.md). |
 | Designer | **Designer anzeigen** / **bearbeiten** | [Designs und Designer](designer.md). |
-| Druckvorlagen | **Druckvorlagen anzeigen** / **bearbeiten** | Vorlagen in der Druckseite nutzen. |
+| Druckvorlagen | **Druckvorlagen anzeigen** / **bearbeiten** | [Druck Editor](print-editor.md) öffnen bzw. Vorlagen dort ändern, speichern und löschen; **Vorlage bearbeiten** auf der [Druckseite](print.md). |
 | Berechnungen / Export | **Berechnungen ausführen** | [Berechnungen](calculations.md). |
 | | **Drucken / Export** | [Drucken](print.md) und Export. |
 | Spezialwerkzeuge | **Parameter Explorer öffnen** | Vorbereitet für spätere Funktionen. |

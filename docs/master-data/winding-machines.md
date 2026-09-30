@@ -60,6 +60,10 @@ Der Dialog ist von oben nach unten in Abschnitte gegliedert.
 
 * **Bild hochladen** – wählt ein Maschinenbild aus der
   [Medienbibliothek](media.md).
+* **Bild aus Katalog übernehmen** – erscheint nur, solange die Maschine
+  kein Bild hat und ihr **Maschinentyp** einem Modell aus dem
+  [Herzog-Katalog](../catalog/index.md) entspricht. Lädt das Katalogbild
+  aus dem Internet (ab Version 2.1.0, nicht in Herzog CAB Designer).
 * **Bild entfernen** – nimmt das Bild wieder weg.
 
 ### Maschinendaten
@@ -169,4 +173,6 @@ und Baureihe müssen ausgefüllt sein.
   Fadengeschwindigkeit, Spulenkapazität u. a.
 * [Spulen](bobbins.md) – Spulenformate zuordnen
 * [Flechtmaschinen](braiding-machines.md) – Stammdaten der Flechtmaschinen
+* [Aufwickler](take-up-machines.md) · [Abwickler](pay-off-machines.md) · [Gatter](creels.md) – die übrigen Maschinenarten
+* [Herzog-Katalog](../catalog/index.md) – Spulmaschinen von Herzog übernehmen
 * [Maschinenpark](../machine-park/index.md) – Betriebsübersicht aller Maschinen

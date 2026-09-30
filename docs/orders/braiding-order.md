@@ -6,7 +6,7 @@
 
 Im Flechtauftrag-Editor pflegen Sie einen kompletten Flechtauftrag: Kunde,
 Auftragsdaten, Flechtmaschine, Material, Spule, Produkt-Sollwerte,
-Produktionswerte und das verknüpfte Design. Viele Werte müssen Sie nicht von
+Produktionswerte, Aufwickler und Trommel sowie das verknüpfte Design. Viele Werte müssen Sie nicht von
 Hand eintragen — neben den Feldern sitzen **Rechner-Symbole**, die die
 passende Berechnung öffnen und das Ergebnis in den Auftrag zurückschreiben.
 
@@ -18,7 +18,7 @@ Sie erreichen den Editor auf mehreren Wegen:
 
 ## Der Bildschirm im Überblick
 
-![Flechtauftrag-Editor mit dem Tab „Kunde" und der Tab-Leiste über alle neun Bereiche.](../assets/screenshots/orders/auftrag-editor-kunde.png)
+![Flechtauftrag-Editor mit dem Tab „Kunde" und der Tab-Leiste.](../assets/screenshots/orders/auftrag-editor-kunde.png)
 
 Oben links bringt Sie **Zur Auftragsliste** zurück zur
 [Auftragsübersicht](index.md). Oben rechts liegen **Drucken** (öffnet die
@@ -26,7 +26,7 @@ Oben links bringt Sie **Zur Auftragsliste** zurück zur
 **Auftrag speichern** ist farblich hervorgehoben, solange ungespeicherte
 Änderungen vorliegen.
 
-Der Editor ist in neun Tabs gegliedert, die Sie in beliebiger Reihenfolge
+Der Editor ist in zehn Tabs gegliedert, die Sie in beliebiger Reihenfolge
 ausfüllen können:
 
 | Tab | Inhalt |
@@ -38,6 +38,7 @@ ausfüllen können:
 | **Spule** | Spulenformat wählen; Abmessungen und Spulvolumen. |
 | **Produkt** | Produktbezogene Sollwerte mit eingebetteten Berechnungen. |
 | **Produktion** | Geschwindigkeit, Laufzeit, Spulensätze und die Hochrechnung auf die Auftragslänge. |
+| **Aufwicklung** | Aufwickler und Trommel wählen; Aufteilung der Auftragslänge auf die Trommeln mit Prüfung gegen den Aufwickler (ab Version 2.1.0). |
 | **Design** | Verknüpftes Flechtdesign mit Vorschau und Klöppel-Tabelle. |
 | **Übersicht** | Kompakte Zusammenfassung über alle Tabs. |
 
@@ -258,10 +259,86 @@ untereinander).
 | **Spule-Sätze gesamt** | Benötigte Spulensätze über alle genutzten Köpfe (Anzeigefeld). Dieser Wert speist die Zielspulenzahl eines verknüpften [Spulauftrags](winding-order.md). |
 | **Gesamtlaufzeit [h]** | Laufzeit für die komplette Auftragslänge (Anzeigefeld). |
 | **Restlänge letzter Satz [m]** | Produktlänge, die mit dem letzten Spulensatz noch zu fertigen ist (Anzeigefeld, pro Kopf). |
+| **Gesamtgewicht [kg]** | Produktgewicht, auf die Auftragslänge hochgerechnet (Anzeigefeld). Bei Kern-Mantel-Seilen zählt die Seele aus dem Tab **Aufwicklung** mit. |
 
 Die Anzeigefelder ergeben sich aus Auftragslänge, Geschwindigkeit und
 Spulensatz-Länge; sie füllen sich, sobald die zugrunde liegenden Werte
 vorhanden sind.
+
+## Tab „Aufwicklung"
+
+Hier wählen Sie Aufwickler und Trommel für den Auftrag. Die Auftragslänge
+wird auf die Trommeln aufgeteilt und gegen den Aufwickler geprüft. Die
+Angaben werden mit dem Auftrag gespeichert und erscheinen im Tab
+**Übersicht**, in der Webansicht und als Platzhalter in den
+[Druckvorlagen](../print-templates/elements.md).
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Tab „Aufwicklung" mit gewähltem Aufwickler und gewählter Trommel, links die Abschnitte „Aufwickler und Trommel" und „Seele (Kern-Mantel-Seil)" mit der Schaltfläche **Vorschlag berechnen**, rechts „Aufteilung der Auftragslänge" mit grüner Prüfzeile.
+    **So erzeugen:** Flechtauftrag mit Auftragslänge, Produktdurchmesser und Produktgewicht öffnen (mindestens ein Aufwickler und eine Trommel in den Stammdaten), Tab *Aufwicklung* wählen und **Vorschlag berechnen** klicken.
+    **Ziel-Datei:** `assets/screenshots/orders/auftrag-tab-aufwicklung.png`
+
+!!! info "Neu ab Version 2.1.0"
+    Aufwickler kommen aus den Stammdaten
+    [Aufwickler](../master-data/take-up-machines.md), Trommeln aus den
+    [Trommeln](../master-data/drums.md). Die Rechnung dahinter ist dieselbe
+    wie in der Berechnung
+    [Trommel- und Aufwicklerwahl](../calculations/product/drum-take-up-selection.md).
+
+### Abschnitt „Aufwickler und Trommel"
+
+| Feld | Bedeutung |
+|---|---|
+| **Aufwickler** | Aufwickler aus dem Maschinenpark (Vorgabe: *Kein Aufwickler ausgewählt*). Darunter stehen seine Grenzen, z. B. Trommel-Ø, Verlegebreite, Traglast und Produkt-Ø, bei einem Haspelaufwickler das Haspelvolumen. Die Schaltfläche **Aufwickler öffnen** zeigt die Aufwickler in einem eigenen Fenster; dort lassen sie sich anlegen und ändern, ein Doppelklick übernimmt einen in den Auftrag. |
+| **Trommel** | Trommel aus den Trommel-Stammdaten (Vorgabe: *Keine Trommel ausgewählt*). Darunter stehen Außen- und Kerndurchmesser, Verlegeweite, Volumen und Leergewicht (oder *Leergewicht fehlt*). **Trommeln öffnen** zeigt die Trommeln in einem eigenen Fenster; ein Doppelklick übernimmt eine Trommel. Wickelt der Aufwickler auf seine Haspel, entfällt die Trommel. |
+| **Lieferlänge je Trommel [m]** | Länge je Trommel, wenn der Kunde sie vorgibt. Leer lassen, dann wird die Auftragslänge nach der gewählten Aufteilung verteilt. |
+| **Aufteilung** | *Gleich große Teilmengen*, *Volle Trommeln + Rest* oder *Rest auf kleinerer Trommel* — wie in der [Trommel- und Aufwicklerwahl](../calculations/product/drum-take-up-selection.md#der-vorschlag). Mit Lieferlänge gilt die Aufteilung nur für den Rest. |
+| **Füllgrad auf der Trommel [%]** | Anteil des Wickelraums, der mit Produkt gefüllt wird; die Hohlräume des runden Geflechts stecken darin. Leer gilt 75 %. |
+| **Randabstand zum Flansch [mm]** | Abstand der obersten Lage zur Flanschkante. 0 = Spulvolumen aus der Trommel-Datenbank. |
+
+### Abschnitt „Seele (Kern-Mantel-Seil)"
+
+Nur bei Produkten mit Seele. Material und Produktgewicht gelten dann für
+den Mantel; die Seele kommt wie bei
+[Kern-Mantel-Produkt](../calculations/product/core-sheath.md) zum
+Metergewicht dazu — und damit zur Traglast und zum **Gesamtgewicht** im
+Tab **Produktion**.
+
+| Feld | Bedeutung |
+|---|---|
+| **Anteil Seele [%]** | Anteil der Seele am Querschnitt des Produkts. Leer = ohne Seele. Der Seelendurchmesser folgt aus dem Produktdurchmesser. |
+| **Material der Seele** | Übernimmt die Dichte des Materials. |
+| **Dichte der Seele [g/cm³]** | Dichte der Seele. |
+| **Füllungsgrad der Seele [%]** | Füllungsgrad wie bei *Kern-Mantel-Produkt*. |
+
+### Schaltfläche „Vorschlag berechnen"
+
+Sucht einen Aufwickler aus dem Maschinenpark und eine Trommel aus der
+Datenbank, die zu Produkt und Länge passen, und trägt beide ein. Mit
+Lieferlänge sucht sie die kleinste Trommel für genau diese Länge, sonst für
+die Auftragslänge je Kopf. Eine Meldung nennt das Ergebnis
+(*Vorschlag übernommen: … mit ….*) oder den Grund, warum es keinen gibt,
+etwa *Für den Vorschlag fehlt der Produktdurchmesser (Reiter Produkt).*
+Ist im Maschinenpark kein Aufwickler angelegt, schlägt sie nur die Trommel
+vor.
+
+### Abschnitt „Aufteilung der Auftragslänge"
+
+Oben steht die Grundlage der Rechnung: Produkt-Ø, Metergewicht (mit Anteil
+der Seele) und Auftragslänge (bei mehreren Köpfen auch je Kopf). Fehlt
+etwas, steht dort, wo es einzutragen ist, z. B. *Metergewicht fehlt
+(Produktgewicht und Spule-Satz im Reiter Produktion)*.
+
+| Feld | Bedeutung |
+|---|---|
+| **Kapazität je Trommel [m]** | Produktlänge, die auf die gewählte Trommel passt. |
+| **Trommeln gesamt** | Anzahl der Trommeln; bei mehreren Köpfen z. B. *„6 (3 je Kopf)"*. Die Auftragslänge wird je Kopf aufgeteilt. |
+| **Länge je Trommel** | Die Aufteilung, z. B. *„2 × 500 m + 1 × 180 m"*; liegt der Rest auf einer anderen Trommel, steht sie in Klammern dahinter. |
+| **Schwerste Trommel** | Gewicht der schwersten bestückten Trommel; ohne Leergewicht *„… kg + Leergewicht"*. |
+| **Prüfung** | Farbige Zeilen: grün *Aufwickler und Trommel passen.*, rot z. B. *Passt nicht: …* oder *Das Produkt passt nicht in den Wickelraum der Trommel.*, gelb *Nicht prüfbar: …*, grau Hinweise wie *Ohne Aufwickler ist nur die Kapazität der Trommel geprüft.* oder *Jeder Kopf braucht einen eigenen Aufwickler.* |
+
+Was im Einzelnen geprüft wird, steht unter
+[Aufwickler — Welche Angaben geprüft werden](../master-data/take-up-machines.md#welche-angaben-gepruft-werden).
 
 ## Tab „Design"
 
@@ -281,8 +358,16 @@ Anzeigefeld mit dem Namen des verknüpften Designs (Platzhalter:
 | Schaltfläche | Wirkung |
 |---|---|
 | **Design laden** | Speichert den Auftrag und öffnet die Design-Auswahl. Angeboten werden nur Designs, die zur Maschine passen (gleiche Geflechtsart, Bindung und Klöppelzahl). Mit **Übernehmen** verknüpfen Sie das markierte Design, mit **Schließen** bleibt alles unverändert. |
-| **Design öffnen** | Öffnet das verknüpfte Design im Designer-Fenster. **Speichern & Übernehmen** sichert Änderungen und aktualisiert die Verknüpfung; **Schließen** verwirft die Sitzung. |
+| **Design öffnen** | Öffnet das verknüpfte Design im Designer-Fenster. **Speichern & Übernehmen** sichert Änderungen, aktualisiert die Verknüpfung und schließt das Fenster; **Schließen** beendet das Fenster ohne weiteres Speichern. |
 | **Neues Design** | Öffnet einen leeren Designer, vorbelegt mit den Maschinendaten des Auftrags. **Speichern & Übernehmen** legt das Design an und verknüpft es mit dem Auftrag. |
+
+!!! info "Jedes Speichern verknüpft (ab Version 2.1.0)"
+    Speichern Sie im Fenster *Neues Design* oder *Design öffnen* über die
+    Werkzeugleiste des Designers und schließen es danach mit
+    **Schließen**, ist das Design trotzdem mit dem Auftrag verknüpft. Ohne
+    Speichern bleibt der Auftrag unverändert. Bricht der Speichervorgang
+    bei **Speichern & Übernehmen** ab (z. B. in der Ordnerauswahl), bleibt
+    das Fenster offen.
 
 ### Vorschau
 
@@ -317,7 +402,7 @@ den Ausdruck.
 
 Die Übersicht fasst den Auftrag über alle Tabs hinweg zusammen — gegliedert
 in die Abschnitte **Auftrag**, **Kunde**, **Flechtmaschine**, **Material**,
-**Produkt**, **Produktion** und **Design**. Leere Felder erscheinen als
+**Produkt**, **Produktion**, **Aufwicklung** und **Design**. Leere Felder erscheinen als
 Strich, sodass Lücken sofort auffallen.
 
 !!! tip "Endkontrolle vor dem Druck"
@@ -363,4 +448,5 @@ beschrieben.
 * [Drucken](print.md) — Vorlagenwahl, Druckvorschau, QR-Code
 * [Vom Auftrag zum Maschinenschein](../tasks/order-to-machine-sheet.md) — der Ablauf als Anleitung
 * [Designer](../designer/index.md) — Flechtdesigns entwerfen und bearbeiten
-* [Kunden](../master-data/customers.md) · [Flechtmaschinen](../master-data/braiding-machines.md) · [Materialien](../master-data/materials.md) · [Spulen](../master-data/bobbins.md) · [Designs](../master-data/designs.md) — die zugehörigen Stammdaten
+* [Kunden](../master-data/customers.md) · [Flechtmaschinen](../master-data/braiding-machines.md) · [Materialien](../master-data/materials.md) · [Spulen](../master-data/bobbins.md) · [Aufwickler](../master-data/take-up-machines.md) · [Trommeln](../master-data/drums.md) · [Designs](../master-data/designs.md) — die zugehörigen Stammdaten
+* [Trommel- und Aufwicklerwahl](../calculations/product/drum-take-up-selection.md) — dieselbe Rechnung als eigene Berechnung

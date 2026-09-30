@@ -2,6 +2,114 @@
 
 !!! abstract "Referenz — Was sich in welcher Version geändert hat"
 
+## Version 2.1.0 (September 2026)
+
+### Neu
+
+* **Floating-Lizenzen** – das Programm und Herzog CAB Web teilen sich die
+  Plätze des Kontos. Jeder Rechner, auf dem Herzog CAB läuft, belegt einen
+  Platz und gibt ihn beim Beenden sofort frei (nach einem Absturz
+  spätestens nach 15 Minuten). Wer in Herzog CAB Web arbeitet, belegt
+  ebenfalls einen Platz, bis 15 Minuten nach der letzten Aktivität — wer im
+  Programm und im Browser zugleich arbeitet, belegt also zwei. Sind alle
+  Plätze belegt, zeigt Herzog CAB, wer gerade arbeitet; im Lizenz-Tab
+  steht, wie viele Plätze belegt sind. Siehe
+  [Lizenz und Cloud](../admin/settings/license.md).
+* **Angemeldet bleiben** – der Anmeldedialog hat ein Häkchen
+  *Angemeldet bleiben*, voreingestellt an. Herzog CAB startet auf diesem
+  Rechner dann ohne erneute Anmeldung. Gespeichert wird kein Passwort,
+  sondern eine verschlüsselte Kennung für diesen Benutzer auf diesem
+  Rechner; sie verfällt 30 Tage nach der letzten Nutzung. Abmelden im
+  Programm, ein neues Passwort oder das Sperren des Rechners im
+  Lizenzportal beenden sie. Siehe
+  [Anmelden und Lizenz beziehen](../setup/activate-license.md).
+* **Speicherort der Firma** – das Kundenkonto merkt sich den Ordner auf
+  Ihrem Dateiserver, in dem Ihre Firma mit Herzog CAB arbeitet. Ein neuer
+  Rechner zeigt ihn nach der Anmeldung an und verbindet sich mit einem
+  Klick. Der erste Rechner einer Firma wählt einmal zwischen *Nur auf
+  diesem Rechner* und einem Netzlaufwerk; unter *Systemverwaltung >
+  Speicherort* zieht ein lokales Arbeitsverzeichnis auf ein Netzlaufwerk
+  um. Siehe [Speicherort](../admin/storage-location.md).
+* **Aufwickler als eigene Maschinenart** – eigene Stammdatenseite und
+  eigener Anlegedialog mit Trommelmaßen, Traglast, Zugregelung, Bild und
+  Dokumenten, eigener Filter im Maschinenpark und eigene Gruppe im
+  Hallenplan. Baureihen AW, AWS, AWST, AWSP, AWSA und AWH. Siehe
+  [Aufwickler](../master-data/take-up-machines.md).
+* **Abwickler als eigene Maschinenart** – für Material wie Seele, Seil
+  oder Kabel, das von einer Trommel in die nachfolgende Maschine abläuft:
+  Trommelmaße, Traglast, Trommelhub und Abwickelspannung. Baureihen AB,
+  ABS, ABST und ABA. Siehe [Abwickler](../master-data/pay-off-machines.md).
+* **Gatter als eigene Maschinenart** – Ablaufgatter und Ablaufgestelle mit
+  Ablaufstellen (gesamt und davon aktiv), Abzug, Antrieb, Spulenart und
+  -größe, Fadenspannung, Überwachung und Material. Baureihen GU, GR, GRP,
+  GRG, GM, GMG, GS, EGA, VG und AL. Siehe [Gatter](../master-data/creels.md).
+* **Trommel-Datenbank** – Trommeln einmal anlegen und in Berechnungen
+  wiederverwenden. Herzog-Trommeln übernehmen Sie aus dem Herzog-Katalog,
+  eigene kommen daneben. Das Spulvolumen wird aus Wickeldurchmesser,
+  Kerndurchmesser und Verlegeweite hergeleitet und bleibt überschreibbar.
+  *Produktlänge pro Trommel* wählt die Trommel jetzt aus der Datenbank,
+  statt drei Maße abzufragen. Siehe [Trommeln](../master-data/drums.md).
+* **Trommel- und Aufwicklerwahl** – eine neue Berechnung führt von der
+  Klöppelbestückung bis zum Aufwickler: Produktlänge und -gewicht, der
+  Trommelvorschlag aus der Trommel-Datenbank und die passenden Aufwickler
+  aus dem Maschinenpark oder dem Herzog-Katalog. Passt nicht alles auf eine
+  Trommel, wird aufgeteilt; Füllgrad und Randabstand sind einstellbar.
+  Fehlt eine Angabe, sagt die Berechnung *nicht prüfbar* statt
+  stillschweigend *passt*; eine Seele zählt wie bei *Kern-Mantel-Produkt*
+  zum Gewicht. Siehe
+  [Trommel- und Aufwicklerwahl](../calculations/product/drum-take-up-selection.md).
+* **Aufwickler und Trommel im Auftrag** – neuer Tab
+  [Aufwicklung](../orders/braiding-order.md#tab-aufwicklung) im
+  Flechtauftrag: Aufwickler und Trommel werden mit dem Auftrag gespeichert,
+  die Auftragslänge wird je Kopf auf die Trommeln aufgeteilt (auch mit
+  vorgegebener Lieferlänge je Trommel) und gegen den Aufwickler geprüft.
+  **Vorschlag berechnen** sucht beides. Die Angaben erscheinen in der
+  Übersicht, in der Webansicht und als Platzhalter in den Druckvorlagen;
+  eine Seele zählt zum Metergewicht, zur Traglast und zum Gesamtgewicht
+  im Tab **Produktion**.
+* **Herzog-Katalog** – der neue Punkt **Katalog** direkt unter dem
+  Maschinenpark zeigt die Herzog-Maschinen aller Arten, Klöppelspulen mit
+  Artikelnummer sowie Trommeln und Haspeln, mit Reitern, Suche, Baureihe,
+  Kacheln oder Liste. Maschinen legen Sie dort mit Abzug, Besetzung und
+  Zubehör direkt als eigene Maschine an, bei Flechtmaschinen auf Wunsch
+  samt passender Spule; Spulen und Trommeln übernehmen Sie mit einem Klick
+  in die Stammdaten, auch über **Aus Herzog-Katalog …**. Das Zubehör steht
+  in allen Maschinendialogen der Stammdaten, bei Flechtmaschinen auch der
+  Abzug; Maschinen ohne Bild holen es sich über **Bild aus Katalog
+  übernehmen**. Siehe [Herzog-Katalog](../catalog/index.md).
+* **Druckvorlagen aus Herzog CAB Web** – Vorlagen, die im
+  [Druck Editor der Web-App](../web/print-editor.md) angelegt oder
+  geändert werden, kommen jetzt auch ins Programm zurück. Löscht man im Web
+  die angepasste Fassung einer Standard-Druckvorlage, gilt im Programm
+  wieder die mitgelieferte.
+
+### Verbesserungen
+
+* **Ein Kontingent, auch so angezeigt** – ein Abo gilt für das Programm
+  und Herzog CAB Web zusammen; der Lizenz-Tab zeigt *Vollversion (Programm
+  und Web)*, Herzog CAB Web nennt die Edition.
+* **Maschinenseiten öffnen schneller** – Flechtmaschinen, Spulmaschinen,
+  Auf- und Abwickler sowie Gatter bauen ihre Karten erst, wenn sie ins
+  Bild kommen.
+
+### Fehlerbehebungen
+
+* **Produktgewicht zählt die Fachung** – die Berechnung
+  [Produktgewicht](../calculations/product/rope-weight.md) hat ein Feld
+  **Fachung**; die Feinheit gilt wie auf allen anderen Seiten für einen
+  Faden. Bisher kam bei gefachten Garnen zu wenig Gewicht heraus, auch im
+  Auftrag, der die Fachung jetzt aus dem Tab **Material** übernimmt.
+* **Design aus dem Auftrag** – jedes Speichern im Fenster *Neues Design*
+  oder *Design öffnen* eines Auftrags verknüpft das Design mit dem
+  Auftrag, auch wenn das Fenster danach mit **Schließen** verlassen wird.
+  Siehe [Flechtauftrag, Tab „Design"](../orders/braiding-order.md#tab-design).
+
+### Kompatibilität
+
+* **Neue Arbeitsverzeichnisse starten ohne mitgelieferte Spulen und
+  Trommeln** – übernehmen Sie sie aus dem Herzog-Katalog. Vorhandene
+  Arbeitsverzeichnisse bleiben unverändert.
+
 ## Version 2.0.0 (September 2026)
 
 ### Neu

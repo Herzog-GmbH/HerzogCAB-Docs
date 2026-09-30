@@ -4,7 +4,7 @@
 
 In den **Stammdaten** legen Sie alle Daten ab, die Sie immer wieder in
 Berechnungen, im Designer und in Aufträgen brauchen: Kunden, Designs, Maschinen,
-Materialien, Spulen und Farben. Stammdaten gehören zum Arbeitsbereich – sie
+Materialien, Spulen, Trommeln und Farben. Stammdaten gehören zum Arbeitsbereich – sie
 werden also von allen Bedienern geteilt, die mit demselben Arbeitsbereich
 arbeiten.
 
@@ -74,6 +74,14 @@ sich zunächst eine Übersicht mit einer Kachel je Stammdatenbereich.
 
     [:octicons-arrow-right-24: Spulen](bobbins.md)
 
+- :material-barrel: **Trommeln**
+
+    ---
+
+    Trommeln der Aufwickler mit Maßen, Spulvolumen und Leergewicht.
+
+    [:octicons-arrow-right-24: Trommeln](drums.md)
+
 - :material-reel: **Spulmaschinen**
 
     ---
@@ -81,6 +89,30 @@ sich zunächst eine Übersicht mit einer Kachel je Stammdatenbereich.
     Spulmaschinen der Baureihen SP, SPA und HLM mit Wickeltechnik.
 
     [:octicons-arrow-right-24: Spulmaschinen](winding-machines.md)
+
+- :material-tape-drive: **Aufwickler**
+
+    ---
+
+    Aufwickler mit Trommelmaßen, Traglast, Bauart und Haspel.
+
+    [:octicons-arrow-right-24: Aufwickler](take-up-machines.md)
+
+- :material-rotate-left: **Abwickler**
+
+    ---
+
+    Abwickler mit Trommelmaßen, Traglast, Trommelhub und Abwickelspannung.
+
+    [:octicons-arrow-right-24: Abwickler](pay-off-machines.md)
+
+- :material-view-grid-plus-outline: **Gatter**
+
+    ---
+
+    Ablaufgatter und Ablaufgestelle mit Ablaufstellen, Spulen und Fadenspannung.
+
+    [:octicons-arrow-right-24: Gatter](creels.md)
 
 - :material-palette: **Farben**
 
@@ -108,9 +140,17 @@ Wie Sie Listen durchsuchen und filtern, ist bereichsübergreifend in
 [Suchen und Filtern](../basics/search-filter.md) beschrieben.
 
 !!! info "Sonderfälle"
-    Drei Bereiche weichen von diesem Aufbau ab: **Designs** ist eine
-    Ordner-Bibliothek (wie ein Datei-Explorer), **Flechtmaschinen** und
-    **Spulmaschinen** öffnen zum Anlegen und Bearbeiten einen eigenen Dialog.
+    Einige Bereiche weichen von diesem Aufbau ab: **Designs** ist eine
+    Ordner-Bibliothek (wie ein Datei-Explorer); **Flechtmaschinen**,
+    **Spulmaschinen**, **Aufwickler**, **Abwickler** und **Gatter** zeigen
+    ihre Maschinen als Karten und öffnen zum Anlegen und Bearbeiten einen
+    eigenen Dialog.
+
+!!! tip "Spulen, Trommeln und Maschinen aus dem Herzog-Katalog"
+    Seit Version 2.1.0 starten neue Arbeitsverzeichnisse ohne mitgelieferte
+    Spulen und Trommeln. Herzog-Spulen und -Trommeln übernehmen Sie mit
+    **Aus Herzog-Katalog …**, Herzog-Maschinen legen Sie direkt im
+    [Herzog-Katalog](../catalog/index.md) an.
 
 !!! warning "Berechtigung erforderlich"
     Zum Anlegen, Ändern oder Löschen von Stammdaten benötigen Sie die

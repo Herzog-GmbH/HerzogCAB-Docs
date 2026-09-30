@@ -274,6 +274,7 @@ nav:
           - Spulauftrag: orders/winding-order.md
           - Auftrag drucken und QR-Code: orders/print.md
       - Maschinenpark: machine-park/index.md
+      - Herzog-Katalog: catalog/index.md
       - Hallenplaner:
           - hall-planner/index.md
           - Editor – Grundriss und Bestückung: hall-planner/editor.md
@@ -305,6 +306,7 @@ nav:
               - Produktdurchmesser: calculations/product/product-diameter.md
               - Produktlänge: calculations/product/rope-length.md
               - Produktlänge pro Trommel: calculations/product/rope-length-on-drum.md
+              - Trommel- und Aufwicklerwahl: calculations/product/drum-take-up-selection.md
               - Produktgewicht: calculations/product/rope-weight.md
               - Kern-Mantel-Produkt: calculations/product/core-sheath.md
               - Hohlgeflecht:
@@ -340,6 +342,10 @@ nav:
           - Medien: master-data/media.md
           - Materialien: master-data/materials.md
           - Spulen: master-data/bobbins.md
+          - Trommeln: master-data/drums.md
+          - Aufwickler: master-data/take-up-machines.md
+          - Abwickler: master-data/pay-off-machines.md
+          - Gatter: master-data/creels.md
           - Farben: master-data/colors.md
       - Druck-Editor:
           - print-templates/index.md
@@ -363,6 +369,7 @@ nav:
       - Stammdaten: web/master-data.md
       - Hallenplaner: web/hall-planner.md
       - Drucken: web/print.md
+      - Druck Editor: web/print-editor.md
       - Benutzermenü:
           - Einstellungen: web/settings.md
           - Konto und Benutzer: web/account.md

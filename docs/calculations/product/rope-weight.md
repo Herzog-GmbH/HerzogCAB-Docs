@@ -5,16 +5,18 @@
 ## Wofür
 
 Berechnet das Gesamtgewicht eines geflochtenen Produkts (Seil, Litze,
-Schlauch) aus der Materialfeinheit, der Klöppelanzahl, dem Flechtwinkel und
-der Produktlänge. So lässt sich vor der Produktion abschätzen, wie viel
-Material ein Auftrag benötigt und wie schwer das fertige Produkt wird.
+Schlauch) aus der Materialfeinheit, der Fachung, der Klöppelanzahl, dem
+Flechtwinkel und der Produktlänge. So lässt sich vor der Produktion
+abschätzen, wie viel Material ein Auftrag benötigt und wie schwer das
+fertige Produkt wird.
 
 ## Eingabewerte
 
 | Feld | Einheit | Bedeutung |
 |---|---|---|
-| **Feinheit** | tex, dtex, den, Nr_metrisch, Nr_englisch | Feinheit (Titer) des verwendeten Garns/Fadens. Die Einheit wählen Sie im Auswahlfeld rechts daneben (Standard: tex). Für die Berechnung wird der Wert intern nach tex umgerechnet. |
-| **Klöppelanzahl** | stk. | Anzahl der mitflechtenden Klöppel (= Anzahl der Einzelfäden im Geflecht). |
+| **Feinheit** | tex, dtex, den, Nr_metrisch, Nr_englisch | Feinheit (Titer) eines Fadens. Die Einheit wählen Sie im Auswahlfeld rechts daneben (Standard: tex). Für die Berechnung wird der Wert intern nach tex umgerechnet. |
+| **Fachung** | stk. | Fäden je Klöppel; vorbelegt mit 1. Die Feinheit gilt wie auf allen anderen Seiten für einen Faden. Im Auftrag kommt die Fachung aus dem Tab **Material**. |
+| **Klöppelanzahl** | stk. | Anzahl der mitflechtenden Klöppel. |
 | **Flechtwinkel** | ° | Winkel, unter dem die Fäden zur Produktachse verlaufen. |
 | **Produktlänge** | m | Länge des fertigen Produkts, für das das Gewicht berechnet wird. |
 

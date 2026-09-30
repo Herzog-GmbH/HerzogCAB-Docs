@@ -13,6 +13,7 @@
   "windingOrderEditor": "orders/winding-order/",
 
   "machinePark": "machine-park/",
+  "machineConfigurator": "catalog/",
   "machines": "master-data/braiding-machines/",
 
   "productionLayout": "hall-planner/",
@@ -36,10 +37,14 @@
   "braidingMachines": "master-data/braiding-machines/",
   "braiding_machines": "master-data/braiding-machines/",
   "windingMachines": "master-data/winding-machines/",
+  "takeUpMachines": "master-data/take-up-machines/",
+  "payOffMachines": "master-data/pay-off-machines/",
+  "creelMachines": "master-data/creels/",
   "floorPlans": "master-data/floor-plans/",
   "mediaLibrary": "master-data/media/",
   "materials": "master-data/materials/",
   "bobbins": "master-data/bobbins/",
+  "drums": "master-data/drums/",
   "uiColors": "master-data/colors/",
   "colors": "master-data/colors/",
 
@@ -74,6 +79,7 @@
   "productDiameter": "calculations/product/product-diameter/",
   "productLength": "calculations/product/rope-length/",
   "productLengthOnDrum": "calculations/product/rope-length-on-drum/",
+  "drumTakeUpSelection": "calculations/product/drum-take-up-selection/",
   "productWeight": "calculations/product/rope-weight/",
   "coreCoverProduct": "calculations/product/core-sheath/",
 

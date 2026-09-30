@@ -17,9 +17,14 @@ Auftragsdaten ändern — Sie müssen die Seite nicht neu laden.
 
 !!! info "Maschinen anlegen"
     Neue Maschinen legen Sie nicht hier an, sondern in den Stammdaten unter
-    [Flechtmaschinen](../master-data/braiding-machines.md) bzw.
-    [Spulmaschinen](../master-data/winding-machines.md). Der Maschinenpark
-    stellt sie anschließend übersichtlich dar.
+    [Flechtmaschinen](../master-data/braiding-machines.md),
+    [Spulmaschinen](../master-data/winding-machines.md),
+    [Aufwickler](../master-data/take-up-machines.md),
+    [Abwickler](../master-data/pay-off-machines.md) bzw.
+    [Gatter](../master-data/creels.md) — oder direkt aus dem
+    [Herzog-Katalog](../catalog/index.md) (Navigationspunkt **Katalog**
+    direkt unter dem Maschinenpark). Der Maschinenpark stellt sie
+    anschließend übersichtlich dar.
 
 ## Der Bildschirm im Überblick
 
@@ -54,7 +59,7 @@ Alle Filter lassen sich frei kombinieren und wirken sofort:
 
 | Filter | Auswahl | Hinweis |
 |---|---|---|
-| **Maschinenart** | Alle · Flechtmaschinen · Spulmaschinen | Immer sichtbar. |
+| **Maschinenart** | Alle · Flechtmaschinen · Spulmaschinen · Aufwickler · Abwickler · Gatter | Immer sichtbar. Aufwickler, Abwickler und Gatter ab Version 2.1.0. |
 | **Kategorie** | Baureihen/Kategorien der vorhandenen Maschinen | Einträge ergeben sich aus Ihrem Maschinenbestand. |
 | **Status** | Alle · Fehler gemeldet · In Produktion · Aufträge warten · Keine aktiven Aufträge | Filtert nach der Status-Ampel (siehe unten). |
 | **Gruppe** | Ihre Maschinengruppen | Nur sichtbar, wenn mindestens einer Maschine eine Gruppe zugewiesen ist. |
@@ -124,9 +129,14 @@ Hat die Maschine keine aktiven Aufträge, zeigt die Ansicht den Hinweis
 
 ## Verwandte Seiten
 
-* [Flechtmaschinen](../master-data/braiding-machines.md) und
-  [Spulmaschinen](../master-data/winding-machines.md) — Maschinen anlegen und
-  pflegen (Stammdaten).
+* [Flechtmaschinen](../master-data/braiding-machines.md),
+  [Spulmaschinen](../master-data/winding-machines.md),
+  [Aufwickler](../master-data/take-up-machines.md),
+  [Abwickler](../master-data/pay-off-machines.md) und
+  [Gatter](../master-data/creels.md) — Maschinen anlegen und pflegen
+  (Stammdaten).
+* [Herzog-Katalog](../catalog/index.md) — Maschinen von Herzog als eigene
+  Maschine anlegen.
 * [Aufträge](../orders/index.md) — hier entstehen die Aufträge, aus denen sich
   die Ampel ableitet.
 * [Hallenplaner](../hall-planner/index.md) — Maschinen maßstäblich auf dem

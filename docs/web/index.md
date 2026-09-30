@@ -108,6 +108,15 @@ zugleich arbeitet, belegt zwei Plätze. Ohne Konto können Sie die Web-App
 
     [:octicons-arrow-right-24: Drucken](print.md)
 
+- :material-file-document-edit-outline: **Druck Editor**
+
+    ---
+
+    Druckvorlagen für Aufträge, Designs und Berechnungen im Browser
+    gestalten.
+
+    [:octicons-arrow-right-24: Druck Editor](print-editor.md)
+
 - :material-account-cog-outline: **Benutzermenü**
 
     ---
@@ -147,7 +156,7 @@ gibt es in beiden — die wichtigsten Unterschiede:
 | Berechnungen | 33 Rechner, Verlauf, Favoriten | 32 Rechner (ohne *Flechtwinkel über Abzug*), Suche |
 | Designer | alle sechs Geflechtsarten, Färben per Klick, Texturen, Gangbahn-Animation, echtes 3D, Zwei-Fenster-Vergleich, Mischdesigns | alle sechs Geflechtsarten, Färben per Klick, Besetzungsübersicht mit Animation, echtes 3D; ein Design je Seite, keine Texturen |
 | Aufträge | Flecht- und Spulauftrag, Zeitraumfilter, Duplizieren | Flecht- und Spulauftrag, Filter nach Art, Status und Maschine |
-| Druck | Druck-Editor für Vorlagen, Drucken über Windows | Drucken mit vorhandenen Vorlagen über den Browser, PDF; kein Vorlagen-Editor |
+| Druck | Druck-Editor für Vorlagen, Drucken über Windows | Druck Editor für Vorlagen (mit Rückgängig und Vorschau mit Beispieldaten), Drucken über den Browser, PDF |
 | Hallenplaner | 2D-Editor mit Wandtexturen, Kontextmenüs, automatische Flächen, 3D | 2D-Editor (Wände, Flächen, Türen, Tore, Fenster, Treppen, Kalibrieren), 3D-Ansicht |
 | Maschinen | Maschinenpark, Herzog-Katalog (ab 2.1.0), Stammdaten-Dialoge, 3D-Modelle | Maschinenpark mit Karten/Liste, Katalog, volle Maschinenpflege |
 | Mobile Nutzung | Webserver mit QR-Code (Auftragsansicht) | die ganze App, angepasst an Tablet und Smartphone |

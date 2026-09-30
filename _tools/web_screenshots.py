@@ -232,7 +232,8 @@ def run_web(ctx):
             shot(page, "web", "hallenplan-editor")
 
     simple = [("einstellungen", "/einstellungen"), ("konto-benutzer", "/konto"), ("abo", "/abo"),
-              ("firma", "/firma"), ("medien", "/medien"), ("rollen", "/rollen"), ("import", "/import")]
+              ("firma", "/firma"), ("medien", "/medien"), ("rollen", "/rollen"), ("import", "/import"),
+              ("druckeditor", "/druckeditor")]
     for name, path in simple:
         if want(name):
             page.goto(WEB + path); settle(page, 1200)

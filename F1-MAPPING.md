@@ -31,11 +31,12 @@ Drückt der Bediener in Herzog CAB ++f1++, ermittelt die App über
 | Startseite/Navigation | `home`, `favorites` | `basics/…` |
 | Aufträge | `uiJobs`/`jobs`, `jobEditor`, `windingOrderEditor` | `orders/…` |
 | Maschinenpark | `machinePark` | `machine-park/` |
+| Herzog-Katalog | `machineConfigurator` | `catalog/` |
 | Hallenplaner | `productionLayout`, `productionLayoutEditor` | `hall-planner/…` |
 | Designer | `uiDesigner`, `designs`, `designer` | `designer/` |
 | Berechnungen (Gruppen) | `calculations`, `material`, `product`, `hollowBraid`, `production`, `windingCalcs` | `calculations/…` |
-| Berechnungen (33 Rechner) | `braidAngle`, `braidProcess`, `windingTime`, … | je eigene Seite |
-| Stammdaten | `masterdata`, `uiCustomers`, `uiProduct`, `braidingMachines`, `windingMachines`, `floorPlans`, `mediaLibrary`, `materials`, `bobbins`, `uiColors` | `master-data/…` |
+| Berechnungen (34 Rechner) | `braidAngle`, `braidProcess`, `drumTakeUpSelection`, `windingTime`, … | je eigene Seite |
+| Stammdaten | `masterdata`, `uiCustomers`, `uiProduct`, `braidingMachines`, `windingMachines`, `takeUpMachines`, `payOffMachines`, `creelMachines`, `floorPlans`, `mediaLibrary`, `materials`, `bobbins`, `drums`, `uiColors` | `master-data/…` |
 | Druck-Editor | `output`/`uiPrintEditor` | `print-templates/` |
 | Parameter-Übersicht | `experts`/`parameterExplorer` | `parameter-overview/` |
 | Verwaltung | `systemAdmin`, `userManagement`, `roleManagement`, `loginSettings`, `profileManagement`, `storageLocation`, `companyData`, `settingsDialog` | `admin/…` |

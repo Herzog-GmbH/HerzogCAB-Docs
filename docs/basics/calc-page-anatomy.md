@@ -35,6 +35,7 @@ oder nebeneinanderliegende Teilbereiche.
 | **Auswahlliste (Dropdown)** | Feste Auswahl, z. B. Geflechtsart oder Maschinentype. |
 | **Material-Auswahl** | Listet die [Material-Stammdaten](../master-data/materials.md); die Auswahl füllt abhängige Felder wie *Dichte* und *Feinheit* automatisch. Die Werte lassen sich anschließend übersteuern. |
 | **Spulen-Auswahl** | Listet die [Spulen-Stammdaten](../master-data/bobbins.md), auf einigen Seiten vorgefiltert über das Feld *Maschinentype*. |
+| **Trommel-Auswahl** | Listet die [Trommel-Stammdaten](../master-data/drums.md); die Maße kommen aus der gewählten Trommel (ab Version 2.1.0, z. B. *Produktlänge pro Trommel*). |
 | **Umschalt-Knöpfe** | Für Entweder-oder-Angaben, z. B. Garnart *Multifil/Monofil* oder Schichtanzahl *1/2/3*. Je nach Wahl werden passende Felder ein- oder ausgeblendet. |
 | **Einheiten-Auswahl am Feld** | Neben einzelnen Feldern (z. B. *Feinheit*) wählen Sie die Eingabe-Einheit: tex, dtex, den, Nr. metrisch, Nr. englisch. |
 
