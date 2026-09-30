@@ -8,13 +8,33 @@
 
 | Bereich | Inhalt |
 |---|---|
-| **Seitenleiste** (links) | Ein Eintrag je Modul: **Startseite**, **Aufträge**, **Berechnungen**, **Designs**, **Maschinen**, **Katalog**, **Stammdaten**, **Hallenplaner**, **Druck Editor** — jeweils nur mit dem passenden Recht. Unten Ihr Name, das Konto und das **Abmelden**-Symbol. Die Leiste beantwortet nur die Frage „in welchem Modul bin ich" — Unterseiten und Aktionen liegen in der Seite selbst. |
+| **Seitenleiste** (links) | Ein Eintrag je Modul (siehe [unten](#eintrage-der-seitenleiste)), jeweils nur mit dem passenden Recht. Unten Ihr Name, das Konto und das **Abmelden**-Symbol. Die Leiste beantwortet nur die Frage „in welchem Modul bin ich" — Unterseiten und Aktionen liegen in der Seite selbst. |
 | **Kopfzeile** (oben) | Links der Name des Kontos mit Kennzeichen (z. B. *intern*, die Edition oder *Testphase: noch n Tage*), rechts die **Sprachauswahl** und das **Benutzermenü**. |
-| **Inhalt** | Die aktuelle Seite mit **Seitentitel**, Aktionen rechts daneben (z. B. **Neuer Flechtauftrag**) und darunter **Reitern** für Unterseiten (z. B. *Materialien*, *Spulen*, *Farben*, *Kunden* unter Stammdaten oder die Maschinenarten im Herzog-Katalog). |
+| **Inhalt** | Die aktuelle Seite mit **Seitentitel**, Aktionen rechts daneben (z. B. **Neuer Flechtauftrag**) und darunter **Reitern** für Unterseiten (z. B. *Materialien*, *Spulen*, *Trommeln*, *Farben*, *Kunden* unter Stammdaten oder die Maschinenarten im Herzog-Katalog). |
 
-Welche Einträge Sie sehen, richtet sich nach Ihren Rechten
-([Rollen](roles.md)) und dem Baustein: Mit *Herzog CAB Designer* fehlen
-Aufträge und Berechnungen.
+### Einträge der Seitenleiste
+
+Von oben nach unten, jeweils nur mit dem genannten Recht
+([Rollen](roles.md)):
+
+| Eintrag | Sichtbar mit | Seite |
+|---|---|---|
+| **Startseite** | immer | [Startseite](start.md) |
+| **Aufträge** | *Aufträge anzeigen* | [Aufträge](orders.md) |
+| **Hallenansicht** | *Aufträge anzeigen* und *Stammdaten anzeigen* | Aufträge je Maschine mit ihrem Status |
+| **Berechnungen** | *Berechnungen ausführen* | [Berechnungen](calculations.md) |
+| **Designs** | *Designer anzeigen* | [Designs und Designer](designer.md) |
+| **Maschinen** | *Stammdaten anzeigen* | [Maschinen](machines.md) |
+| **Katalog** | *Stammdaten anzeigen* | [Herzog-Katalog](catalog.md) |
+| **Stammdaten** | Recht auf mindestens einen Stammdaten-Reiter | [Stammdaten](master-data.md) |
+| **Hallenplaner** | *Hallenplaner anzeigen* | [Hallenplaner](hall-planner.md) |
+| **Druck Editor** | *Druckvorlagen anzeigen* | [Druck Editor](print-editor.md) |
+| **Parameter Explorer** | *Parameter Explorer öffnen* und *Aufträge anzeigen* | Parameter der Aufträge |
+
+Welche Einträge Sie sehen, richtet sich außerdem nach dem Baustein: Mit
+*Herzog CAB Designer* fehlen Aufträge, Hallenansicht, Berechnungen,
+Maschinen, Katalog, Hallenplaner und Parameter Explorer; unter Stammdaten
+bleiben Farben und Kunden.
 
 ## Benutzermenü
 

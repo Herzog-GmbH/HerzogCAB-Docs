@@ -49,8 +49,8 @@ Der gemeinsame Aufbau aller Berechnungsseiten steht in
 
 Der Flechtwinkel wird — wie überall in Herzog CAB — gegen die
 **Querrichtung** des Geflechts angegeben, genau wie in
-[Flechtwinkel](braid-angle.md). Die Berechnung ist nur in der Desktop-App
-enthalten; in der [Web-App](../../web/calculations.md) fehlt sie noch.
+[Flechtwinkel](braid-angle.md). Die Berechnung gibt es auch in der
+[Web-App](../../web/calculations.md).
 
 ## Berechnung
 

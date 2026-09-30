@@ -62,8 +62,8 @@ zugleich arbeitet, belegt zwei Plätze. Ohne Konto können Sie die Web-App
 
     ---
 
-    32 Rechner in fünf Gruppen — dieselben Eingaben und Ergebnisse wie am
-    Desktop.
+    Alle Rechner der Desktop-App in fünf Gruppen — dieselben Eingaben und
+    Ergebnisse, mit Favoriten und Historie.
 
     [:octicons-arrow-right-24: Berechnungen](calculations.md)
 
@@ -153,7 +153,7 @@ gibt es in beiden — die wichtigsten Unterschiede:
 | Installation | Windows / macOS, Installer | keine — Browser |
 | Daten | Arbeitsverzeichnis auf Rechner oder Netzlaufwerk, je Profil | zentral im Kundenkonto, ein Arbeitsbereich je Konto |
 | Benutzer | Kontobenutzer (oder lokal / Entra / LDAP bei Dongle) | ausschließlich Kontobenutzer |
-| Berechnungen | 33 Rechner, Verlauf, Favoriten | 32 Rechner (ohne *Flechtwinkel über Abzug*), Suche |
+| Berechnungen | alle Rechner, Verlauf, Favoriten | dieselben Rechner, Historie und Favoriten je Benutzer auf allen Geräten, Suche |
 | Designer | alle sechs Geflechtsarten, Färben per Klick, Texturen, Gangbahn-Animation, echtes 3D, Zwei-Fenster-Vergleich, Mischdesigns | alle sechs Geflechtsarten, Färben per Klick, Besetzungsübersicht mit Animation, echtes 3D; ein Design je Seite, keine Texturen |
 | Aufträge | Flecht- und Spulauftrag, Zeitraumfilter, Duplizieren | Flecht- und Spulauftrag, Filter nach Art, Status und Maschine |
 | Druck | Druck-Editor für Vorlagen, Drucken über Windows | Druck Editor für Vorlagen (mit Rückgängig und Vorschau mit Beispieldaten), Drucken über den Browser, PDF |

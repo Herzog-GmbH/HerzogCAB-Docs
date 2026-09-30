@@ -62,8 +62,8 @@ dort — hier nur die Besonderheiten der Web-App:
   vorhandene Einträge stehen als *… (nicht mehr vorhanden)* im Feld.
 * Die **Rechner-Symbole** neben den Feldern der Reiter Produkt und
   Produktion öffnen den jeweiligen Rechner als Dialog, vorbelegt mit den
-  Auftragswerten; **Übernehmen** schreibt das Ergebnis zurück. Der Rechner
-  *Flechtwinkel über Abzug* ist in der Web-App nicht enthalten.
+  Auftragswerten; **Übernehmen** schreibt das Ergebnis zurück. Am Feld
+  Flechtwinkel öffnet das Symbol wie am Desktop *Flechtwinkel über Abzug*.
 * **Produktion von / bis** und **Produktionsende aus Hochrechnung
   übernehmen** arbeiten wie am Desktop mit 8 Produktionsstunden je
   Arbeitstag.

@@ -28,22 +28,30 @@ Benutzer und Berechnungen je Berechnungsart begrenzt, und die Lizenz läuft
 nach Ablauf der Testzeit endgültig aus. Details dazu finden Sie unter
 [Testversion und Kontingente](../basics/trial-quotas.md).
 
-## Cloud-Upload nur in eine Richtung
+## Cloud-Abgleich: der Desktop hat Vorrang
 
-Der Cloud-Upload der Desktop-App bringt das Arbeitsverzeichnis in die
-Web-App, aber nicht zurück: Änderungen aus der Web-App überschreibt der
-nächste Upload. Das ist Absicht — der Desktop ist führend. Wer die Web-App
-führend nutzen will, schaltet den Upload aus und holt den Stand per ZIP —
-siehe [Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md).
+Der Cloud-Abgleich der Desktop-App gleicht in beide Richtungen ab, aber
+nicht gleichberechtigt: Er lädt zuerst hoch und holt danach die Änderungen
+aus der Web-App. Haben beide Seiten denselben Eintrag geändert, gewinnt der
+Desktop, und die Änderung aus der Web-App geht verloren. Weitere Grenzen:
+
+* In der Web-App gelöschte Dateien (Bilder, Dokumente) bleiben im
+  Arbeitsverzeichnis liegen.
+* Ein Konto gleicht mit genau einem Arbeitsverzeichnis ab; ein zweites
+  Profil lässt sich nur durch Umbinden anschließen.
+* Einzelne Dateien über 25 MB werden übersprungen.
+
+Wer nur vom Desktop in die Web-App abgleichen will, schaltet
+*Änderungen aus der Webapp ins Arbeitsverzeichnis übernehmen* aus — siehe
+[Lizenz und Cloud](../admin/settings/license.md) und
+[Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md).
 
 ## Web-App: nicht enthaltene Funktionen
 
-Die Web-App enthält keine Mischdesigns und Texturen im Designer, keinen Zwei-Fenster-Vergleich,
-keinen Verlauf und keine Favoriten sowie nicht den Rechner *Flechtwinkel
-über Abzug*. Im Hallenplaner fehlen Kontextmenüs, *Wände verbinden*, die
-automatische Flächenerkennung und Wandtexturen. Einzelne Dateien über 25 MB
-werden vom Cloud-Upload übersprungen. Die vollständige Gegenüberstellung
-steht unter [Web-App](../web/index.md).
+Die Web-App enthält keine Mischdesigns und Texturen im Designer und keinen
+Zwei-Fenster-Vergleich. Im Hallenplaner fehlen Kontextmenüs, *Wände
+verbinden*, die automatische Flächenerkennung und Wandtexturen. Die
+vollständige Gegenüberstellung steht unter [Web-App](../web/index.md).
 
 ## Web-Testphase: begrenzte Mengen
 

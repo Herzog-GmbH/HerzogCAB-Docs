@@ -33,7 +33,7 @@ Baustein *Web Designer* fehlt die Kachel **Aufträge**.
 
 Kacheln mit kurzer Beschreibung für die Module — je nach Recht
 **Aufträge** (*Flecht- und Spulaufträge*), **Hallenansicht**,
-**Berechnungen** (*… Rechner in 5 Gruppen*), **Designer**,
+**Berechnungen** (mit der Zahl der Rechner und Gruppen), **Designer**,
 **Maschinenpark**, **Herzog-Katalog**, **Hallenplaner**, **Druck Editor**
 (*Druckvorlagen für Aufträge, Designs und Berechnungen*), **Stammdaten**
 und **Import aus dem Desktop** — sowie **Konto und Benutzer**.
@@ -45,10 +45,14 @@ Produkt, Hohlgeflecht, Produktion, Spulerei) die einzelnen Rechner — ein
 Klick öffnet die [Rechnerseite](calculations.md) direkt.
 
 !!! info "Unterschied zur Desktop-App"
-    Die Startseite der Desktop-App zeigt zusätzlich Favoriten, den Verlauf
-    der Berechnungen, eine Testversions-Kachel und die Update-Karte
-    (siehe [Startseite (Home)](../basics/home.md)). In der Web-App gibt es
-    keinen Verlauf; Updates entfallen, weil die Web-App immer aktuell ist.
+    Wie in der Desktop-App ([Startseite (Home)](../basics/home.md)) zeigt
+    die Startseite mit dem Recht *Berechnungen ausführen* Ihre
+    **Favoriten** und die **Letzten Berechnungen** (die fünf jüngsten aus
+    der Historie, mit **Alle Berechnungen →**). Statt der
+    Testversions-Kachel steht in der Testphase ein Hinweis im Überblick
+    (*In der Testphase sind diese Bereiche mengenbegrenzt. Mit einem Abo
+    entfallen alle Grenzen.*). Die Update-Karte entfällt, weil die Web-App
+    immer aktuell ist.
 
 ## Verwandte Seiten
 

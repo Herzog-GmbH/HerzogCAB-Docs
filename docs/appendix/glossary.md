@@ -6,7 +6,7 @@
 |---|---|
 | **Baustein** | Lizenzierter Funktionsumfang im Kundenkonto, z. B. *Herzog CAB Vollversion*, *Herzog CAB Designer* oder *Herzog CAB Testversion*. Jeder Baustein hat Plätze und eine Laufzeit, siehe [Kundenkonto und Einladung](../setup/account.md). |
 | **Besetzung** | Muster, nach dem die Klöppel die Positionen einer Flechtmaschine belegen. Herzog CAB unterscheidet **Normale Besetzung** (1-1, alle Positionen belegt), **Tandem-Besetzung** (2-2, siehe **Tandem**) und **Halbe Besetzung** (1-3, nur jede zweite Position belegt). |
-| **Cloud-Upload** | Automatischer Abgleich des Arbeitsverzeichnisses der Desktop-App in den Arbeitsbereich der Web-App – nur in diese Richtung, siehe [Lizenz und Cloud](../admin/settings/license.md). |
+| **Cloud-Abgleich** (Cloud-Upload) | Automatischer Abgleich des Arbeitsverzeichnisses der Desktop-App mit dem Arbeitsbereich der Web-App: hoch in die Web-App und — abschaltbar — Änderungen aus der Web-App zurück; bei Konflikten gewinnt der Desktop. Siehe [Lizenz und Cloud](../admin/settings/license.md). |
 | **CmActLicense** | Software-Lizenz von Wibu CodeMeter, gebunden an den Fingerabdruck des Rechners (Bestandskunden). |
 | **CmDongle** | USB-Lizenzdongle von Wibu CodeMeter. |
 | **Edition** | Was eine Installation gerade ist: *Vollversion*, *Designer-Version* oder *Testversion* – abgeleitet aus den Bausteinen des Kontos bzw. dem Feature Code des Dongles. |

@@ -37,26 +37,28 @@ und im Vertrieb.
 
 ```mermaid
 flowchart LR
-  D[Desktop-App<br>Arbeitsverzeichnis] -- Cloud-Upload<br>automatisch --> W[Web-App<br>Arbeitsbereich im Konto]
+  D[Desktop-App<br>Arbeitsverzeichnis] <-->|Cloud-Abgleich<br>automatisch| W[Web-App<br>Arbeitsbereich im Konto]
   D -- ZIP-Import<br>einmalig --> W
   W -- ZIP-Export --> D
   K[Kundenkonto<br>Lizenzportal] --> D
   K --> W
 ```
 
-* **Cloud-Upload** (Desktop → Web): Die Desktop-App lädt ihr
+* **Cloud-Abgleich** (Desktop ⇄ Web): Die Desktop-App lädt ihr
   Arbeitsverzeichnis automatisch hoch, sobald der Schalter unter
-  [Einstellungen > Lizenz](../admin/settings/license.md) gesetzt ist. Der
-  Desktop ist dabei führend.
+  [Einstellungen > Lizenz](../admin/settings/license.md) gesetzt ist, und
+  holt danach zurück, was in der Web-App angelegt, geändert oder gelöscht
+  wurde (abschaltbar). Bei Konflikten gewinnt der Desktop.
 * **ZIP-Import / -Export**: Einmalige Übernahme in beide Richtungen über
   [Import aus dem Desktop](../web/import.md).
 * **Kundenkonto**: Benutzer, Rollen und Bausteine gelten für beide — siehe
   [Kundenkonto und Einladung](../setup/account.md).
 
-!!! warning "Keine Synchronisation in beide Richtungen"
-    Änderungen in der Web-App fließen nicht automatisch zurück in die
-    Desktop-App. Legen Sie fest, welches System für welche Daten führend
-    ist — der Ablauf steht unter
+!!! warning "Abgleich in beide Richtungen — der Desktop hat Vorrang"
+    Mit eingeschaltetem Rückweg kommen Änderungen aus der Web-App ins
+    Arbeitsverzeichnis, Löschungen eingeschlossen. Ändern beide Seiten
+    denselben Eintrag, gilt die Fassung des Desktops. Ist der Rückweg aus,
+    fließt nichts zurück. Wie Sie das passend einrichten, steht unter
     [Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md).
 
 ## Was es nur in einer der beiden gibt
@@ -64,9 +66,9 @@ flowchart LR
 | Nur Desktop-App | Nur Web-App |
 |---|---|
 | Mischdesigns, Texturen, Zwei-Fenster-Vergleich im Designer | Bedienung am Tablet und Smartphone |
-| Rechner *Flechtwinkel über Abzug*, Verlauf, Favoriten | Eigene Rollen je Konto mit Kästchen-Zuweisung |
-| Mehrere Profile (Arbeitsbereiche), lokale Benutzer, Entra/LDAP | Selbstregistrierung und Abo im Browser |
-| Eingebauter Webserver mit QR-Code | Ein gemeinsamer Arbeitsbereich je Konto ohne Pfade |
+| Mehrere Profile (Arbeitsbereiche), lokale Benutzer, Entra/LDAP | Eigene Rollen je Konto mit Kästchen-Zuweisung |
+| Eingebauter Webserver mit QR-Code | Selbstregistrierung und Abo im Browser |
+| — | Ein gemeinsamer Arbeitsbereich je Konto ohne Pfade |
 
 Die vollständige Gegenüberstellung steht unter [Web-App](../web/index.md).
 

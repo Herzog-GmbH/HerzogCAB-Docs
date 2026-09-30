@@ -12,9 +12,9 @@ einzigen ZIP-Upload in das Konto. Umgekehrt laden Sie den Arbeitsbereich der
 Web-App als ZIP herunter, etwa als Sicherung oder um ihn in der Desktop-App
 zu öffnen.
 
-Für den laufenden Abgleich gibt es außerdem den **Cloud-Upload** in der
+Für den laufenden Abgleich gibt es außerdem den **Cloud-Abgleich** in der
 Desktop-App ([Lizenz und Cloud](../admin/settings/license.md)), der
-Änderungen automatisch hochlädt. Wann welcher Weg passt, erklärt
+Änderungen automatisch hochlädt und Änderungen aus der Web-App zurückholt. Wann welcher Weg passt, erklärt
 [Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md).
 
 Sie öffnen die Seite über *Benutzermenü > Import aus dem Desktop* oder die

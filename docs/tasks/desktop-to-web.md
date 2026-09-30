@@ -7,14 +7,14 @@
 * Ihr [Kundenkonto](../setup/account.md) hat ein Jahresabo, das die Web-App
   umfasst (oder die Testversion), und Sie können sich in der
   [Web-App](../web/login.md) anmelden.
-* Für den Cloud-Upload: Die Desktop-App ist am Kundenkonto angemeldet
+* Für den Cloud-Abgleich: Die Desktop-App ist am Kundenkonto angemeldet
   (Version 2.0 oder neuer) und der Rechner ist online.
 * Für den ZIP-Import: Sie haben in der Web-App das Recht
   **Workspace-Einstellungen** (Konto-Administratoren haben es immer).
 
 ```mermaid
 flowchart LR
-  A{Wie oft?} -- laufend --> B[Cloud-Upload in der<br>Desktop-App einschalten]
+  A{Wie oft?} -- laufend --> B[Cloud-Abgleich in der<br>Desktop-App einschalten]
   A -- einmalig --> C[Arbeitsverzeichnis als ZIP<br>packen und hochladen]
   B --> D[In der Web-App prüfen]
   C --> D
@@ -23,26 +23,31 @@ flowchart LR
 
 ## Welcher Weg?
 
-| | Cloud-Upload | ZIP-Import |
+| | Cloud-Abgleich | ZIP-Import |
 |---|---|---|
-| Wann | Die Desktop-App bleibt das führende System, die Web-App soll immer den aktuellen Stand zeigen. | Einmaliger Umzug oder gelegentliches Nachziehen; auch ohne laufende Desktop-App. |
-| Richtung | Desktop → Web, automatisch, wenige Sekunden nach dem Speichern und alle 15 Minuten | Desktop → Web (Upload) und Web → Desktop (Download), jeweils von Hand |
-| Löschungen | werden übernommen, sofern der Eintrag vom Desktop stammt | werden nicht übernommen |
-| Voraussetzung | Desktop-App am Konto angemeldet, Abo mit Web-App | Abo mit Web-App, Recht *Workspace-Einstellungen* |
+| Wann | Desktop-App und Web-App sollen laufend denselben Stand zeigen; die Desktop-App hat bei Konflikten Vorrang. | Einmaliger Umzug oder gelegentliches Nachziehen; auch ohne laufende Desktop-App. |
+| Richtung | Desktop → Web automatisch, kurz nach dem Speichern und alle 15 Minuten; danach Web → Desktop, solange *Änderungen aus der Webapp ins Arbeitsverzeichnis übernehmen* an ist (Vorgabe) | Desktop → Web (Upload) und Web → Desktop (Download), jeweils von Hand |
+| Löschungen | wirken in beide Richtungen (Einzelheiten unter [Lizenz und Cloud](../admin/settings/license.md#was-in-welche-richtung-geht)) | werden nicht übernommen |
+| Voraussetzung | Desktop-App am Konto angemeldet, Abo mit Web-App; ein Arbeitsverzeichnis je Konto | Abo mit Web-App, Recht *Workspace-Einstellungen* |
 
-## Weg A: Cloud-Upload einschalten
+## Weg A: Cloud-Abgleich einschalten
 
 1. Öffnen Sie in der Desktop-App *Datei > Einstellungen*, Tab **Lizenz**.
 2. Haken Sie in der Karte **Cloud (app.herzog-cab.com)** die Option
-   **Arbeitsverzeichnis automatisch in die Cloud hochladen** an. Ist der
+   **Arbeitsverzeichnis automatisch mit der Cloud abgleichen** an. Ist der
    Schalter grau, fehlt dem Konto ein Abo mit Web-App. Der Hinweis nennt den
    Grund (Referenz: [Lizenz und Cloud](../admin/settings/license.md)).
-3. Klicken Sie auf **Jetzt hochladen**. Der Stand wechselt von
-   *Arbeitsverzeichnis wird gelesen …* über *Wird hochgeladen …* zu
-   *Zuletzt hochgeladen: &lt;Zeit&gt;*.
-4. Klicken Sie auf **Sichern**.
+3. Lassen Sie **Änderungen aus der Webapp ins Arbeitsverzeichnis
+   übernehmen** angehakt, wenn auch in der Web-App gearbeitet wird;
+   nehmen Sie den Haken heraus, wenn nur der Desktop Daten ändern soll.
+4. Prüfen Sie die Zeile **In der Cloud:** — beim ersten Mal steht dort
+   *Noch kein Arbeitsverzeichnis – der erste Abgleich legt es fest.*
+5. Klicken Sie auf **Jetzt abgleichen**. Der Stand wechselt von
+   *Arbeitsverzeichnis wird gelesen …* über *Wird abgeglichen …* zu
+   *Zuletzt abgeglichen: &lt;Zeit&gt;*.
+6. Klicken Sie auf **Sichern**.
 
-Ab jetzt lädt die Desktop-App jede gespeicherte Änderung von selbst hoch.
+Ab jetzt gleicht die Desktop-App jede gespeicherte Änderung von selbst ab.
 
 ## Weg B: Arbeitsbereich als ZIP importieren
 
@@ -74,22 +79,28 @@ Der Import lässt sich jederzeit wiederholen; gleiche Einträge werden nach
 * [Drucken](../web/print.md): Ihre Druckvorlagen stehen unter
   **Druckvorlage wählen**.
 
-## Festlegen, wer führend ist
+## Festlegen, wie beide zusammenarbeiten
 
-Änderungen fließen **nicht** automatisch von der Web-App zurück in die
-Desktop-App. Legen Sie deshalb fest:
+Der Cloud-Abgleich lädt zuerst hoch und holt danach die Änderungen aus der
+Web-App; ändern beide Seiten denselben Eintrag, gewinnt der Desktop.
+Wählen Sie eine dieser Arbeitsweisen:
 
-* **Desktop führend** (typisch für die Arbeitsvorbereitung): Cloud-Upload
-  an; in der Web-App wird nachgesehen, gerechnet und gedruckt. Was dort
-  geändert wird, überschreibt der nächste Upload wieder.
-* **Web-App führend** (Team an mehreren Orten): Cloud-Upload aus; die
+* **Beide arbeiten** (Vorgabe): Abgleich an, *Änderungen aus der Webapp
+  ins Arbeitsverzeichnis übernehmen* an. Aufträge, Designs, Stammdaten,
+  Maschinen, Hallenpläne und Dateien aus der Web-App kommen ins
+  Arbeitsverzeichnis, Löschungen eingeschlossen. Sprechen Sie ab, wer
+  welchen Eintrag bearbeitet.
+* **Desktop führend**: Abgleich an, Rückweg aus. In der Web-App wird
+  nachgesehen, gerechnet und gedruckt; dort Geändertes bleibt in der
+  Cloud, bis der Desktop denselben Eintrag ändert und ihn überschreibt.
+* **Web-App führend** (ohne laufende Desktop-App): Abgleich aus; die
   Desktop-App holt sich bei Bedarf den Stand per **Arbeitsbereich als ZIP
   herunterladen** und entpackt ihn in ein eigenes Arbeitsverzeichnis.
 
 ## Ergebnis
 
-Die Web-App zeigt Ihren Arbeitsbereich; beim Cloud-Upload steht unter
-*Einstellungen > Lizenz* der Zeitpunkt des letzten Uploads.
+Die Web-App zeigt Ihren Arbeitsbereich; beim Cloud-Abgleich steht unter
+*Einstellungen > Lizenz* der Zeitpunkt des letzten Abgleichs.
 
 ## Wenn etwas nicht klappt
 
@@ -101,6 +112,11 @@ Die Web-App zeigt Ihren Arbeitsbereich; beim Cloud-Upload steht unter
   prüfen (`app.herzog-cab.com`, HTTPS).
 * *Die Anmeldung am Kundenkonto gilt nicht mehr* → Desktop-App neu starten
   und am Konto anmelden.
+* *Dieses Konto wird schon vom Arbeitsverzeichnis „…" abgeglichen …* → Das
+  Konto gleicht bereits mit einem anderen Arbeitsverzeichnis (Profil) ab.
+  Arbeiten Sie in diesem, oder binden Sie die Cloud mit **Stattdessen
+  dieses Arbeitsverzeichnis verwenden …** um (Recht *Arbeitsbereich
+  verwalten*).
 * ZIP-Upload scheitert → Ordner `machines/` ausschließen oder **Nur Daten**
   wählen; Bilder später über die [Medienbibliothek](../web/media.md) nachladen.
 * Einträge fehlen in der Web-App → in der Testphase gelten Mengengrenzen,

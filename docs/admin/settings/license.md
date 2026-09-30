@@ -1,6 +1,6 @@
 # Lizenz und Cloud
 
-!!! abstract "Referenz — Tab „Lizenz" des Einstellungen-Dialogs: Lizenzstatus, Konto, Offline-Miete, Abmelden vom Rechner und der Cloud-Upload in die Web-App."
+!!! abstract "Referenz — Tab „Lizenz" des Einstellungen-Dialogs: Lizenzstatus, Konto, Offline-Miete, Abmelden vom Rechner und der Cloud-Abgleich mit der Web-App."
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -9,8 +9,8 @@ Lizenz bezieht, welches Konto und welcher Benutzer angemeldet sind, welche
 Bausteine freigeschaltet sind, wie viele Plätze belegt sind und wie lange
 die Miete noch gilt. Hier ziehen
 Sie eine Offline-Miete, verlängern die Miete von Hand, melden den Rechner
-vom Kundenkonto ab und schalten den automatischen Upload des
-Arbeitsverzeichnisses in die [Web-App](../../web/index.md) ein.
+vom Kundenkonto ab und schalten den automatischen Abgleich des
+Arbeitsverzeichnisses mit der [Web-App](../../web/index.md) ein.
 
 !!! info "Nur im Kontomodell"
     Der Tab erscheint, wenn Herzog CAB mit dem [Kundenkonto](../../setup/account.md)
@@ -67,16 +67,19 @@ Der Kartentitel nennt die Quelle der Lizenz: **Kundenkonto (Lizenzserver)**,
 
 ### Karte „Cloud (app.herzog-cab.com)"
 
-Der **Cloud-Upload** bringt Ihr Arbeitsverzeichnis automatisch in den
-Arbeitsbereich Ihres Kontos in der Web-App — Aufträge, Kunden, Maschinen,
-Designs, Hallenpläne und Druckvorlagen samt zugehöriger Dateien.
+Der **Cloud-Abgleich** bringt Ihr Arbeitsverzeichnis automatisch in den
+Arbeitsbereich Ihres Kontos in der Web-App und holt — sofern
+eingeschaltet — zurück, was dort geändert wurde.
 
 | Element | Wirkung |
 |---|---|
-| **Arbeitsverzeichnis automatisch in die Cloud hochladen** | Schaltet den Upload ein oder aus. Aktiv beobachtet Herzog CAB das Arbeitsverzeichnis und lädt Änderungen wenige Sekunden nach dem Speichern hoch; zusätzlich läuft alle 15 Minuten ein vollständiger Abgleich. |
-| Hinweistext | Erklärt die Richtung: *„… Nur in diese Richtung – der Desktop hat immer recht."* Fehlt die Voraussetzung, steht hier der Grund (siehe unten) mit einem Link ins Lizenzportal. |
-| **Stand** | *Aus.*, *Bereit, noch nichts hochgeladen.*, *Arbeitsverzeichnis wird gelesen …*, *Wird hochgeladen …*, *Zuletzt hochgeladen: &lt;Zeit&gt;* oder *Fehler: …*. |
-| **Jetzt hochladen** | Stößt sofort einen vollständigen Abgleich an. |
+| **Arbeitsverzeichnis automatisch mit der Cloud abgleichen** | Schaltet den Abgleich ein oder aus; der Schalter gilt für das aktive Profil. Aktiv beobachtet Herzog CAB das Arbeitsverzeichnis und gleicht Änderungen kurz nach dem Speichern ab; zusätzlich läuft alle 15 Minuten ein Abgleich. |
+| **Änderungen aus der Webapp ins Arbeitsverzeichnis übernehmen** | Nur bedienbar, wenn der Abgleich an ist; voreingestellt an. Holt nach jedem Hochladen, was in der Web-App angelegt, geändert oder gelöscht wurde (siehe unten). Aus: Der Abgleich läuft nur vom Desktop in die Web-App. |
+| Hinweistext | Fasst zusammen, was in welche Richtung geht. Fehlt eine Voraussetzung, steht hier der Grund (siehe unten) mit dem Link **Lizenzportal öffnen**. |
+| **In der Cloud:** | Welches Arbeitsverzeichnis das Konto in der Cloud hat: *Noch kein Arbeitsverzeichnis – der erste Abgleich legt es fest.*, *Dieses Arbeitsverzeichnis („…").* oder *„…" – ein anderes Arbeitsverzeichnis (Rechner …, seit …).* |
+| **Stand** | *Aus.*, *Bereit, noch nicht abgeglichen.*, *Arbeitsverzeichnis wird gelesen …*, *Wird abgeglichen …*, *Zuletzt abgeglichen: &lt;Zeit&gt;* (mit der Zahl der Einträge und Dateien) oder *Fehler: …*. |
+| **Jetzt abgleichen** | Stößt sofort einen Abgleich an. |
+| **Stattdessen dieses Arbeitsverzeichnis verwenden …** | Nur sichtbar, wenn das Konto schon mit einem anderen Arbeitsverzeichnis abgleicht. Bindet die Cloud nach Rückfrage auf dieses Arbeitsverzeichnis um; was das andere hochgeladen hat, bleibt in der Web-App, und das andere gleicht danach nicht mehr ab. Umbinden dürfen nur Benutzer mit dem Recht *Arbeitsbereich verwalten*. |
 
 **Voraussetzungen:** Das Konto braucht ein Abo, das die Web-App umfasst.
 Das sind das Jahresabo und die Testversion. Eine Lizenz ohne Enddatum
@@ -85,22 +88,45 @@ Hinweis lautet *„Dafür braucht das Konto den Baustein „Herzog CAB Web" (Abo
 Er lässt sich im Lizenzportal bestellen."* Außerdem muss der Rechner am
 Kundenkonto angemeldet sein.
 
-!!! info "Einbahnstraße: Desktop → Web-App"
-    Der Upload ist bewusst **nur in eine Richtung** gebaut. Was Sie in der
-    Web-App ändern, wird **nicht** in das Arbeitsverzeichnis der Desktop-App
-    zurückgeschrieben — beim nächsten Abgleich gewinnt der Desktop und
-    überschreibt gleiche Einträge in der Cloud. Löschen Sie etwas im
-    Desktop, entfernt der Abgleich es auch in der Cloud, aber nur, wenn es
-    zuvor vom Desktop hochgeladen wurde. Arbeiten Sie dauerhaft in beiden,
-    legen Sie fest, welches System führend ist.
+#### Was in welche Richtung geht
 
-!!! info "Was nicht hochgeladen wird"
+| Richtung | Was |
+|---|---|
+| Desktop → Web-App | Aufträge, Kunden, Farben, Materialien, Spulen, Trommeln, Maschinen, Designs samt Ordnern, Hallenpläne (Grundrisse und Belegungen) und Druckvorlagen, dazu die Dateien: Vorschaubilder, Medien, Maschinenbilder und -dokumente, Bilder des Hallenplaners und der Druckvorlagen. |
+| Web-App → Desktop (Schalter *Änderungen aus der Webapp …* an) | Designs, Aufträge, Kunden, Farben, Materialien, Spulen, Maschinen und Hallenpläne; ab Version 2.1.0 auch Trommeln und Druckvorlagen. Außerdem Dateien, die in der Web-App hochgeladen wurden (Vorschauen, Bilder, Dokumente). |
+
+!!! info "Wer hat recht? Der Desktop."
+    Ein Abgleich lädt zuerst hoch und holt danach die Änderungen aus der
+    Web-App. Haben beide Seiten denselben Eintrag geändert, gewinnt
+    deshalb der Desktop. Löschungen wirken in beide Richtungen:
+
+    * Löschen Sie im Desktop einen Eintrag, den der Abgleich kennt (weil er
+      ihn hochgeladen oder aus der Web-App übernommen hat), entfernt der
+      nächste Abgleich ihn auch in der Web-App. Einträge, die nur in der
+      Web-App existieren und nie ins Arbeitsverzeichnis kamen, bleiben
+      unberührt.
+    * Löschen Sie in der Web-App einen Eintrag, löscht der Abgleich ihn
+      auch im Arbeitsverzeichnis. Löscht man die angepasste Fassung einer
+      Standard-Druckvorlage, gilt wieder die mitgelieferte. In der Web-App
+      gelöschte **Dateien** bleiben im Arbeitsverzeichnis liegen.
+
+!!! info "Ein Konto, ein Arbeitsverzeichnis"
+    Die Web-App hat je Konto genau einen Arbeitsbereich. Der erste Abgleich
+    bindet ihn an das Arbeitsverzeichnis, mit dem er läuft. Versucht ein
+    anderes Arbeitsverzeichnis (z. B. ein anderes Profil) abzugleichen,
+    meldet der Stand *Dieses Konto wird schon vom Arbeitsverzeichnis „…"
+    abgeglichen (Rechner …, seit …). Ein Konto hat genau ein
+    Arbeitsverzeichnis in der Cloud.* Mehrere Rechner, die dasselbe
+    Arbeitsverzeichnis auf einem Netzlaufwerk nutzen, gleichen nacheinander
+    ab.
+
+!!! info "Was nicht abgeglichen wird"
     Einzelne Dateien über 25 MB (z. B. große Maschinenbilder oder
     3D-Modelle) werden übersprungen; der Stand nennt sie. Benutzer, Rollen
     und Profile gehören nicht zum Arbeitsverzeichnis — sie kommen in der
     Web-App aus dem Kundenkonto.
 
-Als Alternative zum laufenden Upload gibt es den einmaligen
+Als Alternative zum laufenden Abgleich gibt es den einmaligen
 [ZIP-Import in der Web-App](../../web/import.md). Der Ablauf beider Wege
 steht unter [Daten vom Desktop in die Web-App bringen](../../tasks/desktop-to-web.md).
 
