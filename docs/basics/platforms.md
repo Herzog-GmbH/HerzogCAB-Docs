@@ -63,7 +63,7 @@ flowchart LR
 | Nur Desktop-App | Nur Web-App |
 |---|---|
 | Druck-Editor für Druckvorlagen | Bedienung am Tablet und Smartphone |
-| Flechtsimulator (Zusatzbaustein) | Herzog-Maschinenkatalog mit *Als eigene Maschine anlegen* |
+| Flechtsimulator (Zusatzbaustein) | — |
 | Mischdesigns, Texturen, Zwei-Fenster-Vergleich im Designer | Eigene Rollen je Konto mit Kästchen-Zuweisung |
 | Rechner *Flechtwinkel über Abzug*, Verlauf, Favoriten | Selbstregistrierung und Abo im Browser |
 | Mehrere Profile (Arbeitsbereiche), lokale Benutzer, Entra/LDAP | Ein gemeinsamer Arbeitsbereich je Konto ohne Pfade |

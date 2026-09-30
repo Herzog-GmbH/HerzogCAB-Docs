@@ -149,7 +149,7 @@ gibt es in beiden — die wichtigsten Unterschiede:
 | Aufträge | Flecht- und Spulauftrag, Zeitraumfilter, Duplizieren | Flecht- und Spulauftrag, Filter nach Art, Status und Maschine |
 | Druck | Druck-Editor für Vorlagen, Drucken über Windows | Drucken mit vorhandenen Vorlagen über den Browser, PDF; kein Vorlagen-Editor |
 | Hallenplaner | 2D-Editor mit Wandtexturen, Kontextmenüs, automatische Flächen, 3D | 2D-Editor (Wände, Flächen, Türen, Tore, Fenster, Treppen, Kalibrieren), 3D-Ansicht |
-| Maschinen | Maschinenpark, Stammdaten-Dialoge, 3D-Modelle | Maschinenpark mit Karten/Liste, Katalog, volle Maschinenpflege |
+| Maschinen | Maschinenpark, Herzog-Katalog (ab 2.1.0), Stammdaten-Dialoge, 3D-Modelle | Maschinenpark mit Karten/Liste, Katalog, volle Maschinenpflege |
 | Mobile Nutzung | Webserver mit QR-Code (Auftragsansicht) | die ganze App, angepasst an Tablet und Smartphone |
 | Lizenz | Jahresabo, ein Platz je laufendem Programm | dasselbe Jahresabo, ein Platz je Person im Browser |
 

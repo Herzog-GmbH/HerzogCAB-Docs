@@ -123,8 +123,8 @@ Dieser Abschnitt erscheint nur, wenn als Baureihe **HLM** gewählt ist.
 
 Das Zubehör der Spulmaschine zum Ankreuzen — wie bei den
 [Flechtmaschinen](braiding-machines.md#zubehor): Vorschläge aus dem
-Herzog-Katalog (sofern freigeschaltet und der Maschinentyp einem Katalogmodell
-entspricht, gruppiert z. B. nach *Überwachung und Steuerung*, *Spulen und
+Herzog-Katalog (sofern der Maschinentyp einem Katalogmodell entspricht,
+gruppiert z. B. nach *Überwachung und Steuerung*, *Spulen und
 Formate*) und eigenes Zubehör über das Feld unter der Liste mit
 **Hinzufügen**. Gespeichert wird, was angekreuzt ist.
 

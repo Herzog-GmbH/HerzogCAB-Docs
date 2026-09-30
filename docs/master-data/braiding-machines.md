@@ -83,7 +83,7 @@ Die Felder werden **kategorieabhängig** angeboten – je nach gewählter Katego
 | **Stich** | Stich (Teilung) der Maschine. |
 | **Klöppelart** | Bezeichnung der verwendeten Klöppelart (frei). |
 | **Aufwicklung** | **Ja** oder **Nein** – ob die Maschine eine Aufwicklung hat. |
-| **Abzug** | Der Abzug der Maschine, z. B. *Abzugsscheibe Ø 313 x 76 mm*. Frei beschreibbar; ist der Herzog-Katalog freigeschaltet und entspricht der Maschinentyp einem Katalogmodell, bietet die Liste dessen Abzüge zur Auswahl an. Leer lassen, wenn nichts festgelegt ist. |
+| **Abzug** | Der Abzug der Maschine, z. B. *Abzugsscheibe Ø 313 x 76 mm*. Frei beschreibbar; entspricht der Maschinentyp einem Modell aus dem Herzog-Katalog, bietet die Liste dessen Abzüge zur Auswahl an. Leer lassen, wenn nichts festgelegt ist. |
 | **Ölmenge** | Ölmenge (oder *Nicht gesetzt*). |
 | **Spulen** | Mehrfachauswahl der zulässigen Spulentypen aus den [Spulen-Stammdaten](bobbins.md). Mindestens eine Spule ist erforderlich. |
 | **Drehzahl** | Höchstdrehzahl in U/min (oder *Nicht gesetzt*). |
@@ -100,8 +100,8 @@ Die Felder werden **kategorieabhängig** angeboten – je nach gewählter Katego
 
 Das Zubehör der Maschine zum Ankreuzen, zweispaltig:
 
-* **Vorschläge aus dem Herzog-Katalog** – ist der Katalog freigeschaltet und
-  entspricht der **Maschinentyp** einem Katalogmodell, stehen dessen
+* **Vorschläge aus dem Herzog-Katalog** – entspricht der **Maschinentyp**
+  einem Katalogmodell, stehen dessen
   Zubehörteile gruppiert zur Auswahl (z. B. *Überwachung und Steuerung*,
   *Schutz und Kabine*). Ändern Sie den Maschinentyp, wechseln die Vorschläge
   mit; bereits Angekreuztes bleibt angekreuzt.

@@ -12,10 +12,11 @@ Drehzahl, Wickeltechnik, Trommel- und Gatterdaten) und das Bild kommen aus
 dem Katalog; Sie wählen nur Zubehör, Abzug und Besetzung und tragen Gruppe,
 Seriennummer und Namen ein.
 
-!!! info "Freischaltung"
-    Der Herzog-Katalog steht noch nicht allen Konten zur Verfügung. Fehlt der
-    Eintrag **Katalog** in der Seitenleiste, ist er für Ihr Konto noch nicht
-    freigeschaltet.
+!!! info "Wer den Katalog sieht"
+    Der Herzog-Katalog steht allen Konten mit Maschinen zur Verfügung, in
+    Herzog CAB Designer gibt es ihn nicht. Im Programm finden Sie ihn ab
+    Version 2.1.0 ebenfalls, als eigenen Punkt **Katalog** unter dem
+    Maschinenpark.
 
 ## Die Übersicht
 
