@@ -20,12 +20,13 @@ finden Sie unter [Anmelden und Lizenz beziehen](../setup/activate-license.md).
 | *Kein freier Platz für: &lt;Baustein&gt;. Bitte im Lizenzportal einen Platz freigeben oder anfragen.* (unter *Einstellungen > Lizenz*) | Für diesen Baustein war kein Platz frei. Darunter steht, wer gerade arbeitet. | Ein Administrator gibt im [Lizenzportal](../portal/licenses.md) einen Rechner frei oder bestellt unter [Abo und Bestellung](../web/subscription.md) weitere Plätze. |
 | *Dieser Benutzer ist deaktiviert.* | Der Benutzer wurde im Portal deaktiviert. | Administrator des Kontos ansprechen ([Benutzer](../portal/users.md)). |
 | *Zu viele Fehlversuche. Bitte später erneut versuchen.* | Der Lizenzserver bremst nach mehreren Fehlversuchen aus derselben Verbindung. | Einige Minuten warten. |
-| *Der Lizenzserver ist nicht erreichbar …* | Keine Verbindung zu `license.herzog-cab.com` (Internet, Proxy, Firewall). | Verbindung prüfen. Ein bereits angemeldeter Rechner läuft mit seiner Miete weiter (sieben Tage, mit Offline-Miete bis 30 Tage); für die **erste** Anmeldung ist eine Verbindung Pflicht. |
+| *Der Lizenzserver ist nicht erreichbar …* | Keine Verbindung zu `license.herzog-cab.com` (Internet, Proxy, Firewall). | Verbindung prüfen. Ein bereits angemeldeter Rechner läuft mit seiner Miete weiter: bis zu 24 Stunden, mit Offline-Miete bis zu 30 Tage, mit Version 2.0.0 bis zu sieben Tage. Für die **erste** Anmeldung ist eine Verbindung Pflicht. |
 | *keine gültige Bestätigung* unter *Einstellungen > Lizenz > Miete* | Die Miete konnte zuletzt nicht verlängert werden (Server nicht erreichbar oder Freischaltung beendet). | Verbindung prüfen und **Miete jetzt verlängern**; ist der Baustein im Portal *abgelaufen* oder *beendet*, [verlängern](../web/subscription.md). |
 | Dieses Konto ist gesperrt (Meldung im Portal) | Herzog hat das Konto gesperrt; es gibt keine neuen Lizenzen mehr aus. | [Support](support.md) kontaktieren. |
 
 !!! tip "Länger ohne Internet unterwegs?"
-    Ziehen Sie vorher unter *Einstellungen > Lizenz* eine
+    Ohne Verbindung arbeitet Herzog CAB nur bis zu 24 Stunden weiter.
+    Ziehen Sie deshalb vorher unter *Einstellungen > Lizenz* eine
     [Offline-Miete](../admin/settings/license.md) für bis zu 30 Tage.
 
 ## CodeMeter: „Keine gültige Lizenz" beim Programmstart

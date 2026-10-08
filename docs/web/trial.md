@@ -1,15 +1,25 @@
 # Testphase und Registrierung (Web-App)
 
-!!! info "Konzept — Die Web-App 30 Tage kostenlos testen: Registrierung, E-Mail-Bestätigung, Grenzen der Testphase und der Weg zum Abo"
+!!! info "Konzept — Herzog CAB 30 Tage kostenlos testen: Testversion anfragen, Grenzen der Testphase, der Weg zum Abo und die Selbstregistrierung"
 
 ## Zwei Wege in die Testphase
 
 | Weg | Für wen |
 |---|---|
-| **Herzog schaltet den Baustein *Herzog CAB Testversion* frei** | Bestehende Kunden mit Kundenkonto. Sie melden sich wie gewohnt an. Die Testversion gilt 30 Tage für das ganze Konto, auf dem Rechner und im Browser. |
-| **Selbstregistrierung** über **Kostenlos testen** auf der [Anmeldeseite](login.md) | Interessenten ohne Konto. Legt ein neues Konto mit Ihnen als Administrator an. Das Konto bekommt den Baustein *Herzog CAB Web Testphase* (30 Tage, nur im Browser). Die Schaltfläche erscheint nur, wenn Herzog die Selbstregistrierung freigeschaltet hat. Sonst nennt die Seite die Kontaktadresse des Vertriebs. |
+| **Testversion bei Herzog anfragen:** Herzog schaltet den Baustein *Herzog CAB Testversion* frei | Der Regelfall, für Interessenten und für bestehende Kunden. Herzog legt ein Kundenkonto an oder nutzt Ihr vorhandenes und lädt Sie per E-Mail ein, siehe [Kundenkonto und Einladung](../setup/account.md#so-kommen-sie-ins-konto). Die Testversion gilt 30 Tage für das ganze Konto, auf dem Rechner und im Browser. |
+| **Selbstregistrierung** über **Kostenlos testen** auf der [Anmeldeseite](login.md) | Nur, wenn Herzog die Selbstregistrierung freigeschaltet hat; sonst fehlt die Schaltfläche. Legt ein neues Konto mit Ihnen als Administrator an. Das Konto bekommt den Baustein *Herzog CAB Web Testphase* (30 Tage, nur im Browser). |
+
+!!! tip "Testversion anfragen"
+    Steht auf der Anmeldeseite keine Schaltfläche **Kostenlos testen**,
+    fragen Sie die Testversion bei Herzog an: bei Ihrem
+    Herzog-Ansprechpartner oder über die Adressen unter
+    [Support kontaktieren](../help/support.md).
 
 ## Selbstregistrierung
+
+!!! info "Nur wenn freigeschaltet"
+    Dieser Abschnitt gilt nur, wenn Herzog die Selbstregistrierung
+    freigeschaltet hat. Sonst fragen Sie die Testversion bei Herzog an.
 
 ![Registrierungsseite der Web-App „Kostenlos testen: 30 Tage im Browser".](../assets/screenshots/web/registrieren.png)
 
@@ -60,7 +70,7 @@ Danach:
 | Maschinen (Flecht-, Spul- und Aufwickelmaschinen zusammen) | 2 |
 | Aufträge (Spulaufträge eingeschlossen) | 4 |
 | Kunden | 3 |
-| Benutzer | 1 |
+| Benutzer | so viele, wie die Testversion Plätze hat; nach der Selbstregistrierung einer |
 | Berechnungen | 100 je Berechnungsart |
 
 Materialien, Spulen, Trommeln, Farben, Hallenpläne und Druckvorlagen sind

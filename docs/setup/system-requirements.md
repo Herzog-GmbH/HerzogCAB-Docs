@@ -34,7 +34,7 @@ Version 2.0 gibt es zwei Wege:
 
 | Lizenzweg | Voraussetzung auf dem Rechner |
 |---|---|
-| **Kundenkonto** (Regelfall) | Internetverbindung zum Lizenzserver `license.herzog-cab.com` (HTTPS, Port 443) — mindestens beim ersten Start und danach spätestens alle sieben Tage. Keine zusätzliche Software. |
+| **Kundenkonto** (Regelfall) | Internetverbindung zum Lizenzserver `license.herzog-cab.com` (HTTPS, Port 443) — mindestens beim ersten Start und danach spätestens alle 24 Stunden, mit Version 2.0.0 alle sieben Tage. Für längere Zeit ohne Verbindung gibt es die Offline-Miete für bis zu 30 Tage. Keine zusätzliche Software. |
 | **CodeMeter** (Bestandskunden mit CmDongle oder CmAct-Lizenz) | Die [Wibu CodeMeter Runtime](codemeter.md) und der Dongle bzw. die aktivierte Software-Lizenz. |
 
 Mehr dazu unter [Kundenkonto und Einladung](account.md) und
@@ -53,7 +53,7 @@ benötigt für:
 
 - die **Anmeldung am Kundenkonto** und die stille Verlängerung der
   Lizenz-Miete (beim Kontomodell; ohne Verbindung läuft das Programm bis zu
-  sieben Tage, mit Offline-Miete bis zu 30 Tage weiter)
+  24 Stunden, mit Offline-Miete bis zu 30 Tage weiter)
 - den **Cloud-Upload** des Arbeitsverzeichnisses in die Web-App, falls
   eingeschaltet (siehe [Lizenz und Cloud](../admin/settings/license.md))
 - Updates über das **Herzog CAB Maintenance**-Tool

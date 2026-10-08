@@ -15,9 +15,9 @@ dieselben Flechtbilder, und der Druck nutzt dieselben Druckvorlagen.
 Die Web-App gehört zum Jahresabo (**Herzog CAB Vollversion** oder
 **Herzog CAB Designer**) und teilt sich dessen Plätze mit dem Programm. Ein
 Platz ist eine Person, die gerade arbeitet. Wer im Programm und im Browser
-zugleich arbeitet, belegt zwei Plätze. Ohne Konto können Sie die Web-App
-30 Tage lang
-[kostenlos testen](trial.md).
+zugleich arbeitet, belegt zwei Plätze. Zum Ausprobieren legt Herzog Ihnen
+auf Anfrage eine kostenlose [Testversion](trial.md) an: 30 Tage, im
+Programm und im Browser.
 
 ![Startseite der Web-App mit Seitenleiste, Kennzahlen und Schnellzugriff.](../assets/screenshots/web/startseite.png)
 
@@ -136,7 +136,8 @@ zugleich arbeitet, belegt zwei Plätze. Ohne Konto können Sie die Web-App
 
     ---
 
-    30 Tage kostenlos testen, E-Mail bestätigen, Grenzen der Testphase.
+    30 Tage kostenlos testen: Testversion anfragen, Grenzen der
+    Testphase, Weg zum Abo.
 
     [:octicons-arrow-right-24: Testphase](trial.md)
 

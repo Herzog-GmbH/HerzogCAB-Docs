@@ -35,8 +35,12 @@ Rechner schon einmal online angemeldet waren — mit dem Passwort von damals.
 Verbindung prüfen oder mit einem solchen Benutzer anmelden.
 
 **Einladungslink abgelaufen.**
-Der Link aus der Einladungsmail gilt drei Tage. Ein Administrator erneuert
-die Einladung im Lizenzportal unter **Benutzer**.
+Der Link aus der Einladungsmail gilt 14 Tage. Öffnen Sie den abgelaufenen
+Link trotzdem: Auf der Seite *Diese Einladung ist abgelaufen* schickt
+**Neue Einladung schicken** eine neue Einladung an Ihre Adresse. Oder ein
+Administrator erneuert die Einladung im Lizenzportal unter **Benutzer**.
+Haben Sie inzwischen eine Erinnerung oder eine neue Einladung bekommen,
+gilt nur deren Link.
 
 **Die Web-App meldet „Alle Plätze dieses Kontos sind gerade belegt".**
 Alle Plätze des Kontos sind belegt, im Programm oder im Browser. Ein Platz

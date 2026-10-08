@@ -52,8 +52,8 @@ Der Kartentitel nennt die Quelle der Lizenz: **Kundenkonto (Lizenzserver)**,
 | Element | Wirkung |
 |---|---|
 | **Lizenzportal öffnen** | Öffnet [license.herzog-cab.com](https://license.herzog-cab.com) im Browser — dort verwalten Sie Benutzer, Rechner und Bausteine mit denselben Zugangsdaten. |
-| **Ohne Internet:** *für n Tage* + **Offline-Miete ziehen** | Holt vorab eine Miete für **1 bis 30 Tage** (Standard 30). Danach läuft Herzog CAB so lange ohne Verbindung. Der Platz bleibt so lange belegt, auch wenn das Programm geschlossen ist. Die Erfolgsmeldung nennt die Zahl der Tage. Ohne Offline-Miete hält das Programm seinen Platz nur, solange es läuft, und arbeitet ohne Verbindung bis zu sieben Tage weiter. |
-| **Miete jetzt verlängern** | Verlängert die Miete sofort von Hand, zum Beispiel kurz bevor Sie den Rechner für ein paar Tage vom Netz nehmen. |
+| **Ohne Internet:** *für n Tage* + **Offline-Miete ziehen** | Holt vorab eine Miete für **1 bis 30 Tage** (Standard 30). Danach läuft Herzog CAB so lange ohne Verbindung. Der Platz bleibt so lange belegt, auch wenn das Programm geschlossen ist. Die Erfolgsmeldung nennt die Zahl der Tage. Ohne Offline-Miete hält das Programm seinen Platz nur, solange es läuft, und arbeitet ohne Verbindung bis zu **24 Stunden** weiter. Version 2.0.0 arbeitet ohne Verbindung bis zu sieben Tage weiter. |
+| **Miete jetzt verlängern** | Verlängert die Miete sofort von Hand, zum Beispiel kurz bevor Sie den Rechner vom Netz nehmen. Die Miete gilt danach wieder bis zu 24 Stunden. Bleibt der Rechner länger ohne Verbindung, ziehen Sie stattdessen eine Offline-Miete. |
 | **Von diesem Rechner abmelden** | Meldet den Rechner vom Kundenkonto ab und gibt seine Plätze frei, nach der Rückfrage *Vom Kundenkonto abmelden?* Beim nächsten Start ist eine neue Anmeldung nötig. Sinnvoll vor einer Neuinstallation, einem Rechnerwechsel oder um eine Offline-Miete vorzeitig zu beenden. |
 
 !!! tip "Alle Plätze belegt?"

@@ -76,13 +76,14 @@ die Miete mit Ablaufdatum — siehe
   Platz im Konto. Beim Beenden wird er frei, nach einem Absturz spätestens
   nach 15 Minuten. Die Miete verlängert sich bei jedem Programmstart und
   alle sechs Stunden von selbst. Ohne Verbindung läuft Herzog CAB bis zu
-  **sieben Tage** weiter.
+  **24 Stunden** weiter, Version 2.0.0 bis zu sieben Tage.
 * **Alle Plätze belegt:** Dann zeigt Herzog CAB beim Start den Dialog
   **Alle Plätze belegt** mit der Liste, wer gerade arbeitet. Siehe
   [Lizenzprobleme](../help/license-problems.md).
-* **Länger offline:** Wer länger ohne Netz arbeitet (Messe, Baustelle),
-  zieht vorher unter *Einstellungen > Lizenz* eine **Offline-Miete** für
-  bis zu 30 Tage. Der Platz bleibt dann so lange belegt.
+* **Länger offline:** Wer länger als 24 Stunden ohne Netz arbeitet
+  (Messe, Baustelle), zieht vorher unter *Einstellungen > Lizenz* eine
+  **Offline-Miete** für bis zu 30 Tage. Der Platz bleibt dann so lange
+  belegt.
 * **Weitere Bediener am selben Rechner:** Beim nächsten Start erscheint der
   kürzere Dialog **Herzog CAB – Anmelden**. Jeder Kollege meldet sich dort
   mit seinem eigenen Kontobenutzer an; der Rechner belegt trotzdem nur einen

@@ -133,5 +133,5 @@ zurechtfinden, zeigt das Kapitel [Grundlagen](../basics/index.md).
 !!! info "Sie haben noch kein Kundenkonto und kein Installationspaket?"
     Wenden Sie sich an Ihren Herzog-Ansprechpartner oder schreiben Sie an
     [e.siemering@herzog-online.com](mailto:e.siemering@herzog-online.com).
-    Die Web-App können Sie außerdem 30 Tage lang
-    [kostenlos testen](../web/trial.md).
+    Dort bekommen Sie auch eine kostenlose
+    [Testversion](../web/trial.md) für 30 Tage, im Programm und im Browser.

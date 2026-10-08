@@ -172,7 +172,7 @@ Schritt für Schritt ans Ziel.
 
     Das komplette Programm im Browser — Aufträge, Berechnungen, Designer mit
     3D, Maschinen, Stammdaten, Hallenplaner und Druck, auch am Tablet.
-    30 Tage kostenlos testbar.
+    Als Testversion 30 Tage kostenlos, auf Anfrage bei Herzog.
 
     [:octicons-arrow-right-24: Web-App](web/index.md)
 

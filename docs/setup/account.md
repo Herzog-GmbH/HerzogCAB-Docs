@@ -33,7 +33,9 @@ Kontos** im Lizenzportal eingeladen (siehe
 [Benutzer einladen und verwalten](../portal/users.md)).
 
 1. Sie erhalten eine E-Mail mit dem Betreff *Ihr Zugang zum Herzog CAB
-   Lizenzportal* und einem Link. Der Link gilt **drei Tage**.
+   Lizenzportal* und einem Link. Bei einer Testversion heißt der Betreff
+   *Ihre Testversion von Herzog CAB ist bereit*. Der Link gilt
+   **14 Tage**.
 2. Klicken Sie auf den Link. Die Seite **Passwort setzen** des Lizenzportals
    öffnet sich mit Ihrer E-Mail-Adresse.
 3. Vergeben Sie ein Passwort mit **mindestens 10 Zeichen** und wiederholen
@@ -50,10 +52,18 @@ Kontos** im Lizenzportal eingeladen (siehe
     [Passwort und zweiter Faktor](../portal/security.md).
 
 !!! warning "Einladung abgelaufen?"
-    Ist der Link älter als drei Tage, kann ein Administrator Ihres Kontos im
-    Lizenzportal unter **Benutzer** die Einladung erneuern. Ein vergessenes
-    Passwort setzen Sie selbst über **Passwort vergessen** auf der
-    Anmeldeseite des Portals zurück.
+    Haben Sie die Einladung nach drei Tagen noch nicht angenommen, schickt
+    Ihnen das Lizenzportal einmal eine **Erinnerung** mit einem neuen
+    Link. Ab dann gilt nur noch der Link aus der Erinnerung.
+
+    Ist der Link älter als 14 Tage, öffnen Sie ihn trotzdem. Die Seite
+    *Diese Einladung ist abgelaufen* bietet **Neue Einladung schicken**
+    an; die neue Einladung geht an Ihre eigene E-Mail-Adresse. Ebenso
+    kann ein Administrator Ihres Kontos die Einladung im Lizenzportal
+    unter **Benutzer** erneuern.
+
+    Ein vergessenes Passwort setzen Sie selbst über **Passwort vergessen**
+    auf der Anmeldeseite des Portals zurück.
 
 ## Bausteine
 
@@ -65,8 +75,8 @@ Desktop-App unter *Einstellungen > Lizenz*.
 |---|---|---|
 | **Herzog CAB Vollversion** | Das komplette Programm, auf dem Rechner und im Browser. | Jahresabo |
 | **Herzog CAB Designer** | Nur der Geflechts-Designer, auf dem Rechner und im Browser. | Jahresabo |
-| **Herzog CAB Testversion** | 30 Tage auf dem Rechner und im Browser, mit den [Mengenbegrenzungen der Testversion](../basics/trial-quotas.md). | 30 Tage |
-| **Herzog CAB Web Testphase** | 30 Tage nur im Browser, nach der [Selbstregistrierung](../web/trial.md). | 30 Tage |
+| **Herzog CAB Testversion** | 30 Tage auf dem Rechner und im Browser, mit den [Mengenbegrenzungen der Testversion](../basics/trial-quotas.md). Legt Herzog auf Anfrage an, siehe [Testphase](../web/trial.md). | 30 Tage |
+| **Herzog CAB Web Testphase** | 30 Tage nur im Browser. Entsteht nur bei der [Selbstregistrierung](../web/trial.md#selbstregistrierung), wenn Herzog sie freigeschaltet hat. | 30 Tage |
 
 Das Jahresabo bestellen, verlängern oder um Plätze erweitern Sie unter
 [Abo und Bestellung](../web/subscription.md).

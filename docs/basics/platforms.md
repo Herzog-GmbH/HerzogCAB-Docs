@@ -27,7 +27,7 @@ Beide teilen sich das **Kundenkonto** (ein Login), das **Datenmodell**
 | Ein Team soll gleichzeitig auf denselben Datenbestand sehen | Web-App (ein Arbeitsbereich je Konto) — oder Desktop-App mit Arbeitsverzeichnis auf dem Netzlaufwerk |
 | Kein Rechner mit Adminrechten, keine Installation möglich | Web-App |
 | Arbeit ohne Internet (Messe, Baustelle) | Desktop-App mit Offline-Miete |
-| Erst einmal ausprobieren | Web-App: 30 Tage [kostenlos testen](../web/trial.md) |
+| Erst einmal ausprobieren | Beide: [Testversion](../web/trial.md) bei Herzog anfragen, 30 Tage im Programm und im Browser |
 
 Viele Betriebe nutzen beides: die Desktop-App als führendes System in der
 Arbeitsvorbereitung, die Web-App zum Nachsehen und Rechnen in der Halle
@@ -67,7 +67,7 @@ flowchart LR
 |---|---|
 | Mischdesigns, Texturen, Zwei-Fenster-Vergleich im Designer | Bedienung am Tablet und Smartphone |
 | Mehrere Profile (Arbeitsbereiche), lokale Benutzer, Entra/LDAP | Eigene Rollen je Konto mit Kästchen-Zuweisung |
-| Eingebauter Webserver mit QR-Code | Selbstregistrierung und Abo im Browser |
+| Eingebauter Webserver mit QR-Code | Abo und Bestellung im Browser |
 | — | Ein gemeinsamer Arbeitsbereich je Konto ohne Pfade |
 
 Die vollständige Gegenüberstellung steht unter [Web-App](../web/index.md).

@@ -35,7 +35,7 @@ sie die Administratoren.
 | Schaltfläche | Wirkung |
 |---|---|
 | **Ändern** (Rolle) | Speichert die in der Zeile gewählte Rolle. Die neue Rolle gilt in der Web-App sofort, in der Desktop-App nach dem nächsten Start bzw. nach **Vom Kundenkonto aktualisieren** in der [Benutzerverwaltung](../admin/users.md). |
-| **Einladung erneuern** | Schickt einer Person mit abgelaufener Einladung einen neuen Link (wieder drei Tage gültig). |
+| **Einladung erneuern** | Schickt einer Person, die ihr Passwort noch nicht gesetzt hat, einen neuen Link, auch wenn die Einladung schon abgelaufen ist. Der neue Link gilt wieder 14 Tage, der alte gilt dann nicht mehr. Daneben wählen Sie die Sprache der Einladung. |
 | **Deaktivieren** | Der Benutzer kann sich nirgends mehr anmelden; seine Daten und Zuweisungen bleiben erhalten. Mit Sicherheitsabfrage. |
 | **Aktivieren** | Hebt die Deaktivierung auf. |
 
@@ -56,10 +56,19 @@ sie die Administratoren.
 So läuft die Einladung ab:
 
 1. Die Person bekommt eine E-Mail mit einem Link und setzt ihr Passwort
-   selbst (mindestens 10 Zeichen). Der Link gilt **drei Tage**.
+   selbst (mindestens 10 Zeichen). Der Link gilt **14 Tage**.
 2. Bis dahin steht der Benutzer in der Liste mit *Einladung offen bis …*.
-3. Nach dem Setzen des Passworts ist der Zugang **aktiv** und gilt sofort
+3. Hat die Person nach drei Tagen noch nicht angenommen, schickt ihr das
+   Portal einmal eine Erinnerung mit einem neuen Link. Der alte Link gilt
+   dann nicht mehr. Öffnet sie einen abgelaufenen Link, kann sie sich dort
+   selbst eine neue Einladung schicken.
+4. Nach dem Setzen des Passworts ist der Zugang **aktiv** und gilt sofort
    für Portal, Desktop-App und Web-App.
+
+!!! info "Benutzer im Testkonto"
+    Mit der Testversion laden Sie so viele Benutzer ein, wie die
+    Testversion Plätze hat. Ist die Zahl erreicht, steht statt des
+    Formulars ein Hinweis. Mit einem Abo entfällt die Begrenzung.
 
 !!! tip "Kein Mailversand möglich?"
     Konnte keine E-Mail verschickt werden (z. B. in einer Testumgebung),
