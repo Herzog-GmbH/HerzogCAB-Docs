@@ -897,52 +897,67 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
   </div>
 </section>
 
-<!-- ============ Symbolraster ============
-     Nachbau von „Designed for the detail-obsessed": Symbol, Zeile, zwei Saetze,
-     kein Rahmen. Jede Angabe steht so in der Doku — Fundstellen im LIESMICH. -->
-<!-- Symbolraster. Jede Kachel ist am Handbuch belegt:
-     Rechnen/zurueck  docs/orders/braiding-order.md Z.11
-     Vier Einheiten   docs/calculations/product/lay-length.md Z.20,
-                      product/braid-angle.md Z.18, production/production-speed.md Z.14,
-                      orders/braiding-order.md Z.216
-     Hinweis: Die Liveseite behauptet "Einzelseitige Ausgabe auch fuer Geflechte mit
-     49+ Spulen". Das Handbuch sagt das Gegenteil (save-print.md Z.92/93): bis 48
-     Kloeppel eine Seite, ab 49 eine ZWEISEITIGE Vorlage. -->
+<!-- ============ Highlights ============
+     Jede Kachel ist am Handbuch belegt (Stand 2.1.0):
+     Trommel/Aufwickler  docs/calculations/product/drum-take-up-selection.md, changelog 2.1.0
+     Katalog             docs/catalog/index.md
+     Zurueckschreiben    docs/orders/braiding-order.md
+     Abgleich            docs/basics/platforms.md, changelog 2.1.0 (Druckvorlagen)
+     Ein Login           changelog 2.0.0/2.1.0, docs/setup/activate-license.md
+     Offline             docs/setup/system-requirements.md (24 h, Offline-Miete 30 Tage)
+     QR-Code             docs/admin/settings/web-server.md
+     Verlauf/Favoriten   docs/basics/history.md, docs/basics/favorites.md
+     Sprachen            Einstellungen/Allgemein -->
 <section class="takt ton" id="details">
   <div class="wrap">
-    <p class="eyebrow">Im Alltag</p>
-    <h2 class="col" style="margin-bottom:1rem">Für Detailverliebte gebaut</h2>
-    <p class="lede col" style="margin-bottom:clamp(2.2rem,5vw,3.4rem)">Die großen Module sieht man sofort. Was den Unterschied macht, sind die Kleinigkeiten, die man erst am dritten Tag bemerkt — und dann nicht mehr missen will.</p>
+    <p class="eyebrow">Highlights</p>
+    <h2 class="col" style="margin-bottom:1rem">Für den Alltag gebaut</h2>
+    <p class="lede col" style="margin-bottom:clamp(2.2rem,5vw,3.4rem)">Neben den großen Modulen sind es diese Funktionen, die in Arbeitsvorbereitung, Halle und Vertrieb jeden Tag Zeit sparen.</p>
     <div class="raster">
       <div class="raster-fach reveal">
-        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 106 5.3L3 8"/><path d="M12 7v5l4 2"/></svg></span>
-        <h3>Verlauf statt Zettel</h3>
-        <p>Jede gelungene Berechnung landet selbsttätig im Verlauf. Die Leiste am rechten Fensterrand holt sie mitsamt Eingabewerten zurück &mdash; auf fast jeder Seite, nur im Designer nicht.</p>
+        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></span>
+        <h3>Vom Klöppel bis zur Trommel</h3>
+        <p>Aus der Klöppelbestückung rechnet Herzog CAB Länge und Gewicht des Produkts, schlägt die Trommel vor und prüft den Aufwickler. Passt nicht alles auf eine Trommel, wird aufgeteilt.</p>
       </div>
       <div class="raster-fach reveal">
-        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.6.8-4.9 4.6 1.3 6.6L12 17.1 6.1 20.3l1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span>
-        <h3>Favoriten oben anheften</h3>
-        <p>Rechtsklick auf einen Eintrag in der Navigation, <em>Favorisieren</em> &mdash; und die Seite steht ganz oben im Baum und als Karte auf der Startseite.</p>
-      </div>
-      <div class="raster-fach reveal">
-        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 01-8.5 8.5 8.4 8.4 0 01-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 1121 11.5z"/><path d="M9.5 9.5a2.5 2.5 0 113.2 2.4c-.5.2-.7.6-.7 1.1v.3"/><path d="M12 16.5h.01"/></svg></span>
-        <h3>Geführte Touren im Programm</h3>
-        <p>Unter <em>Hilfe &gt; Geführte Touren</em> laufen Rundgänge als Sprechblasen direkt an den Bedienelementen. Neue Bediener lernen am echten Programm ein, nicht am Handbuch.</p>
+        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 014 4v13a3 3 0 00-3-3H2z"/><path d="M22 4h-6a4 4 0 00-4 4v13a3 3 0 013-3h7z"/></svg></span>
+        <h3>Maschinen aus dem Herzog-Katalog</h3>
+        <p>Modell wählen, Abzug, Besetzung und Zubehör festlegen — Bild, Stich und Technik kommen aus dem Katalog mit, auf Wunsch samt passender Spule. Spulen und Trommeln übernehmen Sie mit einem Klick.</p>
       </div>
       <div class="raster-fach reveal">
         <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-2.6-6.4"/><path d="M21 3v5h-5"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg></span>
         <h3>Rechnen und zurückschreiben</h3>
-        <p>Aus dem Flechtauftrag heraus die passende Berechnung öffnen, rechnen &mdash; und das Ergebnis wandert zurück in den Auftrag. Kein Abtippen, kein zweites Fenster.</p>
+        <p>Aus dem Flechtauftrag heraus die passende Berechnung öffnen, rechnen — und das Ergebnis wandert zurück in den Auftrag. Kein Abtippen, kein zweites Fenster.</p>
+      </div>
+      <div class="raster-fach reveal">
+        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 01-15.5 6.2L3 16"/><path d="M3 21v-5h5"/><path d="M3 12a9 9 0 0115.5-6.2L21 8"/><path d="M21 3v5h-5"/></svg></span>
+        <h3>Programm und Browser im Abgleich</h3>
+        <p>Was im Programm gespeichert wird, steht kurz darauf in Herzog CAB Web — und umgekehrt, Druckvorlagen eingeschlossen. Ändern beide Seiten denselben Eintrag, gilt die Fassung des Programms.</p>
+      </div>
+      <div class="raster-fach reveal">
+        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></span>
+        <h3>Ein Login, angemeldet bleiben</h3>
+        <p>Dieselbe E-Mail-Adresse im Programm, im Browser und im Lizenzportal, auf Wunsch mit zweitem Faktor. Mit <em>Angemeldet bleiben</em> startet der Rechner ohne erneute Anmeldung — gespeichert wird dabei kein Passwort.</p>
+      </div>
+      <div class="raster-fach reveal">
+        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2l20 20"/><path d="M8.5 16.5a5 5 0 017 0"/><path d="M5 12.6a10 10 0 015.2-2.8"/><path d="M19 12.6a10 10 0 00-2.3-1.7"/><path d="M12 20h.01"/></svg></span>
+        <h3>Offline beim Kunden und auf der Messe</h3>
+        <p>Ohne Netz läuft das Programm bis zu 24 Stunden weiter. Für längere Zeit ziehen Sie unter <em>Einstellungen &gt; Lizenz</em> eine Offline-Miete für bis zu 30 Tage.</p>
+      </div>
+      <div class="raster-fach reveal">
+        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M21 14v.01"/><path d="M14 21h.01"/><path d="M17 21h4v-4"/></svg></span>
+        <h3>Auftragsdaten direkt an der Maschine</h3>
+        <p>Der eingebaute Webserver zeigt Auftrag und Maschine auf Tablet oder Smartphone neben der Flechtmaschine. Den Zugang öffnet ein QR-Code, der auch auf den gedruckten Auftragspapieren steht.</p>
+      </div>
+      <div class="raster-fach reveal">
+        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 106 5.3L3 8"/><path d="M12 7v5l4 2"/></svg></span>
+        <h3>Verlauf und Favoriten</h3>
+        <p>Jede gelungene Berechnung landet im Verlauf und kommt mitsamt Eingabewerten zurück. Häufige Seiten heften Sie per Rechtsklick oben an — sie stehen dann auch als Karte auf der Startseite.</p>
       </div>
       <div class="raster-fach reveal">
         <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18 14 14 0 010-18z"/></svg></span>
         <h3>Sechs Sprachen</h3>
-        <p>Deutsch, Englisch, Italienisch, Spanisch, Polnisch und Chinesisch &mdash; umgestellt wird die ganze Oberfläche unter <em>Datei &gt; Einstellungen</em>.</p>
-      </div>
-      <div class="raster-fach reveal">
-        <span class="raster-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h20v8H2z"/><path d="M6 8v4M10 8v3M14 8v4M18 8v3"/></svg></span>
-        <h3>Schlaglänge in vier Einheiten</h3>
-        <p>Schlaglänge, Flechten je 10&nbsp;mm, je englischem und je französischem Zoll &mdash; die Einheit steht als Auswahlfeld neben dem Wert, in jeder Berechnung und im Auftrag.</p>
+        <p>Deutsch, Englisch, Italienisch, Spanisch, Polnisch und Chinesisch — im Programm unter <em>Datei &gt; Einstellungen</em>, in Herzog CAB Web direkt in der Kopfzeile umgestellt.</p>
       </div>
     </div>
   </div>
