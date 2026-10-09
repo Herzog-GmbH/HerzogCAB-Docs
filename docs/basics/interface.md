@@ -24,7 +24,7 @@ damit der Inhalt genug Platz behält.
 |---|---|
 | *Datei* | **Einstellungen** (öffnet den [Einstellungen-Dialog](../admin/settings/index.md)), **Drucken…** (++ctrl+p++, druckt die aktuelle Seite über eine [Druckvorlage](../print-templates/index.md)), **Beenden** |
 | *Ansicht* | **Navigation** — klappt die Navigation links aus oder ein, wie der Pfeil in ihrer Kopfzeile |
-| *Hilfe* | **Geführte Touren...** (Auswahldialog der [geführten Touren](guided-tour.md)), **Updates** (Update-Prüfung, siehe [Updates installieren](../setup/update.md)), **Feedback und Neuigkeiten**, **Über Herzog CAB** (Programm- und Versionsinformationen), **Über Qt** |
+| *Hilfe* | **Handbuch** (++f1++, öffnet die passende Seite dieses Handbuchs im Browser, siehe unten), **Geführte Touren...** (Auswahldialog der [geführten Touren](guided-tour.md)), **Updates** (Update-Prüfung, siehe [Updates installieren](../setup/update.md)), **Feedback und Neuigkeiten**, **Über Herzog CAB** (Programm- und Versionsinformationen), **Über Qt** |
 
 !!! info "Kein Menü „Über“ mehr"
     Bis Version 2.1.0 standen Updates, Feedback und die beiden Über-Dialoge
@@ -109,9 +109,17 @@ nicht.
 
 ## Hilfe zur aktuellen Seite
 
-Mit ++f1++ starten Sie die [geführte Tour](guided-tour.md) des Bereichs, in
-dem Sie sich gerade befinden; steht der Fokus in der Navigation, startet die
-Navigations-Tour. Eine Übersicht aller Tastenkürzel finden Sie unter
+* ++f1++ (oder *Hilfe > Handbuch*) öffnet die **passende Seite dieses
+  Handbuchs** im Standardbrowser. Maßgeblich ist die Seite oder der Dialog,
+  in dem gerade der Fokus steht, sonst die geöffnete Seite. Gibt es zu
+  einer Stelle keine eigene Handbuchseite, öffnet sich die Startseite des
+  Handbuchs. Das funktioniert auch in Dialogen. Unter macOS erreichen Sie
+  dasselbe mit ++cmd+question++ bzw. ++fn+f1++.
+* ++shift+f1++ startet die [geführte Tour](guided-tour.md) des Bereichs,
+  in dem Sie sich gerade befinden; steht der Fokus in der Navigation,
+  startet die Navigations-Tour.
+
+Eine Übersicht aller Tastenkürzel finden Sie unter
 [Tastenkürzel](../appendix/keyboard-shortcuts.md).
 
 ## Verwandte Seiten

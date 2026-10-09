@@ -145,9 +145,10 @@ Werte zurückgesetzt. Frühere Berechnungen laden Sie über den
 
 ## Hilfe zur aktuellen Seite
 
-Mit ++f1++ starten Sie die [geführte Tour](guided-tour.md) zur Seite, auf
-der Sie sich gerade befinden. Eine vollständige Liste der Tastenkürzel
-finden Sie unter [Tastenkürzel](../appendix/keyboard-shortcuts.md).
+Mit ++f1++ öffnen Sie die passende Seite dieses Handbuchs zur Seite, auf
+der Sie sich gerade befinden; ++shift+f1++ startet die
+[geführte Tour](guided-tour.md) dazu. Eine vollständige Liste der
+Tastenkürzel finden Sie unter [Tastenkürzel](../appendix/keyboard-shortcuts.md).
 
 ## Verwandte Seiten
 

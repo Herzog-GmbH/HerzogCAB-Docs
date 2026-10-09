@@ -33,6 +33,7 @@
   "masterdata": "master-data/",
   "uiCustomers": "master-data/customers/",
   "customers": "master-data/customers/",
+  "customerEditor": "master-data/customers/",
   "uiProduct": "master-data/designs/",
   "braidingMachines": "master-data/braiding-machines/",
   "braiding_machines": "master-data/braiding-machines/",

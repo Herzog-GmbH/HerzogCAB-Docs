@@ -18,12 +18,16 @@ Bedienelement.
     Passen nicht alle Karten auf den Bildschirm, lässt sich der Dialog
     scrollen.
 
-=== "Mit F1"
+=== "Mit Umschalt+F1"
 
-    Drücken Sie ++f1++, während Sie sich in einem Funktionsbereich
+    Drücken Sie ++shift+f1++, während Sie sich in einem Funktionsbereich
     befinden: Die Tour dieses Bereichs startet direkt. Steht der Fokus
     (oder der Mauszeiger) in der Navigation, startet stattdessen die
-    **Navigations-Tour**.
+    **Navigations-Tour**. Daran erinnert auch die Statuszeile, wenn Sie im
+    Menü *Hilfe* auf **Geführte Touren...** zeigen.
+
+    ++f1++ allein öffnet die passende Seite dieses Handbuchs im Browser —
+    bis Version 2.1.0 startete ++f1++ die Tour.
 
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Dialog „Geführte Touren“ mit den zehn Themenkarten (darunter „Auftragseditor“) und der runden Start-Schaltfläche ▶ unten rechts in jeder Karte

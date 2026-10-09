@@ -10,7 +10,8 @@ geöffnet ist.
 | Taste | Wirkung |
 |---|---|
 | ++ctrl+p++ | Drucken |
-| ++f1++ | Hilfe zur aktuellen Seite (siehe [Hilfe-Tasten](#hilfe-tasten) unten) |
+| ++f1++ | Passende Seite dieses Handbuchs (siehe [Hilfe-Tasten](#hilfe-tasten) unten) |
+| ++shift+f1++ | Geführte Tour der aktuellen Seite |
 
 ## Berechnungsseiten
 
@@ -54,9 +55,9 @@ Wirkt auf das gerade markierte Element der Druckvorlage.
 
 | Taste | Wirkung |
 |---|---|
-| ++f1++ | Startet die **Guided Tour** des Bereichs, in dem Sie sich gerade befinden. |
-
-<!-- TODO(F1-Umbau): nach App-Integration auf Handbuch umformulieren -->
+| ++f1++ | Öffnet im Standardbrowser die **Seite dieses Handbuchs**, die zur Seite oder zum Dialog mit dem Fokus passt (sonst zur geöffneten Seite). Ohne eigene Handbuchseite öffnet sich die Startseite des Handbuchs. Wirkt auch in Dialogen; gleichbedeutend mit Menü *Hilfe → Handbuch*. |
+| ++shift+f1++ | Startet die **Guided Tour** des Bereichs, in dem Sie sich gerade befinden (Fokus in der Navigation: Navigations-Tour). |
+| ++cmd+question++ / ++fn+f1++ | macOS: wie ++f1++. |
 
 Zusätzlich öffnen Sie über Menü *Hilfe → Geführte Touren…* jede verfügbare
 Tour gezielt von Hand, unabhängig davon, wo Sie sich gerade befinden – siehe
@@ -64,5 +65,5 @@ Tour gezielt von Hand, unabhängig davon, wo Sie sich gerade befinden – siehe
 
 !!! info "Kein Ersatz für dieses Handbuch"
     Die Guided Tour zeigt Ihnen kurz die wichtigsten Bedienelemente direkt im
-    Programm. Für ausführliche Erklärungen zu jedem Feld nutzen Sie die
-    passende Referenzseite in diesem Handbuch.
+    Programm. Für ausführliche Erklärungen zu jedem Feld öffnen Sie mit
+    ++f1++ die passende Referenzseite in diesem Handbuch.

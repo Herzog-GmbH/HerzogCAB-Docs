@@ -39,6 +39,11 @@
 * **Neuer Anmeldedialog** – Kopfband mit Kontoname und laufendem Zopf,
   Code der Authenticator-App in sechs Kästchen, die nach der sechsten
   Ziffer selbst prüfen. Siehe [Anmelden und Abmelden](../admin/login.md).
+* **F1 öffnet das Handbuch** – ++f1++ und der neue Menüeintrag *Hilfe >
+  Handbuch* öffnen die Seite dieses Handbuchs, die zur Seite oder zum
+  Dialog mit dem Fokus passt, auch in Dialogen. Die geführte Tour der
+  aktuellen Seite startet jetzt mit ++shift+f1++. Siehe
+  [Tastenkürzel](keyboard-shortcuts.md#hilfe-tasten).
 
 ### Verbesserungen
 
