@@ -45,11 +45,11 @@ Kontos** im Lizenzportal eingeladen (siehe
    Web-App anmelden.
 
 !!! tip "Zweiter Faktor"
-    Im Lizenzportal können Sie unter *Passwort und zweiter Faktor* eine
+    Im Lizenzportal können Sie über Ihre E-Mail-Adresse rechts oben eine
     **Authenticator-App** hinterlegen. Dann verlangt jede Anmeldung — auch in
     der Desktop-App und der Web-App — zusätzlich den sechsstelligen Code.
-    Empfohlen für Administratoren. Siehe
-    [Passwort und zweiter Faktor](../portal/security.md).
+    Empfohlen für Administratoren. Dort ändern Sie auch Ihren Namen. Siehe
+    [Passwort, zweiter Faktor und Name](../portal/security.md).
 
 !!! warning "Einladung abgelaufen?"
     Haben Sie die Einladung nach drei Tagen noch nicht angenommen, schickt

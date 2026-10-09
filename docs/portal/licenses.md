@@ -71,10 +71,13 @@ Die Schaltflächen sehen nur Administratoren.
 | **Verlängern** | Erscheint, wenn eine Freischaltung bald abläuft. Öffnet die Anfrage *Laufzeit verlängern* für diese Freischaltung. |
 
 !!! info "Erinnerung vor dem Ablauf"
-    Läuft eine Freischaltung ab, erhalten die Administratoren des Kontos
-    **30 Tage und 7 Tage** vorher eine E-Mail von Herzog. Verlängern Sie
-    rechtzeitig. Nach dem Ablauf startet die Desktop-App mit diesem
-    Baustein nicht mehr, und die Web-App verweigert die Anmeldung.
+    Läuft eine Freischaltung ab, erhalten alle aktiven Benutzer des Kontos
+    **30 Tage und 7 Tage** vorher eine E-Mail von Herzog, jeder in seiner
+    Sprache. Kurze Freischaltungen wie die Testversion (Laufzeit unter 60
+    Tagen) bekommen nur die Erinnerung 7 Tage vorher. Ist eine Verlängerung
+    schon bestellt und wartet auf die Zahlung, kommt keine Erinnerung.
+    Verlängern Sie rechtzeitig. Nach dem Ablauf startet die Desktop-App mit
+    diesem Baustein nicht mehr, und die Web-App verweigert die Anmeldung.
 
 ### Rechner
 

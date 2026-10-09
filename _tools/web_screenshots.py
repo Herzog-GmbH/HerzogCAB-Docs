@@ -110,12 +110,17 @@ def run_web(ctx):
     def want(n):
         return only is None or n in only
 
-    if want("anmelden"):
-        page.goto(WEB + "/anmelden"); settle(page)
-        shot(page, "web", "anmelden")
-    if want("registrieren"):
-        page.goto(WEB + "/registrieren"); settle(page)
-        shot(page, "web", "registrieren")
+    # Seiten ohne Sitzung in einem eigenen Kontext: angemeldet leitet /anmelden
+    # auf die Startseite um. Schmal (390 px) zeigt die Karte mit Kopfband statt
+    # der Markenflaeche.
+    for name, pfad, breite, hoehe in [("anmelden", "/anmelden", 1440, 900), ("anmelden-schmal", "/anmelden", 390, 844),
+                                      ("registrieren", "/registrieren", 1440, 900)]:
+        if want(name):
+            leer = ctx.browser.new_context(viewport={"width": breite, "height": hoehe}, device_scale_factor=1, locale="de-DE")
+            lp = leer.new_page()
+            lp.goto(WEB + pfad); settle(lp)
+            shot(lp, "web", name)
+            leer.close()
 
     page.goto(WEB + "/"); settle(page, 1500)
     if "/anmelden" in page.url:
@@ -184,6 +189,36 @@ def run_web(ctx):
             page.goto(WEB + href); settle(page, 2500)
             shot(page, "web", "designer")
 
+    if want("versionen") or want("fachungsfarben"):
+        page.goto(WEB + "/designs"); settle(page, 1500)
+        hrefs = page.eval_on_selector_all("a[href^='/designs/']", "els => els.map(e => e.getAttribute('href'))")
+        href = next((h for h in hrefs if h and "?" not in h and h.rstrip("/") != "/designs/neu"), None)
+        if href and want("versionen"):
+            # Dialog "Versionen" des ersten gespeicherten Designs, erste Fassung aufgeklappt
+            page.goto(WEB + href); settle(page, 2500)
+            try:
+                page.locator("button[aria-label='Versionen']:visible").first.click(); settle(page, 1200)
+                knopf = page.locator("dialog[open] button", has_text="Unterschiede")
+                if knopf.count() > 0:
+                    knopf.first.click(); settle(page, 1000)
+                shot(page, "web", "versionen")
+                page.keyboard.press("Escape"); time.sleep(0.3)
+            except Exception as e:
+                print("  Versionen:", e)
+        if href and want("fachungsfarben"):
+            # Eigene Seite: Fachung 2 wird nur eingestellt, nie gespeichert;
+            # page.close() verwirft die Aenderung ohne Rueckfrage.
+            fp = ctx.new_page()
+            try:
+                fp.goto(WEB + href); settle(fp, 2500)
+                fp.get_by_label("Fachung", exact=True).fill("2"); settle(fp, 800)
+                fp.locator("tbody.select-none tr:visible").first.click(button="right"); settle(fp, 800)
+                shot(fp, "web", "fachungsfarben")
+            except Exception as e:
+                print("  Fachungsfarben:", e)
+            finally:
+                fp.close()
+
     if want("maschinen") or want("maschine"):
         page.goto(WEB + "/maschinen"); settle(page, 1500)
         if want("maschinen"):
@@ -233,7 +268,7 @@ def run_web(ctx):
 
     simple = [("einstellungen", "/einstellungen"), ("konto-benutzer", "/konto"), ("abo", "/abo"),
               ("firma", "/firma"), ("medien", "/medien"), ("rollen", "/rollen"), ("import", "/import"),
-              ("druckeditor", "/druckeditor")]
+              ("druckeditor", "/druckeditor"), ("papierkorb", "/papierkorb")]
     for name, path in simple:
         if want(name):
             page.goto(WEB + path); settle(page, 1200)

@@ -33,8 +33,8 @@ Jeder Reiter hat denselben Aufbau:
 | **Aus Herzog-Katalog …** | Nur in den Reitern **Spulen** und **Trommeln** und mit dem Recht zum Bearbeiten: öffnet den [Herzog-Katalog](catalog.md) im passenden Reiter; dort übernehmen Sie Herzog-Spulen und -Trommeln. |
 | **Suchen …** | Filtert die Liste live; die Trefferzahl steht daneben (*n Einträge*). |
 | Liste | Tabelle mit den wichtigsten Spalten, am Smartphone Karten mit Titel, Unterzeile und zwei Kennwerten. |
-| **Bearbeiten** / **Löschen** | Öffnet das Formular bzw. entfernt den Eintrag nach Sicherheitsabfrage (*Das lässt sich nicht rückgängig machen.*). |
-| Formular | Öffnet sich als Dialog (**Speichern** / **Abbrechen**); Pflichtfelder sind markiert. Ein Eintrag, den gerade jemand anderes geändert hat, lässt sich erst nach dem Neuladen speichern. |
+| **Bearbeiten** / **Löschen** | Öffnet das Formular bzw. entfernt den Eintrag nach Sicherheitsabfrage (*Der Eintrag kommt in den Papierkorb und lässt sich dort wiederherstellen.*). Siehe [Papierkorb](versions.md#papierkorb). |
+| Formular | Öffnet sich als Dialog (**Speichern** / **Abbrechen**); Pflichtfelder sind markiert. Ein Eintrag, den gerade jemand anderes geändert hat, lässt sich erst nach dem Neuladen speichern. Bei einem gespeicherten Eintrag steht unten links **Versionen** mit seinen früheren Fassungen, siehe [Versionen und Papierkorb](versions.md). |
 
 ## Die Reiter im Detail
 

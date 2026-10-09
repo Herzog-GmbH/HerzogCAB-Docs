@@ -33,7 +33,9 @@ nach Ablauf der Testzeit endgültig aus. Details dazu finden Sie unter
 Der Cloud-Abgleich der Desktop-App gleicht in beide Richtungen ab, aber
 nicht gleichberechtigt: Er lädt zuerst hoch und holt danach die Änderungen
 aus der Web-App. Haben beide Seiten denselben Eintrag geändert, gewinnt der
-Desktop, und die Änderung aus der Web-App geht verloren. Weitere Grenzen:
+Desktop. Die Fassung aus der Web-App ist dann nicht weg: Sie steht in der
+Web-App unter [Versionen](../web/versions.md) und lässt sich dort
+wiederherstellen. Weitere Grenzen:
 
 * In der Web-App gelöschte Dateien (Bilder, Dokumente) bleiben im
   Arbeitsverzeichnis liegen.
@@ -48,8 +50,8 @@ Wer nur vom Desktop in die Web-App abgleichen will, schaltet
 
 ## Web-App: nicht enthaltene Funktionen
 
-Die Web-App enthält keine Mischdesigns und Texturen im Designer und keinen
-Zwei-Fenster-Vergleich. Im Hallenplaner fehlen Kontextmenüs, *Wände
+Mischdesigns zeigt der Designer der Web-App nur an, anlegen lassen sie sich
+dort nicht; einen Zwei-Fenster-Vergleich gibt es nicht. Im Hallenplaner fehlen Kontextmenüs, *Wände
 verbinden*, die automatische Flächenerkennung und Wandtexturen. Die
 vollständige Gegenüberstellung steht unter [Web-App](../web/index.md).
 

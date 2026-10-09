@@ -21,7 +21,7 @@ im Browser.
 | **Grundriss suchen…** | Filtert die Liste. |
 | Grundriss-Karte | Name, Änderungsdatum, Zahl der Wände, Bereiche und Elemente sowie die zugehörigen **Belegungen**. |
 | **Bearbeiten** | Öffnet den Grundriss im Editor (Modus *Grundriss*). |
-| **Umbenennen…** / **Duplizieren…** / **Löschen…** | Löschen entfernt auch alle Belegungen des Grundrisses; die Maschinen bleiben in den Stammdaten. |
+| **Umbenennen…** / **Duplizieren…** / **Löschen…** | Löschen entfernt auch alle Belegungen des Grundrisses; die Maschinen bleiben in den Stammdaten. Grundriss und Belegungen kommen in den [Papierkorb](versions.md#papierkorb). |
 | **Neue Belegung / Szenario** | Legt eine Belegung für den Grundriss an (Name, z. B. *Variante*). |
 | Belegung: **Bestücken** | Öffnet die Belegung im Editor (Modus *Belegung*). |
 | Belegung: **Als Ist-Belegung setzen** | Markiert die Belegung als aktuelle Aufstellung (*Ist*). |
@@ -55,6 +55,7 @@ Mausposition, das Werkzeug, das Raster und beim Messen die Länge.
 | **Rückgängig** / **Wiederholen** | Bearbeitungsschritte. |
 | **Bearbeiten** | Bei Auswahl: 90° nach links/rechts drehen, Auswahl duplizieren oder löschen; bei mehreren Maschinen horizontal/vertikal gleichmäßig verteilen und aneinanderreihen. |
 | **Speichern** | Speichert Grundriss bzw. Belegung (*Aktuelles Layout speichern*). |
+| **Versionen** (Symbol in der Kopfzeile) | Frühere Fassungen des Grundrisses (Modus *Grundriss*) bzw. der gewählten Belegung (Modus *Belegung*), siehe [Versionen und Papierkorb](versions.md). |
 
 ### Palette „Werkzeuge" (Modus Grundriss)
 

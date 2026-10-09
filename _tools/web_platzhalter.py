@@ -20,7 +20,10 @@ ROUTEN = {
         'hallenplan-editor': '/hallenplaene/<grundriss>/<belegung>', 'druck': '/druck/auftrag/<id>',
         'einstellungen': '/einstellungen', 'konto-benutzer': '/konto', 'abo': '/abo', 'firma': '/firma',
         'medien': '/medien', 'rollen': '/rollen', 'import': '/import', 'anmelden': '/anmelden',
-        'registrieren': '/registrieren',
+        'registrieren': '/registrieren', 'anmelden-schmal': '/anmelden bei 390 px Breite',
+        'versionen': '/designs/<id>, Symbol „Versionen"', 'papierkorb': '/papierkorb',
+        'fachungsfarben': '/designs/<id>, Fachung 2, Rechtsklick auf eine Zeile der Klöppeltabelle',
+        'druckeditor': '/druckeditor', 'katalog': '/katalog',
     },
     'portal': {
         'anmelden': '/anmelden', 'mein-konto': '/', 'benutzer': '/benutzer', 'anfordern': '/anfordern',

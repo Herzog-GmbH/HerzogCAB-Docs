@@ -19,6 +19,8 @@ Kachel **Konto und Benutzer** auf der Startseite.
 
 | Element | Bedeutung |
 |---|---|
+| **Rollen verwalten** | Rechts neben dem Seitentitel, nur mit dem Recht *Rollen verwalten*: wechselt zu [Rollen](roles.md). |
+| **Lizenzportal öffnen** | Öffnet [license.herzog-cab.com](https://license.herzog-cab.com) in einem neuen Tab. |
 | **Edition** | Mit welchem Abo Sie arbeiten: *Vollversion*, *Designer* oder *Testversion*. Bei internen Konten der Vermerk *internes Konto*. |
 | **Plätze** | Belegte und vorhandene Plätze, zum Beispiel *2 / 3*. Programm und Web-App zählen zusammen. |
 | **Bausteine** | Die Bausteine, die die Web-App öffnen, mit der Zahl der Plätze und der Laufzeit (*bis &lt;Datum&gt;* oder *Lebenszeit*). *Programm und Web* heißt: ein Kontingent für Desktop-App und Web-App zusammen. |
@@ -41,9 +43,6 @@ dort arbeitet.
 Festlegen, Ändern und Entfernen dürfen nur Benutzer mit dem Recht
 **Workspace-Einstellungen** (z. B. Administratoren); alle anderen sehen den
 Ordner nur.
-| **Gerade angemeldet** | Wer gerade einen Platz belegt und wo: Rechnername, *Web* oder *(offline)*. |
-| **Rollen verwalten** | Wechselt zu [Rollen](roles.md). |
-| **Lizenzportal öffnen** | Öffnet [license.herzog-cab.com](https://license.herzog-cab.com) in einem neuen Tab. |
 
 ### Benutzer und Rollen
 
@@ -51,12 +50,32 @@ Die Tabelle listet alle Benutzer des Kontos mit **Name**, **E-Mail**,
 **Letzte Anmeldung**, dem Kennzeichen **Gerade angemeldet** bzw. *inaktiv*
 und je Rolle ein **Kästchen**.
 
-* **Rolle zuweisen:** Administratoren haken die Kästchen an oder ab; die
-  Änderung gilt sofort. Ein Benutzer kann mehrere Rollen haben — die Rechte
-  addieren sich.
+* **Rolle zuweisen:** Benutzer mit dem Recht *Benutzer verwalten* haken die
+  Kästchen an oder ab; die Änderung gilt sofort. Ein Benutzer kann mehrere
+  Rollen haben — die Rechte addieren sich.
 * **Ohne Rolle** arbeitet ein Benutzer als **Bearbeiter**.
-* Die Rolle **Administrator** aus dem Kundenkonto hat immer alle Rechte;
-  sie lässt sich hier nicht abwählen.
+* Die Rolle **Administrator** hat immer alle Rechte.
+
+Damit sich niemand mehr Rechte verschafft, als er hat, gelten drei Regeln.
+Verstößt eine Änderung dagegen, lehnt die Web-App sie mit einer roten
+Meldung ab.
+
+* Ihre **eigenen** Rollen ändert ein anderer Administrator. In Ihrer
+  eigenen Zeile sind die Kästchen gesperrt.
+* Eine Rolle vergeben oder entziehen Sie nur, wenn Sie selbst **alle ihre
+  Rechte** haben. Wer mehr Rechte hat als Sie, lässt sich auch nicht
+  herabstufen.
+* Das Konto behält immer mindestens **einen Administrator** (*Das Konto
+  braucht mindestens einen Administrator.*).
+
+Dieselben Regeln gelten im [Lizenzportal](../portal/users.md).
+
+### Gerade angemeldet
+
+Die Karte unten auf der Seite listet, wer gerade einen Platz belegt und wo:
+Rechnername, *Web* oder *(offline)*, dazu der Zeitpunkt der letzten
+Aktivität. Die Zahl im Kartentitel nennt die belegten Plätze. Die Liste
+lädt jede Minute neu.
 
 !!! info "Zwei Orte, ein Benutzer"
     Die Konto-Rolle (Administrator / Bearbeiter / Betrachter) vergibt das

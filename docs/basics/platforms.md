@@ -22,7 +22,8 @@ Beide teilen sich das **Kundenkonto** (ein Login), das **Datenmodell**
 |---|---|
 | Ein fester Arbeitsplatz in der Arbeitsvorbereitung, Daten sollen im Haus bleiben | Desktop-App |
 | Bediener an mehreren Orten, Tablets in der Halle, Home-Office | Web-App |
-| Mischdesigns, Texturen | Desktop-App (nur dort enthalten) |
+| Mischdesigns anlegen | Desktop-App (nur dort enthalten) |
+| Frühere Fassungen und gelöschte Einträge zurückholen | Web-App: [Versionen und Papierkorb](../web/versions.md), auch für Daten, die die Desktop-App per Cloud-Abgleich hochlädt |
 | Druckvorlagen gestalten | Beide: Druck-Editor im Programm oder [Druck Editor](../web/print-editor.md) im Browser (Vorlagen aus der Web-App kommen ab Programmversion 2.1.0 auch ins Programm) |
 | Ein Team soll gleichzeitig auf denselben Datenbestand sehen | Web-App (ein Arbeitsbereich je Konto) — oder Desktop-App mit Arbeitsverzeichnis auf dem Netzlaufwerk |
 | Kein Rechner mit Adminrechten, keine Installation möglich | Web-App |
@@ -57,18 +58,22 @@ flowchart LR
 !!! warning "Abgleich in beide Richtungen — der Desktop hat Vorrang"
     Mit eingeschaltetem Rückweg kommen Änderungen aus der Web-App ins
     Arbeitsverzeichnis, Löschungen eingeschlossen. Ändern beide Seiten
-    denselben Eintrag, gilt die Fassung des Desktops. Ist der Rückweg aus,
-    fließt nichts zurück. Wie Sie das passend einrichten, steht unter
+    denselben Eintrag, gilt die Fassung des Desktops; die Fassung aus der
+    Web-App bleibt dort unter [Versionen](../web/versions.md) erhalten. Ist
+    der Rückweg aus, fließt nichts zurück. Wie Sie das passend einrichten,
+    steht unter
     [Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md).
 
 ## Was es nur in einer der beiden gibt
 
 | Nur Desktop-App | Nur Web-App |
 |---|---|
-| Mischdesigns, Texturen, Zwei-Fenster-Vergleich im Designer | Bedienung am Tablet und Smartphone |
+| Mischdesigns anlegen, Zwei-Fenster-Vergleich im Designer | Bedienung am Tablet und Smartphone |
 | Mehrere Profile (Arbeitsbereiche), lokale Benutzer, Entra/LDAP | Eigene Rollen je Konto mit Kästchen-Zuweisung |
 | Eingebauter Webserver mit QR-Code | Abo und Bestellung im Browser |
 | — | Ein gemeinsamer Arbeitsbereich je Konto ohne Pfade |
+| — | [Versionen und Papierkorb](../web/versions.md) |
+| — | [Fachungsfarben](../web/designer.md#fachungsfarben-farbe-je-garn) im Designer (Farbe je Garn) |
 
 Die vollständige Gegenüberstellung steht unter [Web-App](../web/index.md).
 

@@ -59,6 +59,13 @@ Berechnung mit Ergebnis landet in der Historie — außer bei den beiden
 Umrechnern (*Umrechnung Feinheit*, *Umrechnung Geflechtsdichte*) und
 *Maschinen Dimensionierung*, wie in der Desktop-App.
 
+!!! info "Flechtwinkel zur Querrichtung oder zur Geflechtsachse"
+    Ob Winkelfelder und -ergebnisse gegen die Querrichtung (Herzog) oder
+    gegen die Geflechtsachse (Fachliteratur) gemessen werden, stellen Sie
+    unter [Einstellungen](settings.md#flechtwinkel) ein. Zeigen Sie auf
+    einen Winkel, nennt eine Einblendung beide Werte. Auch das kleine
+    Erklärbild am Feld folgt der Wahl.
+
 !!! tip "Rechner aus dem Auftrag heraus"
     Im [Flechtauftrag](orders.md) und [Spulauftrag](orders.md) öffnen die
     Rechner-Symbole neben den Feldern denselben Rechner als Dialog —
