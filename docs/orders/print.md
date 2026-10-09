@@ -87,15 +87,18 @@ So funktioniert es:
 
 1. Der Webserver wird in den
    [Einstellungen > Webserver und QR-Code](../admin/settings/web-server.md)
-   aktiviert. Dort wird auch der **QR-Code** angezeigt.
-2. Der Bediener scannt den QR-Code mit dem Smartphone.
+   aktiviert und mit einem **Passwort** versehen. Dort wird auch der
+   **QR-Code** angezeigt.
+2. Der Bediener scannt den QR-Code mit dem Smartphone und meldet sich mit
+   dem Webserver-Passwort an.
 3. Es öffnet sich die mobile Sicht mit Maschinen- und Auftragsinformationen
    (Besetzung, Bestückung, Dokumente, Maschinendaten).
 
 !!! info "Voraussetzung: Webserver aktiv"
-    Die mobile Sicht funktioniert nur, wenn der Webserver läuft und sich
-    Smartphone und PC im selben Netzwerk befinden. Aktivierung, IP-Auswahl
-    und Passwortschutz sind unter
+    Die mobile Sicht funktioniert nur, wenn der Webserver läuft, ein
+    Webserver-Passwort gesetzt ist und sich Smartphone und PC im selben
+    Netzwerk befinden. Ohne Passwort ist die Weboberfläche nur auf dem
+    Rechner selbst erreichbar. Aktivierung, IP-Auswahl und Passwort sind unter
     [Webserver und QR-Code](../admin/settings/web-server.md) beschrieben.
 
 !!! tip "QR-Code aufs Papier"

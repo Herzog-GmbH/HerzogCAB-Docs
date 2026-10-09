@@ -211,6 +211,8 @@ plugins:
         settings/file-locations.md: admin/storage-location.md
         settings/company.md: admin/company.md
         settings/web-server.md: admin/settings/web-server.md
+        # Tab „Speicherorte" entfiel nach 2.1.0 (UI-Review 02.10.2026)
+        admin/settings/files.md: admin/storage-location.md
   # - mike:                      # AKTIVIEREN fuer versionierte Doku (1.4, latest)
   #     version_selector: true
   #     css_dir: css
@@ -415,7 +417,6 @@ nav:
       - Einstellungen:
           - admin/settings/index.md
           - Allgemein — Sprache, Darstellung, Diagnose, Planung: admin/settings/appearance.md
-          - Dateien und Ordner: admin/settings/files.md
           - Design — Designer-Vorgaben und Legacy-Import: admin/settings/legacy-import.md
           - Lizenz und Cloud: admin/settings/license.md
           - Webserver und QR-Code: admin/settings/web-server.md

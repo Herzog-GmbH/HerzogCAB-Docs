@@ -5,7 +5,10 @@
 ## Wofür
 
 Der **Flechtwinkel** ist der Winkel, unter dem ein einzelner Strang im
-Geflecht zur Längsachse des Produkts verläuft. Er bestimmt maßgeblich Optik,
+Geflecht verläuft. Herzog misst ihn standardmäßig zur **Querrichtung** des
+Produkts, die Fachliteratur meist zur **Geflechtsachse**; welchen Bezug
+Herzog CAB zeigt, stellen Sie unter
+[*Einstellungen > Allgemein > Flechtwinkel*](../../admin/settings/appearance.md#flechtwinkel) ein. Er bestimmt maßgeblich Optik,
 Festigkeit und Dehnung des fertigen Geflechts. Die Berechnung ermittelt
 diesen Winkel aus Flechtbezeichnung und Produktmaß – getrennt für
 Rundgeflecht und Litzengeflecht.
@@ -26,7 +29,7 @@ Rundgeflecht und Litzengeflecht.
 
 | Wert | Einheit | Bedeutung |
 |---|---|---|
-| **Flechtwinkel** | ° | Winkel des Strangs zur Längsachse des Produkts, auf zwei Nachkommastellen. |
+| **Flechtwinkel** | ° | Winkel des Strangs im eingestellten [Bezug](../../admin/settings/appearance.md#flechtwinkel) (Querrichtung oder Geflechtsachse), auf zwei Nachkommastellen. Der Kurzhinweis an der Kachel nennt beide Werte. |
 
 ## Bedienung
 

@@ -183,8 +183,8 @@ Herzog CAB automatisch den Dialog **„Profil einrichten"**.
 | **Profilname** | Bezeichnung des Profils, vorbelegt mit „Standard". Bei mehreren Firmen/Werken auf derselben Installation vergeben Sie hier einen sprechenden Namen. |
 | **Arbeitsverzeichnis** | Ordner für Aufträge, Maschinen, Materialien, Farben und Druckvorlagen dieses Profils. Vorbelegt mit *Dokumente\HerzogCAB*. Über **Durchsuchen …** wählbar. |
 | **Webserver-Port** | Port, unter dem die mobile Weboberfläche dieses Profils erreichbar ist. Vorbelegt mit 8080. |
-| **Webserver beim Start automatisch starten** | Checkbox, standardmäßig aktiviert. |
-| **Webserver-Passwort** (optional) | Schützt den Zugriff auf die Weboberfläche. |
+| **Webserver beim Start automatisch starten** | Checkbox, standardmäßig aus. |
+| **Webserver-Passwort** | Mindestens 8 Zeichen. Ohne Passwort ist die Weboberfläche nur auf diesem Rechner erreichbar; für Tablets und Handys im Netz braucht es ein Passwort. Lässt sich später unter [Webserver und QR-Code](../admin/settings/web-server.md) setzen. |
 
 !!! warning "Arbeitsverzeichnis bei Mehrplatz-Betrieb"
     Profile werden zentral gespeichert. Wenn mehrere Rechner mit demselben

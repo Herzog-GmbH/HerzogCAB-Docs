@@ -12,7 +12,7 @@ Die Berechnung schätzt, wie breit ein Garn (Multifil) bzw. wie groß ein Monofi
 |---|---|---|
 | **Garnart** | – | Auswahl zwischen **Multifil** und **Monofil**. Bei Monofil wird der Faktor Breite/Ø ausgeblendet (intern = 1), und das Ergebnis ist der Materialdurchmesser statt der Materialbreite. |
 | **Geflechtsdurchmesser** | mm | Außendurchmesser des Hohlgeflechts. |
-| **Flechtwinkel** | ° | Winkel der Fäden zur Geflechtsachse (0–89°, Vorgabe 45°). |
+| **Flechtwinkel** | ° | Winkel der Fäden im eingestellten [Bezug](../../admin/settings/appearance.md#flechtwinkel) (0–89°, Vorgabe 45°). |
 | **Klöppelanzahl** | stk. | Anzahl der Klöppel der Flechtmaschine. |
 | **Fachung** | stk. | Anzahl der parallel je Klöppel laufenden Garne (Vorgabe 1). Das Ergebnis wird auf die Breite **pro Garn** heruntergerechnet. |
 | **Bedeckung** | % | Gewünschter Bedeckungsgrad der Geflechtsoberfläche (0–100 %, Vorgabe 70 %). 100 % wird intern als 99,9999 % gerechnet. |

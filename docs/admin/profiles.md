@@ -45,7 +45,7 @@ aktive Profil ist in der Liste markiert.
 | **Arbeitsverzeichnis** | Daten-Ordner des Workspace. **Durchsuchen …** öffnet die Ordnerauswahl. Auf den Ordner muss Schreibzugriff bestehen, sonst meldet der Editor *„Kein Schreibzugriff auf den Ordner."* |
 | **Webserver-Port** | Port des eingebauten [Webservers](settings/web-server.md) für dieses Profil (Standard 8080). |
 | **Webserver beim Start automatisch starten** | Startet den Webserver automatisch, sobald das Profil geöffnet wird. |
-| **Webserver-Passwort** | Optionaler Zugriffsschutz für die mobile Ansicht. |
+| **Webserver-Passwort** | Passwort für die mobile Ansicht, mindestens 8 Zeichen. **Ohne Passwort ist die Weboberfläche nur auf diesem Rechner erreichbar**, im Netz (Tablets, Handys) nur mit Passwort. Das Feld bleibt leer; der Platzhalter zeigt, ob schon eines gesetzt ist. Entfernen lässt es sich nur in den [Einstellungen, Tab Webserver](settings/web-server.md#karte-zugangsschutz). |
 | **Entfernen** | Nimmt das Profil aus der Konfiguration heraus — der Datenordner selbst bleibt unangetastet. Das aktuell aktive Profil kann nicht entfernt werden. |
 | **Speichern** | Sichert die Änderungen. |
 

@@ -14,7 +14,7 @@ Sie erreichen den Editor auf mehreren Wegen:
 
 * In der [Auftragsübersicht](index.md) über **Neuer Auftrag** > *Neuer Flechtauftrag*,
 * per **Öffnen** oder Doppelklick auf eine Flechtauftrags-Karte,
-* über die Startseite ([Home](../basics/home.md)) und den Verlauf [Letzte Aufträge](../basics/history.md).
+* über die Startseite ([Home](../basics/home.md)): Karte *Produktion* oder *Zuletzt geöffnet*.
 
 ## Der Bildschirm im Überblick
 
@@ -224,7 +224,7 @@ eingebettetes Rechner-Symbol — siehe
 |---|---|
 | **Produktname** | Bezeichnung des zu fertigenden Produkts. |
 | **Füllgrad [%]** | Füllgrad des Geflechts; bei neuen Aufträgen mit 70 vorbelegt. |
-| **Flechtwinkel [deg]** | Flechtwinkel — manuell eintragen oder per Rechner-Symbol berechnen. |
+| **Flechtwinkel [deg]** | Flechtwinkel — manuell eintragen oder per Rechner-Symbol berechnen. Anzeige und Eingabe im eingestellten [Bezug des Flechtwinkels](../admin/settings/appearance.md#flechtwinkel). |
 | **Produktdurchmesser [mm]** | Durchmesser des fertigen Produkts — manuell oder aus der Berechnung. |
 | **Geflechtsdichte** | Geflechtsdichte mit Einheiten-Auswahl **Schlaglänge**, **Flechten pro 10 Millimeter**, **Flechten pro Zoll**, **Flechten pro französisch Zoll** — manuell oder aus der Berechnung. |
 | **Materiallänge auf Spule [m]** | Wie viel Material auf eine Spule passt — manuell oder aus der Berechnung. Basis für die Spulensatz-Rechnung im Tab **Produktion**. |

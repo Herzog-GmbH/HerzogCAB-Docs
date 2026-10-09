@@ -30,7 +30,7 @@ Designs bleiben unverändert.
 |---|---|---|
 | **Geflechtsart** | Geflechtsart, mit der ein neues Design startet. | Rundgeflecht (Standard), Litze (flach), Quadratgeflecht, Spiralgeflecht, Packungsgeflecht, Soutachegeflecht |
 | **Klöppelzahl** | Klöppelzahl des neuen Designs. Die zulässigen Werte richten sich nach der gewählten Geflechtsart — beim Tippen springt das Feld auf die nächste erlaubte Zahl. | Standard 16 |
-| **Flechtwinkel** | Start-Flechtwinkel. | 20–80 °, Standard 45 ° |
+| **Flechtwinkel** | Start-Flechtwinkel, im eingestellten [Bezug des Flechtwinkels](appearance.md#flechtwinkel). | 20–80 ° zur Querrichtung (zur Geflechtsachse angezeigt als 10–70 °), Standard 45 ° |
 | **Bedeckung** | Start-Bedeckung. | 0–100 %, Standard 70 % |
 
 ### Vorschau & Ansicht

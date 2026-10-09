@@ -17,7 +17,7 @@ fertige Produkt wird.
 | **Feinheit** | tex, dtex, den, Nr_metrisch, Nr_englisch | Feinheit (Titer) eines Fadens. Die Einheit wählen Sie im Auswahlfeld rechts daneben (Standard: tex). Für die Berechnung wird der Wert intern nach tex umgerechnet. |
 | **Fachung** | stk. | Fäden je Klöppel; vorbelegt mit 1. Die Feinheit gilt wie auf allen anderen Seiten für einen Faden. Im Auftrag kommt die Fachung aus dem Tab **Material**. |
 | **Klöppelanzahl** | stk. | Anzahl der mitflechtenden Klöppel. |
-| **Flechtwinkel** | ° | Winkel, unter dem die Fäden zur Produktachse verlaufen. |
+| **Flechtwinkel** | ° | Winkel der Fäden im eingestellten [Bezug](../../admin/settings/appearance.md#flechtwinkel). |
 | **Produktlänge** | m | Länge des fertigen Produkts, für das das Gewicht berechnet wird. |
 
 !!! note "Gültige Eingabebereiche"
@@ -34,8 +34,8 @@ fertige Produkt wird.
 Der gemeinsame Aufbau aller Berechnungsseiten steht in
 [So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
 
-Je flacher der Flechtwinkel (kleinerer Wert), desto höher das
-Produktgewicht. Achten Sie daher auf einen realistischen, zur Maschine
+Je kleiner der Flechtwinkel zur Querrichtung (bzw. je größer zur
+Geflechtsachse), desto höher das Produktgewicht. Achten Sie daher auf einen realistischen, zur Maschine
 passenden Flechtwinkel.
 
 ## Berechnung

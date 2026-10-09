@@ -12,7 +12,7 @@ Diese Berechnung ermittelt für ein Hohlgeflecht (Schlauchgeflecht) die benötig
 |---|---|---|
 | **Garnart** | – | Auswahl zwischen *Multifil* und *Monofil*. Bei *Monofil* entfällt der Faktor Breite/Ø (intern = 1), und das Breitenfeld heißt **Materialdurchmesser**. |
 | **Geflechtsdurchmesser** | mm | Außendurchmesser des fertigen Hohlgeflechts. |
-| **Flechtwinkel** | ° | Winkel der Fäden zur Geflechtsachse. Zulässig größer 0° und kleiner 90° (Vorgabe 45°). |
+| **Flechtwinkel** | ° | Winkel der Fäden im eingestellten [Bezug](../../admin/settings/appearance.md#flechtwinkel). Zulässig größer 0° und kleiner 90° (Vorgabe 45°). |
 | **Materialbreite** bzw. **Materialdurchmesser** | mm | Bei *Multifil* die abgeflachte Breite des Garns, bei *Monofil* der Materialdurchmesser. |
 | **Faktor Breite/Ø** | – | Verhältnis Breite zu Durchmesser des Garns (1,0 – 3,0; Vorgabe 1,25). Nur bei *Multifil* sichtbar; bei *Monofil* fest 1,0. |
 | **Fachung** | stk. | Anzahl der parallel laufenden Fäden je Klöppel (Vorgabe 1). |

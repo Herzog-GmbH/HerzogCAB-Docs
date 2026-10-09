@@ -45,14 +45,14 @@ flowchart LR
 5. Klicken Sie auf **Jetzt abgleichen**. Der Stand wechselt von
    *Arbeitsverzeichnis wird gelesen …* über *Wird abgeglichen …* zu
    *Zuletzt abgeglichen: &lt;Zeit&gt;*.
-6. Klicken Sie auf **Sichern**.
+6. Klicken Sie auf **Speichern**.
 
 Ab jetzt gleicht die Desktop-App jede gespeicherte Änderung von selbst ab.
 
 ## Weg B: Arbeitsbereich als ZIP importieren
 
-1. Suchen Sie das Arbeitsverzeichnis: *Datei > Einstellungen*, Tab
-   **Speicherorte** (Referenz: [Speicherorte](../admin/settings/files.md)).
+1. Suchen Sie das Arbeitsverzeichnis: *Systemverwaltung > Speicherort*,
+   Abschnitt **Arbeitsbereich** (Referenz: [Speicherort](../admin/storage-location.md)).
 2. Packen Sie den Ordner als ZIP — im Windows-Explorer mit Rechtsklick,
    *Senden an > ZIP-komprimierter Ordner*. Große Unterordner wie
    `machines/` können Sie weglassen.

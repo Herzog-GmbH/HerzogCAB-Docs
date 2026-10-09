@@ -153,8 +153,9 @@ Alle Fachdaten eines Profils liegen als Dateien und Ordner direkt im
 | Druckvorlagen | `Printouts\` (darin `templates\` und `assets\`) |
 | Protokoll (falls aktiviert) | `logs\herzogcab.log` |
 
-Dieselben Pfade zeigt auch der Einstellungen-Dialog im Tab
-[Speicherorte](settings/files.md) — dort nur zur Information.
+Bis Version 2.1.0 zeigte der Einstellungen-Dialog dieselben Pfade zusätzlich
+im Tab *Speicherorte*; der Tab ist entfallen, die Übersicht steht nur noch
+hier.
 
 !!! tip "Datensicherung"
     Für ein vollständiges Backup genügt es, das **Arbeitsverzeichnis** jedes
@@ -163,6 +164,5 @@ Dieselben Pfade zeigt auch der Einstellungen-Dialog im Tab
 ## Verwandte Seiten
 
 * [Profile (Arbeitsbereiche)](profiles.md) — Arbeitsverzeichnis festlegen und wechseln
-* [Einstellungen: Speicherorte](settings/files.md) — Pfadübersicht im Einstellungen-Dialog
 * [Dateiablage im Überblick](../appendix/file-locations.md)
 * [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md) — Sperre, Versionen und Rückfragen

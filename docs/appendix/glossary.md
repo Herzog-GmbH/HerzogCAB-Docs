@@ -13,7 +13,7 @@
 | **Entra ID** | Microsoft Entra ID (früher Azure Active Directory) – Cloud-Verzeichnisdienst von Microsoft. Herzog CAB kann Benutzer darüber anmelden lassen, siehe [Authentifizierung](../admin/authentication.md). |
 | **Fachung** | Anzahl der Fäden je Klöppel. |
 | **Feinheit / Titer** | App-Begriff für die **lineare Dichte** – Masse pro Längeneinheit (tex, dtex, den …). |
-| **Flechtwinkel** | Winkel zwischen Strang und Längsachse des Produkts. |
+| **Flechtwinkel** | Winkel, unter dem ein Strang im Geflecht verläuft — bei Herzog standardmäßig zur Querrichtung gemessen, in der Fachliteratur meist zur Geflechtsachse; beide ergänzen sich zu 90°. Der Bezug ist unter *Einstellungen > Allgemein > Flechtwinkel* wählbar. |
 | **Gangbahn** | Die Bahn, auf der die Klöppel durch die Flechtmaschine laufen. Im Designer lässt sich die Bewegung der Klöppel auf der Gangbahn animiert darstellen, siehe [Besetzung und Gangbahn-Animation](../designer/animation.md). |
 | **Geflechtsdichte** | App-Begriff für die Flechtdichte; das zugehörige Maß ist die **Schlaglänge** (engl. *lay length*, auch „Verlegelänge"). |
 | **Herzog CAB Web / Web-App** | Herzog CAB im Browser unter app.herzog-cab.com, siehe [Web-App](../web/index.md). |

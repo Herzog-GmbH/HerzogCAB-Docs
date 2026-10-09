@@ -128,6 +128,13 @@ verändert die Steigung des Musters im Flechtbild und wirkt live auf die
 [3D-Ansicht](view-3d.md). Der aktuelle Wert steht auch in der
 Dokument-Kopfzeile.
 
+Feld und Regler zeigen den Winkel im eingestellten
+[Bezug des Flechtwinkels](../admin/settings/appearance.md#flechtwinkel).
+Die Angabe 20° bis 80° gilt für den Bezug *Querrichtung (Herzog)*; beim
+Bezug *Geflechtsachse* erscheint derselbe Bereich als 10° bis 70°. Der
+Regler bleibt so gerichtet, dass nach rechts ein größerer angezeigter Wert
+folgt; sein Kurzhinweis zeigt ein Erklärbild des Bezugs.
+
 ### Fachung
 
 Zahlenfeld für die Anzahl der Fäden je Klöppelposition (**1 bis 100**). Die

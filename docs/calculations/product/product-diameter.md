@@ -19,7 +19,7 @@ Maschinenwahl und Angebotskalkulation.
 | **Feinheit:** | tex, dtex, den, Nr metrisch, Nr englisch | Feinheit (Titer) des Garns. Die Einheit wählen Sie im Auswahlfeld rechts daneben; intern wird der Wert nach tex umgerechnet. Mindestwert 1. |
 | **Fachung:** | stk. | Anzahl der parallel geführten Fäden je Klöppel. Mindestwert 1. |
 | **Klöppelanzahl:** | stk. | Anzahl der Klöppel der Flechtmaschine (max. 1500). Mindestwert 5. |
-| **Flechtwinkel:** | ° | Winkel der Stränge zur Längsachse. Zulässig 5° bis 85°. |
+| **Flechtwinkel:** | ° | Winkel der Stränge im eingestellten [Bezug](../../admin/settings/appearance.md#flechtwinkel). Zulässig 5° bis 85°. |
 | **Füllungsgrad:** | % | Wie dicht der theoretisch verfügbare Querschnitt mit Material gefüllt ist (1–100 %). Startwert 70 %. |
 
 !!! tip "Material einmal pflegen, immer wieder nutzen"

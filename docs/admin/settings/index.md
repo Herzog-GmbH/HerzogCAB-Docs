@@ -6,8 +6,11 @@
 
 Der Einstellungen-Dialog bündelt die Programmeinstellungen, die nicht in der
 [Systemverwaltung](../index.md) liegen: Sprache und Darstellung, Diagnose und
-Datenschutz, die Pfadübersicht, die Designer-Vorgaben und den Import von
-Altdaten, Lizenz und Cloud sowie den eingebauten Webserver. Sie öffnen ihn über das Menü *Datei > Einstellungen*.
+Datenschutz, den Bezug des Flechtwinkels, die Designer-Vorgaben und den
+Import von Altdaten, Lizenz und Cloud sowie den eingebauten Webserver. Sie
+öffnen ihn über das Menü *Datei > Einstellungen* oder das Zahnrad-Symbol
+unten in der Navigation. Der Dialog hat keine eigene Kopfzeile mehr; sein
+Name steht in der Titelleiste des Fensters.
 
 ![Einstellungen-Dialog, Tab „Allgemein".](../../assets/screenshots/settings/einstellungen-allgemein.png)
 
@@ -15,24 +18,31 @@ Altdaten, Lizenz und Cloud sowie den eingebauten Webserver. Sie öffnen ihn übe
 
 | Tab | Inhalt |
 |---|---|
-| **Allgemein** | Profil (aktives Profil, **Profil wechseln …**, **Profile verwalten …**), Darstellung (Sprache, Schriftgröße, Design), Diagnose, Datenschutz und Produktionsplanung — siehe [Allgemein](appearance.md) |
-| **Speicherorte** | Anzeige aller Datei- und Ordnerpfade des Arbeitsbereichs (nur Information) — siehe [Speicherorte (Dateien und Ordner)](files.md) |
+| **Allgemein** | Profil (aktives Profil, **Profil wechseln …**, **Profile verwalten …**), Darstellung (Sprache, Schriftgröße, Design), Diagnose, Datenschutz, Produktionsplanung und Flechtwinkel — siehe [Allgemein](appearance.md) |
 | **Design** | Vorgaben für neue Designs, Ansicht, Animation und Speichern im Designer sowie der Import von Design-Altdaten — siehe [Design](legacy-import.md) |
 | **Lizenz** | Nur im Kontomodell: Lizenzstatus, Konto, Offline-Miete, Abmelden vom Rechner und Cloud-Upload in die Web-App — siehe [Lizenz und Cloud](license.md) |
-| **Webserver** | Serverstatus, IP-Auswahl, QR-Code, Port und Passwortschutz — siehe [Webserver und QR-Code](web-server.md) |
+| **Webserver** | Einschalten und Port, Passwort (Pflicht für den Zugriff aus dem Netz), Serverstatus, IP-Auswahl und QR-Code — siehe [Webserver und QR-Code](web-server.md) |
+
+!!! info "Kein Tab „Speicherorte“ mehr"
+    Bis Version 2.1.0 gab es einen Tab **Speicherorte** mit der Liste aller
+    Dateipfade. Diese Übersicht steht vollständig unter
+    [*Systemverwaltung > Speicherort*](../storage-location.md); der Tab ist
+    deshalb entfallen.
 
 ## Schaltflächen des Dialogs
 
+Die beiden Schaltflächen stehen unten rechts nebeneinander.
+
 | Schaltfläche | Beschreibung |
 |---|---|
-| **Sichern** | Übernimmt die Einstellungen aller Tabs und schließt den Dialog; bei Erfolg meldet Herzog CAB *„Einstellungen erfolgreich gespeichert."* |
-| **Abbruch** | Schließt den Dialog, ohne zu speichern. |
+| **Speichern** | Übernimmt die Einstellungen aller Tabs und schließt den Dialog; bei Erfolg meldet Herzog CAB *„Einstellungen erfolgreich gespeichert."* |
+| **Abbrechen** | Schließt den Dialog, ohne zu speichern. |
 
 !!! tip "Live-Vorschau"
     **Schriftgröße** und **Design** wirken bereits beim Umschalten als
     Vorschau auf die gesamte Oberfläche — endgültig übernommen werden sie
-    erst mit **Sichern**. Ein **Sprachwechsel** startet Herzog CAB nach dem
-    Sichern neu.
+    erst mit **Speichern**. Ein **Sprachwechsel** startet Herzog CAB nach dem
+    Speichern neu.
 
 ## Verwandte Seiten
 

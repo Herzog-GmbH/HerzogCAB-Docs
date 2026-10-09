@@ -16,7 +16,7 @@ Produkt – und kann das Ergebnis wahlweise direkt in gängige Dichte-Einheiten
 |---|---|---|
 | **Geflechtsart** | – | Auswahl zwischen **Rundgeflecht** und **Litzengeflecht**. Bestimmt die verwendete Formel. Bei *Rundgeflecht* ist das Maßfeld der Geflechtsdurchmesser, bei *Litzengeflecht* die Geflechtsbreite. |
 | **Geflechtsdurchmesser** / **Geflechtsbreite** | mm | Maß des Geflechts. Die Beschriftung wechselt je nach Geflechtsart: *Geflechtsdurchmesser* bei Rundgeflecht, *Geflechtsbreite* bei Litzengeflecht. |
-| **Flechtwinkel** | ° | Winkel, unter dem die Stränge zur Produktachse verlaufen (0–90°). |
+| **Flechtwinkel** | ° | Winkel der Stränge im eingestellten [Bezug](../../admin/settings/appearance.md#flechtwinkel) (0–90°). |
 | **Ergebnis-Einheit** | – | In welcher Einheit das Ergebnis ausgegeben wird: **Schlaglänge [mm]**, **Flechten / 10 mm**, **Flechten / Zoll** oder **Flechten / franz. Zoll**. |
 | **Klöppelanzahl** | stk. | Anzahl der Klöppel. **Nur erforderlich**, wenn als Ergebnis-Einheit eine *Flechten / …*-Variante gewählt ist; bei *Schlaglänge [mm]* wird das Feld ausgeblendet. |
 

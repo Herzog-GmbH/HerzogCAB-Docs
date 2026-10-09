@@ -47,9 +47,13 @@ vorgegeben als** ab.
 Der gemeinsame Aufbau aller Berechnungsseiten steht in
 [So sind Berechnungsseiten aufgebaut](../../basics/calc-page-anatomy.md).
 
-Der Flechtwinkel wird — wie überall in Herzog CAB — gegen die
-**Querrichtung** des Geflechts angegeben, genau wie in
-[Flechtwinkel](braid-angle.md). Die Berechnung gibt es auch in der
+Der Flechtwinkel — als **Soll-Flechtwinkel** wie als Ergebnis — erscheint
+im eingestellten **Bezug des Flechtwinkels**: standardmäßig zur
+**Querrichtung** (Herzog), auf Wunsch zur **Geflechtsachse**
+(Fachliteratur). Umgestellt wird unter
+[*Einstellungen > Allgemein > Flechtwinkel*](../../admin/settings/appearance.md#flechtwinkel); ein Soll-Flechtwinkel
+wird dabei im gewählten Bezug eingegeben. Zeigen Sie mit der Maus auf das
+Feld, nennt der Kurzhinweis beide Werte. Die Berechnung gibt es auch in der
 [Web-App](../../web/calculations.md).
 
 ## Berechnung

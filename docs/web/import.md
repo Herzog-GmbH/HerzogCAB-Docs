@@ -35,9 +35,9 @@ Kachel auf der Startseite; sie erfordert das Recht
 
 ## So packen Sie den Arbeitsbereich
 
-1. Öffnen Sie in der Desktop-App *Datei > Einstellungen*, Tab
-   **Speicherorte** — dort steht der Pfad des **Arbeitsverzeichnisses**
-   (siehe [Speicherorte](../admin/settings/files.md)).
+1. Öffnen Sie in der Desktop-App *Systemverwaltung > Speicherort* — dort
+   steht der Pfad des **Arbeitsverzeichnisses** (siehe
+   [Speicherort](../admin/storage-location.md)).
 2. Packen Sie diesen Ordner mit dem Windows-Explorer (*Senden an > ZIP-
    komprimierter Ordner*) oder einem Packprogramm. Der Ordner enthält u. a.
    `orders.json`, `materials.json`, die Design-Dateien und Unterordner.
@@ -68,5 +68,5 @@ Aufträge nachzuziehen.
 
 * [Daten vom Desktop in die Web-App bringen](../tasks/desktop-to-web.md) — der Ablauf
 * [Lizenz und Cloud (Desktop-App)](../admin/settings/license.md) — der automatische Cloud-Upload
-* [Speicherorte (Desktop-App)](../admin/settings/files.md) — wo das Arbeitsverzeichnis liegt
+* [Speicherort (Desktop-App)](../admin/storage-location.md) — wo das Arbeitsverzeichnis liegt
 * [Medienbibliothek (Web-App)](media.md)
