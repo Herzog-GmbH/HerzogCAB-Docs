@@ -11,13 +11,7 @@ letzte Ansicht merkt, wie schnell die Gangbahn-Animation läuft und was beim
 Schließen eines ungespeicherten Designs passiert. Ganz unten liegt die Karte
 **Legacy-Designimport** für Altdaten.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Design" des Einstellungen-Dialogs mit den Karten
-    „Vorgaben für neue Designs", „Vorschau & Ansicht", „Animation",
-    „Speichern" und „Legacy-Designimport".
-    **So erzeugen:** *Datei > Einstellungen*, Tab **Design**, Dialog so hoch
-    ziehen, dass alle fünf Karten sichtbar sind.
-    **Ziel-Datei:** `assets/screenshots/settings/einstellungen-design.png`
+![Tab „Design“ der Einstellungen mit Vorgaben für neue Designs, Vorschau & Ansicht, Animation und Speichern](../../assets/screenshots/settings/einstellungen-design.png)
 
 ## Bedienelemente im Detail
 

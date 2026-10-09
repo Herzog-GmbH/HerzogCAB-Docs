@@ -36,10 +36,7 @@ the [bobbins](../master-data/bobbins.md) and
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Herzog-Katalog in der Kachelansicht, Reiter *Flechtmaschinen*, mit Reiterleiste, Suchfeld, Baureihenfilter, Umschalter Kacheln/Liste und Trefferzahl.
-    **So erzeugen:** Navigationspunkt **Katalog** öffnen, Reiter *Flechtmaschinen* wählen, Ansicht **Kacheln**; warten, bis die Bilder geladen sind.
-    **Ziel-Datei:** `assets/screenshots/catalog/katalog.png`
+![Herzog catalogue in tile view, Braiding machines tab, with search field, series filter and Tiles/List switch](../assets/screenshots/catalog/katalog.png)
 
 At the top is the header **HERZOG CATALOGUE**, below it the toolbar
 with heading (*Select available machines*, on the **Bobbins** tab
@@ -62,10 +59,7 @@ this filter*.
 
 ## Details of a machine model { #details-eines-maschinenmodells }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Das Detailfenster einer Flechtmaschine (z. B. Feindrahtflechtmaschine KB 1/12-80): Bild, Kennzahlen, Technische Daten, Im Lieferumfang, darunter Zubehör zum Ankreuzen und „Abzug und Aufnahme" mit Auswahlkreisen.
-    **So erzeugen:** Im Katalog Reiter *Flechtmaschinen*, „KB 1/12-80" suchen und die Kachel anklicken.
-    **Ziel-Datei:** `assets/screenshots/catalog/katalog-details.png`
+![Detail window of the KB 1/12-80 with key figures, technical data, scope of delivery, accessories and take-up options](../assets/screenshots/catalog/katalog-details.png)
 
 The detail window bears the name of the model and shows from top to
 bottom:
@@ -82,10 +76,7 @@ bottom:
 
 ## Creating as your own machine { #als-eigene-maschine-anlegen }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der untere Teil des Detailfensters: Abschnitt „Als eigene Maschine anlegen" mit Besetzung (drei Felder nebeneinander), Maschinengruppe, Seriennummer, „Name in Flechtmaschinen" und dem Haken „… in die Spulen übernehmen"; unten **Abbrechen** und **Zu Flechtmaschinen hinzufügen**.
-    **So erzeugen:** Detailfenster einer Flechtmaschine mit mehreren Besetzungen öffnen (Arbeitsverzeichnis ohne passende Spule), zwei Zubehörteile ankreuzen und ans Ende scrollen.
-    **Ziel-Datei:** `assets/screenshots/catalog/katalog-anlegen.png`
+![The “Create as own machine” section with setup, machine group, serial number and name in braiding machines](../assets/screenshots/catalog/katalog-anlegen.png)
 
 From the catalogue model to your own machine in the master data:
 

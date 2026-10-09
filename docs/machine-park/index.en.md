@@ -30,10 +30,7 @@ you do not have to reload the page.
 
 ![Machine Fleet: fleet overview with search field, filter row and machine cards with status traffic light.](../assets/screenshots/master-data/maschinenpark.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Maschinenpark-Übersicht (Kartenansicht) mit der aktuellen Filterzeile inklusive Filter **Maschinenart** und einem gemischten Park aus Flecht- und Spulmaschinen
-    **So erzeugen:** *Maschinenpark* öffnen; Datenbestand mit mindestens einer Spulmaschine, damit der Filter „Maschinenart" relevant ist; Kartenansicht aktiv
-    **Ziel-Datei:** `assets/screenshots/machine-park/maschinenpark.png`
+![Machine Fleet in card view with filter row and take-up winders, pay-off and braiding machines](../assets/screenshots/machine-park/maschinenpark.png)
 
 The screen consists of three areas:
 

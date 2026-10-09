@@ -18,10 +18,7 @@ At the bottom left of the navigation bar, click your **user card**
 button with your initials in the same place does this. The
 **My profile** dialog opens with three tabs.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Mein Profil“, Reiter „Profil“ eines Kontobenutzers: rundes Profilbild bzw. Initialen, ausgegraute Felder Anzeigename und E-Mail, darunter der Hinweis „Name und E-Mail-Adresse gehören zum Kundenbenutzer …“ und die Schaltfläche **Im Lizenzportal ändern**.
-    **So erzeugen:** Kunden-Build mit Kontoanmeldung (Musterbenutzer), unten links in der Navigation auf die eigene Benutzerkarte klicken.
-    **Ziel-Datei:** `assets/screenshots/admin/mein-profil.png`
+![The “My profile” dialog, “Profile” tab: display name and e-mail greyed out, below them “Change in licence portal”](../assets/screenshots/admin/mein-profil.png)
 
 ## "Profile" tab { #tab-profil }
 

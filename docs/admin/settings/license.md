@@ -19,13 +19,7 @@ Arbeitsverzeichnisses mit der [Web-App](../../web/index.md) ein.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Lizenz" mit den drei Karten „Lizenz – Kundenkonto
-    (Lizenzserver)", „Konto" und „Cloud (app.herzog-cab.com)"; Konto, Benutzer,
-    Edition, Bausteine, Miete und Plätze gefüllt, Cloud-Schalter aktiv.
-    **So erzeugen:** Kunden-Build mit Kontoanmeldung, *Datei > Einstellungen*,
-    Tab **Lizenz**.
-    **Ziel-Datei:** `assets/screenshots/settings/einstellungen-lizenz.png`
+![Tab „Lizenz“ der Einstellungen mit den Karten zum Kundenkonto, Konto und Cloud](../../assets/screenshots/settings/einstellungen-lizenz.png)
 
 Der Tab besteht aus drei Karten: **Lizenz** (Status), **Konto** (Aktionen)
 und **Cloud**.

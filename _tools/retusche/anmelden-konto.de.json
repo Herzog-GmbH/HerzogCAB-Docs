@@ -1,0 +1,4 @@
+[
+ {"bild":"admin/anmelden-konto.png","box":[18,66,300,84],"text":"Konto: Musterflechterei GmbH","schrift":"segoeui","groesse":12,"farbe":"#d6e6f8","grund":"verlauf"},
+ {"bild":"admin/anmelden-konto.png","box":[28,147,400,167],"text":"max.muster@musterflechterei.example","schrift":"segoeui","groesse":13}
+]

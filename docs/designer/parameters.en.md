@@ -15,15 +15,7 @@ respective machine.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Das Parameter-Panel links im Designer mit Designname, den
-    Auswahllisten **Geflechtsart** (aufgeklappt, alle sechs Einträge sichtbar)
-    und **Geflechtsbindung** sowie den Feldern Anzahl Klöppel, Flechtwinkel
-    und Fachung.
-    **So erzeugen:** *Designer* öffnen, **Neu** klicken; die Liste
-    Geflechtsart aufklappen; nur das linke Panel (oberer Teil bis
-    einschließlich „Fachung") aufnehmen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-parameter-panel.png`
+![Parameter panel with the braid type list open, showing all six braid types](../assets/screenshots/designer/designer-parameter-panel.png)
 
 The card is compact and **scrollable** — on small screens you scroll
 within the panel to reach the lower fields.

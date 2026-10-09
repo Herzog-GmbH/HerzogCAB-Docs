@@ -1,0 +1,7 @@
+[
+ {"bild":"settings/einstellungen-lizenz.png","box":[381,139,640,158],"text":"Musterflechterei GmbH","schrift":"segoeui","groesse":12},
+ {"bild":"settings/einstellungen-lizenz.png","box":[381,164,715,182],"text":"Max Muster (max.muster@musterflechterei.example) –","schrift":"segoeui","groesse":12},
+ {"bild":"settings/einstellungen-lizenz.png","box":[381,182,715,201],"text":"Administrator","schrift":"segoeui","groesse":12},
+ {"bild":"settings/einstellungen-lizenz.png","box":[381,234,715,253],"text":"Vollversion (Programm und Web)","schrift":"segoeui","groesse":12},
+ {"bild":"settings/einstellungen-lizenz.png","box":[381,253,715,272],"text":" ","schrift":"segoeui","groesse":12}
+]

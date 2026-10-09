@@ -7,10 +7,7 @@ Von dort erreichen Sie alle Bereiche über die Navigation links. Diese Seite
 erklärt, wie das Hauptfenster aufgebaut ist und welche Bereiche in jedem
 Modul gleich bleiben.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Hauptfenster mit eingeklappter Navigation (schmale Symbolleiste links), Titelzeile „Home“ oben links im Inhalt und der Startseite in voller Breite; Menüleiste *Datei · Ansicht · Hilfe*.
-    **So erzeugen:** Kunden-Build, Fenster ca. 1600 px breit, Pfeil oben in der Navigation klicken, Maus aus dem Navigationsbereich nehmen, *Home* anzeigen. Ersetzt das bisherige Bild `getting-started/oberflaeche-home.png`.
-    **Ziel-Datei:** `assets/screenshots/basics/hauptfenster.png`
+![Hauptfenster mit eingeklappter Navigation, Menüleiste Datei, Ansicht, Hilfe und der Startseite in voller Breite](../assets/screenshots/basics/hauptfenster.png)
 
 ## Aufbau des Hauptfensters
 

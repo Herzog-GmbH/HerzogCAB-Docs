@@ -21,10 +21,7 @@ take-up winders have their own filter.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Aufwickler-Liste als Karten (Bild, Baureihe, „Trommel bis Ø … mm", Traglast und Verlegebreite) samt Werkzeugleiste.
-    **So erzeugen:** Navigationspunkt *Stammdaten > Aufwickler* öffnen; einige Aufwickler der Baureihen AW, AWS und AWH (Demo-Daten „Musterbetrieb") anlegen, einen davon mit Haspel.
-    **Ziel-Datei:** `assets/screenshots/master-data/aufwickler.png`
+![Take-up winder page with three cards: series, drum or reel size, load capacity and traverse width](../assets/screenshots/master-data/aufwickler.png)
 
 At the top is a toolbar, below it the **Machine list** as cards.
 Each card shows image, series (without series: *Take-up winders*) and the
@@ -56,10 +53,7 @@ editing. Right-clicking opens a context menu with **Open**,
 
 ## The "Create new take-up winder" dialog { #der-dialog-neuen-aufwickler-erstellen }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neuen Aufwickler erstellen* mit den Abschnitten „Maschinendaten", „Maße und Grenzen" und „Bauart".
-    **So erzeugen:** In *Stammdaten > Aufwickler* auf **Neu** klicken, Baureihe **AWS** wählen und die Maße mit Demo-Werten füllen; bis zum Abschnitt „Bauart" scrollen.
-    **Ziel-Datei:** `assets/screenshots/master-data/aufwickler-neu-dialog.png`
+![The “Create new take-up winder” dialog with image and Machine data section](../assets/screenshots/master-data/aufwickler-neu-dialog.png)
 
 The dialog is divided into sections from top to bottom. Empty
 number fields show a dash with unit (e.g. *– mm*) and count as

@@ -25,6 +25,8 @@ As long as nothing has been calculated in the current session, the
 sidebar shows the hint *"No calculation in this session yet. Results
 appear here and can be reopened with one click."*
 
+![Calculation with the History sidebar open: each calculation appears with its result and time](../assets/screenshots/basics/verlauf-leiste.png)
+
 ## What a history entry shows { #was-ein-verlaufseintrag-zeigt }
 
 Each entry is a small card with:

@@ -14,11 +14,7 @@ in the browser.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Benutzerliste im Lizenzportal mit Namensfeld und „Speichern" je Zeile, Rolle, letzter Anmeldung, Status und den Knöpfen Deaktivieren und Löschen; darunter das Formular „Benutzer einladen" mit Sprachwahl.
-    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/benutzer`; automatisch per `python _tools/web_screenshots.py shots nur:portal-benutzer`
-    **Ziel-Datei:** `assets/screenshots/portal/benutzer.png`
-    <!-- web-bild ../assets/screenshots/portal/benutzer.png -->
+![User list in the licence portal with name, role, machine models and status, below it “Invite user” with language selection](../assets/screenshots/portal/benutzer.png)
 
 At the top is the **User list**, below it the **Invite
 user** form. Editors and viewers can only view the list; it is managed by

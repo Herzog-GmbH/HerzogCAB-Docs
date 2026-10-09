@@ -7,10 +7,7 @@ From there you reach all areas via the navigation on the left. This page
 explains how the main window is structured and which areas remain the same in every
 module.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Hauptfenster mit eingeklappter Navigation (schmale Symbolleiste links), Titelzeile „Home“ oben links im Inhalt und der Startseite in voller Breite; Menüleiste *Datei · Ansicht · Hilfe*.
-    **So erzeugen:** Kunden-Build, Fenster ca. 1600 px breit, Pfeil oben in der Navigation klicken, Maus aus dem Navigationsbereich nehmen, *Home* anzeigen. Ersetzt das bisherige Bild `getting-started/oberflaeche-home.png`.
-    **Ziel-Datei:** `assets/screenshots/basics/hauptfenster.png`
+![Main window with the navigation collapsed, the File, View, Help menu bar and the home page at full width](../assets/screenshots/basics/hauptfenster.png)
 
 ## Structure of the main window { #aufbau-des-hauptfensters }
 

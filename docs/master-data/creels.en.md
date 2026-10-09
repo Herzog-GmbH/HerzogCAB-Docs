@@ -16,10 +16,7 @@ filter.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Gatter-Liste als Karten (Bild, Baureihe, „… Ablaufstellen", Abzug und Spulengröße) samt Werkzeugleiste.
-    **So erzeugen:** Navigationspunkt *Stammdaten > Gatter* öffnen; einige Gatter der Baureihen GU und GR (Demo-Daten „Musterbetrieb") anlegen.
-    **Ziel-Datei:** `assets/screenshots/master-data/gatter.png`
+![Creel page with search field, buttons and a creel card with series and pay-off positions](../assets/screenshots/master-data/gatter.png)
 
 At the top is a toolbar, below it the **Machine list** as cards.
 Each card shows image, series (without series: *Creels*),
@@ -35,10 +32,7 @@ is via the [Herzog catalogue](../catalog/index.md) (tab
 
 ## The "Create new creel" dialog { #der-dialog-neues-gatter-erstellen }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neues Gatter erstellen* mit den Abschnitten „Ablaufstellen und Spulen" und „Bauart" (Fadenspannung, Überwachung, Material als Ankreuzfelder).
-    **So erzeugen:** In *Stammdaten > Gatter* auf **Neu** klicken, Baureihe **GU** wählen, Ablaufstellen 8, davon aktiv 4 eintragen und bis „Bauart" scrollen.
-    **Ziel-Datei:** `assets/screenshots/master-data/gatter-neu-dialog.png`
+![The “Create new creel” dialog with image and Machine data section](../assets/screenshots/master-data/gatter-neu-dialog.png)
 
 The dialog is divided into sections from top to bottom. Empty fields
 remain empty and count as not stored.

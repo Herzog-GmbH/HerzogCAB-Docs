@@ -15,15 +15,7 @@ Maschine hergeleitet.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Das Parameter-Panel links im Designer mit Designname, den
-    Auswahllisten **Geflechtsart** (aufgeklappt, alle sechs Einträge sichtbar)
-    und **Geflechtsbindung** sowie den Feldern Anzahl Klöppel, Flechtwinkel
-    und Fachung.
-    **So erzeugen:** *Designer* öffnen, **Neu** klicken; die Liste
-    Geflechtsart aufklappen; nur das linke Panel (oberer Teil bis
-    einschließlich „Fachung") aufnehmen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-parameter-panel.png`
+![Parameter-Panel mit aufgeklappter Auswahlliste Geflechtsart und allen sechs Geflechtsarten](../assets/screenshots/designer/designer-parameter-panel.png)
 
 Die Karte ist kompakt und **scrollbar** — auf kleinen Bildschirmen rollen
 Sie im Panel, um die unteren Felder zu erreichen.

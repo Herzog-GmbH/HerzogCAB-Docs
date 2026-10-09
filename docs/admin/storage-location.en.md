@@ -35,10 +35,7 @@ Herzog CAB distinguishes two storage locations:
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Bildschirm „Speicherort" mit Badge NETZWERK/LOKAL, Pfad der zentralen Benutzerdaten und Abschnitt „Arbeitsbereich (aktives Profil)"
-    **So erzeugen:** *Systemverwaltung > Speicherort* öffnen
-    **Ziel-Datei:** `assets/screenshots/admin/speicherort.png`
+![The “Storage location” screen with the local workspace of the active profile and the “Move to network drive …” button](../assets/screenshots/admin/speicherort.png)
 
 ## Controls in detail { #bedienelemente-im-detail }
 
@@ -93,10 +90,7 @@ flowchart TD
   H --> N[Herzog CAB restarts]
 ```
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Auf Netzlaufwerk verschieben" mit bisherigem Ordner, Anzahl Dateien und Größe, eingetragenem neuen Ordner
-    **So erzeugen:** *Systemverwaltung > Speicherort* bei lokalem Arbeitsverzeichnis, **Auf Netzlaufwerk verschieben …**
-    **Ziel-Datei:** `assets/screenshots/admin/auf-netzlaufwerk-verschieben.png`
+![The “Move to network drive” dialog with the current workspace folder and the field for the new folder](../assets/screenshots/admin/auf-netzlaufwerk-verschieben.png)
 
 | Element | Meaning |
 |---|---|

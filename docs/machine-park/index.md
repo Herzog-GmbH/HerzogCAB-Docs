@@ -30,10 +30,7 @@ Auftragsdaten ändern — Sie müssen die Seite nicht neu laden.
 
 ![Maschinenpark: Flotten-Übersicht mit Suchfeld, Filterzeile und Maschinenkarten mit Status-Ampel.](../assets/screenshots/master-data/maschinenpark.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Maschinenpark-Übersicht (Kartenansicht) mit der aktuellen Filterzeile inklusive Filter **Maschinenart** und einem gemischten Park aus Flecht- und Spulmaschinen
-    **So erzeugen:** *Maschinenpark* öffnen; Datenbestand mit mindestens einer Spulmaschine, damit der Filter „Maschinenart" relevant ist; Kartenansicht aktiv
-    **Ziel-Datei:** `assets/screenshots/machine-park/maschinenpark.png`
+![Maschinenpark in der Kartenansicht mit Filterzeile sowie Aufwicklern, Abwickler und Flechtmaschinen](../assets/screenshots/machine-park/maschinenpark.png)
 
 Der Bildschirm besteht aus drei Bereichen:
 

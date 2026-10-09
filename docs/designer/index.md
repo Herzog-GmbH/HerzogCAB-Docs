@@ -88,16 +88,7 @@ Solange kein Design geöffnet ist, ist die Werkzeugleiste gesperrt; nur
 Sobald ein Design geöffnet ist, erscheint die Bearbeitungsansicht. Sie besteht
 aus fünf Bereichen:
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Designer-Bearbeitungsansicht mit geöffnetem Rundgeflecht-Design:
-    Werkzeugleiste oben (mit den Ansichts-Schaltern Voll/Halb/Zylinder/3D),
-    Dokument-Kopfzeile, links Parameter-Panel mit den Auswahllisten
-    Geflechtsart und Geflechtsbindung und der Besetzungsübersicht, Mitte
-    Klöppeltabelle, rechts Flechtbild-Vorschau mit Maßzeile.
-    **So erzeugen:** *Designer* öffnen, **Neu** klicken, Fenster breit ziehen
-    (Farb- und Texturpalette sichtbar in der Werkzeugleiste), einige Klöppel
-    einfärben.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-bearbeitungsansicht.png`
+![Designer mit Rundgeflecht: Werkzeugleiste, links Parameter und Besetzungsübersicht, Mitte Klöppeltabelle, rechts Flechtbild](../assets/screenshots/designer/designer-bearbeitungsansicht.png)
 
 | Bereich | Inhalt |
 |---|---|

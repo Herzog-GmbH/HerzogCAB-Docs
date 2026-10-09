@@ -94,12 +94,7 @@ Ebenfalls in jeder Vorlage verfügbar.
 Ein bereits platziertes Element bearbeiten Sie per **Doppelklick** auf der
 Seiten-Canvas. Je nach Elementtyp öffnet sich ein anderer Dialog:
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Bearbeitungsdialog einer Datentabelle (z. B. „Auftrag“)
-    mit der Zeilen-Werkzeugleiste links und dem Feldvorlagen-Picker rechts.
-    **So erzeugen:** Druck-Editor öffnen, eine Datentabelle wie „Auftrag“ auf
-    die Seite ziehen, per Doppelklick öffnen.
-    **Ziel-Datei:** `assets/screenshots/print-templates/tabelle-bearbeiten.png`
+![Bearbeitungsdialog der Datentabelle „Auftrag“ mit Parameterzeilen links und Feldvorlagen-Picker rechts](../assets/screenshots/print-templates/tabelle-bearbeiten.png)
 
 ### Datentabellen mit wählbaren Zeilen
 
@@ -172,13 +167,7 @@ Programmwerte ein und übernehmen sie:
 | **Liste** | Die zum Suchbegriff/Bereich passenden Programmwerte mit Bezeichnung und – sofern vorhanden – Einheit. Ein Klick zeigt darunter den aktuellen Wert und eine kurze Beschreibung. |
 | **Feld einfügen** | Übernimmt den markierten Programmwert in die aktuell gewählte Zeile bzw. Textstelle. Ein Doppelklick auf einen Listeneintrag tut dasselbe. |
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Feldvorlagen-Picker (Suche, Bereich-Auswahl, Liste,
-    Schaltfläche „Feld einfügen“) im geöffneten Zustand mit ein paar
-    Suchtreffern.
-    **So erzeugen:** Bearbeitungsdialog einer Datentabelle öffnen, im Suchfeld
-    einen Begriff eintippen (z. B. „Durchmesser“).
-    **Ziel-Datei:** `assets/screenshots/print-templates/feldvorlagen-picker.png`
+![Feldvorlagen-Picker mit Suche, Bereich-Auswahl, Trefferliste und Schaltfläche „Feld einfügen“](../assets/screenshots/print-templates/feldvorlagen-picker.png)
 
 ### Zwei Arten von Platzhaltern
 

@@ -101,11 +101,7 @@ example a black and a white yarn on the same carrier. Yarn 1
 carries the color of the carrier; without separate colors, all yarns run in
 this color.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Designer mit Fachung 2 und geöffnetem Dialog „Fachungsfarben – L1": Garn 1 und Garn 2 mit ihren Farben, darunter die Farbauswahl mit aktiver Farbe und Palette; im Hintergrund die Klöppeltabelle mit gestreiften Zellen.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/designs/<id>`, Fachung 2, Rechtsklick auf eine Zeile der Klöppeltabelle; automatisch per `python _tools/web_screenshots.py shots nur:fachungsfarben`
-    **Ziel-Datei:** `assets/screenshots/web/fachungsfarben.png`
-    <!-- web-bild ../assets/screenshots/web/fachungsfarben.png -->
+![Web designer with the “Plying colors – L1” dialog: yarn 1 and yarn 2 with their colors, color selection below](../assets/screenshots/web/fachungsfarben.png)
 
 You color yarns in two ways:
 

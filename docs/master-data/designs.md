@@ -19,12 +19,7 @@ Bearbeiten.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Design-Bibliothek mit Ordnerbaum links, Design-Tabelle rechts
-    (mit Thumbnails) und der Werkzeugleiste darüber.
-    **So erzeugen:** Navigationspunkt **Designs** öffnen, einen Ordner mit
-    mehreren Beispiel-Designs auswählen (Demo-Daten „Musterbetrieb").
-    **Ziel-Datei:** `assets/screenshots/master-data/designs-bibliothek.png`
+![Design-Bibliothek mit Ordnerbaum links, Design-Tabelle mit Vorschaubildern rechts und Werkzeugleiste darüber](../assets/screenshots/master-data/designs-bibliothek.png)
 
 Die Seite besteht aus drei Bereichen:
 

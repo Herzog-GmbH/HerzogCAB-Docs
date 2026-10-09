@@ -27,10 +27,7 @@ Sie erreichen den Editor auf drei Wegen:
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Spulauftrag-Editor mit Kopfzeile (**Zur Auftragsübersicht**, **Drucken**, **Spulauftrag speichern**) und den drei Karten „Auftrag", „Spulerei — was wird gespult?" und „Maschinen und Zeitplan" auf einer Scroll-Seite; verknüpfter Flechtauftrag, gefüllte Farbaufschlüsselung und zwei Spulmaschinen in der Verteiltabelle
-    **So erzeugen:** In der Auftragsübersicht einen Flechtauftrag mit Design anwählen und **Spulauftrag erstellen** klicken; zwei Spulmaschinen hinzufügen, **Spulen gleichmäßig verteilen**
-    **Ziel-Datei:** `assets/screenshots/orders/spulauftrag-editor.png`
+![Spulauftrag-Editor mit den Karten „Auftrag“ und „Spulerei — was wird gespult?“ samt Farbaufschlüsselung](../assets/screenshots/orders/spulauftrag-editor.png)
 
 Alle Bedienelemente der Kopfzeile stehen in **einer Zeile**: Ganz links
 bringt Sie **Zur Auftragsübersicht** (mit Pfeilsymbol) zurück zur

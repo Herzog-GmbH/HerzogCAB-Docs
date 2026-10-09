@@ -36,10 +36,7 @@ den [Spulen](../master-data/bobbins.md) und
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Herzog-Katalog in der Kachelansicht, Reiter *Flechtmaschinen*, mit Reiterleiste, Suchfeld, Baureihenfilter, Umschalter Kacheln/Liste und Trefferzahl.
-    **So erzeugen:** Navigationspunkt **Katalog** öffnen, Reiter *Flechtmaschinen* wählen, Ansicht **Kacheln**; warten, bis die Bilder geladen sind.
-    **Ziel-Datei:** `assets/screenshots/catalog/katalog.png`
+![Herzog-Katalog in der Kachelansicht, Reiter Flechtmaschinen, mit Suchfeld, Baureihenfilter und Umschalter Kacheln/Liste](../assets/screenshots/catalog/katalog.png)
 
 Oben steht die Kopfzeile **HERZOG-KATALOG**, darunter die Werkzeugleiste
 mit Überschrift (*Verfügbare Maschinen wählen*, im Reiter **Spulen**
@@ -62,10 +59,7 @@ diesen Filter*.
 
 ## Details eines Maschinenmodells
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Das Detailfenster einer Flechtmaschine (z. B. Feindrahtflechtmaschine KB 1/12-80): Bild, Kennzahlen, Technische Daten, Im Lieferumfang, darunter Zubehör zum Ankreuzen und „Abzug und Aufnahme" mit Auswahlkreisen.
-    **So erzeugen:** Im Katalog Reiter *Flechtmaschinen*, „KB 1/12-80" suchen und die Kachel anklicken.
-    **Ziel-Datei:** `assets/screenshots/catalog/katalog-details.png`
+![Detailfenster der KB 1/12-80 mit Kennzahlen, technischen Daten, Lieferumfang, Zubehör sowie Abzug und Aufnahme](../assets/screenshots/catalog/katalog-details.png)
 
 Das Detailfenster trägt den Namen des Modells und zeigt von oben nach
 unten:
@@ -82,10 +76,7 @@ unten:
 
 ## Als eigene Maschine anlegen
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der untere Teil des Detailfensters: Abschnitt „Als eigene Maschine anlegen" mit Besetzung (drei Felder nebeneinander), Maschinengruppe, Seriennummer, „Name in Flechtmaschinen" und dem Haken „… in die Spulen übernehmen"; unten **Abbrechen** und **Zu Flechtmaschinen hinzufügen**.
-    **So erzeugen:** Detailfenster einer Flechtmaschine mit mehreren Besetzungen öffnen (Arbeitsverzeichnis ohne passende Spule), zwei Zubehörteile ankreuzen und ans Ende scrollen.
-    **Ziel-Datei:** `assets/screenshots/catalog/katalog-anlegen.png`
+![Abschnitt „Als eigene Maschine anlegen“ mit Besetzung, Maschinengruppe, Seriennummer und Name in Flechtmaschinen](../assets/screenshots/catalog/katalog-anlegen.png)
 
 Vom Katalogmodell zur eigenen Maschine in den Stammdaten:
 

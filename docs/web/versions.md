@@ -55,11 +55,7 @@ Ansehen darf die Versionen jeder, der den Eintrag sehen darf.
 
 ## Der Dialog „Versionen"
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Versionen" eines Designs: oben der Kasten „Aktuell: Version n" mit Datum, Person und Quelle, darunter die Liste der früheren Fassungen mit „Unterschiede" und „Wiederherstellen", bei einer Fassung die aufgeklappte Tabelle der Unterschiede.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/designs/<id>`, Symbol „Versionen"; automatisch per `python _tools/web_screenshots.py shots nur:versionen`
-    **Ziel-Datei:** `assets/screenshots/web/versionen.png`
-    <!-- web-bild ../assets/screenshots/web/versionen.png -->
+![Dialog „Versionen“ eines Designs mit der aktuellen Version, noch ohne frühere Fassungen](../assets/screenshots/web/versionen.png)
 
 Der Dialog heißt *Versionen: &lt;Name des Eintrags&gt;*.
 
@@ -123,11 +119,7 @@ Ohne dieses Recht sehen Sie die Versionen nur.
 
 ## Papierkorb
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Papierkorb der Web-App mit Bereichsfilter (Alle, Design, Auftrag, Material …) und der Tabelle Name, Bereich, Gelöscht am, Von, Quelle mit den Knöpfen „Versionen" und „Wiederherstellen".
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/papierkorb`; automatisch per `python _tools/web_screenshots.py shots nur:papierkorb`
-    **Ziel-Datei:** `assets/screenshots/web/papierkorb.png`
-    <!-- web-bild ../assets/screenshots/web/papierkorb.png -->
+![Papierkorb der Web-App, hier ohne gelöschte Einträge](../assets/screenshots/web/papierkorb.png)
 
 Gelöschte Einträge verschwinden nicht sofort, sondern kommen in den
 **Papierkorb**. Sie öffnen ihn über *Benutzermenü > Papierkorb*. Er zeigt

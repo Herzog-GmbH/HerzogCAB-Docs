@@ -34,10 +34,7 @@ der Hinweis *„Herzog CAB ist auf diesem Rechner noch nicht freigeschaltet.“*
 mit einer kurzen Erklärung. Aufbau und Verhalten des Dialogs sind dieselben
 wie bei der täglichen [Anmeldung mit dem Kontobenutzer](../admin/login.md#anmeldung-mit-dem-kontobenutzer).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Herzog CAB – Anmeldung am Kundenkonto“ mit blauem Kopfband (Zopf rechts), Erklärtext, den Feldern **E-Mail-Adresse** und **Passwort** (Beschriftung über dem Feld), dem Häkchen **Angemeldet bleiben**, dem Link **Passwort vergessen?** sowie den Schaltflächen **Anmelden** und **Beenden**.
-    **So erzeugen:** Kunden-Build auf einem Rechner ohne `license.json` starten (oder vorher unter *Einstellungen > Lizenz* **Von diesem Rechner abmelden** wählen).
-    **Ziel-Datei:** `assets/screenshots/setup/konto-anmeldung-geraet.png`
+![Dialog „Herzog CAB – Anmeldung am Kundenkonto“ mit E-Mail-Adresse, Passwort und „Angemeldet bleiben“](../assets/screenshots/setup/konto-anmeldung-geraet.png)
 
 ### Schritt 2: Anmelden
 

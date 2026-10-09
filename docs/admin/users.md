@@ -24,10 +24,7 @@ Links steht die **Benutzerliste** mit Suchfeld und den Schaltflächen zum
 Anlegen und Importieren bzw. Aktualisieren, rechts der **Editor** des
 gewählten Benutzers.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Benutzerverwaltung im Kontomodell — Benutzerliste links mit dem Hinweistext „Benutzer, Passwörter und Rollen kommen aus dem Kundenkonto …" und den Schaltflächen „Vom Kundenkonto aktualisieren" und „Lizenzportal öffnen", Benutzer-Editor rechts mit ausgegrauten Stammdatenfeldern und der Infozeile „Kontobenutzer (Lizenzserver)"
-    **So erzeugen:** Kunden-Build mit Kontoanmeldung, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen
-    **Ziel-Datei:** `assets/screenshots/admin/benutzer-konto.png`
+![Benutzerverwaltung im Kontomodell: Benutzerliste aus dem Kundenkonto links, Benutzer mit ausgegrauten Stammdaten rechts](../assets/screenshots/admin/benutzer-konto.png)
 
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Benutzerverwaltung bei Dongle-Installation — Benutzerliste links (mit den Schaltflächen „Neuer Benutzer", „Aus Entra importieren", „Aus LDAP importieren"), Benutzer-Editor rechts

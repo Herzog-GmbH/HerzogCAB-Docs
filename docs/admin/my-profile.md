@@ -18,10 +18,7 @@ Klicken Sie unten links in der Navigationsleiste auf Ihre **Benutzerkarte**
 Schaltfläche mit Ihren Initialen an derselben Stelle. Es öffnet sich der
 Dialog **Mein Profil** mit drei Reitern.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Mein Profil“, Reiter „Profil“ eines Kontobenutzers: rundes Profilbild bzw. Initialen, ausgegraute Felder Anzeigename und E-Mail, darunter der Hinweis „Name und E-Mail-Adresse gehören zum Kundenbenutzer …“ und die Schaltfläche **Im Lizenzportal ändern**.
-    **So erzeugen:** Kunden-Build mit Kontoanmeldung (Musterbenutzer), unten links in der Navigation auf die eigene Benutzerkarte klicken.
-    **Ziel-Datei:** `assets/screenshots/admin/mein-profil.png`
+![Dialog „Mein Profil“, Reiter „Profil“: Anzeigename und E-Mail ausgegraut, darunter „Im Lizenzportal ändern“](../assets/screenshots/admin/mein-profil.png)
 
 ## Tab „Profil“
 

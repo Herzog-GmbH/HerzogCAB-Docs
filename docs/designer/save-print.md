@@ -30,13 +30,7 @@ auf der [Designer-Startansicht](index.md).
 
 ### Dialog „Design speichern" (Zielordner-Auswahl)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog **Design speichern** mit Namensfeld, dem Ordnerbaum
-    der Design-Bibliothek (inklusive Eintrag „Ohne Ordner" und Unterordnern),
-    der Zeile „Neuer Ordner (unterhalb der Auswahl)…" mit **Anlegen** sowie den
-    Schaltflächen **Abbrechen** und **Speichern**.
-    **So erzeugen:** Neues Design anlegen, etwas färben, **Speichern** klicken.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-speichern-dialog.png`
+![Dialog „Design speichern“ mit Designname, Ordnerbaum der Design-Bibliothek und Feld für einen neuen Ordner](../assets/screenshots/designer/designer-speichern-dialog.png)
 
 | Element | Funktion |
 |---|---|
@@ -98,13 +92,7 @@ Klöppelzahl immer in der Auswahl.
 
 ### Druckvorschau
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Druckvorschau-Fenster eines Designs (Standardvorlage): Seite mit
-    Flechtbild, Besetzungsübersicht und Klöppeltabelle, Zoom-Leiste und
-    Drucken-Schaltfläche.
-    **So erzeugen:** Design mit Farben öffnen, **Drucken** klicken, Vorlage
-    bestätigen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-druckvorschau.png`
+![Druckvorschau eines Designs mit Designdaten, Besetzungsübersicht, Klöppeltabelle und Flechtbild](../assets/screenshots/designer/designer-druckvorschau.png)
 
 Die Druckvorschau zeigt alle Seiten der gewählten Vorlage, bereits befüllt mit
 den aktuellen Design-, Farb- und Klöppeldaten. Bei

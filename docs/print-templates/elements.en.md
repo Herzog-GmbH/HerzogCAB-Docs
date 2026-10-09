@@ -94,12 +94,7 @@ Also available in every template.
 You edit an element that has already been placed by **double-clicking** it on the
 page canvas. Depending on the element type, a different dialog opens:
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Bearbeitungsdialog einer Datentabelle (z. B. „Auftrag“)
-    mit der Zeilen-Werkzeugleiste links und dem Feldvorlagen-Picker rechts.
-    **So erzeugen:** Druck-Editor öffnen, eine Datentabelle wie „Auftrag“ auf
-    die Seite ziehen, per Doppelklick öffnen.
-    **Ziel-Datei:** `assets/screenshots/print-templates/tabelle-bearbeiten.png`
+![Edit dialog of the “Order” data table with parameter rows on the left and field template picker on the right](../assets/screenshots/print-templates/tabelle-bearbeiten.png)
 
 ### Data tables with selectable rows { #datentabellen-mit-wahlbaren-zeilen }
 
@@ -172,13 +167,7 @@ program values and take them over:
 | **List** | The program values matching the search term/area, with designation and – if available – unit. A click shows the current value and a short description below. |
 | **Insert field** | Takes the marked program value over into the currently selected row or text position. Double-clicking a list entry does the same. |
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Feldvorlagen-Picker (Suche, Bereich-Auswahl, Liste,
-    Schaltfläche „Feld einfügen“) im geöffneten Zustand mit ein paar
-    Suchtreffern.
-    **So erzeugen:** Bearbeitungsdialog einer Datentabelle öffnen, im Suchfeld
-    einen Begriff eintippen (z. B. „Durchmesser“).
-    **Ziel-Datei:** `assets/screenshots/print-templates/feldvorlagen-picker.png`
+![Field template picker with search, area selection, result list and the “Insert field” button](../assets/screenshots/print-templates/feldvorlagen-picker.png)
 
 ### Two kinds of placeholders { #zwei-arten-von-platzhaltern }
 

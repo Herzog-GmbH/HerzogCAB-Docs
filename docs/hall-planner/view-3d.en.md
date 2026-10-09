@@ -20,10 +20,7 @@ appears in a separate window with the title *Production hall 3D –
 changes to the layout. When you close the window, the
 view toggle in the editor switches back to **2D**.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** 3D-Hallenansicht mit Wänden, mehreren Maschinen und mindestens einer farbigen Status-Leuchtkugel; oben die dunkle Werkzeugleiste (Kamera zurücksetzen, Wände Voll/Aus/Stufen, Kugeln-Regler, Puls)
-    **So erzeugen:** Bestückte Belegung im Editor öffnen > Ansicht-Schalter **3D**; Kamera leicht schräg von oben ausrichten
-    **Ziel-Datei:** `assets/screenshots/hall-planner/3d-hallenansicht.png`
+![3D hall view with walls, machines and colored status spheres, toolbar at the top](../assets/screenshots/hall-planner/3d-hallenansicht.png)
 
 ## Mouse control { #steuerung-mit-der-maus }
 

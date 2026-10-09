@@ -24,10 +24,7 @@ Spulaufträge haben.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Auftragsübersicht mit Suchfeld, den vier Filtern (Auftragsart, Status, Zeitraum, Sortierung), zeitlich gruppierten Auftragskarten (Flecht- und Spulauftrag gemischt, mit Auftragsart-Chips und Verknüpfungszeile) und der Aktionsleiste unten inkl. **Spulauftrag erstellen**
-    **So erzeugen:** Navigationspunkt *Aufträge* öffnen; Workspace „Musterbetrieb" mit mindestens einem Flechtauftrag samt verknüpftem Spulauftrag; einen Flechtauftrag anwählen, damit alle Schaltflächen aktiv sind
-    **Ziel-Datei:** `assets/screenshots/orders/auftraege-uebersicht.png`
+![Auftragsübersicht mit Suche, vier Filtern, Flecht- und Spulaufträgen nach Zeitraum gruppiert und Aktionsleiste unten](../assets/screenshots/orders/auftraege-uebersicht.png)
 
 Der Bildschirm ist von oben nach unten aufgebaut:
 

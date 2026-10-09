@@ -21,10 +21,7 @@ You reach the editor in several ways:
 
 ![Braiding order editor with the "Customer" tab and the tab bar.](../assets/screenshots/orders/auftrag-editor-kunde.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Flechtauftrag-Editor mit der einzeiligen Kopfzeile (links Pfeil **Zur Auftragsliste** und Titel „Auftrag“, rechts **Drucken** und **Auftrag speichern**), darunter die Leiste mit allen zehn Tabs inkl. „Aufwicklung“, Tab „Kunde“ geöffnet; Navigation eingeklappt.
-    **So erzeugen:** Kunden-Build, Auftragsübersicht, Musterauftrag öffnen. Ersetzt das bisherige Bild `orders/auftrag-editor-kunde.png` (alter Seitenkopf, neun Tabs).
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-editor-kunde.png`
+![Braiding order editor with header, the bar of ten tabs and the “Customer” tab open](../assets/screenshots/orders/auftrag-editor-kunde.png)
 
 All controls of the header are in **one line**: on the far left,
 **Back to orders** (with an arrow icon) takes you back to the
@@ -239,10 +236,7 @@ embedded calculator icon — see
 The tab is divided into two sections (one below the other in a narrow
 window).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Produktion" mit den beiden Abschnitten „Produktionswerte" (links) und „Hochrechnung auf die Auftragslänge" (rechts), inklusive gefüllter berechneter Felder
-    **So erzeugen:** Flechtauftrag mit Auftragslänge, Maschine, Material, Spule und ausgeführter Laufzeit-Berechnung öffnen; Tab *Produktion* wählen
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-tab-produktion.png`
+![The “Production” tab with the Production values and Projection to order length sections](../assets/screenshots/orders/auftrag-tab-produktion.png)
 
 ### "Production values" section { #abschnitt-produktionswerte }
 
@@ -276,10 +270,7 @@ split across the drums and checked against the take-up winder. The entries are
 saved with the order and appear on the **Overview** tab, in the web view and
 as placeholders in the [print templates](../print-templates/elements.md).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Aufwicklung" mit gewähltem Aufwickler und gewählter Trommel, links die Abschnitte „Aufwickler und Trommel" und „Seele (Kern-Mantel-Seil)" mit der Schaltfläche **Vorschlag berechnen**, rechts „Aufteilung der Auftragslänge" mit grüner Prüfzeile.
-    **So erzeugen:** Flechtauftrag mit Auftragslänge, Produktdurchmesser und Produktgewicht öffnen (mindestens ein Aufwickler und eine Trommel in den Stammdaten), Tab *Aufwicklung* wählen und **Vorschlag berechnen** klicken.
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-tab-aufwicklung.png`
+![The “Take-up” tab with selected take-up winder, selected drum and the core section](../assets/screenshots/orders/auftrag-tab-aufwicklung.png)
 
 !!! info "New from version 2.1.0"
     Take-up winders come from the master data
@@ -347,10 +338,7 @@ What exactly is checked is described under
 Here you link a braiding design from the [Designer](../designer/index.md)
 to the order and see its preview including the Bobbin Table.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Design" mit verknüpftem Design: Feld „Verknüpftes Design" mit den drei Schaltflächen, Vorschau-Miniatur mit Design-Infos und geöffneter Unter-Tab „Klöppel-Tabelle" mit farbigen Zellen
-    **So erzeugen:** Flechtauftrag mit verknüpftem mehrfarbigem Design öffnen; Tab *Design*, Unter-Tab *Klöppel-Tabelle* wählen
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-tab-design.png`
+![The “Design” tab with linked design, preview thumbnail and the carrier table open](../assets/screenshots/orders/auftrag-tab-design.png)
 
 ### Linked design { #verknupftes-design }
 

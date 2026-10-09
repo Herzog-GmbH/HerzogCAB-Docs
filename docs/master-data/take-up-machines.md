@@ -21,10 +21,7 @@ Aufwickler einen eigenen Filter.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Aufwickler-Liste als Karten (Bild, Baureihe, „Trommel bis Ø … mm", Traglast und Verlegebreite) samt Werkzeugleiste.
-    **So erzeugen:** Navigationspunkt *Stammdaten > Aufwickler* öffnen; einige Aufwickler der Baureihen AW, AWS und AWH (Demo-Daten „Musterbetrieb") anlegen, einen davon mit Haspel.
-    **Ziel-Datei:** `assets/screenshots/master-data/aufwickler.png`
+![Seite Aufwickler mit drei Karten: Baureihe, Trommel- bzw. Haspelgröße, Traglast und Verlegebreite](../assets/screenshots/master-data/aufwickler.png)
 
 Oben liegt eine Werkzeugleiste, darunter die **Maschinenliste** als Karten.
 Jede Karte zeigt Bild, Baureihe (ohne Baureihe *Aufwickler*) und die
@@ -56,10 +53,7 @@ Bearbeiten. Ein Rechtsklick öffnet ein Kontextmenü mit **Öffnen**,
 
 ## Der Dialog „Neuen Aufwickler erstellen"
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neuen Aufwickler erstellen* mit den Abschnitten „Maschinendaten", „Maße und Grenzen" und „Bauart".
-    **So erzeugen:** In *Stammdaten > Aufwickler* auf **Neu** klicken, Baureihe **AWS** wählen und die Maße mit Demo-Werten füllen; bis zum Abschnitt „Bauart" scrollen.
-    **Ziel-Datei:** `assets/screenshots/master-data/aufwickler-neu-dialog.png`
+![Dialog „Neuen Aufwickler erstellen“ mit Bild und Abschnitt Maschinendaten](../assets/screenshots/master-data/aufwickler-neu-dialog.png)
 
 Der Dialog ist von oben nach unten in Abschnitte gegliedert. Leere
 Zahlenfelder zeigen einen Strich mit Einheit (z. B. *– mm*) und gelten als

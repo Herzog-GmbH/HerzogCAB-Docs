@@ -18,11 +18,7 @@ security* leads here.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die eigene Seite im Lizenzportal mit den drei Karten „Passwort", „Zweiter Faktor" und „Name".
-    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/passwort`; automatisch per `python _tools/web_screenshots.py shots nur:portal-passwort`
-    **Ziel-Datei:** `assets/screenshots/portal/passwort.png`
-    <!-- web-bild ../assets/screenshots/portal/passwort.png -->
+![Your own page in the licence portal with the “Password”, “Second factor” and “Name” cards](../assets/screenshots/portal/passwort.png)
 
 The page consists of three cards: **Password**, **Second factor** and
 **Name**.

@@ -82,6 +82,8 @@ can be reached from this computer.
 
 If the account does not yet know a storage location, the dialog asks once:
 
+![The “Set up working directory” dialog on the company’s first computer](../assets/screenshots/setup/arbeitsverzeichnis-festlegen.png)
+
 | Element | Meaning |
 |---|---|
 | **On this computer only** | For a single workstation. Prefilled with *Documents\HerzogCAB*, can be changed via **Browse …**. If a second computer is added later, move the folder to a network drive under [Storage location](../admin/storage-location.md#auf-netzlaufwerk-verschieben). |

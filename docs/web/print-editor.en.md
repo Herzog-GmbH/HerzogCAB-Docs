@@ -26,11 +26,7 @@ already loaded.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Druck Editor mit geladener Vorlage „Standard Auftrag": links die Elemente mit Filter, in der Mitte die Seite mit Raster und Elementen, rechts „Auswahl" und „Einstellungen", oben Vorlagenwahl, „Vorschau mit" und der Umschalter Bearbeiten/Vorschau.
-    **So erzeugen:** `python _tools/web_screenshots.py shots nur:druckeditor` (nach `login`).
-    **Ziel-Datei:** `assets/screenshots/web/druckeditor.png`
-    <!-- web-bild ../assets/screenshots/web/druckeditor.png -->
+![Print editor of the web app with elements on the left, page in the middle and selection and settings on the right](../assets/screenshots/web/druckeditor.png)
 
 | Area | Content |
 |---|---|

@@ -4,6 +4,7 @@
 #   powershell -File fenster.ps1 -Out <png> [-Titel <regex>] [-Breite 1600 -Hoehe 1000] [-Liste]
 #   -Titel  waehlt ein Fenster des Prozesses HerzogCAB nach Titel (Dialoge!), sonst das Hauptfenster
 #   -Breite/-Hoehe setzen die Fenstergroesse vor der Aufnahme (Position bleibt)
+#   -Bildschirm  Aufnahme vom Bildschirm (Fenster muss vorn liegen) - fuer offene Klapplisten/Popups
 #   -Liste  zeigt nur alle sichtbaren Fenster des Prozesses mit Titel und Groesse
 param(
   [string]$Out = "",
@@ -11,7 +12,9 @@ param(
   [int]$Breite = 0,
   [int]$Hoehe = 0,
   [string]$Proc = "HerzogCAB",
-  [switch]$Liste
+  [switch]$Liste,
+  [int]$Plus = 0,       # mit -Bildschirm: so viele Pixel rechts dazunehmen (Popups ueber den Fensterrand)
+  [switch]$Bildschirm   # vom Bildschirm statt PrintWindow: noetig fuer offene Klapplisten/Popups (eigene Fenster)
 )
 $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Drawing
@@ -49,7 +52,10 @@ if ($Liste) {
     Write-Output ("{0}  {1}x{2}  '{3}'" -f $h, ($r.Right-$r.Left), ($r.Bottom-$r.Top), (TitelVon $h)) }
   exit 0
 }
-$h = $p.MainWindowHandle
+# Standard: groesstes sichtbares Fenster des Prozesses (MainWindowHandle zeigt bei offener
+# Klappliste auf das Popup)
+$h = [Fw]::Fenster([uint32]$p.Id) | Sort-Object { $rr = New-Object Fw+RECT; [Fw]::GetWindowRect($_, [ref]$rr) | Out-Null; -1 * ($rr.Right-$rr.Left) * ($rr.Bottom-$rr.Top) } | Select-Object -First 1
+if (-not $h) { $h = $p.MainWindowHandle }
 if ($Titel -ne "") {
   $h = $alle | Where-Object { (TitelVon $_) -match $Titel } | Select-Object -First 1
   if (-not $h) { Write-Output "FEHLER: kein Fenster mit Titel ~ '$Titel'"; exit 1 }
@@ -61,11 +67,13 @@ if ($Breite -gt 0 -and $Hoehe -gt 0) {
 }
 $r = New-Object Fw+RECT; [Fw]::GetWindowRect($h, [ref]$r) | Out-Null
 $e = New-Object Fw+RECT; [Fw]::DwmGetWindowAttribute($h, 9, [ref]$e, 16) | Out-Null   # EXTENDED_FRAME_BOUNDS
-$w = $r.Right - $r.Left; $ht = $r.Bottom - $r.Top
+$w = $r.Right - $r.Left + $Plus; $ht = $r.Bottom - $r.Top
 $bmp = New-Object System.Drawing.Bitmap $w, $ht
 $g = [System.Drawing.Graphics]::FromImage($bmp)
-$hdc = $g.GetHdc(); [Fw]::PrintWindow($h, $hdc, 2) | Out-Null; $g.ReleaseHdc($hdc); $g.Dispose()
-$cx = $e.Left - $r.Left; $cy = $e.Top - $r.Top; $cw = $e.Right - $e.Left; $ch = $e.Bottom - $e.Top
+if ($Bildschirm) { $g.CopyFromScreen($r.Left, $r.Top, 0, 0, (New-Object System.Drawing.Size($w, $ht))) }
+else { $hdc = $g.GetHdc(); [Fw]::PrintWindow($h, $hdc, 2) | Out-Null; $g.ReleaseHdc($hdc) }
+$g.Dispose()
+$cx = $e.Left - $r.Left; $cy = $e.Top - $r.Top; $cw = $e.Right - $e.Left + $Plus; $ch = $e.Bottom - $e.Top
 if ($cw -le 0 -or $ch -le 0) { $cx = 0; $cy = 0; $cw = $w; $ch = $ht }
 $zu = $bmp.Clone((New-Object System.Drawing.Rectangle($cx, $cy, $cw, $ch)), $bmp.PixelFormat)
 $voll = [System.IO.Path]::GetFullPath($Out)

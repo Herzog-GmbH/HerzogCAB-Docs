@@ -38,10 +38,7 @@ Ihre eigenen Vorlagen aus dem [Druckvorlagen-Editor](../print-templates/index.md
 erscheinen immer zusätzlich in der Liste. Existiert nur eine passende
 Vorlage, entfällt der Dialog und die Druckvorschau öffnet sich direkt.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Druckvorlage wählen" mit Auswahlliste (Standardvorlage vorgewählt, eine eigene Vorlage zusätzlich sichtbar)
-    **So erzeugen:** Im Flechtauftrag-Editor **Drucken** klicken; vorher unter *Druck Editor* eine eigene Auftragsvorlage anlegen, damit der Dialog erscheint
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-druckvorlage-waehlen.png`
+![Dialog „Druckvorlage wählen“ mit aufgeklappter Auswahlliste der Vorlagen](../assets/screenshots/orders/auftrag-druckvorlage-waehlen.png)
 
 !!! info "Keine Vorlagen vorhanden"
     Sind gar keine Druckvorlagen vorhanden, bietet Herzog CAB an, den

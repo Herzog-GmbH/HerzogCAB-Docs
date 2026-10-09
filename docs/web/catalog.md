@@ -20,11 +20,7 @@ Seriennummer und Namen ein.
 
 ## Die Übersicht
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Herzog-Katalog in der Kachelansicht, Reiter *Flechtmaschinen*, mit Suchfeld, Baureihenfilter und Umschalter Kacheln/Liste.
-    **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog` (nach `login`).
-    **Ziel-Datei:** `assets/screenshots/web/katalog.png`
-    <!-- web-bild ../assets/screenshots/web/katalog.png -->
+![Herzog-Katalog der Web-App in der Kachelansicht, Reiter Flechtmaschinen, mit Suchfeld und Baureihenfilter](../assets/screenshots/web/katalog.png)
 
 | Element | Bedeutung |
 |---|---|

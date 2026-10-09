@@ -1,0 +1,42 @@
+[
+ {
+  "bild": "basics/startseite-zweispaltig.png",
+  "box": [
+   78,
+   100,
+   108,
+   128
+  ],
+  "text": "MM",
+  "schrift": "segoeuib",
+  "groesse": 15,
+  "farbe": "#ffffff",
+  "grund": "#00459a",
+  "ausrichtung": "mitte"
+ },
+ {
+  "bild": "basics/startseite-zweispaltig.png",
+  "box": [
+   134,
+   90,
+   360,
+   120
+  ],
+  "text": "Guten Abend, Max",
+  "schrift": "segoeuib",
+  "groesse": 23
+ },
+ {
+  "bild": "basics/startseite-zweispaltig.png",
+  "box": [
+   271,
+   123,
+   640,
+   143
+  ],
+  "text": "Administrator   |   Musterflechterei GmbH",
+  "schrift": "segoeui",
+  "groesse": 14,
+  "einzug": 8
+ }
+]

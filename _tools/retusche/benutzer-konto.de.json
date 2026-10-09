@@ -1,0 +1,10 @@
+[
+ {"bild":"admin/benutzer-konto.png","box":[65,199,418,219],"text":"Kundenkonto „Musterflechterei GmbH“ –","schrift":"segoeui","groesse":14},
+ {"bild":"admin/benutzer-konto.png","box":[457,142,600,166],"text":"Max Muster","schrift":"seguisb","groesse":17},
+ {"bild":"admin/benutzer-konto.png","box":[552,185,800,205],"text":"max.muster@musterflechterei.example","schrift":"segoeui","groesse":12},
+ {"bild":"admin/benutzer-konto.png","box":[552,231,680,251],"text":"Max Muster","schrift":"segoeui","groesse":12},
+ {"bild":"admin/benutzer-konto.png","box":[552,277,800,297],"text":"max.muster@musterflechterei.example","schrift":"segoeui","groesse":12},
+ {"bild":"admin/benutzer-konto.png","box":[87,414,200,434],"text":"Max Muster","schrift":"seguisb","groesse":14},
+ {"bild":"admin/benutzer-konto.png","box":[87,441,340,459],"text":"max.muster@musterflechterei.example","schrift":"segoeui","groesse":12},
+ {"bild":"admin/benutzer-konto.png","box":[460,509,700,529],"text":"Musterflechterei GmbH","schrift":"segoeui","groesse":13}
+]

@@ -13,15 +13,9 @@ aktiven Arbeitsbereich.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite in drei Spalten: oben Begrüßung mit Schnellaktionen; links die Karte „Produktion“ als Tabelle mit den Reitern Überfällig/Diese Woche/Demnächst; Mitte „Aufträge“ mit vier Zählern und darunter „Favoriten“-Kacheln; rechts „Zuletzt geöffnet“ mit Symbolen je Berechnung und darunter „Workspace-Status“.
-    **So erzeugen:** Kunden-Build, Musterbetrieb mit Aufträgen in allen Status und Produktionsdaten in den nächsten 14 Tagen, zwei Favoriten angepinnt, einige Berechnungen gerechnet; Navigation eingeklappt, Fenster so breit wie möglich (die dritte Spalte erscheint erst ab ca. 2000 px Inhaltsbreite — sonst zweispaltig aufnehmen).
-    **Ziel-Datei:** `assets/screenshots/basics/startseite.png`
+![Startseite in drei Spalten: Produktion, Aufträge mit Favoriten, Zuletzt geöffnet mit Workspace-Status](../assets/screenshots/basics/startseite.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite zweispaltig: „Aufträge“ mit den Zählern über die ganze Breite, links „Produktion“, rechts „Favoriten“ und „Zuletzt geöffnet“, unten „Workspace-Status“.
-    **So erzeugen:** wie oben, Fenster ca. 1600 px, Navigation eingeklappt.
-    **Ziel-Datei:** `assets/screenshots/basics/startseite-zweispaltig.png`
+![Startseite in zwei Spalten: Aufträge über die volle Breite, darunter Produktion links, Favoriten und Zuletzt geöffnet rechts](../assets/screenshots/basics/startseite-zweispaltig.png)
 
 Die Startseite nutzt die **ganze Fensterbreite** und ordnet ihre Karten je
 nach verfügbarem Platz in einer, zwei oder drei Spalten an:

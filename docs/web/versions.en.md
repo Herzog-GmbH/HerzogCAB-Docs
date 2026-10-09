@@ -54,11 +54,7 @@ Anyone who is allowed to see the entry may view its versions.
 
 ## The "Versions" dialog { #der-dialog-versionen }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Versionen" eines Designs: oben der Kasten „Aktuell: Version n" mit Datum, Person und Quelle, darunter die Liste der früheren Fassungen mit „Unterschiede" und „Wiederherstellen", bei einer Fassung die aufgeklappte Tabelle der Unterschiede.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/designs/<id>`, Symbol „Versionen"; automatisch per `python _tools/web_screenshots.py shots nur:versionen`
-    **Ziel-Datei:** `assets/screenshots/web/versionen.png`
-    <!-- web-bild ../assets/screenshots/web/versionen.png -->
+![The “Versions” dialog of a design with the current version and no earlier versions yet](../assets/screenshots/web/versionen.png)
 
 The dialog is called *Versions: &lt;name of the entry&gt;*.
 
@@ -122,11 +118,7 @@ Without this permission you can only view the versions.
 
 ## Recycle bin { #papierkorb }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Papierkorb der Web-App mit Bereichsfilter (Alle, Design, Auftrag, Material …) und der Tabelle Name, Bereich, Gelöscht am, Von, Quelle mit den Knöpfen „Versionen" und „Wiederherstellen".
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/papierkorb`; automatisch per `python _tools/web_screenshots.py shots nur:papierkorb`
-    **Ziel-Datei:** `assets/screenshots/web/papierkorb.png`
-    <!-- web-bild ../assets/screenshots/web/papierkorb.png -->
+![Recycle bin of the web app, here without deleted entries](../assets/screenshots/web/papierkorb.png)
 
 Deleted entries do not disappear immediately but go to the
 **Recycle bin**. You open it via *User menu > Recycle bin*. It shows

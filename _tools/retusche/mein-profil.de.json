@@ -1,0 +1,5 @@
+[
+ {"bild":"admin/mein-profil.png","box":[56,126,86,148],"text":"MM","schrift":"seguisb","groesse":12,"ausrichtung":"mitte"},
+ {"bild":"admin/mein-profil.png","box":[106,202,300,221],"text":"Max Muster","schrift":"segoeui","groesse":12},
+ {"bild":"admin/mein-profil.png","box":[106,244,450,263],"text":"max.muster@musterflechterei.example","schrift":"segoeui","groesse":12}
+]

@@ -20,10 +20,7 @@ erscheint in einem eigenen Fenster mit dem Titel *Produktionshalle 3D —
 Änderungen am Layout laufend. Beim Schließen des Fensters springt der
 Ansicht-Schalter im Editor zurück auf **2D**.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** 3D-Hallenansicht mit Wänden, mehreren Maschinen und mindestens einer farbigen Status-Leuchtkugel; oben die dunkle Werkzeugleiste (Kamera zurücksetzen, Wände Voll/Aus/Stufen, Kugeln-Regler, Puls)
-    **So erzeugen:** Bestückte Belegung im Editor öffnen > Ansicht-Schalter **3D**; Kamera leicht schräg von oben ausrichten
-    **Ziel-Datei:** `assets/screenshots/hall-planner/3d-hallenansicht.png`
+![3D-Hallenansicht mit Wänden, Maschinen und farbigen Status-Kugeln, oben die Werkzeugleiste](../assets/screenshots/hall-planner/3d-hallenansicht.png)
 
 ## Steuerung mit der Maus
 

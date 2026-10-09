@@ -24,10 +24,7 @@ ausgewählt:
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Seite *Trommeln*: links die Trommeldatenbank mit Suche, Filter „Materialart" und Trommel-Karten, rechts „Trommel bearbeiten" mit allen Maßfeldern und dem Abschnitt „Trommelaufnahme".
-    **So erzeugen:** *Stammdaten > Trommeln* öffnen, einige Trommeln über **Aus Herzog-Katalog …** übernehmen und eine davon auswählen.
-    **Ziel-Datei:** `assets/screenshots/master-data/trommeln.png`
+![Seite Trommeln: links Trommeldatenbank mit Suche und Materialart, rechts „Trommel bearbeiten“ mit Maßen und Trommelaufnahme](../assets/screenshots/master-data/trommeln.png)
 
 Die Seite ist aufgebaut wie der [Spulen-Editor](bobbins.md):
 

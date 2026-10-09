@@ -19,12 +19,7 @@ editing.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Design-Bibliothek mit Ordnerbaum links, Design-Tabelle rechts
-    (mit Thumbnails) und der Werkzeugleiste darüber.
-    **So erzeugen:** Navigationspunkt **Designs** öffnen, einen Ordner mit
-    mehreren Beispiel-Designs auswählen (Demo-Daten „Musterbetrieb").
-    **Ziel-Datei:** `assets/screenshots/master-data/designs-bibliothek.png`
+![Design library with folder tree on the left, design table with thumbnails on the right and toolbar above](../assets/screenshots/master-data/designs-bibliothek.png)
 
 The page consists of three areas:
 

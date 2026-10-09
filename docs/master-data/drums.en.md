@@ -24,10 +24,7 @@ in these areas:
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Seite *Trommeln*: links die Trommeldatenbank mit Suche, Filter „Materialart" und Trommel-Karten, rechts „Trommel bearbeiten" mit allen Maßfeldern und dem Abschnitt „Trommelaufnahme".
-    **So erzeugen:** *Stammdaten > Trommeln* öffnen, einige Trommeln über **Aus Herzog-Katalog …** übernehmen und eine davon auswählen.
-    **Ziel-Datei:** `assets/screenshots/master-data/trommeln.png`
+![Drums page: drum database with search and material filter on the left, “Edit drum” with dimensions and drum mounting on the right](../assets/screenshots/master-data/trommeln.png)
 
 The page is structured like the [Bobbin editor](bobbins.md):
 

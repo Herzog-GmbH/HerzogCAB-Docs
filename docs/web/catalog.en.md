@@ -20,11 +20,7 @@ serial number and name.
 
 ## The overview { #die-ubersicht }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Herzog-Katalog in der Kachelansicht, Reiter *Flechtmaschinen*, mit Suchfeld, Baureihenfilter und Umschalter Kacheln/Liste.
-    **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog` (nach `login`).
-    **Ziel-Datei:** `assets/screenshots/web/katalog.png`
-    <!-- web-bild ../assets/screenshots/web/katalog.png -->
+![Herzog catalogue of the web app in tile view, Braiding machines tab, with search field and series filter](../assets/screenshots/web/katalog.png)
 
 | Element | Meaning |
 |---|---|

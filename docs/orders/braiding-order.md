@@ -20,10 +20,7 @@ Sie erreichen den Editor auf mehreren Wegen:
 
 ![Flechtauftrag-Editor mit dem Tab „Kunde" und der Tab-Leiste.](../assets/screenshots/orders/auftrag-editor-kunde.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Flechtauftrag-Editor mit der einzeiligen Kopfzeile (links Pfeil **Zur Auftragsliste** und Titel „Auftrag“, rechts **Drucken** und **Auftrag speichern**), darunter die Leiste mit allen zehn Tabs inkl. „Aufwicklung“, Tab „Kunde“ geöffnet; Navigation eingeklappt.
-    **So erzeugen:** Kunden-Build, Auftragsübersicht, Musterauftrag öffnen. Ersetzt das bisherige Bild `orders/auftrag-editor-kunde.png` (alter Seitenkopf, neun Tabs).
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-editor-kunde.png`
+![Flechtauftrag-Editor mit Kopfzeile, Leiste der zehn Tabs und geöffnetem Tab „Kunde“](../assets/screenshots/orders/auftrag-editor-kunde.png)
 
 Alle Bedienelemente der Kopfzeile stehen in **einer Zeile**: Ganz links
 bringt Sie **Zur Auftragsliste** (mit Pfeilsymbol) zurück zur
@@ -242,10 +239,7 @@ eingebettetes Rechner-Symbol — siehe
 Der Tab ist in zwei Abschnitte gegliedert (bei schmalem Fenster
 untereinander).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Produktion" mit den beiden Abschnitten „Produktionswerte" (links) und „Hochrechnung auf die Auftragslänge" (rechts), inklusive gefüllter berechneter Felder
-    **So erzeugen:** Flechtauftrag mit Auftragslänge, Maschine, Material, Spule und ausgeführter Laufzeit-Berechnung öffnen; Tab *Produktion* wählen
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-tab-produktion.png`
+![Tab „Produktion“ mit den Abschnitten Produktionswerte und Hochrechnung auf die Auftragslänge](../assets/screenshots/orders/auftrag-tab-produktion.png)
 
 ### Abschnitt „Produktionswerte"
 
@@ -281,10 +275,7 @@ Angaben werden mit dem Auftrag gespeichert und erscheinen im Tab
 **Übersicht**, in der Webansicht und als Platzhalter in den
 [Druckvorlagen](../print-templates/elements.md).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Aufwicklung" mit gewähltem Aufwickler und gewählter Trommel, links die Abschnitte „Aufwickler und Trommel" und „Seele (Kern-Mantel-Seil)" mit der Schaltfläche **Vorschlag berechnen**, rechts „Aufteilung der Auftragslänge" mit grüner Prüfzeile.
-    **So erzeugen:** Flechtauftrag mit Auftragslänge, Produktdurchmesser und Produktgewicht öffnen (mindestens ein Aufwickler und eine Trommel in den Stammdaten), Tab *Aufwicklung* wählen und **Vorschlag berechnen** klicken.
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-tab-aufwicklung.png`
+![Tab „Aufwicklung“ mit gewähltem Aufwickler, gewählter Trommel und dem Abschnitt zur Seele](../assets/screenshots/orders/auftrag-tab-aufwicklung.png)
 
 !!! info "Neu ab Version 2.1.0"
     Aufwickler kommen aus den Stammdaten
@@ -353,10 +344,7 @@ Was im Einzelnen geprüft wird, steht unter
 Hier verknüpfen Sie ein Flechtdesign aus dem [Designer](../designer/index.md)
 mit dem Auftrag und sehen dessen Vorschau samt Klöppel-Tabelle.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Design" mit verknüpftem Design: Feld „Verknüpftes Design" mit den drei Schaltflächen, Vorschau-Miniatur mit Design-Infos und geöffneter Unter-Tab „Klöppel-Tabelle" mit farbigen Zellen
-    **So erzeugen:** Flechtauftrag mit verknüpftem mehrfarbigem Design öffnen; Tab *Design*, Unter-Tab *Klöppel-Tabelle* wählen
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-tab-design.png`
+![Tab „Design“ mit verknüpftem Design, Vorschau-Miniatur und geöffneter Klöppel-Tabelle](../assets/screenshots/orders/auftrag-tab-design.png)
 
 ### Verknüpftes Design
 

@@ -16,10 +16,7 @@ Filter.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Gatter-Liste als Karten (Bild, Baureihe, „… Ablaufstellen", Abzug und Spulengröße) samt Werkzeugleiste.
-    **So erzeugen:** Navigationspunkt *Stammdaten > Gatter* öffnen; einige Gatter der Baureihen GU und GR (Demo-Daten „Musterbetrieb") anlegen.
-    **Ziel-Datei:** `assets/screenshots/master-data/gatter.png`
+![Seite Gatter mit Suchfeld, Schaltflächen und einer Gatter-Karte mit Baureihe und Ablaufstellen](../assets/screenshots/master-data/gatter.png)
 
 Oben liegt eine Werkzeugleiste, darunter die **Maschinenliste** als Karten.
 Jede Karte zeigt Bild, Baureihe (ohne Baureihe *Gatter*),
@@ -35,10 +32,7 @@ am schnellsten über den [Herzog-Katalog](../catalog/index.md) an (Reiter
 
 ## Der Dialog „Neues Gatter erstellen"
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neues Gatter erstellen* mit den Abschnitten „Ablaufstellen und Spulen" und „Bauart" (Fadenspannung, Überwachung, Material als Ankreuzfelder).
-    **So erzeugen:** In *Stammdaten > Gatter* auf **Neu** klicken, Baureihe **GU** wählen, Ablaufstellen 8, davon aktiv 4 eintragen und bis „Bauart" scrollen.
-    **Ziel-Datei:** `assets/screenshots/master-data/gatter-neu-dialog.png`
+![Dialog „Neues Gatter erstellen“ mit Bild und Abschnitt Maschinendaten](../assets/screenshots/master-data/gatter-neu-dialog.png)
 
 Der Dialog ist von oben nach unten in Abschnitte gegliedert. Leere Felder
 bleiben leer und gelten als nicht hinterlegt.

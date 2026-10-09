@@ -88,16 +88,7 @@ As long as no design is open, the toolbar is locked; only
 As soon as a design is open, the editing view appears. It consists of
 five areas:
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Designer-Bearbeitungsansicht mit geöffnetem Rundgeflecht-Design:
-    Werkzeugleiste oben (mit den Ansichts-Schaltern Voll/Halb/Zylinder/3D),
-    Dokument-Kopfzeile, links Parameter-Panel mit den Auswahllisten
-    Geflechtsart und Geflechtsbindung und der Besetzungsübersicht, Mitte
-    Klöppeltabelle, rechts Flechtbild-Vorschau mit Maßzeile.
-    **So erzeugen:** *Designer* öffnen, **Neu** klicken, Fenster breit ziehen
-    (Farb- und Texturpalette sichtbar in der Werkzeugleiste), einige Klöppel
-    einfärben.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-bearbeitungsansicht.png`
+![Designer with a round braid: toolbar, parameters and Occupation Overview on the left, carrier table in the middle, braid pattern on the right](../assets/screenshots/designer/designer-bearbeitungsansicht.png)
 
 | Area | Content |
 |---|---|

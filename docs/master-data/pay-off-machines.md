@@ -16,10 +16,7 @@ haben Abwickler einen eigenen Filter.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Abwickler-Liste als Karten (Bild, Baureihe, „Trommel bis Ø … mm", Traglast und Trommelbreite) samt Werkzeugleiste.
-    **So erzeugen:** Navigationspunkt *Stammdaten > Abwickler* öffnen; einige Abwickler der Baureihen AB und ABS (Demo-Daten „Musterbetrieb") anlegen.
-    **Ziel-Datei:** `assets/screenshots/master-data/abwickler.png`
+![Seite Abwickler mit Suchfeld, Neu, Bearbeiten, Löschen und einer Abwickler-Karte in der Maschinenliste](../assets/screenshots/master-data/abwickler.png)
 
 Oben liegt eine Werkzeugleiste, darunter die **Maschinenliste** als Karten.
 Jede Karte zeigt Bild, Baureihe (ohne Baureihe *Abwickler*),
@@ -35,10 +32,7 @@ Sie am schnellsten über den [Herzog-Katalog](../catalog/index.md) an
 
 ## Der Dialog „Neuen Abwickler erstellen"
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neuen Abwickler erstellen* mit den Abschnitten „Maschinendaten", „Maße und Grenzen" und „Bauart".
-    **So erzeugen:** In *Stammdaten > Abwickler* auf **Neu** klicken, Baureihe **ABS** wählen und die Maße mit Demo-Werten füllen.
-    **Ziel-Datei:** `assets/screenshots/master-data/abwickler-neu-dialog.png`
+![Dialog „Neuen Abwickler erstellen“ mit Bild und Abschnitt Maschinendaten](../assets/screenshots/master-data/abwickler-neu-dialog.png)
 
 Der Dialog ist von oben nach unten in Abschnitte gegliedert. Leere Felder
 bleiben leer und gelten als nicht hinterlegt.

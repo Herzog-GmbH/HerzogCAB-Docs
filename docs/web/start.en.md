@@ -13,11 +13,7 @@ bottom bar on a smartphone.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite der Web-App mit Begrüßung und Schnellaktionen oben, darunter die Karte „Aufträge" mit vier Zählern über die volle Breite, links „Produktion" mit den Reitern Überfällig, Diese Woche, Demnächst, rechts „Favoriten" und „Zuletzt geöffnet".
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/`; automatisch per `python _tools/web_screenshots.py shots nur:startseite`
-    **Ziel-Datei:** `assets/screenshots/web/startseite.png`
-    <!-- web-bild ../assets/screenshots/web/startseite.png -->
+![Web app home page with greeting, quick actions, order counters, Production and Favorites](../assets/screenshots/web/startseite.png)
 
 At the top is the **header** with greeting and quick actions. Below it
 follow the cards **Orders**, **Production**, **Favorites**, **Recently

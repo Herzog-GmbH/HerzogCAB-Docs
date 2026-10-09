@@ -13,15 +13,9 @@ active workspace.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite in drei Spalten: oben Begrüßung mit Schnellaktionen; links die Karte „Produktion“ als Tabelle mit den Reitern Überfällig/Diese Woche/Demnächst; Mitte „Aufträge“ mit vier Zählern und darunter „Favoriten“-Kacheln; rechts „Zuletzt geöffnet“ mit Symbolen je Berechnung und darunter „Workspace-Status“.
-    **So erzeugen:** Kunden-Build, Musterbetrieb mit Aufträgen in allen Status und Produktionsdaten in den nächsten 14 Tagen, zwei Favoriten angepinnt, einige Berechnungen gerechnet; Navigation eingeklappt, Fenster so breit wie möglich (die dritte Spalte erscheint erst ab ca. 2000 px Inhaltsbreite — sonst zweispaltig aufnehmen).
-    **Ziel-Datei:** `assets/screenshots/basics/startseite.png`
+![Home page in three columns: Production, Orders with Favorites, Recently opened with Workspace status](../assets/screenshots/basics/startseite.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite zweispaltig: „Aufträge“ mit den Zählern über die ganze Breite, links „Produktion“, rechts „Favoriten“ und „Zuletzt geöffnet“, unten „Workspace-Status“.
-    **So erzeugen:** wie oben, Fenster ca. 1600 px, Navigation eingeklappt.
-    **Ziel-Datei:** `assets/screenshots/basics/startseite-zweispaltig.png`
+![Home page in two columns: Orders across the full width, below it Production on the left, Favorites and Recently opened on the right](../assets/screenshots/basics/startseite-zweispaltig.png)
 
 The home page uses the **full window width** and arranges its cards in
 one, two or three columns depending on the available space:

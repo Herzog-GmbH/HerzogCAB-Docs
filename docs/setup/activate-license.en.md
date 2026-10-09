@@ -34,10 +34,7 @@ the note *"Herzog CAB is not yet activated on this computer."*
 with a short explanation. The layout and behaviour of the dialog are the same
 as for the daily [sign-in with the account user](../admin/login.md#anmeldung-mit-dem-kontobenutzer).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Herzog CAB – Anmeldung am Kundenkonto“ mit blauem Kopfband (Zopf rechts), Erklärtext, den Feldern **E-Mail-Adresse** und **Passwort** (Beschriftung über dem Feld), dem Häkchen **Angemeldet bleiben**, dem Link **Passwort vergessen?** sowie den Schaltflächen **Anmelden** und **Beenden**.
-    **So erzeugen:** Kunden-Build auf einem Rechner ohne `license.json` starten (oder vorher unter *Einstellungen > Lizenz* **Von diesem Rechner abmelden** wählen).
-    **Ziel-Datei:** `assets/screenshots/setup/konto-anmeldung-geraet.png`
+![The “Herzog CAB – Sign in to your customer account” dialog with e-mail address, password and “Stay signed in”](../assets/screenshots/setup/konto-anmeldung-geraet.png)
 
 ### Step 2: Sign in { #schritt-2-anmelden }
 

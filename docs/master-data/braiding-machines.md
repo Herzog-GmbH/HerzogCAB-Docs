@@ -43,12 +43,7 @@ in einer Leseansicht.
 
 ## Der Dialog „Neue Maschine erstellen"
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neue Maschine erstellen* mit Bild, dem Formular
-    „Maschinendaten" und dem Abschnitt „Dokumente".
-    **So erzeugen:** In **Flechtmaschinen** auf **Neu** klicken und den Dialog
-    mit Demo-Daten „Musterbetrieb" ausfüllen.
-    **Ziel-Datei:** `assets/screenshots/master-data/flechtmaschine-neu-dialog.png`
+![Dialog „Neue Maschine erstellen“ mit Bild und Abschnitt Maschinendaten](../assets/screenshots/master-data/flechtmaschine-neu-dialog.png)
 
 Der Dialog ist in mehrere Abschnitte gegliedert (von oben nach unten).
 

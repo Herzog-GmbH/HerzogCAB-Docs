@@ -15,22 +15,9 @@ Design auf die Maschine geht.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Vorschau-Bereich des Designers in der 3D-Ansicht: ein
-    zweifarbiges Rundgeflecht als räumliches Modell, darüber die
-    Ansichtsleiste (Draufsicht / Seitenansicht / Flechtpunkt + Schloss),
-    darunter die Reglerzeile Material / Darstellung / Ausrichtung; in der
-    Werkzeugleiste ist **3D** aktiv.
-    **So erzeugen:** *Designer* öffnen, Rundgeflecht 24 Klöppel, Linkslauf
-    rot und Rechtslauf blau färben, in der Werkzeugleiste **3D** wählen,
-    Ansicht *Seitenansicht*.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-3d-ansicht.png`
+![Designer in der 3D-Ansicht: zweifarbiges Rundgeflecht als räumliches Modell mit Draufsicht, Seitenansicht und Flechtpunkt](../assets/screenshots/designer/designer-3d-ansicht.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dieselbe Vorschau in der Ansicht **Zylinder** (Projektion),
-    leicht gedreht, mit den Drehpfeilen.
-    **So erzeugen:** wie oben, Ansicht **Zylinder** wählen und einmal drehen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-zylinder-ansicht.png`
+![Designer in der Ansicht Zylinder mit den beiden Schaltflächen „Drehen“ in der Werkzeugleiste](../assets/screenshots/designer/designer-zylinder-ansicht.png)
 
 ## Bedienelemente im Detail
 

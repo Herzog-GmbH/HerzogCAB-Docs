@@ -16,10 +16,7 @@ pay-offs have their own filter.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Abwickler-Liste als Karten (Bild, Baureihe, „Trommel bis Ø … mm", Traglast und Trommelbreite) samt Werkzeugleiste.
-    **So erzeugen:** Navigationspunkt *Stammdaten > Abwickler* öffnen; einige Abwickler der Baureihen AB und ABS (Demo-Daten „Musterbetrieb") anlegen.
-    **Ziel-Datei:** `assets/screenshots/master-data/abwickler.png`
+![Pay-off page with search field, New, Edit, Delete and a pay-off card in the machine list](../assets/screenshots/master-data/abwickler.png)
 
 At the top is a toolbar, below it the **Machine list** as cards.
 Each card shows image, series (without series: *Pay-offs*),
@@ -35,10 +32,7 @@ is via the [Herzog catalogue](../catalog/index.md)
 
 ## The "Create new pay-off" dialog { #der-dialog-neuen-abwickler-erstellen }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neuen Abwickler erstellen* mit den Abschnitten „Maschinendaten", „Maße und Grenzen" und „Bauart".
-    **So erzeugen:** In *Stammdaten > Abwickler* auf **Neu** klicken, Baureihe **ABS** wählen und die Maße mit Demo-Werten füllen.
-    **Ziel-Datei:** `assets/screenshots/master-data/abwickler-neu-dialog.png`
+![The “Create new pay-off” dialog with image and Machine data section](../assets/screenshots/master-data/abwickler-neu-dialog.png)
 
 The dialog is divided into sections from top to bottom. Empty fields
 remain empty and count as not stored.

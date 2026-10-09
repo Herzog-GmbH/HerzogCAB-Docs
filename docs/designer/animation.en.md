@@ -14,14 +14,7 @@ layer.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Besetzungsübersicht eines Packungsgeflechts (3×3 Flügelräder)
-    mit eingefärbten Klöppeln, den Animations-Schaltflächen (Play, langsamer,
-    schneller) oben links und den beiden Farbrotations-Pfeilen darunter.
-    **So erzeugen:** *Designer* öffnen, **Neu**, Geflechtsart
-    **Packungsgeflecht** (12 Klöppel) wählen, einige Klöppel einfärben; nur die
-    Besetzungsübersicht aufnehmen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-besetzungsuebersicht.png`
+![Occupation Overview of a packing braid with nine horngears, colored carriers and the animation buttons](../assets/screenshots/designer/designer-besetzungsuebersicht.png)
 
 ## Controls in detail { #bedienelemente-im-detail }
 

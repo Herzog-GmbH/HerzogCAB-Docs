@@ -35,10 +35,7 @@ Herzog CAB unterscheidet zwei Speicherorte:
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Bildschirm „Speicherort" mit Badge NETZWERK/LOKAL, Pfad der zentralen Benutzerdaten und Abschnitt „Arbeitsbereich (aktives Profil)"
-    **So erzeugen:** *Systemverwaltung > Speicherort* öffnen
-    **Ziel-Datei:** `assets/screenshots/admin/speicherort.png`
+![Bildschirm „Speicherort“ mit dem lokalen Arbeitsbereich des aktiven Profils und der Schaltfläche „Auf Netzlaufwerk verschieben …“](../assets/screenshots/admin/speicherort.png)
 
 ## Bedienelemente im Detail
 
@@ -93,10 +90,7 @@ flowchart TD
   H --> N[Herzog CAB startet neu]
 ```
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Auf Netzlaufwerk verschieben" mit bisherigem Ordner, Anzahl Dateien und Größe, eingetragenem neuen Ordner
-    **So erzeugen:** *Systemverwaltung > Speicherort* bei lokalem Arbeitsverzeichnis, **Auf Netzlaufwerk verschieben …**
-    **Ziel-Datei:** `assets/screenshots/admin/auf-netzlaufwerk-verschieben.png`
+![Dialog „Auf Netzlaufwerk verschieben“ mit dem bisherigen Arbeitsverzeichnis und dem Feld für den neuen Ordner](../assets/screenshots/admin/auf-netzlaufwerk-verschieben.png)
 
 | Element | Bedeutung |
 |---|---|

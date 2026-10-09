@@ -22,17 +22,11 @@ millimetres).
 
 === "Geometry"
 
-    !!! warning "📷 Screenshot fehlt"
-        **Motiv:** Editor im Geometrie-Modus — links die Werkzeugleiste mit den Gruppen WERKZEUGE, WÄNDE, FLÄCHEN, OBJEKTE; Mitte ein Grundriss mit Wänden und einer farbigen Fläche; rechts das Eigenschaften-Panel (Reiter Layout)
-        **So erzeugen:** *Stammdaten > Grundrisse* > Grundriss wählen > **Bearbeiten**; ein paar Wände und eine Produktionsfläche zeichnen
-        **Ziel-Datei:** `assets/screenshots/hall-planner/editor-geometrie.png`
+    ![Editor in geometry mode: tools, walls, areas and objects on the left, floor plan in the middle, properties on the right](../assets/screenshots/hall-planner/editor-geometrie.png)
 
 === "Machine placement"
 
-    !!! warning "📷 Screenshot fehlt"
-        **Motiv:** Editor im Bestückungs-Modus — links WERKZEUGE + KATALOG mit Maschinenliste; über der Zeichenfläche die Auswahl-Toolbar (Bearbeiten · Ausrichten · Verteilen · Aneinanderreihen); mehrere platzierte Maschinen, davon zwei markiert; rechts das Eigenschaften-Panel mit Maschinen-Eigenschaften
-        **So erzeugen:** *Hallenplaner* > Grundriss und Belegung wählen > **Bestücken**; zwei Maschinen markieren (Rahmen aufziehen)
-        **Ziel-Datei:** `assets/screenshots/hall-planner/editor-bestueckung.png`
+    ![Editor in machine placement mode: machine catalogue on the left, selection toolbar above the floor plan, selected machine on the right](../assets/screenshots/hall-planner/editor-bestueckung.png)
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 

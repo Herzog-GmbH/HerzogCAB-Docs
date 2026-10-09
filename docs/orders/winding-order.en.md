@@ -27,10 +27,7 @@ You reach the editor in three ways:
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Spulauftrag-Editor mit Kopfzeile (**Zur Auftragsübersicht**, **Drucken**, **Spulauftrag speichern**) und den drei Karten „Auftrag", „Spulerei — was wird gespult?" und „Maschinen und Zeitplan" auf einer Scroll-Seite; verknüpfter Flechtauftrag, gefüllte Farbaufschlüsselung und zwei Spulmaschinen in der Verteiltabelle
-    **So erzeugen:** In der Auftragsübersicht einen Flechtauftrag mit Design anwählen und **Spulauftrag erstellen** klicken; zwei Spulmaschinen hinzufügen, **Spulen gleichmäßig verteilen**
-    **Ziel-Datei:** `assets/screenshots/orders/spulauftrag-editor.png`
+![Winding order editor with the “Order” and “Winding — what is wound?” cards including the color breakdown](../assets/screenshots/orders/spulauftrag-editor.png)
 
 All controls of the header are in **one line**: on the far left,
 **To order overview** (with an arrow icon) takes you back to the

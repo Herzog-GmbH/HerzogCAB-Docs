@@ -29,10 +29,7 @@ Bedienelement.
     ++f1++ allein öffnet die passende Seite dieses Handbuchs im Browser —
     bis Version 2.1.0 startete ++f1++ die Tour.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Geführte Touren“ mit den zehn Themenkarten (darunter „Auftragseditor“) und der runden Start-Schaltfläche ▶ unten rechts in jeder Karte
-    **So erzeugen:** *Hilfe > Geführte Touren…* öffnen, Dialog unverändert aufnehmen
-    **Ziel-Datei:** `assets/screenshots/basics/gefuehrte-touren-dialog.png`
+![Dialog „Geführte Touren“ mit Themenkarten und der runden Start-Schaltfläche in jeder Karte](../assets/screenshots/basics/gefuehrte-touren-dialog.png)
 
 ## Verfügbare Touren
 

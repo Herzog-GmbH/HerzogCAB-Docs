@@ -11,15 +11,7 @@ aktualisiert sich bei jeder Änderung sofort.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Werkzeugleiste des Designers mit geöffneter Farbpalette: großes
-    Aktive-Farbe-Quadrat, Paletten-Auswahlliste, Bibliotheksfarben,
-    Benutzerfarben-Reihe und Farbrad-Schaltfläche; daneben die Texturpalette
-    mit großer Vorschau.
-    **So erzeugen:** *Designer* öffnen, **Neu** klicken, Fenster breit ziehen,
-    damit die Gruppen **Farbe** und **Texturen** in der Werkzeugleiste sichtbar
-    sind.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-farbpalette.png`
+![Geöffnete Farbpalette mit aktiver Farbe, Auswahl „Standardpalette“, Farbfeldern und Farbrad-Schaltfläche](../assets/screenshots/designer/designer-farbpalette.png)
 
 ## Bedienelemente im Detail
 
@@ -116,10 +108,7 @@ mehrere Garne nebeneinander auf derselben Bahn. Jedes dieser Garne kann eine
 **eigene Farbe** bekommen — z. B. ein schwarzer Klöppel mit einem roten
 Kennfaden. Garn 1 ist immer die Klöppelfarbe selbst.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Designer mit Rundgeflecht, Fachung 3: in der Werkzeugleiste neben „L“/„R“ der Garn-Wähler mit geöffnetem Menü (Alle Garne, Garn 1 … Garn 3); die Klöppeltabelle zeigt senkrechte Farbstreifen je Garn, das Flechtbild Streifen längs zum Faden mit dünnen Trennlinien.
-    **So erzeugen:** *Designer*, **Neu**, Rundgeflecht 16 Klöppel, Fachung 3; einige Klöppel schwarz färben, über den Garn-Wähler „Garn 2“ wählen und diese Klöppel rot färben; Menü des Garn-Wählers aufklappen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-fachungsfarben.png`
+![Designer mit Rundgeflecht und Fachung 3: Garn-Wähler in der Werkzeugleiste mit geöffnetem Menü Garn 1 bis Garn 3](../assets/screenshots/designer/designer-fachungsfarben.png)
 
 **Garn-Wähler (Werkzeugleiste).** Rechts neben den Schaltflächen für
 Linkslauf und Rechtslauf erscheint ab Fachung 2 eine Schaltfläche mit
@@ -143,10 +132,7 @@ Zelle der Klöppeltabelle färbt nicht, sondern öffnet ein Menü:
 | **Fachungsfarben…** | Öffnet den Dialog *Fachungsfarben – &lt;Klöppel&gt;* (z. B. „– L3“ oder „– Bahn 2, Klöppel 4“). Ausgegraut bei Fachung 1 (*„Fachungsfarben gibt es ab Fachung 2.“*). |
 | **Alle Garne wie Garn 1** | Hebt die eigenen Garnfarben dieses Klöppels auf; alle Garne laufen wieder in der Klöppelfarbe. Nur aktiv, wenn der Klöppel eigene Garnfarben hat. |
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Fachungsfarben – L3“ mit Hinweistext, Karte „Garne“ mit drei Zeilen „Garn 1 … Garn 3“ und Farbknöpfen (einer aufgeklappt mit Aktive Farbe, Palette, Eigene Farbe wählen…), unten **Alle wie Garn 1**, **Übernehmen** und **Abbrechen**.
-    **So erzeugen:** wie oben, Rechtsklick auf einen Klöppel in der Klöppeltabelle > **Fachungsfarben…**, Farbknopf von Garn 2 anklicken.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-fachungsfarben-dialog.png`
+![Dialog „Fachungsfarben – L3“ mit den Farbknöpfen für Garn 1 bis Garn 3 und „Alle wie Garn 1“](../assets/screenshots/designer/designer-fachungsfarben-dialog.png)
 
 Im Dialog steht je Garn eine Zeile **Garn N** mit einem Farbknopf, der den
 Farbcode bzw. den Farbwert zeigt. Ein Klick auf den Farbknopf bietet die

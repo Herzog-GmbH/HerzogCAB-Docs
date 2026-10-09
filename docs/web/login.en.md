@@ -13,11 +13,7 @@ seats.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Anmeldeseite der Web-App am breiten Bildschirm: links die blaue Markenfläche mit „Berechnen, gestalten, planen — im Browser", drei Stichpunkten und dem laufenden Zopf, rechts die Karte „Anmelden" mit E-Mail-Adresse und Passwort.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/anmelden`; automatisch per `python _tools/web_screenshots.py shots nur:anmelden`
-    **Ziel-Datei:** `assets/screenshots/web/anmelden.png`
-    <!-- web-bild ../assets/screenshots/web/anmelden.png -->
+![Web app sign-in page on a wide screen: blue brand area on the left, “Sign in” card on the right](../assets/screenshots/web/anmelden.png)
 
 What the page looks like depends on the width of the browser window:
 
@@ -30,11 +26,7 @@ What the page looks like depends on the width of the browser window:
   is omitted. Instead, the card has a blue **header band** at the top with
   the Herzog logo and the braid.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Anmeldeseite am Smartphone: die Karte „Anmelden" mit dem blauen Kopfband (Logo und Zopf) über den Feldern.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/anmelden` bei 390 px Breite; automatisch per `python _tools/web_screenshots.py shots nur:anmelden-schmal`
-    **Ziel-Datei:** `assets/screenshots/web/anmelden-schmal.png`
-    <!-- web-bild ../assets/screenshots/web/anmelden-schmal.png -->
+![Web app sign-in page on a smartphone: the “Sign in” card with the blue header above the fields](../assets/screenshots/web/anmelden-schmal.png)
 
 The braid is purely decorative. While the web app checks your sign-in, it
 runs faster. If *Reduce motion* is set in your operating system,

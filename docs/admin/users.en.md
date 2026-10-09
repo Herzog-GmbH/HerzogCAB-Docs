@@ -24,10 +24,7 @@ On the left is the **User list** with a search field and the buttons for
 creating and importing or refreshing, on the right the **editor** of the
 selected user.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Benutzerverwaltung im Kontomodell — Benutzerliste links mit dem Hinweistext „Benutzer, Passwörter und Rollen kommen aus dem Kundenkonto …" und den Schaltflächen „Vom Kundenkonto aktualisieren" und „Lizenzportal öffnen", Benutzer-Editor rechts mit ausgegrauten Stammdatenfeldern und der Infozeile „Kontobenutzer (Lizenzserver)"
-    **So erzeugen:** Kunden-Build mit Kontoanmeldung, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen
-    **Ziel-Datei:** `assets/screenshots/admin/benutzer-konto.png`
+![User management in the account model: user list from the customer account on the left, user with greyed-out details on the right](../assets/screenshots/admin/benutzer-konto.png)
 
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Benutzerverwaltung bei Dongle-Installation — Benutzerliste links (mit den Schaltflächen „Neuer Benutzer", „Aus Entra importieren", „Aus LDAP importieren"), Benutzer-Editor rechts

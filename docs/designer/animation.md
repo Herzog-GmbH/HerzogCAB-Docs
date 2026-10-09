@@ -14,14 +14,7 @@ Lage auf.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Besetzungsübersicht eines Packungsgeflechts (3×3 Flügelräder)
-    mit eingefärbten Klöppeln, den Animations-Schaltflächen (Play, langsamer,
-    schneller) oben links und den beiden Farbrotations-Pfeilen darunter.
-    **So erzeugen:** *Designer* öffnen, **Neu**, Geflechtsart
-    **Packungsgeflecht** (12 Klöppel) wählen, einige Klöppel einfärben; nur die
-    Besetzungsübersicht aufnehmen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-besetzungsuebersicht.png`
+![Besetzungsübersicht eines Packungsgeflechts mit neun Flügelrädern, eingefärbten Klöppeln und den Animations-Schaltflächen](../assets/screenshots/designer/designer-besetzungsuebersicht.png)
 
 ## Bedienelemente im Detail
 

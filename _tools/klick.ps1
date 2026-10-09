@@ -26,6 +26,7 @@ public class Kw {
   [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr h);
   [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr h, int n);
   [DllImport("user32.dll")] public static extern bool IsIconic(IntPtr h);
+  [DllImport("user32.dll")] public static extern bool GetWindowRect(IntPtr h, out RECT r);
   [DllImport("user32.dll")] public static extern bool SetCursorPos(int x, int y);
   [DllImport("user32.dll")] public static extern void mouse_event(uint f, uint dx, uint dy, int d, IntPtr e);
   [DllImport("user32.dll")] public static extern IntPtr SetProcessDPIAware();
@@ -43,7 +44,10 @@ public class Kw {
 $p = Get-Process $Proc -ErrorAction SilentlyContinue | Select-Object -First 1
 if (-not $p) { Write-Output "FEHLER: $Proc laeuft nicht"; exit 1 }
 function TitelVon($h) { $sb = New-Object System.Text.StringBuilder 512; [Kw]::GetWindowText($h, $sb, 512) | Out-Null; $sb.ToString() }
-$h = $p.MainWindowHandle
+# Standard: groesstes sichtbares Fenster des Prozesses (MainWindowHandle zeigt bei offener
+# Klappliste auf das Popup)
+$h = [Kw]::Fenster([uint32]$p.Id) | Sort-Object { $rr = New-Object Kw+RECT; [Kw]::GetWindowRect($_, [ref]$rr) | Out-Null; -1 * ($rr.Right-$rr.Left) * ($rr.Bottom-$rr.Top) } | Select-Object -First 1
+if (-not $h) { $h = $p.MainWindowHandle }
 if ($Titel -ne "") {
   $h = [Kw]::Fenster([uint32]$p.Id) | Where-Object { (TitelVon $_) -match $Titel } | Select-Object -First 1
   if (-not $h) { Write-Output "FEHLER: kein Fenster mit Titel ~ '$Titel'"; exit 1 }

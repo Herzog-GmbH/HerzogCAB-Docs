@@ -20,13 +20,7 @@ master data is used in [winding orders](../orders/winding-order.md), in the
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Spulmaschinen-Liste als Karten (mit Baureihe, Spulstellen,
-    Spulen-Durchmesser und Drehzahl) samt Werkzeugleiste.
-    **So erzeugen:** Navigationspunkt **Spulmaschinen** öffnen, einige
-    Beispiel-Spulmaschinen der Baureihen SP/SPA/HLM (Demo-Daten „Musterbetrieb")
-    anlegen.
-    **Ziel-Datei:** `assets/screenshots/master-data/spulmaschinen.png`
+![Bobbin winding machine page with four cards: series, winding heads, bobbin diameter and speed](../assets/screenshots/master-data/spulmaschinen.png)
 
 At the top is a toolbar, below it the **Machine list** as cards. Each
 card shows image, series and the most important information: **Winding heads**,
@@ -46,13 +40,7 @@ Right-clicking a card opens a context menu with **Open**,
 
 ## The "Create new bobbin winding machine" dialog { #der-dialog-neue-spulmaschine-erstellen }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neue Spulmaschine erstellen* mit Baureihenauswahl und
-    dem Abschnitt „Wickeltechnik".
-    **So erzeugen:** In **Spulmaschinen** auf **Neu** klicken; als Baureihe
-    einmal SPA (zeigt den Abschnitt „Automatischer Spulenwechsel") und einmal HLM
-    (zeigt „Litzenschlag") wählen.
-    **Ziel-Datei:** `assets/screenshots/master-data/spulmaschine-neu-dialog.png`
+![The “Create new bobbin winding machine” dialog with image and Machine data section including series](../assets/screenshots/master-data/spulmaschine-neu-dialog.png)
 
 The dialog is divided into sections from top to bottom.
 

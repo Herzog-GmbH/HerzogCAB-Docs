@@ -14,11 +14,7 @@ You open the page via *User menu > Settings*.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Einstellungen der Web-App mit den Karten Sprache, Flechtwinkel, Produktionsplanung, Angemeldet als, Datenschutz, Designer und Passwort und Sicherheit.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/einstellungen`; automatisch per `python _tools/web_screenshots.py shots nur:einstellungen`
-    **Ziel-Datei:** `assets/screenshots/web/einstellungen.png`
-    <!-- web-bild ../assets/screenshots/web/einstellungen.png -->
+![Web app settings with the Language, Braiding angle and Production planning cards](../assets/screenshots/web/einstellungen.png)
 
 The cards are arranged one below the other. Below each card title it says to whom the
 setting applies: to **this user** (on all devices), to **all

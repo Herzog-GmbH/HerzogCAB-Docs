@@ -19,13 +19,7 @@ workspace folder with the [web app](../../web/index.md).
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Lizenz" mit den drei Karten „Lizenz – Kundenkonto
-    (Lizenzserver)", „Konto" und „Cloud (app.herzog-cab.com)"; Konto, Benutzer,
-    Edition, Bausteine, Miete und Plätze gefüllt, Cloud-Schalter aktiv.
-    **So erzeugen:** Kunden-Build mit Kontoanmeldung, *Datei > Einstellungen*,
-    Tab **Lizenz**.
-    **Ziel-Datei:** `assets/screenshots/settings/einstellungen-lizenz.png`
+![The “Licence” tab of the settings with the cards for customer account, account and cloud](../../assets/screenshots/settings/einstellungen-lizenz.png)
 
 The tab consists of three cards: **Licence** (status), **Account** (actions)
 and **Cloud**.

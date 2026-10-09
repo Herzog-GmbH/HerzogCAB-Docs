@@ -25,6 +25,8 @@ Solange in der laufenden Sitzung noch nichts berechnet wurde, steht in der
 Leiste der Hinweis *„Noch keine Berechnung in dieser Sitzung. Ergebnisse
 erscheinen hier und lassen sich mit einem Klick wieder öffnen.“*
 
+![Berechnung mit geöffneter Verlaufs-Leiste: jede Berechnung erscheint mit Ergebnis und Uhrzeit](../assets/screenshots/basics/verlauf-leiste.png)
+
 ## Was ein Verlaufseintrag zeigt
 
 Jeder Eintrag ist eine kleine Karte mit:

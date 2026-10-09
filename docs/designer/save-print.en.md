@@ -30,13 +30,7 @@ on the [Designer start view](index.md).
 
 ### "Save design" dialog (target folder selection) { #dialog-design-speichern-zielordner-auswahl }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog **Design speichern** mit Namensfeld, dem Ordnerbaum
-    der Design-Bibliothek (inklusive Eintrag „Ohne Ordner" und Unterordnern),
-    der Zeile „Neuer Ordner (unterhalb der Auswahl)…" mit **Anlegen** sowie den
-    Schaltflächen **Abbrechen** und **Speichern**.
-    **So erzeugen:** Neues Design anlegen, etwas färben, **Speichern** klicken.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-speichern-dialog.png`
+![The “Save design” dialog with design name, folder tree of the design library and field for a new folder](../assets/screenshots/designer/designer-speichern-dialog.png)
 
 | Element | Function |
 |---|---|
@@ -98,13 +92,7 @@ number of carriers.
 
 ### Print preview { #druckvorschau }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Druckvorschau-Fenster eines Designs (Standardvorlage): Seite mit
-    Flechtbild, Besetzungsübersicht und Klöppeltabelle, Zoom-Leiste und
-    Drucken-Schaltfläche.
-    **So erzeugen:** Design mit Farben öffnen, **Drucken** klicken, Vorlage
-    bestätigen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-druckvorschau.png`
+![Print preview of a design with design data, Occupation Overview, carrier table and braid pattern](../assets/screenshots/designer/designer-druckvorschau.png)
 
 The print preview shows all pages of the selected template, already filled
 with the current design, color and carrier data. With

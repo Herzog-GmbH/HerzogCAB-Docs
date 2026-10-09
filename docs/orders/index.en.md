@@ -23,10 +23,7 @@ other: a braiding order can have any number of associated winding orders.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Auftragsübersicht mit Suchfeld, den vier Filtern (Auftragsart, Status, Zeitraum, Sortierung), zeitlich gruppierten Auftragskarten (Flecht- und Spulauftrag gemischt, mit Auftragsart-Chips und Verknüpfungszeile) und der Aktionsleiste unten inkl. **Spulauftrag erstellen**
-    **So erzeugen:** Navigationspunkt *Aufträge* öffnen; Workspace „Musterbetrieb" mit mindestens einem Flechtauftrag samt verknüpftem Spulauftrag; einen Flechtauftrag anwählen, damit alle Schaltflächen aktiv sind
-    **Ziel-Datei:** `assets/screenshots/orders/auftraege-uebersicht.png`
+![Order overview with search, four filters, braiding and winding orders grouped by period and action bar at the bottom](../assets/screenshots/orders/auftraege-uebersicht.png)
 
 The screen is laid out from top to bottom:
 

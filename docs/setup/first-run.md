@@ -82,6 +82,8 @@ von diesem Rechner aus erreichbar ist.
 
 Kennt das Konto noch keinen Speicherort, fragt der Dialog einmal:
 
+![Dialog „Arbeitsverzeichnis einrichten“ auf dem ersten Rechner der Firma](../assets/screenshots/setup/arbeitsverzeichnis-festlegen.png)
+
 | Element | Bedeutung |
 |---|---|
 | **Nur auf diesem Rechner** | Für einen einzelnen Arbeitsplatz. Vorbelegt mit *Dokumente\HerzogCAB*, über **Durchsuchen …** änderbar. Kommt später ein zweiter Rechner dazu, verschieben Sie den Ordner unter [Speicherort](../admin/storage-location.md#auf-netzlaufwerk-verschieben) auf ein Netzlaufwerk. |

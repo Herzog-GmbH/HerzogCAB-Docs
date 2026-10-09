@@ -20,13 +20,7 @@ Stammdaten werden in [Spulaufträgen](../orders/winding-order.md), in den
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Spulmaschinen-Liste als Karten (mit Baureihe, Spulstellen,
-    Spulen-Durchmesser und Drehzahl) samt Werkzeugleiste.
-    **So erzeugen:** Navigationspunkt **Spulmaschinen** öffnen, einige
-    Beispiel-Spulmaschinen der Baureihen SP/SPA/HLM (Demo-Daten „Musterbetrieb")
-    anlegen.
-    **Ziel-Datei:** `assets/screenshots/master-data/spulmaschinen.png`
+![Seite Spulmaschinen mit vier Karten: Baureihe, Spulstellen, Spulen-Durchmesser und Drehzahl](../assets/screenshots/master-data/spulmaschinen.png)
 
 Oben liegt eine Werkzeugleiste, darunter die **Maschinenliste** als Karten. Jede
 Karte zeigt Bild, Baureihe und die wichtigsten Angaben: **Spulstellen**,
@@ -46,13 +40,7 @@ Ein Rechtsklick auf eine Karte öffnet ein Kontextmenü mit **Öffnen**,
 
 ## Der Dialog „Neue Spulmaschine erstellen"
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Dialog *Neue Spulmaschine erstellen* mit Baureihenauswahl und
-    dem Abschnitt „Wickeltechnik".
-    **So erzeugen:** In **Spulmaschinen** auf **Neu** klicken; als Baureihe
-    einmal SPA (zeigt den Abschnitt „Automatischer Spulenwechsel") und einmal HLM
-    (zeigt „Litzenschlag") wählen.
-    **Ziel-Datei:** `assets/screenshots/master-data/spulmaschine-neu-dialog.png`
+![Dialog „Neue Spulmaschine erstellen“ mit Bild und Abschnitt Maschinendaten samt Baureihe](../assets/screenshots/master-data/spulmaschine-neu-dialog.png)
 
 Der Dialog ist von oben nach unten in Abschnitte gegliedert.
 

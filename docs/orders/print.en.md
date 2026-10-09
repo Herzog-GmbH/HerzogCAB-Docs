@@ -37,10 +37,7 @@ Your own templates from the [print template editor](../print-templates/index.md)
 always appear in the list in addition. If there is only one matching template,
 the dialog is skipped and the print preview opens directly.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Druckvorlage wählen" mit Auswahlliste (Standardvorlage vorgewählt, eine eigene Vorlage zusätzlich sichtbar)
-    **So erzeugen:** Im Flechtauftrag-Editor **Drucken** klicken; vorher unter *Druck Editor* eine eigene Auftragsvorlage anlegen, damit der Dialog erscheint
-    **Ziel-Datei:** `assets/screenshots/orders/auftrag-druckvorlage-waehlen.png`
+![The “Choose print template” dialog with the template list open](../assets/screenshots/orders/auftrag-druckvorlage-waehlen.png)
 
 !!! info "No templates available"
     If there are no print templates at all, Herzog CAB offers to use the

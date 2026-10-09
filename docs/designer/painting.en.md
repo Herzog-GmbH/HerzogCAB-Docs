@@ -11,15 +11,7 @@ pattern updates immediately with every change.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Werkzeugleiste des Designers mit geöffneter Farbpalette: großes
-    Aktive-Farbe-Quadrat, Paletten-Auswahlliste, Bibliotheksfarben,
-    Benutzerfarben-Reihe und Farbrad-Schaltfläche; daneben die Texturpalette
-    mit großer Vorschau.
-    **So erzeugen:** *Designer* öffnen, **Neu** klicken, Fenster breit ziehen,
-    damit die Gruppen **Farbe** und **Texturen** in der Werkzeugleiste sichtbar
-    sind.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-farbpalette.png`
+![Open color palette with active color, “Standard palette” selection, color swatches and color wheel button](../assets/screenshots/designer/designer-farbpalette.png)
 
 ## Controls in detail { #bedienelemente-im-detail }
 
@@ -116,10 +108,7 @@ on the same track on one carrier. Each of these yarns can get its
 **own color** — e.g. a black carrier with a red marker thread.
 Yarn 1 is always the carrier color itself.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Designer mit Rundgeflecht, Fachung 3: in der Werkzeugleiste neben „L“/„R“ der Garn-Wähler mit geöffnetem Menü (Alle Garne, Garn 1 … Garn 3); die Klöppeltabelle zeigt senkrechte Farbstreifen je Garn, das Flechtbild Streifen längs zum Faden mit dünnen Trennlinien.
-    **So erzeugen:** *Designer*, **Neu**, Rundgeflecht 16 Klöppel, Fachung 3; einige Klöppel schwarz färben, über den Garn-Wähler „Garn 2“ wählen und diese Klöppel rot färben; Menü des Garn-Wählers aufklappen.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-fachungsfarben.png`
+![Designer with a round braid and ply count 3: yarn selector in the toolbar with the menu yarn 1 to yarn 3 open](../assets/screenshots/designer/designer-fachungsfarben.png)
 
 **Yarn selector (toolbar).** To the right of the buttons for
 counterclockwise and clockwise, a button with a bar icon appears from ply
@@ -143,10 +132,7 @@ cell of the carrier table does not color, but opens a menu:
 | **Plying colors…** | Opens the *Plying colors – &lt;carrier&gt;* dialog (e.g. "– L3" or "– Track 2, carrier 4"). Greyed out at ply count 1 (*"Plying colors are available from plying 2."*). |
 | **All yarns like yarn 1** | Removes the individual yarn colors of this carrier; all yarns run in the carrier color again. Only active if the carrier has its own yarn colors. |
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Fachungsfarben – L3“ mit Hinweistext, Karte „Garne“ mit drei Zeilen „Garn 1 … Garn 3“ und Farbknöpfen (einer aufgeklappt mit Aktive Farbe, Palette, Eigene Farbe wählen…), unten **Alle wie Garn 1**, **Übernehmen** und **Abbrechen**.
-    **So erzeugen:** wie oben, Rechtsklick auf einen Klöppel in der Klöppeltabelle > **Fachungsfarben…**, Farbknopf von Garn 2 anklicken.
-    **Ziel-Datei:** `assets/screenshots/designer/designer-fachungsfarben-dialog.png`
+![The “Plying colors – L3” dialog with the color buttons for yarn 1 to yarn 3 and “All like yarn 1”](../assets/screenshots/designer/designer-fachungsfarben-dialog.png)
 
 The dialog contains one row **Yarn N** per yarn with a color button that shows
 the color code or color value. A click on the color button offers the

@@ -11,13 +11,7 @@ last view, how fast the track animation runs and what happens when
 an unsaved design is closed. At the very bottom is the
 **Legacy design import** card for legacy data.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Tab „Design" des Einstellungen-Dialogs mit den Karten
-    „Vorgaben für neue Designs", „Vorschau & Ansicht", „Animation",
-    „Speichern" und „Legacy-Designimport".
-    **So erzeugen:** *Datei > Einstellungen*, Tab **Design**, Dialog so hoch
-    ziehen, dass alle fünf Karten sichtbar sind.
-    **Ziel-Datei:** `assets/screenshots/settings/einstellungen-design.png`
+![The “Design” tab of the settings with defaults for new designs, preview and view, animation and saving](../../assets/screenshots/settings/einstellungen-design.png)
 
 ## Controls in detail { #bedienelemente-im-detail }
 

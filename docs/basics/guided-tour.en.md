@@ -29,10 +29,7 @@ control.
     ++f1++ on its own opens the matching page of this manual in the browser —
     up to version 2.1.0, ++f1++ started the tour.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Geführte Touren“ mit den zehn Themenkarten (darunter „Auftragseditor“) und der runden Start-Schaltfläche ▶ unten rechts in jeder Karte
-    **So erzeugen:** *Hilfe > Geführte Touren…* öffnen, Dialog unverändert aufnehmen
-    **Ziel-Datei:** `assets/screenshots/basics/gefuehrte-touren-dialog.png`
+![The “Guided Tours” dialog with topic cards and the round start button on each card](../assets/screenshots/basics/gefuehrte-touren-dialog.png)
 
 ## Available tours { #verfugbare-touren }
 
