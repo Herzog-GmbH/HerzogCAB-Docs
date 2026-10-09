@@ -12,8 +12,18 @@ neu einzugeben.
 Am **rechten Fensterrand** sitzt ein schmales Pfeil-Symbol (**Historie
 öffnen**). Ein Klick darauf klappt die Leiste **Historie** aus; über das
 Pfeil-Symbol in ihrer Kopfzeile (**Historie einklappen**) verschwindet sie
-wieder. Die Leiste steht auf fast allen Seiten zur Verfügung — nur im
-[Designer](../designer/index.md) ist sie ausgeblendet.
+wieder.
+
+Die Leiste gibt es **nur unter Berechnungen**: auf der
+[Berechnungs-Übersicht](../calculations/index.md), den Übersichten ihrer
+Gruppen (*Material*, *Produkt*, *Hohlgeflecht*, *Produktion*, *Spulerei*) und
+auf allen Rechnern. Auf den übrigen Seiten — Aufträge, Stammdaten, Katalog,
+Designer, Druck-Editor usw. — fehlt sie, weil dort nichts in den Verlauf
+kommt.
+
+Solange in der laufenden Sitzung noch nichts berechnet wurde, steht in der
+Leiste der Hinweis *„Noch keine Berechnung in dieser Sitzung. Ergebnisse
+erscheinen hier und lassen sich mit einem Klick wieder öffnen.“*
 
 ## Was ein Verlaufseintrag zeigt
 
@@ -36,9 +46,10 @@ Ergebnis steht sofort wieder da und lässt sich weiterbearbeiten.
 * Die **Verlaufs-Leiste** sammelt die Berechnungen der laufenden Sitzung.
   Nach einem Programmneustart beginnt sie leer.
 * Unabhängig davon merkt sich Herzog CAB Ihre Berechnungen dauerhaft **pro
-  Benutzer und Arbeitsbereich**: Die letzten fünf erscheinen auf der
-  [Startseite](home.md) unter *Letzte Berechnungen* und lassen sich von
-  dort genauso mit allen Eingabewerten wieder öffnen.
+  Benutzer und Arbeitsbereich**: Die letzten acht erscheinen auf der
+  [Startseite](home.md) in der Karte *Zuletzt geöffnet* (Reiter
+  *Berechnungen*) und lassen sich von dort genauso mit allen Eingabewerten
+  wieder öffnen.
 
 !!! info "Umrechner erzeugen keine Einträge"
     Die beiden Live-Umrechner (*Umrechnung Feinheit*, *Umrechnung

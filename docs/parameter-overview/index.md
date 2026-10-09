@@ -17,9 +17,13 @@ verwenden möchten.
 
 ## Der Bildschirm im Überblick
 
-Sie erreichen die Parameter-Übersicht über den gleichnamigen
-Navigationspunkt. Oben rechts steht die Schaltfläche **Als Fenster öffnen**,
-darunter die Baumtabelle mit allen Parametern, gruppiert nach Bereich.
+Sie erreichen die Parameter-Übersicht über den Navigationspunkt
+*Systemverwaltung > Parameter Explorer*. Benutzer ohne Verwaltungsrecht, die
+die Übersicht öffnen dürfen, finden den Punkt **Parameter Explorer** ganz
+unten in der Navigation (siehe [Navigieren in der App](../basics/navigation.md)).
+Oben links steht die Titelzeile „Parameter-Explorer“, rechts die Schaltfläche
+**Als Fenster öffnen**, darunter die Baumtabelle mit allen Parametern,
+gruppiert nach Bereich.
 
 ## Bedienelemente im Detail
 

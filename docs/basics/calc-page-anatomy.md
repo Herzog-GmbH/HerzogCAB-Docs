@@ -25,7 +25,9 @@ weiße **Eingabe-Karte**, darunter (oder daneben, bei umfangreichen Seiten)
 der **Ergebnisbereich** und die Schaltflächen **Löschen** und **Berechnen**.
 Umfangreiche Seiten wie *Kern-Mantel-Produkt* oder *Maschinenlaufzeit pro
 Spule-Satz* gliedern die Eingabe zusätzlich in überschriebene Abschnitte
-oder nebeneinanderliegende Teilbereiche.
+oder nebeneinanderliegende Teilbereiche. Ist das Fenster zu schmal für alle
+Teilbereiche nebeneinander, stapeln sie sich untereinander und die Seite
+scrollt — kein Feld wird mehr am Rand abgeschnitten.
 
 ### Eingabefelder
 
@@ -41,6 +43,14 @@ oder nebeneinanderliegende Teilbereiche.
 
 Einige Felder haben sinnvolle **Startwerte** (z. B. Füllungsgrad 70 %) —
 diese können Sie einfach stehen lassen oder anpassen.
+
+!!! info "Flechtwinkel-Felder"
+    Alle Flechtwinkel-Felder und -Ergebnisse zeigen den Winkel im
+    eingestellten Bezug — zur Querrichtung (Herzog, Standard) oder zur
+    Geflechtsachse, siehe
+    [*Einstellungen > Allgemein > Flechtwinkel*](../admin/settings/appearance.md#flechtwinkel).
+    Zeigen Sie mit der Maus auf das Feld, nennt der Kurzhinweis beide Werte
+    mit einem Erklärbild.
 
 ### Berechnen und Löschen
 
@@ -97,9 +107,10 @@ Live-Umrechner erzeugen bewusst keine [Verlaufseinträge](history.md).
 ## Verlauf, gemerkte Werte und Favoriten
 
 * Jede erfolgreich abgeschlossene Berechnung landet im
-  [Verlauf](history.md) (rechte Seitenleiste) und unter *Letzte
-  Berechnungen* auf der [Startseite](home.md) — ein Klick lädt die
-  damaligen Eingaben wieder.
+  [Verlauf](history.md) und unter *Zuletzt geöffnet* auf der
+  [Startseite](home.md) — ein Klick lädt die damaligen Eingaben wieder.
+  Die Verlaufs-Leiste **Historie** am rechten Fensterrand gibt es nur auf
+  den Seiten unter *Berechnungen*.
 * Innerhalb einer Sitzung bleiben Ihre Eingaben erhalten, auch wenn Sie
   zwischendurch andere Seiten öffnen.
 * Häufig genutzte Berechnungen pinnen Sie per Rechtsklick als

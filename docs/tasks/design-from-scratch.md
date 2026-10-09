@@ -106,7 +106,7 @@ gestalten Sie im [Druck-Editor](../print-templates/index.md).
 ## Ergebnis
 
 * Das Design liegt in der [Design-Bibliothek](../master-data/designs.md) und
-  erscheint unter „Letzte Designs" auf der [Startseite](../basics/home.md).
+  erscheint unter „Zuletzt geöffnet" auf der [Startseite](../basics/home.md).
 * Der Ausdruck mit Flechtbild, Besetzung und Klöppeltabelle ist fertig.
 * Das Design kann jetzt im
   [Flechtauftrag](../orders/braiding-order.md) (Tab **Design**) verknüpft

@@ -107,7 +107,7 @@ im Auftrag im Tab **Auftrag**.
 ## Ergebnis
 
 * Der Flechtauftrag ist gespeichert und erscheint in der
-  [Auftragsübersicht](../orders/index.md) sowie unter „Letzte Aufträge" auf
+  [Auftragsübersicht](../orders/index.md) sowie unter „Zuletzt geöffnet" auf
   der [Startseite](../basics/home.md).
 * Der Maschinenzettel ist gedruckt.
 * Der [Maschinenpark](../machine-park/index.md) zeigt den Auftrag an der

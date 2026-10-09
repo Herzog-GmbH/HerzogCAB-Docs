@@ -27,6 +27,7 @@ Berechnungen
   │    └─ Spulvolumen
   ├─ Produkt
   │    ├─ Flechtwinkel
+  │    ├─ Flechtwinkel über Abzug
   │    ├─ Geflechtsdichte
   │    ├─ Produktlänge
   │    ├─ Produktlänge pro Trommel
@@ -42,7 +43,7 @@ Berechnungen
   │         └─ Bedeckung
   ├─ Produktion
   │    ├─ Produktionsgeschwindigkeit
-  │    ├─ Maschinen Dimensionierung
+  │    ├─ Maschinendimensionierung
   │    ├─ Maschinenlaufzeit pro Spule-Satz
   │    └─ Wechselräder Gummibandkette
   └─ Spulerei
@@ -70,14 +71,14 @@ Stammdaten
   ├─ Abwickler
   └─ Gatter
 Druck Editor
-Parameter Explorer
 Systemverwaltung                 (nur mit Verwaltungsrechten sichtbar)
   ├─ Benutzer
   ├─ Rollen
   ├─ Profile
   ├─ Speicherort
   ├─ Firma
-  └─ Authentifizierung
+  ├─ Authentifizierung
+  └─ Parameter Explorer
 ```
 
 Die Zielseiten der Einträge finden Sie im Handbuch unter
@@ -88,6 +89,13 @@ Die Zielseiten der Einträge finden Sie im Handbuch unter
 [Druck-Editor](../print-templates/index.md),
 [Parameter-Übersicht](../parameter-overview/index.md) und
 [Verwaltung](../admin/index.md).
+
+!!! info "Parameter Explorer jetzt in der Systemverwaltung"
+    Der **Parameter Explorer** ist eine Ansicht für Fachleute und steht nicht
+    mehr in der Hauptnavigation, sondern als letzter Punkt unter
+    **Systemverwaltung**. Benutzer ohne Verwaltungsrecht, die den Parameter
+    Explorer öffnen dürfen, finden ihn weiterhin ganz unten in der
+    Navigation.
 
 ## So bedienen Sie den Baum
 
@@ -103,9 +111,12 @@ Die Zielseiten der Einträge finden Sie im Handbuch unter
   ihn unter *Favoriten* ganz oben an — Details unter
   [Favoriten](favorites.md).
 * **Navigation einklappen.** Über das Pfeil-Symbol in der Kopfzeile der
-  Navigation verkleinern Sie sie zu einer Symbolleiste; über
-  *Ansicht > Navigation* blenden Sie sie komplett aus und wieder ein.
-  Der Aufbau ist unter [Oberfläche im Überblick](interface.md) beschrieben.
+  Navigation (oder *Ansicht > Navigation*) verkleinern Sie sie zu einer
+  Symbolleiste und klappen sie wieder auf. Eingeklappt genügt es, mit der
+  Maus über die Leiste zu fahren: Die Navigation klappt auf und **schwebt
+  über dem Inhalt**, bis die Maus sie wieder verlässt. Unter 1500 Pixel
+  Fensterbreite klappt sie von selbst ein. Der Aufbau ist unter
+  [Oberfläche im Überblick](interface.md#navigation-links) beschrieben.
 
 !!! info "Sie sehen weniger Einträge?"
     Die Navigation zeigt nur Bereiche, für die Ihre

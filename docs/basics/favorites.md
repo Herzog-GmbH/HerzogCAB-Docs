@@ -45,8 +45,8 @@ ursprünglichen Ort) und wählen Sie **Favorit entfernen**.
 
 * **Navigation:** Kategorie *Favoriten* ganz oben — dort sammeln sich Ihre
   angepinnten Einträge.
-* **Startseite:** Bereich *Favoriten* mit einer Karte je Eintrag (Symbol,
-  Name und Herkunftsbereich), siehe [Startseite (Home)](home.md).
+* **Startseite:** Karte *Favoriten* mit einer herzogblauen Kachel je Eintrag
+  (Symbol, Name und Herkunftsbereich), siehe [Startseite (Home)](home.md).
 
 ## Gut zu wissen
 

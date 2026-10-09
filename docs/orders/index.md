@@ -160,9 +160,9 @@ Jeder Auftrag trägt einen Status, den Sie im jeweiligen Editor im Tab
 | **Abgeschlossen** | Fertiggestellt. |
 
 Die Startseite ([Home](../basics/home.md)) zeigt die Anzahl der Aufträge je
-Status; ein Klick auf eine dieser Kacheln öffnet die Auftragsübersicht mit
-bereits vorgewähltem Status-Filter. Geöffnete Aufträge landen außerdem im
-[Verlauf „Letzte Aufträge"](../basics/history.md).
+Status; ein Klick auf einen dieser Zähler öffnet die Auftragsübersicht mit
+bereits vorgewähltem Status-Filter. Geöffnete Aufträge erscheinen außerdem
+in der Karte *Zuletzt geöffnet* der Startseite.
 
 ## In diesem Kapitel
 
