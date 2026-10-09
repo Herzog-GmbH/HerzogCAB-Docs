@@ -15,9 +15,11 @@ Prüfen Sie die Adresse und die Feststelltaste. Das Passwort setzen Sie selbst
 [Lizenzportals](../portal/index.md) zurück — der Link gilt eine Stunde. Das
 neue Passwort gilt sofort auch für Desktop- und Web-App.
 
-**Das Feld „Code (Authenticator-App)" erscheint.**
+**Das Feld „Code aus der Authenticator-App" erscheint.**
 Kein Fehler: Für Ihren Benutzer ist der [zweite Faktor](../portal/security.md)
-eingerichtet. Tragen Sie den aktuellen sechsstelligen Code ein. Stimmt der
+eingerichtet. Tragen Sie den aktuellen sechsstelligen Code ein — in der
+Desktop-App in die sechs Kästchen, die nach der sechsten Ziffer selbst
+prüfen ([Anmeldung](../admin/login.md#bedienelemente)). Stimmt der
 Code nicht, prüfen Sie die Uhrzeit des Handys; ist die App verloren, setzt
 Herzog den zweiten Faktor zurück ([Support](support.md)).
 

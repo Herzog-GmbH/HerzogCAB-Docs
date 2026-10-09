@@ -27,17 +27,16 @@ angenommen und ein Passwort gesetzt; Herzog CAB ist
 ### Schritt 1: Ersten Start abwarten
 
 Starten Sie Herzog CAB. Auf einem Rechner, der noch nicht freigeschaltet
-ist, erscheint der Dialog **Herzog CAB – Anmeldung am Kundenkonto** mit dem
-Hinweis *„Herzog CAB ist auf diesem Rechner noch nicht freigeschaltet."*
+ist, erscheint der Dialog **Herzog CAB – Anmeldung am Kundenkonto**. Oben
+liegt ein blaues Kopfband mit *Herzog CAB* und der Unterzeile *Anmeldung am
+Kundenkonto*, rechts darin läuft ein kleiner animierter Zopf. Darunter steht
+der Hinweis *„Herzog CAB ist auf diesem Rechner noch nicht freigeschaltet.“*
+mit einer kurzen Erklärung. Aufbau und Verhalten des Dialogs sind dieselben
+wie bei der täglichen [Anmeldung mit dem Kontobenutzer](../admin/login.md#anmeldung-mit-dem-kontobenutzer).
 
 !!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Herzog CAB – Anmeldung am Kundenkonto" mit
-    Erklärtext, den Feldern **E-Mail-Adresse** und **Passwort**, dem Häkchen
-    **Angemeldet bleiben** sowie den Schaltflächen **Anmelden** und
-    **Beenden**.
-    **So erzeugen:** Kunden-Build auf einem Rechner ohne `license.json`
-    starten (oder vorher unter *Einstellungen > Lizenz* **Von diesem Rechner
-    abmelden** wählen).
+    **Motiv:** Dialog „Herzog CAB – Anmeldung am Kundenkonto“ mit blauem Kopfband (Zopf rechts), Erklärtext, den Feldern **E-Mail-Adresse** und **Passwort** (Beschriftung über dem Feld), dem Häkchen **Angemeldet bleiben**, dem Link **Passwort vergessen?** sowie den Schaltflächen **Anmelden** und **Beenden**.
+    **So erzeugen:** Kunden-Build auf einem Rechner ohne `license.json` starten (oder vorher unter *Einstellungen > Lizenz* **Von diesem Rechner abmelden** wählen).
     **Ziel-Datei:** `assets/screenshots/setup/konto-anmeldung-geraet.png`
 
 ### Schritt 2: Anmelden
@@ -46,7 +45,7 @@ Hinweis *„Herzog CAB ist auf diesem Rechner noch nicht freigeschaltet."*
 |---|---|
 | **E-Mail-Adresse** | Die Adresse Ihres Benutzers im Kundenkonto (dieselbe wie im Lizenzportal). |
 | **Passwort** | Ihr Konto-Passwort (verdeckte Eingabe). |
-| **Code (Authenticator-App)** | Erscheint erst nach dem Klick auf **Anmelden**, wenn für Ihren Benutzer die [Zwei-Faktor-Anmeldung](../portal/security.md) eingerichtet ist. Tragen Sie den aktuellen sechsstelligen Code ein und klicken Sie erneut auf **Anmelden**. |
+| **Code aus der Authenticator-App** | Klappt erst nach dem Klick auf **Anmelden** auf, wenn für Ihren Benutzer die [Zwei-Faktor-Anmeldung](../portal/security.md) eingerichtet ist. Tippen Sie den aktuellen sechsstelligen Code in die sechs Kästchen — nach der sechsten Ziffer prüft Herzog CAB ihn von selbst. Details unter [Anmeldung mit dem Kontobenutzer](../admin/login.md#bedienelemente). |
 | **Angemeldet bleiben** | Voreingestellt an. Herzog CAB startet auf diesem Rechner dann ohne neue Anmeldung, bis Sie sich im Programm abmelden, Ihr Passwort ändern oder 30 Tage nicht damit arbeiten. Gilt nur für Ihren Windows-Benutzer. Arbeiten mehrere Personen mit demselben Windows-Benutzer am Rechner, schalten Sie es aus. |
 | **Anmelden** | Prüft die Zugangsdaten am Lizenzserver, meldet den Rechner am Konto an und belegt einen Platz. |
 | **Beenden** | Schließt Herzog CAB ohne Anmeldung. |

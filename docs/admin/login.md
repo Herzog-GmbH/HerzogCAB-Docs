@@ -29,25 +29,49 @@ Welches Anmeldefenster Sie sehen, hängt vom Lizenzweg ab:
 
 ## Anmeldung mit dem Kontobenutzer
 
-Beim Start erscheint das Fenster **Herzog CAB – Anmelden** mit dem Hinweis
-*„Melden Sie sich mit Ihrem Benutzer im Kundenkonto an – mit denselben
-Zugangsdaten wie im Lizenzportal und in Herzog CAB Web."* Darunter steht
-der Name Ihres Kontos (*Konto: &lt;Firma&gt;*).
+Beim Start erscheint das Fenster **Herzog CAB – Anmelden** (bzw. **Herzog
+CAB – Anmeldung am Kundenkonto**, wenn der Rechner noch nicht am Konto
+angemeldet ist, siehe [Anmelden und Lizenz beziehen](../setup/activate-license.md)).
+Oben liegt ein blaues **Kopfband** mit dem Schriftzug *Herzog CAB* und
+darunter dem Namen Ihres Kontos (*Konto: &lt;Firma&gt;*); rechts darin läuft
+ein kleiner animierter **Zopf** aus drei Fäden. Er zeigt den Zustand des
+Dialogs: ruhig, solange Sie tippen, schnell, während Herzog CAB die
+Anmeldung prüft, und fast stehend nach erfolgreicher Anmeldung.
+
+Darunter stehen die Felder mit ihrer Beschriftung jeweils darüber. Kommt der
+Dialog, weil eine gespeicherte Anmeldung nicht mehr gilt, erklärt das ein
+hellblauer Hinweis ganz oben (*„Die gespeicherte Anmeldung gilt nicht mehr
+(abgelaufen, abgemeldet oder Passwort geändert). Bitte melden Sie sich neu
+an.“*).
 
 !!! warning "📷 Screenshot fehlt"
-    **Motiv:** Anmeldefenster „Herzog CAB – Anmelden" im Kontomodell: Hinweistext, Zeile „Konto: &lt;Firma&gt;", Felder E-Mail-Adresse und Passwort, Schaltflächen Anmelden und Beenden.
-    **So erzeugen:** Kunden-Build auf einem am Konto angemeldeten Rechner ein zweites Mal starten.
+    **Motiv:** Anmeldefenster „Herzog CAB – Anmelden“ im Kontomodell: blaues Kopfband mit „Herzog CAB“, „Konto: &lt;Firma&gt;“ und dem Zopf rechts; Felder E-Mail-Adresse und Passwort mit Beschriftung darüber, Häkchen „Angemeldet bleiben“, Link „Passwort vergessen?“, Schaltflächen Anmelden und Beenden.
+    **So erzeugen:** Kunden-Build auf einem am Konto angemeldeten Rechner starten, nachdem der Benutzer sich im Programm abgemeldet hat (sonst startet es dank „Angemeldet bleiben“ ohne Dialog). Musterkonto, keine echte E-Mail-Adresse.
     **Ziel-Datei:** `assets/screenshots/admin/anmelden-konto.png`
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Derselbe Dialog im Schritt „Zweiter Faktor“: Kopfband-Unterzeile „Zweiter Faktor“, grüner Haken im Passwortfeld, darunter „Code aus der Authenticator-App“ mit sechs Kästchen in zwei Dreiergruppen (drei Ziffern eingetippt), graue Meldung zur Zwei-Faktor-Anmeldung, Schaltfläche „Bestätigen“.
+    **So erzeugen:** Mit einem Testbenutzer anmelden, für den im Lizenzportal der zweite Faktor eingerichtet ist; nach **Anmelden** drei Ziffern eintippen und aufnehmen.
+    **Ziel-Datei:** `assets/screenshots/admin/anmelden-konto-code.png`
 
 ### Bedienelemente
 
 | Element | Beschreibung |
 |---|---|
 | **E-Mail-Adresse** | Ihr Anmeldename im Kundenkonto. Herzog CAB füllt hier den zuletzt an diesem Rechner angemeldeten Benutzer vor, beim ersten Mal den Benutzer, der den Rechner angemeldet hat. Ein Klick in das Feld markiert den Inhalt, damit Sie ihn direkt überschreiben können. |
-| **Passwort** | Ihr Konto-Passwort (verdeckte Eingabe). Mit ++enter++ lösen Sie die Anmeldung direkt aus. |
-| **Code (Authenticator-App)** | Erscheint nur, wenn für Ihren Benutzer der [zweite Faktor](../portal/security.md) eingerichtet ist — nach dem ersten Klick auf **Anmelden**. Sechs Ziffern aus der Authenticator-App. |
-| **Anmelden** | Prüft die Zugangsdaten am Lizenzserver und öffnet bei Erfolg die Profil-Auswahl. |
-| **Beenden** | Beendet Herzog CAB. |
+| **Passwort** | Ihr Konto-Passwort (verdeckte Eingabe). Mit ++enter++ lösen Sie die Anmeldung direkt aus. Stimmt das Passwort und fehlt nur noch der Code, erscheint im Feld ein grüner Haken. |
+| **Code aus der Authenticator-App** | Klappt erst auf, wenn für Ihren Benutzer der [zweite Faktor](../portal/security.md) eingerichtet ist — nach dem ersten Klick auf **Anmelden**. Der Code steht in **sechs Kästchen** (zwei Dreiergruppen). Es werden nur Ziffern angenommen; ein eingefügter Code wie „123 456“ wird ohne Leerzeichen übernommen. **Nach der sechsten Ziffer prüft Herzog CAB den Code von selbst**, ein Klick auf **Bestätigen** ist nicht nötig. Der Code wechselt alle 30 Sekunden. |
+| **Angemeldet bleiben** | Voreingestellt an: Herzog CAB startet auf diesem Rechner ohne neue Anmeldung, bis Sie sich im Programm abmelden, Ihr Passwort ändern oder 30 Tage nicht damit arbeiten. Gilt nur für Ihren Windows-Benutzer — an Rechnern, an denen mehrere Personen mit demselben Windows-Benutzer arbeiten, ausschalten. |
+| **Passwort vergessen?** | Öffnet im Browser die Seite des [Lizenzportals](../portal/index.md), die einen Link zum Setzen eines neuen Passworts verschickt; die E-Mail-Adresse ist dort schon eingetragen. |
+| **Anmelden** / **Bestätigen** | Prüft die Zugangsdaten am Lizenzserver und öffnet bei Erfolg die Profil-Auswahl. Während der Prüfung zeigt die Schaltfläche einen Kreisel und *Wird geprüft …*, im Schritt mit dem Code heißt sie **Bestätigen**. Bei Erfolg erscheint kurz ein Haken mit *Angemeldet*, dann schließt sich der Dialog. |
+| **Beenden** | Beendet Herzog CAB (während der Prüfung gesperrt). |
+
+!!! tip "Fehler auf einen Blick"
+    Fehlt eine Eingabe, bekommt das Feld einen roten Rand und wackelt kurz;
+    der Rand verschwindet, sobald Sie weitertippen. Ein falscher Code färbt
+    die Kästchen rot, leert sie und lässt sie wackeln. Schlägt die Anmeldung
+    selbst fehl, wackelt das Passwortfeld und die Meldung steht in Rot unter
+    den Feldern.
 
 ### Rollen und Rechte
 
@@ -74,6 +98,7 @@ Rollen im Konto kommen erst beim nächsten Online-Start an.
 | *E-Mail-Adresse oder Passwort stimmen nicht.* | Zugangsdaten prüfen; das Passwort setzen Sie über **Passwort vergessen** im [Lizenzportal](../portal/index.md) zurück. |
 | *Für diesen Benutzer ist die Zwei-Faktor-Anmeldung eingerichtet. Bitte den aktuellen Code …* | Kein Fehler — den Code aus der Authenticator-App eintragen. |
 | *Der Code stimmt nicht.* | Uhrzeit des Handys prüfen und den nächsten Code abwarten. |
+| *Bitte die E-Mail-Adresse Ihres Benutzers eingeben.* / *Bitte das Passwort eingeben.* / *Bitte den Code aus der Authenticator-App eingeben.* | Ein Feld ist leer bzw. der Code unvollständig. |
 | *Dieser Benutzer ist deaktiviert.* | Ein Administrator hat den Benutzer im Lizenzportal deaktiviert. |
 | *Zu viele Fehlversuche. Bitte später erneut versuchen.* | Der Lizenzserver bremst nach mehreren Fehlversuchen — einige Minuten warten. |
 | *Der Lizenzserver ist nicht erreichbar (…). Offline anmelden kann sich nur, wer sich auf diesem Rechner schon einmal online angemeldet hat …* | Verbindung prüfen — oder einen Benutzer nehmen, der hier schon einmal online war. |

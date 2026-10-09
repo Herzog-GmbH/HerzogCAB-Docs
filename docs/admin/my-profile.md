@@ -5,8 +5,9 @@
 ## Wofür Sie diesen Bereich nutzen
 
 Jeder angemeldete Benutzer kann sein eigenes Konto ohne Administrator
-pflegen: Profilbild, Anzeigename, E-Mail-Adresse und Passwort. Außerdem
-melden Sie sich hier ab. Für Änderungen an **fremden** Konten ist dagegen die
+pflegen: Profilbild, Anzeigename, E-Mail-Adresse und Passwort. Bei
+Benutzern aus dem Kundenkonto ändern Sie Name, E-Mail und Passwort im
+Lizenzportal; hier bleibt das Profilbild. Außerdem melden Sie sich hier ab. Für Änderungen an **fremden** Konten ist dagegen die
 [Benutzerverwaltung](users.md) zuständig (Recht **Benutzer verwalten**
 erforderlich).
 
@@ -18,19 +19,44 @@ Schaltfläche mit Ihren Initialen an derselben Stelle. Es öffnet sich der
 Dialog **Mein Profil** mit drei Reitern.
 
 !!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Mein Profil", Reiter „Profil" mit Profilbild, Anzeigename und E-Mail
-    **So erzeugen:** unten links in der Navigation auf die eigene Benutzerkarte klicken
+    **Motiv:** Dialog „Mein Profil“, Reiter „Profil“ eines Kontobenutzers: rundes Profilbild bzw. Initialen, ausgegraute Felder Anzeigename und E-Mail, darunter der Hinweis „Name und E-Mail-Adresse gehören zum Kundenbenutzer …“ und die Schaltfläche **Im Lizenzportal ändern**.
+    **So erzeugen:** Kunden-Build mit Kontoanmeldung (Musterbenutzer), unten links in der Navigation auf die eigene Benutzerkarte klicken.
     **Ziel-Datei:** `assets/screenshots/admin/mein-profil.png`
 
-## Tab „Profil"
+## Tab „Profil“
 
 | Element | Beschreibung |
 |---|---|
+| **Profilbild** | Rundes Bild oben links. Ohne eigenes Bild zeigt es Ihre Initialen — die Anfangsbuchstaben der ersten beiden Namensteile, wie in der Navigation (aus „Max Muster“ wird „MM“). |
 | **Bild...** | Wählt ein Profilbild (Foto/Avatar) aus einer Bilddatei. |
 | **Entfernen** | Löscht das aktuelle Profilbild. |
-| **Anzeigename** | Name, der in der Oberfläche und auf Ausdrucken erscheint. |
-| **E-Mail** | Optionale Kontaktadresse. |
-| **Speichern** | Sichert die Änderungen; die Statuszeile meldet *„Profil gespeichert."* |
+| **Anzeigename** | Name, der in der Oberfläche und auf Ausdrucken erscheint. Bei Kontobenutzern schreibgeschützt (siehe unten). |
+| **E-Mail** | Kontaktadresse. Bei Kontobenutzern schreibgeschützt (siehe unten). |
+| **Im Lizenzportal ändern** | Nur bei Kontobenutzern: öffnet im Browser die Seite des Lizenzportals mit Passwort, zweitem Faktor und Name. |
+| **Speichern** | Sichert die Änderungen; die Statuszeile meldet *„Profil gespeichert.“* |
+
+### Kontobenutzer: Name und E-Mail kommen aus dem Kundenkonto
+
+Melden Sie sich mit Ihrem Benutzer aus dem [Kundenkonto](../setup/account.md)
+an, übernimmt Herzog CAB **Anzeigename und E-Mail-Adresse** bei jeder
+Anmeldung aus dem Konto. Deshalb sind beide Felder hier **schreibgeschützt**;
+darunter steht der Hinweis *„Name und E-Mail-Adresse gehören zum
+Kundenbenutzer. Den Namen ändern Sie im Lizenzportal, das Programm übernimmt
+ihn bei der nächsten Anmeldung.“*
+
+So ändern Sie Ihren Namen:
+
+1. Klicken Sie auf **Im Lizenzportal ändern**. Der Browser öffnet die
+   Lizenzportal-Seite [Passwort und zweiter Faktor](../portal/security.md)
+   mit der Karte für den Namen.
+2. Tragen Sie dort den neuen Namen ein und speichern Sie.
+3. Herzog CAB übernimmt ihn bei der nächsten Anmeldung (bzw. beim nächsten
+   Abgleich mit dem Kundenkonto).
+
+Den Namen anderer Benutzer ändert ein Administrator im Lizenzportal unter
+[Benutzer einladen und verwalten](../portal/users.md). Die E-Mail-Adresse
+ist der Anmeldename im Konto. Das **Profilbild** bleibt auch für
+Kontobenutzer hier im Programm änderbar.
 
 !!! tip "Wiedererkennung an gemeinsamen Rechnern"
     Gerade an Arbeitsplätzen, die mehrere Bediener teilen, hilft ein
