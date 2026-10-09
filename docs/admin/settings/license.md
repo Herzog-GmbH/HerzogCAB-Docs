@@ -95,6 +95,22 @@ Kundenkonto angemeldet sein.
 | Desktop → Web-App | Aufträge, Kunden, Farben, Materialien, Spulen, Trommeln, Maschinen, Designs samt Ordnern, Hallenpläne (Grundrisse und Belegungen) und Druckvorlagen, dazu die Dateien: Vorschaubilder, Medien, Maschinenbilder und -dokumente, Bilder des Hallenplaners und der Druckvorlagen. |
 | Web-App → Desktop (Schalter *Änderungen aus der Webapp …* an) | Designs, Aufträge, Kunden, Farben, Materialien, Spulen, Maschinen und Hallenpläne; ab Version 2.1.0 auch Trommeln und Druckvorlagen. Außerdem Dateien, die in der Web-App hochgeladen wurden (Vorschauen, Bilder, Dokumente). |
 
+Ein Abgleich läuft in dieser Reihenfolge ab:
+
+```mermaid
+sequenceDiagram
+  participant D as Desktop-App
+  participant C as Cloud
+  participant W as Web-App
+  Note over D: kurz nach dem Speichern,<br>sonst alle 15 Minuten
+  D->>C: 1. Geänderte Einträge und Dateien hochladen
+  D->>C: 2. Im Desktop Gelöschtes auch in der Cloud löschen
+  W->>C: Änderungen und Löschungen in der Web-App
+  C-->>D: 3. Rückkanal: Änderungen aus der Web-App übernehmen
+  Note over D,C: Beide Seiten geändert: Der Desktop gewinnt,<br>weil er zuerst hochlädt
+  Note over C: Überschriebenes in Versionen,<br>Gelöschtes im Papierkorb
+```
+
 !!! info "Wer hat recht? Der Desktop."
     Ein Abgleich lädt zuerst hoch und holt danach die Änderungen aus der
     Web-App. Haben beide Seiten denselben Eintrag geändert, gewinnt

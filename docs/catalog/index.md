@@ -87,6 +87,17 @@ unten:
     **So erzeugen:** Detailfenster einer Flechtmaschine mit mehreren Besetzungen öffnen (Arbeitsverzeichnis ohne passende Spule), zwei Zubehörteile ankreuzen und ans Ende scrollen.
     **Ziel-Datei:** `assets/screenshots/catalog/katalog-anlegen.png`
 
+Vom Katalogmodell zur eigenen Maschine in den Stammdaten:
+
+```mermaid
+flowchart LR
+  A[Katalogmodell<br>anklicken] --> B[Details des<br>Modells]
+  B --> C[Zubehör ankreuzen,<br>Abzug und Besetzung wählen]
+  C --> D[Maschinengruppe,<br>Seriennummer, Name]
+  D --> E[Zu … hinzufügen]
+  E --> F[Eigene Maschine<br>in den Stammdaten]
+```
+
 Am Ende des Detailfensters tragen Sie ein, was der Katalog nicht wissen
 kann:
 

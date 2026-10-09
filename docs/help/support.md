@@ -16,17 +16,17 @@ erreichen Sie den Herzog-Support auf folgenden Wegen.
 
 ## Im Programm
 
-* Menü *Über → Feedback und Neuigkeiten* öffnet die öffentliche
+* Menü *Hilfe > Feedback und Neuigkeiten* öffnet die öffentliche
   Feedback-Seite im Browser – dort können Sie Fehler melden oder
   Verbesserungsvorschläge einreichen.
-* Menü *Über → Über Herzog CAB* zeigt Ihre installierte **Versionsnummer**
+* Menü *Hilfe > Über Herzog CAB* zeigt Ihre installierte **Versionsnummer**
   sowie die Kontaktdaten auf einen Blick.
 
 ## Was Sie für eine schnelle Antwort bereithalten sollten
 
 Bitte nennen Sie bei jeder Anfrage:
 
-* Ihre **Versionsnummer** (siehe *Über → Über Herzog CAB*).
+* Ihre **Versionsnummer** (siehe *Hilfe > Über Herzog CAB*).
 * Ihr **Betriebssystem** (Windows 10 / 11).
 * Eine kurze Beschreibung, was Sie getan haben und was stattdessen
   passiert ist – im Idealfall mit Screenshot.

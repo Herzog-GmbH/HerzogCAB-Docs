@@ -100,5 +100,5 @@ Datendateien erledigt Herzog CAB selbst beim ersten Start nach dem Update.
 ## Verwandte Seiten
 
 * [Speicherort](storage-location.md) — zentrale Benutzerdaten und Inhalt des Arbeitsbereichs
-* [Anmeldung und Abmelden](login.md) — Profil-Auswahl nach dem Login
+* [Anmelden und Abmelden](login.md) — Profil-Auswahl nach dem Login
 * [Einstellungen: Webserver](settings/web-server.md) — mobile Ansicht mit QR-Code

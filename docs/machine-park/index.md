@@ -107,6 +107,20 @@ gleichzeitig andere Aufträge laufen. Der **Auftragszähler** neben dem
 Abzeichen zählt die aktiven Aufträge (in Produktion, freigegeben oder mit
 Fehler).
 
+So prüft das Programm die Auftragsstatus einer Maschine, um die Ampelfarbe
+zu bestimmen:
+
+```mermaid
+flowchart TD
+  A[Aufträge der Maschine] --> F{Ein Auftrag<br>auf Fehler?}
+  F -- ja --> R[Rot: Fehler gemeldet]
+  F -- nein --> P{Ein Auftrag<br>In Produktion?}
+  P -- ja --> G[Grün: In Produktion]
+  P -- nein --> W{Ein Auftrag<br>Freigegeben?}
+  W -- ja --> Y[Gelb: Aufträge warten]
+  W -- nein --> N[Grau: Keine aktiven Aufträge]
+```
+
 ### Detailansicht einer Maschine
 
 Per Klick auf eine Karte bzw. Zeile öffnen Sie die Detailansicht:

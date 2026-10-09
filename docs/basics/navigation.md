@@ -86,9 +86,9 @@ Die Zielseiten der Einträge finden Sie im Handbuch unter
 [Herzog-Katalog](../catalog/index.md), [Hallenplaner](../hall-planner/index.md), [Designer](../designer/index.md),
 [Berechnungen](../calculations/index.md),
 [Stammdaten](../master-data/index.md),
-[Druck-Editor](../print-templates/index.md),
-[Parameter-Übersicht](../parameter-overview/index.md) und
-[Verwaltung](../admin/index.md).
+[Druck Editor](../print-templates/index.md),
+[Parameter Explorer](../parameter-overview/index.md) und
+[Systemverwaltung](../admin/index.md).
 
 !!! info "Parameter Explorer jetzt in der Systemverwaltung"
     Der **Parameter Explorer** ist eine Ansicht für Fachleute und steht nicht

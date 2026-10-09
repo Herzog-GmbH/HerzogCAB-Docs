@@ -13,7 +13,7 @@ flowchart LR
   A["Designer öffnen"] --> B["Geflechtsart & Parameter"]
   B --> C["Färben & Texturieren"]
   C --> D["Besetzung & Animation prüfen"]
-  D --> E["3D-Rundansicht"]
+  D --> E["3D-Ansicht"]
   E --> F["Speichern"]
   F --> G["Drucken"]
 ```
@@ -22,10 +22,10 @@ flowchart LR
 
 1. Öffnen Sie den Navigationspunkt **Designer** (Referenz:
    [Designer](../designer/index.md)).
-2. Klicken Sie in der Startansicht auf **Design erstellen** (++ctrl+n++). Ein
+2. Klicken Sie in der Werkzeugleiste auf **Neu** (++ctrl+n++). Ein
    leeres Design mit Standardwerten wird angelegt.
 
-Ein bestehendes Design öffnen Sie stattdessen über **Design laden** oder per
+Ein bestehendes Design öffnen Sie stattdessen über **Laden** (++ctrl+o++) oder per
 Doppelklick in der Liste „Zuletzt bearbeitet". Sie können zwei Design-Fenster
 nebeneinander öffnen, um Varianten direkt zu vergleichen.
 
@@ -37,8 +37,9 @@ nebeneinander öffnen, um Varianten direkt zu vergleichen.
 ## Schritt 2: Geflechtsart und Parameter festlegen
 
 Stellen Sie im linken Panel die Grunddaten des Designs ein: **Designname**,
-**Geflechtsart** (Rundgeflecht, Litzengeflecht, Quadratgeflecht oder
-Packungsgeflecht), **Bindung/Besetzung**, **Anzahl Klöppel**, **Flechtwinkel**
+**Geflechtsart** (Rundgeflecht, Litzengeflecht, Quadratgeflecht,
+Spiralgeflecht, Packungsgeflecht oder Soutachegeflecht), **Geflechtsbindung**,
+**Anzahl Klöppel**, **Flechtwinkel**
 und **Fachung**. Jede Änderung baut das Flechtbild sofort neu auf.
 
 Alle Parameter und ihre zulässigen Werte sind auf der Referenzseite
@@ -55,7 +56,7 @@ Alle Parameter und ihre zulässigen Werte sind auf der Referenzseite
 4. Optional belegen Sie Positionen mit einer Faser-Textur aus der
    Texturpalette.
 
-Fehlgriffe machen Sie mit **Rückgängig** wieder rückgängig. Alle
+Fehlgriffe machen Sie mit **Zurück** (++ctrl+z++) wieder rückgängig. Alle
 Bedienelemente des Malmodus beschreibt die Referenzseite
 [Färben & Texturieren](../designer/painting.md).
 
@@ -74,12 +75,12 @@ zugewiesenen Farben je Klöppel:
 Details zu allen Schaltflächen: Referenzseite
 [Besetzung & Gangbahn-Animation](../designer/animation.md).
 
-## Schritt 5: 3D-Rundansicht kontrollieren
+## Schritt 5: 3D-Ansicht kontrollieren
 
-Schalten Sie über die Werkzeugleiste die **3D-Rundansicht** ein (verfügbar für
-Rund- und Quadratgeflecht). Sie zeigt, wie sich das Muster am fertigen
-Geflechtstrang umlaufend fortsetzt — Referenz:
-[3D-Rundansicht](../designer/view-3d.md).
+Schalten Sie in der Werkzeugleiste mit dem Ansichts-Schalter **3D** die
+3D-Ansicht ein (verfügbar für alle Geflechtsarten). Sie zeigt, wie sich das
+Muster am fertigen Geflechtstrang umlaufend fortsetzt — Referenz:
+[Ansichten und 3D-Ansicht](../designer/view-3d.md).
 
 ## Schritt 6: Design in der Bibliothek speichern
 

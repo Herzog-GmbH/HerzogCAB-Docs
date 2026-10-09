@@ -24,7 +24,7 @@ Bedienelement.
     befinden: Die Tour dieses Bereichs startet direkt. Steht der Fokus
     (oder der Mauszeiger) in der Navigation, startet stattdessen die
     **Navigations-Tour**. Daran erinnert auch die Statuszeile, wenn Sie im
-    Menü *Hilfe* auf **Geführte Touren...** zeigen.
+    Menü *Hilfe* auf **Geführte Touren…** zeigen.
 
     ++f1++ allein öffnet die passende Seite dieses Handbuchs im Browser —
     bis Version 2.1.0 startete ++f1++ die Tour.

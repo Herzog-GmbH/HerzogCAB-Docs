@@ -148,7 +148,7 @@ Hat ein Benutzer sein Passwort vergessen, setzen Sie es hier neu:
 
 !!! info "Konto nur vorübergehend gesperrt?"
     Nach mehreren fehlgeschlagenen Anmeldeversuchen wird ein Konto kurzzeitig
-    gesperrt (siehe [Anmeldung und Abmelden](login.md#kontosperre-bei-fehlversuchen)).
+    gesperrt (siehe [Anmelden und Abmelden](login.md#kontosperre-bei-fehlversuchen)).
     Die Sperre löst sich nach kurzer Zeit von selbst — ein Passwort-Reset ist
     dafür nicht nötig.
 
@@ -204,7 +204,7 @@ Mit **Übernehmen** werden die angehakten Benutzer angelegt bzw. deaktiviert.
 !!! tip "Rollen automatisch über Verzeichnis-Gruppen"
     Damit importierte Benutzer automatisch die richtige Rolle erhalten,
     hinterlegen Sie unter [Authentifizierung](authentication.md) die
-    Zuordnung **Gruppe → Rolle**.
+    Zuordnung **Entra-Gruppe → Rolle**.
 
 ## Verwandte Seiten
 

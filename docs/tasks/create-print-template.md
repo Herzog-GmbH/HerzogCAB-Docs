@@ -5,7 +5,7 @@
 **Voraussetzungen:**
 
 * Sie haben die Berechtigung, Druckvorlagen zu bearbeiten (ohne sie öffnet
-  sich der Druck-Editor schreibgeschützt).
+  sich der Druck Editor schreibgeschützt).
 * Firmenlogo und Firmendaten sind gepflegt, wenn Sie Firmenelemente verwenden
   möchten ([Firma](../admin/company.md),
   [Medien](../master-data/media.md)).
@@ -24,7 +24,7 @@ flowchart LR
 ## Schritt 1: Vorlage anlegen
 
 1. Öffnen Sie den Navigationspunkt **Druck Editor** (Referenz:
-   [Druck-Editor](../print-templates/index.md)).
+   [Druck Editor](../print-templates/index.md)).
 2. Klicken Sie auf **Neue Vorlage**, um mit einer leeren Vorlage zu starten.
 
 !!! tip "Mit einer Kopie starten"
@@ -96,7 +96,7 @@ angeboten werden jeweils die Vorlagen der passenden Verwendung.
 ## Ergebnis
 
 * Die Vorlage ist gespeichert und erscheint im Vorlagen-Dropdown des
-  Druck-Editors sowie im Dialog **Druckvorlage wählen** der passenden
+  Druck Editors sowie im Dialog **Druckvorlage wählen** der passenden
   Verwendung.
 * Ausdrucke aus Auftrag, Design oder Berechnung nutzen Ihr Layout mit den
   jeweils aktuellen Daten.

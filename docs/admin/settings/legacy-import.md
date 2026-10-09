@@ -61,7 +61,7 @@ Besetzungsübersicht.
 Mit dieser Karte übernehmen Sie Designdateien aus dem **alten
 Herzog-CAB-Format** (als einzelne JSON-Dateien gespeicherte Designs, z. B.
 aus früheren Programmversionen oder aus dem alten GFL-Bestand exportiert) in
-die Design-Bibliothek des aktuellen Arbeitsbereichs.
+die Designbibliothek des aktuellen Arbeitsbereichs.
 
 !!! warning "Berechtigung erforderlich"
     Der Import erfordert das Recht **Workspace-Einstellungen**.
@@ -77,7 +77,7 @@ So läuft der Import ab:
    auswählen.
 3. Herzog CAB prüft jede Datei und legt die gültigen Designs als Produkte im
    Ordner **Products/Import** des aktiven Arbeitsbereichs ab — Sie finden sie
-   anschließend in der Design-Bibliothek im Ordner *Import*.
+   anschließend in der Designbibliothek im Ordner *Import*.
 4. Zum Abschluss meldet der Dialog *Altdaten-Import* das Ergebnis, z. B.
    *„3 Datei(en) erfolgreich importiert."* Nicht lesbare oder ungültige
    Dateien werden namentlich unter *Fehlgeschlagen:* aufgeführt.
@@ -93,4 +93,4 @@ So läuft der Import ab:
 * [Einstellungen (Dialog)](index.md) — Überblick über alle Tabs
 * [Designer](../../designer/index.md) — wo die Vorgaben wirken
 * [Geflechtsart und Parameter](../../designer/parameters.md) — zulässige Klöppelzahlen je Geflechtsart
-* [Stammdaten: Designs](../../master-data/designs.md) — die Design-Bibliothek
+* [Stammdaten: Designs](../../master-data/designs.md) — die Designbibliothek

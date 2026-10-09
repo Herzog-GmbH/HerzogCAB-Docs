@@ -80,7 +80,7 @@ Ebenfalls in jeder Vorlage verfügbar.
 | **Datum/Zeit** | Aktuelles Datum bzw. Uhrzeit zum Druckzeitpunkt |
 | **Tabelle** | Frei definierbare Tabelle mit beliebig vielen Zeilen und Spalten |
 | **Textfeld** | Frei platzierbarer Text, auch mit eingebetteten Platzhaltern |
-| **Bild** | Ein beliebiges Bild, wahlweise aus der [Mediathek](../master-data/media.md) oder von der Festplatte |
+| **Bild** | Ein beliebiges Bild, wahlweise aus der [Medienbibliothek](../master-data/media.md) oder von der Festplatte |
 
 !!! tip "Nicht jedes Element ist überall verfügbar"
     Welche Elemente in der Palette erscheinen, hängt von der **Verwendung**
@@ -133,7 +133,7 @@ Feldvorlagen-Picker. Sie tippen Text und Platzhalter gemischt ein, z. B.
 ### Bild
 
 Öffnet die Auswahl für Bilddateien — wahlweise aus der zentralen
-[Mediathek](../master-data/media.md) oder von der Festplatte.
+[Medienbibliothek](../master-data/media.md) oder von der Festplatte.
 
 ### Besetzung
 

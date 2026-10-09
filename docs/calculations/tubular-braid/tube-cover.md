@@ -15,8 +15,8 @@ Diese Berechnung ermittelt die **Bedeckung** eines Hohlgeflechts – also wie vo
 | **Flechtwinkel** | ° | Flechtwinkel (kleiner 90°, Vorgabe 45). |
 | **Materialbreite** / **Materialdurchmesser** | mm | Bei *Multifil* die Materialbreite, bei *Monofil* der Materialdurchmesser. |
 | **Faktor Breite/Ø** | – | Verhältnis Breite zu Durchmesser (1–3, Vorgabe 1,25; nur bei *Multifil*). |
-| **Klöppelanzahl** | Stück | Anzahl der Klöppel. |
-| **Fachung** | Stück | Anzahl der Fäden je Klöppel (Vorgabe 1). |
+| **Klöppelanzahl** | stk. | Anzahl der Klöppel. |
+| **Fachung** | stk. | Anzahl der Fäden je Klöppel (Vorgabe 1). |
 
 ## Ergebnis
 

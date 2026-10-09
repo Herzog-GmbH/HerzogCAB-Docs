@@ -83,6 +83,16 @@ Der Dialog erledigt das Verschieben in einem Schritt:
    neue Ordner zugleich als Speicherort der Firma hinterlegt.
 4. Herzog CAB **startet neu** — ohne erneute Anmeldung.
 
+```mermaid
+flowchart TD
+  A[Verschieben] --> K[Ganzen Ordner<br>in den neuen Ordner kopieren]
+  K --> P{Kopie Datei für<br>Datei geprüft?}
+  P -- nein oder abgebrochen --> X[Weiter im bisherigen Ordner]
+  P -- ja --> U[Profil auf den neuen Ordner<br>umstellen, mit Kundenkonto<br>als Speicherort der Firma hinterlegen]
+  U --> H[Alter Ordner bleibt als Sicherung<br>mit Hinweisdatei]
+  H --> N[Herzog CAB startet neu]
+```
+
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Dialog „Auf Netzlaufwerk verschieben" mit bisherigem Ordner, Anzahl Dateien und Größe, eingetragenem neuen Ordner
     **So erzeugen:** *Systemverwaltung > Speicherort* bei lokalem Arbeitsverzeichnis, **Auf Netzlaufwerk verschieben …**

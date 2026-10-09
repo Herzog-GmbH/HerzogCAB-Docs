@@ -63,6 +63,16 @@ bestimmt, in welchem Auswahldialog die Vorlage später erscheint und welche
 Elemente in der Palette zur Verfügung stehen. Details dazu unter
 [Editor-Aufbau](editor.md).
 
+Wo eine Vorlage je nach Verwendung zum Drucken angeboten wird:
+
+```mermaid
+flowchart LR
+  D[Druck Editor:<br>Vorlage gestalten] --> V{Verwendung}
+  V -- Berechnung --> B[Drucken auf einer<br>Berechnungsseite]
+  V -- Design --> G[Drucken im Designer]
+  V -- Auftrag --> A[Drucken im Flechtauftrag<br>und im Spulauftrag]
+```
+
 !!! warning "Berechtigung erforderlich"
     Vorlagen ansehen können Sie mit der Berechtigung **Druckvorlagen
     anzeigen**; zum Bearbeiten und Speichern benötigen Sie zusätzlich

@@ -8,12 +8,18 @@ Zwei Schritte:
                                              # Sitzung landet in _tools/state.json (nicht einchecken);
                                              # Fenster schliessen, wenn "web=True portal=True" gemeldet ist
                                              # (Datei _tools/stop_login anlegen oder Prozess beenden)
-    python _tools/web_screenshots.py shots [nur:name1,name2,portal-name]
+    python _tools/web_screenshots.py shots [nur:name1,name2,portal-name] [sprache:en]
                                              # schreibt docs/assets/screenshots/web/*.png und portal/*.png
-                                             # in 1440 x 900 px (Bildnamen = Referenzen in den Seiten)
+                                             # in 1440 x 900 px (Bildnamen = Referenzen in den Seiten);
+                                             # mit sprache:en die englische Oberflaeche als *.en.png
+
+Andere Umgebung (z. B. Musterumgebung der Produktseite mit Musterkonto):
+    set HCAB_WEB=http://127.0.0.1:5230 & set HCAB_PORTAL=http://localhost:8110
 
 Zugangsdaten werden vom Skript nie eingegeben oder gespeichert - nur die Sitzungs-Cookies in state.json.
 """
+import json
+import os
 import re
 import sys
 import time
@@ -25,15 +31,33 @@ HERE = Path(__file__).parent
 STATE = HERE / "state.json"
 STOP = HERE / "stop_login"
 DOCS = HERE.parent / "docs" / "assets" / "screenshots"
-WEB = "http://127.0.0.1:5173"
-PORTAL = "http://localhost:8100"
+WEB = os.environ.get("HCAB_WEB", "http://127.0.0.1:5173")
+PORTAL = os.environ.get("HCAB_PORTAL", "http://localhost:8100")
 WEBAPP = WEB + "/anmelden"
 TIMEOUT_S = 60 * 60 * 6
 
 only = None
+SPRACHE = "de"
 for a in sys.argv[2:]:
     if a.startswith("nur:"):
         only = set(a[4:].split(","))
+    if a.startswith("sprache:"):
+        SPRACHE = a[8:]
+LOCALE = {"de": "de-DE", "en": "en-GB"}[SPRACHE]
+SUFFIX = "" if SPRACHE == "de" else "." + SPRACHE
+
+# Oberflaechentexte fuer Selektoren: deutscher Quelltext -> Text in der Aufnahmesprache
+# (gleiche Woerterbuecher wie die Web-App, Schluessel = deutscher Text).
+_WB = {}
+if SPRACHE != "de":
+    try:
+        _WB = json.load(open(HERE / "begriffe_de_en.json", encoding="utf-8"))
+    except Exception:
+        pass
+
+
+def T(de: str) -> str:
+    return _WB.get(de, de)
 
 
 def status(ctx):
@@ -41,11 +65,11 @@ def status(ctx):
     for page in ctx.pages:
         try:
             url = page.url
-            if url.startswith("http://127.0.0.1:5173") and not any(s in url for s in ("/anmelden", "/registrieren", "/bestaetigen")):
-                if page.locator("nav").count() > 0 or page.get_by_text("Konto wählen").count() > 0:
+            if url.startswith(WEB) and not any(s in url for s in ("/anmelden", "/registrieren", "/bestaetigen")):
+                if page.locator("nav").count() > 0 or page.get_by_text(T("Konto wählen")).count() > 0:
                     web = True
-            if url.startswith("http://localhost:8100") and not any(s in url for s in ("/anmelden", "/zwei-faktor", "/zugang", "/passwort-vergessen")):
-                if page.get_by_text("Abmelden").count() > 0:
+            if url.startswith(PORTAL) and not any(s in url for s in ("/anmelden", "/zwei-faktor", "/zugang", "/passwort-vergessen")):
+                if page.get_by_text(T("Abmelden")).count() > 0:
                     portal = True
         except Exception:
             pass
@@ -86,6 +110,18 @@ def settle(page: Page, ms=1600):
     except Exception:
         pass
     time.sleep(ms / 1000)
+    nutzungsdaten_ablehnen(page)
+
+
+def nutzungsdaten_ablehnen(page: Page):
+    """Erststart-Frage nach Nutzungsdaten datensparsam ablehnen - sie kann
+    jederzeit erscheinen (nach dem Laden der Sprache) und verdeckt dann alles."""
+    try:
+        nein = page.locator("dialog[open] button", has_text=re.compile(r"^(Nicht senden|Don't send)$"))
+        if nein.count() > 0:
+            nein.first.click(); time.sleep(0.6)
+    except Exception:
+        pass
 
 
 def first_link(page: Page, prefix: str) -> str | None:
@@ -98,7 +134,7 @@ def first_link(page: Page, prefix: str) -> str | None:
 
 
 def shot(page: Page, folder: str, name: str, full=False):
-    out = DOCS / folder / f"{name}.png"
+    out = DOCS / folder / f"{name}{SUFFIX}.png"
     out.parent.mkdir(parents=True, exist_ok=True)
     page.screenshot(path=str(out), full_page=full)
     print("  ->", out.relative_to(DOCS), flush=True)
@@ -116,16 +152,27 @@ def run_web(ctx):
     for name, pfad, breite, hoehe in [("anmelden", "/anmelden", 1440, 900), ("anmelden-schmal", "/anmelden", 390, 844),
                                       ("registrieren", "/registrieren", 1440, 900)]:
         if want(name):
-            leer = ctx.browser.new_context(viewport={"width": breite, "height": hoehe}, device_scale_factor=1, locale="de-DE")
+            leer = ctx.browser.new_context(viewport={"width": breite, "height": hoehe}, device_scale_factor=1, locale=LOCALE)
+            leer.add_init_script(SPRACHE_SKRIPT)
             lp = leer.new_page()
             lp.goto(WEB + pfad); settle(lp)
             shot(lp, "web", name)
             leer.close()
 
     page.goto(WEB + "/"); settle(page, 1500)
+    # Erststart-Frage nach Nutzungsdaten: datensparsam ablehnen, sonst verdeckt sie alles
+    try:
+        nein = page.locator("dialog[open] button", has_text=T("Nicht senden"))
+        if nein.count() > 0:
+            nein.first.click(); settle(page, 600)
+    except Exception as e:
+        print("  Nutzungsdaten-Frage:", e)
     if "/anmelden" in page.url:
         print("Web-App: NICHT angemeldet - Sitzung fehlt.", flush=True)
         return
+    # Die Sprache haengt am Benutzer (Server) und schlaegt localStorage:
+    # ueber die Sprachauswahl oben rechts umstellen, am Ende zurueck auf Deutsch.
+    web_sprache(page, SPRACHE)
     if want("startseite"):
         shot(page, "web", "startseite")
     if want("oberflaeche"):
@@ -141,10 +188,10 @@ def run_web(ctx):
         # Zeilen sind keine Links: der Stift "Oeffnen" fuehrt in den Editor.
         def ersten_oeffnen(art_chip: str) -> str | None:
             page.goto(WEB + "/auftraege"); settle(page, 1200)
-            zeile = page.locator("tr:visible").filter(has=page.get_by_text(art_chip, exact=True))
+            zeile = page.locator("tr:visible").filter(has=page.get_by_text(T(art_chip), exact=True))
             if zeile.count() == 0:
                 return None
-            knopf = zeile.first.locator("button[title='Öffnen']:visible")
+            knopf = zeile.first.locator("button[title='" + T("Öffnen") + "']:visible")
             if knopf.count() == 0:
                 return None
             knopf.first.click(); settle(page, 1500)
@@ -153,7 +200,7 @@ def run_web(ctx):
             url = ersten_oeffnen("Flechtauftrag")
             if url and want("flechtauftrag"):
                 try:
-                    page.locator("[role='tab']:visible, button:visible").filter(has_text=re.compile(r"^Auftrag$")).first.click(); time.sleep(0.6)
+                    page.locator("[role='tab']:visible, button:visible").filter(has_text=re.compile("^" + re.escape(T("Auftrag")) + "$")).first.click(); time.sleep(0.6)
                 except Exception as e:
                     print("  Reiter Auftrag:", e)
                 shot(page, "web", "flechtauftrag")
@@ -175,7 +222,7 @@ def run_web(ctx):
             inputs = page.locator("input[type='number'], input[inputmode='decimal']")
             if inputs.count() >= 2:
                 inputs.nth(0).fill("10"); inputs.nth(1).fill("5")
-            page.get_by_role("button", name="Berechnen").first.click(); time.sleep(0.6)
+            page.get_by_role("button", name=T("Berechnen")).first.click(); time.sleep(0.6)
         except Exception as e:
             print("  Flechtwinkel-Eingabe:", e)
         shot(page, "web", "rechner-flechtwinkel")
@@ -197,8 +244,8 @@ def run_web(ctx):
             # Dialog "Versionen" des ersten gespeicherten Designs, erste Fassung aufgeklappt
             page.goto(WEB + href); settle(page, 2500)
             try:
-                page.locator("button[aria-label='Versionen']:visible").first.click(); settle(page, 1200)
-                knopf = page.locator("dialog[open] button", has_text="Unterschiede")
+                page.locator("button[aria-label='" + T("Versionen") + "']:visible").first.click(); settle(page, 1200)
+                knopf = page.locator("dialog[open] button", has_text=T("Unterschiede"))
                 if knopf.count() > 0:
                     knopf.first.click(); settle(page, 1000)
                 shot(page, "web", "versionen")
@@ -211,7 +258,7 @@ def run_web(ctx):
             fp = ctx.new_page()
             try:
                 fp.goto(WEB + href); settle(fp, 2500)
-                fp.get_by_label("Fachung", exact=True).fill("2"); settle(fp, 800)
+                fp.get_by_label(T("Fachung"), exact=True).fill("2"); settle(fp, 800)
                 fp.locator("tbody.select-none tr:visible").first.click(button="right"); settle(fp, 800)
                 shot(fp, "web", "fachungsfarben")
             except Exception as e:
@@ -231,7 +278,7 @@ def run_web(ctx):
     if want("katalog") or want("katalog-dialog") or want("katalog-anlegen"):
         page.goto(WEB + "/katalog"); settle(page, 2000)
         try:
-            page.get_by_role("tab", name=re.compile(r"^Flechtmaschinen")).first.click(); time.sleep(0.6)
+            page.get_by_role("tab", name=re.compile("^" + re.escape(T("Flechtmaschinen")))).first.click(); time.sleep(0.6)
         except Exception as e:
             print("  Reiter Flechtmaschinen:", e)
         if want("katalog"):
@@ -245,9 +292,9 @@ def run_web(ctx):
                 if want("katalog-dialog"):
                     shot(page, "web", "katalog-dialog")
                 if want("katalog-anlegen"):
-                    for eintrag in ("Meterzähler", "Kabine"):
+                    for eintrag in (T("Meterzähler"), T("Kabine")):
                         dialog.locator("label", has_text=eintrag).first.click(); time.sleep(0.2)
-                    dialog.get_by_text("Als eigene Maschine anlegen", exact=True).scroll_into_view_if_needed(); time.sleep(0.4)
+                    dialog.get_by_text(T("Als eigene Maschine anlegen"), exact=True).scroll_into_view_if_needed(); time.sleep(0.4)
                     shot(page, "web", "katalog-anlegen")
                 page.keyboard.press("Escape"); time.sleep(0.3)
             except Exception as e:
@@ -273,7 +320,19 @@ def run_web(ctx):
         if want(name):
             page.goto(WEB + path); settle(page, 1200)
             shot(page, "web", name)
+    if SPRACHE != "de":
+        page.goto(WEB + "/"); settle(page, 800)
+        web_sprache(page, "de")
     page.close()
+
+
+def web_sprache(page: Page, sprache: str):
+    try:
+        auswahl = page.locator("select:visible:has(option[value='en'])").first
+        if auswahl.input_value() != sprache:
+            auswahl.select_option(sprache); settle(page, 1200)
+    except Exception as e:
+        print("  Web-Sprache:", e)
 
 
 def run_portal(ctx):
@@ -289,12 +348,28 @@ def run_portal(ctx):
     if "/anmelden" in page.url:
         print("Portal: NICHT angemeldet - Sitzung fehlt.", flush=True)
         return
+    portal_sprache(page, SPRACHE)
     for name, path, full in [("mein-konto", "/", True), ("benutzer", "/benutzer", True), ("anfordern", "/anfordern", True),
                              ("herunterladen", "/download", False), ("passwort", "/passwort", False)]:
         if want(name):
             page.goto(PORTAL + path); settle(page)
             shot(page, "portal", name, full=full)
+    if SPRACHE != "de":
+        portal_sprache(page, "de")   # Musterkonto wieder auf Deutsch
     page.close()
+
+
+def portal_sprache(page: Page, sprache: str):
+    """Sprachwahl DE|EN oben rechts im Portal (speichert die Sprache am Benutzer)."""
+    try:
+        knopf = page.locator(f"form.sprachwahl button[value='{sprache}']")
+        if knopf.count() > 0:
+            knopf.first.click(); settle(page, 800)
+    except Exception as e:
+        print("  Portal-Sprache:", e)
+
+
+SPRACHE_SKRIPT = "try { localStorage.setItem('sprache', '%s'); } catch (e) {}" % SPRACHE
 
 
 def shots() -> int:
@@ -304,7 +379,8 @@ def shots() -> int:
         browser = p.chromium.launch(headless=True)
         ctx = browser.new_context(storage_state=str(STATE) if STATE.exists() else None,
                                   viewport={"width": 1440, "height": 900},
-                                  device_scale_factor=1, locale="de-DE")
+                                  device_scale_factor=1, locale=LOCALE)
+        ctx.add_init_script(SPRACHE_SKRIPT)
         run_web(ctx)
         run_portal(ctx)
         browser.close()

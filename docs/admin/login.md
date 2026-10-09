@@ -1,4 +1,4 @@
-# Anmeldung und Abmelden
+# Anmelden und Abmelden
 
 !!! abstract "Referenz — Das Anmeldefenster der Desktop-App: Kontobenutzer, lokale Anmeldung, Microsoft-Anmeldung, Kontosperre und Profil-Auswahl."
 

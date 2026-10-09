@@ -113,7 +113,7 @@ gespeicherten Daten:
   [Flechtauftrag](../../orders/braiding-order.md).
 * **Ausdrucke:** Design-Ausdruck und Platzhalter für den Flechtwinkel in
   [Druckvorlagen](../../print-templates/elements.md), die Winkel-Spalte der
-  Design-Bibliothek und die mobile Ansicht des
+  Designbibliothek und die mobile Ansicht des
   [Webservers](web-server.md).
 
 Herzog CAB speichert den Flechtwinkel intern immer gleich. Wechseln Sie den

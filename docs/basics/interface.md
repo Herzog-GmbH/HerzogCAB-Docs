@@ -24,7 +24,7 @@ damit der Inhalt genug Platz behält.
 |---|---|
 | *Datei* | **Einstellungen** (öffnet den [Einstellungen-Dialog](../admin/settings/index.md)), **Drucken…** (++ctrl+p++, druckt die aktuelle Seite über eine [Druckvorlage](../print-templates/index.md)), **Beenden** |
 | *Ansicht* | **Navigation** — klappt die Navigation links aus oder ein, wie der Pfeil in ihrer Kopfzeile |
-| *Hilfe* | **Handbuch** (++f1++, öffnet die passende Seite dieses Handbuchs im Browser, siehe unten), **Geführte Touren...** (Auswahldialog der [geführten Touren](guided-tour.md)), **Updates** (Update-Prüfung, siehe [Updates installieren](../setup/update.md)), **Feedback und Neuigkeiten**, **Über Herzog CAB** (Programm- und Versionsinformationen), **Über Qt** |
+| *Hilfe* | **Handbuch** (++f1++, öffnet die passende Seite dieses Handbuchs im Browser, siehe unten), **Geführte Touren…** (Auswahldialog der [geführten Touren](guided-tour.md)), **Updates** (Update-Prüfung, siehe [Updates installieren](../setup/update.md)), **Feedback und Neuigkeiten**, **Über Herzog CAB** (Programm- und Versionsinformationen), **Über Qt** |
 
 !!! info "Kein Menü „Über“ mehr"
     Bis Version 2.1.0 standen Updates, Feedback und die beiden Über-Dialoge

@@ -34,7 +34,7 @@ Sie im Panel, um die unteren Felder zu erreichen.
 
 Freitextfeld für die Bezeichnung des Designs (Platzhalter *„Designname
 eingeben"*). Der Name erscheint in der Dokument-Kopfzeile, in der
-[Design-Bibliothek](../master-data/designs.md) und auf Ausdrucken. Sie können
+[Designbibliothek](../master-data/designs.md) und auf Ausdrucken. Sie können
 ihn auch später noch im [Speichern-Dialog](save-print.md) anpassen.
 
 ### Geflechtsart

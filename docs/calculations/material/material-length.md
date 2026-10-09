@@ -20,11 +20,11 @@ unterschiedliche Felder eingeblendet.
 | **Spule** | – | Spule aus den [Spulen-Stammdaten](../../master-data/bobbins.md); liefert die Abmessungen für das Wickelvolumen. |
 | **Material** | – | Optional: Material aus den Stammdaten; übernimmt die **Dichte** automatisch. |
 | **Dichte** | g/cm³ | Materialdichte. |
-| **Feinheit** | tex, dtex, den, Nr. metrisch, Nr. englisch | Feinheit des Materials (nur bei Rechenbasis *Material*). |
+| **Feinheit** | tex, dtex, den, Nr_metrisch, Nr_englisch | Feinheit des Materials (nur bei Rechenbasis *Material*). |
 | **Durchmesser** | mm | Materialdurchmesser (nur bei Rechenbasis *Durchmesser*). |
 | **Rechteckhöhe**, **Rechteckbreite** | mm | Maße des Flachfadens (nur bei Rechenbasis *Rechteckfaden*). |
 | **Füllungsgrad** | % | Anteil des Spulenvolumens, der tatsächlich bewickelt wird (Vorgabe 70). |
-| **Fachung** | Stück | Anzahl der Fäden je Klöppel. |
+| **Fachung** | stk. | Anzahl der Fäden je Klöppel. |
 
 ## Ergebnis
 

@@ -36,10 +36,10 @@ sowie zwei gleich aufgebaute Panels für **Seele** und **Mantel**.
 | **Flechtwinkel** | ° | Flechtwinkel der Lage. |
 | **Anzahl Klöppel** | stk. | Anzahl der Klöppel der Maschine (Seele ≥ 1, Mantel ≥ 3). |
 | **Fachung pro Klöppel** | stk. | Anzahl der parallel laufenden Fäden/Litzen je Klöppel. |
-| **Flügelrad-Drehzahl** | rpm | Drehzahl des Flügelrads (Horngear) der Maschine. |
+| **Flügelrad-Drehzahl** | rpm | Drehzahl des Flügelrads der Maschine. |
 
 !!! note "Anteile müssen 100 % ergeben"
-    Weichen **Anteil Seele** und **Anteil Mantel** zusammen um mehr als 0,01 % von 100 % ab, meldet die Berechnung *„Die Anteile von Kern und Mantel ergeben nicht 100 %"* und markiert beide Anteilsfelder.
+    Weichen **Anteil Seele** und **Anteil Mantel** zusammen um mehr als 0,01 % von 100 % ab, meldet die Berechnung *„Die Anteile von Kern und Mantel ergeben zusammen keine 100 %"* und markiert beide Anteilsfelder.
 
 ## Ergebnis
 

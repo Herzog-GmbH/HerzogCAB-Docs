@@ -194,6 +194,23 @@ die Traglast, lautet das Ergebnis *nicht prüfbar* statt *passt*. Die
 übrigen Felder (z. B. Liniengeschwindigkeit, Wickelspannung, Pinole) sind
 beschreibend.
 
+So kommt das Ergebnis für einen Aufwickler zustande:
+
+```mermaid
+flowchart TD
+  T[Trommel] --> M[Trommeldurchmesser<br>und Verlegebreite]
+  P[Produkt] --> G[Geflechtdurchmesser]
+  T --> L[Traglast:<br>Produkt und leere Trommel]
+  P --> L
+  M --> F{Eine Grenze<br>überschritten?}
+  G --> F
+  L --> F
+  F -- ja --> X[passt nicht]
+  F -- nein --> U{Fehlt eine<br>Angabe?}
+  U -- ja --> N[nicht prüfbar]
+  U -- nein --> OK[passt]
+```
+
 ## Verwandte Seiten
 
 * [Trommeln](drums.md) – die Trommeln, auf die der Aufwickler wickelt

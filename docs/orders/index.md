@@ -158,6 +158,24 @@ Jeder Auftrag trägt einen Status, den Sie im jeweiligen Editor im Tab
 | **Freigegeben** | Zur Produktion freigegeben. |
 | **In Produktion** | Wird aktuell gefertigt. |
 | **Abgeschlossen** | Fertiggestellt. |
+| **Fehler** | In der Produktion ist ein Problem aufgetreten. Nur bei Flechtaufträgen; im Filter „Status" nicht wählbar. |
+
+Der übliche Weg eines Auftrags durch die Status sieht so aus. Das Programm
+erzwingt die Reihenfolge nicht — Sie können jeden Status direkt wählen.
+**Fehler** gibt es nur bei Flechtaufträgen, nicht bei Spulaufträgen:
+
+```mermaid
+stateDiagram-v2
+  [*] --> Entwurf
+  Entwurf --> Freigegeben
+  Freigegeben --> In_Produktion
+  In_Produktion --> Abgeschlossen
+  In_Produktion --> Fehler
+  Fehler --> In_Produktion
+  Abgeschlossen --> [*]
+  In_Produktion: In Produktion
+  Fehler: Fehler (nur Flechtauftrag)
+```
 
 Die Startseite ([Home](../basics/home.md)) zeigt die Anzahl der Aufträge je
 Status; ein Klick auf einen dieser Zähler öffnet die Auftragsübersicht mit

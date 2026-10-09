@@ -36,7 +36,7 @@ finden Sie unter [Anmelden und Lizenz beziehen](../setup/activate-license.md).
 2. Prüfen Sie, ob dort eine Lizenz für **Firmencode 6001037**, **Artikel
    88805** (Vollversion, Product Code 200006) angezeigt wird.
 3. Ist gar kein Eintrag vorhanden, wurde die Lizenz noch nicht eingespielt –
-   siehe [Lizenz aktivieren](../setup/activate-license.md).
+   siehe [Anmelden und Lizenz beziehen](../setup/activate-license.md).
 
 === "USB-Dongle (CmDongle)"
 
@@ -52,10 +52,10 @@ finden Sie unter [Anmelden und Lizenz beziehen](../setup/activate-license.md).
     * Diese Lizenz ist an den **Fingerabdruck** des Rechners gebunden und
       läuft nach einem Hardware-Wechsel oder Rechnerumzug ins Leere – siehe
       die Hinweise zu Hardware-Wechsel und Umzug unter
-      [Lizenz aktivieren](../setup/activate-license.md).
+      [Anmelden und Lizenz beziehen](../setup/activate-license.md).
     * Prüfen Sie im Kontrollzentrum, ob der Status **„Aktivierung ungültig"**
       zeigt – dann fehlt noch die Aktivierungsdatei (`.WibuCmRaU`), siehe
-      Schritt 4 unter [Lizenz aktivieren](../setup/activate-license.md).
+      Schritt 4 unter [Anmelden und Lizenz beziehen](../setup/activate-license.md).
 
 === "Netzwerklizenz"
 
@@ -103,6 +103,22 @@ So gehen Sie vor:
 
 ## Lizenzprüfung im Überblick
 
+So prüft Herzog CAB die Lizenz beim Programmstart:
+
+```mermaid
+flowchart TD
+  S[Programmstart] --> CM{CodeMeter-Lizenz<br>vorhanden?}
+  CM -- ja --> OK[Programm startet]
+  CM -- nein --> M[Gespeicherte Miete laden,<br>still beim Lizenzserver verlängern]
+  M --> V{Miete gültig?}
+  V -- ja --> OK
+  V -- nein --> P{Rechner bekannt,<br>aber kein Platz frei?}
+  P -- ja --> A[Alle Plätze belegt:<br>Erneut versuchen · Beenden]
+  A -- Mit anderem Konto anmelden --> L
+  P -- nein --> L[Anmeldung am Kundenkonto]
+  L -- angemeldet --> OK
+```
+
 | Status | Verhalten |
 |---|---|
 | CodeMeter-Lizenz vorhanden, gültig | Programm startet normal. |
@@ -122,7 +138,7 @@ So gehen Sie vor:
 
 ## Verwandte Seiten
 
-* [Lizenz aktivieren](../setup/activate-license.md)
+* [Anmelden und Lizenz beziehen](../setup/activate-license.md)
 * [CodeMeter installieren](../setup/codemeter.md)
 * [Einsatz-Szenarien](../setup/topology.md) – Einzelplatz, Netzwerk, RDP
 * [Support kontaktieren](support.md)

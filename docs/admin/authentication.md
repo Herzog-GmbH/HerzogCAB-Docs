@@ -112,7 +112,7 @@ nicht angehakt ist, sind alle übrigen Felder gesperrt.
 | **Verbindung prüfen** | Testet die Verbindung mit den aktuellen Eingaben (auch vor dem Speichern). Ergebnis erscheint direkt daneben: *Verbindung erfolgreich.* oder eine Fehlermeldung. |
 
 !!! info "Rollen und Profil bei LDAP-Konten"
-    Die Tabelle **Gruppe → Rolle** und das **Standard-Profil** vom
+    Die Tabelle **Entra-Gruppe → Rolle** und das **Standard-Profil** vom
     Entra-Reiter gelten auch für LDAP-Konten: Bei jeder Anmeldung liest
     Herzog CAB die Gruppenmitgliedschaften aus dem Verzeichnis und
     aktualisiert die Rollen entsprechend (das Verzeichnis ist führend).
@@ -133,7 +133,7 @@ meldet Herzog CAB *„Anmelde-Einstellungen gespeichert."*
 
 ## Verwandte Seiten
 
-* [Anmeldung und Abmelden](login.md) — wie die Microsoft-Anmeldung für Benutzer aussieht
+* [Anmelden und Abmelden](login.md) — wie die Microsoft-Anmeldung für Benutzer aussieht
 * [Benutzer](users.md) — Import aus Entra bzw. LDAP, Konten pflegen
 * [Rollen und Berechtigungen](roles.md) — welche Rechte eine Rolle bündelt
 * [Benutzer und Rollen einrichten](../tasks/setup-users.md)

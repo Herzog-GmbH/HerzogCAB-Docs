@@ -122,7 +122,7 @@
 * **Aufwickler als eigene Maschinenart** – eigene Stammdatenseite und
   eigener Anlegedialog mit Trommelmaßen, Traglast, Zugregelung, Bild und
   Dokumenten, eigener Filter im Maschinenpark und eigene Gruppe im
-  Hallenplan. Baureihen AW, AWS, AWST, AWSP, AWSA und AWH. Siehe
+  Hallenplaner. Baureihen AW, AWS, AWST, AWSP, AWSA und AWH. Siehe
   [Aufwickler](../master-data/take-up-machines.md).
 * **Abwickler als eigene Maschinenart** – für Material wie Seele, Seil
   oder Kabel, das von einer Trommel in die nachfolgende Maschine abläuft:

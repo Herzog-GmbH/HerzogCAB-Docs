@@ -18,7 +18,7 @@
 | **Geflechtsdichte** | App-Begriff für die Flechtdichte; das zugehörige Maß ist die **Schlaglänge** (engl. *lay length*, auch „Verlegelänge"). |
 | **Herzog CAB Web / Web-App** | Herzog CAB im Browser unter app.herzog-cab.com, siehe [Web-App](../web/index.md). |
 | **Hohlgeflecht** | Rohr- bzw. schlauchförmiges Geflecht (engl. *tubular braid*). In der App heißt diese Berechnungsgruppe **Hohlgeflecht** (nicht „Rohrgeflecht"). |
-| **Horn Gear / Flügelrad** | Zahnrad, das die Klöppel-Bahnen führt. |
+| **Flügelrad** | Rad der Flechtmaschine mit Einschnitten, das die Klöppel auf ihrer Bahn führt und an das Nachbar-Flügelrad übergibt (engl. *horngear*). |
 | **Klöppel** | Spulenträger an einer Flechtmaschine (engl. *Carrier*). |
 | **Kundenkonto** | Das Konto einer Firma auf dem Herzog-Lizenzserver: Bausteine, Plätze, Rechner und Benutzer. Verwaltet im **Lizenzportal**. |
 | **LDAP** | *Lightweight Directory Access Protocol* – Standardprotokoll für Verzeichnisdienste wie Active Directory. Herzog CAB kann Benutzer darüber anmelden und importieren, siehe [Authentifizierung](../admin/authentication.md). |

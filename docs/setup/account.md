@@ -107,6 +107,20 @@ Abos.
 | Frei wird … | beim Beenden des Programms. Nach einem Absturz spätestens nach **15 Minuten**. Mit einer **Offline-Miete** bleibt der Platz bis zu 30 Tage belegt. Sofort frei über **Von diesem Rechner abmelden** in den Einstellungen oder **Plätze freigeben** im Portal. | beim Abmelden oder nach **15 Minuten** ohne Aktivität. |
 | Wenn alles belegt ist … | zeigt Herzog CAB beim Start den Dialog **Alle Plätze belegt** mit der Liste, wer gerade arbeitet. | meldet die Web-App *Alle Plätze dieses Kontos sind gerade belegt.* |
 
+So wechselt der Platz eines Rechners zwischen frei und belegt:
+
+```mermaid
+stateDiagram-v2
+  [*] --> Frei
+  Frei --> Belegt: Programmstart
+  Belegt --> Frei: Programm beenden
+  Belegt --> Frei: 15 Minuten ohne Verbindung, z. B. nach Absturz
+  Belegt --> Frei: Von diesem Rechner abmelden oder Plätze freigeben
+  Belegt --> Offline_Miete: Offline-Miete ziehen
+  Offline_Miete --> Frei: Miete abgelaufen, höchstens 30 Tage
+  Offline_Miete: Belegt mit Offline-Miete
+```
+
 Wer im Programm und im Browser zugleich arbeitet, belegt **zwei** Plätze.
 Mehrere Browserfenster derselben Person belegen nur einen. Melden sich am
 selben Rechner mehrere Bediener nacheinander an, belegt der Rechner

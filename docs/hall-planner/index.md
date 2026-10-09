@@ -27,6 +27,19 @@ Der Hallenplaner unterscheidet konsequent zwischen:
 Ändern Sie die Hallengeometrie, gilt die Änderung automatisch für alle
 Belegungen dieses Grundrisses.
 
+Ein Grundriss mit mehreren Belegungen, von denen eine die Ist-Belegung ist:
+
+```mermaid
+flowchart LR
+  G[Grundriss<br>Wände, Flächen, Türen, Tore] --> A["Belegung Standard (Ist)<br>tatsächlicher Hallenzustand"]
+  G --> B[Belegung Umbau 2027<br>Szenario]
+  G --> C[Belegung Variante Nachtproduktion<br>Szenario]
+  A -- Duplizieren … --> B
+```
+
+Mit **Als Ist-Belegung setzen** machen Sie ein Szenario zur neuen
+Ist-Belegung.
+
 <div class="grid cards" markdown>
 
 - :material-pencil-ruler: **Editor — Grundriss und Bestückung**

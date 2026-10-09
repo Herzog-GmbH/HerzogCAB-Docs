@@ -48,6 +48,22 @@ wird wie jede überschriebene Fassung aufbewahrt (siehe
 
 ## Wenn ein anderer denselben Eintrag geändert hat
 
+Beim **Speichern** prüft Herzog CAB, ob die Datei frei ist und ob der Eintrag
+seit dem Öffnen noch unverändert ist:
+
+```mermaid
+flowchart TD
+  S[Speichern] --> L{Datei gerade<br>gesperrt?}
+  L -- ja --> W[bis zu 15 Sekunden warten,<br>sonst Meldung mit OK]
+  L -- nein --> C{Eintrag inzwischen …}
+  C -- unverändert --> OK[Gespeichert]
+  C -- geändert --> G[Überschreiben · Als Kopie speichern<br>Neu laden · Abbrechen]
+  C -- gelöscht --> D[Wieder anlegen · Verwerfen<br>Abbrechen]
+```
+
+**Als Kopie speichern** gibt es nur bei Materialien, Spulen, Trommeln,
+Aufträgen und Spulaufträgen.
+
 Speichern Sie einen Eintrag, den inzwischen jemand anderes gespeichert hat,
 erscheint eine Rückfrage. Ihr Titel ist der Name des Bereichs (z. B.
 *Materialien*, *Auftrag*, *Design*), der Text nennt, **wer** wann und an

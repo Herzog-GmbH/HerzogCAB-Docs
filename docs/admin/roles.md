@@ -78,7 +78,7 @@ mehr.
 
 1. Klicken Sie auf **Neue Rolle** und vergeben Sie im Dialog **Id** (nur
    Kleinbuchstaben, z. B. `supervisor`), **Name** und **Beschreibung**.
-2. Haken Sie im Editor die gewünschten **Einzelnen Rechte** an — oder setzen
+2. Haken Sie im Editor unter **Einzelne Rechte** die gewünschten Rechte an — oder setzen
    Sie **Alle Rechte (Administrator)**. Mindestens ein Recht ist Pflicht.
 3. **Speichern** sichert die Rolle.
 

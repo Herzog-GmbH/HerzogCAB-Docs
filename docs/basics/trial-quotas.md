@@ -21,9 +21,9 @@ entscheiden.
 Auf der [Startseite](home.md) erscheint direkt unter der Begrüßung die
 Kachel **Testversion** mit:
 
-* einer **Restlaufzeit-Plakette** („noch X Tage") — grün; bei 30 Tagen
-  oder weniger orange, bei 7 Tagen oder weniger rot. Die Testphase läuft
-  30 Tage.
+* einer **Restlaufzeit-Plakette** („noch X Tage") — orange, bei 7 Tagen
+  oder weniger rot. Die Testphase läuft 30 Tage; grün ist die Plakette nur
+  bei mehr als 30 Tagen Restlaufzeit.
 * vier **Zähler-Kacheln**, die den Verbrauch der mengenbegrenzten Bereiche
   zeigen (z. B. „2 / 3 Kunden"). Ein voll ausgeschöpftes Kontingent wird
   rot dargestellt.

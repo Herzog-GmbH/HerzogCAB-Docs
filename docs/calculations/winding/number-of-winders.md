@@ -22,7 +22,7 @@ Die Eingaben sind in drei Bereiche gegliedert: **Flechtmaschine**,
 | **Anzahl Schichten:** (Flechtmaschine) | – | Anzahl der Schichten im Flechtbetrieb (Auswahl 1, 2 oder 3). |
 | **Anzahl Klöppel:** | stk. | Anzahl der Klöppel der Flechtmaschine (mindestens 1). |
 | **Anzahl Köpfe:** | stk. | Anzahl der Flechtköpfe (mindestens 1). |
-| **Flügelrad-Drehzahl:** | rpm | Drehzahl der Flügelräder (Hörnerräder) der Flechtmaschine. |
+| **Flügelrad-Drehzahl:** | rpm | Drehzahl der Flügelräder der Flechtmaschine. |
 | **Anzahl Schichten:** (Spulmaschine) | – | Anzahl der Schichten im Spulbetrieb (Auswahl 1, 2 oder 3). |
 | **Spulmaschinentyp:** | – | Auswahl **Halbautomat** oder **Vollautomat**. Standard: Vollautomat. |
 | **Spulgeschwindigkeit:** | m/min | Geschwindigkeit, mit der die Spulmaschine das Material aufspult. |

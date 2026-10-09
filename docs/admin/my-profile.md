@@ -108,6 +108,6 @@ Reine Anzeige, nicht änderbar:
 
 ## Verwandte Seiten
 
-* [Anmeldung und Abmelden](login.md)
+* [Anmelden und Abmelden](login.md)
 * [Benutzer](users.md) — Konten anderer Benutzer verwalten
 * [Speicherort](storage-location.md) — wo Benutzerdaten und Profilbilder liegen

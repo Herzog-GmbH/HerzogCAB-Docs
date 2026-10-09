@@ -8,15 +8,15 @@ Herzog CAB prüft beim Start automatisch im Hintergrund, ob eine neuere
 Version vorliegt. Erscheint kein Hinweis, obwohl Sie eine neue Version
 erwarten:
 
-* Prüfen Sie über Menü *Über → Updates* manuell – dabei erscheint auch die
+* Prüfen Sie über Menü *Hilfe > Updates* manuell – dabei erscheint auch die
   Meldung, falls bereits die aktuelle Version installiert ist.
 * Prüfen Sie die Internetverbindung sowie, ob eine Firewall oder ein Proxy
   den Zugriff auf `herzog-gmbh.github.io` blockiert.
-* Die aktuell installierte Version sehen Sie unter *Über → Über Herzog CAB*.
+* Die aktuell installierte Version sehen Sie unter *Hilfe > Über Herzog CAB*.
 
 ## „Update-Prüfung fehlgeschlagen"
 
-Diese Meldung erscheint bei der manuellen Prüfung (*Über → Updates*), wenn
+Diese Meldung erscheint bei der manuellen Prüfung (*Hilfe > Updates*), wenn
 die Versionsinformationen nicht abgerufen oder nicht ausgewertet werden
 konnten – meist ein Netzwerk- oder Firewall-Problem. Prüfen Sie die
 Internetverbindung und versuchen Sie es später erneut. Besteht das Problem

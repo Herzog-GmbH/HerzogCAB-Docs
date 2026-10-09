@@ -341,7 +341,7 @@ def erzeugen(liste: list[Platzhalter], nav: dict, bilder: dict[str, dict]) -> st
 
 def main(argv: list[str]) -> int:
     pruefen = "--pruefen" in argv
-    md_dateien = sorted(DOCS.rglob("*.md"))
+    md_dateien = sorted(p for p in DOCS.rglob("*.md") if not p.name.endswith(".en.md"))  # englische Seiten tragen dieselben Platzhalter
     alle: list[Platzhalter] = []
     for md in md_dateien:
         alle.extend(platzhalter_der_seite(md))

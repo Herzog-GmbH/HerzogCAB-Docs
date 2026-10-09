@@ -8,7 +8,7 @@ Im **Designer** entwerfen Sie Flechtdesigns: Sie wählen die Geflechtsart und di
 Geflechtsbindung, legen Klöppelzahl, Flechtwinkel und Fachung fest und färben
 dann die einzelnen Klöppel ein. Das Flechtbild entsteht dabei live — so sehen Sie
 sofort, welches Muster (Spirale, Ring, Karo …) aus Ihrer Farbbelegung wird.
-Fertige Designs speichern Sie in der [Design-Bibliothek](../master-data/designs.md),
+Fertige Designs speichern Sie in der [Designbibliothek](../master-data/designs.md),
 verwenden sie in [Flechtaufträgen](../orders/braiding-order.md) und drucken sie
 als Maschinenbelegblatt.
 
@@ -114,7 +114,7 @@ aus fünf Bereichen:
 | Schaltfläche | Funktion |
 |---|---|
 | **Neu** (++ctrl+n++) | Öffnet ein neues Designfenster mit den Vorgaben aus [Einstellungen > Design](../admin/settings/legacy-import.md) (Standard: Rundgeflecht, 16 Klöppel, 45°, Normale Besetzung 1-1). Ist bereits ein Design geöffnet, entsteht ein zweites Fenster daneben (siehe unten). |
-| **Laden** (++ctrl+o++) | Wechselt in die [Design-Bibliothek](../master-data/designs.md), wo Sie ein gespeichertes Design auswählen und öffnen. |
+| **Laden** (++ctrl+o++) | Wechselt in die [Designbibliothek](../master-data/designs.md), wo Sie ein gespeichertes Design auswählen und öffnen. |
 | **Färben** | Malmodus: Klicks im Flechtbild oder in der Klöppeltabelle färben Klöppel mit der aktiven Farbe ein — siehe [Färben und Texturieren](painting.md). |
 | **Bewegen** | Verschiebemodus: mit gedrückter linker Maustaste verschieben Sie die Ansicht, ohne zu färben. |
 | **Linkslauf** / **Rechtslauf** | Seitenfilter für das Färben: legt fest, welche Laufrichtung ein Klick einfärbt. Nur bei Rund- und Quadratgeflecht sichtbar (zwei Läufe). |
@@ -142,7 +142,7 @@ Jedes Design-Fenster hat eine eigene Kopfzeile:
   Flügelrad-Anordnung und (beim Packungsgeflecht) die Zahl der Gangbahnen dabei.
 * **Drucken** — startet den [Druck mit Vorlagenauswahl](save-print.md).
 * **Speichern** / **Speichern unter neuem Namen** — legt das Design in der
-  [Design-Bibliothek](../master-data/designs.md) ab, siehe
+  [Designbibliothek](../master-data/designs.md) ab, siehe
   [Speichern und Drucken](save-print.md).
 * **Ansicht schließen** (✕) — schließt dieses Design-Fenster. Bei
   ungespeicherten Änderungen fragt die App vorher nach — oder speichert
@@ -181,7 +181,7 @@ Zoom-und-Verschieben-Bedienung.
 
 ### Geführte Tour
 
-Für den Einstieg bietet der Designer eine eingebaute [Guided Tour](../basics/guided-tour.md):
+Für den Einstieg bietet der Designer eine eingebaute [geführte Tour](../basics/guided-tour.md):
 Sie startet in der Startansicht, legt auf Wunsch ein neues Design an und erklärt
 anschließend Schritt für Schritt alle Werkzeuge und Bereiche der
 Bearbeitungsansicht.
@@ -189,7 +189,7 @@ Bearbeitungsansicht.
 ## Verwandte Seiten
 
 * [Ein Design von Grund auf entwerfen](../tasks/design-from-scratch.md) — der Workflow von leerem Design bis zum Druck
-* [Design-Bibliothek](../master-data/designs.md) — gespeicherte Designs verwalten
+* [Designbibliothek](../master-data/designs.md) — gespeicherte Designs verwalten
 * [Farben (Stammdaten)](../master-data/colors.md) — Farbpaletten für den Designer pflegen
 * [Flechtauftrag](../orders/braiding-order.md) — Designs im Auftrag verwenden
 * [Design (Einstellungen)](../admin/settings/legacy-import.md) — Vorgaben, Ansicht, Animation, Speichern

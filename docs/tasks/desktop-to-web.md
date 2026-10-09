@@ -83,7 +83,20 @@ Stichproben:
 ## Festlegen, wie beide zusammenarbeiten
 
 Der Cloud-Abgleich lädt zuerst hoch und holt danach die Änderungen aus der
-Web-App; ändern beide Seiten denselben Eintrag, gewinnt der Desktop.
+Web-App; ändern beide Seiten denselben Eintrag, gewinnt der Desktop:
+
+```mermaid
+sequenceDiagram
+  participant D as Desktop-App
+  participant C as Cloud
+  participant W as Web-App
+  D->>C: 1. Geänderte Einträge und Dateien hochladen
+  D->>C: 2. Im Desktop Gelöschtes auch in der Cloud löschen
+  W->>C: Änderungen und Löschungen in der Web-App
+  C-->>D: 3. Rückkanal: Änderungen aus der Web-App übernehmen
+  Note over D,C: Beide Seiten geändert: Der Desktop gewinnt
+```
+
 Wählen Sie eine dieser Arbeitsweisen:
 
 * **Beide arbeiten** (Vorgabe): Abgleich an, *Änderungen aus der Webapp

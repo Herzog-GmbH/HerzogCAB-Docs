@@ -95,7 +95,7 @@ Die Felder werden **kategorieabhängig** angeboten – je nach gewählter Katego
 | **Abzug** | Der Abzug der Maschine, z. B. *Abzugsscheibe Ø 313 x 76 mm*. Frei beschreibbar; entspricht der Maschinentyp einem Modell aus dem Herzog-Katalog, bietet die Liste dessen Abzüge zur Auswahl an. Leer lassen, wenn nichts festgelegt ist. |
 | **Ölmenge** | Ölmenge (oder *Nicht gesetzt*). |
 | **Spulen** | Mehrfachauswahl der zulässigen Spulentypen aus den [Spulen-Stammdaten](bobbins.md). Mindestens eine Spule ist erforderlich. |
-| **Drehzahl** | Höchstdrehzahl in U/min (oder *Nicht gesetzt*). |
+| **Drehzahl** | Höchstdrehzahl in rpm (oder *Nicht gesetzt*). |
 | **Meterzähler** | **Ja** oder **Nein**. |
 | **Länge / Breite / Höhe** | Maschinenmaße in cm (u. a. für die Grundfläche im Hallenplaner). |
 

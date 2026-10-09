@@ -19,6 +19,16 @@ Seite dupliziert sie nicht.
 | **Web-App** | Arbeitsbereich des Kundenkontos: Aufträge, Designs, Maschinen, Stammdaten, Medien | auf dem Herzog-Server (app.herzog-cab.com), je Konto; Sicherung per [ZIP-Export](../web/import.md) |
 | **Windows-Registry** | Fenstergrößen, Spaltenbreiten, letzter Oberflächen-Zustand | `HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab` |
 
+Wie die Ablageorte zusammenhängen:
+
+```mermaid
+flowchart LR
+  R[Herzog CAB<br>auf dem Rechner] --> P[ProgramData<br>Benutzer, Profile, Lizenzbestätigung]
+  R --> G[Windows-Registry<br>Fenster und Oberfläche]
+  P -- Profil legt fest --> W[Arbeitsverzeichnis<br>Stammdaten, Aufträge, Designs,<br>Druckvorlagen, Protokoll]
+  W -- Cloud-Abgleich --> C[Web-App<br>auf dem Herzog-Server]
+```
+
 !!! info "Arbeitsverzeichnis ändern"
     Der Ort des Arbeitsverzeichnisses wird nicht hier, sondern in den
     [Profilen](../admin/profiles.md) festgelegt.

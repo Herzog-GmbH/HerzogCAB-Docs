@@ -110,6 +110,20 @@ Die Trommeln liest die Seite bei jeder Berechnung neu aus den Stammdaten —
 
 ### Der Vorschlag
 
+Von der Bestückung zum Vorschlag geht die Seite in diesen Schritten vor:
+
+```mermaid
+flowchart TD
+  B[Klöppelbestückung<br>Spule, Material, Feinheit, Fachung] --> P[Produktlänge<br>und Produktgewicht]
+  P --> K[Kapazität jeder Trommel,<br>begrenzt durch die Traglast]
+  K --> E{Passt alles auf<br>eine Trommel?}
+  E -- ja --> S[Kleinste passende Trommel]
+  E -- nein --> A[Aufteilung auf<br>mehrere Trommeln]
+  S --> W[Aufwickler prüfen]
+  A --> W
+  W --> V[Vorschlag: Trommeln<br>und passende Aufwickler]
+```
+
 Passt das ganze Produkt auf eine Trommel, schlägt die Seite die kleinste
 passende Trommel vor. Sonst teilt sie nach der gewählten **Aufteilung**:
 

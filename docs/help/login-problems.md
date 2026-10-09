@@ -5,7 +5,7 @@
 Herzog CAB verlangt vor dem Öffnen des Arbeitsbereichs eine Anmeldung — mit
 dem **Kontobenutzer** (Regelfall seit 2.0), bei Dongle-Installationen lokal
 mit Login und Passwort oder über **Microsoft Entra ID**. Grundlagen zur
-Anmeldung finden Sie unter [Anmeldung und Abmelden](../admin/login.md).
+Anmeldung finden Sie unter [Anmelden und Abmelden](../admin/login.md).
 
 ## Anmeldung mit dem Kontobenutzer (Desktop-App, Web-App, Lizenzportal)
 
@@ -142,7 +142,7 @@ Konto umbenennen oder auflösen, bevor Sie sich mit Microsoft anmelden können.
 
 ## Verwandte Seiten
 
-* [Anmeldung und Abmelden](../admin/login.md)
+* [Anmelden und Abmelden](../admin/login.md)
 * [Anmelden und Konto wählen (Web-App)](../web/login.md)
 * [Passwort, zweiter Faktor und Name (Lizenzportal)](../portal/security.md)
 * [Authentifizierung (Entra ID / LDAP)](../admin/authentication.md)

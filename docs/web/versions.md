@@ -25,6 +25,17 @@ Versionen gibt es für **Designs**, **Flecht- und Spulaufträge**,
 Dokumente, 3D-Modelle), Einstellungen, Benutzer und Rollen haben keine
 Versionen.
 
+Wohin eine Fassung beim Speichern und Löschen wandert und wie Sie sie
+zurückholen:
+
+```mermaid
+flowchart LR
+  E[Eintrag] -- Speichern --> V[Bisherige Fassung<br>unter Versionen]
+  V -- Wiederherstellen --> E
+  E -- Löschen --> P[Papierkorb]
+  P -- Wiederherstellen --> E
+```
+
 ## Wo der Knopf „Versionen" steht
 
 Der Knopf erscheint, sobald ein Eintrag einmal gespeichert ist. In

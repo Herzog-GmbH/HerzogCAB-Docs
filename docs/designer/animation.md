@@ -35,7 +35,9 @@ Die Anordnung der Flügelräder folgt der gewählten
 | **Rundgeflecht** | Flügelräder im geschlossenen Ring um den Flechtkreis. |
 | **Litzengeflecht** | Flügelräder in offener Reihe — an den beiden größeren Endrädern kehren die Klöppel um. |
 | **Quadratgeflecht** | 4 Flügelräder im 2×2-Block, je 4 Einschnitte, zwei Gangbahnen. |
+| **Spiralgeflecht** | 4 kleine Flügelräder, die innen an einem festen Außenkranz abrollen; alle drehen gleichsinnig. |
 | **Packungsgeflecht** | Flügelräder im Raster: 3×3 (12 Klöppel, 3 Gangbahnen) oder 4×4 (36 Klöppel, 4 Gangbahnen). |
+| **Soutachegeflecht** | Genau 2 Flügelräder mit einer Achter-Bahn. |
 
 Jeder belegte Einschnitt trägt einen Punkt in der Farbe des zugehörigen
 Klöppels. Hat ein Klöppel [Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn),
@@ -62,14 +64,15 @@ animieren: Flügelräder drehen sich, Klöppel laufen ihre Bahn ab"*):
   Klöppel reiten in ihren Einschnitten mit und wechseln an den Übergabepunkten
   auf das Nachbarrad. Jede Geflechtsart hat dabei ihre eigene Bewegungslogik —
   vom umlaufenden Ring des Rundgeflechts über die Pendelbahn der Litze bis zu
-  den verschlungenen Gangbahnen von Quadrat- und Packungsgeflecht.
+  den verschlungenen Gangbahnen von Quadrat- und Packungsgeflecht, der
+  Achter-Bahn der Soutache und den abrollenden Rädern der Spirale.
 * Erneutes Klicken (**Pause**) hält die Animation an; der aktuelle Stand bleibt
   stehen. Ein weiterer Klick setzt sie fort.
 * Ändern Sie Parameter oder die Farbbelegung, wird die Animation zurückgesetzt
   und das vollständige Flechtbild wieder angezeigt.
 
 !!! info "Wann die Animation verfügbar ist"
-    Die Animation gibt es für alle vier Geflechtsarten. Bei einzelnen sehr
+    Die Animation gibt es für alle sechs Geflechtsarten. Bei einzelnen sehr
     kleinen Konfigurationen (z. B. Rundgeflecht mit sehr wenigen Klöppeln) ist
     keine kollisionsfreie Animation möglich — die Play-Schaltfläche wird dann
     nicht angeboten.

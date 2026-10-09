@@ -34,7 +34,7 @@ scrollt — kein Feld wird mehr am Rand abgeschnitten.
 | Feldtyp | Verhalten |
 |---|---|
 | **Zahlenfeld mit Einheit** | Die Einheit steht direkt im Feld (leer z. B. „– mm"). Sie geben nur die Zahl ein; kleine Pfeile am Feldrand zählen schrittweise hoch/runter. |
-| **Auswahlliste (Dropdown)** | Feste Auswahl, z. B. Geflechtsart oder Maschinentype. |
+| **Auswahlliste (Dropdown)** | Feste Auswahl, z. B. Geflechtsart oder Maschinentyp. |
 | **Material-Auswahl** | Listet die [Material-Stammdaten](../master-data/materials.md); die Auswahl füllt abhängige Felder wie *Dichte* und *Feinheit* automatisch. Die Werte lassen sich anschließend übersteuern. |
 | **Spulen-Auswahl** | Listet die [Spulen-Stammdaten](../master-data/bobbins.md), auf einigen Seiten vorgefiltert über das Feld *Maschinentype*. |
 | **Trommel-Auswahl** | Listet die [Trommel-Stammdaten](../master-data/drums.md); die Maße kommen aus der gewählten Trommel (ab Version 2.1.0, z. B. *Produktlänge pro Trommel*). |

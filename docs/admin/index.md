@@ -58,7 +58,7 @@ deren Benutzermenü — siehe [Web-App](../web/index.md).
 
 <div class="grid cards" markdown>
 
-- :material-login: **Anmeldung und Abmelden**
+- :material-login: **Anmelden und Abmelden**
 
     Das Anmeldefenster: Kontobenutzer, lokales Konto, **Mit Microsoft
     anmelden**, Kontosperre und Profil-Auswahl nach dem Login.

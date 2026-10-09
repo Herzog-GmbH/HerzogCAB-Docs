@@ -31,8 +31,8 @@ flowchart LR
 1. Markieren Sie den neuen Grundriss und klicken Sie auf **Bearbeiten** — der
    [Hallenplaner-Editor](../hall-planner/editor.md) öffnet sich im
    Geometrie-Modus.
-2. Zeichnen Sie mit den Wand-Werkzeugen zuerst die **Außenwände**, dann die
-   **Innenwände**.
+2. Zeichnen Sie mit dem Wand-Werkzeug **Außenwand** zuerst die Außenwände,
+   dann mit **Innenwand** die Innenwände.
 3. Legen Sie mit den Flächen-Werkzeugen Funktionsbereiche an (z. B.
    Produktion, Verkehrsweg, Lager).
 4. Setzen Sie Bauelemente wie Türen, Tore, Fenster oder Treppen.
@@ -87,7 +87,7 @@ Auftragsstatus aus den [Aufträgen](../orders/index.md).
 
 ## Schritt 6: 3D-Kontrolle
 
-Wechseln Sie im Editor in die **3D-Ansicht** (Referenz:
+Wechseln Sie im Editor mit dem Ansicht-Schalter **3D** in die 3D-Ansicht (Referenz:
 [3D-Hallenansicht](../hall-planner/view-3d.md)):
 
 * Drehen, schwenken und zoomen Sie mit der Maus durch die Halle.
