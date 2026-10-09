@@ -20,9 +20,17 @@ Sie erreichen den Editor auf mehreren Wegen:
 
 ![Flechtauftrag-Editor mit dem Tab „Kunde" und der Tab-Leiste.](../assets/screenshots/orders/auftrag-editor-kunde.png)
 
-Oben links bringt Sie **Zur Auftragsliste** zurück zur
-[Auftragsübersicht](index.md). Oben rechts liegen **Drucken** (öffnet die
-[Druckausgabe](print.md)) und **Auftrag speichern**. Die Schaltfläche
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Flechtauftrag-Editor mit der einzeiligen Kopfzeile (links Pfeil **Zur Auftragsliste** und Titel „Auftrag“, rechts **Drucken** und **Auftrag speichern**), darunter die Leiste mit allen zehn Tabs inkl. „Aufwicklung“, Tab „Kunde“ geöffnet; Navigation eingeklappt.
+    **So erzeugen:** Kunden-Build, Auftragsübersicht, Musterauftrag öffnen. Ersetzt das bisherige Bild `orders/auftrag-editor-kunde.png` (alter Seitenkopf, neun Tabs).
+    **Ziel-Datei:** `assets/screenshots/orders/auftrag-editor-kunde.png`
+
+Alle Bedienelemente der Kopfzeile stehen in **einer Zeile**: Ganz links
+bringt Sie **Zur Auftragsliste** (mit Pfeilsymbol) zurück zur
+[Auftragsübersicht](index.md), daneben steht der Titel. Rechts liegen
+**Drucken** (öffnet die [Druckausgabe](print.md)) und **Auftrag speichern**.
+Die Erklärsätze zu den einzelnen Karten erscheinen als Kurzhinweis, wenn
+Sie mit der Maus auf die Kartenüberschrift zeigen. Die Schaltfläche
 **Auftrag speichern** ist farblich hervorgehoben, solange ungespeicherte
 Änderungen vorliegen.
 
@@ -353,7 +361,9 @@ mit dem Auftrag und sehen dessen Vorschau samt Klöppel-Tabelle.
 ### Verknüpftes Design
 
 Anzeigefeld mit dem Namen des verknüpften Designs (Platzhalter:
-*Noch kein Design verknüpft*). Im Feld liegen drei Schaltflächen:
+*Noch kein Design verknüpft*). Die interne Design-ID steht nicht mehr im
+Feld, sondern im Kurzhinweis (*Design-ID: …*), wenn Sie mit der Maus darauf
+zeigen. Im Feld liegen drei Schaltflächen:
 
 | Schaltfläche | Wirkung |
 |---|---|
@@ -373,7 +383,9 @@ Anzeigefeld mit dem Namen des verknüpften Designs (Platzhalter:
 
 Unter dem Feld zeigt eine Miniatur das Design mit Eckdaten (Name,
 Geflechtsart, Klöppel). Ein Klick auf Miniatur oder Text öffnet das
-verknüpfte Design.
+verknüpfte Design. Hat das Design [Fachungsfarben](../designer/painting.md#fachungsfarben-farbe-je-garn),
+zeigen Klöppel-Tabelle und Ausdruck je Garn einen Farbstreifen und die
+Farbangaben je Garn durch „ / “ getrennt.
 
 ### Unter-Tabs „Übersicht" und „Klöppel-Tabelle"
 
@@ -440,6 +452,9 @@ beschrieben.
   **Speichern**, **Nicht speichern** oder **Abbrechen**.
 * Das Speichern setzt das Recht voraus, Aufträge zu bearbeiten — siehe
   [Rollen und Rechte](../admin/roles.md).
+* Hat ein Kollege denselben Auftrag inzwischen gespeichert, fragt Herzog CAB
+  nach (**Überschreiben**, **Als Kopie speichern**, **Neu laden**) — siehe
+  [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
 
 ## Verwandte Seiten
 

@@ -32,10 +32,13 @@ Sie erreichen den Editor auf drei Wegen:
     **So erzeugen:** In der Auftragsübersicht einen Flechtauftrag mit Design anwählen und **Spulauftrag erstellen** klicken; zwei Spulmaschinen hinzufügen, **Spulen gleichmäßig verteilen**
     **Ziel-Datei:** `assets/screenshots/orders/spulauftrag-editor.png`
 
-Oben links bringt Sie **Zur Auftragsübersicht** zurück zur
-[Auftragsübersicht](index.md). Oben rechts liegen **Drucken** (öffnet die
-[Druckausgabe](print.md) mit der Spulauftrags-Standardvorlage) und
-**Spulauftrag speichern**.
+Alle Bedienelemente der Kopfzeile stehen in **einer Zeile**: Ganz links
+bringt Sie **Zur Auftragsübersicht** (mit Pfeilsymbol) zurück zur
+[Auftragsübersicht](index.md), daneben steht der Titel „Spulauftrag“. Rechts
+liegen **Drucken** (öffnet die [Druckausgabe](print.md) mit der
+Spulauftrags-Standardvorlage) und **Spulauftrag speichern**. Hat ein
+Kollege denselben Spulauftrag inzwischen gespeichert, fragt Herzog CAB beim
+Speichern nach — siehe [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
 
 Der Editor ist **eine** Scroll-Seite mit drei nummerierten Karten — von oben
 nach unten in der Reihenfolge, in der Sie planen:
@@ -113,7 +116,7 @@ arbeitet in zwei Modi:
 
 | Spalte / Element | Bedeutung |
 |---|---|
-| **Farbe** | Farbfeld. Doppelklick (bzw. **Zeile hinzufügen…**) öffnet die Auswahl **Farbe wählen** aus den [Farben-Stammdaten](../master-data/colors.md) oder **Freie Farbe…** über den Farbwähler. |
+| **Farbe** | Farbfeld. Doppelklick (bzw. **Zeile hinzufügen…**) öffnet die Auswahl **Farbe wählen** aus den [Farben-Stammdaten](../master-data/colors.md) oder **Freie Farbe…** über den Farbwähler. Hat das Design [Fachungsfarben](../designer/painting.md#fachungsfarben-farbe-je-garn), bekommt jede Kombination der Garnfarben eine eigene Zeile; das Farbfeld zeigt Garn 1, Namen, Kennungen und Pantone stehen je Garn durch „ / “ getrennt. |
 | **Bezeichnung** | Farbbezeichnung gemäß der Auswahl **Anzeige**. |
 | **Material** | Auswahlliste je Zeile; Standard ist das Standardmaterial des Auftrags. |
 | **Anzeige** | Farbbezeichnung als **Farbname**, **Kennung**, **Hex-Wert** oder **Pantone**. Die Einstellung ist mit der Klöppel-Tabelle im [Flechtauftrag](braiding-order.md#unter-tabs-ubersicht-und-kloppel-tabelle) gemeinsam. |

@@ -54,9 +54,11 @@ hängt von der Geflechtsart ab:
 | **3D** | Das echte räumliche Modell des Geflechts aus den Klöppelbahnen der Besetzungsübersicht — für alle sechs Geflechtsarten. Mischdesigns aus Rund- und Litzenabschnitten haben kein 3D-Modell; die Ansicht zeigt dann einen Hinweis. |
 
 Farben, Fachung und alle laufenden Änderungen bleiben in allen Ansichten
-identisch. Färben per Klick gehört ins flache Flechtbild; in der 3D-Ansicht
-färben Sie über die Klöppeltabelle oder die Palette — das Modell folgt
-sofort. Die gewählte Ansicht (samt Drehwinkel)
+identisch — auch [Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn):
+Im 3D-Modell läuft jedes Garn eines Klöppels in seiner eigenen Farbe.
+Färben per Klick gehört ins flache Flechtbild; in der 3D-Ansicht färben Sie
+über die Klöppeltabelle oder die Palette — das Modell färbt sich sofort um,
+ohne neu aufgebaut zu werden, auch bei vielen Klöppeln und hoher Fachung. Die gewählte Ansicht (samt Drehwinkel)
 merkt sich der Designer je Geflechtsart, wenn die Einstellung
 *Zuletzt genutzte Ansicht merken* aktiv ist
 ([Einstellungen > Design](../admin/settings/legacy-import.md)).

@@ -1,6 +1,6 @@
 # Färben und Texturieren
 
-!!! abstract "Referenz — Malmodus, Farbpalette, Benutzerfarben, Farbwähler und Texturen: den Klöppeln Farben und Faser-Texturen zuweisen."
+!!! abstract "Referenz — Malmodus, Farbpalette, Benutzerfarben, Farbwähler, Fachungsfarben und Texturen: den Klöppeln und ihren Garnen Farben und Faser-Texturen zuweisen."
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -108,6 +108,77 @@ Ein Klick auf eine Zelle färbt genau diese Position.
 !!! tip "Schnell viele Klöppel färben"
     Halten Sie die Maustaste gedrückt und ziehen Sie über die Zellen der
     Klöppeltabelle — alle überstrichenen Positionen erhalten die aktive Farbe.
+
+### Fachungsfarben (Farbe je Garn)
+
+Ab einer [Fachung](parameters.md#fachung) von 2 laufen auf einem Klöppel
+mehrere Garne nebeneinander auf derselben Bahn. Jedes dieser Garne kann eine
+**eigene Farbe** bekommen — z. B. ein schwarzer Klöppel mit einem roten
+Kennfaden. Garn 1 ist immer die Klöppelfarbe selbst.
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Designer mit Rundgeflecht, Fachung 3: in der Werkzeugleiste neben „L“/„R“ der Garn-Wähler mit geöffnetem Menü (Alle Garne, Garn 1 … Garn 3); die Klöppeltabelle zeigt senkrechte Farbstreifen je Garn, das Flechtbild Streifen längs zum Faden mit dünnen Trennlinien.
+    **So erzeugen:** *Designer*, **Neu**, Rundgeflecht 16 Klöppel, Fachung 3; einige Klöppel schwarz färben, über den Garn-Wähler „Garn 2“ wählen und diese Klöppel rot färben; Menü des Garn-Wählers aufklappen.
+    **Ziel-Datei:** `assets/screenshots/designer/designer-fachungsfarben.png`
+
+**Garn-Wähler (Werkzeugleiste).** Rechts neben den Schaltflächen für
+Linkslauf und Rechtslauf erscheint ab Fachung 2 eine Schaltfläche mit
+Balkensymbol, beschriftet **Alle Garne** bzw. **Garn N**. Ihr Menü bietet
+**Alle Garne** und darunter **Garn 1** … **Garn n**. Er legt fest, welches
+Garn ein Klick in die Klöppeltabelle oder ins Flechtbild färbt:
+
+| Auswahl | Wirkung eines Klicks mit der aktiven Farbe |
+|---|---|
+| **Alle Garne** | färbt den ganzen Klöppel in einer Farbe; vorhandene Garnfarben dieses Klöppels werden dabei aufgehoben. |
+| **Garn N** | färbt nur dieses eine Garn des getroffenen Klöppels. |
+
+Verkleinern Sie die Fachung unter das gewählte Garn, springt der Wähler auf
+**Alle Garne** zurück.
+
+**Fachungsfarben eines Klöppels im Dialog.** Ein **Rechtsklick** auf eine
+Zelle der Klöppeltabelle färbt nicht, sondern öffnet ein Menü:
+
+| Menüeintrag | Wirkung |
+|---|---|
+| **Fachungsfarben…** | Öffnet den Dialog *Fachungsfarben – &lt;Klöppel&gt;* (z. B. „– L3“ oder „– Bahn 2, Klöppel 4“). Ausgegraut bei Fachung 1 (*„Fachungsfarben gibt es ab Fachung 2.“*). |
+| **Alle Garne wie Garn 1** | Hebt die eigenen Garnfarben dieses Klöppels auf; alle Garne laufen wieder in der Klöppelfarbe. Nur aktiv, wenn der Klöppel eigene Garnfarben hat. |
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Dialog „Fachungsfarben – L3“ mit Hinweistext, Karte „Garne“ mit drei Zeilen „Garn 1 … Garn 3“ und Farbknöpfen (einer aufgeklappt mit Aktive Farbe, Palette, Eigene Farbe wählen…), unten **Alle wie Garn 1**, **Übernehmen** und **Abbrechen**.
+    **So erzeugen:** wie oben, Rechtsklick auf einen Klöppel in der Klöppeltabelle > **Fachungsfarben…**, Farbknopf von Garn 2 anklicken.
+    **Ziel-Datei:** `assets/screenshots/designer/designer-fachungsfarben-dialog.png`
+
+Im Dialog steht je Garn eine Zeile **Garn N** mit einem Farbknopf, der den
+Farbcode bzw. den Farbwert zeigt. Ein Klick auf den Farbknopf bietet die
+**Aktive Farbe**, die Farben der aktuellen **Palette** und **Eigene Farbe
+wählen…** an. **Alle wie Garn 1** gibt allen Garnen die Farbe von Garn 1;
+**Übernehmen** schreibt die Farben in den Klöppel, **Abbrechen** verwirft
+sie. Eigene Farben gibt es für bis zu 12 Garne je Klöppel; weitere Garne
+laufen in der Klöppelfarbe. Jede Änderung lässt sich mit **Zurück**
+rückgängig machen.
+
+**Wo die Garnfarben erscheinen:**
+
+* **Klöppeltabelle** — senkrechte Streifen je Garn, Garn 1 links.
+* **Flechtbild** — jedes Garn als eigener Streifen **längs zum Faden**, in
+  allen Ansichten (Voll, Halb, Zylinder, Vierkant, Kante), im Linkslauf wie
+  im Rechtslauf und auch mit eingeschalteten Texturen.
+* **Besetzungsübersicht** — der Klöppelpunkt ist in Kreisstücke je Garn
+  geteilt, siehe [Besetzung und Gangbahn-Animation](animation.md).
+* **3D-Ansicht** — jedes Garn in seiner Farbe, siehe
+  [Ansichten und 3D-Ansicht](view-3d.md).
+* **Ausdruck und Auftrag** — die Klöppelliste zeigt je Garn einen Streifen
+  und die Farbangaben je Garn durch „ / “ getrennt (z. B. „STD-RED /
+  STD-BLU“), siehe [Speichern und Drucken](save-print.md); ebenso die
+  Klöppel-Tabelle im [Flechtauftrag](../orders/braiding-order.md) und die
+  Farbaufschlüsselung im [Spulauftrag](../orders/winding-order.md#farbaufschlusselung).
+
+!!! info "Trennlinien der Fachung"
+    Ab Fachung 2 trennen dünne Linien die Garne jedes Klöppels im Flechtbild
+    — **immer**, auch wenn alle Garne dieselbe Farbe haben. So sehen Sie auf
+    einen Blick, dass gefacht wird. Die Linien sind so fein wie die Kontur
+    der Maschen; nur wenn alle Garne einer Masche dunkel sind, werden sie
+    hell gezeichnet.
 
 ### Texturen
 

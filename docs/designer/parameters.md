@@ -138,8 +138,12 @@ folgt; sein Kurzhinweis zeigt ein Erklärbild des Bezugs.
 ### Fachung
 
 Zahlenfeld für die Anzahl der Fäden je Klöppelposition (**1 bis 100**). Die
-Fachung wird im Flechtbild dargestellt; zum Einfärben und Texturieren der
-Fäden siehe [Färben und Texturieren](painting.md).
+Fachung wird im Flechtbild dargestellt: Ab Fachung 2 trennen dünne Linien
+die Garne jeder Masche, auch wenn alle Garne gleich gefärbt sind. Ab
+Fachung 2 erscheint außerdem in der Werkzeugleiste der Garn-Wähler, mit dem
+Sie jedem Garn eine eigene Farbe geben — siehe
+[Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn). Zum Einfärben
+und Texturieren der Fäden siehe [Färben und Texturieren](painting.md).
 
 ### Seelen einlegen (2 Kerne) — nur Soutachegeflecht
 

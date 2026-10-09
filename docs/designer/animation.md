@@ -38,8 +38,9 @@ Die Anordnung der Flügelräder folgt der gewählten
 | **Packungsgeflecht** | Flügelräder im Raster: 3×3 (12 Klöppel, 3 Gangbahnen) oder 4×4 (36 Klöppel, 4 Gangbahnen). |
 
 Jeder belegte Einschnitt trägt einen Punkt in der Farbe des zugehörigen
-Klöppels. Färben Sie im Flechtbild oder in der Klöppeltabelle um, aktualisiert
-sich die Übersicht sofort.
+Klöppels. Hat ein Klöppel [Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn),
+ist sein Punkt in Kreisstücke je Garn geteilt. Färben Sie im Flechtbild oder
+in der Klöppeltabelle um, aktualisiert sich die Übersicht sofort.
 
 ### Zoomen und Verschieben in der Übersicht
 

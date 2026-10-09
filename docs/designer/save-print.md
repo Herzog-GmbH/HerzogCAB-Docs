@@ -107,7 +107,10 @@ Klöppelzahl immer in der Auswahl.
     **Ziel-Datei:** `assets/screenshots/designer/designer-druckvorschau.png`
 
 Die Druckvorschau zeigt alle Seiten der gewählten Vorlage, bereits befüllt mit
-den aktuellen Design-, Farb- und Klöppeldaten. Im Vorschau-Fenster stehen
+den aktuellen Design-, Farb- und Klöppeldaten. Bei
+[Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn) zeigt die
+Klöppelliste je Garn einen Farbstreifen; Kennung, Name, Farbwert und
+Pantone stehen je Garn durch „ / “ getrennt (fehlende Angaben als „–“). Im Vorschau-Fenster stehen
 Zoom-Funktionen und die **Drucken**-Schaltfläche bereit, über die Sie den
 Ausdruck an den Drucker senden.
 

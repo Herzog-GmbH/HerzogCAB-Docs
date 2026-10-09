@@ -80,6 +80,9 @@ Kurzanleitung und Ihren zuletzt verwendeten Designs:
   Zeitstempel der letzten Bearbeitung bzw. Speicherung. Ein **Doppelklick**
   öffnet das Design direkt.
 
+Solange kein Design geöffnet ist, ist die Werkzeugleiste gesperrt; nur
+**Neu** und **Laden** sind bedienbar.
+
 ### Bearbeitungsansicht
 
 Sobald ein Design geöffnet ist, erscheint die Bearbeitungsansicht. Sie besteht
@@ -115,6 +118,7 @@ aus fünf Bereichen:
 | **Färben** | Malmodus: Klicks im Flechtbild oder in der Klöppeltabelle färben Klöppel mit der aktiven Farbe ein — siehe [Färben und Texturieren](painting.md). |
 | **Bewegen** | Verschiebemodus: mit gedrückter linker Maustaste verschieben Sie die Ansicht, ohne zu färben. |
 | **Linkslauf** / **Rechtslauf** | Seitenfilter für das Färben: legt fest, welche Laufrichtung ein Klick einfärbt. Nur bei Rund- und Quadratgeflecht sichtbar (zwei Läufe). |
+| **Alle Garne** / **Garn N** | Garn-Wähler, nur ab Fachung 2: legt fest, welches Garn eines Klöppels ein Klick färbt — siehe [Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn). |
 | **Zurück** (++ctrl+z++) / **Vor** (++ctrl+y++) | Macht den letzten Färbeschritt rückgängig bzw. stellt ihn wieder her. |
 | **Labels** | Blendet die Klöppelbezeichnungen im Flechtbild ein oder aus (Standard: ein). |
 | **Voll** / **Halb** / **Zylinder** (bzw. **Vierkant**, **Kante**) / **3D** | Die Ansichts-Schalter: flache Abwicklung, halbe Abwicklung, drehbare Projektion und das echte 3D-Modell — welche erscheinen, hängt von der Geflechtsart ab, siehe [Ansichten und 3D-Ansicht](view-3d.md). |
