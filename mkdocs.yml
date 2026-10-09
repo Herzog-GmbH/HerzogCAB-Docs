@@ -263,6 +263,7 @@ nav:
       - Suchen und Filtern: basics/search-filter.md
       - So sind Berechnungsseiten aufgebaut: basics/calc-page-anatomy.md
       - Guided Tour: basics/guided-tour.md
+      - Mehrere Benutzer am selben Arbeitsverzeichnis: basics/multi-user.md
       - Testversion und Kontingente: basics/trial-quotas.md
       - Desktop-App oder Web-App?: basics/platforms.md
 

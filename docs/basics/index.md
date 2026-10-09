@@ -86,6 +86,15 @@ Wenn Sie Herzog CAB zum ersten Mal bedienen, lesen Sie am besten zuerst
 
     [:octicons-arrow-right-24: Geführte Touren](guided-tour.md)
 
+- :material-account-multiple: **Mehrere Benutzer am selben Arbeitsverzeichnis**
+
+    ---
+
+    Wie Einträge einzeln, gesperrt und mit Version gespeichert werden —
+    und was Sie sehen, wenn ein Kollege denselben Eintrag geändert hat.
+
+    [:octicons-arrow-right-24: Mehrere Benutzer](multi-user.md)
+
 - :material-license: **Testversion und Kontingente**
 
     ---

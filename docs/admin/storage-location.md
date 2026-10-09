@@ -72,8 +72,10 @@ Herzog CAB unterscheidet zwei Speicherorte:
 ## Auf Netzlaufwerk verschieben
 
 Hat Ihre Firma mit einem Rechner und lokalen Daten angefangen und kommt ein
-zweiter Rechner dazu, müssen die Daten auf ein Netzlaufwerk. Der Dialog
-erledigt das in einem Schritt:
+zweiter Rechner dazu, müssen die Daten auf ein Netzlaufwerk. Wie Herzog CAB
+dort gleichzeitige Änderungen mehrerer Benutzer absichert, steht unter
+[Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
+Der Dialog erledigt das Verschieben in einem Schritt:
 
 1. Herzog CAB **kopiert** den ganzen Ordner in den neuen Ordner.
 2. Es **prüft** die Kopie Datei für Datei.
@@ -163,3 +165,4 @@ Dieselben Pfade zeigt auch der Einstellungen-Dialog im Tab
 * [Profile (Arbeitsbereiche)](profiles.md) — Arbeitsverzeichnis festlegen und wechseln
 * [Einstellungen: Speicherorte](settings/files.md) — Pfadübersicht im Einstellungen-Dialog
 * [Dateiablage im Überblick](../appendix/file-locations.md)
+* [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md) — Sperre, Versionen und Rückfragen
