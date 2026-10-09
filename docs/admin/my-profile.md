@@ -47,7 +47,7 @@ ihn bei der nächsten Anmeldung.“*
 So ändern Sie Ihren Namen:
 
 1. Klicken Sie auf **Im Lizenzportal ändern**. Der Browser öffnet die
-   Lizenzportal-Seite [Passwort und zweiter Faktor](../portal/security.md)
+   Lizenzportal-Seite [Passwort, zweiter Faktor und Name](../portal/security.md#name)
    mit der Karte für den Namen.
 2. Tragen Sie dort den neuen Namen ein und speichern Sie.
 3. Herzog CAB übernimmt ihn bei der nächsten Anmeldung (bzw. beim nächsten
@@ -57,13 +57,6 @@ Den Namen anderer Benutzer ändert ein Administrator im Lizenzportal unter
 [Benutzer einladen und verwalten](../portal/users.md). Die E-Mail-Adresse
 ist der Anmeldename im Konto. Das **Profilbild** bleibt auch für
 Kontobenutzer hier im Programm änderbar.
-
-!!! info "Kontobenutzer: Name und E-Mail kommen aus dem Kundenkonto"
-    Melden Sie sich mit Ihrem Benutzer aus dem
-    [Kundenkonto](../setup/account.md) an, übernimmt Herzog CAB Anzeigename
-    und E-Mail-Adresse bei jeder Anmeldung aus dem Kundenkonto. Ändern Sie
-    Ihren Namen deshalb im Lizenzportal, siehe
-    [Passwort, zweiter Faktor und Name](../portal/security.md#name).
 
 !!! tip "Wiedererkennung an gemeinsamen Rechnern"
     Gerade an Arbeitsplätzen, die mehrere Bediener teilen, hilft ein
