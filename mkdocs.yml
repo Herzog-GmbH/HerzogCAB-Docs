@@ -370,6 +370,7 @@ nav:
       - Hallenplaner: web/hall-planner.md
       - Drucken: web/print.md
       - Druck Editor: web/print-editor.md
+      - Versionen und Papierkorb: web/versions.md
       - Benutzermenü:
           - Einstellungen: web/settings.md
           - Konto und Benutzer: web/account.md
@@ -402,7 +403,7 @@ nav:
           - Benutzer einladen und verwalten: portal/users.md
           - Lizenz anfordern: portal/requests.md
           - Herunterladen: portal/download.md
-          - Passwort und zweiter Faktor: portal/security.md
+          - Passwort, zweiter Faktor und Name: portal/security.md
       - Anmelden und Abmelden: admin/login.md
       - Benutzer verwalten: admin/users.md
       - Rollen und Berechtigungen: admin/roles.md

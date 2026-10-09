@@ -8,8 +8,8 @@ Im **Lizenzportal** verwalten die Administratoren Ihrer Firma das
 [Kundenkonto](../setup/account.md): Welche Bausteine sind freigeschaltet,
 welche Rechner belegen Plätze, wer darf sich anmelden, und welche Anfragen
 laufen gerade bei Herzog. Jeder Benutzer kann dort außerdem sein Passwort
-ändern, einen zweiten Faktor einrichten und die neueste Programmversion
-laden.
+und seinen Namen ändern, einen zweiten Faktor einrichten und die neueste
+Programmversion laden.
 
 Sie erreichen das Portal unter **[license.herzog-cab.com](https://license.herzog-cab.com)**
 — aus der Desktop-App auch über *Einstellungen > Lizenz > Lizenzportal
@@ -31,8 +31,8 @@ Lizenzportal öffnen*.
 
     ---
 
-    Kollegen einladen, Rollen vergeben, Zugänge deaktivieren, Einladungen
-    erneuern.
+    Kollegen einladen, Namen und Rollen ändern, Zugänge deaktivieren,
+    Einladungen erneuern.
 
     [:octicons-arrow-right-24: Benutzer](users.md)
 
@@ -63,14 +63,14 @@ Lizenzportal öffnen*.
 
     [:octicons-arrow-right-24: Herunterladen](download.md)
 
-- :material-shield-key-outline: **Passwort und zweiter Faktor**
+- :material-shield-key-outline: **Passwort, zweiter Faktor und Name**
 
     ---
 
-    Passwort ändern und die Anmeldung in zwei Schritten mit einer
-    Authenticator-App einrichten.
+    Passwort ändern, die Anmeldung in zwei Schritten mit einer
+    Authenticator-App einrichten und den eigenen Namen ändern.
 
-    [:octicons-arrow-right-24: Passwort und zweiter Faktor](security.md)
+    [:octicons-arrow-right-24: Passwort, zweiter Faktor und Name](security.md)
 
 </div>
 
@@ -117,12 +117,13 @@ Seite **Mein Konto**.
 | **Bestellen** | Jahresabo bestellen, Plätze dazukaufen oder verlängern, wie unter [Abo und Bestellung](../web/subscription.md) beschrieben. Bestellen können nur Administratoren. |
 | **Web-App** | Öffnet [app.herzog-cab.com](https://app.herzog-cab.com) in einem neuen Tab. Nur, wenn das Konto die Web-App nutzen darf. |
 | **Sprache** | Deutsch oder Englisch — die Wahl gilt für Ihren Benutzer. |
-| **Passwort und zweiter Faktor** | [Sicherheitseinstellungen](security.md) Ihres Benutzers. |
+| **Ihre E-Mail-Adresse** (rechts oben) | Öffnet [Passwort, zweiter Faktor und Name](security.md) Ihres Benutzers. |
 | **Abmelden** | Beendet die Portal-Sitzung. |
 
 !!! info "Wer sieht was?"
     **Administratoren** sehen und verwalten alles. **Bearbeiter** und
-    **Betrachter** sehen das Konto und ihre eigenen Sicherheitseinstellungen,
+    **Betrachter** sehen das Konto und ändern ihr eigenes Passwort, ihren
+    zweiten Faktor und ihren Namen,
     können aber weder Rechner freigeben noch Benutzer einladen, bestellen
     oder Lizenzen anfragen. Das Portal blendet die entsprechenden
     Schaltflächen aus.

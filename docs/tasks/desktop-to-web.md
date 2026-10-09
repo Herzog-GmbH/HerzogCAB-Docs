@@ -68,8 +68,9 @@ Der Import lässt sich jederzeit wiederholen; gleiche Einträge werden nach
 
 ## In der Web-App prüfen
 
-Öffnen Sie die [Startseite](../web/start.md) — die Kennzahlen **Aufträge**,
-**Designs**, **Maschinen** und **Kunden** zeigen den Stand. Stichproben:
+Öffnen Sie die [Startseite](../web/start.md) — die Karte **Überblick** zeigt
+mit **Aufträge**, **Designs**, **Maschinen** und **Kunden** den Stand.
+Stichproben:
 
 * [Aufträge](../web/orders.md): ein Flechtauftrag mit Design öffnen — Reiter
   **Design** zeigt Vorschau und Klöppel-Tabelle.

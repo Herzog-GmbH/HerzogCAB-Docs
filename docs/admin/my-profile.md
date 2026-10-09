@@ -32,6 +32,13 @@ Dialog **Mein Profil** mit drei Reitern.
 | **E-Mail** | Optionale Kontaktadresse. |
 | **Speichern** | Sichert die Änderungen; die Statuszeile meldet *„Profil gespeichert."* |
 
+!!! info "Kontobenutzer: Name und E-Mail kommen aus dem Kundenkonto"
+    Melden Sie sich mit Ihrem Benutzer aus dem
+    [Kundenkonto](../setup/account.md) an, übernimmt Herzog CAB Anzeigename
+    und E-Mail-Adresse bei jeder Anmeldung aus dem Kundenkonto. Ändern Sie
+    Ihren Namen deshalb im Lizenzportal, siehe
+    [Passwort, zweiter Faktor und Name](../portal/security.md#name).
+
 !!! tip "Wiedererkennung an gemeinsamen Rechnern"
     Gerade an Arbeitsplätzen, die mehrere Bediener teilen, hilft ein
     Profilbild, auf einen Blick zu sehen, wer gerade angemeldet ist.

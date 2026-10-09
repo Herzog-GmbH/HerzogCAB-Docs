@@ -29,9 +29,10 @@ im Browser.
 ## Maschinenseite
 
 Die Maschinenseite ist in vier Reiter gegliedert; **Speichern** sitzt oben
-rechts, **← Zurück zum Maschinenpark** führt zur Liste. Zum Ändern brauchen
-Sie das Recht *Stammdaten bearbeiten* — sonst ist die Seite nur lesbar und
-nennt das fehlende Recht.
+rechts, daneben **Löschen** und **[Versionen](versions.md)** mit den
+früheren Fassungen der Maschine. **← Zurück zum Maschinenpark** führt zur
+Liste. Zum Ändern brauchen Sie das Recht *Stammdaten bearbeiten* — sonst
+ist die Seite nur lesbar und nennt das fehlende Recht.
 
 ![Maschinenseite der Web-App, Reiter „Allgemein".](../assets/screenshots/web/maschine.png)
 
@@ -52,7 +53,9 @@ Gespeichert wird, was angekreuzt ist.
 
 Bilder und Dokumente landen in der [Medienbibliothek](media.md) des Kontos.
 **Löschen** entfernt die Maschine samt Bild, Dokumenten und 3D-Modell — mit
-Sicherheitsabfrage.
+Sicherheitsabfrage. Die Maschine selbst kommt in den
+[Papierkorb](versions.md#papierkorb); Bild, Dokumente und 3D-Modell sind
+dagegen endgültig weg.
 
 !!! tip "Spulzeit-Vorbelegung"
     **Einrichtzeit je Auftrag** und **Bestückungszeit je Spule** einer

@@ -110,6 +110,11 @@ Kundenkonto angemeldet sein.
       Standard-Druckvorlage, gilt wieder die mitgelieferte. In der Web-App
       gelöschte **Dateien** bleiben im Arbeitsverzeichnis liegen.
 
+    Verloren geht dabei nichts: Die Web-App legt jede überschriebene
+    Fassung unter **Versionen** ab, gelöschte Einträge kommen in ihren
+    **Papierkorb**. Von dort holen Sie sie zurück, siehe
+    [Versionen und Papierkorb](../../web/versions.md).
+
 !!! info "Ein Konto, ein Arbeitsverzeichnis"
     Die Web-App hat je Konto genau einen Arbeitsbereich. Der erste Abgleich
     bindet ihn an das Arbeitsverzeichnis, mit dem er läuft. Versucht ein

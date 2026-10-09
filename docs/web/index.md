@@ -19,7 +19,7 @@ zugleich arbeitet, belegt zwei Plätze. Zum Ausprobieren legt Herzog Ihnen
 auf Anfrage eine kostenlose [Testversion](trial.md) an: 30 Tage, im
 Programm und im Browser.
 
-![Startseite der Web-App mit Seitenleiste, Kennzahlen und Schnellzugriff.](../assets/screenshots/web/startseite.png)
+![Startseite der Web-App mit Seitenleiste, Begrüßung, Aufträgen, Produktion und Favoriten.](../assets/screenshots/web/startseite.png)
 
 ## Die Module
 
@@ -46,7 +46,8 @@ Programm und im Browser.
 
     ---
 
-    Kennzahlen des Arbeitsbereichs und Schnellzugriff auf alle Module.
+    Aufträge nach Status, anstehende Produktion, Favoriten, zuletzt
+    Geöffnetes und Schnellzugriff auf alle Module; anpassbar.
 
     [:octicons-arrow-right-24: Startseite](start.md)
 
@@ -117,18 +118,28 @@ Programm und im Browser.
 
     [:octicons-arrow-right-24: Druck Editor](print-editor.md)
 
+- :material-history: **Versionen und Papierkorb**
+
+    ---
+
+    Frühere Fassungen eines Eintrags ansehen und wiederherstellen,
+    gelöschte Einträge zurückholen.
+
+    [:octicons-arrow-right-24: Versionen und Papierkorb](versions.md)
+
 - :material-account-cog-outline: **Benutzermenü**
 
     ---
 
     Einstellungen, Konto und Benutzer, Abo und Bestellung, Firma,
-    Medienbibliothek, Rollen und der Import aus dem Desktop.
+    Medienbibliothek, Papierkorb, Rollen und der Import aus dem Desktop.
 
     [:octicons-arrow-right-24: Einstellungen](settings.md) ·
     [Konto und Benutzer](account.md) ·
     [Abo und Bestellung](subscription.md) ·
     [Firma](company.md) ·
     [Medienbibliothek](media.md) ·
+    [Papierkorb](versions.md#papierkorb) ·
     [Rollen](roles.md) ·
     [Import aus dem Desktop](import.md)
 
@@ -155,7 +166,8 @@ gibt es in beiden — die wichtigsten Unterschiede:
 | Daten | Arbeitsverzeichnis auf Rechner oder Netzlaufwerk, je Profil | zentral im Kundenkonto, ein Arbeitsbereich je Konto |
 | Benutzer | Kontobenutzer (oder lokal / Entra / LDAP bei Dongle) | ausschließlich Kontobenutzer |
 | Berechnungen | alle Rechner, Verlauf, Favoriten | dieselben Rechner, Historie und Favoriten je Benutzer auf allen Geräten, Suche |
-| Designer | alle sechs Geflechtsarten, Färben per Klick, Texturen, Gangbahn-Animation, echtes 3D, Zwei-Fenster-Vergleich, Mischdesigns | alle sechs Geflechtsarten, Färben per Klick, Besetzungsübersicht mit Animation, echtes 3D; ein Design je Seite, keine Texturen |
+| Designer | alle sechs Geflechtsarten, Färben per Klick, Texturen, Gangbahn-Animation, echtes 3D, Zwei-Fenster-Vergleich, Mischdesigns | alle sechs Geflechtsarten, Färben per Klick, Texturen, Fachungsfarben (Farbe je Garn), Besetzungsübersicht mit Animation, echtes 3D; ein Design je Seite, Mischdesigns nur ansehen |
+| Versionen | — | frühere Fassungen und Papierkorb für Aufträge, Designs, Maschinen, Stammdaten, Hallenpläne und Druckvorlagen, auch für Änderungen aus dem Cloud-Abgleich |
 | Aufträge | Flecht- und Spulauftrag, Zeitraumfilter, Duplizieren | Flecht- und Spulauftrag, Filter nach Art, Status und Maschine |
 | Druck | Druck-Editor für Vorlagen, Drucken über Windows | Druck Editor für Vorlagen (mit Rückgängig und Vorschau mit Beispieldaten), Drucken über den Browser, PDF |
 | Hallenplaner | 2D-Editor mit Wandtexturen, Kontextmenüs, automatische Flächen, 3D | 2D-Editor (Wände, Flächen, Türen, Tore, Fenster, Treppen, Kalibrieren), 3D-Ansicht |

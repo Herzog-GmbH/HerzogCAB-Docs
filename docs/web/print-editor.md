@@ -30,11 +30,11 @@ Vorlage gleich geladen.
     **Motiv:** Der Druck Editor mit geladener Vorlage „Standard Auftrag": links die Elemente mit Filter, in der Mitte die Seite mit Raster und Elementen, rechts „Auswahl" und „Einstellungen", oben Vorlagenwahl, „Vorschau mit" und der Umschalter Bearbeiten/Vorschau.
     **So erzeugen:** `python _tools/web_screenshots.py shots nur:druckeditor` (nach `login`).
     **Ziel-Datei:** `assets/screenshots/web/druckeditor.png`
-<!-- web-bild web/druckeditor.png -->
+    <!-- web-bild ../assets/screenshots/web/druckeditor.png -->
 
 | Bereich | Inhalt |
 |---|---|
-| **Kopfzeile** | Titel **Druck Editor**, darunter der Name der Vorlage (bzw. *Neue Vorlage*), bei Änderungen mit dem Zusatz *ungespeichert*. Rechts **Neue Vorlage**, **Vorlage löschen** und **Speichern**. |
+| **Kopfzeile** | Titel **Druck Editor**, darunter der Name der Vorlage (bzw. *Neue Vorlage*), bei Änderungen mit dem Zusatz *ungespeichert*. Rechts **Neue Vorlage**, **Versionen**, **Vorlage löschen** und **Speichern**. |
 | **Vorlagen** | Alle Druckvorlagen Ihres Kontos und die mitgelieferten Standardvorlagen, nach Namen sortiert. Mitgelieferte Vorlagen ohne eigene Fassung tragen den Zusatz *(mitgeliefert)*. |
 | **Vorschau mit** | Beispieldaten für die Vorschau (siehe [unten](#vorschau-mit-beispieldaten)). |
 | **Bearbeiten** / **Vorschau** | Umschalter zwischen der Arbeitsfläche und der Druckansicht. |
@@ -49,7 +49,12 @@ Vorlage gleich geladen.
 |---|---|
 | **Neue Vorlage** | Beginnt eine leere Vorlage. |
 | **Speichern** | Öffnet den Dialog *Printout-Vorlage speichern* mit dem Feld **Name der Vorlage**. Derselbe Name wie die geladene Vorlage überschreibt sie; *ein anderer Name legt eine neue Vorlage an.* Die Meldung *Vorlage gespeichert.* bestätigt. |
-| **Vorlage löschen** | Nur bei Vorlagen Ihres Kontos: löscht die Vorlage nach Rückfrage. |
+| **Versionen** | Nur bei Vorlagen Ihres Kontos: frühere Fassungen der Vorlage ansehen und wiederherstellen, siehe [Versionen und Papierkorb](versions.md). |
+| **Vorlage löschen** | Nur bei Vorlagen Ihres Kontos: löscht die Vorlage nach Rückfrage. Sie kommt in den [Papierkorb](versions.md#papierkorb). |
+
+Hat jemand anderes die Vorlage geändert, seit Sie sie geladen haben,
+speichert der Editor nicht und meldet *Die Vorlage wurde inzwischen von
+jemand anderem geändert. Unter „Versionen" sind beide Fassungen zu sehen.*
 
 !!! info "Mitgelieferte Standardvorlagen ändern"
     Die mitgelieferten Standardvorlagen lassen sich ebenfalls ändern.

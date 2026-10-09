@@ -43,13 +43,14 @@ Benutzermenü:
 
 | Eintrag | Ziel |
 |---|---|
-| **Konto** (Auswahl) | Nur, wenn Ihr Benutzer zu mehreren Konten gehört: wechselt das Konto. |
+| **Konto** (Auswahl) | Nur für Mitarbeiter von Herzog mit mehreren internen Konten: wechselt das Konto. |
 | **Sprache** | Am Smartphone hier statt in der Kopfzeile. |
 | **Einstellungen** | [Sprache, Benutzer, Passwort-Hinweis](settings.md). |
 | **Konto und Benutzer** | [Edition, Bausteine, Plätze, Benutzer und Rollen](account.md). |
 | **Abo und Bestellung** | [Freischaltungen, Testphase, Jahresabo bestellen oder Anfrage](subscription.md). |
 | **Firma** | [Firmendaten und Logo für Druckvorlagen](company.md). |
 | **Medienbibliothek** | [Hochgeladene Bilder und Dokumente](media.md). |
+| **Papierkorb** | [Gelöschte Einträge ansehen und wiederherstellen](versions.md#papierkorb). |
 | **Rollen** | [Rollen und Rechte](roles.md) — nur mit den Rechten *Rollen verwalten* bzw. *Benutzer verwalten*. |
 | **Import aus dem Desktop** | [ZIP-Import und -Export des Arbeitsbereichs](import.md) — nur mit dem Recht *Workspace-Einstellungen*. |
 | **Abmelden** | Beendet die Sitzung. |
@@ -65,11 +66,16 @@ Benutzermenü:
   kurz eine Bestätigung (*Gespeichert.*) am unteren Rand; Fehler erscheinen
   als rote Hinweisbox.
 * **Sicherheitsabfragen** (z. B. beim Löschen) öffnen sich als Dialog — am
-  Smartphone als Bogen von unten.
+  Smartphone als Bogen von unten. Gelöschte Aufträge, Designs, Maschinen,
+  Stammdaten, Hallenpläne und Druckvorlagen landen im
+  [Papierkorb](versions.md#papierkorb).
+* **Versionen:** Editoren haben einen Knopf **Versionen** mit den früheren
+  Fassungen des Eintrags, siehe [Versionen und Papierkorb](versions.md).
 * **Versionskonflikt:** Bearbeiten zwei Personen denselben Eintrag, meldet
   die Web-App beim zweiten Speichern *„Der Eintrag wurde inzwischen von jemand
   anderem geändert. Bitte neu laden."* — laden Sie die Seite neu und tragen
-  Sie Ihre Änderung erneut ein.
+  Sie Ihre Änderung erneut ein. Was der andere gespeichert hat, sehen Sie
+  danach unter **Versionen**.
 
 ## Tablet und Smartphone
 
@@ -91,4 +97,5 @@ Die Web-App passt sich der Bildschirmbreite an:
 
 * [Anmelden und Konto wählen](login.md)
 * [Startseite](start.md)
+* [Versionen und Papierkorb](versions.md)
 * [Oberfläche im Überblick (Desktop-App)](../basics/interface.md) — zum Vergleich

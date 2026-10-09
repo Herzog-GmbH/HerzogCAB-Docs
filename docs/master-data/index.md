@@ -82,7 +82,7 @@ sich zunächst eine Übersicht mit einer Kachel je Stammdatenbereich.
 
     [:octicons-arrow-right-24: Trommeln](drums.md)
 
-- :material-reel: **Spulmaschinen**
+- :material-movie-roll: **Spulmaschinen**
 
     ---
 

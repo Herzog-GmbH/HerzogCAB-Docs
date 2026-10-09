@@ -24,7 +24,7 @@ Seriennummer und Namen ein.
     **Motiv:** Der Herzog-Katalog in der Kachelansicht, Reiter *Flechtmaschinen*, mit Suchfeld, Baureihenfilter und Umschalter Kacheln/Liste.
     **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog` (nach `login`).
     **Ziel-Datei:** `assets/screenshots/web/katalog.png`
-<!-- web-bild web/katalog.png -->
+    <!-- web-bild ../assets/screenshots/web/katalog.png -->
 
 | Element | Bedeutung |
 |---|---|
@@ -40,7 +40,7 @@ Seriennummer und Namen ein.
     **Motiv:** Die Details der Feindrahtflechtmaschine KB 1/12-80: Kennzahlen, Technische Daten, Lieferumfang, darunter Zubehör zum Ankreuzen und Abzug und Aufnahme mit Auswahlkreisen.
     **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog-dialog` (nach `login`).
     **Ziel-Datei:** `assets/screenshots/web/katalog-dialog.png`
-<!-- web-bild web/katalog-dialog.png -->
+    <!-- web-bild ../assets/screenshots/web/katalog-dialog.png -->
 
 Die Details zeigen von oben nach unten:
 
@@ -63,7 +63,7 @@ und der Bereich zum Anlegen fehlt.
     **Motiv:** Der untere Teil der Details: Zubehör mit zwei angekreuzten Einträgen, gewählter Abzug, darunter „Als eigene Maschine anlegen" mit Besetzung, Maschinengruppe, Seriennummer und Name; unten rechts **Zu Flechtmaschinen hinzufügen**.
     **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog-anlegen` (nach `login`).
     **Ziel-Datei:** `assets/screenshots/web/katalog-anlegen.png`
-<!-- web-bild web/katalog-anlegen.png -->
+    <!-- web-bild ../assets/screenshots/web/katalog-anlegen.png -->
 
 Am Ende der Details tragen Sie nur ein, was der Katalog nicht wissen kann:
 

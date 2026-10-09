@@ -26,6 +26,13 @@ dem Recht **Rollen verwalten** oder **Benutzer verwalten**.
 | **Ansehen** | Standardrollen sind nur lesbar. |
 | **Bearbeiten** / **Löschen** | Eigene Rollen ändern oder entfernen; eine Rolle, die noch Benutzern zugewiesen ist, lässt sich nicht löschen. |
 
+!!! info "Nur Rechte weitergeben, die Sie selbst haben"
+    Eine eigene Rolle anlegen, ändern oder löschen Sie nur, wenn Sie selbst
+    alle Rechte dieser Rolle haben. Dasselbe gilt beim Zuweisen unter
+    [Konto und Benutzer](account.md#benutzer-und-rollen): Rollen mit Rechten,
+    die Sie nicht haben, können Sie weder vergeben noch entziehen, und Ihre
+    eigenen Rollen ändert ein anderer Administrator.
+
 ## Rolle anlegen oder bearbeiten
 
 | Feld | Bedeutung |

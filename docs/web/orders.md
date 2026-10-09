@@ -21,8 +21,16 @@ Felder auf die Referenzseiten der Desktop-App.
 | **Suche** | Filtert live nach Auftragsname, Nummer, Kunde oder Maschine. |
 | **Auftragsart** | *Alle Auftragsarten*, *Flechtaufträge*, *Spulaufträge*. |
 | **Status** | *Alle Status* oder ein Status: Entwurf, Freigegeben, In Produktion, Abgeschlossen. |
+| **Zeitraum** | *Alle Zeiträume*, *Heute*, *Diese Woche*, *Letzte Woche*, *Dieser Monat* oder *Letzte 30 Tage*, wie in der [Desktop-App](../orders/index.md#filter-zeitraum). |
+| **Sortierung** | *Neueste zuerst*, *Älteste zuerst*, *Produktionsdatum* oder *Auftragsdatum*, wie in der [Desktop-App](../orders/index.md#auswahlliste-sortierung). |
 | **Maschine** | *Alle Maschinen* oder eine Maschine aus Ihrem Maschinenpark. |
 | Trefferzahl | *n Aufträge im Workspace* bzw. *n von m Aufträgen sichtbar*. |
+
+Die Filter stehen in der Adresse der Seite. Ein Lesezeichen oder der
+Zurück-Knopf des Browsers behält sie also, und die Zähler der
+[Startseite](start.md) springen gefiltert hierher. Wie in der Desktop-App
+gliedert die Liste die Aufträge in zeitliche Gruppen (*Heute*, *Diese
+Woche*, *Letzte Woche*, danach Monat und Jahr).
 
 Die Tabelle zeigt **Nr.**, **Auftragsname**, **Auftragsart** (Chip
 *Flechtauftrag* oder *Spulauftrag*), **Kunde**, **Design** (Name oder *–*),
@@ -35,12 +43,11 @@ Spulaufträge.
 | Symbol in der Zeile | Wirkung |
 |---|---|
 | **Öffnen** (Stift) | Öffnet den Editor. |
+| **Duplizieren** (zwei Blätter) | Mit Schreibrecht: speichert eine Kopie des Auftrags und öffnet sie im Editor. |
 | **Spulauftrag erstellen** (Spule) | Nur bei Flechtaufträgen mit Schreibrecht: legt einen verknüpften Spulauftrag an, vorbelegt mit Kunde, Material, Spulenformat, Termin und Sollwerten. |
-| **Löschen** (Papierkorb) | Mit Schreibrecht; Sicherheitsabfrage. Hat ein Flechtauftrag verknüpfte Spulaufträge, bleiben diese bestehen und verlieren nur die Verknüpfung. |
+| **Löschen** (Mülleimer) | Mit Schreibrecht; Sicherheitsabfrage. Hat ein Flechtauftrag verknüpfte Spulaufträge, bleiben diese bestehen und verlieren nur die Verknüpfung. Der gelöschte Auftrag kommt in den [Papierkorb](versions.md#papierkorb). |
 
-Auf schmalen Bildschirmen erscheint die Liste als Karten. Ein Zeitraumfilter
-und **Duplizieren** gibt es — anders als in der Desktop-App — in der Web-App
-nicht.
+Auf schmalen Bildschirmen erscheint die Liste als Karten.
 
 ## Flechtauftrag-Editor
 
@@ -54,7 +61,8 @@ dort — hier nur die Besonderheiten der Web-App:
 
 * Die Kopfzeile zeigt Auftragsname und Nummer, den Vermerk *ungespeichert*
   bei offenen Änderungen sowie **Zur Auftragsliste**, **Drucken**,
-  **Löschen** und **Auftrag speichern**.
+  **[Versionen](versions.md)** (frühere Fassungen ansehen und
+  wiederherstellen), **Löschen** und **Auftrag speichern**.
 * **Kunde**, **Maschine**, **Material** und **Spule** wählen Sie aus den
   Stammdaten des Kontos; die Schaltflächen **Kunden öffnen**,
   **Flechtmaschinen öffnen**, **Materialverwaltung öffnen** und
@@ -65,8 +73,9 @@ dort — hier nur die Besonderheiten der Web-App:
   Auftragswerten; **Übernehmen** schreibt das Ergebnis zurück. Am Feld
   Flechtwinkel öffnet das Symbol wie am Desktop *Flechtwinkel über Abzug*.
 * **Produktion von / bis** und **Produktionsende aus Hochrechnung
-  übernehmen** arbeiten wie am Desktop mit 8 Produktionsstunden je
-  Arbeitstag.
+  übernehmen** arbeiten wie am Desktop. Die Produktionsstunden je
+  Arbeitstag (Vorgabe 8 h) stellen Sie unter
+  [Einstellungen](settings.md) für das ganze Konto ein.
 * Der Reiter **Design** zeigt das verknüpfte Design mit Vorschau und der
   Klöppel-Tabelle; **Design öffnen** wechselt in den [Designer](designer.md),
   **Neues Design** legt ein neues an.
@@ -88,6 +97,8 @@ Felder erklärt der [Spulauftrag-Editor der Desktop-App](../orders/winding-order
 
 Besonderheiten der Web-App:
 
+* Die Kopfzeile bietet wie beim Flechtauftrag **Drucken**,
+  **[Versionen](versions.md)** und **Löschen**.
 * Beim Verknüpfen eines Flechtauftrags fragt ein Dialog, ob Kunde,
   Material, Spulenformat, Produktionstermin und Sollwerte übernommen werden
   sollen (**Übernehmen** oder **Nur verknüpfen**).
@@ -108,3 +119,4 @@ Standardvorlage für Flecht- bzw. Spulaufträge.
 * [Spulauftrag-Editor (Desktop-App)](../orders/winding-order.md)
 * [Vom Kundenauftrag zum Maschinenzettel](../tasks/order-to-machine-sheet.md) — der Ablauf
 * [Drucken (Web-App)](print.md)
+* [Versionen und Papierkorb](versions.md) — frühere Fassungen und gelöschte Aufträge zurückholen
