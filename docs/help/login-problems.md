@@ -142,7 +142,7 @@ Konto umbenennen oder auflösen, bevor Sie sich mit Microsoft anmelden können.
 
 * [Anmeldung und Abmelden](../admin/login.md)
 * [Anmelden und Konto wählen (Web-App)](../web/login.md)
-* [Passwort und zweiter Faktor (Lizenzportal)](../portal/security.md)
+* [Passwort, zweiter Faktor und Name (Lizenzportal)](../portal/security.md)
 * [Authentifizierung (Entra ID / LDAP)](../admin/authentication.md)
 * [Eigenes Profil](../admin/my-profile.md)
 * [Rollen und Berechtigungen](../admin/roles.md)

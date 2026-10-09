@@ -22,7 +22,7 @@ deren Benutzermenü — siehe [Web-App](../web/index.md).
 - :material-account-key-outline: **Kundenkonto und Lizenzportal**
 
     Bausteine und Plätze, angemeldete Rechner, Benutzer einladen, Lizenzen
-    anfordern, Passwort und zweiter Faktor.
+    anfordern, Passwort, zweiter Faktor und Name.
 
     [:octicons-arrow-right-24: Lizenzportal](../portal/index.md)
 

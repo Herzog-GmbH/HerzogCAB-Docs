@@ -183,7 +183,7 @@ Ist genau ein Profil zugewiesen, öffnet Herzog CAB es ohne Nachfrage.
 ## Verwandte Seiten
 
 * [Anmelden und Lizenz beziehen](../setup/activate-license.md) — Rechner am Kundenkonto anmelden
-* [Passwort und zweiter Faktor](../portal/security.md) — Passwort ändern, Authenticator-App
+* [Passwort, zweiter Faktor und Name](../portal/security.md) — Passwort ändern, Authenticator-App
 * [Benutzer](users.md) — Konten anlegen bzw. aus dem Kundenkonto übernehmen
 * [Authentifizierung](authentication.md) — Microsoft Entra ID und LDAP einrichten (Dongle-Installationen)
 * [Mein Profil](my-profile.md) — eigenes Konto und Abmelden

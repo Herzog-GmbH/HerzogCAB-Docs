@@ -62,7 +62,7 @@ Dialog **Mein Profil** mit drei Reitern.
     Passwort gehört zum Kundenbenutzer und gilt auch für das Lizenzportal
     und Herzog CAB Web. Ändern Sie es im Lizenzportal (Einstellungen →
     Lizenz → Lizenzportal öffnen)."* — siehe
-    [Passwort und zweiter Faktor](../portal/security.md).
+    [Passwort, zweiter Faktor und Name](../portal/security.md).
 
 !!! info "Microsoft- und Domänenkonten"
     Melden Sie sich [mit Microsoft](login.md#mit-microsoft-anmelden) oder

@@ -117,6 +117,6 @@ Sitzung nach längerer Inaktivität von selbst.
 ## Verwandte Seiten
 
 * [Kundenkonto und Einladung](../setup/account.md) — Einladung annehmen, Passwort setzen
-* [Passwort und zweiter Faktor](../portal/security.md)
+* [Passwort, zweiter Faktor und Name](../portal/security.md)
 * [Testphase und Registrierung](trial.md)
 * [Login-Probleme](../help/login-problems.md)
