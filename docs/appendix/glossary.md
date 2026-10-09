@@ -42,4 +42,4 @@
 | **Tandem** | Besetzungsvariante, bei der jeweils zwei benachbarte Maschinenpositionen gemeinsam einen Strang bilden (2-2). Wichtig z. B. beim Litzengeflecht, um Kollisionen zu vermeiden. |
 | **Wickeltechnik** | Verfahren, mit dem eine Spulmaschine das Material auf die Spule aufbringt – Stammdatum einer Spulmaschine. |
 | **Workspace / Arbeitsverzeichnis** | Daten-Ordner mit Stammdaten, Aufträgen, Designs und Druckvorlagen. |
-| **Zweiter Faktor (2FA)** | Zusätzlicher Code aus einer Authenticator-App bei der Anmeldung am Kundenkonto – für Portal, Desktop-App und Web-App, siehe [Passwort und zweiter Faktor](../portal/security.md). |
+| **Zweiter Faktor (2FA)** | Zusätzlicher Code aus einer Authenticator-App bei der Anmeldung am Kundenkonto – für Portal, Desktop-App und Web-App, siehe [Passwort, zweiter Faktor und Name](../portal/security.md). |
