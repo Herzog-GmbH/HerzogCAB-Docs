@@ -55,9 +55,11 @@ Darunter stellen Sie die Seiteneinstellungen der gesamten Vorlage ein:
 | **Seiten** | Anzahl der Seiten der Vorlage. |
 | **Seitenrand (mm)** | Randabstand der Seite. |
 
-Darunter verwalten Sie die Seiten der Vorlage mit **Seite hinzufügen** und
-**Seite entfernen** sowie die Vorlage selbst (**Speichern**, **Neue Vorlage**,
-**Vorlage löschen**) – siehe [Vorlagen verwalten](manage.md).
+Darunter verwalten Sie die Seiten der Vorlage mit den nebeneinander
+liegenden Schaltflächen **+ Seite** und **− Seite** (Kurzhinweise *Seite
+hinzufügen* / *Seite entfernen*) sowie die Vorlage selbst (**Speichern**,
+**Neu**, **Löschen**) – siehe [Vorlagen verwalten](manage.md). Reicht die
+Fensterhöhe nicht, lässt sich die rechte Leiste scrollen.
 
 !!! warning "Berechtigung erforderlich"
     Zum Bearbeiten und Speichern von Druckvorlagen benötigen Sie die

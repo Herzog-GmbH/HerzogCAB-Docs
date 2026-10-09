@@ -18,9 +18,9 @@ sofort im Editor angezeigt.
 
 | Aktion | Wirkung |
 |---|---|
-| **Neue Vorlage** | Legt eine neue, leere Vorlage an. |
-| **Speichern** | Sichert die aktuelle Vorlage mit allen Änderungen. |
-| **Vorlage löschen** | Entfernt die aktuelle Vorlage (mit Sicherheitsabfrage). |
+| **Neu** (Kurzhinweis *Neue Vorlage*) | Legt eine neue, leere Vorlage an. |
+| **Speichern** | Sichert die aktuelle Vorlage mit allen Änderungen. Gibt es ungespeicherte Änderungen, heißt die Schaltfläche **Speichern \*** und ist blau hervorgehoben. Hat ein Kollege dieselbe Vorlage inzwischen gespeichert, gilt die zuletzt gespeicherte Fassung — siehe [Mehrere Benutzer](../basics/multi-user.md). |
+| **Löschen** (Kurzhinweis *Vorlage löschen*) | Entfernt die aktuelle Vorlage (mit Sicherheitsabfrage). |
 | **Verwendung** | Legt fest, wofür die Vorlage gilt: Berechnung, Design oder Auftrag. Siehe [Editor-Aufbau](editor.md). |
 
 Beim Verlassen des Editors mit ungespeicherten Änderungen fragt Herzog CAB

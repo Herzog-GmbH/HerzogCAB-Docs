@@ -140,7 +140,11 @@ beiden Modi vorhanden:
 * Platzierte Maschinen zeigen — je nach Anzeige-Einstellung — ihre
   Beschriftung und eine kleine **Status-Ampel** mit dem aktuellen
   Auftragsstatus aus den [Aufträgen](../orders/index.md) (gleiche Farblogik
-  wie im [Maschinenpark](../machine-park/index.md)).
+  wie im [Maschinenpark](../machine-park/index.md)). Ist eine Maschine bei
+  kleinem Zoom schmaler als ihr Schild, zeigt sie nur noch den
+  **Statuspunkt** — so überlappen sich die Schilder nicht; markierte
+  Maschinen behalten ihr Schild. Fehlen die Stammdaten einer platzierten
+  Maschine, steht dort *Unbekannte Maschine*.
 
 **Tastenkürzel:**
 

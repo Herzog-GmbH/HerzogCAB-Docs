@@ -12,9 +12,11 @@ Bedienelement.
 === "Über das Menü"
 
     Wählen Sie *Hilfe > Geführte Touren…*. Es öffnet sich der Dialog
-    **Geführte Touren** mit einer Karte je Thema. Klicken Sie auf die
-    **Start-Schaltfläche** (▶) unter der gewünschten Karte; **Schließen**
-    verlässt den Dialog ohne Tour.
+    **Geführte Touren** mit einer Karte je Thema. Klicken Sie auf die runde
+    **Start-Schaltfläche** (▶, Kurzhinweis *Tour starten*) unten rechts in
+    der gewünschten Karte; **Schließen** verlässt den Dialog ohne Tour.
+    Passen nicht alle Karten auf den Bildschirm, lässt sich der Dialog
+    scrollen.
 
 === "Mit F1"
 
@@ -24,7 +26,7 @@ Bedienelement.
     **Navigations-Tour**.
 
 !!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Geführte Touren" mit den zehn Themenkarten und den Start-Schaltflächen
+    **Motiv:** Dialog „Geführte Touren“ mit den zehn Themenkarten (darunter „Auftragseditor“) und der runden Start-Schaltfläche ▶ unten rechts in jeder Karte
     **So erzeugen:** *Hilfe > Geführte Touren…* öffnen, Dialog unverändert aufnehmen
     **Ziel-Datei:** `assets/screenshots/basics/gefuehrte-touren-dialog.png`
 

@@ -67,6 +67,18 @@ finden Sie unter [Anmelden und Lizenz beziehen](../setup/activate-license.md).
     * Sind bereits **alle Lizenzplätze** durch andere Arbeitsplätze belegt?
       Ein Kollege muss Herzog CAB dann zuerst schließen.
 
+    Herzog CAB **hält den Platz einer Netzwerklizenz, solange das Programm
+    läuft**, und gibt ihn erst beim Beenden frei; nach einem Absturz gibt
+    ihn die CodeMeter-Runtime frei. Mehrere Programmfenster auf demselben
+    Rechner belegen zusammen nur einen Platz. (Bis Version 2.1.0 gab das
+    Programm den Platz gleich nach dem Start wieder frei, sodass die
+    Platzzahl nicht begrenzte.) Sind alle Plätze belegt, erscheint beim
+    Start der Dialog **Alle Plätze belegt**: *„Alle Plätze Ihrer
+    Herzog-CAB-Lizenz sind gerade belegt. Ein Platz wird frei, sobald Herzog
+    CAB an einem anderen Rechner beendet wird. Wer gerade arbeitet, zeigt
+    CodeMeter WebAdmin auf dem Lizenzserver.“* Mit **Erneut versuchen**
+    prüft Herzog CAB nochmals, **Beenden** schließt das Programm.
+
 ## „The Firm Access Counter has a value of 0" / Error 38
 
 Dieser Fehler unterscheidet sich von den oberen Fällen: Er bedeutet, dass der

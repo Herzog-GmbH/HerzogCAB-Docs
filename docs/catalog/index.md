@@ -25,6 +25,15 @@ den [Spulen](../master-data/bobbins.md) und
     **Stammdaten bearbeiten**. Die Web-App hat denselben Katalog — siehe
     [Herzog-Katalog (Web-App)](../web/catalog.md).
 
+!!! info "Immer der aktuelle Katalog"
+    Mit Kundenkonto holt Herzog CAB den Herzog-Katalog vom Lizenzserver —
+    nach der Anmeldung und beim Öffnen des Katalogs, höchstens alle zehn
+    Minuten, still im Hintergrund — und legt eine Kopie auf dem Rechner ab.
+    So sehen Sie neue Herzog-Modelle, Spulen und Trommeln ohne
+    Programm-Update; kommen neue Daten an, lädt die Katalogseite neu. Ohne
+    Verbindung gilt die zuletzt geholte Kopie; ohne Kopie (erster Start
+    offline, Dongle-Installation) der mit dem Programm gelieferte Katalog.
+
 ## Der Bildschirm im Überblick
 
 !!! warning "📷 Screenshot fehlt"

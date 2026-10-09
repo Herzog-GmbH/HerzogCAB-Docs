@@ -44,10 +44,29 @@ Zuweisung zu Arbeitsbereichen."*
 
 | Element | Beschreibung |
 |---|---|
-| **Vom Kundenkonto aktualisieren** | Holt die aktuelle Benutzerliste samt Rollen vom Lizenzserver: neu eingeladene Benutzer kommen hinzu, deaktivierte werden inaktiv, geänderte Rollen übernommen. Die Erfolgsmeldung nennt die Zahl der übernommenen Benutzer bzw. *„Benutzerliste ist auf dem Stand des Kundenkontos."* Auch ohne diesen Klick wird jeder Benutzer bei seiner nächsten Online-Anmeldung aktualisiert. |
+| **Vom Kundenkonto aktualisieren** | Holt die aktuelle Benutzerliste samt Rollen sofort vom Lizenzserver — derselbe Abgleich, der auch beim Programmstart läuft (siehe unten). Die Erfolgsmeldung nennt die Zahl der übernommenen Benutzer bzw. *„Benutzerliste ist auf dem Stand des Kundenkontos."*; ohne Verbindung erscheint *„Die Benutzer konnten nicht vom Lizenzserver geholt werden: …"*. |
 | **Lizenzportal öffnen** | Öffnet das [Lizenzportal](../portal/users.md) im Browser — dort laden Sie neue Benutzer ein und ändern Rollen. |
 | Infozeile *Kontobenutzer (Lizenzserver)* | Kennzeichnet einen Benutzer aus dem Konto. **Login**, **Anzeigename** und **E-Mail** sind nur lesbar; **Aktiv**, **Passwort zurücksetzen…**, **Deaktivieren** und **Endgültig löschen** sind ausgeblendet. |
 | **Profile und Rollen** | Wie unten beschrieben — die Zuweisung zu Arbeitsbereichen bleibt lokal. Die **Rolle** selbst kommt aus dem Konto (Administrator = globaler Administrator, Bearbeiter, Betrachter); Benutzer ohne Rolle arbeiten als Bearbeiter. |
+
+### Abgleich mit dem Kundenkonto beim Programmstart
+
+Meldet sich ein Benutzer mit dem Recht **Benutzer verwalten** an, gleicht
+Herzog CAB wenige Sekunden nach dem Start **im Hintergrund** die
+Benutzerliste mit dem Kundenkonto ab — ohne Meldung und ohne dass Sie
+etwas tun müssen:
+
+| Im Kundenkonto … | … in Herzog CAB |
+|---|---|
+| neu eingeladener Benutzer | wird angelegt und erscheint in der Liste. Arbeitsbereiche weisen Sie ihm hier zu. |
+| geänderter Name, E-Mail, Rolle oder Aktiv-Status | wird übernommen. |
+| Benutzer entfernt | wird hier **deaktiviert**, nicht gelöscht: Er kann sich nicht mehr anmelden, auch nicht offline, verliert globale Administratorrechte, und der Vorgang wird protokolliert. Seine Zuweisungen bleiben erhalten. Lädt das Konto ihn später wieder ein, wird er bei seiner nächsten Online-Anmeldung wieder aktiv. |
+
+Deaktiviert wird nur, wenn der Lizenzserver die **vollständige**
+Benutzerliste geliefert hat. Wurden dem angemeldeten Verwalter z. B.
+während des Programmlaufs im Lizenzportal die Rechte entzogen, bleiben alle
+übrigen Benutzer unverändert. Unabhängig vom Abgleich wird jeder Benutzer
+bei seiner nächsten Online-Anmeldung aktualisiert.
 
 Die Schaltflächen **Neuer Benutzer**, **Aus Entra importieren** und **Aus
 LDAP importieren** gibt es im Kontomodell nicht. Alles Weitere auf dieser
