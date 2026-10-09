@@ -71,7 +71,9 @@ selbst keine Felder.
   Redirect in `mkdocs.yml` ergaenzen (alte Links/Lesezeichen).
 * Offene Screenshot-Stellen findet man mit der Suche nach `Screenshot fehlt`;
   die gesammelte Liste fuer die Desktop-App steht in
-  **[SCREENSHOTS-DESKTOP.md](SCREENSHOTS-DESKTOP.md)**.
+  **[SCREENSHOTS-DESKTOP.md](SCREENSHOTS-DESKTOP.md)** und wird mit
+  `python _tools/screenshot_liste.py` neu erzeugt (`--pruefen` meldet nur
+  fehlende Felder und doppelte Ziel-Dateien).
 * Web-App- und Portal-Screenshots entstehen reproduzierbar mit
   `_tools/web_screenshots.py` (Playwright, lokale Testumgebung) - siehe
   Kopf des Skripts.
