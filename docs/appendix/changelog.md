@@ -2,6 +2,90 @@
 
 !!! abstract "Referenz — Was sich in welcher Version geändert hat"
 
+## Nächste Version (in Vorbereitung)
+
+### Neu
+
+* **Mehrere Benutzer am selben Arbeitsverzeichnis** – Materialien, Spulen,
+  Trommeln, eigene Maschinen, Aufträge, Kunden, Farben, Grundrisse,
+  Belegungen, Designs und Druckvorlagen werden einzeln und gesperrt
+  gespeichert; Änderungen eines Kollegen an anderen Einträgen gehen nicht
+  mehr verloren. Hat jemand denselben Eintrag inzwischen geändert oder
+  gelöscht, fragt Herzog CAB nach (**Überschreiben**, **Als Kopie
+  speichern**, **Neu laden**) und nennt, wer wann an welchem Rechner
+  geändert hat. Alte Fassungen bleiben erhalten. **Alle Rechner am
+  gemeinsamen Ordner brauchen die neue Version.** Siehe
+  [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
+* **Flechtwinkel-Bezug wählbar** – unter *Einstellungen > Allgemein >
+  Flechtwinkel* wählen Sie, ob Herzog CAB den Flechtwinkel zur
+  Querrichtung (Herzog, Standard) oder zur Geflechtsachse (Fachliteratur)
+  anzeigt — in allen Berechnungen, im Designer, im Auftrag und auf
+  Ausdrucken. Gespeicherte Werte bleiben unverändert; der Kurzhinweis am
+  Feld nennt beide Werte. Mit Kundenkonto gilt die Wahl für Ihren Benutzer.
+  Siehe [Allgemein](../admin/settings/appearance.md#flechtwinkel).
+* **Fachungsfarben im Designer** – ab Fachung 2 bekommt jedes Garn eines
+  Klöppels eine eigene Farbe, über den Garn-Wähler in der Werkzeugleiste
+  oder den Dialog *Fachungsfarben…* per Rechtsklick in der Klöppeltabelle.
+  Die Garne erscheinen als Streifen im Flechtbild, in der
+  Besetzungsübersicht, in 3D, im Ausdruck, im Auftrag und in der
+  Farbaufschlüsselung des Spulauftrags. Siehe
+  [Fachungsfarben](../designer/painting.md#fachungsfarben-farbe-je-garn).
+* **Neue Startseite** – nutzt die ganze Fensterbreite in einer bis drei
+  Spalten: Begrüßung mit Schnellaktionen, Auftragszähler, die Karte
+  *Produktion* mit den Reitern *Überfällig*, *Diese Woche* und
+  *Demnächst* (ab ausreichender Breite als Tabelle), Favoriten als Kacheln
+  und *Zuletzt geöffnet* mit dem Symbol jeder Berechnung. Siehe
+  [Startseite](../basics/home.md).
+* **Neuer Anmeldedialog** – Kopfband mit Kontoname und laufendem Zopf,
+  Code der Authenticator-App in sechs Kästchen, die nach der sechsten
+  Ziffer selbst prüfen. Siehe [Anmelden und Abmelden](../admin/login.md).
+
+### Verbesserungen
+
+* **Navigation** – klappt sie per Maus auf, schwebt sie über dem Inhalt,
+  statt ihn zu verschieben; unter 1500 Pixel Fensterbreite klappt sie von
+  selbst ein. Das Fenster lässt sich bis 960 × 600 Pixel verkleinern. Der
+  Parameter Explorer liegt jetzt unter *Systemverwaltung*, die Einträge
+  des Menüs *Über* stehen im Menü *Hilfe*. Siehe
+  [Oberfläche im Überblick](../basics/interface.md).
+* **Übersichtlichere Seiten** – schlichte Titelzeile statt Kopfkarte,
+  Erklärsätze als Kurzhinweis an der Kartenüberschrift, kleinere Knöpfe
+  in Herzogblau, Rechnerseiten scrollen statt abzuschneiden; Flecht- und
+  Spulauftrag mit einzeiliger Kopfzeile.
+* **Historie** nur noch dort, wo sie etwas zeigt: auf den Seiten unter
+  *Berechnungen*. Siehe [Verlauf der Berechnungen](../basics/history.md).
+* **Einstellungen** – ohne den Tab *Speicherorte* (die Pfade stehen unter
+  [Speicherort](../admin/storage-location.md)), Schaltflächen **Speichern**
+  und **Abbrechen** unten rechts.
+* **Mein Profil** – bei Benutzern aus dem Kundenkonto sind Name und E-Mail
+  schreibgeschützt; **Im Lizenzportal ändern** öffnet die passende Seite.
+  Siehe [Mein Profil](../admin/my-profile.md).
+* **Benutzer abgleichen** – beim Programmstart gleicht Herzog CAB die
+  Benutzerliste mit dem Kundenkonto ab; im Konto entfernte Benutzer werden
+  deaktiviert. Siehe [Benutzer](../admin/users.md).
+* **Herzog-Katalog vom Lizenzserver** – neue Herzog-Modelle, Spulen und
+  Trommeln kommen ohne Programm-Update. Siehe
+  [Herzog-Katalog](../catalog/index.md).
+* **Netzwerklizenz (CodeMeter)** – Herzog CAB hält den Platz bis zum
+  Programmende; sind alle Plätze belegt, erscheint *Alle Plätze belegt*.
+  Siehe [Lizenzprobleme](../help/license-problems.md).
+
+### Sicherheit
+
+* **Webserver nur mit Passwort im Netz** – ohne Passwort ist die
+  Weboberfläche nur noch auf dem Rechner selbst erreichbar, mit Passwort
+  (mindestens 8 Zeichen) im Firmennetz nach Anmeldung. Das Passwort wird
+  nicht mehr im Klartext gespeichert; nach Fehlversuchen sperrt die
+  Anmeldung kurz. **Wer Tablets oder Handys nutzt, vergibt nach dem Update
+  ein Passwort.** Siehe [Webserver und QR-Code](../admin/settings/web-server.md).
+
+### Kompatibilität
+
+* **Alle Rechner am gemeinsamen Arbeitsverzeichnis gleichzeitig
+  aktualisieren** — ältere Versionen beachten die neue Sperre nicht und
+  können Änderungen anderer Rechner verwerfen; an gemeinsamen Profilen mit
+  Webserver-Passwort ist ihre Weboberfläche gesperrt.
+
 ## Version 2.1.0 (September 2026)
 
 ### Neu
