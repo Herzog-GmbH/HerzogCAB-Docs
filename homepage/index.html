@@ -564,7 +564,8 @@ footer{padding-block:2.4rem 3.6rem;font-family:var(--f-mono);font-size:.76rem;co
 .web-grid h2,.sim-grid h2{font-size:clamp(1.7rem,3vw,2.4rem)}
 .sim-bild{margin:0;border:1px solid var(--card-edge);border-radius:8px;overflow:hidden;
   box-shadow:var(--shadow-card);background:var(--card-face)}
-.sim-bild img{width:100%;height:auto}
+.sim-bild img,.sim-bild video{width:100%;height:auto;display:block;background:var(--card-face)}
+.sim-bild figcaption{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);padding:.65rem .9rem;border-top:1px solid var(--card-edge)}
 @media (max-width:860px){
   .web-grid,.sim-grid{grid-template-columns:1fr}
   .geraet-handy{width:27%}
@@ -690,7 +691,7 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
       <div class="card" style="--i:1"><img src="bilder/A08-hallenplan.webp" alt="Hallenplaner" width="1500" height="1000" loading="lazy" decoding="async"></div>
       <div class="card" style="--i:2"><img src="bilder/A09-katalog.webp" alt="Herzog-Katalog" width="1500" height="1000" loading="lazy" decoding="async"></div>
       <div class="card" style="--i:3"><img src="bilder/A10-startseite.webp" alt="Startseite" width="1500" height="1000" loading="lazy" decoding="async"></div>
-      <div class="card" style="--i:4"><img src="bilder/A11-simulator.webp" alt="Herzog CAB Simulator" width="1500" height="1000" loading="eager" decoding="async"></div>
+      <div class="card" style="--i:4"><img src="bilder/A11-simulator.webp" alt="Herzog CAB Simulator: Variationsflechter 4×4 beim Umschalten" width="1500" height="1000" loading="eager" decoding="async"></div>
       <div class="card" style="--i:5"><img src="bilder/A12-kloeppelring.webp" alt="Klöppelring" width="1500" height="1000" loading="eager" decoding="async"></div>
       <div class="card" style="--i:6"><img src="bilder/A13-designer.webp" alt="Designer mit 3D-Vorschau" width="1500" height="1000" loading="eager" decoding="async"></div>
     </div></div>
@@ -876,15 +877,18 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
 <section class="takt" id="simulator">
   <div class="wrap-breit sim-grid">
     <figure class="sim-bild reveal">
-      <img src="bilder/S01-simulator.webp" alt="Herzog CAB Simulator: Flügelräder, Weichen, Klöppel und die Maschine in 3D" width="2000" height="1250" loading="lazy" decoding="async">
+      <video id="simFilm" src="film/simulator.mp4" poster="film/simulator.jpg" width="1600" height="1000"
+             muted loop playsinline preload="none"
+             aria-label="Herzog CAB Simulator: Variationsflechter 4×4 mit 32 Klöppeln. Die Weichen schalten von Rund 32 auf zwei und vier kleinere Rundgeflechte und zurück, danach dreht sich das entstandene Geflecht in 3D."></video>
+      <figcaption>Variationsflechter 4×4, 32 Klöppel: Rund 32 → 2 × Rund 16 → 4 × Rund 8 → zurück</figcaption>
     </figure>
     <div>
       <p class="eyebrow">Zusatz · Herzog CAB Simulator</p>
       <h2 style="margin-bottom:1rem">Die Flechtmaschine im Lauf sehen, bevor sie umgebaut wird</h2>
       <p class="lede" style="margin-bottom:1.4rem">Herzog liefert das Modell Ihrer Flechtmaschine fertig eingerichtet — Flügelräder, Weichen und Klöppel. Sie stellen Besetzungen und Zeitprogramme zusammen und sehen jeden Schritt am Bildschirm.</p>
       <ul class="haken">
-        <li>Weichen und Räder schalten, Drehzahl und Abzug festlegen — auch Umbauten im Lauf, etwa von Rund auf Litze und zurück</li>
-        <li>Klöppelwege, Geflecht und Maschine in 3D, Schritt für Schritt auf der Zeitachse</li>
+        <li>Weichen und Räder schalten, Drehzahl und Abzug festlegen — auch Umbauten im Lauf, etwa ein Rundgeflecht in mehrere Schläuche teilen und wieder zusammenführen</li>
+        <li>Klöppelwege Schritt für Schritt auf der Zeitachse, das entstehende Geflecht in 3D</li>
         <li>Programm prüfen und den Schaltplan für die Steuerung als PDF oder CSV ausgeben</li>
       </ul>
       <p class="small" style="margin:1.3rem 0 1.4rem">Zubuchbar zum Jahresabo von Herzog CAB, lizenziert je Maschinenmodell. Preis auf Anfrage.</p>
@@ -1417,6 +1421,21 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
   });
   show(0);
   cycle();
+
+  /* ---- Simulator-Film: laedt erst, wenn der Abschnitt in Sicht kommt, und
+       laeuft nur, solange er zu sehen ist. ---- */
+  var simFilm = document.getElementById("simFilm");
+  if (simFilm) {
+    if (reduce) { simFilm.setAttribute("controls", ""); }
+    else {
+      new IntersectionObserver(function(es){
+        es.forEach(function(e){
+          if (e.isIntersecting) { var pr = simFilm.play(); if (pr && pr.catch) pr.catch(function(){}); }
+          else simFilm.pause();
+        });
+      }, {threshold:0.35}).observe(simFilm);
+    }
+  }
 
   /* ---- Der Film der Maschinenuebersicht laeuft 4 s je Umdrehung.
        Als Dauerschleife im Hintergrund ist das zu hektisch. ---- */
