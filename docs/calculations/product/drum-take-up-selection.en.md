@@ -172,7 +172,7 @@ The following appear in the **Note** column of the table:
 
 | Message under **Check** | Remedy |
 |---|---|
-| *No take-up winder has been created in the machine fleet. Choose the Herzog catalogue as the source.* | Create take-up winders or select **Take-up winders from:** *Herzog catalogue*. |
+| *No take-up winder has been created in the Machine Fleet. Choose the Herzog catalogue as the source.* | Create take-up winders or select **Take-up winders from:** *Herzog catalogue*. |
 | *There are no drums yet. Add them under Master data → Drums with "From Herzog catalogue …".* | Create drums in the [master data](../../master-data/drums.md) or take them over from the catalogue. As of version 2.1.0, new workspace folders start without drums. |
 | *The product does not fit into the winding space of any drum.* | Create a larger drum or check the product diameter. |
 | *No drum fits any of the take-up winders. See the notes in the table.* | The **Note** column gives the reason for each drum. |

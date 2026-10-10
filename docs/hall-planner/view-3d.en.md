@@ -65,7 +65,7 @@ order status:
 | Color | Meaning |
 |---|---|
 | 🔴 Red | Error reported |
-| 🟢 Green | In Production |
+| 🟢 Green | In production |
 | 🟡 Yellow | Orders waiting (released) |
 | ⚪ Gray | No active orders |
 

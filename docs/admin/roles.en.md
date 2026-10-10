@@ -76,7 +76,7 @@ irrelevant.
 
 ## Creating and editing custom roles { #eigene-rollen-anlegen-und-bearbeiten }
 
-1. Click **New role** and, in the dialog, enter **Id** (only
+1. Click **New role** and, in the dialog, enter **ID** (only
    lowercase letters, e.g. `supervisor`), **Name** and **Description**.
 2. In the editor, check the desired permissions under **Individual permissions** — or set
    **All permissions (Administrator)**. At least one permission is mandatory.

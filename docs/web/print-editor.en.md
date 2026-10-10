@@ -123,7 +123,7 @@ Drag new elements from the list onto the page or tap them.*
 
 ## Editing elements { #elemente-bearbeiten }
 
-The edit dialogs (*Edit text field*, *Edit Occupation*,
+The edit dialogs (*Edit text field*, *Edit setup*,
 *Edit image*, *Edit company logo*, *Edit date and
 time*, tables and data tables) contain the same settings
 as in the program — see

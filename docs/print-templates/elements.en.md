@@ -31,8 +31,8 @@ Tables that are neutral with regard to the order type, as well as the tables for
 | **Customer** | Address and contact details of the customer | Order |
 | **Material** | Data of the materials used in the order | Order |
 | **Bobbin** | Data of the bobbins used | Order |
-| **Input Table** | Input values of the active calculation | Calculation |
-| **Result Table** | Result values of the active calculation | Calculation |
+| **Input table** | Input values of the active calculation | Calculation |
+| **Result table** | Result values of the active calculation | Calculation |
 
 ### Data tables braiding { #datentabellen-flechterei }
 
@@ -58,7 +58,7 @@ New since version 1.4.5, for winding order templates.
 | Element | Shows | Usage |
 |---|---|---|
 | **Braid** | Preview image of the braid pattern | Design, Order |
-| **Setup Overview** | Graphic overview of the carrier setup | Design, Order |
+| **Setup overview** | Graphic overview of the carrier setup | Design, Order |
 
 ### Company elements { #firmenelemente }
 
@@ -149,7 +149,7 @@ is displayed:
 
 ### Automatically filled elements without their own dialog { #automatisch-befullte-elemente-ohne-eigenen-dialog }
 
-**Color breakdown**, **Input Table** and **Result Table** always show
+**Color breakdown**, **Input table** and **Result table** always show
 the complete, current data record when printing (all color positions
 of the winding order or all input/result values of the calculation). You
 only place and scale these elements — there is no row selection

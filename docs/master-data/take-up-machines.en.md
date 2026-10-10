@@ -95,7 +95,7 @@ machine.
 | Field | Unit | Meaning |
 |---|---|---|
 | **Drum diameter (min–max)** | mm | Smallest and largest drum diameter that the take-up winder accepts. |
-| **Traverse width max.** | mm | Largest traverse width; wider drums do not fit. |
+| **Max. traverse width** | mm | Largest traverse width; wider drums do not fit. |
 | **Load capacity** | kg | Total weight of the loaded drum: drum plus wound product. |
 | **Quill diameter** | mm | Diameter of the quill. It is adapted to the respective drum and does not decide whether a drum fits. |
 | **Braid diameter (min–max)** | mm | Smallest and largest product diameter that the take-up winder processes (one decimal place). |
@@ -178,7 +178,7 @@ product with this information of the take-up winder:
 | Information of the take-up winder | Is compared with |
 |---|---|
 | **Drum diameter (min–max)** | the outer diameter of the drum |
-| **Traverse width max.** | the drum width (otherwise the traverse width) of the drum |
+| **Max. traverse width** | the drum width (otherwise the traverse width) of the drum |
 | **Braid diameter (min–max)** | the product diameter |
 | **Load capacity** | the weight of product and empty drum |
 | **Reel volume** | for reel take-up winders: determines how much product fits on the reel |

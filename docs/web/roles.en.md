@@ -37,7 +37,7 @@ the permission **Manage roles** or **Manage users**.
 
 | Field | Meaning |
 |---|---|
-| **Id** | Identifier: starts with a lowercase letter, only a–z, 0–9 and _, at most 32 characters (e.g. `supervisor`). Cannot be changed after creation. |
+| **ID** | Identifier: starts with a lowercase letter, only a–z, 0–9 and _, at most 32 characters (e.g. `supervisor`). Cannot be changed after creation. |
 | **Name** | Display name. Default roles are translated automatically. |
 | **Description** | Free text. |
 | **All permissions (Administrator)** | The role has all permissions; the individual checkboxes are then ignored. |
@@ -53,7 +53,7 @@ the permission **Manage roles** or **Manage users**.
 | | **Manage company data** | Edit [Company](company.md). |
 | | **Workspace settings** | [Import and export](import.md) of the workspace. |
 | Master data | **View master data** / **Edit master data** | See or change [master data](master-data.md) and [machines](machines.md). |
-| Factory Planner | **View factory planner** / **Edit factory planner** | [Factory Planner](hall-planner.md). |
+| Factory Planner | **View Factory Planner** / **Edit Factory Planner** | [Factory Planner](hall-planner.md). |
 | Orders | **View orders** / **Edit orders** | [Orders](orders.md). |
 | Designer | **View designer** / **Edit designer** | [Designs and Designer](designer.md). |
 | Print templates | **View print templates** / **Edit print templates** | Open the [Print editor](print-editor.md) or change, save and delete templates there; **Edit template** on the [print page](print.md). |

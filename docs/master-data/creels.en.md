@@ -70,7 +70,7 @@ remain empty and count as not stored.
 | **Package type** | Checkboxes *Cops*, *Cardboard tube*, *DIN drum*, *Drum*. |
 | **Max. package diameter** | Largest package diameter in mm. |
 | **Max. package length** | Largest package length in mm. |
-| **Bobbin weight max.** | Largest bobbin weight in kg. |
+| **Max. bobbin weight** | Largest bobbin weight in kg. |
 
 ### Design { #bauart }
 

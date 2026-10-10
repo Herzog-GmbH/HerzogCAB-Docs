@@ -83,8 +83,8 @@ This information applies to all series.
 | **Control** | *Mechanical* or *PLC with touch panel*. |
 | **Drive** | *Standard motor* or *Servo motor with absolute encoder*. |
 | **Traverse step (min–max)** | Smallest and largest traverse step in mm. |
-| **Traverse width max.** | Maximum traverse width in mm. |
-| **Bobbin weight max.** | Maximum weight of a full bobbin in kg. |
+| **Max. traverse width** | Maximum traverse width in mm. |
+| **Max. bobbin weight** | Maximum weight of a full bobbin in kg. |
 | **Setup time per order** | Setup time in minutes that occurs once per winding order. Default for the winding time projection in the [winding order](../orders/winding-order.md#spulmaschinen-verteiltabelle); can be overridden there per order. |
 | **Loading time per bobbin** | Time in minutes for the bobbin change per bobbin — with fully automatic bobbin change, the changing time of the automatic unit. Also a default for the winding order. |
 | **Counters** | Checkboxes *Meter counter*, *Layer counter*, *Operating hours counter*, *Product database*. |

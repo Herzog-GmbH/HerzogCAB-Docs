@@ -8,7 +8,7 @@ In the left panel of the Designer you define the basic settings of a design:
 **which braid** is created (braid type and binding) and **with which
 machine configuration** (number of carriers, braiding angle, ply count). Every
 change rebuilds the braid pattern, the carrier table and the
-[Setup Overview](animation.md) immediately — so you see directly which
+[Setup overview](animation.md) immediately — so you see directly which
 selection leads to which display. The Designer supports **six
 braid types**; every braid pattern is derived from the kinematics of the
 respective machine.
@@ -33,7 +33,7 @@ also change it later in the [save dialog](save-print.md).
 
 The **Braid type** selection list determines the type of braid. The selection
 controls how the braid pattern is built, which bindings and numbers of carriers
-are permitted and what the Setup Overview looks like. When you point at
+are permitted and what the Setup overview looks like. When you point at
 an entry, a tooltip explains the machine design.
 
 | Braid type | Description |
@@ -57,7 +57,7 @@ The **Braid binding** selection list defines the setup rule of the machine:
 
 | Binding | Meaning |
 |---|---|
-| **Normal setup 1-1** | Two-over-two binding 1-1: the standard setup. |
+| **Normal setup 1-1** | Two-over-two binding 1-1: the default setup. |
 | **Half setup 1-3** | One-over-one binding 1-3: only every second possible position is occupied. |
 | **Tandem setup 2-2** | One-over-one tandem binding 2-2: the carriers run in pairs one behind the other. |
 

@@ -1,10 +1,10 @@
 # Setup and track animation
 
-!!! abstract "Reference — the Setup Overview: horngears and tracks of the braiding machine seen from above, with animation, speed control and color rotation."
+!!! abstract "Reference — the Setup overview: horngears and tracks of the braiding machine seen from above, with animation, speed control and color rotation."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
-The **Setup Overview** at the bottom of the left panel shows the braiding
+The **Setup overview** at the bottom of the left panel shows the braiding
 machine schematically from above: the horngears with their slots and the
 carriers sitting in them in their current colors. This shows you what your
 color assignment looks like on the real machine. With the **Track animation**
@@ -14,11 +14,11 @@ layer.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-![Setup Overview of a packing braid with nine horngears, colored carriers and the animation buttons](../assets/screenshots/designer/designer-besetzungsuebersicht.png)
+![Setup overview of a packing braid with nine horngears, colored carriers and the animation buttons](../assets/screenshots/designer/designer-besetzungsuebersicht.png)
 
 ## Controls in detail { #bedienelemente-im-detail }
 
-### The Setup Overview per braid type { #die-besetzungsubersicht-je-geflechtsart }
+### The Setup overview per braid type { #die-besetzungsubersicht-je-geflechtsart }
 
 The arrangement of the horngears follows the selected
 [braid type](parameters.md):

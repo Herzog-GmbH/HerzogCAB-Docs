@@ -1,13 +1,13 @@
 # Designs and Designer (web app)
 
-!!! abstract "Reference — The Designs module of the web app: design library and the Designer with geometry, braid pattern, colors, carrier table, occupation overview and 3D view"
+!!! abstract "Reference — The Designs module of the web app: design library and the Designer with geometry, braid pattern, colors, carrier table, setup overview and 3D view"
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
 Under **Designs** you find the design library of your account; clicking
 a design opens the **Designer**. Like the desktop app, it handles all
 six braid types (round, strand, square, spiral, packing, soutache) with
-their interlacings, draws the same braid pattern, shows the occupation overview
+their interlacings, draws the same braid pattern, shows the setup overview
 with track animation and the true 3D model of the braid. What the
 individual parameters mean is described in the reference of the desktop Designer
 ([Braid type and parameters](../designer/parameters.md)); this page is about
@@ -37,7 +37,7 @@ Designs from the desktop app appear here with their folder after the
 ![Designer of the web app: geometry on the left, braid pattern and occupation overview in the middle, colors and carrier table on the right.](../assets/screenshots/web/designer.png)
 
 On the desktop the Designer has three columns: **Geometry** on the left, **Braid pattern**
-with **Occupation Overview** in the middle, **Colors** and **Carrier table**
+with **Setup overview** in the middle, **Colors** and **Carrier table**
 on the right. On tablet and smartphone the braid pattern is at the top in full
 width; below it the tabs **Geometry**, **Colors** and
 **Overview** switch between the areas.
@@ -54,7 +54,7 @@ width; below it the tabs **Geometry**, **Colors** and
 | **Texture** | Fills the tiles of the braid pattern with a fiber texture instead of a plain color. |
 | **Yarn** | Only from ply count 2: which yarn a click colors (see [Plying colors](#fachungsfarben-farbe-je-garn)). |
 | **Undo** / **Redo** | Undo or redo coloring steps. |
-| **Clear all colours** | Sets all carriers to uncolored. |
+| **Clear all colors** | Sets all carriers to uncolored. |
 | **Print** | Opens the [print page](print.md) with the design template. |
 | **Versions** (icon) | View and restore earlier versions of the design, see [Versions and recycle bin](versions.md). Appears as soon as the design has been saved. |
 | **Zoom in** / **Zoom out** / **Fit** | Zoom of the braid pattern; in addition mouse wheel (two fingers on a touchscreen) and dragging with the mouse button held down. |
@@ -66,7 +66,7 @@ width; below it the tabs **Geometry**, **Colors** and
 |---|---|
 | **Braid type** | Round braid, Lace braid, Square braid, Spiral braid, Packing braid, Soutache braid. |
 | **Track type** | Packing braid only: family (2-, 3-, 4-track, round). |
-| **Occupation** | Interlacing: normal, half, tandem etc. — depending on the braid type. |
+| **Setup** | Interlacing: normal, half, tandem etc. — depending on the braid type. |
 | **Number of carriers** | Drop-down list with the permissible numbers of carriers for the selected braid type and interlacing. |
 | **Braiding angle** | Slider; affects the braid pattern and, live, the 3D view. |
 | **Ply count** | Number of threads (yarns) per carrier, 1 to 12. From 2, each yarn can get its own color, see [Plying colors](#fachungsfarben-farbe-je-garn). |
@@ -79,7 +79,7 @@ The meaning of these parameters per braid type is explained in
 ### Colors and carrier table { #farben-und-kloppeltabelle }
 
 * **Color:** The color palette from your [color master data](master-data.md)
-  and **Custom colour** (color picker). The active color is highlighted.
+  and **Custom color** (color picker). The active color is highlighted.
 * **Color:** Click a tile in the **Braid pattern** or a
   row of the **Carrier table** — the carrier (for round and square braid:
   index and running side) takes on the active color. With the mouse button held down
@@ -90,7 +90,7 @@ The meaning of these parameters per braid type is explained in
   **Carriers left-run** and **Carriers right-run** are separate columns side by side,
   for packing and spiral one column per **track**; if the card is narrow,
   they are shown one below the other. Where a carrier sits on the machine is shown by the
-  occupation overview. The assignment later appears like this in the order and on
+  setup overview. The assignment later appears like this in the order and on
   the printout.
 
 ### Plying colors: color per yarn { #fachungsfarben-farbe-je-garn }
@@ -140,7 +140,7 @@ the yarn colors appear:
 |---|---|
 | Carrier table | The cell is striped lengthwise, yarn 1 on the left. When pointing at the row, a tooltip names the color of each yarn. |
 | Braid pattern | Each tile is divided into stripes per yarn along the thread, in all views and also with **Texture**. Thin dividing lines always show the ply count, even if all yarns have the same color. |
-| Occupation overview | The carrier dot is divided into circle segments per yarn. |
+| Setup overview | The carrier dot is divided into circle segments per yarn. |
 | 3D view | Each yarn as a separate thread in its color. Separate colors exist for at most twelve yarns. |
 | Print | The carrier list shows the stripes and the color per yarn; the braid pattern and overview are colored as in the Designer. |
 
@@ -148,7 +148,7 @@ the yarn colors appear:
     The yarn colors are saved with the design. The desktop app shows
     them from version 2.1.1 on.
 
-### Occupation overview { #besetzungsubersicht }
+### Setup overview { #besetzungsubersicht }
 
 The top view of the machine with horngears and carriers below the
 braid pattern — with **Track animation** (**Stop**, **Back to
@@ -159,7 +159,7 @@ braid grows in sync. Details on the overview:
 ### 3D view { #3d-ansicht }
 
 The **3D** view shows the braid as a spatial model — each thread
-as a tube, over/under from the kinematics of the occupation overview, in the
+as a tube, over/under from the kinematics of the setup overview, in the
 carrier colors. It works for all six braid types (except mixed
 designs).
 
@@ -168,7 +168,7 @@ designs).
 | **Top view** / **Side view** / **Braiding point** | Three fixed camera views: cross-section, the whole braid from the side, close-up of the point where the braid is formed. |
 | **Lock** | Locked: mouse and fingers do not rotate, the mouse wheel zooms. Open: the left mouse button rotates, the right one pans, a double-click restores the selected view. |
 | **Material** | Smooth filament, twisted yarn, wire or a simple light version. |
-| **Display** | Default of the braid type, *Interlacing only (diagram)*, *Automatic* or *As the machine is arranged* — determines whether the cross-section is derived from the tracks or idealized. |
+| **Display** | Default of the braid type, *Interlacing only (schematic)*, *Automatic* or *As the machine is arranged* — determines whether the cross-section is derived from the tracks or idealized. |
 | **Covering** | Line *Covering n % (yarn thickness m %)*: the yarn thickness follows the covering of the design. |
 
 The 3D view applies color changes immediately; the number of carriers, interlacing and angle

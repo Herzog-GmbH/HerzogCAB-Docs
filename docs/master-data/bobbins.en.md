@@ -40,8 +40,8 @@ Herzog catalogue …".*
 
 | Field | Unit | Description |
 |---|---|---|
-| **Outer Diameter** | mm | Diameter of the fully wound bobbin. |
-| **Core Diameter** | mm | Diameter of the empty bobbin core. |
+| **Outer diameter** | mm | Diameter of the fully wound bobbin. |
+| **Core diameter** | mm | Diameter of the empty bobbin core. |
 | **Winding Length** | mm | Usable winding width between the flanges. |
 | **Bobbin volume** | ccm | Holding volume of the bobbin. Can be calculated automatically from the three dimensions (button next to the field), but can still be overwritten manually. |
 | **Machine types** | – | Multiple selection of the machine types on which the bobbin is used. At least one type is required. |

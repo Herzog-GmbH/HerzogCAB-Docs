@@ -64,7 +64,7 @@ remain empty and count as not stored.
 | Field | Unit | Meaning |
 |---|---|---|
 | **Drum diameter (min–max)** | mm | Smallest and largest drum diameter that the pay-off accepts. |
-| **Drum width max.** | mm | Largest drum width. |
+| **Max. drum width** | mm | Largest drum width. |
 | **Load capacity** | kg | Total weight of the loaded drum: drum plus wound material. |
 | **Quill diameter** | mm | Diameter of the quill. It is adapted to the respective drum and does not decide whether a drum fits. |
 | **Material diameter (min–max)** | mm | Diameter of the material that runs off the pay-off, e.g. core or rope (one decimal place). |

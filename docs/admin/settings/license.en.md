@@ -80,7 +80,7 @@ switched on — fetches back what was changed there.
 These are the annual subscription and the trial version. A licence without an end date
 (lifetime) is not sufficient. If the subscription is missing, the switch remains gray, and the
 note reads *"This requires the "Herzog CAB Web" module (subscription) on the account.
-It can be ordered in the license portal."* In addition, the computer must be signed in to the
+It can be ordered in the licence portal."* In addition, the computer must be signed in to the
 customer account.
 
 #### What goes in which direction { #was-in-welche-richtung-geht }

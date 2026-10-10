@@ -71,13 +71,13 @@ If the list is empty, it shows *No bobbins yet. Add them with
 | **Outer diameter**, **Core diameter**, **Traverse width** (required) | in mm. |
 | **Winding diameter** | in mm; leave empty if winding goes up to the flange edge. |
 | **Drum width** | in mm; leave empty if it corresponds to the traverse width. |
-| **Winding volume** | in cm³; calculated from the dimensions when saving if empty. |
+| **Bobbin volume** | in cm³; calculated from the dimensions when saving if empty. |
 | **Empty weight** | in kg; without this figure there is no total weight of the full drum. |
-| **Quill bore**, **Driver pin**, **Centre to pin distance** | in mm, optional. |
+| **Quill bore**, **Driver pin**, **Center to pin distance** | in mm, optional. |
 | **Note** | Free text. |
 
 The list shows name, article number, outer and core diameter,
-traverse width, winding volume and empty weight. If it is empty, it shows
+traverse width, bobbin volume and empty weight. If it is empty, it shows
 *No drums yet. Add them with "From Herzog catalogue …".*
 The drums are available for selection in the calculators
 [Product length per drum](../calculations/product/rope-length-on-drum.md)

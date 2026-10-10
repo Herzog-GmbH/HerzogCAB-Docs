@@ -105,7 +105,7 @@ Special features of the web app:
 * Warnings appear as message boxes: deviating number of bobbins, missing
   winding time, or if the winding end is after the braiding start of the linked
   order.
-* The **Bobbin winding time details** calculator is not included in the web app; the
+* The **Winding time details** calculator is not included in the web app; the
   winding time estimate itself is available.
 
 ## Printing { #drucken }

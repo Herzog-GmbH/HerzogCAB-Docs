@@ -27,7 +27,7 @@ From top to bottom, each only with the stated permission
 | **Machines** | *View master data* | [Machines](machines.md) |
 | **Catalogue** | *View master data* | [Herzog catalogue](catalog.md) |
 | **Master data** | permission for at least one master data tab | [Master data](master-data.md) |
-| **Factory Planner** | *View factory planner* | [Factory Planner](hall-planner.md) |
+| **Factory Planner** | *View Factory Planner* | [Factory Planner](hall-planner.md) |
 | **Print editor** | *View print templates* | [Print editor](print-editor.md) |
 | **Parameter Explorer** | *Open Parameter Explorer* and *View orders* | Parameters of the orders |
 

@@ -8,7 +8,7 @@ The normal braid pattern shows the braid as a flat, "cut open"
 section. To judge a pattern on the finished product, the Designer offers
 further views: the **projections** place the development rotatably
 on a cylinder or square, the real **3D model** builds the braid
-thread by thread from the carrier tracks of the Setup Overview — with
+thread by thread from the carrier tracks of the Setup overview — with
 crossings, material and covering, freely rotatable. This lets you
 judge spirals, rings, transitions and edges realistically before the
 design goes to the machine.
@@ -38,7 +38,7 @@ depends on the braid type:
 | **Full** | The complete development of the circumference as a flat braid pattern — the default view in which you color. |
 | **Half** | Only the front half of the development (round braid). |
 | **Cylinder** / **Square** / **Edge** | The development projected onto the cylinder (round) or the square (square, packing). The back is hidden; use the rotation arrows on the preview card to rotate the body step by step. With Square and Edge, the edges are created by light and shading, not by lines. |
-| **3D** | The real spatial model of the braid from the carrier tracks of the Setup Overview — for all six braid types. Mixed designs of round and lace sections have no 3D model; the view then shows a note. |
+| **3D** | The real spatial model of the braid from the carrier tracks of the Setup overview — for all six braid types. Mixed designs of round and lace sections have no 3D model; the view then shows a note. |
 
 Colors, ply count and all ongoing changes remain identical in all views
 — including [plying colors](painting.md#fachungsfarben-farbe-je-garn):
@@ -56,7 +56,7 @@ At the top of the picture is the **view bar**:
 
 | Element | Effect |
 |---|---|
-| **Top view** | View of the cross-section, oriented like the machine in the Setup Overview. |
+| **Top view** | View of the cross-section, oriented like the machine in the Setup overview. |
 | **Side view** | The whole braid from the side — the braid pattern. |
 | **Braiding point** | Close-up of the point at which the braid is currently being formed; the camera follows the track animation. |
 | **Lock** | Locked: mouse and finger do not rotate the braid, the mouse wheel still zooms. Open: the left mouse button rotates, the right one pans, a double-click restores the selected view. |

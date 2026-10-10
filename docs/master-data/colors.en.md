@@ -14,7 +14,7 @@ the link to a color fan.
 
 ![Color editor: on the left the color database, on the right the editing area.](../assets/screenshots/master-data/farben-uebersicht.png)
 
-* **Color Database** (left) – search field, a **Palette** selection field for filtering
+* **Color database** (left) – search field, a **Palette** selection field for filtering
   and the list of all colors. Each card shows color swatch, identifier, palette,
   hex value and – if available – the reference color.
 * **Edit color** (right) – the properties of the selected color with

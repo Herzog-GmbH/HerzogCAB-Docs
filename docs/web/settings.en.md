@@ -34,7 +34,7 @@ users of this account** or only to **this browser**.
 
 ### Braiding angle { #flechtwinkel }
 
-Herzog measures the braiding angle against the **transverse direction** of the braid,
+Herzog measures the braiding angle against the **cross direction** of the braid,
 the technical literature mostly against the **braid axis**. The two values
 add up to 90°; at 45° they are equal.
 

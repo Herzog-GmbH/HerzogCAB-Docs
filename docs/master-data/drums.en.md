@@ -83,14 +83,14 @@ Each card shows:
 | **Core diameter [mm]** | mm | Diameter of the drum core. Required field; must be smaller than the winding diameter. |
 | **Traverse width [mm]** | mm | Windable width between the flanges. |
 | **Drum width [mm]** | mm | Overall width. Leave empty if it equals the traverse width. |
-| **Winding volume [ccm]** | ccm | Holding volume of the drum. Derived from the dimensions (see below) and can still be overwritten. |
+| **Bobbin volume [ccm]** | ccm | Holding volume of the drum. Derived from the dimensions (see below) and can still be overwritten. |
 | **Empty weight [kg]** | kg | Weight of the empty drum. Counts towards the load capacity of the take-up winder. |
 
 Traverse width and drum width stand in for each other: if only one of the
 two fields is filled, it applies to both.
 
 !!! tip "Derive bobbin volume automatically"
-    As long as you do not change the **Winding volume [ccm]** field yourself,
+    As long as you do not change the **Bobbin volume [ccm]** field yourself,
     Herzog CAB recalculates it with every dimension change — from the winding diameter
     (otherwise the outer diameter), the core diameter and the traverse width
     (otherwise the drum width). If you have entered the volume by hand,

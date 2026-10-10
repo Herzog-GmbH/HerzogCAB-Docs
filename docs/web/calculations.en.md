@@ -35,7 +35,7 @@ operation in the browser.
 | **Search calculators …** | Filters the tiles live by the name of the calculator. If nothing matches, the page reports *No calculator matches "…"*. |
 | **Favorites** | Group at the very top with your favorite calculators, as soon as you have marked at least one. |
 | Groups | **Material**, **Product**, **Hollow braid**, **Production**, **Winding** — each with its calculator tiles (icon, name, number of inputs). |
-| Tile | A click opens the calculator page. The star at the top right (**Favor** / **Remove favorite**) adds the calculator to the favorites or removes it again. |
+| Tile | A click opens the calculator page. The star at the top right (**Add to favorites** / **Remove favorite**) adds the calculator to the favorites or removes it again. |
 
 ## Calculator page { #rechnerseite }
 
@@ -59,8 +59,8 @@ calculation with a result is added to the history — except for the two
 converters (*Fineness conversion*, *Braid density conversion*) and
 *Machine sizing*, as in the desktop app.
 
-!!! info "Braiding angle to the transverse direction or to the braid axis"
-    Whether angle fields and results are measured against the transverse direction (Herzog) or
+!!! info "Braiding angle to the cross direction or to the braid axis"
+    Whether angle fields and results are measured against the cross direction (Herzog) or
     against the braid axis (technical literature) is set
     under [Settings](settings.md#flechtwinkel). If you point to
     an angle, a tooltip shows both values. The small

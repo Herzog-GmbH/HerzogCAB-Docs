@@ -12,7 +12,7 @@ see the same orders, designs, machines and master data. The calculators
 deliver the same results as the desktop app, the Designer draws
 the same braid patterns, and printing uses the same print templates.
 
-The web app is part of the annual subscription (**Herzog CAB Full version** or
+The web app is part of the annual subscription (**Herzog CAB Full Version** or
 **Herzog CAB Designer**) and shares its seats with the program. A
 seat is one person who is currently working. Anyone working in the program and in the browser
 at the same time occupies two seats. To try it out, Herzog will set up a free
@@ -73,7 +73,7 @@ program and in the browser.
     ---
 
     Design library and Designer with all six braid types,
-    occupation overview and true 3D view.
+    setup overview and true 3D view.
 
     [:octicons-arrow-right-24: Designs and Designer](designer.md)
 

@@ -104,7 +104,7 @@ Anyone who may also edit the entry may restore it
 | Designs | *Edit designer* |
 | Orders and customers | *Edit orders* |
 | Materials, bobbins, drums, colors, machines | *Edit master data* |
-| Floor plans and assignments | *Edit factory planner* |
+| Floor plans and assignments | *Edit Factory Planner* |
 | Print templates | *Edit print templates* |
 
 Without this permission you can only view the versions.

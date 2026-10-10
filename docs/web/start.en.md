@@ -68,7 +68,7 @@ number of entries:
 |---|---|
 | **Overdue** | The production start lies in the past. The number turns red as soon as there are any. |
 | **This week** | From today up to and including Sunday. |
-| **Upcoming** | After that until the end of the 14 days. |
+| **Coming up** | After that until the end of the 14 days. |
 
 When the card opens, the first tab with entries is selected, usually
 **Overdue**.

@@ -88,13 +88,13 @@ As long as no design is open, the toolbar is locked; only
 As soon as a design is open, the editing view appears. It consists of
 five areas:
 
-![Designer with a round braid: toolbar, parameters and Setup Overview on the left, carrier table in the middle, braid pattern on the right](../assets/screenshots/designer/designer-bearbeitungsansicht.png)
+![Designer with a round braid: toolbar, parameters and Setup overview on the left, carrier table in the middle, braid pattern on the right](../assets/screenshots/designer/designer-bearbeitungsansicht.png)
 
 | Area | Content |
 |---|---|
 | **Toolbar** (top) | Mode switch, side filter, undo/redo, display switches as well as color and texture palette. |
 | **Document header** (per design window) | Summary of the design and the actions **Print**, **Save**, **Save under new name**, **Close view**. |
-| **Parameter panel** (left) | Design name, [braid type and parameters](parameters.md) and below them the [Setup Overview](animation.md). |
+| **Parameter panel** (left) | Design name, [braid type and parameters](parameters.md) and below them the [Setup overview](animation.md). |
 | **Carrier table** (center) | All carrier positions with their current color — you can also color directly here. |
 | **Preview** (right) | The braid pattern that results from the current color assignment, with its own zoom buttons and the [measurement row](parameters.md#mazeile-in-der-vorschau) (material Ø, covering, braid Ø); in the 3D view the spatial model. |
 
@@ -166,7 +166,7 @@ In that case, first close one via the ✕ in its header.
 | Pan | Hold down the **right mouse button** and drag — works at any time, also in paint mode. |
 | Pan (mode) | Choose the **Move** tool and drag with the **left mouse button**. |
 
-The [Setup Overview](animation.md) has its own, independent
+The [Setup overview](animation.md) has its own, independent
 zoom and pan controls.
 
 ### Guided tour { #gefuhrte-tour }

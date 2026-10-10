@@ -148,7 +148,7 @@ yarns run in the carrier color. Every change can be undone with **Back**.
 * **Braid pattern** — each yarn as its own stripe **along the thread**, in
   all views (Full, Half, Cylinder, Square, Edge), in the counterclockwise and
   in the clockwise run, and also with textures switched on.
-* **Setup Overview** — the carrier dot is divided into circle segments per
+* **Setup overview** — the carrier dot is divided into circle segments per
   yarn, see [Setup and track animation](animation.md).
 * **3D view** — each yarn in its color, see
   [Views and 3D view](view-3d.md).

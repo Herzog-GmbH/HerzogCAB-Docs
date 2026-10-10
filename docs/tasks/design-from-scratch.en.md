@@ -5,7 +5,7 @@
 **Prerequisites:**
 
 * You have permission to create and save designs.
-* Optional: your own colors in the [Color Database](../master-data/colors.md) —
+* Optional: your own colors in the [Color database](../master-data/colors.md) —
   but the Designer also comes with a color palette without any preparation.
 
 ```mermaid
@@ -49,7 +49,7 @@ All parameters and their permitted values are explained on the reference page
 
 1. Activate the **Color** tool.
 2. Select a color from the palette (or from a library in the
-   [Color Database](../master-data/colors.md)).
+   [Color database](../master-data/colors.md)).
 3. In the braid pattern or in the carrier table, click the positions
    that should receive this color. Using the side filter, you can color
    only the counterclockwise run, only the clockwise run or both running
