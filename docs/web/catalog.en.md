@@ -51,7 +51,7 @@ and the area for creating the machine is missing.
 
 ## Creating as own machine { #als-eigene-maschine-anlegen }
 
-![Lower part of the details: accessories with two ticked entries, the selected take-up, below it “Create as own machine” with occupation, machine group, serial number and name; bottom right **Add to braiding machines**.](../assets/screenshots/web/katalog-anlegen.png)
+![Lower part of the details: accessories with two ticked entries, the selected take-up, below it “Create as own machine” with setup, machine group, serial number and name; bottom right **Add to braiding machines**.](../assets/screenshots/web/katalog-anlegen.png)
 
 At the end of the details you only enter what the catalogue cannot know:
 

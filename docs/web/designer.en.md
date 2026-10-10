@@ -34,7 +34,7 @@ Designs from the desktop app appear here with their folder after the
 
 ## The Designer at a glance { #der-designer-im-uberblick }
 
-![Designer of the web app: geometry on the left, braid pattern and occupation overview in the middle, colors and carrier table on the right.](../assets/screenshots/web/designer.png)
+![Designer of the web app: geometry on the left, braid pattern and setup overview in the middle, colors and carrier table on the right.](../assets/screenshots/web/designer.png)
 
 On the desktop the Designer has three columns: **Geometry** on the left, **Braid pattern**
 with **Setup overview** in the middle, **Colors** and **Carrier table**
