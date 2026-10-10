@@ -150,7 +150,7 @@ erscheinen die Garnfarben:
 
 !!! info "Desktop-App"
     Die Garnfarben werden mit dem Design gespeichert. Die Desktop-App zeigt
-    sie erst ab einer späteren Programmversion an.
+    sie ab Version 2.1.1 an.
 
 ### Besetzungsübersicht
 
