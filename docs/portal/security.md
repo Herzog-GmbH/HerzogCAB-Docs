@@ -18,11 +18,7 @@ Sicherheit* hierher.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die eigene Seite im Lizenzportal mit den drei Karten „Passwort", „Zweiter Faktor" und „Name".
-    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/passwort`; automatisch per `python _tools/web_screenshots.py shots nur:portal-passwort`
-    **Ziel-Datei:** `assets/screenshots/portal/passwort.png`
-    <!-- web-bild ../assets/screenshots/portal/passwort.png -->
+![Die eigene Seite im Lizenzportal mit den drei Karten „Passwort", „Zweiter Faktor" und „Name".](../assets/screenshots/portal/passwort.png)
 
 Die Seite besteht aus drei Karten: **Passwort**, **Zweiter Faktor** und
 **Name**.

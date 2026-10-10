@@ -20,11 +20,7 @@ Seriennummer und Namen ein.
 
 ## Die Übersicht
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der Herzog-Katalog in der Kachelansicht, Reiter *Flechtmaschinen*, mit Suchfeld, Baureihenfilter und Umschalter Kacheln/Liste.
-    **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog` (nach `login`).
-    **Ziel-Datei:** `assets/screenshots/web/katalog.png`
-    <!-- web-bild ../assets/screenshots/web/katalog.png -->
+![Der Herzog-Katalog in der Kachelansicht, Reiter *Flechtmaschinen*, mit Suchfeld, Baureihenfilter und Umschalter Kacheln/Liste.](../assets/screenshots/web/katalog.png)
 
 | Element | Bedeutung |
 |---|---|
@@ -36,11 +32,7 @@ Seriennummer und Namen ein.
 
 ## Details eines Maschinenmodells
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Details der Feindrahtflechtmaschine KB 1/12-80: Kennzahlen, Technische Daten, Lieferumfang, darunter Zubehör zum Ankreuzen und Abzug und Aufnahme mit Auswahlkreisen.
-    **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog-dialog` (nach `login`).
-    **Ziel-Datei:** `assets/screenshots/web/katalog-dialog.png`
-    <!-- web-bild ../assets/screenshots/web/katalog-dialog.png -->
+![Die Details der Feindrahtflechtmaschine KB 1/12-80: Kennzahlen, Technische Daten, Lieferumfang, darunter Zubehör zum Ankreuzen und Abzug und Aufnahme mit Auswahlkreisen.](../assets/screenshots/web/katalog-dialog.png)
 
 Die Details zeigen von oben nach unten:
 
@@ -59,11 +51,7 @@ und der Bereich zum Anlegen fehlt.
 
 ## Als eigene Maschine anlegen
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der untere Teil der Details: Zubehör mit zwei angekreuzten Einträgen, gewählter Abzug, darunter „Als eigene Maschine anlegen" mit Besetzung, Maschinengruppe, Seriennummer und Name; unten rechts **Zu Flechtmaschinen hinzufügen**.
-    **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog-anlegen` (nach `login`).
-    **Ziel-Datei:** `assets/screenshots/web/katalog-anlegen.png`
-    <!-- web-bild ../assets/screenshots/web/katalog-anlegen.png -->
+![Der untere Teil der Details: Zubehör mit zwei angekreuzten Einträgen, gewählter Abzug, darunter „Als eigene Maschine anlegen" mit Besetzung, Maschinengruppe, Seriennummer und Name; unten rechts **Zu Flechtmaschinen hinzufügen**.](../assets/screenshots/web/katalog-anlegen.png)
 
 Am Ende der Details tragen Sie nur ein, was der Katalog nicht wissen kann:
 

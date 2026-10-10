@@ -13,11 +13,7 @@ unteren Leiste am Smartphone.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite der Web-App mit Begrüßung und Schnellaktionen oben, darunter die Karte „Aufträge" mit vier Zählern über die volle Breite, links „Produktion" mit den Reitern Überfällig, Diese Woche, Demnächst, rechts „Favoriten" und „Zuletzt geöffnet".
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/`; automatisch per `python _tools/web_screenshots.py shots nur:startseite`
-    **Ziel-Datei:** `assets/screenshots/web/startseite.png`
-    <!-- web-bild ../assets/screenshots/web/startseite.png -->
+![Startseite der Web-App mit Begrüßung und Schnellaktionen oben, darunter die Karte „Aufträge" mit vier Zählern über die volle Breite, links „Produktion" mit den Reitern Überfällig, Diese Woche, Demnächst, rechts „Favoriten" und „Zuletzt geöffnet".](../assets/screenshots/web/startseite.png)
 
 Oben steht die **Kopfzeile** mit Begrüßung und Schnellaktionen. Darunter
 folgen die Karten **Aufträge**, **Produktion**, **Favoriten**, **Zuletzt
