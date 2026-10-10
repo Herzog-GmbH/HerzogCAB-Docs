@@ -1,7 +1,8 @@
 <!--
-Zentrale Abkuerzungs-/Glossar-Tooltips (pymdownx.snippets, auto_append).
-Jeder Eintrag gilt automatisch auf ALLEN Seiten: kommt der Begriff im
-Fliesstext vor, zeigt der Browser beim Ueberfahren die Kurzerklaerung.
+Zentrale Abkuerzungs-/Glossar-Tooltips der DEUTSCHEN Seiten. hooks/sprachen.py
+haengt die Datei an jede deutsche Seite an (englische Seiten *.en.md bekommen
+glossar-tooltips.en.md): kommt der Begriff im Fliesstext vor, zeigt der
+Browser beim Ueberfahren die Kurzerklaerung.
 Vollstaendige Definitionen: docs/appendix/glossary.md
 -->
 

@@ -3,6 +3,9 @@ Standard-Platzhalter des Styleguides (und umgekehrt, sobald das Bild da ist).
 
     python _tools/web_platzhalter.py           # fehlende Bilder -> Platzhalter
     python _tools/web_platzhalter.py zurueck   # Platzhalter -> Bild, wo die Datei inzwischen existiert
+
+Englische Seiten (*.en.md) bekommen den englischen Platzhalter
+("📷 Screenshot missing", Subject / How to create / Target file), siehe STYLEGUIDE.md.
 """
 import re
 import sys
@@ -31,18 +34,33 @@ ROUTEN = {
     },
 }
 BASIS = {'web': 'Web-App lokal (127.0.0.1:5173)', 'portal': 'Lizenzportal lokal (localhost:8100)'}
+BASIS_EN = {'web': 'Web app local (127.0.0.1:5173)', 'portal': 'Licence portal local (localhost:8100)'}
+# Platzhalter-Beschriftung je Sprache: Titel, Motiv, So erzeugen, Ziel-Datei
+TEXTE = {
+    'de': ('📷 Screenshot fehlt', 'Motiv', 'So erzeugen', 'Ziel-Datei'),
+    'en': ('📷 Screenshot missing', 'Subject', 'How to create', 'Target file'),
+}
+
+
+def sprache(md: Path) -> str:
+    return 'en' if md.name.endswith('.en.md') else 'de'
+
 
 img_re = re.compile(r'^!\[(?P<cap>[^\]]*)\]\((?P<rel>(?:\.\./)+assets/screenshots/(?P<ordner>web|portal)/(?P<name>[a-z0-9-]+)\.png)\)\s*$', re.M)
-ph_re = re.compile(
-    r'^!!! warning "📷 Screenshot fehlt"\n'
-    r'    \*\*Motiv:\*\* (?P<cap>.*?)\n'
-    r'    \*\*So erzeugen:\*\* (?P<how>.*?)\n'
-    r'    \*\*Ziel-Datei:\*\* `assets/screenshots/(?P<ordner>web|portal)/(?P<name>[a-z0-9-]+)\.png`\n'
-    r'    <!-- web-bild (?P<rel>[^ ]+) -->\n', re.M | re.S)
+ph_re = {
+    lang: re.compile(
+        rf'^!!! warning "{re.escape(titel)}"\n'
+        rf'    \*\*{re.escape(motiv)}:\*\* (?P<cap>.*?)\n'
+        rf'    \*\*{re.escape(wie)}:\*\* (?P<how>.*?)\n'
+        rf'    \*\*{re.escape(ziel)}:\*\* `assets/screenshots/(?P<ordner>web|portal)/(?P<name>[a-z0-9-]+)\.png`\n'
+        r'    <!-- web-bild (?P<rel>[^ ]+) -->\n', re.M | re.S)
+    for lang, (titel, motiv, wie, ziel) in TEXTE.items()
+}
 
 
 def zu_platzhalter(md: Path) -> int:
     text = md.read_text(encoding='utf-8')
+    lang = sprache(md)
     n = 0
 
     def ersatz(m):
@@ -52,12 +70,16 @@ def zu_platzhalter(md: Path) -> int:
             return m.group(0)
         n += 1
         route = ROUTEN[ordner].get(name, '?')
-        how = (f'{BASIS[ordner]}, Seite `{route}`; automatisch per '
-               f'`python _tools/web_screenshots.py shots nur:{"portal-" if ordner == "portal" else ""}{name}`')
-        return ('!!! warning "📷 Screenshot fehlt"\n'
-                f'    **Motiv:** {cap}\n'
-                f'    **So erzeugen:** {how}\n'
-                f'    **Ziel-Datei:** `assets/screenshots/{ordner}/{name}.png`\n'
+        befehl = f'`python _tools/web_screenshots.py shots nur:{"portal-" if ordner == "portal" else ""}{name}`'
+        if lang == 'en':
+            how = f'{BASIS_EN[ordner]}, page `{route}`; automatically via {befehl}'
+        else:
+            how = f'{BASIS[ordner]}, Seite `{route}`; automatisch per {befehl}'
+        titel, motiv, wie, ziel = TEXTE[lang]
+        return (f'!!! warning "{titel}"\n'
+                f'    **{motiv}:** {cap}\n'
+                f'    **{wie}:** {how}\n'
+                f'    **{ziel}:** `assets/screenshots/{ordner}/{name}.png`\n'
                 f'    <!-- web-bild {rel} -->\n')
 
     neu = img_re.sub(ersatz, text)
@@ -78,7 +100,7 @@ def zurueck(md: Path) -> int:
         n += 1
         return f'![{cap}]({rel})\n'
 
-    neu = ph_re.sub(ersatz, text)
+    neu = ph_re[sprache(md)].sub(ersatz, text)
     if n:
         md.write_text(neu, encoding='utf-8', newline='\n')
     return n

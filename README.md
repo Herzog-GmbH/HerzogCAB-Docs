@@ -31,9 +31,14 @@ mkdocs.yml               # Konfiguration & Navigation (7 Tabs)
 STYLEGUIDE.md            # Schreibregeln, Seiten-Schablonen, Screenshot-Konventionen
 f1-mapping.json          # KANONISCH: App-Nav-Key -> Handbuch-Pfad (F1-Hilfe)
 F1-MAPPING.md            # Erlaeuterung + Pflege-Regeln zum Mapping
-includes/                # zentrale Glossar-Tooltips (auto_append auf allen Seiten)
+TERMINOLOGIE.md          # Fachwoerter Deutsch <-> Englisch (verbindlich fuer beide Sprachen)
+includes/                # Glossar-Tooltips je Sprache (glossar-tooltips.md / .en.md)
+hooks/sprachen.py        # Zweisprachigkeit: Tooltips, "Auf dieser Seite", Suchindex und 404 je Sprache
+overrides/main.html      # Theme-Erweiterung: englische Seiten suchen im englischen Index
 docs/
-├── index.md             # Startseite (Karten-Hub)
+├── index.md             # Startseite (Karten-Hub); index.en.md = englische Fassung
+│                        #   (jede Seite: <seite>.md deutsch, <seite>.en.md englisch,
+│                        #   Bilder: <bild>.png deutsch, <bild>.en.png englisch)
 ├── setup/               # TAB Loslegen: Kundenkonto, Installation, Anmeldung/Lizenz,
 │                        #   CodeMeter (Dongle), Update, Deinstallation
 ├── basics/              # TAB Grundlagen: Bedienkonzepte (Oberflaeche, Navigation,
@@ -59,6 +64,22 @@ docs/
 **Drei Ebenen, eine Regel:** Grundlagen werden verlinkt, Referenz beschreibt
 jedes Feld genau einmal, Workflows (tasks/) verlinken auf beides und erklaeren
 selbst keine Felder.
+
+**Zwei Sprachen (seit 10/2026):** Deutsch ist Standard und bleibt unter
+`/handbuch/...`, Englisch liegt unter `/handbuch/en/...` (Plugin
+mkdocs-static-i18n). Eine englische Seite ist `<seite>.en.md` neben der
+deutschen, ein englisches Bild `<bild>.en.png` neben dem deutschen; Links und
+Bildpfade in der `.en.md` bleiben wie im Deutschen. Fehlt eine `.en.md`, zeigt
+`/en/` die deutsche Seite (der Build meldet das). Fachwoerter: `TERMINOLOGIE.md`.
+
+* **Sprungmarken:** Ueberschriften der `.en.md` behalten die ID der deutschen
+  (`## Profile tab { #tab-profil }`), sonst springen F1 und Querverweise ins
+  Leere. `python _tools/anker.py --setzen` haengt fehlende IDs an,
+  `python _tools/anker.py --alle` prueft alle Seiten (so auch die CI).
+* **Navigation englisch:** `_tools/nav_en.txt` pflegen, dann
+  `python _tools/nav_en.py` (schreibt `nav_translations` in `mkdocs.yml`).
+* Englische Screenshot-Platzhalter: `📷 Screenshot missing` mit **Subject**,
+  **How to create**, **Target file** (Ziel-Datei wie im Deutschen).
 
 ## Inhalt schreiben
 

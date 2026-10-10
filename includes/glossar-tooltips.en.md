@@ -1,8 +1,10 @@
 <!--
-Central abbreviation/glossary tooltips (pymdownx.snippets, auto_append), English version.
-Each entry automatically applies to ALL English pages: if the term appears
-in the running text, the browser shows the short explanation on hover.
-Full definitions: docs/appendix/glossary.md
+Central abbreviation/glossary tooltips of the ENGLISH pages (*.en.md), the
+counterpart of glossar-tooltips.md. Appended to every English page by
+hooks/sprachen.py: if the term appears in the running text, the browser shows
+the short explanation on hover. Abbreviations match whole words and are
+case-sensitive, so singular and plural forms are listed separately.
+Full definitions: docs/appendix/glossary.en.md
 -->
 
 *[carrier]: Bobbin holder on the braiding machine; carries a bobbin with braiding material along the track.

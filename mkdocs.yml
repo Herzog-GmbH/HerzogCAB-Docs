@@ -13,6 +13,9 @@
 # Regeln: How-To verlinkt, Referenz beschreibt. Jedes Feld an genau EINER Stelle.
 # Keine Berechnungsformeln (Policy) - Standardsatz siehe STYLEGUIDE.md.
 # F1-Zuordnung App-Key -> Seite: f1-mapping.json (kanonisch, Repo-Root).
+# Zweisprachig seit 10/2026: Deutsch (Standard, /handbuch/...) und Englisch
+# (/handbuch/en/..., Dateien <seite>.en.md) - Plugin i18n, hooks/sprachen.py,
+# overrides/main.html; Fachwoerter in TERMINOLOGIE.md.
 # =============================================================================
 
 site_name: Herzog CAB - Handbuch
@@ -34,11 +37,23 @@ edit_uri: edit/main/docs/
 copyright: Copyright &copy; Herzog GmbH
 
 # -----------------------------------------------------------------------------
+# Link-Pruefung: Ein Link auf eine Sprungmarke, die es auf der Zielseite nicht
+# gibt (z. B. englische Ueberschrift ohne deutschen Anker), ist eine Warnung
+# und bricht "mkdocs build --strict" ab - in beiden Sprachen.
+# -----------------------------------------------------------------------------
+validation:
+  anchors: warn
+
+# -----------------------------------------------------------------------------
 # Material Theme
 # -----------------------------------------------------------------------------
 theme:
   name: material
+  # Sprache des Standard-Builds; das i18n-Plugin setzt je Sprach-Build die
+  # passende (lang="en" unter /en/).
   language: de
+  # Theme-Erweiterung: englische Seiten suchen im englischen Index (overrides/main.html)
+  custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/favicon.png
   font:
@@ -91,6 +106,18 @@ extra_css:
   - assets/css/herzog-brand.css
 
 # -----------------------------------------------------------------------------
+# Hooks (zweisprachige Fassung): Tooltips und "Auf dieser Seite" je Sprache,
+# Suchindex und 404-Seite je Sprache. Erklaerung im Kopf der Datei.
+# -----------------------------------------------------------------------------
+hooks:
+  - hooks/sprachen.py
+
+# Bei "mkdocs serve" auch Aenderungen ausserhalb von docs/ neu bauen
+watch:
+  - includes
+  - overrides
+
+# -----------------------------------------------------------------------------
 # Markdown Extensions
 # -----------------------------------------------------------------------------
 markdown_extensions:
@@ -119,9 +146,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys                # ++ctrl+s++ Notation
   - pymdownx.mark
-  - pymdownx.snippets:
-      auto_append:
-        - includes/glossar-tooltips.md   # zentrale Abkuerzungs-/Glossar-Tooltips
+  # Glossar-Tooltips (includes/glossar-tooltips.md bzw. .en.md) haengt seit der
+  # englischen Fassung hooks/sprachen.py je Sprache an - nicht mehr auto_append.
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -137,19 +164,24 @@ markdown_extensions:
 # Plugins
 # -----------------------------------------------------------------------------
 plugins:
+  # Sprache des deutschen Suchindex; den englischen Index (/en/search/, lunr-
+  # Sprache en) schreibt hooks/sprachen.py.
   - search:
       lang:
         - de
-        - en
-  # Zweisprachig seit 10/2026: Deutsch (Standard, /handbuch/) und Englisch (/handbuch/en/).
+  # Zweisprachig seit 10/2026 (mkdocs-static-i18n 1.2.3): Deutsch (Standard,
+  # /handbuch/) und Englisch (/handbuch/en/).
   # Englische Seite liegt neben der deutschen als <name>.en.md, englisches Bild als
-  # <name>.en.png. Fehlt die englische Datei, zeigt die englische Fassung die deutsche.
+  # <name>.en.png. Fehlt die englische Datei, zeigt die englische Fassung die deutsche
+  # (der Build meldet solche Ersatzseiten). Sprungmarken: _tools/anker.py.
   # Navigationstitel: _tools/nav_en.txt -> python _tools/nav_en.py
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
       reconfigure_material: true
-      reconfigure_search: true
+      # false: keine Dubletten-Bereinigung des gemeinsamen Index - hooks/sprachen.py
+      # teilt ihn ohnehin in einen Index je Sprache (/search/, /en/search/).
+      reconfigure_search: false
       languages:
         - locale: de
           default: true
@@ -160,6 +192,21 @@ plugins:
           build: true
           site_name: Herzog CAB - Manual
           site_description: User manual for Herzog CAB - the calculation and design software for braiding machines, as desktop app and web app.
+          # Beschriftungen aus theme/extra, die sonst deutsch blieben
+          theme:
+            palette:
+              - toggle:
+                  name: Switch to dark mode
+              - toggle:
+                  name: Switch to light mode
+          extra:
+            social:
+              - icon: fontawesome/solid/globe
+                link: https://www.herzog-online.com
+                name: Herzog GmbH website
+              - icon: fontawesome/solid/envelope
+                link: mailto:info@herzog-online.com
+                name: Email contact
           nav_translations:
             # nav_en:start
             "Start": "Home"

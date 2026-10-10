@@ -1,0 +1,25 @@
+{#-
+  Theme-Erweiterung fuer die zweisprachige Fassung (theme.custom_dir).
+
+  Nicht-deutsche Seiten (heute: Englisch unter /en/) laden ihren eigenen
+  Suchindex <sprache>/search/search_index.json, den hooks/sprachen.py nach dem
+  Build aus dem gemeinsamen Index des i18n-Plugins abteilt. Material liest den
+  Index relativ zu "base" aus #__config; das Skript haengt die Sprache an, bevor
+  das Material-Skript startet. Die Trefferadressen im Index sind entsprechend
+  relativ zu /<sprache>/.
+-#}
+{% extends "base.html" %}
+
+{% block config %}
+  {{ super() }}
+  {%- if config.theme.language and config.theme.language != "de" %}
+    <script>
+      (function () {
+        var el = document.getElementById("__config")
+        var cfg = JSON.parse(el.textContent)
+        cfg.base = cfg.base.replace(/\/+$/, "") + "/{{ config.theme.language }}/"
+        el.textContent = JSON.stringify(cfg)
+      })()
+    </script>
+  {%- endif %}
+{% endblock %}
