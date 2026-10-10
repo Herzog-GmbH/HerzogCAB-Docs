@@ -30,31 +30,32 @@ Gesammelt beim Übersetzen des Handbuchs ins Englische. Abgearbeitet = ~~durchge
 | ~~tasks/build-hall.md:221–222,277~~ | ~~Außenwände/Innenwände (Programm Singular), **3D-Ansicht**~~ → Werkzeuge **Außenwand**/**Innenwand**, Ansicht-Schalter **3D** |
 | tasks/create-print-template.md:26–27, 90–94 | ~~Druck Editor/Druck-Editor gemischt~~ (Datei vereinheitlicht). TODO „Stand 1.4.5“ **bleibt**: eine Funktion „Vorlage als Standard setzen“ gibt es weiterhin nicht. Hinweis: „Druck-Editor“ steht noch auf ~19 weiteren DE-Seiten (Programm selbst mischt: Navigation „Druck Editor“, `media_library.cpp` „Druck-Editor“). |
 | mehrere (master-data/index.md:7, braiding-machines.md:65, media.md:50, print-templates/index.md:18) | Arbeitsbereich / Arbeitsverzeichnis / Workspace gemischt — **offen:** das Programm mischt selbst (Arbeitsbereich ~18×, Arbeitsverzeichnis ~37×, Workspace ~39× in `tr()`); erst Begriff in TERMINOLOGIE.md festlegen (dort „Arbeitsverzeichnis“ / „Workspace-Status“), dann Programm + Handbuch angleichen. |
+| ~~calculations/production/dimensions.md:1 (dazu index.md, change-gears.md, Navigation)~~ | ~~„Maschinen-Dimensionierung“ — Programm-Navigation: „Maschinendimensionierung“~~ (10.10.; EN „Machine sizing“) |
 
 ## B. Englische Programmübersetzung (`app_en.ts`, Web `en.json`) — uneinheitlich
 
 | Deutsch | Programm EN heute | Soll (TERMINOLOGIE.md) |
 |---|---|---|
-| Flügelrad, Flügelradgruppe, Flügel-Speichen | „horn gear“ (61×), „Horn spokes“, Web „horn gears“ | **horngear** |
-| Klöppel-Tabelle (Auftrag) | „Bobbin Table“ | Carrier table |
-| Besetzung (Normale/Halbe/Tandem … 1-1 usw.), Besetzungsübersicht | „occupation“ / „setup“ gemischt | einheitlich |
-| Arbeitsverzeichnis | „Working directory“ / „Workspace folder“ | workspace folder |
-| Litze, Litzengeflecht | „Lace braid“ / „flat braid“ / „Strand“ | klären |
-| Spulvolumen | „Bobbin Volume“ / „Winding volume“ | bobbin volume |
-| Spulmaschinen | „Bobbin winding machines“ / „winding machines“ | einheitlich |
-| Abzug (Gatter) | „Take-up“ — beim Gatter ist es ein Abzug über Kopf/rollend | pay-off |
-| Aufwicklung und Abzug (Flechtmaschine) | beide „Take-up“ | trennen |
-| Stufen (Treppe) | „Stepped“ (Kollision mit Wandanzeige) | Steps |
+| ~~Flügelrad, Flügelradgruppe, Flügel-Speichen~~ | ~~„horn gear“ (61×), „Horn spokes“, Web „horn gears“~~ | ~~**horngear**~~ (Desktop 1da5702: „horngear“, „Horngear spokes“; Web: Nachtrag folgt) |
+| ~~Klöppel-Tabelle (Auftrag)~~ | ~~„Bobbin Table“~~ | ~~Carrier table~~ (Desktop 1da5702, Handbuch angeglichen) |
+| ~~Besetzung (Normale/Halbe/Tandem … 1-1 usw.), Besetzungsübersicht~~ | ~~„occupation“ / „setup“ gemischt~~ | ~~einheitlich~~ → „Setup“, „Normal/Half/Tandem setup …“, „Setup Overview“, „Edit Setup“ (Desktop; Web: Nachtrag folgt) |
+| ~~Arbeitsverzeichnis~~ | ~~„Working directory“ / „Workspace folder“~~ | ~~workspace folder~~ (überall „Workspace folder“) |
+| Litze, Litzengeflecht | ~~„Lace braid“ / „flat braid“ / „Strand“~~ | umgesetzt: Material (Kern-Mantel, HLM) = „Strand“, Geflechtsart = „Lace braid“ (Druck-Editor „Lace“) — **Entscheidung Eike offen**, siehe TERMINOLOGIE.md |
+| ~~Spulvolumen~~ | ~~„Bobbin Volume“ / „Winding volume“~~ | ~~bobbin volume~~ (Trommel-Editor bleibt „Winding volume“) |
+| ~~Spulmaschinen~~ | ~~„Bobbin winding machines“ / „winding machines“~~ | ~~einheitlich~~ → „bobbin winding machine(s)“ |
+| ~~Abzug (Gatter)~~ | ~~„Take-up“ — beim Gatter ist es ein Abzug über Kopf/rollend~~ | ~~pay-off~~ (Katalog und Gatter-Dialog) |
+| ~~Aufwicklung und Abzug (Flechtmaschine)~~ | ~~beide „Take-up“~~ | ~~trennen~~ → Aufwicklung = „Take-up winding“, Abzug = „Take-up“ |
+| ~~Stufen (Treppe)~~ | ~~„Stepped“ (Kollision mit Wandanzeige)~~ | ~~Steps~~ (Wandanzeige bleibt „Stepped“) |
 | Wiederherstellen (Web, Versionen) | „Redo“ | Restore |
 | Größe (Web, Medien) | „Quantity“ | Size |
-| Favorisieren | „Favor“ | Add to favorites |
-| Flechtmaschinen / Spulmaschine | „Bobbin Winders per Braiding Machine“ (Sinn verdreht) | Braiding machines per bobbin winding machine |
-| Flechtbezeichnung | „Linear density:“ | Braid designation |
-| Laylength | Tippfehler | Lay length |
-| SP-Flechter / PA4 / Querrichtung / Geflechtsdurchmesser | je zwei Übersetzungen | einheitlich |
-| Seilgewicht / Seillänge (Kern-Mantel, Laufzeit) | „Rope weight/length“ | Product weight/length (auch DE-Quelltext!) |
-| colour/color, licence/license | gemischt | color, licence |
-| Neuer Auftrag | „New Job“ (sonst order) | New order |
+| ~~Favorisieren~~ | ~~„Favor“~~ | ~~Add to favorites~~ |
+| ~~Flechtmaschinen / Spulmaschine~~ | ~~„Bobbin Winders per Braiding Machine“ (Sinn verdreht)~~ | ~~Braiding machines per bobbin winding machine~~ |
+| ~~Flechtbezeichnung~~ | ~~„Linear density:“~~ | ~~Braid designation~~ (Feinheit dafür „Fineness“) |
+| ~~Laylength~~ | ~~Tippfehler~~ | ~~Lay length~~ |
+| ~~SP-Flechter / PA4 / Querrichtung~~ / Geflechtsdurchmesser | ~~je zwei Übersetzungen~~ | ~~einheitlich~~ → „Spiral braider“, „Packing braider, 4 lanes“, „cross direction“; **Geflechtsdurchmesser offen** („Product diameter:“ / „Braid diameter“, Abgleich Desktop/Web läuft) |
+| Seilgewicht / Seillänge (Kern-Mantel, Laufzeit) | ~~„Rope weight/length“~~ | EN erledigt („Weight:“, „Product length per bobbin set:“); **DE-Quelltext noch „Seilgewicht:“, „Seillänge / Spule-Satz:“** |
+| ~~colour/color, licence/license~~ | ~~gemischt~~ | ~~color, licence~~ (Desktop; dazu catalogue, sonst US-Schreibung; Handbuch-Desktopseiten angeglichen) |
+| ~~Neuer Auftrag~~ | ~~„New Job“ (sonst order)~~ | ~~New order~~ (auch „+ New design“) |
 | Web `schema.ts` Feldnamen (Hersteller, Einheit der Feinheit, Aussendurchmesser, Flügelrad-Durchmesser, Farbwert, Referenzsystem, Strasse) | ohne Übersetzungsschlüssel → im englischen Web deutsch | übersetzen |
 
 ## C. Diagramme ergänzt / vorgeschlagen

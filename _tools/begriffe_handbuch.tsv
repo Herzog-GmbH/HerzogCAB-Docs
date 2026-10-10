@@ -1,48 +1,48 @@
 deutsch	englisch	haeufigkeit
-Motiv		79
-So erzeugen		79
-Ziel-Datei		79
-Speichern	Save	62
+Speichern	Save	61
 Löschen	Delete	54
 Material	Material	35
 Flechtwinkel	Braiding angle	30
-Abbrechen	Cancel	29
-Drucken	Print	28
+Abbrechen	Cancel	26
 Fachung	Ply count	26
-Neu	New	26
 Name	Name	25
 Dichte	Density	25
+Drucken	Print	24
 Berechnen	Calculate	23
-Design	Design	23
-Bearbeiten	Edit	22
-Übernehmen	Apply	21
+Design	Design	22
 Aufträge	Orders	21
+Bearbeiten	Edit	21
 Klöppelanzahl	Number of carriers	21
+Übernehmen	Apply	20
+Motiv		18
+So erzeugen		18
+Ziel-Datei		18
 Öffnen	Open	18
 Maschinentyp	Machine type	18
 Feinheit	Fineness	18
-3D	3D	17
 Spule	Bobbin	17
-Passwort	Password	16
+Neu	New	17
+3D	3D	16
 Auftrag	Order	16
 Maschine	Machine	16
-Geflechtsart	Braid type	16
+Passwort	Password	15
 Produktion	Production	15
 Berechnungen	Calculations	15
-Designs	Designs	15
 Spulen	Bobbins	15
+Geflechtsart	Braid type	15
 Firma	Company	14
-Anmelden	Sign in	14
 Weiter	Next	14
+Designs	Designs	14
 Kunde	Customer	14
 Doppelklick	Double-click	14
 Voraussetzungen		14
 E-Mail	Email	13
 Kundenkonto		13
+Anmelden	Sign in	13
 Workspace-Einstellungen	Workspace settings	13
 Status	Status	13
 Duplizieren	Duplicate	13
-Versionen		13
+Versionen	Versions	13
 Benutzer	Users	12
 CmDongle		12
 Materialdurchmesser	Material diameter	12
@@ -52,29 +52,27 @@ Druck Editor	Print editor	11
 Trommeln	Drums	11
 Verwendung	Usage	11
 Entfernen	Remove	10
-E-Mail-Adresse	Email address	10
 Designer	Designer	10
 Suche	Search	10
-Aus Herzog-Katalog …	From Herzog catalogue …	10
 Bedeckung	Covering	10
 Standort	Location	10
 Produktdurchmesser	Product diameter	10
 Füllungsgrad	Filling grade	10
 nicht		9
+E-Mail-Adresse	Email address	9
 Bearbeiter	Editor	9
 Abmelden	Sign out	9
 Beschreibung	Description	9
+Aus Herzog-Katalog …	From Herzog catalogue …	9
 Zubehör	Accessories	9
 Seriennummer	Serial number	9
 Gruppe	Group	9
-Lizenz	Licence	9
 Web-App		8
 Mit Microsoft anmelden	Sign in with Microsoft	8
 Administrator	Administrator	8
 Betrachter	Viewer	8
 Stammdaten	Master data	8
 Rolle	Role	8
-Katalog	Catalogue	8
 Spulerei	Winding	8
 Klöppel	Carriers	8
 Ergebnis	Result	8
@@ -84,28 +82,24 @@ Traglast	Load capacity	8
 Voll	Full	8
 Anzahl Klöppel	Number of carriers	8
 Ausrichtung	Orientation	8
-Aufwicklung	Take-up	8
+Aufwicklung	Take-up winding	8
 Produkt	Product	8
-Spulauftrag erstellen	Create winding order	8
+Lizenz	Licence	8
 Geflechtsdurchmesser	Braid diameter	8
 Herzog CAB	Herzog CAB	7
-Beenden	Quit	7
 Passwort vergessen		7
 Hallenplaner	Factory Planner	7
 ,	,	7
-Zylinder	Cylinder	7
+Katalog	Catalogue	7
 Maschinenpark	Machine Fleet	7
 Baustein	Module	7
 Besetzung	Setup	7
-Packungsgeflecht	Packing braid	7
-Von	From	7
+Von	By	7
 Favoriten	Favorites	7
-Flechtmaschinen	Braiding machines	7
+Zurück	Back	7
 Kunden	Customers	7
-Spulmaschinen	Bobbin winding machines	7
 Aufwickler	Take-up winder	7
 Bild hochladen	Upload image	7
-Farbe	Color	7
 Neues Design	New design	7
 Druckvorlage wählen	Choose print template	7
 Grundriss	Floor plan	7
@@ -118,12 +112,15 @@ Benutzer verwalten	Manage users	6
 Land	Country	6
 Telefon	Phone	6
 und		6
+Beenden	Quit	6
 Profile verwalten …	Manage profiles …	6
 Arbeitsverzeichnis	Workspace folder	6
 Allgemein	General	6
 Lizenzportal	Licence portal	6
+Packungsgeflecht	Packing braid	6
 Zu	To	6
-Zurück	Back	6
+Flechtmaschinen	Braiding machines	6
+Als Kopie speichern	Save as copy	6
 Drehzahl	Speed	6
 Trommel	Drum	6
 Fadenspannung	Yarn tension	6
@@ -131,8 +128,8 @@ Bild aus Katalog übernehmen	Use catalogue image	6
 Rundgeflecht	Round braid	6
 Litzengeflecht	Lace braid	6
 Alle Garne	All yarns	6
+Farbe	Color	6
 Ja	Yes	6
-Bestücken	Populate	6
 Maschinenliste	Machine list	6
 Bezeichnung	Name	6
 Bild entfernen	Remove image	6
@@ -140,7 +137,7 @@ Baujahr	Year of manufacture	6
 Notizen	Notes	6
 Baureihe	Series	6
 Farben	Colors	6
-Auftrag speichern	Save order	6
+Spulauftrag erstellen	Create winding order	6
 Sprache	Language	6
 Garnart	Yarn type	6
 Desktop-App		5
@@ -161,55 +158,53 @@ Verschieben	Move	5
 Profile und Rollen	Profiles and roles	5
 Suchen	Search	5
 Historie	History	5
+Zylinder	Cylinder	5
 Vierkant	Square	5
 Kante	Edge	5
 Spulauftrag	Winding order	5
 Cloud-Abgleich		5
 Quadratgeflecht	Square braid	5
+Soutachegeflecht	Soutache braid	5
 Berechnung	Calculation	5
 In Produktion	In production	5
-Kacheln	Tiles	5
-Als Kopie speichern	Save as copy	5
 Webserver	Web Server	5
 Sortierung	Sorting	5
 Auswahl	Select	5
+Spulmaschinen	Bobbin winding machines	5
 Abwickler	Pay-offs	5
 Gatter	Creels	5
 Spulstellen	Winding heads	5
-Zu Flechtmaschinen hinzufügen	Add to braiding machines	5
 Werkzeugleiste		5
 Klöppeltabelle	Carrier table	5
 Palette	Palette	5
 Produktbreite	Product width	5
+Bestücken	Set up	5
 Anzeige	Display	5
 Einpassen	Fit	5
 Alle Plätze belegt	All seats taken	5
 CodeMeter Kontrollzentrum		5
-Spule-Volumen	Bobbin Volume	5
+Spule-Volumen	Bobbin volume	5
 Kopieren	Copy	5
 Titer	Titer	5
+Auftrag speichern	Save order	5
 Flechtmaschine	Braiding machine	5
 Kopfzeile		5
 Länge pro Spule	Length per bobbin	5
 Mein Konto		5
-Bestellen		5
+Bestellen	Order	5
 Bausteine	Modules	5
 Rechner	Calculators	5
 Druckvorlagen bearbeiten	Edit print templates	5
 kein		5
-Rückgängig	Undo	5
 bearbeiten		5
-Wiederherstellen	Redo	5
+Wiederherstellen	Restore	5
 Berechnung über	Calculation via	5
-Flechtbezeichnung	Linear density	5
+Flechtbezeichnung	Braid designation	5
 Produktlänge	Product length	5
 LDAP / Active Directory	LDAP / Active Directory	4
 Straße	Street	4
 Rollen	Roles	4
 Mein Profil	My profile	4
-Angemeldet bleiben	Stay signed in	4
-Passwort vergessen?	Forgot your password?	4
-Im Lizenzportal ändern	Change in licence portal	4
 Profilbild		4
 Ändern	Change	4
 Profil	Profile	4
@@ -221,42 +216,42 @@ Lizenzportal öffnen	Open licence portal	4
 Deaktivieren	Deactivate	4
 Neuer Benutzer	New user	4
 Aus Entra importieren	Import from Entra	4
-Anlegen	Create	4
 Überschreiben	Overwrite	4
 Navigation	Navigation	4
 Einstellungen	Settings	4
 Gangbahn-Animation	Track animation	4
-Normale Besetzung	Standard setup	4
+Normale Besetzung	Normal setup	4
 Halbe Besetzung	Half setup	4
 Geflechtsdichte	Braid density	4
-Soutachegeflecht	Soutache braid	4
 Startseite	Home page	4
 Testversion	Trial version	4
 Freigegeben	Released	4
 Abgeschlossen	Completed	4
 Tabelle	Table	4
+Kacheln	Tiles	4
 Alle	All	4
 aktiv	active	4
 Karten	Cards	4
 Stich	Pitch	4
 Verlegebreite	Traverse width	4
 Haspelvolumen	Reel volume	4
+Zu Flechtmaschinen hinzufügen	Add to braiding machines	4
 Artikelnummer	Article number	4
 Zu Spulen hinzufügen	Add to bobbins	4
-Besetzungsübersicht	Occupation Overview	4
+Besetzungsübersicht	Setup Overview	4
+Laden	Load	4
 Färben	Color	4
 Garn N		4
 Halb	Half	4
 Textur	Texture	4
 Muster	Pattern	4
-Texturen	Textures	4
 Flechtbild	Braid pattern	4
 Ansicht	View	4
 Zähler	Counters	4
 Einheit	Unit	4
 Maßstab setzen	Set scale	4
 Typ	Type	4
-Von diesem Rechner abmelden	Sign out this computer	4
+Als Ist-Belegung setzen	Set as actual assignment	4
 Plätze freigeben		4
 erste		4
 Kerndurchmesser	Core diameter	4
@@ -268,21 +263,20 @@ Quelle	Source	4
 Materialart	Material	4
 Materialien	Materials	4
 Notiz	Note	4
-Zur Auftragsliste	Back to orders	4
 Auftragsdatum	Order date	4
 Neuer Flechtauftrag	New braiding order	4
 QR-Code	QR Code	4
-Spulauftrag speichern	Save winding order	4
 Fadengeschwindigkeit	Yarn speed	4
 Filter	Filter	4
 Papierformat	Paper size	4
 Lizenz aktivieren		4
 Verbinden	Connect	4
 Wann passend		4
+Rückgängig	Undo	4
 Wiederholen	Redo	4
 Konto	Account	4
-Papierkorb		4
-Querrichtung	transverse direction	4
+Papierkorb	Recycle bin	4
+Querrichtung	cross direction	4
 Geflechtsachse	braid axis	4
 Geflechtstyp	Braid type	4
 Faktor Breite/Ø	Width/Ø factor	4
@@ -290,23 +284,26 @@ Schema-Skizze		4
 Multifil	Multifilament	4
 Monofil	Monofilament	4
 Standard-Profil	Default profile	3
+Entra-Gruppe → Rolle	Entra group → role	3
 Firmendaten verwalten	Manage company data	3
 Fax	Fax	3
 Profile	Profiles	3
+Angemeldet bleiben	Stay signed in	3
+Passwort vergessen?	Forgot your password?	3
 fünf		3
 Profil öffnen	Open profile	3
+Im Lizenzportal ändern	Change in licence portal	3
 Aktuelles Passwort	Current password	3
 Workspace		3
 Profil wechseln …	Switch profile …	3
 Vom Kundenkonto aktualisieren	Refresh from customer account	3
-Speicherort der Firma		3
-Auf Netzlaufwerk verschieben …	Move to network drive …	3
+Speicherort der Firma	Company storage location	3
 Neuer Ordner	New folder	3
 Aktiv	Active	3
 Passwort zurücksetzen…	Reset password…	3
 Aus LDAP importieren	Import from LDAP	3
+Anlegen	Create	3
 Importieren	Import	3
-Vorschlag berechnen	Calculate suggestion	3
 Herzog CAB Web	Herzog CAB Web	3
 Cloud-Upload		3
 Medienbibliothek	Media library	3
@@ -315,6 +312,7 @@ Edition	Edition	3
 Hohlgeflecht	Hollow braid	3
 Miete	Lease	3
 Offline-Miete		3
+Spiralgeflecht	Spiral braid	3
 Wickeltechnik	Winding technology	3
 Überfällig	Overdue	3
 Diese Woche	This week	3
@@ -331,34 +329,34 @@ Ablaufstellen	Pay-off positions	3
 Abzug	Take-up	3
 Technische Daten	Technical data	3
 Tandem Besetzung	Tandem setup	3
-Zu Spulmaschinen hinzufügen	Add to winding machines	3
+Zu Spulmaschinen hinzufügen	Add to bobbin winding machines	3
 Wickellänge	Winding length	3
-Spulvolumen	Bobbin Volume	3
+Spulvolumen	Bobbin volume	3
 Leergewicht	Empty weight	3
 Zu Trommeln hinzufügen	Add to drums	3
-Laden	Load	3
 Speichern unter neuem Namen	Save under new name	3
 Vorschau	Preview	3
 Bewegen	Move	3
 Vor	Forward	3
 Farbpalette	Color palette	3
+Texturen	Textures	3
 Farbe wählen	Choose color	3
-Geflechtsbindung	Braid binding	3
 Bahn-Art	Track type	3
-Design speichern	Save design	3
+Geflechtsbindung	Braid binding	3
 Nein	No	3
 Zeichenfläche		3
 Layout	Layout	3
 Duplizieren…	Duplicate…	3
 Löschen…	Delete…	3
+Außenwand	Exterior wall	3
+Innenwand	Interior wall	3
 Ausrichten	Align	3
 Belegung	Assignment	3
-Als Ist-Belegung setzen	Set as actual assignment	3
 Wände	Walls	3
+Von diesem Rechner abmelden	Sign out this computer	3
 Erneut versuchen	Try again	3
 Fingerabdruck		3
 „Aktivierung ungültig"		3
-Maschinenart	Machine type	3
 Neue Spule	New Bobbin	3
 Außendurchmesser	Outer diameter	3
 Maschinentypen	Machine types	3
@@ -375,7 +373,7 @@ Ansprechpartner	Contact person	3
 Mobil	Mobile	3
 PLZ	ZIP code	3
 Ort	City	3
-Einfügen	Paste	3
+Einfügen	Insert	3
 Umbenennen	Rename	3
 Produktname	Product name	3
 Geometrie	Geometry	3
@@ -388,6 +386,7 @@ HLM		3
 Einrichtzeit je Auftrag	Setup time per order	3
 Bestückungszeit je Spule	Loading time per bobbin	3
 Rechner-Symbole		3
+Zur Auftragsliste	Back to orders	3
 Auftragsname	Order name	3
 tex	tex	3
 dtex	dtex	3
@@ -398,15 +397,17 @@ Nr.	No.	3
 Pantone	Pantone	3
 Flechtauftrag	Braiding order	3
 Neuer Spulauftrag	New winding order	3
+Fehler	Error	3
+Spulauftrag speichern	Save winding order	3
 Spindeldrehzahl	Spindle speed	3
 Zusätzliche Lizenz anfordern		3
 Verlängern		3
-Nachricht an Herzog (optional)		3
+Nachricht an Herzog (optional)	Message to Herzog (optional)	3
 Einladen		3
 Seitenrand (mm)	Page margin (mm)	3
 Farbaufschlüsselung	Color breakdown	3
 Druckvorlagen anzeigen	View print templates	3
-Herzog CAB Designer		3
+Herzog CAB Designer	Herzog CAB Designer	3
 CmAct-Software-Lizenz		3
 Fertigstellen		3
 „Arbeitsverzeichnis einrichten"		3
@@ -418,15 +419,15 @@ Vergrößern	Zoom in	3
 Verkleinern	Zoom out	3
 Kostenlos testen	Try for free	3
 [Versionen](versions.md)		3
-Vorlage bearbeiten		3
+Vorlage bearbeiten	Edit template	3
 Produktionsstunden je Arbeitstag	Production hours per working day	3
 Stand	Status	3
 Maschinentype	Machine type	3
 Flügelraddrehzahl	Horngear speed	3
-Anteil Seele	Share core	3
+Anteil Seele	Core share	3
 Hinweis	Note	3
 Ergebnis-Einheit	Result unit	3
-Fadenlänge / Spule	Yarn Length / Bobbin	3
+Fadenlänge / Spule	Material length on bobbin	3
 Produktionsleistung	Production output	3
 Maschinenlaufzeit	Machine runtime	3
 Materialbreite	Material width	3
@@ -440,7 +441,6 @@ Suchen…	Search…	2
 Aus Entra wählen…	Select from Entra…	2
 Anmeldung über LDAP / Active Directory aktivieren	Enable sign-in via LDAP / Active Directory	2
 LDAP-URL	LDAP URL	2
-Gruppe → Rolle		2
 Logo wählen…	Choose logo…	2
 Rechtsform	Legal form	2
 PLZ / Ort	ZIP / City	2
@@ -461,10 +461,12 @@ Webserver-Port	Webserver port	2
 Webserver beim Start automatisch starten	Start webserver automatically at launch	2
 Webserver-Passwort	Webserver password	2
 Id	Id	2
+Einzelne Rechte	Individual permissions	2
 zentralen Benutzerdaten		2
 Netzwerk-Pfad		2
 Pfad kopieren	Copy path	2
 Ändern …	Change...	2
+Auf Netzlaufwerk verschieben …	Move to network drive …	2
 Lokal — nur dieser Rechner	Local — this computer only	2
 Netzwerk-Pfad — geteilt mit anderen Rechnern	Network path — shared with other computers	2
 Verbindung testen	Test connection	2
@@ -487,13 +489,12 @@ Tandem	Tandem	2
 Maintenance-Tool		2
 Regelmiete		2
 Platz		2
-Spiralgeflecht	Spiral braid	2
 Titelzeile		2
 Stern		2
-Favorisieren	Favor	2
+Favorisieren	Add to favorites	2
 Favorit entfernen	Remove favorite	2
 Geführte Touren	Guided Tours	2
-Geführte Touren...		2
+Geführte Touren…		2
 Farbdatenbank	Color Database	2
 Spulendatenbank	Bobbin Database	2
 Materialdatenbank	Material database	2
@@ -513,7 +514,7 @@ ohne		2
 Suchfeld		2
 Auftragsübersicht	Order Overview	2
 Listen		2
-Herzog CAB Testversion		2
+Herzog CAB Testversion	Herzog CAB trial version	2
 Alle Maschinen	All machines	2
 Spulengröße	Bobbin size	2
 Haspeldurchmesser	Reel diameter	2
@@ -524,7 +525,7 @@ Abzug und Aufnahme	Take-up and winding	2
 Hinweise	Notes	2
 Maschinengruppe	Machine group	2
 Name in Flechtmaschinen	Name in braiding machines	2
-Name in Spulmaschinen	Name in winding machines	2
+Name in Spulmaschinen	Name in bobbin winding machines	2
 Name in Aufwicklern	Name in take-up winders	2
 Name in Abwicklern	Name in pay-offs	2
 Name in Gattern	Name in creels	2
@@ -536,7 +537,7 @@ Verlegeweite	Traverse width	2
 Volumen	Volume	2
 Mausrad	Mouse wheel	2
 Rechte Maustaste		2
-Zurücksetzen		2
+Zurücksetzen	Reset	2
 Zuletzt bearbeitet oder gespeichert	Last edited or saved	2
 Ansicht schließen	Close view	2
 Linkslauf	Counterclockwise	2
@@ -547,10 +548,7 @@ Standardpalette	Standard palette	2
 leeren		2
 Klöppel Links	Carriers left-run	2
 Garn 1		2
-Fachungsfarben…	Plying colors…	2
-Alle wie Garn 1	All like yarn 1	2
 Aktive Farbe	Active color	2
-3D-Ansicht		2
 immer		2
 2-bahnig	2-track	2
 3-bahnig	3-track	2
@@ -558,6 +556,7 @@ immer		2
 rund	round	2
 Spiral-		2
 Material-Ø	Material Ø	2
+Design speichern	Save design	2
 Designname	Design name	2
 Standarddruck		2
 3D-Modell	3D model	2
@@ -570,8 +569,6 @@ Einrasten	Snap	2
 ein		2
 Auswählen	Select	2
 Messen	Measure	2
-Außenwand	Exterior wall	2
-Innenwand	Interior wall	2
 Sonstige	Other	2
 Tür	Door	2
 Tor	Gate	2
@@ -607,6 +604,7 @@ Container-Seriennummer		2
 Neue Einladung schicken		2
 Textfelder		2
 Versionsnummer		2
+Maschinenart	Machine type	2
 ← Zurück zum Maschinenpark	← Back to Machine Fleet	2
 Wicklungslänge	Winding Length	2
 Einschnitte Endflügelrad	End horngear slots	2
@@ -618,7 +616,6 @@ Maße berechnen	Calculate dimensions	2
 Maschine erstellen	Create machine	2
 Standard	Default	2
 eigene	custom	2
-GU		2
 Spulengewicht max.	Bobbin weight max.	2
 Überwachung	Monitoring	2
 Privatkunde	Private customer	2
@@ -636,9 +633,7 @@ Verwendet von	Used by	2
 Hochladen	Upload	2
 Trommel bis Ø … mm		2
 Traglast … kg		2
-ABS		2
 Pinolendurchmesser	Quill diameter	2
-AWS		2
 AWH		2
 Geflechtdurchmesser (min–max)	Braid diameter (min–max)	2
 Verlegung	Traversing	2
@@ -660,23 +655,20 @@ Klöppel gesamt	Total carriers	2
 Aktive Klöppel (pro Kopf)	Active carriers (per head)	2
 Stichgröße	Pitch size	2
 den	den	2
-Flechtwinkel [deg]	Braid angle [deg]	2
+Flechtwinkel [deg]	Braiding angle [deg]	2
 Produktdurchmesser [mm]	Product diameter [mm]	2
 Materiallänge auf Spule [m]	Material length on bobbin [m]	2
 Produktionsgeschwindigkeit [m/h]	Production speed [m/h]	2
 Laufzeit [h]	Runtime [h]	2
 Produktgewicht [kg]		2
 Gesamtgewicht	Total weight	2
-Design laden	Load design	2
 Design öffnen	Open design	2
-Klöppel-Tabelle	Bobbin Table	2
+Klöppel-Tabelle	Carrier table	2
 Farbname	Color name	2
 Hex-Wert	Hex value	2
 Rechner-Symbol		2
 Nicht speichern	Don't save	2
 Entwurf	Draft	2
-Zur Auftragsübersicht	To order overview	2
-Spulen gleichmäßig verteilen	Distribute bobbins evenly	2
 Gesamtlänge	Total length	2
 Aus Flechtauftrag aktualisieren	Update from braiding order	2
 Zeile hinzufügen…	Add row…	2
@@ -687,11 +679,11 @@ Administratoren		2
 Programm herunterladen		2
 Herzog CAB Web öffnen		2
 Anfrage an Herzog		2
-Datum		2
+Datum	Date	2
 in Bearbeitung		2
 erledigt		2
 abgelehnt		2
-Anzahl der Plätze		2
+Anzahl der Plätze	Number of seats	2
 Jetzt einrichten		2
 Letzte Anmeldung	Last sign-in	2
 14 Tage		2
@@ -707,7 +699,7 @@ Bereich	Area	2
 Vorlagen	Templates	2
 PDF		2
 Herzog		2
-Herzog CAB Vollversion		2
+Herzog CAB Vollversion	Herzog CAB full version	2
 Herzog CAB Web Testphase	Herzog CAB Web trial	2
 15 Minuten		2
 einen		2
@@ -722,7 +714,7 @@ Erneut prüfen	Check again	2
 Programm	Program	2
 „Update verfügbar"		2
 Jetzt aktualisieren	Update now	2
-Arbeitsverzeichnis automatisch mit der Cloud abgleichen	Sync workspace with the cloud automatically	2
+Arbeitsverzeichnis automatisch mit der Cloud abgleichen	Sync workspace folder with the cloud automatically	2
 In der Cloud	In the cloud	2
 Jetzt abgleichen	Sync now	2
 Nur Daten		2
@@ -737,27 +729,27 @@ Benutzermenü		2
 Hallenansicht	Shop floor view	2
 Import aus dem Desktop	Import from the desktop app	2
 Start	Start	2
-Code		2
-Aussendurchmesser		2
+Code	Code	2
+Aussendurchmesser	Outer diameter	2
 Wickeldurchmesser	Winding diameter	2
 Auftragsart	Order type	2
 Zeitraum	Period	2
 Vorlage löschen	Delete template	2
-Vorschau mit		2
-Minimieren		2
-Maximieren		2
+Vorschau mit	Preview with	2
+Minimieren	Minimize	2
+Maximieren	Maximize	2
 PDF speichern	Save PDF	2
 Flechtwinkel messen	Measure braiding angle	2
 Angemeldet als	Signed in as	2
 Anonyme Nutzungsstatistik senden	Send anonymous usage statistics	2
 Zuletzt geöffnet	Recently opened	2
-Startseite anpassen		2
+Startseite anpassen	Customize home page	2
 Anfrage an den Vertrieb	Enquiry to sales	2
-Jetzt bezahlen		2
-Abo bestellen		2
-Weitere Plätze		2
+Jetzt bezahlen	Pay now	2
+Abo bestellen	Order a subscription	2
+Weitere Plätze	Additional seats	2
 Nachricht	Message	2
-Unterschiede		2
+Unterschiede	Differences	2
 Live-Umrechner		2
 Benötigte Feinheit	Required fineness	2
 Durchmesser	Diameter	2
@@ -765,24 +757,24 @@ Rechteckhöhe	Rectangle height	2
 Rechteckbreite	Rectangle width	2
 Feinheit (Material)	Fineness (material)	2
 Soll-Flechtwinkel	Target braiding angle	2
-Anteil Mantel	Share cover	2
+Anteil Mantel	Cover share	2
 Flügelrad-Drehzahl	Horngear speed	2
-Leistung (Gesamt)		2
+Leistung (Gesamt)	Output (total)	2
 Gewicht (Gesamt)		2
 Seeldurchmesser	Core diameter	2
 Mantelstärke	Cover thickness	2
-Füllgrad auf der Trommel	Filling grade on the drum	2
+Füllgrad auf der Trommel	Fill level on the drum	2
 Randabstand	Flange clearance	2
 Aufwickler aus	Take-up winders from	2
 Produktgewicht	Product weight	2
 Flechten / 10 mm	Picks / 10 mm	2
 Flechten / Zoll	Picks / inch	2
-Flechten / franz. Zoll	Picks / french inch	2
+Flechten / franz. Zoll	Picks / French inch	2
 Bandkettentype	Rubber feed device	2
 Dehnung	Elongation	2
-Durchmesser Abzugsscheibe	Takeoff disc diameter	2
-Übersetzung Abzugsscheibe-Bandkette	Ratio takeoff disc - rubber feed chain	2
-Anzahl Spulmaschinen	Number of winding machines	2
+Durchmesser Abzugsscheibe	Take-up disc diameter	2
+Übersetzung Abzugsscheibe-Bandkette	Ratio take-up disc - rubber feed chain	2
+Anzahl Spulmaschinen	Number of bobbin winding machines	2
 Produktionsgeschwindigkeit	Production speed	2
 Produktlänge pro Spulensatz		2
 Verkürzung	Reduction	2
@@ -796,7 +788,7 @@ Spulmaschine	Bobbin winding machine	2
 Produktdaten	Product data	2
 Anzahl Schichten	Number of shifts	2
 Spulgeschwindigkeit	Winding speed	2
-Flechtmaschinen / Spulmaschine	Bobbin Winders per Braiding Machine	2
+Flechtmaschinen / Spulmaschine	Braiding machines per bobbin winding machine	2
 Spulenwechselzeit	Bobbin change time	2
 Schriftgröße	Font size	2
 JSON importieren...	Import JSON...	2
@@ -835,7 +827,7 @@ Verbindung prüfen	Test connection	1
 Basis-DN		1
 Kundenkonto und Lizenzportal		1
 Lizenz und Cloud (Einstellungen)		1
-Anmeldung und Abmelden		1
+Anmelden und Abmelden		1
 Rollen und Berechtigungen		1
 Profile (Arbeitsbereiche)		1
 Einstellungen (Dialog)		1
@@ -872,7 +864,6 @@ Rollenliste	Role list	1
 Administration	Administration	1
 Berechnungen / Export	Calculations / Export	1
 Spezialwerkzeuge	Expert tools	1
-Einzelnen Rechte		1
 SPEICHERORT	STORAGE LOCATION	1
 Zentrale Benutzerdaten		1
 Arbeitsbereich (Workspace)		1
@@ -911,6 +902,7 @@ Abwickler als eigene Maschinenart		1
 Gatter als eigene Maschinenart		1
 Trommel-Datenbank		1
 Aufwickler und Trommel im Auftrag		1
+Vorschlag berechnen	Calculate suggestion	1
 Druckvorlagen aus Herzog CAB Web		1
 Ein Kontingent, auch so angezeigt		1
 Maschinenseiten öffnen schneller		1
@@ -958,7 +950,7 @@ Feinheit / Titer		1
 lineare Dichte		1
 Gangbahn		1
 Herzog CAB Web / Web-App		1
-Horn Gear / Flügelrad		1
+Flügelrad	Horngear	1
 LDAP		1
 PCD		1
 Seelen	Cores	1
@@ -966,7 +958,7 @@ Spulstelle		1
 Workspace / Arbeitsverzeichnis		1
 Zweiter Faktor (2FA)		1
 Seite dieses Handbuchs		1
-Guided Tour		1
+Tour		1
 einmal zentral		1
 Kachel-Übersicht		1
 Navigationsbaum		1
@@ -999,7 +991,7 @@ Navigations-Tour		1
 Auftragseditor	Order Editor	1
 Überspringen	Skip	1
 Schrittanzeige		1
-Verlauf		1
+Verlauf	History	1
 rechten Fensterrand		1
 ). Ein Klick darauf klappt die Leiste		1
 Historie einklappen	Collapse history	1
@@ -1010,8 +1002,8 @@ Home	Home	1
 ganze Fensterbreite		1
 Zwei Spalten		1
 Eine Spalte		1
-+ Neuer Auftrag	+ New Job	1
-+ Neues Design	+ New Design	1
++ Neuer Auftrag	+ New order	1
++ Neues Design	+ New design	1
 Details & Installation		1
 Nicht mehr anzeigen	Don't show again	1
 2 × 2		1
@@ -1111,7 +1103,7 @@ Ein Design öffnen	Open a design	1
 Dokument-Kopfzeile		1
 Parameter-Panel		1
 Labels	Labels	1
-Zusammenfassung		1
+Zusammenfassung	Summary	1
 zwei Design-Fenster gleichzeitig		1
 aktive Fenster		1
 Ansicht einpassen	Fit view	1
@@ -1128,18 +1120,20 @@ eigene Farbe		1
 Garn-Wähler (Werkzeugleiste).		1
 Garn n		1
 Fachungsfarben eines Klöppels im Dialog.		1
+Fachungsfarben…	Plying colors…	1
 Alle Garne wie Garn 1	All yarns like yarn 1	1
 an.		1
 Wo die Garnfarben erscheinen		1
 längs zum Faden		1
+3D-Ansicht	3D view	1
 Ausdruck und Auftrag		1
 Texturpalette	Texture palette	1
 welches Geflecht		1
 scrollbar		1
 zwei Seelen		1
-Normale Besetzung 1-1	Normal occupation 1-1	1
-Halbe Besetzung 1-3	Half occupation 1-3	1
-Tandem Besetzung 2-2	Tandem occupation 2-2	1
+Normale Besetzung 1-1	Normal setup 1-1	1
+Halbe Besetzung 1-3	Half setup 1-3	1
+Tandem Besetzung 2-2	Tandem setup 2-2	1
 Packungs-		1
 zulässigen		1
 20° bis 80°		1
@@ -1184,7 +1178,7 @@ Büro / Sozial	Office / staff	1
 Qualitätskontrolle	Quality control	1
 OBJEKTE	OBJECTS	1
 Banner / Logo	Banner / logo	1
-KATALOG	CATALOG	1
+KATALOG	CATALOGUE	1
 Maschine suchen…	Search machine…	1
 Typ-Filter		1
 Platzieren	Place	1
@@ -1212,8 +1206,8 @@ Bauelement	Element	1
 Tür/Tor öffnen		1
 schließen	close	1
 90° drehen	Rotate 90°	1
-Meter	Metres	1
-Millimeter	Millimetres	1
+Meter	Meters	1
+Millimeter	Millimeters	1
 Bild laden…	Load image…	1
 −90°	−90°	1
 +90°	+90°	1
@@ -1350,6 +1344,7 @@ Spulenart	Package type	1
 Spulendurchmesser max.	Max. package diameter	1
 Spulenlänge max.	Max. package length	1
 Gatter erstellen	Create creel	1
+GU		1
 GR		1
 GRP		1
 GRG		1
@@ -1384,7 +1379,7 @@ Trommelbreite [mm]	Drum width [mm]	1
 Leergewicht [kg]	Empty weight [kg]	1
 Pinolenbohrung [mm]	Quill bore [mm]	1
 Mitnahme-Pin [mm]	Driver pin [mm]	1
-Abstand Mitte zu Pin [mm]	Centre to pin distance [mm]	1
+Abstand Mitte zu Pin [mm]	Center to pin distance [mm]	1
 Grundrissen		1
 Flächen/Bereiche		1
 Grundrisse	Floor plans	1
@@ -1405,6 +1400,7 @@ Trommelbreite max.	Drum width max.	1
 Materialdurchmesser (min–max)	Material diameter (min–max)	1
 Abwickler erstellen	Create pay-off	1
 AB		1
+ABS		1
 ABST		1
 ABA		1
 Haspel … ccm		1
@@ -1416,6 +1412,7 @@ Wickelspannung (min–max)	Winding tension (min–max)	1
 Diese Maschine wickelt auf eine Haspel	This machine winds onto a reel	1
 Aufwickler erstellen	Create take-up winder	1
 AW		1
+AWS		1
 AWST		1
 AWSP		1
 AWSA		1
@@ -1441,11 +1438,11 @@ Nr. englisch	English count	1
 Titer berechnen	Calculate titer	1
 Spule öffnen	Open Bobbin	1
 Wickellänge [mm]	Winding length [mm]	1
-Spule-Volumen [ccm]	Bobbin Volume [ccm]	1
-Füllgrad [%]	Fill factor [%]	1
-Flechten pro 10 Millimeter	Braids per 10 millimetres	1
-Flechten pro Zoll	Braids per inch	1
-Flechten pro französisch Zoll	Braids per French inch	1
+Spule-Volumen [ccm]	Bobbin volume [ccm]	1
+Füllgrad [%]	Filling grade [%]	1
+Flechten pro 10 Millimeter	Picks per 10 millimeters	1
+Flechten pro Zoll	Picks per inch	1
+Flechten pro französisch Zoll	Picks per French inch	1
 Produktlänge pro Spule-Satz [m]	Product length per bobbin set [m]	1
 Verkürzung [%]	Reduction [%]	1
 Genutzte Köpfe	Heads used	1
@@ -1459,7 +1456,7 @@ Trommeln öffnen	Open drums	1
 Lieferlänge je Trommel [m]	Delivery length per drum [m]	1
 Füllgrad auf der Trommel [%]	Filling grade on the drum [%]	1
 Randabstand zum Flansch [mm]	Flange clearance [mm]	1
-Anteil Seele [%]	Share core [%]	1
+Anteil Seele [%]	Core share [%]	1
 Material der Seele	Core material	1
 Dichte der Seele [g/cm³]	Core density [g/cm³]	1
 Füllungsgrad der Seele [%]	Core filling grade [%]	1
@@ -1467,6 +1464,7 @@ Kapazität je Trommel [m]	Capacity per drum [m]	1
 Trommeln gesamt	Drums in total	1
 Länge je Trommel	Length per drum	1
 Schwerste Trommel	Heaviest drum	1
+Design laden	Load design	1
 Suchfeld und Filter		1
 Ergebniszeile		1
 Auftragsliste		1
@@ -1496,6 +1494,7 @@ Maschinendaten	Machine data	1
 Produktionsdaten	Production data	1
 eingebauten Webserver		1
 für sich stehen		1
+Zur Auftragsübersicht	To order overview	1
 eine		1
 1 · Auftrag		1
 2 · Spulerei — was wird gespult?		1
@@ -1541,8 +1540,9 @@ Einrichtzeit (min)	Setup time (min)	1
 Bestückung je Spule (min)	Loading per bobbin (min)	1
 Geschwindigkeit (m/min)	Speed (m/min)	1
 Maschine hinzufügen…	Add machine…	1
-Spulmaschine hinzufügen	Add winding machine	1
-Spulzeit-Details…	Bobbin winding time details…	1
+Spulmaschine hinzufügen	Add bobbin winding machine	1
+Spulen gleichmäßig verteilen	Distribute bobbins evenly	1
+Spulzeit-Details…	Winding time details…	1
 Zeit-Kachel		1
 Gesamtdauer (parallel)		1
 Aus Hochrechnung übernehmen	Apply from estimate	1
@@ -1603,7 +1603,7 @@ In der Authenticator-App öffnen		1
 aktuellen Code		1
 Einrichten		1
 Portal		1
-Code (Authenticator-App)	Code (authenticator app)	1
+Code (Authenticator-App)		1
 Ihr Name		1
 Name speichern		1
 Benutzer im Kundenkonto		1
@@ -1634,7 +1634,7 @@ Spalten	Columns	1
 wie		1
 Automatisch	Automatic	1
 Rund	Round	1
-Litze	Strand	1
+Litze	Lace	1
 Pro Bahn (mehrspaltig)	Per track (multi-column)	1
 eine Spalte je Gangbahn		1
 Angezeigte Läufe	Displayed runs	1
@@ -1709,7 +1709,7 @@ Profil anlegen	Create profile	1
 mehr als ein		1
 „Profil auswählen"		1
 späteren		1
-Arbeitsverzeichnis übernehmen	Apply working directory	1
+Arbeitsverzeichnis übernehmen	Apply workspace folder	1
 deinstallieren		1
 Systemvoraussetzungen		1
 Einsatz-Szenarien		1
@@ -1760,11 +1760,6 @@ jedem Programmstart		1
 Release-Seite öffnen	Open release page	1
 Später	Later	1
 Komponenten aktualisieren		1
-Außenwände		1
-Innenwände		1
-Design erstellen		1
-Bindung/Besetzung		1
-3D-Rundansicht		1
 Cloud (app.herzog-cab.com)	Cloud (app.herzog-cab.com)	1
 , und klicken Sie auf		1
 Beide arbeiten		1
@@ -1785,11 +1780,10 @@ wie vielen Fäden je Klöppel		1
 Material und Spule	Material and bobbin	1
 Administrator des Kundenkontos		1
 Testen		1
-Entra-Gruppe → Rolle	Entra group → role	1
 Passwort zurücksetzen	Reset password	1
 Rollen für die Web-App		1
-Festlegen		1
-Netzwerkpfad		1
+Festlegen	Set	1
+Netzwerkpfad	Network path	1
 Gerade angemeldet	Currently signed in	1
 Kästchen		1
 Rolle zuweisen		1
@@ -1801,33 +1795,34 @@ Produktlänge pro Trommel	Product length per drum	1
 Rechner suchen …	Search calculators …	1
 Eingaben	Inputs	1
 Ablauf	Sequence	1
-Passende Spule		1
+Passende Spule	Matching bobbin	1
 angekreuztes Zubehör übernimmt die eigene Maschine		1
 Den gewählten Abzug übernimmt die eigene Maschine.	The selected take-up is added to your own machine.	1
 Produktseite	Product page	1
 Adresse	Address	1
 Kontakt	Contact	1
 Rechtliches	Legal	1
-Alle Designs		1
+Alle Designs	All designs	1
 Ohne Ordner	No folder	1
 Ordner umbenennen	Rename folder	1
 Ordner kopieren	Copy folder	1
 Ordner löschen	Delete folder	1
 Zuletzt bearbeitet	Last edited	1
 Listenansicht	List view	1
-Verschieben nach …		1
-Kopieren nach …		1
+Verschieben nach …	Move to …	1
+Kopieren nach …	Copy to …	1
 Klöppelnummern	Carrier numbers	1
-Alle Farben löschen	Clear all colours	1
+Alle Farben löschen	Clear all colors	1
 Als neu speichern	Save as new	1
-Speichern & zurück		1
+Speichern & zurück	Save & return	1
 Seelenfäden	Core threads	1
 Bedeckung %	Covering %	1
-Eigene Farbe	Custom colour	1
+Eigene Farbe	Custom color	1
 Klöppel Rechts	Carriers right-run	1
 Bahn		1
 Fachungsfarben – &lt;Klöppel&gt;		1
 Eigene Farbe wählen…	Choose custom color…	1
+Alle wie Garn 1	All like yarn 1	1
 Anhalten	Stop	1
 Ist	Current	1
 Neuer Grundriss	New floor plan	1
@@ -1844,7 +1839,6 @@ Nur Daten, keine Bilder und Dokumente (schneller, kleiner)	Data only, no images 
 Angelegt	Created	1
 Aktualisiert	Updated	1
 Unverändert	Unchanged	1
-Fehler	Error	1
 Arbeitsverzeichnisses		1
 — der neuere gewinnt. Es wird		1
 Arbeitsbereich Ihrer Firma		1
@@ -1858,7 +1852,7 @@ Sprachauswahl		1
 Inhalt	Content	1
 Seitentitel		1
 Reitern		1
-Abo und Bestellung		1
+Abo und Bestellung	Subscription and orders	1
 Sicherheitsabfragen		1
 Versionskonflikt		1
 Ab 768 px (Tablet)		1
@@ -1882,7 +1876,7 @@ Neue Spulmaschine	New bobbin winding machine	1
 Modell (Herzog-Katalog)	Model (Herzog catalogue)	1
 Bindungen	Bindings	1
 Abmessungen	Dimensions	1
-Abzugsoption	Take-off option	1
+Abzugsoption	Take-up option	1
 Bilder & 3D	Images & 3D	1
 Box-Ansichten	Box views	1
 Massstab	Scale	1
@@ -1890,17 +1884,17 @@ Drehung X/Y/Z		1
 Ausrichtung vorne	Front direction	1
 Dokumente & Notizen	Documents & notes	1
 Zubehör hinzufügen	Add accessory	1
-Hersteller / Marke		1
-Einheit der Feinheit		1
-Flügelrad-Durchmesser		1
+Hersteller / Marke	Manufacturer / brand	1
+Einheit der Feinheit	Fineness unit	1
+Flügelrad-Durchmesser	Horngear diameter	1
 Pinolenbohrung	Quill bore	1
 Mitnahme-Pin	Driver pin	1
 Abstand Mitte zu Pin	Centre to pin distance	1
-Farbwert		1
-Referenzsystem		1
-Strasse		1
+Farbwert	Color value	1
+Referenzsystem	Reference system	1
+Strasse	Street	1
 Bilder	Images	1
-Größe	Size	1
+Größe	Quantity	1
 Hochgeladen	Uploaded	1
 Materialverwaltung öffnen	Open material management	1
 Spule-Verwaltung öffnen	Open Bobbin Management	1
@@ -1909,7 +1903,7 @@ Produktion von / bis		1
 Wickelparameter	Winding parameters	1
 Maschinen und Zeitplan	Machines and schedule	1
 Nur verknüpfen	Link only	1
-Spulzeit-Details	Bobbin winding time details…	1
+Spulzeit-Details	Winding time details…	1
 Elemente	Elements	1
 Name der Vorlage	Template name	1
 Verwerfen	Discard	1
@@ -1919,14 +1913,13 @@ neue Seite angelegt		1
 100%	100%	1
 Element bearbeiten	Edit element	1
 verschoben		1
-gelöscht		1
+gelöscht	deleted	1
 Bild auswählen	Select image	1
 Zusätzlich im Browser		1
 Abwicklung	Unrolled view	1
 Name oder Id	Name or Id	1
 Ansehen	View	1
-Einzelne Rechte	Individual permissions	1
-Hallenplaner anzeigen	View factory planner	1
+Hallenplaner anzeigen	View Factory Planner	1
 Aufträge anzeigen	View orders	1
 Designer anzeigen	View designer	1
 Berechnungen ausführen	Run calculations	1
@@ -1942,8 +1935,8 @@ Schnellzugriff	Quick access	1
 zwei Spalten		1
 untereinander		1
 letzten Berechnungen		1
-Nach oben		1
-Nach unten		1
+Nach oben	Move up	1
+Nach unten	Move down	1
 Nur Jahresabo.		1
 Zwei Abos.		1
 Ein Kontingent für Programm und Browser.		1
@@ -1952,19 +1945,19 @@ Bestellung mit Rechnung.		1
 Mail noch einmal schicken	Send e-mail again	1
 Gültig ab	Valid from	1
 Gültig bis	Valid until	1
-Stornieren		1
-Abo verlängern		1
-Rechnungsdaten		1
-Ihre Bestellnummer (optional)		1
-Rechnungsanschrift		1
-Land (Kürzel)		1
-USt-IdNr. (EU außerhalb Deutschlands)		1
-Zahlung		1
-Rechnung		1
-Karte		1
+Stornieren	Cancel order	1
+Abo verlängern	Renew subscription	1
+Rechnungsdaten	Billing details	1
+Ihre Bestellnummer (optional)	Your purchase order number (optional)	1
+Rechnungsanschrift	Billing address	1
+Land (Kürzel)	Country (code)	1
+USt-IdNr. (EU außerhalb Deutschlands)	VAT ID (EU outside Germany)	1
+Zahlung	Payment	1
+Rechnung	Invoice	1
+Karte	Card	1
 Anfrage schicken	Send enquiry	1
-Umfang		1
-Betrag		1
+Umfang	Scope	1
+Betrag	Amount	1
 Testversion bei Herzog anfragen		1
 Selbstregistrierung		1
 Passwort wiederholen	Repeat password	1
@@ -1977,13 +1970,13 @@ Voller Funktionsumfang		1
 Mengenbegrenzung		1
 Nach Ablauf		1
 Flecht- und Spulaufträge	Braiding and winding orders	1
-Hallenpläne		1
-Eintrag wiederherstellen		1
-Ausblenden		1
-Feld		1
-Diese Fassung		1
-Aktuell		1
-Gelöscht am		1
+Hallenpläne	Hall plans	1
+Eintrag wiederherstellen	Restore entry	1
+Ausblenden	Hide	1
+Feld	Field	1
+Diese Fassung	This version	1
+Aktuell	Current	1
+Gelöscht am	Deleted on	1
 letzten 20 Fassungen		1
 Umrechnung Feinheit	Fineness conversion	1
 Nr_Metrisch	Nr_metric	1
@@ -2005,11 +1998,11 @@ Schlitze je Normalflügelrad	Slots per standard horngear	1
 Schlitze in der Laufbahn	Slots in the track	1
 Abzug vorgegeben als	Take-up specified as	1
 Abzugsgeschwindigkeit	Take-up speed	1
-Abzugsscheibendurchmesser	Takeoff disc diameter	1
-Drehzahl Abzugsscheibe	Takeoff disc speed	1
+Abzugsscheibendurchmesser	Take-up disc diameter	1
+Drehzahl Abzugsscheibe	Take-up disc speed	1
 Wirksamer Abzug	Effective take-up	1
 Erforderliche Abzugsgeschwindigkeit	Required take-up speed	1
-Erforderliche Drehzahl Abzugsscheibe	Required takeoff disc speed	1
+Erforderliche Drehzahl Abzugsscheibe	Required take-up disc speed	1
 Erforderliche Flügelraddrehzahl	Required horngear speed	1
 Bezug des Flechtwinkels		1
 und einem darüber geführten		1
@@ -2017,31 +2010,31 @@ Seele	Core	1
 Mantel	Cover	1
 Anteil Seele + Anteil Mantel müssen zusammen 100 % ergeben.		1
 Fachung pro Klöppel	Ply count / carrier	1
-Leistung (Kern)		1
-Leistung (Mantel)		1
+Leistung (Kern)	Output (core)	1
+Leistung (Mantel)	Output (cover)	1
 Gewicht (Kern)		1
 Gewicht (Mantel)		1
-Litze (Kern)		1
-Litze (Mantel)		1
-Litzendurchmesser (Kern)		1
-Litzendurchmesser (Mantel)		1
-Länge pro Spule (Kern)		1
-Länge pro Spule (Mantel)		1
-Länge Geflecht (Kern)		1
-Länge Geflecht (Mantel)		1
-Verkürzung (Kern)		1
-Verkürzung (Mantel)		1
-Flechtlänge (Kern)		1
-Flechtlänge (Mantel)		1
-Produktion (Kern)		1
-Produktion (Mantel)		1
-Flechtzeit (Kern)		1
-Flechtzeit (Mantel)		1
+Litze (Kern)	Strand (core)	1
+Litze (Mantel)	Strand (cover)	1
+Litzendurchmesser (Kern)	Strand diameter (core)	1
+Litzendurchmesser (Mantel)	Strand diameter (cover)	1
+Länge pro Spule (Kern)	Length per bobbin (core)	1
+Länge pro Spule (Mantel)	Length per bobbin (cover)	1
+Länge Geflecht (Kern)	Braid length (core)	1
+Länge Geflecht (Mantel)	Braid length (cover)	1
+Verkürzung (Kern)	Reduction (core)	1
+Verkürzung (Mantel)	Reduction (cover)	1
+Flechtlänge (Kern)	Braiding length (core)	1
+Flechtlänge (Mantel)	Braiding length (cover)	1
+Produktion (Kern)	Production (core)	1
+Produktion (Mantel)	Production (cover)	1
+Flechtzeit (Kern)	Braiding time (core)	1
+Flechtzeit (Mantel)	Braiding time (cover)	1
 vorwärts		1
 Klöppelspule	Carrier bobbin	1
 Füllungsgrad der Spule	Bobbin filling grade	1
 Platzbedarf auf der Trommel	Space required on the drum	1
-Metergewicht	Weight per metre	1
+Metergewicht	Weight per meter	1
 davon Seele	of which core	1
 Gesamtgewicht je Trommel	Total weight per drum	1
 Trommel / Haspel	Drum / reel	1
@@ -2066,8 +2059,8 @@ Länge	Length	1
 Reset Zoom	Reset Zoom	1
 markierten		1
 Wie lange läuft die Maschine, bis ein voller Spulensatz aufgebraucht ist?		1
-Fadenlänge auf Spule	Yarn Length on Bobbin	1
-Garnstärke	Linear Density / Titer	1
+Fadenlänge auf Spule	Material length on bobbin	1
+Garnstärke	Fineness / Titer	1
 Fadendurchmesser	Material diameter	1
 Wert eingeben | Berechnen		1
 Berechnungen → Produkt → Hohlgeflecht		1
@@ -2089,11 +2082,11 @@ Restlänge über Gewicht	Residual length by weight	1
 Verschnitt/Reserve	Waste/reserve	1
 Gesamtlänge (inkl. Reserve)	Total length (incl. reserve)	1
 davon Reserve	of which reserve	1
-Anzahl Köpfe	Number heads per machine	1
-Spulmaschinentyp	Type of bobbin winder	1
+Anzahl Köpfe	Number of heads per machine	1
+Spulmaschinentyp	Bobbin winding machine type	1
 Halbautomat	Semi automatic	1
 Vollautomat	Fully automatic	1
-Spindeln pro Spulmaschine	Spindles per winder	1
+Spindeln pro Spulmaschine	Spindles per bobbin winding machine	1
 Leistung	Output	1
 Länge Geflecht	Product length	1
 Restlänge	Residual length	1
@@ -2129,8 +2122,8 @@ Dongle / CodeMeter-Container	Dongle / CodeMeter container	1
 Ohne Internet	Without internet	1
 Offline-Miete ziehen	Take offline lease	1
 1 bis 30 Tage		1
-Änderungen aus der Webapp ins Arbeitsverzeichnis übernehmen	Apply changes from the web app to the workspace	1
-Stattdessen dieses Arbeitsverzeichnis verwenden …	Use this working directory instead …	1
+Änderungen aus der Webapp ins Arbeitsverzeichnis übernehmen	Apply changes from the web app to the workspace folder	1
+Stattdessen dieses Arbeitsverzeichnis verwenden …	Use this workspace folder instead …	1
 nur auf diesem Rechner		1
 Zugangsschutz	Access Protection	1
 Webserver aktivieren	Enable web server	1
