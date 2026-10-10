@@ -13,11 +13,7 @@ Plätze.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Anmeldeseite der Web-App am breiten Bildschirm: links die blaue Markenfläche mit „Berechnen, gestalten, planen — im Browser", drei Stichpunkten und dem laufenden Zopf, rechts die Karte „Anmelden" mit E-Mail-Adresse und Passwort.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/anmelden`; automatisch per `python _tools/web_screenshots.py shots nur:anmelden`
-    **Ziel-Datei:** `assets/screenshots/web/anmelden.png`
-    <!-- web-bild ../assets/screenshots/web/anmelden.png -->
+![Anmeldeseite der Web-App am breiten Bildschirm: links die blaue Markenfläche mit „Berechnen, gestalten, planen — im Browser", drei Stichpunkten und dem laufenden Zopf, rechts die Karte „Anmelden" mit E-Mail-Adresse und Passwort.](../assets/screenshots/web/anmelden.png)
 
 Wie die Seite aussieht, hängt von der Breite des Browserfensters ab:
 
@@ -30,11 +26,7 @@ Wie die Seite aussieht, hängt von der Breite des Browserfensters ab:
   entfällt. Die Karte trägt stattdessen oben ein blaues **Kopfband** mit
   dem Herzog-Logo und dem Zopf.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Anmeldeseite am Smartphone: die Karte „Anmelden" mit dem blauen Kopfband (Logo und Zopf) über den Feldern.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/anmelden` bei 390 px Breite; automatisch per `python _tools/web_screenshots.py shots nur:anmelden-schmal`
-    **Ziel-Datei:** `assets/screenshots/web/anmelden-schmal.png`
-    <!-- web-bild ../assets/screenshots/web/anmelden-schmal.png -->
+![Anmeldeseite am Smartphone: die Karte „Anmelden" mit dem blauen Kopfband (Logo und Zopf) über den Feldern.](../assets/screenshots/web/anmelden-schmal.png)
 
 Der Zopf ist reiner Schmuck. Während die Web-App Ihre Anmeldung prüft, läuft
 er schneller. Ist in Ihrem Betriebssystem *Bewegung reduzieren* eingestellt,

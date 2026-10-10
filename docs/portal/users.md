@@ -14,11 +14,7 @@ im Browser.
 
 ## Der Bildschirm im Überblick
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Benutzerliste im Lizenzportal mit Namensfeld und „Speichern" je Zeile, Rolle, letzter Anmeldung, Status und den Knöpfen Deaktivieren und Löschen; darunter das Formular „Benutzer einladen" mit Sprachwahl.
-    **So erzeugen:** Lizenzportal lokal (localhost:8100), Seite `/benutzer`; automatisch per `python _tools/web_screenshots.py shots nur:portal-benutzer`
-    **Ziel-Datei:** `assets/screenshots/portal/benutzer.png`
-    <!-- web-bild ../assets/screenshots/portal/benutzer.png -->
+![Benutzerliste im Lizenzportal mit Namensfeld und „Speichern" je Zeile, Rolle, letzter Anmeldung, Status und den Knöpfen Deaktivieren und Löschen; darunter das Formular „Benutzer einladen" mit Sprachwahl.](../assets/screenshots/portal/benutzer.png)
 
 Oben steht die **Benutzerliste**, darunter das Formular **Benutzer
 einladen**. Bearbeiter und Betrachter sehen die Liste nur; verwalten können

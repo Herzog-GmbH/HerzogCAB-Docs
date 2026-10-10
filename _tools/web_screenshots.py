@@ -2,6 +2,8 @@
 
 Voraussetzungen: Docker-Lizenzserver auf http://localhost:8100, Vite-Dev-Server der Web-App auf
 http://127.0.0.1:5173, Python-Playwright mit Chromium (`pip install playwright && playwright install chromium`).
+Andere Umgebung (z. B. Musterkonto „Musterflechterei GmbH“ im Worktree Lizenzserver-homepage, Portal
+http://localhost:8110, Web-App http://127.0.0.1:5230): Umgebungsvariablen HCAB_WEB und HCAB_PORTAL setzen.
 
 Zwei Schritte:
     python _tools/web_screenshots.py login   # oeffnet ein Fenster; dort in Web-App UND Portal anmelden,
@@ -14,6 +16,7 @@ Zwei Schritte:
 
 Zugangsdaten werden vom Skript nie eingegeben oder gespeichert - nur die Sitzungs-Cookies in state.json.
 """
+import os
 import re
 import sys
 import time
@@ -25,8 +28,8 @@ HERE = Path(__file__).parent
 STATE = HERE / "state.json"
 STOP = HERE / "stop_login"
 DOCS = HERE.parent / "docs" / "assets" / "screenshots"
-WEB = "http://127.0.0.1:5173"
-PORTAL = "http://localhost:8100"
+WEB = os.environ.get("HCAB_WEB", "http://127.0.0.1:5173").rstrip("/")
+PORTAL = os.environ.get("HCAB_PORTAL", "http://localhost:8100").rstrip("/")
 WEBAPP = WEB + "/anmelden"
 TIMEOUT_S = 60 * 60 * 6
 
@@ -41,10 +44,10 @@ def status(ctx):
     for page in ctx.pages:
         try:
             url = page.url
-            if url.startswith("http://127.0.0.1:5173") and not any(s in url for s in ("/anmelden", "/registrieren", "/bestaetigen")):
+            if url.startswith(WEB) and not any(s in url for s in ("/anmelden", "/registrieren", "/bestaetigen")):
                 if page.locator("nav").count() > 0 or page.get_by_text("Konto wählen").count() > 0:
                     web = True
-            if url.startswith("http://localhost:8100") and not any(s in url for s in ("/anmelden", "/zwei-faktor", "/zugang", "/passwort-vergessen")):
+            if url.startswith(PORTAL) and not any(s in url for s in ("/anmelden", "/zwei-faktor", "/zugang", "/passwort-vergessen")):
                 if page.get_by_text("Abmelden").count() > 0:
                     portal = True
         except Exception:
@@ -57,7 +60,10 @@ def login() -> int:
         STOP.unlink()
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, args=["--window-size=1480,1000"])
-        ctx = browser.new_context(viewport={"width": 1440, "height": 900}, locale="de-DE")
+        # Vorhandene Sitzung weiterverwenden: wer nur noch in einem Tab fehlt,
+        # muss sich im anderen nicht erneut anmelden.
+        ctx = browser.new_context(storage_state=str(STATE) if STATE.exists() else None,
+                                  viewport={"width": 1440, "height": 900}, locale="de-DE")
         web = ctx.new_page()
         web.goto(WEBAPP)
         portal = ctx.new_page()
@@ -86,6 +92,37 @@ def settle(page: Page, ms=1600):
     except Exception:
         pass
     time.sleep(ms / 1000)
+
+
+def hinweise_weg(page: Page):
+    """Frage nach den Nutzungsdaten ("Herzog CAB verbessern") mit "Nicht senden" beantworten.
+    Die Antwort steht danach im localStorage des Kontexts und gilt fuer alle weiteren Seiten."""
+    try:
+        knopf = page.get_by_role("button", name="Nicht senden")
+        if knopf.count() > 0 and knopf.first.is_visible():
+            knopf.first.click(); time.sleep(0.6)
+    except Exception as e:
+        print("  Hinweis Nutzungsdaten:", e)
+
+
+# Der Flechtsimulator steht nicht im Handbuch (bis er bestellbar ist). Hat das Konto ihn
+# freigeschaltet, blendet HCAB_OHNE_SIMULATOR=1 fuer die Bilder aus, was ein Konto ohne ihn
+# nicht sieht: Navigationseintraege (Web-App und Portal), im Portal die Karte "Maschinenmodelle"
+# (#modelle) und die gleichnamige Spalte der Benutzerliste.
+OHNE_SIMULATOR = """
+document.addEventListener('DOMContentLoaded', () => {
+  const s = document.createElement('style');
+  s.textContent = "a[href^='/flechtsimulator'], a[href^='/maschinenmodelle'], a[href='/modelle'], #modelle"
+                + " { display: none !important; }";
+  document.head.appendChild(s);
+  document.querySelectorAll('table').forEach((tab) => {
+    const kopf = [...tab.querySelectorAll('thead th')];
+    const i = kopf.findIndex((th) => th.textContent.trim() === 'Maschinenmodelle');
+    if (i < 0) return;
+    tab.querySelectorAll('tr').forEach((tr) => { const z = tr.children[i]; if (z) z.style.display = 'none'; });
+  });
+});
+"""
 
 
 def first_link(page: Page, prefix: str) -> str | None:
@@ -117,8 +154,11 @@ def run_web(ctx):
                                       ("registrieren", "/registrieren", 1440, 900)]:
         if want(name):
             leer = ctx.browser.new_context(viewport={"width": breite, "height": hoehe}, device_scale_factor=1, locale="de-DE")
+            if os.environ.get("HCAB_OHNE_SIMULATOR"):
+                leer.add_init_script(OHNE_SIMULATOR)
             lp = leer.new_page()
             lp.goto(WEB + pfad); settle(lp)
+            hinweise_weg(lp)
             shot(lp, "web", name)
             leer.close()
 
@@ -126,6 +166,7 @@ def run_web(ctx):
     if "/anmelden" in page.url:
         print("Web-App: NICHT angemeldet - Sitzung fehlt.", flush=True)
         return
+    hinweise_weg(page)
     if want("startseite"):
         shot(page, "web", "startseite")
     if want("oberflaeche"):
@@ -240,7 +281,8 @@ def run_web(ctx):
             # Beispiel wie im Desktop: KB 1/12-80 hat Zubehoer, Abzug und drei Besetzungen.
             try:
                 page.locator("input[type='search']").first.fill("KB 1/12-80"); time.sleep(0.8)
-                page.get_by_text("Feindrahtflechtmaschine KB 1/12-80", exact=True).first.click(); settle(page, 1200)
+                # Kartentitel je nach Katalogstand mit oder ohne Gattungsname davor
+                page.get_by_text(re.compile(r"^(\S+flechtmaschine )?KB 1/12-80$")).first.click(); settle(page, 1200)
                 dialog = page.locator("dialog[open]")
                 if want("katalog-dialog"):
                     shot(page, "web", "katalog-dialog")
@@ -305,6 +347,8 @@ def shots() -> int:
         ctx = browser.new_context(storage_state=str(STATE) if STATE.exists() else None,
                                   viewport={"width": 1440, "height": 900},
                                   device_scale_factor=1, locale="de-DE")
+        if os.environ.get("HCAB_OHNE_SIMULATOR"):
+            ctx.add_init_script(OHNE_SIMULATOR)
         run_web(ctx)
         run_portal(ctx)
         browser.close()

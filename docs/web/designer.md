@@ -101,11 +101,7 @@ Beispiel ein schwarzes und ein weißes Garn auf demselben Klöppel. Garn 1
 trägt die Farbe des Klöppels; ohne eigene Farben laufen alle Garne in
 dieser Farbe.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Designer mit Fachung 2 und geöffnetem Dialog „Fachungsfarben – L1": Garn 1 und Garn 2 mit ihren Farben, darunter die Farbauswahl mit aktiver Farbe und Palette; im Hintergrund die Klöppeltabelle mit gestreiften Zellen.
-    **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/designs/<id>`, Fachung 2, Rechtsklick auf eine Zeile der Klöppeltabelle; automatisch per `python _tools/web_screenshots.py shots nur:fachungsfarben`
-    **Ziel-Datei:** `assets/screenshots/web/fachungsfarben.png`
-    <!-- web-bild ../assets/screenshots/web/fachungsfarben.png -->
+![Designer mit Fachung 2 und geöffnetem Dialog „Fachungsfarben – L1": Garn 1 und Garn 2 mit ihren Farben, darunter die Farbauswahl mit aktiver Farbe und Palette; im Hintergrund die Klöppeltabelle mit gestreiften Zellen.](../assets/screenshots/web/fachungsfarben.png)
 
 Sie färben Garne auf zwei Wegen:
 
