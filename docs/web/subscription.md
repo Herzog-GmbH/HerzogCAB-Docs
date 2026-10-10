@@ -32,14 +32,7 @@ Zugang zur Webapp*.
 
 ## Der Bildschirm im Überblick
 
-![Abo und Bestellung in der Web-App (Bild vom früheren Stand mit Laufzeitwahl).](../assets/screenshots/web/abo.png)
-
-<!-- VERALTET seit 24.09.2026: abo.png zeigt noch Laufzeit monatlich/jährlich und die Stripe-Kasse. Neu erzeugen mit: python _tools/web_screenshots.py shots nur:abo -->
-
-!!! info "Bild vom früheren Stand"
-    Das Bild zeigt noch die frühere Seite mit Laufzeitwahl und Kasse.
-    Ein aktuelles Bild folgt. Maßgeblich ist die Beschreibung auf dieser
-    Seite.
+![Abo und Bestellung in der Web-App: Freischaltungen des Kontos, Jahresabo und Bestellen.](../assets/screenshots/web/abo.png)
 
 Von oben nach unten: Hinweise, die Freischaltungen des Kontos, eine offene
 Bestellung (falls vorhanden), die beiden Abos, der Bereich **Bestellen**,

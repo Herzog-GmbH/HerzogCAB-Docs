@@ -25,13 +25,7 @@ The page has no menu item of its own. You open it from
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-![Request additional licence in the licence portal (image of an earlier state) with the three request types.](../assets/screenshots/portal/anfordern.png)
-
-<!-- VERALTET seit 24.09.2026: anfordern.png zeigt noch "Herzog CAB Web" als Baustein, "Ein Platz je Rechner" und den Menüpunkt "Lizenz anfordern". Neu erzeugen mit: python _tools/web_screenshots.py shots nur:portal-anfordern -->
-
-!!! info "Image of an earlier state"
-    The image still shows earlier modules and texts. An up-to-date image will
-    follow. The description on this page is authoritative.
+![Request additional licence in the licence portal with the three request types.](../assets/screenshots/portal/anfordern.png)
 
 At the top is the heading **Request additional licence** with the
 note *The program and the web app share the seats of your subscription.* If

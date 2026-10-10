@@ -12,13 +12,7 @@ und verfolgen ihre Anfragen an Herzog.
 
 ## Der Bildschirm im Überblick
 
-![Mein Konto im Lizenzportal (Bild vom früheren Stand): Firmenkarte, Bausteine mit Plätzen, angemeldete Rechner und Anfragen.](../assets/screenshots/portal/mein-konto.png)
-
-<!-- VERALTET seit 24.09.2026: mein-konto.png zeigt noch "Im Browser angemeldet" statt "Wer gerade arbeitet". Neu erzeugen mit: python _tools/web_screenshots.py shots nur:portal-mein-konto -->
-
-!!! info "Bild vom früheren Stand"
-    Das Bild zeigt noch die frühere Aufteilung. Ein aktuelles Bild folgt.
-    Maßgeblich ist die Beschreibung auf dieser Seite.
+![Mein Konto im Lizenzportal: Firmenkarte, Bausteine mit Plätzen, Rechner und „Wer gerade arbeitet“.](../assets/screenshots/portal/mein-konto.png)
 
 Die Seite besteht aus bis zu fünf Karten, von oben nach unten:
 

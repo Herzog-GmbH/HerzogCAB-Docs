@@ -12,13 +12,7 @@ and track their requests to Herzog.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-![My account in the licence portal (image of an earlier state): company card, modules with seats, signed-in computers and requests.](../assets/screenshots/portal/mein-konto.png)
-
-<!-- VERALTET seit 24.09.2026: mein-konto.png zeigt noch "Im Browser angemeldet" statt "Wer gerade arbeitet". Neu erzeugen mit: python _tools/web_screenshots.py shots nur:portal-mein-konto -->
-
-!!! info "Image of an earlier state"
-    The image still shows the earlier layout. An up-to-date image will follow.
-    The description on this page is authoritative.
+![My account in the licence portal: company card, modules with seats, computers and “Currently working”.](../assets/screenshots/portal/mein-konto.png)
 
 The page consists of up to five cards, from top to bottom:
 

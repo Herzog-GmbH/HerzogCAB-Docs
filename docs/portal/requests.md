@@ -25,13 +25,7 @@ Die Seite hat keinen eigenen Menüpunkt. Sie öffnen sie unter
 
 ## Der Bildschirm im Überblick
 
-![Zusätzliche Lizenz anfordern im Lizenzportal (Bild vom früheren Stand) mit den drei Anfragearten.](../assets/screenshots/portal/anfordern.png)
-
-<!-- VERALTET seit 24.09.2026: anfordern.png zeigt noch "Herzog CAB Web" als Baustein, "Ein Platz je Rechner" und den Menüpunkt "Lizenz anfordern". Neu erzeugen mit: python _tools/web_screenshots.py shots nur:portal-anfordern -->
-
-!!! info "Bild vom früheren Stand"
-    Das Bild zeigt noch frühere Bausteine und Texte. Ein aktuelles Bild
-    folgt. Maßgeblich ist die Beschreibung auf dieser Seite.
+![Zusätzliche Lizenz anfordern im Lizenzportal mit den drei Anfragearten.](../assets/screenshots/portal/anfordern.png)
 
 Oben steht die Überschrift **Zusätzliche Lizenz anfordern** mit dem
 Hinweis *Programm und Web-App teilen sich die Plätze Ihres Abos.* Lässt

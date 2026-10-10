@@ -32,14 +32,7 @@ access to the web app*.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-![Subscription and orders in the web app (image of the earlier state with term selection).](../assets/screenshots/web/abo.png)
-
-<!-- OUTDATED since 24.09.2026: abo.png still shows monthly/annual term and the Stripe checkout. Regenerate with: python _tools/web_screenshots.py shots nur:abo -->
-
-!!! info "Image of the earlier state"
-    The image still shows the earlier page with term selection and checkout.
-    An up-to-date image will follow. The description on this
-    page is authoritative.
+![Subscription and orders in the web app: activations of the account, annual subscription and ordering.](../assets/screenshots/web/abo.png)
 
 From top to bottom: notices, the activations of the account, an open
 order (if any), the two subscriptions, the **Order** area,
