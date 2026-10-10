@@ -43,15 +43,15 @@ and **LDAP / Active Directory**. Below the tabs there is a shared
 error line and the **Save** button, which stores the settings of both
 tabs.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Bildschirm „Authentifizierung", Reiter „Microsoft Entra ID" mit Konfigurationsfeldern und der Tabelle „Entra-Gruppe → Rolle"
-    **So erzeugen:** *Systemverwaltung > Authentifizierung* öffnen (Reiter Microsoft Entra ID aktiv); Beispieldaten ohne echte Tenant-/Client-IDs verwenden
-    **Ziel-Datei:** `assets/screenshots/admin/authentifizierung-entra.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Authentication” screen, “Microsoft Entra ID” tab with the configuration fields and the “Entra group → role” table
+    **How to create:** Open *System administration > Authentication* (Microsoft Entra ID tab active); use sample data without real tenant/client IDs
+    **Target file:** `assets/screenshots/admin/authentifizierung-entra.png`
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Bildschirm „Authentifizierung", Reiter „LDAP / Active Directory" mit allen Verbindungsfeldern und der Schaltfläche „Verbindung prüfen"
-    **So erzeugen:** *Systemverwaltung > Authentifizierung* öffnen, Reiter „LDAP / Active Directory" wählen; Beispieldaten (example.local) verwenden
-    **Ziel-Datei:** `assets/screenshots/admin/authentifizierung-ldap.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Authentication” screen, “LDAP / Active Directory” tab with all connection fields and the “Test connection” button
+    **How to create:** Open *System administration > Authentication*, select the “LDAP / Active Directory” tab; use sample data (example.local)
+    **Target file:** `assets/screenshots/admin/authentifizierung-ldap.png`
 
 ## "Microsoft Entra ID" tab { #reiter-microsoft-entra-id }
 

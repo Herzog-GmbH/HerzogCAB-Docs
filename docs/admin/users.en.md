@@ -26,10 +26,10 @@ selected user.
 
 ![User management in the account model: user list from the customer account on the left, user with greyed-out details on the right](../assets/screenshots/admin/benutzer-konto.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Benutzerverwaltung bei Dongle-Installation — Benutzerliste links (mit den Schaltflächen „Neuer Benutzer", „Aus Entra importieren", „Aus LDAP importieren"), Benutzer-Editor rechts
-    **So erzeugen:** Build mit Dongle, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen
-    **Ziel-Datei:** `assets/screenshots/admin/benutzer.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** User management with a dongle installation — user list on the left (with the buttons “New user”, “Import from Entra”, “Import from LDAP”), user editor on the right
+    **How to create:** Build with dongle, open *System administration > Users*, select a user
+    **Target file:** `assets/screenshots/admin/benutzer.png`
 
 ## In the account model: users from the customer account { #im-kontomodell-benutzer-aus-dem-kundenkonto }
 

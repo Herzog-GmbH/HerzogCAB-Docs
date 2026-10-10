@@ -1,6 +1,6 @@
 # Licence and cloud
 
-!!! abstract "Reference — \"Licence\" tab of the Settings dialog: licence status, account, offline lease, signing out the computer and cloud synchronization with the web app."
+!!! abstract "Reference — “Licence” tab of the Settings dialog: licence status, account, offline lease, signing out the computer and cloud synchronization with the web app."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 

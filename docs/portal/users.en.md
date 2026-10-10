@@ -1,6 +1,6 @@
 # Inviting and managing users
 
-!!! abstract "Reference — The \"Users\" page in the licence portal: inviting colleagues, changing names and roles, deactivating or deleting accesses"
+!!! abstract "Reference — The “Users” page in the licence portal: inviting colleagues, changing names and roles, deactivating or deleting accesses"
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 

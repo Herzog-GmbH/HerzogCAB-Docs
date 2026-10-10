@@ -1,6 +1,6 @@
 # My profile
 
-!!! abstract "Reference — The \"My profile\" dialog: changing your profile picture, display name, email and password yourself, viewing account information, signing out."
+!!! abstract "Reference — The “My profile” dialog: changing your profile picture, display name, email and password yourself, viewing account information, signing out."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 

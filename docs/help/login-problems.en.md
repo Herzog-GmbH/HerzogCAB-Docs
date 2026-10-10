@@ -38,8 +38,8 @@ Check the connection or sign in with such a user.
 
 **Invitation link expired.**
 The link from the invitation email is valid for 14 days. Open the expired
-link anyway: on the page *Diese Einladung ist abgelaufen*,
-**Send new invitation** sends a new invitation to your address. Or an
+link anyway: on the page *This invitation has expired*,
+**Send a new invitation** sends a new invitation to your address. Or an
 administrator renews the invitation in the licence portal under **Users**.
 If you have since received a reminder or a new invitation,
 only its link is valid.

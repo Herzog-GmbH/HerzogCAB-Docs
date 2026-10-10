@@ -20,7 +20,7 @@ entry **individually**, **locked** and **with a version**:
 
 !!! warning "Update all computers"
     This protection only works if **all computers** that access the shared
-    workspace folder have the new program version. Version
+    workspace folder have at least version 2.1.1. Version
     2.1.0 and older still write back entire lists, ignore the
     lock and can thereby discard changes made on other computers.
     Therefore update all workstations at the same time, see
@@ -82,10 +82,10 @@ user* if the name is not known (e.g. for a
 change made by an older program version). Older changes state the
 date (*on 08.10.2026 at 14:32*).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Rückfrage „Materialien“ mit dem Text „Das Material "…" wurde inzwischen von … am Rechner … um … geändert. Die eigenen Änderungen sind noch nicht gespeichert.“ und den Schaltflächen **Überschreiben**, **Als Kopie speichern**, **Neu laden** und **Abbrechen**.
-    **So erzeugen:** Zwei Programmfenster auf zwei Rechnern (oder zwei Windows-Benutzern) mit demselben Arbeitsverzeichnis; in beiden dasselbe Material öffnen, in Fenster A ändern und speichern, danach in Fenster B ändern und **Speichern** klicken. Musterdaten, Musternamen.
-    **Ziel-Datei:** `assets/screenshots/basics/mehrbenutzer-rueckfrage.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Materials” prompt with the text “The material "…" has been changed by … on computer … at … in the meantime. Your changes have not been saved yet.” and the buttons **Overwrite**, **Save as copy**, **Reload** and **Cancel**.
+    **How to create:** Two program windows on two computers (or two Windows users) with the same workspace folder; open the same material in both, change and save it in window A, then change it in window B and click **Save**. Sample data, sample names.
+    **Target file:** `assets/screenshots/basics/mehrbenutzer-rueckfrage.png`
 
 | Button | Effect |
 |---|---|

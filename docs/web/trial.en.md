@@ -7,7 +7,7 @@
 | Way | For whom |
 |---|---|
 | **Request a trial version from Herzog:** Herzog enables the module *Herzog CAB trial version* | The usual case, for prospective customers and for existing customers. Herzog creates a customer account or uses your existing one and invites you by email, see [Customer account and invitation](../setup/account.md#so-kommen-sie-ins-konto). The trial version applies for 30 days to the whole account, on the computer and in the browser. |
-| **Self-registration** via **Try for free** on the [sign-in page](login.md) | Only if Herzog has enabled self-registration; otherwise the button is missing. Creates a new account with you as administrator. The account gets the module *Herzog CAB Web trial* (30 days, browser only). |
+| **Self-registration** via **Try for free** on the [sign-in page](login.md) | Only if Herzog has enabled self-registration; otherwise the button is missing. Creates a new account with you as administrator. The account gets the module *Herzog CAB Web Trial* (30 days, browser only). |
 
 !!! tip "Requesting a trial version"
     If there is no **Try for free** button on the sign-in page,
@@ -41,7 +41,7 @@ After that:
 2. The link leads to the page **Confirm e-mail** (*The e-mail address has been
    confirmed.*) and from there to the application. If no email arrived, send
    it again under [Subscription and orders](subscription.md).
-3. Your account has the module **Herzog CAB Web trial** with **one
+3. Your account has the module **Herzog CAB Web Trial** with **one
    seat** for **30 days**. During the trial only **one user** is
    possible. You invite further users after subscribing in the
    [licence portal](../portal/users.md).

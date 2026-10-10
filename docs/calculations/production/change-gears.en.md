@@ -36,7 +36,7 @@ This page follows the general structure of the calculation pages without further
 !!! note "Valid range of the change gears"
     Change gear 1 must lie within the range permitted for the selected rubber feed device (small rubber feed device: 20 … 50, big rubber feed device: 20 … 63). If the calculated result lies outside this range, the results are cleared and the note *"Not possible, please choose another option!"* appears. In this case, choose another option – for example a different ratio, a different disc diameter or a different rubber feed device.
 
-!!! tip "Adjustments for \"Not possible\""
+!!! tip "Adjustments for “Not possible”"
     Greater elongation, a greater ratio or a smaller disc diameter reduce change gear 1; the opposite change in each case increases it. This lets you bring the result into the permitted range in a targeted way.
 
 ## Related calculations { #verwandte-berechnungen }

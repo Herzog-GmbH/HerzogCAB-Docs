@@ -60,10 +60,10 @@ If your company already has a storage location, the
 **"Set up working directory"** dialog shows this folder and immediately checks whether it
 can be reached from this computer.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Arbeitsverzeichnis einrichten" mit dem Ordner der Firma, grünem Haken „erreichbar" und der Schaltfläche **Verbinden**
-    **So erzeugen:** Auf einem zweiten Rechner mit einem Konto, das schon einen Speicherort hat, zum ersten Mal anmelden
-    **Ziel-Datei:** `assets/screenshots/setup/arbeitsverzeichnis-verbinden.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Set up working directory” dialog with the company's folder, green tick “The folder can be reached from this computer.” and the **Connect** button
+    **How to create:** Sign in for the first time on a second computer with an account that already has a storage location
+    **Target file:** `assets/screenshots/setup/arbeitsverzeichnis-verbinden.png`
 
 | Element | Meaning |
 |---|---|
@@ -139,12 +139,12 @@ Herzog CAB shows the **"Set up user management"** dialog. The account created he
 automatically becomes the first **SuperAdmin** and is then immediately
 signed in — signing in again is not necessary.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Benutzerverwaltung einrichten" mit den Feldern
-    Firma, Login-Name, Anzeigename, E-Mail, Passwort, Passwort bestätigen.
-    **So erzeugen:** Herzog CAB auf einem Rechner ohne bestehende
-    Benutzerverwaltung starten (leerer `%ProgramData%\Herzog GmbH\Herzog Cab`).
-    **Ziel-Datei:** `assets/screenshots/setup/erstadmin-einrichten.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Set up user management” dialog with the fields
+    Company, Login name, Display name, Email, Password, Confirm password.
+    **How to create:** Start Herzog CAB on a computer without existing
+    user management (empty `%ProgramData%\Herzog GmbH\Herzog Cab`).
+    **Target file:** `assets/screenshots/setup/erstadmin-einrichten.png`
 
 | Field | Meaning |
 |---|---|

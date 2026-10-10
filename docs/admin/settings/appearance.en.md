@@ -1,6 +1,6 @@
 # General: language, display, privacy, production planning and braiding angle
 
-!!! abstract "Reference — \"General\" tab of the Settings dialog: profile quick access, language, font size, design, diagnostic log, anonymous usage statistics, production planning and reference of the braiding angle."
+!!! abstract "Reference — “General” tab of the Settings dialog: profile quick access, language, font size, design, diagnostic log, anonymous usage statistics, production planning and reference of the braiding angle."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
@@ -11,10 +11,10 @@ define how Herzog CAB measures the braiding angle.
 
 ![General tab with profile, display, diagnostics and privacy.](../../assets/screenshots/settings/einstellungen-allgemein.png)
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Einstellungen, Tab „Allgemein“ ohne Kopfkarte, mit den Karten Profil, Darstellung, Diagnose, Datenschutz, Produktionsplanung und der neuen Karte „Flechtwinkel“ (Auswahl „Flechtwinkel messen“ aufgeklappt); unten rechts **Speichern** und **Abbrechen**.
-    **So erzeugen:** *Datei > Einstellungen*, Tab **Allgemein**, Dialog so hoch ziehen, dass alle Karten sichtbar sind; die Auswahl „Flechtwinkel messen“ aufklappen.
-    **Ziel-Datei:** `assets/screenshots/settings/einstellungen-allgemein.png` (ersetzt das bisherige Bild)
+!!! warning "📷 Screenshot missing"
+    **Subject:** Settings, “General” tab without header card, with the cards Profile, Display, Diagnostics, Privacy, Production planning and the new “Braiding angle” card (“Measure braiding angle” selection expanded); **Save** and **Cancel** at the bottom right.
+    **How to create:** *File > Settings*, **General** tab, drag the dialog high enough that all cards are visible; expand the “Measure braiding angle” selection.
+    **Target file:** `assets/screenshots/settings/einstellungen-allgemein.png` (replaces the previous image)
 
 ## Controls in detail { #bedienelemente-im-detail }
 

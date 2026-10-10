@@ -41,12 +41,12 @@ The **"Update available"** dialog shows:
 | **Later** | Closes the dialog without updating. The card on the home page remains visible. |
 | **Update now** | Starts the installation (see step 3). |
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Update verfügbar" mit Versionsangabe, Was-ist-neu-Liste
-    und den drei Schaltflächen.
-    **So erzeugen:** *Hilfe > Updates* anklicken, wenn eine neuere Version
-    veröffentlicht ist.
-    **Ziel-Datei:** `assets/screenshots/setup/update-dialog.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Update available” dialog with the version details, the what's-new list
+    and the three buttons.
+    **How to create:** Click *Help > Updates* when a newer version
+    has been published.
+    **Target file:** `assets/screenshots/setup/update-dialog.png`
 
 ## Step 3: Update now { #schritt-3-jetzt-aktualisieren }
 
@@ -78,12 +78,12 @@ The **"Update available"** dialog shows:
        existing installation in place.
     3. Restart Herzog CAB. The sign-in to the account is retained.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Maintenance-Tool-Assistent im Schritt „Komponenten
-    aktualisieren".
-    **So erzeugen:** Maintenance-Tool über *Herzog > Herzog CAB
-    Maintenance* öffnen und den Update-Schritt fotografieren.
-    **Ziel-Datei:** `assets/screenshots/setup/maintenance-tool-update.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** Maintenance tool wizard at the “Update components”
+    step.
+    **How to create:** Open the maintenance tool via *Herzog > Herzog CAB
+    Maintenance* and photograph the update step.
+    **Target file:** `assets/screenshots/setup/maintenance-tool-update.png`
 
 !!! info "Update from version 1.x to 2.0"
     Version 2.0 introduces the customer account. Existing customers with a **dongle or

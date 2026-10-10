@@ -145,8 +145,8 @@ the yarn colors appear:
 | Print | The carrier list shows the stripes and the color per yarn; the braid pattern and overview are colored as in the Designer. |
 
 !!! info "Desktop app"
-    The yarn colors are saved with the design. The desktop app only shows
-    them from a later program version on.
+    The yarn colors are saved with the design. The desktop app shows
+    them from version 2.1.1 on.
 
 ### Occupation overview { #besetzungsubersicht }
 

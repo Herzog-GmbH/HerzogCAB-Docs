@@ -9,7 +9,7 @@ version.
 
 !!! info "How to get the trial version"
     Since version 2.0, the trial version is a module of the
-    [customer account](../setup/account.md): **Herzog CAB Trial version** (30 days).
+    [customer account](../setup/account.md): **Herzog CAB Trial** (30 days).
     Herzog creates the account and invites you; you install the
     normal installer and sign the computer in to the account — nothing more is
     needed. The trial version also applies to the

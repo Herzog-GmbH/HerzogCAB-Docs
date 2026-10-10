@@ -65,7 +65,7 @@ deleted, this is also shown.
 
 | Field | Meaning |
 |---|---|
-| **Order name** | Freely chosen name, e.g. *Spulen für Seilauftrag 4711*. |
+| **Order name** | Freely chosen name, e.g. *Bobbins for rope order 4711*. |
 | **Order number** | Your order number. For winding orders created from a braiding order, it is preset to *&lt;number&gt;-SP*. |
 | **Status** | *Draft*, *Released*, *In production* or *Completed* — same meaning as for the [braiding order](index.md#status-eines-auftrags). |
 | **Order date** | Date of the order, with calendar selection. |

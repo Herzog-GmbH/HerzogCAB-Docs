@@ -44,15 +44,15 @@ light-blue note at the very top explains this (*"Your saved sign-in is no longer
 (expired, signed out or password changed). Please sign in
 again."*).
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Anmeldefenster „Herzog CAB – Anmelden“ im Kontomodell: blaues Kopfband mit „Herzog CAB“, „Konto: &lt;Firma&gt;“ und dem Zopf rechts; Felder E-Mail-Adresse und Passwort mit Beschriftung darüber, Häkchen „Angemeldet bleiben“, Link „Passwort vergessen?“, Schaltflächen Anmelden und Beenden.
-    **So erzeugen:** Kunden-Build auf einem am Konto angemeldeten Rechner starten, nachdem der Benutzer sich im Programm abgemeldet hat (sonst startet es dank „Angemeldet bleiben“ ohne Dialog). Musterkonto, keine echte E-Mail-Adresse.
-    **Ziel-Datei:** `assets/screenshots/admin/anmelden-konto.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Herzog CAB – Sign in” window in the account model: blue header band with “Herzog CAB”, “Account: &lt;company&gt;” and the braid on the right; fields Email address and Password with labels above them, “Stay signed in” checkbox, “Forgot your password?” link, Sign in and Quit buttons.
+    **How to create:** Start the customer build on a computer signed in to the account after the user has signed out in the program (otherwise it starts without the dialog because of “Stay signed in”). Sample account, no real email address.
+    **Target file:** `assets/screenshots/admin/anmelden-konto.png`
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Derselbe Dialog im Schritt „Zweiter Faktor“: Kopfband-Unterzeile „Zweiter Faktor“, grüner Haken im Passwortfeld, darunter „Code aus der Authenticator-App“ mit sechs Kästchen in zwei Dreiergruppen (drei Ziffern eingetippt), graue Meldung zur Zwei-Faktor-Anmeldung, Schaltfläche „Bestätigen“.
-    **So erzeugen:** Mit einem Testbenutzer anmelden, für den im Lizenzportal der zweite Faktor eingerichtet ist; nach **Anmelden** drei Ziffern eintippen und aufnehmen.
-    **Ziel-Datei:** `assets/screenshots/admin/anmelden-konto-code.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** The same dialog at the “Second factor” step: header subline “Second factor”, green tick in the password field, below it “Code from the authenticator app” with six boxes in two groups of three (three digits typed), grey message about two-factor sign-in, “Confirm” button.
+    **How to create:** Sign in with a test user for whom the second factor is set up in the licence portal; after **Sign in**, type three digits and capture the dialog.
+    **Target file:** `assets/screenshots/admin/anmelden-konto-code.png`
 
 ### Controls { #bedienelemente }
 
@@ -112,10 +112,10 @@ At startup, the **Herzog CAB – Sign in** window appears with the
 HERZOG logo, the input fields and — if set up — the
 Microsoft button.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Anmeldefenster „Herzog CAB – Anmelden" mit Logo, Feldern Login/Passwort und der Schaltfläche „Mit Microsoft anmelden"
-    **So erzeugen:** Herzog CAB mit Dongle starten (Entra-Anmeldung muss unter *Systemverwaltung > Authentifizierung* aktiviert sein, sonst fehlt die Microsoft-Schaltfläche)
-    **Ziel-Datei:** `assets/screenshots/admin/anmelden.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Herzog CAB – Sign in” window with logo, Login/Password fields and the “Sign in with Microsoft” button
+    **How to create:** Start Herzog CAB with a dongle (Entra sign-in must be enabled under *System administration > Authentication*, otherwise the Microsoft button is missing)
+    **Target file:** `assets/screenshots/admin/anmelden.png`
 
 ### Login and password { #login-und-passwort }
 

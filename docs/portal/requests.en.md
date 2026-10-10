@@ -1,6 +1,6 @@
 # Request licence
 
-!!! abstract "Reference — The \"Request licence\" page in the licence portal: requesting more seats, a renewal or a different module from Herzog"
+!!! abstract "Reference — The “Request licence” page in the licence portal: requesting more seats, a renewal or a different module from Herzog"
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 

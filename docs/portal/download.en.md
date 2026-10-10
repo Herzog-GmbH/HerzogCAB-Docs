@@ -1,6 +1,6 @@
 # Download
 
-!!! abstract "Reference — The \"Download\" page in the licence portal: the latest version of the desktop app for Windows and macOS"
+!!! abstract "Reference — The “Download” page in the licence portal: the latest version of the desktop app for Windows and macOS"
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 

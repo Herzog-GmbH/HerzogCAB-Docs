@@ -2,7 +2,7 @@
 
 !!! abstract "Reference — What changed in which version"
 
-## Next version (in preparation) { #nachste-version-in-vorbereitung }
+## Version 2.1.1 (in preparation) { #version-211-in-vorbereitung }
 
 ### New { #neu }
 
@@ -14,7 +14,7 @@
   Herzog CAB asks what to do (**Overwrite**, **Save as
   copy**, **Reload**) and states who changed it, when and on which computer.
   Old versions are retained. **All computers using the
-  shared folder need the new version.** See
+  shared folder need version 2.1.1.** See
   [Multiple users in the same workspace folder](../basics/multi-user.md).
 * **Selectable braiding angle reference** – under *Settings > General >
   Braiding angle* you choose whether Herzog CAB displays the braiding angle relative to the
@@ -191,7 +191,7 @@
 * **Design from the order** – every save in the window *New design*
   or *Open design* of an order links the design to the
   order, even if the window is then left with **Close**.
-  See [Braiding order, tab „Design"](../orders/braiding-order.md#tab-design).
+  See [Braiding order, tab “Design”](../orders/braiding-order.md#tab-design).
 
 ### Compatibility { #kompatibilitat_1 }
 
@@ -232,7 +232,7 @@
   braid types, with top view, side view and braiding point, material,
   display and orientation. The previous projections are now called
   **Cylinder**, **Square** and **Edge**.
-* **Tab „Licence" in the settings** – account, signed-in user,
+* **Tab “Licence” in the settings** – account, signed-in user,
   edition, modules, lease with expiry date as well as *Renew lease now*,
   *Take offline lease*, *Sign out this computer* and the
   cloud upload.
@@ -345,7 +345,7 @@
 
 ### Improvements { #verbesserungen_4 }
 
-* **Calculation fields** – fields with the placeholder „–" can now be
+* **Calculation fields** – fields with the placeholder “–” can now be
   edited directly with a click; decimal places are taken over correctly.
 
 ### Bug fixes { #fehlerbehebungen_2 }

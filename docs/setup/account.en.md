@@ -32,9 +32,9 @@ by email; every further user is invited by an **administrator of your
 account** in the licence portal (see
 [Invite and manage users](../portal/users.md)).
 
-1. You receive an email with the subject *Ihr Zugang zum Herzog CAB
-   Lizenzportal* and a link. For a trial version, the subject is
-   *Ihre Testversion von Herzog CAB ist bereit*. The link is valid for
+1. You receive an email with the subject *Your access to the Herzog CAB
+   licence portal* and a link. For a trial version, the subject is
+   *Your Herzog CAB trial is ready*. The link is valid for
    **14 days**.
 2. Click the link. The licence portal's **Set password** page
    opens with your email address.
@@ -57,7 +57,7 @@ account** in the licence portal (see
     link. From then on, only the link from the reminder is valid.
 
     If the link is older than 14 days, open it anyway. The page
-    *Diese Einladung ist abgelaufen* offers **Send new invitation**;
+    *This invitation has expired* offers **Send a new invitation**;
     the new invitation goes to your own email address. An administrator of your account
     can also renew the invitation in the licence portal
     under **Users**.
@@ -73,10 +73,10 @@ desktop app under *Settings > Licence*.
 
 | Module | Scope | Term |
 |---|---|---|
-| **Herzog CAB Vollversion** | The complete program, on the computer and in the browser. | Annual subscription |
+| **Herzog CAB Full Version** | The complete program, on the computer and in the browser. | Annual subscription |
 | **Herzog CAB Designer** | Only the braid Designer, on the computer and in the browser. | Annual subscription |
-| **Herzog CAB Testversion** | 30 days on the computer and in the browser, with the [quantity limits of the trial version](../basics/trial-quotas.md). Created by Herzog on request, see [Trial](../web/trial.md). | 30 days |
-| **Herzog CAB Web trial** | 30 days in the browser only. Only created through [self-registration](../web/trial.md#selbstregistrierung), if Herzog has enabled it. | 30 days |
+| **Herzog CAB Trial** | 30 days on the computer and in the browser, with the [quantity limits of the trial version](../basics/trial-quotas.md). Created by Herzog on request, see [Trial](../web/trial.md). | 30 days |
+| **Herzog CAB Web Trial** | 30 days in the browser only. Only created through [self-registration](../web/trial.md#selbstregistrierung), if Herzog has enabled it. | 30 days |
 
 You order, renew or add seats to the annual subscription under
 [Subscription and order](../web/subscription.md).

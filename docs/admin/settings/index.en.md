@@ -23,7 +23,7 @@ name appears in the title bar of the window.
 | **Licence** | Account model only: licence status, account, offline lease, signing out the computer and cloud upload to the web app — see [Licence and cloud](license.md) |
 | **Web Server** | Switching on and port, password (mandatory for access from the network), server status, IP selection and QR code — see [Web server and QR code](web-server.md) |
 
-!!! info "No more \"Storage locations\" tab"
+!!! info "No more “Storage locations” tab"
     Up to version 2.1.0, there was a **Storage locations** tab with the list of all
     file paths. This overview is available in full under
     [*System administration > Storage location*](../storage-location.md); the tab has

@@ -142,23 +142,23 @@ licence is already preinstalled on the dongle.
 You can recognise success by the **CodeMeter tray icon** at the bottom right of the
 taskbar: it changes from grey to blue.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** CodeMeter-Tray-Icon im Windows-Infobereich vor und nach dem
-    Einstecken des Dongles (Farbwechsel grau → blau).
-    **So erzeugen:** Dongle abgezogen fotografieren, dann einstecken und
-    nach ein paar Sekunden erneut fotografieren.
-    **Ziel-Datei:** `assets/screenshots/activate-license/tray-icon-farbwechsel.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** CodeMeter tray icon in the Windows notification area before and after
+    plugging in the dongle (color change grey → blue).
+    **How to create:** Photograph it with the dongle unplugged, then plug the dongle in and
+    photograph it again after a few seconds.
+    **Target file:** `assets/screenshots/activate-license/tray-icon-farbwechsel.png`
 
 4. Open the **CodeMeter Control Center** (double-click the
    tray icon) and check that a licence with firm code
    **6001037** and article **88805** (full version) is displayed.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** CodeMeter Kontrollzentrum mit erkanntem CmDongle, Firmencode
-    6001037 und Artikel 88805 in der Lizenzliste.
-    **So erzeugen:** Dongle einstecken, CodeMeter Kontrollzentrum öffnen,
-    Lizenzliste zeigen.
-    **Ziel-Datei:** `assets/screenshots/activate-license/kontrollzentrum-dongle-erkannt.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** CodeMeter Control Center with a detected CmDongle, firm code
+    6001037 and article 88805 in the licence list.
+    **How to create:** Plug in the dongle, open the CodeMeter Control Center,
+    show the licence list.
+    **Target file:** `assets/screenshots/activate-license/kontrollzentrum-dongle-erkannt.png`
 
 !!! warning "The dongle must stay plugged in"
     The dongle must **remain plugged in** while Herzog CAB is
@@ -209,13 +209,13 @@ now appears under *License*. The status shows
 **"Activation invalid"** - this is correct after this step; the
 activation only follows in step 3.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** CodeMeter Kontrollzentrum direkt nach dem Doppelklick auf
-    den `.WibuCmLif`-Container — Eintrag „Herzog GmbH", Status
-    „Aktivierung ungültig".
-    **So erzeugen:** `.WibuCmLif`-Datei doppelklicken, Kontrollzentrum
-    fotografieren.
-    **Ziel-Datei:** `assets/screenshots/activate-license/kontrollzentrum-leerer-container.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** CodeMeter Control Center directly after double-clicking
+    the `.WibuCmLif` container — entry “Herzog GmbH”, status
+    “Activation invalid”.
+    **How to create:** Double-click the `.WibuCmLif` file, photograph the
+    Control Center.
+    **Target file:** `assets/screenshots/activate-license/kontrollzentrum-leerer-container.png`
 
 #### Step 2 - Create a licence request { #schritt-2-lizenzanforderung-erzeugen }
 
@@ -226,12 +226,12 @@ activation only follows in step 3.
 4. In the **CmFAS Assistant**, choose the action
    **Create license request** and click **Next**.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** CmFAS-Assistent mit ausgewählter Option „Lizenzanforderung
-    erzeugen".
-    **So erzeugen:** Im CodeMeter Kontrollzentrum **Lizenz aktivieren**
-    anklicken, ersten Assistenten-Schritt fotografieren.
-    **Ziel-Datei:** `assets/screenshots/activate-license/cmfas-lizenzanforderung-erzeugen.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** CmFAS Assistant with the option “Create license request”
+    selected.
+    **How to create:** In the CodeMeter Control Center, click **Activate License**,
+    photograph the first assistant step.
+    **Target file:** `assets/screenshots/activate-license/cmfas-lizenzanforderung-erzeugen.png`
 
 5. Select **Herzog GmbH** as the manufacturer (it is in the list after step 1)
    and click **Next**.

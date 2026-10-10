@@ -1,6 +1,6 @@
 # Web server and QR code
 
-!!! abstract "Reference — \"Web Server\" tab of the Settings dialog: starting the built-in web server, opening it to the network with a password, choosing the IP address and using the QR code for mobile access."
+!!! abstract "Reference — “Web Server” tab of the Settings dialog: starting the built-in web server, opening it to the network with a password, choosing the IP address and using the QR code for mobile access."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
@@ -17,10 +17,10 @@ is convenient via a **QR code**, which you can display here and also
     this password. Up to version 2.1.0, the password was optional and the
     web server was open on the network even without a password.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Einstellungen, Tab „Webserver“ bei laufendem Server mit Passwort: oben „Netzwerk“ (Webserver aktivieren, Port), darunter „Zugangsschutz“ (Passwortfeld mit Platzhalter „Gesetzt – zum Ändern neu eingeben“, Schaltfläche „Passwort entfernen“, Hinweis „Die Weboberfläche ist im Netz erreichbar, nur mit diesem Passwort.“), unten „Live-Status“ mit grünem Punkt, IP-Adressen, QR-Adresse und QR-Code; Speichern/Abbrechen rechts unten.
-    **So erzeugen:** *Datei > Einstellungen*, Tab **Webserver**; Webserver aktivieren, Testpasswort vergeben, **Speichern**, Dialog erneut öffnen. Interne IP-Adressen dürfen sichtbar sein.
-    **Ziel-Datei:** `assets/screenshots/settings/webserver.png` (ersetzt das bisherige Bild)
+!!! warning "📷 Screenshot missing"
+    **Subject:** Settings, “Web Server” tab with the server running and a password set: at the top “Network” (Enable web server, Port), below it “Access Protection” (password field with the placeholder “Set – enter a new one to change it”, “Remove password” button, note “The web interface can be reached from the network, only with this password.”), at the bottom “Live Status” with a green dot, IP addresses, QR address and QR code; Save/Cancel at the bottom right.
+    **How to create:** *File > Settings*, **Web Server** tab; enable the web server, set a test password, **Save**, open the dialog again. Internal IP addresses may be visible.
+    **Target file:** `assets/screenshots/settings/webserver.png` (replaces the previous image)
 
 !!! warning "Permission required"
     Changing the web server settings requires the

@@ -1,6 +1,6 @@
 # Design: Designer defaults and legacy design import
 
-!!! abstract "Reference — \"Design\" tab of the Settings dialog: initial values for new designs, view, animation and saving in the Designer as well as the import of design files from old Herzog CAB versions."
+!!! abstract "Reference — “Design” tab of the Settings dialog: initial values for new designs, view, animation and saving in the Designer as well as the import of design files from old Herzog CAB versions."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 

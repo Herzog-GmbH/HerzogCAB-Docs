@@ -51,12 +51,12 @@ the tray icon.
     Windows calls the same maintenance tool in the background as in the
     first route — the result is identical.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Maintenance-Tool-Assistent im Schritt „Alle Komponenten
-    entfernen".
-    **So erzeugen:** Maintenance-Tool über *Herzog > Herzog CAB
-    Maintenance* öffnen und den Deinstallations-Schritt fotografieren.
-    **Ziel-Datei:** `assets/screenshots/setup/maintenance-tool-entfernen.png`
+!!! warning "📷 Screenshot missing"
+    **Subject:** Maintenance tool wizard at the “Remove all components”
+    step.
+    **How to create:** Open the maintenance tool via *Herzog > Herzog CAB
+    Maintenance* and photograph the uninstall step.
+    **Target file:** `assets/screenshots/setup/maintenance-tool-entfernen.png`
 
 ## Removing data { #daten-entfernen }
 
