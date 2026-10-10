@@ -2,7 +2,7 @@
 
 !!! abstract "Referenz — Was sich in welcher Version geändert hat"
 
-## Nächste Version (in Vorbereitung)
+## Version 2.1.1 (in Vorbereitung)
 
 ### Neu
 
@@ -14,7 +14,7 @@
   gelöscht, fragt Herzog CAB nach (**Überschreiben**, **Als Kopie
   speichern**, **Neu laden**) und nennt, wer wann an welchem Rechner
   geändert hat. Alte Fassungen bleiben erhalten. **Alle Rechner am
-  gemeinsamen Ordner brauchen die neue Version.** Siehe
+  gemeinsamen Ordner brauchen Version 2.1.1.** Siehe
   [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
 * **Flechtwinkel-Bezug wählbar** – unter *Einstellungen > Allgemein >
   Flechtwinkel* wählen Sie, ob Herzog CAB den Flechtwinkel zur

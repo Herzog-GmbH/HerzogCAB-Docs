@@ -101,7 +101,7 @@ Beispiel ein schwarzes und ein weißes Garn auf demselben Klöppel. Garn 1
 trägt die Farbe des Klöppels; ohne eigene Farben laufen alle Garne in
 dieser Farbe.
 
-![Web-Designer mit Dialog „Fachungsfarben – L1“: Garn 1 und Garn 2 mit ihren Farben, darunter die Farbauswahl](../assets/screenshots/web/fachungsfarben.png)
+![Designer mit Fachung 2 und geöffnetem Dialog „Fachungsfarben – L1": Garn 1 und Garn 2 mit ihren Farben, darunter die Farbauswahl mit aktiver Farbe und Palette; im Hintergrund die Klöppeltabelle mit gestreiften Zellen.](../assets/screenshots/web/fachungsfarben.png)
 
 Sie färben Garne auf zwei Wegen:
 
@@ -146,7 +146,7 @@ erscheinen die Garnfarben:
 
 !!! info "Desktop-App"
     Die Garnfarben werden mit dem Design gespeichert. Die Desktop-App zeigt
-    sie erst ab einer späteren Programmversion an.
+    sie ab Version 2.1.1 an.
 
 ### Besetzungsübersicht
 

@@ -15,6 +15,7 @@ Zwei Schritte:
 
 Andere Umgebung (z. B. Musterumgebung der Produktseite mit Musterkonto):
     set HCAB_WEB=http://127.0.0.1:5230 & set HCAB_PORTAL=http://localhost:8110
+    set HCAB_OHNE_SIMULATOR=1   (blendet Flechtsimulator und Maschinenmodelle aus)
 
 Zugangsdaten werden vom Skript nie eingegeben oder gespeichert - nur die Sitzungs-Cookies in state.json.
 """
@@ -31,8 +32,8 @@ HERE = Path(__file__).parent
 STATE = HERE / "state.json"
 STOP = HERE / "stop_login"
 DOCS = HERE.parent / "docs" / "assets" / "screenshots"
-WEB = os.environ.get("HCAB_WEB", "http://127.0.0.1:5173")
-PORTAL = os.environ.get("HCAB_PORTAL", "http://localhost:8100")
+WEB = os.environ.get("HCAB_WEB", "http://127.0.0.1:5173").rstrip("/")
+PORTAL = os.environ.get("HCAB_PORTAL", "http://localhost:8100").rstrip("/")
 WEBAPP = WEB + "/anmelden"
 TIMEOUT_S = 60 * 60 * 6
 
@@ -81,7 +82,10 @@ def login() -> int:
         STOP.unlink()
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, args=["--window-size=1480,1000"])
-        ctx = browser.new_context(viewport={"width": 1440, "height": 900}, locale="de-DE")
+        # Vorhandene Sitzung weiterverwenden: wer nur noch in einem Tab fehlt,
+        # muss sich im anderen nicht erneut anmelden.
+        ctx = browser.new_context(storage_state=str(STATE) if STATE.exists() else None,
+                                  viewport={"width": 1440, "height": 900}, locale="de-DE")
         web = ctx.new_page()
         web.goto(WEBAPP)
         portal = ctx.new_page()
@@ -154,6 +158,8 @@ def run_web(ctx):
         if want(name):
             leer = ctx.browser.new_context(viewport={"width": breite, "height": hoehe}, device_scale_factor=1, locale=LOCALE)
             leer.add_init_script(SPRACHE_SKRIPT)
+            if os.environ.get("HCAB_OHNE_SIMULATOR"):
+                leer.add_init_script(OHNE_SIMULATOR)
             lp = leer.new_page()
             lp.goto(WEB + pfad); settle(lp)
             shot(lp, "web", name)
@@ -287,7 +293,8 @@ def run_web(ctx):
             # Beispiel wie im Desktop: KB 1/12-80 hat Zubehoer, Abzug und drei Besetzungen.
             try:
                 page.locator("input[type='search']").first.fill("KB 1/12-80"); time.sleep(0.8)
-                page.get_by_text("Feindrahtflechtmaschine KB 1/12-80", exact=True).first.click(); settle(page, 1200)
+                # Kartentitel je nach Katalogstand und Sprache mit oder ohne Gattungsname davor
+                page.get_by_text(re.compile(r"KB 1/12-80$")).first.click(); settle(page, 1200)
                 dialog = page.locator("dialog[open]")
                 if want("katalog-dialog"):
                     shot(page, "web", "katalog-dialog")
@@ -371,6 +378,25 @@ def portal_sprache(page: Page, sprache: str):
 
 SPRACHE_SKRIPT = "try { localStorage.setItem('sprache', '%s'); } catch (e) {}" % SPRACHE
 
+# Der Flechtsimulator steht nicht im Handbuch (bis er bestellbar ist). Hat das Konto ihn
+# freigeschaltet, blendet HCAB_OHNE_SIMULATOR=1 fuer die Bilder aus, was ein Konto ohne ihn
+# nicht sieht: Navigationseintraege (Web-App und Portal), im Portal die Karte "Maschinenmodelle"
+# (#modelle) und die gleichnamige Spalte der Benutzerliste.
+OHNE_SIMULATOR = """
+document.addEventListener('DOMContentLoaded', () => {
+  const s = document.createElement('style');
+  s.textContent = "a[href^='/flechtsimulator'], a[href^='/maschinenmodelle'], a[href='/modelle'], #modelle"
+                + " { display: none !important; }";
+  document.head.appendChild(s);
+  document.querySelectorAll('table').forEach((tab) => {
+    const kopf = [...tab.querySelectorAll('thead th')];
+    const i = kopf.findIndex((th) => ['Maschinenmodelle', 'Machine models'].includes(th.textContent.trim()));
+    if (i < 0) return;
+    tab.querySelectorAll('tr').forEach((tr) => { const z = tr.children[i]; if (z) z.style.display = 'none'; });
+  });
+});
+"""
+
 
 def shots() -> int:
     if not STATE.exists():
@@ -381,6 +407,8 @@ def shots() -> int:
                                   viewport={"width": 1440, "height": 900},
                                   device_scale_factor=1, locale=LOCALE)
         ctx.add_init_script(SPRACHE_SKRIPT)
+        if os.environ.get("HCAB_OHNE_SIMULATOR"):
+            ctx.add_init_script(OHNE_SIMULATOR)
         run_web(ctx)
         run_portal(ctx)
         browser.close()

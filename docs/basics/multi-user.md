@@ -20,7 +20,7 @@ Eintrag **einzeln**, **gesperrt** und **mit Version**:
 
 !!! warning "Alle Rechner aktualisieren"
     Dieser Schutz wirkt nur, wenn **alle Rechner**, die auf das gemeinsame
-    Arbeitsverzeichnis zugreifen, die neue Programmversion haben. Version
+    Arbeitsverzeichnis zugreifen, mindestens Version 2.1.1 haben. Version
     2.1.0 und älter schreiben weiterhin ganze Listen zurück, beachten die
     Sperre nicht und können dabei Änderungen anderer Rechner verwerfen.
     Aktualisieren Sie deshalb alle Arbeitsplätze zur selben Zeit, siehe

@@ -13,7 +13,7 @@ Plätze.
 
 ## Der Bildschirm im Überblick
 
-![Anmeldeseite der Web-App am breiten Bildschirm: links die blaue Markenfläche, rechts die Karte „Anmelden“](../assets/screenshots/web/anmelden.png)
+![Anmeldeseite der Web-App am breiten Bildschirm: links die blaue Markenfläche mit „Berechnen, gestalten, planen — im Browser", drei Stichpunkten und dem laufenden Zopf, rechts die Karte „Anmelden" mit E-Mail-Adresse und Passwort.](../assets/screenshots/web/anmelden.png)
 
 Wie die Seite aussieht, hängt von der Breite des Browserfensters ab:
 
@@ -26,7 +26,7 @@ Wie die Seite aussieht, hängt von der Breite des Browserfensters ab:
   entfällt. Die Karte trägt stattdessen oben ein blaues **Kopfband** mit
   dem Herzog-Logo und dem Zopf.
 
-![Anmeldeseite der Web-App am Smartphone: Karte „Anmelden“ mit blauem Kopfband über den Feldern](../assets/screenshots/web/anmelden-schmal.png)
+![Anmeldeseite am Smartphone: die Karte „Anmelden" mit dem blauen Kopfband (Logo und Zopf) über den Feldern.](../assets/screenshots/web/anmelden-schmal.png)
 
 Der Zopf ist reiner Schmuck. Während die Web-App Ihre Anmeldung prüft, läuft
 er schneller. Ist in Ihrem Betriebssystem *Bewegung reduzieren* eingestellt,

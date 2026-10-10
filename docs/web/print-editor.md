@@ -26,7 +26,7 @@ Vorlage gleich geladen.
 
 ## Der Bildschirm im Überblick
 
-![Druck Editor der Web-App mit Elementen links, Seite in der Mitte sowie Auswahl und Einstellungen rechts](../assets/screenshots/web/druckeditor.png)
+![Der Druck Editor mit geladener Vorlage „Standard Auftrag": links die Elemente mit Filter, in der Mitte die Seite mit Raster und Elementen, rechts „Auswahl" und „Einstellungen", oben Vorlagenwahl, „Vorschau mit" und der Umschalter Bearbeiten/Vorschau.](../assets/screenshots/web/druckeditor.png)
 
 | Bereich | Inhalt |
 |---|---|

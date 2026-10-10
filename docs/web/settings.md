@@ -14,7 +14,7 @@ Sie öffnen die Seite über *Benutzermenü > Einstellungen*.
 
 ## Der Bildschirm im Überblick
 
-![Einstellungen der Web-App mit den Karten Sprache, Flechtwinkel und Produktionsplanung](../assets/screenshots/web/einstellungen.png)
+![Einstellungen der Web-App mit den Karten Sprache, Flechtwinkel, Produktionsplanung, Angemeldet als, Datenschutz, Designer und Passwort und Sicherheit.](../assets/screenshots/web/einstellungen.png)
 
 Die Karten stehen untereinander. Unter jedem Kartentitel steht, für wen die
 Einstellung gilt: für **diesen Benutzer** (auf allen Geräten), für **alle

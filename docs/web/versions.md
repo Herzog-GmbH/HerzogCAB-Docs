@@ -25,17 +25,6 @@ Versionen gibt es für **Designs**, **Flecht- und Spulaufträge**,
 Dokumente, 3D-Modelle), Einstellungen, Benutzer und Rollen haben keine
 Versionen.
 
-Wohin eine Fassung beim Speichern und Löschen wandert und wie Sie sie
-zurückholen:
-
-```mermaid
-flowchart LR
-  E[Eintrag] -- Speichern --> V[Bisherige Fassung<br>unter Versionen]
-  V -- Wiederherstellen --> E
-  E -- Löschen --> P[Papierkorb]
-  P -- Wiederherstellen --> E
-```
-
 ## Wo der Knopf „Versionen" steht
 
 Der Knopf erscheint, sobald ein Eintrag einmal gespeichert ist. In
@@ -55,7 +44,7 @@ Ansehen darf die Versionen jeder, der den Eintrag sehen darf.
 
 ## Der Dialog „Versionen"
 
-![Dialog „Versionen“ eines Designs mit der aktuellen Version, noch ohne frühere Fassungen](../assets/screenshots/web/versionen.png)
+![Dialog „Versionen" eines Designs: oben der Kasten „Aktuell: Version n" mit Datum, Person und Quelle, darunter die Liste der früheren Fassungen mit „Unterschiede" und „Wiederherstellen", bei einer Fassung die aufgeklappte Tabelle der Unterschiede.](../assets/screenshots/web/versionen.png)
 
 Der Dialog heißt *Versionen: &lt;Name des Eintrags&gt;*.
 
@@ -119,7 +108,7 @@ Ohne dieses Recht sehen Sie die Versionen nur.
 
 ## Papierkorb
 
-![Papierkorb der Web-App, hier ohne gelöschte Einträge](../assets/screenshots/web/papierkorb.png)
+![Papierkorb der Web-App mit Bereichsfilter (Alle, Design, Auftrag, Material …) und der Tabelle Name, Bereich, Gelöscht am, Von, Quelle mit den Knöpfen „Versionen" und „Wiederherstellen".](../assets/screenshots/web/papierkorb.png)
 
 Gelöschte Einträge verschwinden nicht sofort, sondern kommen in den
 **Papierkorb**. Sie öffnen ihn über *Benutzermenü > Papierkorb*. Er zeigt

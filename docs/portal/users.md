@@ -14,7 +14,7 @@ im Browser.
 
 ## Der Bildschirm im Überblick
 
-![Benutzerliste im Lizenzportal mit Name, Rolle, Maschinenmodellen und Status, darunter „Benutzer einladen“ mit Sprachwahl](../assets/screenshots/portal/benutzer.png)
+![Benutzerliste im Lizenzportal mit Namensfeld und „Speichern" je Zeile, Rolle, letzter Anmeldung, Status und den Knöpfen Deaktivieren und Löschen; darunter das Formular „Benutzer einladen" mit Sprachwahl.](../assets/screenshots/portal/benutzer.png)
 
 Oben steht die **Benutzerliste**, darunter das Formular **Benutzer
 einladen**. Bearbeiter und Betrachter sehen die Liste nur; verwalten können
@@ -68,25 +68,6 @@ So läuft die Einladung ab:
    selbst eine neue Einladung schicken.
 4. Nach dem Setzen des Passworts ist der Zugang **aktiv** und gilt sofort
    für Portal, Desktop-App und Web-App.
-
-Der Lebenslauf eines Zugangs im Überblick:
-
-```mermaid
-stateDiagram-v2
-  [*] --> Offen: Einladen
-  Offen --> Offen: nach 3 Tagen einmal Erinnerung mit neuem Link
-  Offen --> Abgelaufen: Link älter als 14 Tage
-  Abgelaufen --> Offen: Einladung erneuern
-  Offen --> Aktiv: Passwort gesetzt
-  Aktiv --> Deaktiviert: Deaktivieren
-  Deaktiviert --> Aktiv: Aktivieren
-  Aktiv --> [*]: Löschen
-  Deaktiviert --> [*]: Löschen
-  Offen: Einladung offen bis …
-  Abgelaufen: Einladung abgelaufen
-  Aktiv: aktiv
-  Deaktiviert: deaktiviert
-```
 
 !!! info "Benutzer im Testkonto"
     Mit der Testversion laden Sie so viele Benutzer ein, wie die

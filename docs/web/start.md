@@ -13,7 +13,7 @@ unteren Leiste am Smartphone.
 
 ## Der Bildschirm im Überblick
 
-![Startseite der Web-App mit Begrüßung, Schnellaktionen, Auftragszählern, Produktion und Favoriten](../assets/screenshots/web/startseite.png)
+![Startseite der Web-App mit Begrüßung und Schnellaktionen oben, darunter die Karte „Aufträge" mit vier Zählern über die volle Breite, links „Produktion" mit den Reitern Überfällig, Diese Woche, Demnächst, rechts „Favoriten" und „Zuletzt geöffnet".](../assets/screenshots/web/startseite.png)
 
 Oben steht die **Kopfzeile** mit Begrüßung und Schnellaktionen. Darunter
 folgen die Karten **Aufträge**, **Produktion**, **Favoriten**, **Zuletzt

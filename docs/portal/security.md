@@ -18,7 +18,7 @@ Sicherheit* hierher.
 
 ## Der Bildschirm im Überblick
 
-![Eigene Seite im Lizenzportal mit den Karten „Passwort“, „Zweiter Faktor“ und „Name“](../assets/screenshots/portal/passwort.png)
+![Die eigene Seite im Lizenzportal mit den drei Karten „Passwort", „Zweiter Faktor" und „Name".](../assets/screenshots/portal/passwort.png)
 
 Die Seite besteht aus drei Karten: **Passwort**, **Zweiter Faktor** und
 **Name**.
