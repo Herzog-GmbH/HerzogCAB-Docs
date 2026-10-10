@@ -87,7 +87,7 @@ The **"Update available"** dialog shows:
 
 !!! info "Update from version 1.x to 2.0"
     Version 2.0 introduces the customer account. Existing customers with a **dongle or
-    CmAct licence** change nothing — the dongle continues to be recognised and the
+    CmAct licence** change nothing — the dongle continues to be recognized and the
     local user management remains. Only those who have been switched over to the
     customer account by Herzog sign the computer in to the account once after the update
     (see [Sign in and obtain a licence](activate-license.md)).

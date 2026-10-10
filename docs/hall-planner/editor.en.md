@@ -17,8 +17,8 @@ with the same interface:
   (*Floor plan: …*).
 
 All objects lie to scale on the drawing area — positions and dimensions
-are kept to the millimetre and displayed in the selected unit (metres or
-millimetres).
+are kept to the millimeter and displayed in the selected unit (meters or
+millimeters).
 
 === "Geometry"
 
@@ -34,7 +34,7 @@ millimetres).
 |---|---|
 | **Header toolbar** (top) | Back to the overview, layout selection, **New**, **Save**, ⋯ menu, view toggles (grid, snap, 2D/3D). |
 | **Toolbar** (left) | Tools for selecting, drawing and — in populate mode — the machine **catalogue**. |
-| **Drawing area** (centre) | The true-to-scale plan; in populate mode with the selection toolbar above it. |
+| **Drawing area** (center) | The true-to-scale plan; in populate mode with the selection toolbar above it. |
 | **Properties panel** (right) | Tabs **Selection** and **Layout** — properties of the marked object or settings of the entire layout. |
 | **Status bar** (bottom) | Cursor coordinates, measured value, active tool, grid/angle, number selected and zoom control. |
 
@@ -106,7 +106,7 @@ both modes:
 
 === "Machine placement"
 
-    In populate mode, the **CATALOG** replaces the drawing groups:
+    In populate mode, the **CATALOGUE** replaces the drawing groups:
 
     * **Search machine…** — searches name, type, serial number and location.
     * **Type filter** — restricts the list to one machine type
@@ -115,10 +115,10 @@ both modes:
       fleet contains braiding machines **and** bobbin winding machines, the list is divided into the
       sections *Braiding machines* and *Bobbin winding machines* accordingly. Each
       entry shows name, type, serial number and the footprint dimensions
-      (L × W × H in metres); if the dimensions are missing, the entry warns with
+      (L × W × H in meters); if the dimensions are missing, the entry warns with
       *Dimensions missing*.
     * **Place:** **drag** the machine with the mouse **onto the drawing area**
-      — or place it in the centre of the view with a **double-click**.
+      — or place it in the center of the view with a **double-click**.
     * **Counter** — shows how many machines pass the filter.
 
 ### Drawing area { #zeichenflache }
@@ -152,7 +152,7 @@ both modes:
 ### Selection toolbar (populate mode only) { #auswahl-toolbar-nur-bestuckungs-modus }
 
 Above the drawing area is a bar with four function blocks. The
-blocks become active depending on the size of the selection; a greyed-out block gives
+blocks become active depending on the size of the selection; a grayed-out block gives
 the reason in its tooltip (e.g. *Select at least two machines*).
 
 | Block | From | Buttons |
@@ -190,7 +190,7 @@ Selection tab shows the hint to click an object.
 | Field | Meaning |
 |---|---|
 | **Description** | Free text for the layout (optional). |
-| **Unit** | Display unit of all dimensions: **Metres** or **Millimetres**. |
+| **Unit** | Display unit of all dimensions: **Meters** or **Millimeters**. |
 | **Grid size** | Spacing of the drawing grid in mm. |
 | **Object snap** | Align to existing objects while drawing. |
 | **Angle snap** | Snap walls/edges to fixed angle steps; you set the step size (°) next to it. |
@@ -202,7 +202,7 @@ drawing background:
 |---|---|---|
 | **Load image…** | Choose a floor plan image via the [Media library](../master-data/media.md); very large images are automatically reduced on import. | Geometry |
 | **Orientation** | Rotation of the image in degrees, with quick buttons **−90°** / **+90°** — this lets you align a crookedly scanned plan to the grid. | Geometry |
-| **Set scale** | Calibration: click two points of a known distance on the image and enter its **actual length in metres** — after that, all dimensions are correct. | Geometry |
+| **Set scale** | Calibration: click two points of a known distance on the image and enter its **actual length in meters** — after that, all dimensions are correct. | Geometry |
 | **Remove** | Detaches the image from the layout; walls and machines are kept. | Geometry |
 | **Show floor plan image** | Shows/hides the background. | Geometry + machine placement |
 | **Transparency** | Slider for the opacity of the background. | Geometry + machine placement |
@@ -262,7 +262,7 @@ Only the fields matching the element type are shown:
 | **Show open** | Door, gate | Shows the element opened. |
 | **Wall side** | Banner | Inside / Outside. |
 | **Banner image** | Banner | **Load image/logo…** — image for the display (also in 3D). |
-| **Stepped** | Stairs | Number of steps. |
+| **Steps** | Stairs | Number of steps. |
 | **Rotation** | Stairs | Rotation in degrees. |
 | **Designation** | all | Custom text (optional). |
 

@@ -14,7 +14,7 @@ Produktion**.
     ---
     Wie viele Meter Geflecht entstehen pro Stunde?
 
-- :material-ruler-square-compass: __[Maschinen-Dimensionierung](dimensions.md)__
+- :material-ruler-square-compass: __[Maschinendimensionierung](dimensions.md)__
 
     ---
     Wie groß ist die Aufstellfläche einer Flechtmaschine überschlägig?

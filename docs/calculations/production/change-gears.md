@@ -41,6 +41,6 @@ Diese Seite folgt dem allgemeinen Aufbau der Berechnungsseiten ohne weitere Beso
 
 ## Verwandte Berechnungen
 
-* [Maschinen-Dimensionierung](dimensions.md)
+* [Maschinendimensionierung](dimensions.md)
 * [Produktionsgeschwindigkeit](production-speed.md)
 * [Maschinenlaufzeit pro Spulensatz](run-time-bobbin-set.md)

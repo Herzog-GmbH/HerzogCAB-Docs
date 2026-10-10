@@ -1,10 +1,10 @@
 # Setup and track animation
 
-!!! abstract "Reference — the Occupation Overview: horngears and tracks of the braiding machine seen from above, with animation, speed control and color rotation."
+!!! abstract "Reference — the Setup Overview: horngears and tracks of the braiding machine seen from above, with animation, speed control and color rotation."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
-The **Occupation Overview** at the bottom of the left panel shows the braiding
+The **Setup Overview** at the bottom of the left panel shows the braiding
 machine schematically from above: the horngears with their slots and the
 carriers sitting in them in their current colors. This shows you what your
 color assignment looks like on the real machine. With the **Track animation**
@@ -14,11 +14,11 @@ layer.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-![Occupation Overview of a packing braid with nine horngears, colored carriers and the animation buttons](../assets/screenshots/designer/designer-besetzungsuebersicht.png)
+![Setup Overview of a packing braid with nine horngears, colored carriers and the animation buttons](../assets/screenshots/designer/designer-besetzungsuebersicht.png)
 
 ## Controls in detail { #bedienelemente-im-detail }
 
-### The Occupation Overview per braid type { #die-besetzungsubersicht-je-geflechtsart }
+### The Setup Overview per braid type { #die-besetzungsubersicht-je-geflechtsart }
 
 The arrangement of the horngears follows the selected
 [braid type](parameters.md):
@@ -54,10 +54,10 @@ At the top left of the overview is the **Play button** (*"Animate tracks:
 horngears rotate, carriers travel along their track"*):
 
 * **Play** starts the animation: the horngears rotate in opposite directions,
-  the carriers ride along in their slots and change to the neighbouring
+  the carriers ride along in their slots and change to the neighboring
   horngear at the transfer points. Each braid type has its own motion logic —
   from the circulating ring of the round braid through the reciprocating track
-  of the strand to the intertwined tracks of square and packing braid, the
+  of the lace braid to the intertwined tracks of square and packing braid, the
   figure-eight track of the soutache and the rolling gears of the spiral.
 * Clicking again (**Pause**) stops the animation; the current state remains.
   Another click continues it.

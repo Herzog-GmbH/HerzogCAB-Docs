@@ -62,5 +62,5 @@ and the affected field is marked red.
 
 - [Material diameter from material](material-diameter.md) – diameter from an already known yarn.
 - [Ply count from product](required-ply.md) – conversely determines the required ply count for an already selected material.
-- [Fineness / titer](linear-density.md) – fineness of a single thread from the braid parameters.
+- [Fineness / Titer](linear-density.md) – fineness of a single thread from the braid parameters.
 - [Materials](../../master-data/materials.md) – maintenance of density and titer in the master data.

@@ -40,7 +40,7 @@ bobbin capacity to the material demand for a whole winding batch.
 
     ---
 
-    How many metres of material a selected bobbin holds.
+    How many meters of material a selected bobbin holds.
 
     [:octicons-arrow-right-24: Open](bobbin-capacity.md)
 

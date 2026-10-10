@@ -4,7 +4,7 @@
 
 ## Purpose { #wofur }
 
-This calculation determines how many metres of material are still on a
+This calculation determines how many meters of material are still on a
 partly used bobbin. To do so, you weigh the bobbin and calculate
 back from the weight via the fineness to the residual length — useful for
 estimating remaining bobbins without unwinding them, for example during stocktaking or

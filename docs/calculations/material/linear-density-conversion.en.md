@@ -46,6 +46,6 @@ thus calculate directly in the opposite direction.
 
 ## Related calculations { #verwandte-berechnungen }
 
-- [Fineness / titer](linear-density.md)
+- [Fineness / Titer](linear-density.md)
 - [Material diameter from material](material-diameter.md)
 - [Materials (master data)](../../master-data/materials.md)

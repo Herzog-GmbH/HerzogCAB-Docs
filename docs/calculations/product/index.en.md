@@ -56,7 +56,7 @@ tubular and hose-shaped braids there is a separate subgroup,
     ---
     Total weight of a braided product
 
-- :material-circle-multiple-outline: __[Core-Cover Product](core-sheath.md)__
+- :material-circle-multiple-outline: __[Core-cover product](core-sheath.md)__
 
     ---
     Fully calculate a two-layer product made of core and cover

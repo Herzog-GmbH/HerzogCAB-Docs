@@ -9,7 +9,7 @@ Horngear speed and take-up speed determine the
 braiding angle at which the braid is produced — and conversely: which
 take-up speed or which horngear speed do you need to obtain a
 desired braiding angle? The take-up can be specified as a
-speed or via the diameter and speed of the takeoff disc.
+speed or via the diameter and speed of the take-up disc.
 For round braid and lace braid.
 
 ## Inputs { #eingabewerte }
@@ -27,11 +27,11 @@ specified as**.
 | **Slots in the track:** | pcs | Lace braid only: slots over the whole track. |
 | **Target braiding angle:** | ° | Only with *Take-up* and *Horngear speed*: the desired braiding angle (up to 85°). |
 | **Horngear speed:** | rpm | Speed of the horngears (up to 2000). Omitted when it is calculated. |
-| **Take-up specified as:** | *Speed*, *Takeoff disc* | How the take-up is specified — omitted when the take-up is calculated. |
+| **Take-up specified as:** | *Speed*, *Take-up disc* | How the take-up is specified — omitted when the take-up is calculated. |
 | **Take-up speed:** | m/h | With *Speed*: the take-up speed. The calculator icon opens [Production speed](../production/production-speed.md). |
-| **Takeoff disc diameter:** | mm | With *Takeoff disc* and when calculating the take-up: diameter of the takeoff disc (up to 5000). |
-| **Takeoff disc speed:** | rpm | With *Takeoff disc*: speed of the disc (up to 10000). |
-| **Effective take-up:** | % | With *Takeoff disc* and when calculating the take-up: which share of the disc speed actually reaches the braid (slip; default 100 %). |
+| **Take-up disc diameter:** | mm | With *Take-up disc* and when calculating the take-up: diameter of the take-up disc (up to 5000). |
+| **Take-up disc speed:** | rpm | With *Take-up disc*: speed of the disc (up to 10000). |
+| **Effective take-up:** | % | With *Take-up disc* and when calculating the take-up: which share of the disc speed actually reaches the braid (slip; default 100 %). |
 
 ## Result { #ergebnis }
 
@@ -39,7 +39,7 @@ specified as**.
 |---|---|---|
 | **Braiding angle** | ° | With *Calculate: Braiding angle* — the braiding angle that results from speed and take-up (two decimal places). |
 | **Required take-up speed** | m/h | With *Calculate: Take-up*. |
-| **Required takeoff disc speed** | rpm | With *Calculate: Take-up*, as soon as a takeoff disc diameter is entered. |
+| **Required take-up disc speed** | rpm | With *Calculate: Take-up*, as soon as a take-up disc diameter is entered. |
 | **Required horngear speed** | rpm | With *Calculate: Horngear speed*. |
 
 ## Operation { #bedienung }

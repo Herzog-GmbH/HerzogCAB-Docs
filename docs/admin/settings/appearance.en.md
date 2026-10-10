@@ -96,7 +96,7 @@ stored data:
 
 * **Calculations:** every braiding angle field and every braiding angle result,
   e.g. in [Braiding angle](../../calculations/product/braid-angle.md),
-  [Braiding angle via take-up](../../calculations/product/braid-angle-takeup.md),
+  [Braiding angle from take-up](../../calculations/product/braid-angle-takeup.md),
   [Braid density](../../calculations/product/lay-length.md),
   [Product diameter](../../calculations/product/product-diameter.md),
   [Product weight](../../calculations/product/rope-weight.md),

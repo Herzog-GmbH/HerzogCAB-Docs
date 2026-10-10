@@ -1,4 +1,4 @@
-# Material Length on Bobbin
+# Material length on bobbin
 
 !!! abstract "Reference — Calculation: usable yarn length on a loaded bobbin"
 
@@ -20,7 +20,7 @@ different fields are shown.
 | **Bobbin** | – | Bobbin from the [bobbin master data](../../master-data/bobbins.md); supplies the dimensions for the winding volume. |
 | **Material** | – | Optional: material from the master data; automatically takes over the **Density**. |
 | **Density** | g/cm³ | Material density. |
-| **Linear density** | tex, dtex, den, Nr_metric, Nr_english | Fineness of the material (only with calculation basis *Material*). |
+| **Fineness** | tex, dtex, den, Nr_metric, Nr_english | Fineness of the material (only with calculation basis *Material*). |
 | **Diameter** | mm | Material diameter (only with calculation basis *Diameter*). |
 | **Rectangle height**, **Rectangle width** | mm | Dimensions of the flat thread (only with calculation basis *Rectangle material*). |
 | **Filling grade** | % | Share of the bobbin volume that is actually wound (default 70). |
@@ -46,7 +46,7 @@ dimensions instead of searching for it manually here.
 
 ## Related calculations { #verwandte-berechnungen }
 
-- [Bobbin Volume](bobbin-volume.md)
-- [Fineness / titer](linear-density.md)
+- [Bobbin volume](bobbin-volume.md)
+- [Fineness / Titer](linear-density.md)
 - [Material diameter from material](material-diameter.md)
 - [Bobbin formats (master data)](../../master-data/bobbins.md)

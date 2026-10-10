@@ -68,17 +68,17 @@ switched on — fetches back what was changed there.
 
 | Element | Effect |
 |---|---|
-| **Sync workspace with the cloud automatically** | Switches the synchronization on or off; the switch applies to the active profile. When active, Herzog CAB monitors the workspace folder and synchronizes changes shortly after saving; in addition, a synchronization runs every 15 minutes. |
-| **Apply changes from the web app to the workspace** | Only available if the synchronization is on; on by default. After every upload, fetches what was created, changed or deleted in the web app (see below). Off: the synchronization only runs from the desktop to the web app. |
+| **Sync workspace folder with the cloud automatically** | Switches the synchronization on or off; the switch applies to the active profile. When active, Herzog CAB monitors the workspace folder and synchronizes changes shortly after saving; in addition, a synchronization runs every 15 minutes. |
+| **Apply changes from the web app to the workspace folder** | Only available if the synchronization is on; on by default. After every upload, fetches what was created, changed or deleted in the web app (see below). Off: the synchronization only runs from the desktop to the web app. |
 | Note text | Summarizes what goes in which direction. If a prerequisite is missing, the reason appears here (see below) with the **Open licence portal** link. |
-| **In the cloud:** | Which workspace folder the account has in the cloud: *No working directory yet – the first sync sets it.*, *This working directory ("…").* or *"…" – a different working directory (computer …, since …).* |
-| **Status** | *Off.*, *Ready, not synced yet.*, *Reading the working directory …*, *Syncing …*, *Last synced: &lt;time&gt;* (with the number of entries and files) or *Error: …*. |
+| **In the cloud:** | Which workspace folder the account has in the cloud: *No workspace folder yet – the first sync sets it.*, *This workspace folder ("…").* or *"…" – a different workspace folder (computer …, since …).* |
+| **Status** | *Off.*, *Ready, not synced yet.*, *Reading the workspace folder …*, *Syncing …*, *Last synced: &lt;time&gt;* (with the number of entries and files) or *Error: …*. |
 | **Sync now** | Triggers a synchronization immediately. |
-| **Use this working directory instead …** | Only visible if the account already synchronizes with a different workspace folder. After confirmation, rebinds the cloud to this workspace folder; what the other one uploaded remains in the web app, and the other one no longer synchronizes afterwards. Only users with the *Manage workspace* permission may rebind. |
+| **Use this workspace folder instead …** | Only visible if the account already synchronizes with a different workspace folder. After confirmation, rebinds the cloud to this workspace folder; what the other one uploaded remains in the web app, and the other one no longer synchronizes afterwards. Only users with the *Manage workspace* permission may rebind. |
 
 **Prerequisites:** The account needs a subscription that includes the web app.
 These are the annual subscription and the trial version. A licence without an end date
-(lifetime) is not sufficient. If the subscription is missing, the switch remains grey, and the
+(lifetime) is not sufficient. If the subscription is missing, the switch remains gray, and the
 note reads *"This requires the "Herzog CAB Web" module (subscription) on the account.
 It can be ordered in the license portal."* In addition, the computer must be signed in to the
 customer account.
@@ -130,9 +130,9 @@ sequenceDiagram
     The web app has exactly one workspace per account. The first synchronization
     binds it to the workspace folder it runs with. If a
     different workspace folder (e.g. another profile) tries to synchronize,
-    the status reports *This account is already synced from the working directory "…"
+    the status reports *This account is already synced from the workspace folder "…"
     (computer …, since …). An account has exactly one
-    working directory in the cloud.* Several computers that use the same
+    workspace folder in the cloud.* Several computers that use the same
     workspace folder on a network drive synchronize one after the
     other.
 

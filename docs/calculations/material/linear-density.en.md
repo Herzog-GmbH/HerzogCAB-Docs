@@ -1,4 +1,4 @@
-# Fineness / titer
+# Fineness / Titer
 
 !!! abstract "Reference — Calculation: required yarn fineness for a desired braid"
 
@@ -16,7 +16,7 @@ for selecting the right yarn or wire before production.
 |---|---|---|
 | **Material:** | – | Optional selection of a material from the [master data](../../master-data/materials.md). Automatically takes over the stored **Density** into the *Density* field. |
 | **Density:** | g/cm³ | Material density (up to 3 decimal places, max. 25). Must be greater than 0. |
-| **Linear density / Titer:** | tex, dtex, den, Nr_metric, Nr_english | Selection of the unit in which the result is output. The result unit automatically follows this selection. |
+| **Fineness / Titer:** | tex, dtex, den, Nr_metric, Nr_english | Selection of the unit in which the result is output. The result unit automatically follows this selection. |
 | **Braiding angle:** | ° | Braiding angle of the product (max. 85°). Must be at least 5°. |
 | **Product diameter:** | mm | Outer diameter of the finished braid. Must be greater than 0. |
 | **Number of carriers:** | pcs | Number of carriers (max. 1500). Must be at least 8. |
@@ -29,7 +29,7 @@ for selecting the right yarn or wire before production.
 
 | Value | Unit | Meaning |
 |---|---|---|
-| **Linear density / Titer:** | follows the *Linear density / Titer* selection (tex, dtex, den, Nr_metric, Nr_english) | Calculated fineness (titer) per single thread/carrier, to 2 decimal places. |
+| **Fineness / Titer:** | follows the *Fineness / Titer* selection (tex, dtex, den, Nr_metric, Nr_english) | Calculated fineness (titer) per single thread/carrier, to 2 decimal places. |
 
 ## Operation { #bedienung }
 

@@ -26,7 +26,7 @@ flowchart LR
 | | Cloud sync | ZIP import |
 |---|---|---|
 | When | The desktop app and web app should continuously show the same state; the desktop app takes precedence in case of conflicts. | One-time move or occasional update; also without a running desktop app. |
-| Direction | Desktop → web automatically, shortly after saving and every 15 minutes; then web → desktop, as long as *Apply changes from the web app to the workspace* is on (default) | Desktop → web (upload) and web → desktop (download), each manually |
+| Direction | Desktop → web automatically, shortly after saving and every 15 minutes; then web → desktop, as long as *Apply changes from the web app to the workspace folder* is on (default) | Desktop → web (upload) and web → desktop (download), each manually |
 | Deletions | take effect in both directions (details under [Licence and cloud](../admin/settings/license.md#was-in-welche-richtung-geht)) | are not transferred |
 | Requirement | Desktop app signed in to the account, subscription with web app; one workspace folder per account | Subscription with web app, *Workspace settings* permission |
 
@@ -34,16 +34,16 @@ flowchart LR
 
 1. In the desktop app, open *File > Settings*, **Licence** tab.
 2. In the **Cloud (app.herzog-cab.com)** card, tick the option
-   **Sync workspace with the cloud automatically**. If the
-   switch is grey, the account lacks a subscription with the web app. The note
+   **Sync workspace folder with the cloud automatically**. If the
+   switch is gray, the account lacks a subscription with the web app. The note
    gives the reason (reference: [Licence and cloud](../admin/settings/license.md)).
-3. Leave **Apply changes from the web app to the workspace**
+3. Leave **Apply changes from the web app to the workspace folder**
    ticked if people also work in the web app;
    untick it if only the desktop app should change data.
 4. Check the **In the cloud:** line — the first time, it shows
-   *No working directory yet – the first sync sets it.*
+   *No workspace folder yet – the first sync sets it.*
 5. Click **Sync now**. The status changes from
-   *Reading the working directory …* via *Syncing …* to
+   *Reading the workspace folder …* via *Syncing …* to
    *Last synced: &lt;time&gt;*.
 6. Click **Save**.
 
@@ -100,7 +100,7 @@ sequenceDiagram
 Choose one of these ways of working:
 
 * **Both work** (default): sync on, *Apply changes from the web app
-  to the workspace* on. Orders, designs, master data,
+  to the workspace folder* on. Orders, designs, master data,
   machines, hall plans and files from the web app arrive in the
   workspace folder, including deletions. Agree on who
   edits which entry.
@@ -118,7 +118,7 @@ is shown under *Settings > Licence*.
 
 ## If something does not work { #wenn-etwas-nicht-klappt }
 
-* Switch grey, note *This requires the “Herzog CAB Web” module
+* Switch gray, note *This requires the “Herzog CAB Web” module
   (subscription) on the account* → order the annual subscription in the web app under
   [Subscription and order](../web/subscription.md). The subscription includes
   the program and the web app.
@@ -126,9 +126,9 @@ is shown under *Settings > Licence*.
   (`app.herzog-cab.com`, HTTPS).
 * *The customer account sign-in is no longer valid* → restart the desktop app
   and sign in to the account.
-* *This account is already synced from the working directory “…” …* → The
+* *This account is already synced from the workspace folder “…” …* → The
   account is already syncing with another workspace folder (profile).
-  Work in that one, or rebind the cloud with **Use this working directory
+  Work in that one, or rebind the cloud with **Use this workspace folder
   instead …** (*Manage workspace* permission).
 * ZIP upload fails → exclude the `machines/` folder or select **Data only**;
   upload images later via the [Media library](../web/media.md).

@@ -40,5 +40,5 @@ and later check the same configuration from a different angle via [Diameter](tub
 
 * [Product](../product/index.md) – parent calculation group
 * [Material diameter](../material/material-diameter.md)
-* [Fineness / titer](../material/linear-density.md)
+* [Fineness / Titer](../material/linear-density.md)
 * [How calculation pages are structured](../../basics/calc-page-anatomy.md)

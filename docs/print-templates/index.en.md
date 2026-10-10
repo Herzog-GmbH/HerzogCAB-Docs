@@ -10,7 +10,7 @@ a calculation report. You design the templates once in the
 **Print editor** and then use them as often as you like for the actual
 printing.
 
-![The print editor: element palette on the left, page canvas in the centre, properties on the right.](../assets/screenshots/print-templates/druck-editor.png)
+![The print editor: element palette on the left, page canvas in the center, properties on the right.](../assets/screenshots/print-templates/druck-editor.png)
 
 You reach the print editor via the navigation item **Print editor**.
 Templates are stored centrally per workspace (under `Printouts/templates/`)

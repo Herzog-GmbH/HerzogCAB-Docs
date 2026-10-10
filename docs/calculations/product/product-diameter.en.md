@@ -14,9 +14,9 @@ machine selection and quotation costing.
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Material:** | – | Optional selection of a material from the [material database](../../master-data/materials.md). **Density** and **Linear density / Titer** are then taken over automatically. |
+| **Material:** | – | Optional selection of a material from the [material database](../../master-data/materials.md). **Density** and **Fineness / Titer** are then taken over automatically. |
 | **Density:** | g/cm³ | Material density (three decimal places, max. 25). Must be greater than 0. |
-| **Linear density / Titer:** | tex, dtex, den, Nr_metric, Nr_english | Fineness (titer) of the yarn. You choose the unit in the selection field to the right of it; internally the value is converted to tex. Minimum value 1. |
+| **Fineness / Titer:** | tex, dtex, den, Nr_metric, Nr_english | Fineness (titer) of the yarn. You choose the unit in the selection field to the right of it; internally the value is converted to tex. Minimum value 1. |
 | **Ply count:** | pcs | Number of threads run in parallel per carrier. Minimum value 1. |
 | **Number of carriers:** | pcs | Number of carriers of the braiding machine (max. 1500). Minimum value 5. |
 | **Braiding angle:** | ° | Angle of the strands in the set [reference](../../admin/settings/appearance.md#flechtwinkel). Permitted 5° to 85°. |
@@ -50,5 +50,5 @@ result appears.
 
 - [Braiding angle](braid-angle.md)
 - [Material diameter from material](../material/material-diameter.md)
-- [Fineness / titer](../material/linear-density.md)
+- [Fineness / Titer](../material/linear-density.md)
 - [Product weight](rope-weight.md)

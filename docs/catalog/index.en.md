@@ -66,7 +66,7 @@ bottom:
 
 | Area | Content |
 |---|---|
-| **Header** | Image (if available), model name, series and type, plus the key figures per machine type — braiding machine: **Carriers** (with number of braiding heads), **Pitch**, **Speed**, **Bobbin**; bobbin winding machine: **Winding heads**, **Bobbin size**, **Traverse width**, **Speed** (strand laying machine: **Strand diameter**, **Lay length**, **Flyer speed**, **Bobbin**); take-up winder: **Drum diameter** or **Reel volume** and **Reel diameter**, **Traverse width**, **Load capacity**, **Braid diameter**; pay-off: **Drum**, **Load capacity**, **Drum lift**, **Unwinding tension**; creel: **Pay-off positions**, **Take-up**, **Bobbin**, **Yarn tension**. A missing load capacity is shown as *open*. |
+| **Header** | Image (if available), model name, series and type, plus the key figures per machine type — braiding machine: **Carriers** (with number of braiding heads), **Pitch**, **Speed**, **Bobbin**; bobbin winding machine: **Winding heads**, **Bobbin size**, **Traverse width**, **Speed** (strand laying machine: **Strand diameter**, **Lay length**, **Flyer speed**, **Bobbin**); take-up winder: **Drum diameter** or **Reel volume** and **Reel diameter**, **Traverse width**, **Load capacity**, **Braid diameter**; pay-off: **Drum**, **Load capacity**, **Drum lift**, **Unwinding tension**; creel: **Pay-off positions**, **Pay-off**, **Bobbin**, **Yarn tension**. A missing load capacity is shown as *open*. |
 | **Technical data** | The remaining details of the model (e.g. carrier type, traverse, control, version). The **Setup** of a braiding machine is only shown here if there is no choice — otherwise you choose it below when creating the machine. |
 | **Included in delivery** | What comes with the machine as standard. |
 | **Accessories** | The available accessories, grouped (e.g. *Monitoring and control*). Note: *Ticked accessories are added to your own machine.* |
@@ -94,16 +94,16 @@ know:
 
 | Field | Meaning |
 |---|---|
-| **Setup** | Only for braiding machines with several setups: **Standard setup**, **Half setup** or **Tandem setup** side by side to click; the first one is preselected. |
+| **Setup** | Only for braiding machines with several setups: **Normal setup**, **Half setup** or **Tandem setup** side by side to click; the first one is preselected. |
 | **Machine group** | Freely assignable grouping (e.g. *Produktion Nord*). |
 | **Serial number** | Serial number of your machine. |
-| **Name in braiding machines** | The name of your own machine, preset with the catalogue name; if left empty, the catalogue name is also used. For the other machine types the field is called **Name in winding machines**, **Name in take-up winders**, **Name in pay-offs** or **Name in creels**. |
+| **Name in braiding machines** | The name of your own machine, preset with the catalogue name; if left empty, the catalogue name is also used. For the other machine types the field is called **Name in bobbin winding machines**, **Name in take-up winders**, **Name in pay-offs** or **Name in creels**. |
 | **Bobbin** | Only for braiding machines whose matching catalogue bobbin is not yet in your [bobbins](../master-data/bobbins.md) (and no bobbin with the same dimensions either): checkbox *"Add … to bobbins"* with article number and bobbin name, pre-ticked. |
 
 | Button | Effect |
 |---|---|
 | **Cancel** | Closes the window without creating anything. |
-| **Add to braiding machines** | Creates the machine immediately — without a further dialog, with technical data and image from the catalogue (for braiding machines also the pitch), the ticked accessories, the selected take-up and the selected setup, and the bobbin if requested. For the other machine types the button is called **Add to winding machines**, **Add to take-up winders**, **Add to pay-offs** or **Add to creels**. A message confirms the creation, e.g. *Machine "…" was added to braiding machines, bobbin "…" to bobbins.* |
+| **Add to braiding machines** | Creates the machine immediately — without a further dialog, with technical data and image from the catalogue (for braiding machines also the pitch), the ticked accessories, the selected take-up and the selected setup, and the bobbin if requested. For the other machine types the button is called **Add to bobbin winding machines**, **Add to take-up winders**, **Add to pay-offs** or **Add to creels**. A message confirms the creation, e.g. *Machine "…" was added to braiding machines, bobbin "…" to bobbins.* |
 
 !!! tip "Adding details later"
     You then change the location, year of construction, dimensions, documents
@@ -122,7 +122,7 @@ drums and reels. A click opens the details:
 
 | Area | Content |
 |---|---|
-| **Header** | Sketch, name, group and — for bobbins — the article number, plus the key figures: bobbin **Flange Ø**, **Winding length**, **Core Ø**, **Bobbin Volume**; drum **Outer Ø**, **Core Ø**, **Traverse width** (for reels **Winding length**), **Volume**. |
+| **Header** | Sketch, name, group and — for bobbins — the article number, plus the key figures: bobbin **Flange Ø**, **Winding length**, **Core Ø**, **Bobbin volume**; drum **Outer Ø**, **Core Ø**, **Traverse width** (for reels **Winding length**), **Volume**. |
 | **Technical data** | E.g. **Material**, **For carrier / machine**, **Pitch (horngear Ø)**, **Machine types**, **Empty weight** (bobbins) or **For** (drums), **Version**, **Article number**. |
 | **Accessories** | If available. |
 
@@ -131,7 +131,7 @@ drums and reels. A click opens the details:
 | **Close** | Closes the window. |
 | **Add to bobbins** / **Add to drums** | Adds the entry to your [bobbins](../master-data/bobbins.md) or [drums](../master-data/drums.md). If there is already a bobbin with the same dimensions, Herzog CAB asks whether it should still be created as a separate bobbin with article number. |
 
-The button stays grey and a note explains why if
+The button stays gray and a note explains why if
 
 * the entry has already been added (*This bobbin is already in your
   bobbins.* or *This drum is already in your drums.*),

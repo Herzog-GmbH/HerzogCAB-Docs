@@ -34,7 +34,7 @@ with:
 |---|---|---|
 | Customers | at most 3 | unlimited |
 | Designs | at most 2 | unlimited |
-| Machines (braiding and winding machines together) | at most 2 | unlimited |
+| Machines (braiding and bobbin winding machines together) | at most 2 | unlimited |
 | Orders | at most 4 | unlimited |
 | User accounts | 1 | unlimited |
 | Calculation runs | 100 per calculation type | unlimited |

@@ -48,4 +48,4 @@ Here too, a **schematic sketch** that updates live accompanies the input on the 
 * [Hollow braid – Diameter](tube-diameter.md)
 * [Hollow braid – Covering](tube-cover.md)
 * [Material diameter](../material/material-diameter.md)
-* [Fineness / titer](../material/linear-density.md)
+* [Fineness / Titer](../material/linear-density.md)

@@ -81,7 +81,7 @@ target bobbin count.
 |---|---|
 | **Default material** | Material from the [material master data](../master-data/materials.md). Drives bobbin capacity, weight and total length; in the color breakdown it can be chosen **differently per row**. Entries that no longer exist are shown in the field as *… (no longer available)*. |
 | **Bobbin format** | Bobbin format from the [bobbin master data](../master-data/bobbins.md), shown with dimensions and volume. |
-| **Length per bobbin** | Yarn length per bobbin in metres. The calculator icon opens the [Bobbin capacity](../calculations/winding/bobbin-capacity.md) calculation, preset with bobbin format and material; **Apply** writes the result back. |
+| **Length per bobbin** | Yarn length per bobbin in meters. The calculator icon opens the [Bobbin capacity](../calculations/winding/bobbin-capacity.md) calculation, preset with bobbin format and material; **Apply** writes the result back. |
 | **Target bobbin count** | How many bobbins are to be wound in total; 0 is shown as *not set*. Preset when transferring from the braiding order (from bobbin sets and active carriers). The calculator icon opens **Target bobbin count from total length** (see below). |
 | **Total length** | Display: *n m material (bobbins × length)*, supplemented by the material weight *≈ n kg* (from length and fineness of the material). |
 
@@ -93,7 +93,7 @@ bobbin format that will later run on the braiding machine.
 
 | Element | Meaning |
 |---|---|
-| **Required total length** | Total material length to be wound in metres (e.g. 5,000 m). |
+| **Required total length** | Total material length to be wound in meters (e.g. 5,000 m). |
 | **Bobbins per bobbin set** | How many bobbins one set on the braiding machine needs; **From braiding machine…** takes the active carriers of a braiding machine from the master data. |
 | Result | *Results in n bobbins — the target bobbin count is set to n* and *That corresponds to m bobbin sets (k bobbins each)*. **Apply** writes the target bobbin count. |
 
@@ -106,7 +106,7 @@ works in two modes:
 
 | | Linked braiding order | Without link (manual) |
 |---|---|---|
-| Where the rows come from | From the Bobbin Table of the design in the braiding order; **Update from braiding order** reads them in again. | You create the rows yourself (**Add row…**, **Remove row**). |
+| Where the rows come from | From the carrier table of the design in the braiding order; **Update from braiding order** reads them in again. | You create the rows yourself (**Add row…**, **Remove row**). |
 | **Carriers/set** column | Display: carriers of the design with this color. | hidden |
 | **Bobbins** column | calculated from carriers per set and bobbin sets, read-only | **editable** — absolute number of bobbins per row |
 | Total row | *Carriers/set: n of k* (⚠ if the total does not match the machine) · *Bobbins: m* | *Total bobbins: m · corresponds to s bobbin sets (k each)* |
@@ -116,7 +116,7 @@ works in two modes:
 | **Color** | Color field. Double-click (or **Add row…**) opens the **Choose color** selection from the [color master data](../master-data/colors.md) or **Custom color…** via the color picker. If the design has [plying colors](../designer/painting.md#fachungsfarben-farbe-je-garn), each combination of yarn colors gets its own row; the color field shows yarn 1, names, identifiers and Pantone are shown per yarn separated by " / ". |
 | **Designation** | Color designation according to the **Display** selection. |
 | **Material** | Selection list per row; the default is the default material of the order. |
-| **Display** | Color designation as **Color name**, **Identifier**, **Hex value** or **Pantone**. The setting is shared with the Bobbin Table in the [braiding order](braiding-order.md#unter-tabs-ubersicht-und-kloppel-tabelle). |
+| **Display** | Color designation as **Color name**, **Identifier**, **Hex value** or **Pantone**. The setting is shared with the carrier table in the [braiding order](braiding-order.md#unter-tabs-ubersicht-und-kloppel-tabelle). |
 | Warning | If the bobbin total differs from the target bobbin count, this is shown directly next to the total. |
 
 !!! info "Automatic synchronization"
@@ -173,10 +173,10 @@ Each row is one machine:
 
 | Button | Effect |
 |---|---|
-| **Add machine…** | Opens the **Add winding machine** selection (cards with name and winding heads); machines already assigned are missing from the list. The new machine gets the bobbins not yet distributed. |
+| **Add machine…** | Opens the **Add bobbin winding machine** selection (cards with name and winding heads); machines already assigned are missing from the list. The new machine gets the bobbins not yet distributed. |
 | **Remove** | Removes the selected machine from the table. |
 | **Distribute bobbins evenly** | Distributes the target bobbin count across all machines in proportion to their winding heads — each machine then runs the same number of cycles. Prerequisite: at least one machine and a target bobbin count. |
-| **Bobbin winding time details…** | Opens the info calculation [Winding time](../calculations/winding/winding-time.md), preset with the values of the order (for information — there is nothing to apply here). |
+| **Winding time details…** | Opens the info calculation [Winding time](../calculations/winding/winding-time.md), preset with the values of the order (for information — there is nothing to apply here). |
 
 Below the table, a **time tile** summarizes: the time per machine, below it
 **Total duration (parallel)** — the longest machine time, because the machines

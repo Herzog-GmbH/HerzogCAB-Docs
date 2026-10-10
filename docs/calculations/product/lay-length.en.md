@@ -17,7 +17,7 @@ product – and can optionally convert the result directly into common density u
 | **Braid type** | – | Choice between **Round braid** and **Lace braid**. Determines the formula used. With *Round braid* the dimension field is the braid diameter, with *Lace braid* the braid width. |
 | **Product diameter** / **Product width** | mm | Dimension of the braid. The label changes depending on the braid type: *Product diameter* for round braid, *Product width* for lace braid. |
 | **Braiding angle** | ° | Angle of the strands in the set [reference](../../admin/settings/appearance.md#flechtwinkel) (0–90°). |
-| **Result unit** | – | The unit in which the result is output: **Lay length [mm]**, **Picks / 10 mm**, **Picks / inch** or **Picks / french inch**. |
+| **Result unit** | – | The unit in which the result is output: **Lay length [mm]**, **Picks / 10 mm**, **Picks / inch** or **Picks / French inch**. |
 | **Number of carriers** | pcs | Number of carriers. **Only required** if a *Picks / …* variant is selected as the result unit; with *Lay length [mm]* the field is hidden. |
 
 !!! note "Mandatory fields"
@@ -27,10 +27,10 @@ product – and can optionally convert the result directly into common density u
 
 | Value | Unit | Meaning |
 |---|---|---|
-| **Laylength** | mm | With result unit *Lay length [mm]*: axial advance per full revolution. |
+| **Lay length** | mm | With result unit *Lay length [mm]*: axial advance per full revolution. |
 | **Picks / 10 mm** | – | Number of picks (crossing points per carrier) over a length of 10 mm. |
 | **Picks / inch** | – | Number of picks per inch (25.4 mm). |
-| **Picks / french inch** | – | Number of picks per French inch (27 mm). |
+| **Picks / French inch** | – | Number of picks per French inch (27 mm). |
 
 The result label and unit automatically adapt to the selected **Result unit**.
 

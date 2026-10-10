@@ -10,7 +10,7 @@ the reference pages of the modules only mention their special features.
 ## The search field { #das-suchfeld }
 
 Almost every list has a **search field** at the top. It filters **as you
-type** — you do not have to press ++enter++. The grey placeholder text in the
+type** — you do not have to press ++enter++. The gray placeholder text in the
 empty field tells you which details are searched, for example:
 
 | List | Searches |

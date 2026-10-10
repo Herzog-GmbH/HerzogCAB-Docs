@@ -1,4 +1,4 @@
-# Bobbin Volume
+# Bobbin volume
 
 !!! abstract "Reference — Calculation: winding volume of a bobbin from its geometry"
 
@@ -16,14 +16,14 @@ and whether the chosen bobbin is sufficient for a yarn.
 | **Core diameter:** | mm | Diameter of the bobbin core (winding body without material). |
 | **Winding length:** | mm | Length of the usable winding surface between the flanges. |
 
-!!! note "All inputs in millimetres"
-    Outer diameter, core diameter and winding length are entered in millimetres. All three values must be greater than 0.
+!!! note "All inputs in millimeters"
+    Outer diameter, core diameter and winding length are entered in millimeters. All three values must be greater than 0.
 
 ## Result { #ergebnis }
 
 | Value | Unit | Meaning |
 |---|---|---|
-| **Bobbin Volume:** | ccm (cm³) | Volume of the winding space, i.e. the cavity between core and outer diameter over the winding length. Displayed with two decimal places. |
+| **Bobbin volume:** | ccm (cm³) | Volume of the winding space, i.e. the cavity between core and outer diameter over the winding length. Displayed with two decimal places. |
 
 ## Operation { #bedienung }
 
@@ -37,7 +37,7 @@ page has no further special features – three dimensions, one result.
 
 ## Related calculations { #verwandte-berechnungen }
 
-- [Material Length on Bobbin](material-length.md)
-- [Fineness / titer](linear-density.md)
+- [Material length on bobbin](material-length.md)
+- [Fineness / Titer](linear-density.md)
 - [Material diameter from material](material-diameter.md)
 - [Product weight](../product/rope-weight.md)

@@ -6,7 +6,7 @@
 
 This calculation determines how much product (rope, strand, braid) can be
 wound onto a drum. From the dimensions of the selected drum
-and the product diameter, the total wound length in metres is
+and the product diameter, the total wound length in meters is
 determined – useful for planning drum sizes, delivery quantities and
 winding orders.
 

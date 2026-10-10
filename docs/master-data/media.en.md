@@ -17,7 +17,7 @@ in the appropriate places.
   bobbin winding machines or the print editor), each with the number of images
   contained. An additional entry **Not used** filters for images that
   are not referenced anywhere.
-* **Gallery** (centre) – preview of the images in the selected folder, with a search field
+* **Gallery** (center) – preview of the images in the selected folder, with a search field
   above it.
 * **Detail** (right) – for the selected image, the **Used by** area, which
   shows where the image is used.

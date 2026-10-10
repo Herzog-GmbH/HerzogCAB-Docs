@@ -57,4 +57,4 @@ The calculation is **not reversible**: the number of carriers is always the resu
 * [Hollow braid – Material width](yarn-width.md)
 * [Hollow braid – Covering](tube-cover.md)
 * [Material diameter](../material/material-diameter.md)
-* [Fineness / titer](../material/linear-density.md)
+* [Fineness / Titer](../material/linear-density.md)

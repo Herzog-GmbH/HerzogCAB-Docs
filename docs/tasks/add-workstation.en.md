@@ -58,7 +58,7 @@ data.
 2. Start Herzog CAB and sign in with the e-mail address and
    password from the customer account
    (reference: [Sign in and obtain a licence](../setup/activate-license.md)).
-3. The **"Set up working directory"** dialog shows your company's
+3. The **"Set up workspace folder"** dialog shows your company's
    folder. If it shows ✔ *reachable*, click **Connect**
    (reference: [First start](../setup/first-run.md#kundenkonto-arbeitsverzeichnis-der-firma)).
 

@@ -18,7 +18,7 @@ At the bottom left of the navigation bar, click your **user card**
 button with your initials in the same place does this. The
 **My profile** dialog opens with three tabs.
 
-![The “My profile” dialog, “Profile” tab: display name and e-mail greyed out, below them “Change in licence portal”](../assets/screenshots/admin/mein-profil.png)
+![The “My profile” dialog, “Profile” tab: display name and e-mail grayed out, below them “Change in licence portal”](../assets/screenshots/admin/mein-profil.png)
 
 ## "Profile" tab { #tab-profil }
 

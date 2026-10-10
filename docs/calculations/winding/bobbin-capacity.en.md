@@ -4,7 +4,7 @@
 
 ## Purpose { #wofur }
 
-This calculation determines how many metres of material a selected bobbin
+This calculation determines how many meters of material a selected bobbin
 holds — either via the material data (density and fineness) or directly
 via the material diameter. This lets you check before winding whether an
 existing bobbin format is sufficient for the desired material length, or
@@ -33,7 +33,7 @@ choose the right bobbin for a winding order.
 | Value | Unit | Meaning |
 |---|---|---|
 | **Bobbin capacity:** | m | Main result: material length that fits on the selected bobbin, to two decimal places. |
-| **Winding volume:** | cm³ | Holding volume of the selected bobbin (from outer/core diameter and winding length), to one decimal place. |
+| **Bobbin volume:** | cm³ | Holding volume of the selected bobbin (from outer/core diameter and winding length), to one decimal place. |
 
 ## Operation { #bedienung }
 
@@ -57,7 +57,7 @@ with the desired unit.
 
 ## Related calculations { #verwandte-berechnungen }
 
-* [Material Length on Bobbin](../material/material-length.md)
-* [Bobbin Volume](../material/bobbin-volume.md)
+* [Material length on bobbin](../material/material-length.md)
+* [Bobbin volume](../material/bobbin-volume.md)
 * [Bobbin weight](bobbin-weight.md)
 * [Winding time](winding-time.md)

@@ -49,8 +49,8 @@ in Herzog blue.
 
 | Button | Function |
 |---|---|
-| **+ New Job** | Creates a new [braiding order](../orders/braiding-order.md). |
-| **+ New Design** | Opens the [Designer](../designer/index.md) with a new design. |
+| **+ New order** | Creates a new [braiding order](../orders/braiding-order.md). |
+| **+ New design** | Opens the [Designer](../designer/index.md) with a new design. |
 | **Calculations** | Opens the [calculation overview](../calculations/index.md). |
 
 ### Trial version card (trial version only) { #testversions-karte-nur-testversion }

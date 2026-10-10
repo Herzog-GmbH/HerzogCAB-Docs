@@ -50,7 +50,7 @@ Also set the paper format, orientation and page margin here
 1. Drag the desired building blocks from the toolbox on the left onto the
    page: data tables (order, customer, material, bobbin, braiding and
    winding tables), graphical design elements (braid pattern,
-   occupation overview), company elements (logo, address, footer) and free
+   setup overview), company elements (logo, address, footer) and free
    elements (text field, free table, image, date/time).
 2. Position the elements by dragging and adjust their size.
 3. If one page is not enough, add more pages.

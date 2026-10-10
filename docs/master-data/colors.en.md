@@ -60,7 +60,7 @@ shows them in the dialog *Hex to RAL Classic* or *Hex to Pantone Solid Coated*:
 
 !!! info "The standard palette is built into the program"
     Herzog CAB comes with a **Standard palette** of basic colors (black,
-    white, grey, beige, brown, red, blue, yellow, green, orange). This palette
+    white, gray, beige, brown, red, blue, yellow, green, orange). This palette
     cannot be changed or deleted. For **custom** colors, create your own palette via
     **New**; only there can you save new colors.
 

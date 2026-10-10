@@ -67,7 +67,7 @@ order status:
 | 🔴 Red | Error reported |
 | 🟢 Green | In Production |
 | 🟡 Yellow | Orders waiting (released) |
-| ⚪ Grey | No active orders |
+| ⚪ Gray | No active orders |
 
 The color logic is the same as in the [Machine Fleet](../machine-park/index.md).
 
@@ -83,10 +83,10 @@ The color logic is the same as in the [Machine Fleet](../machine-park/index.md).
 * **Machines** — as bodies in their master data dimensions (L × W × H). If
   **view images** are stored in the machine master data (front, back,
   side and top view), the side faces are displayed with them — so the
-  machine is recognisable at a glance. Machines without maintained dimensions
+  machine is recognizable at a glance. Machines without maintained dimensions
   appear with the substitute size 2.0 × 1.0 × 1.5 m.
 
-!!! tip "Make machines recognisable"
+!!! tip "Make machines recognizable"
     In the [braiding machine](../master-data/braiding-machines.md) or
     [bobbin winding machine](../master-data/winding-machines.md) master data, maintain the
     dimensions and the view images of the machine — both determine how realistic

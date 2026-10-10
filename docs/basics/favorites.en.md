@@ -22,7 +22,7 @@ the [home page](home.md).
     1. In the [navigation](navigation.md), click the desired entry with the
        **right mouse button** (e.g. *Calculations > Product >
        Braiding angle*).
-    2. In the context menu, select **Favor**.
+    2. In the context menu, select **Add to favorites**.
 
     This method works for all pages, not only for calculations.
 

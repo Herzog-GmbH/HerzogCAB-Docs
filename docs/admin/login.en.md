@@ -50,7 +50,7 @@ again."*).
     **Target file:** `assets/screenshots/admin/anmelden-konto.png`
 
 !!! warning "📷 Screenshot missing"
-    **Subject:** The same dialog at the “Second factor” step: header subline “Second factor”, green tick in the password field, below it “Code from the authenticator app” with six boxes in two groups of three (three digits typed), grey message about two-factor sign-in, “Confirm” button.
+    **Subject:** The same dialog at the “Second factor” step: header subline “Second factor”, green tick in the password field, below it “Code from the authenticator app” with six boxes in two groups of three (three digits typed), gray message about two-factor sign-in, “Confirm” button.
     **How to create:** Sign in with a test user for whom the second factor is set up in the licence portal; after **Sign in**, type three digits and capture the dialog.
     **Target file:** `assets/screenshots/admin/anmelden-konto-code.png`
 
@@ -142,7 +142,7 @@ the sign-in works:
    the note *"Browser opened — please sign in in the Microsoft window…"*;
    the button is locked in the meantime.
 2. Herzog CAB opens its **own small browser window** (without tabs and
-   address bar, centred on the screen) with the familiar
+   address bar, centered on the screen) with the familiar
    Microsoft sign-in page. Sign in there with your Microsoft account.
 3. After a successful sign-in, the window briefly shows *"Sign-in
    successful"* and **closes automatically**. Herzog CAB immediately continues

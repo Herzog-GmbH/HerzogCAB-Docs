@@ -8,7 +8,7 @@ In the left panel of the Designer you define the basic settings of a design:
 **which braid** is created (braid type and binding) and **with which
 machine configuration** (number of carriers, braiding angle, ply count). Every
 change rebuilds the braid pattern, the carrier table and the
-[Occupation Overview](animation.md) immediately — so you see directly which
+[Setup Overview](animation.md) immediately — so you see directly which
 selection leads to which display. The Designer supports **six
 braid types**; every braid pattern is derived from the kinematics of the
 respective machine.
@@ -33,13 +33,13 @@ also change it later in the [save dialog](save-print.md).
 
 The **Braid type** selection list determines the type of braid. The selection
 controls how the braid pattern is built, which bindings and numbers of carriers
-are permitted and what the Occupation Overview looks like. When you point at
+are permitted and what the Setup Overview looks like. When you point at
 an entry, a tooltip explains the machine design.
 
 | Braid type | Description |
 |---|---|
 | **Round braid** | Round braid with two counter-rotating runs (counterclockwise and clockwise) on a ring of horngears. The braid pattern shows the circumferential braid as a flat section; the *Cylinder* and *3D* views show it round (see [3D view](view-3d.md)). |
-| **Lace braid** | Flat braid (strand) with an open track — the carriers move back and forth between the two larger end gears. |
+| **Lace braid** | Flat braid (lace) with an open track — the carriers move back and forth between the two larger end gears. |
 | **Square braid** | Square braid cross-section: 4 horngears with 4 to 18 slots carry 8 to 36 carriers on two tracks. *Full*, *Square* (rotatable) and *3D* views. |
 | **Spiral braid** | Spiral braiding machine with 4 horngears in a fixed outer ring: 12 carriers (3 slots per horngear, 3 tracks) or 20 carriers (5 slots, 5 tracks); setup 1 full / 1 empty. |
 | **Packing braid** | Packing braiding machine with horngears in a grid. Use **Track type** to choose the family — **2-track**, **3-track**, **4-track** or **round** — and **Carriers** to choose the size. *Full*, *Edge* (rotatable) and *3D* views. |
@@ -57,9 +57,9 @@ The **Braid binding** selection list defines the setup rule of the machine:
 
 | Binding | Meaning |
 |---|---|
-| **Normal occupation 1-1** | Two-over-two binding 1-1: the standard setup. |
-| **Half occupation 1-3** | One-over-one binding 1-3: only every second possible position is occupied. |
-| **Tandem occupation 2-2** | One-over-one tandem binding 2-2: the carriers run in pairs one behind the other. |
+| **Normal setup 1-1** | Two-over-two binding 1-1: the standard setup. |
+| **Half setup 1-3** | One-over-one binding 1-3: only every second possible position is occupied. |
+| **Tandem setup 2-2** | One-over-one tandem binding 2-2: the carriers run in pairs one behind the other. |
 
 !!! info "Fixed bindings"
     **Packing**, **spiral** and **soutache braid** have a setup that is fixed
@@ -74,7 +74,7 @@ The **Braid binding** selection list defines the setup rule of the machine:
 | Field | Meaning |
 |---|---|
 | **Track type** | Family of the packing braiding machine: **2-track**, **3-track**, **4-track** or **round**. The type defines the structure and the tracks. |
-| **Carriers** | Number of carriers of the selected type. Sizes that the Designer cannot yet display are greyed out in the list with the suffix *(in preparation)*. |
+| **Carriers** | Number of carriers of the selected type. Sizes that the Designer cannot yet display are grayed out in the list with the suffix *(in preparation)*. |
 
 | Track type | Numbers of carriers |
 |---|---|
@@ -91,15 +91,15 @@ binding:
 
 | Braid type | Binding | Permitted numbers of carriers |
 |---|---|---|
-| Round braid | Normal occupation 1-1 | 12 to 144 in steps of 4 |
-| Round braid | Tandem occupation 2-2 | 12 to 144 in steps of 4 |
-| Round braid | Half occupation 1-3 | 6 to 72 in steps of 2 |
-| Lace braid | Normal occupation 1-1 | 9 to 145 in steps of 4 |
-| Lace braid | Tandem occupation 2-2 | 10 to 50 in steps of 4 |
-| Lace braid | Half occupation 1-3 | 5 to 73 in steps of 2 |
-| Square braid | Normal occupation 1-1 | 8, 12, 16, 20, 24, 28, 32, 36 |
-| Square braid | Tandem occupation 2-2 | 8, 16, 24, 32 |
-| Square braid | Half occupation 1-3 | 4, 6, 8, 10, 12, 14, 16, 18 |
+| Round braid | Normal setup 1-1 | 12 to 144 in steps of 4 |
+| Round braid | Tandem setup 2-2 | 12 to 144 in steps of 4 |
+| Round braid | Half setup 1-3 | 6 to 72 in steps of 2 |
+| Lace braid | Normal setup 1-1 | 9 to 145 in steps of 4 |
+| Lace braid | Tandem setup 2-2 | 10 to 50 in steps of 4 |
+| Lace braid | Half setup 1-3 | 5 to 73 in steps of 2 |
+| Square braid | Normal setup 1-1 | 8, 12, 16, 20, 24, 28, 32, 36 |
+| Square braid | Tandem setup 2-2 | 8, 16, 24, 32 |
+| Square braid | Half setup 1-3 | 4, 6, 8, 10, 12, 14, 16, 18 |
 | Spiral braid | fixed | 12 or 20 |
 | Packing braid | fixed | per track type, see above |
 | Soutache braid | fixed | 3, 5, 7, 9, 11 |
@@ -150,8 +150,8 @@ off under [Settings > Design](../admin/settings/legacy-import.md)):
 | Field | Meaning |
 |---|---|
 | **Material Ø** | Diameter of the single thread (yarn/wire) in mm, 0.00–100.00. Empty (*–*) = no value; the braid diameter then stays empty. |
-| **Covering** (for strand: **Fill:**) | Covering of the braid in percent, default **70 %** (can be changed in the settings). Controls the drawn thread thickness in the 3D view. |
-| **Braid Ø:** (for strand: **Product width:**) | Display: the calculated braid diameter from number of carriers, braiding angle, ply count, material diameter and covering — the same calculation as the [Diameter](../calculations/tubular-braid/tube-diameter.md) page. Display only; the drawing remains not to scale. |
+| **Covering** (for lace braid: **Fill:**) | Covering of the braid in percent, default **70 %** (can be changed in the settings). Controls the drawn thread thickness in the 3D view. |
+| **Braid Ø:** (for lace braid: **Product width:**) | Display: the calculated braid diameter from number of carriers, braiding angle, ply count, material diameter and covering — the same calculation as the [Diameter](../calculations/tubular-braid/tube-diameter.md) page. Display only; the drawing remains not to scale. |
 
 ## Related pages { #verwandte-seiten }
 

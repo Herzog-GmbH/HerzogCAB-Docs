@@ -41,9 +41,9 @@ control.
 | **Calculation** | Calculate braiding parameters and understand the results — using the example of [Braiding angle](../calculations/product/braid-angle.md). |
 | **Color Database** | Manage colors, create palettes — see [Colors](../master-data/colors.md). |
 | **Bobbin Database** | Create bobbins and assign machine types — see [Bobbins](../master-data/bobbins.md). |
-| **Material database** | Create and maintain materials — see [Materials](../master-data/materials.md). |
+| **Material Database** | Create and maintain materials — see [Materials](../master-data/materials.md). |
 | **Customer Database** | Create and import customers — see [Customers](../master-data/customers.md). |
-| **Braiding machines** | Manage your own braiding machines with master data and documents — see [Braiding machines](../master-data/braiding-machines.md). |
+| **Braiding Machines** | Manage your own braiding machines with master data and documents — see [Braiding machines](../master-data/braiding-machines.md). |
 | **Order Editor** | Enter a complete order — see [Braiding order](../orders/braiding-order.md). |
 
 When a tour starts, Herzog CAB automatically switches to the matching

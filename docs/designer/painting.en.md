@@ -129,7 +129,7 @@ cell of the carrier table does not color, but opens a menu:
 
 | Menu entry | Effect |
 |---|---|
-| **Plying colors…** | Opens the *Plying colors – &lt;carrier&gt;* dialog (e.g. "– L3" or "– Track 2, carrier 4"). Greyed out at ply count 1 (*"Plying colors are available from plying 2."*). |
+| **Plying colors…** | Opens the *Plying colors – &lt;carrier&gt;* dialog (e.g. "– L3" or "– Track 2, carrier 4"). Grayed out at ply count 1 (*"Plying colors are available from ply count 2."*). |
 | **All yarns like yarn 1** | Removes the individual yarn colors of this carrier; all yarns run in the carrier color again. Only active if the carrier has its own yarn colors. |
 
 ![The “Plying colors – L3” dialog with the color buttons for yarn 1 to yarn 3 and “All like yarn 1”](../assets/screenshots/designer/designer-fachungsfarben-dialog.png)
@@ -148,14 +148,14 @@ yarns run in the carrier color. Every change can be undone with **Back**.
 * **Braid pattern** — each yarn as its own stripe **along the thread**, in
   all views (Full, Half, Cylinder, Square, Edge), in the counterclockwise and
   in the clockwise run, and also with textures switched on.
-* **Occupation Overview** — the carrier dot is divided into circle segments per
+* **Setup Overview** — the carrier dot is divided into circle segments per
   yarn, see [Setup and track animation](animation.md).
 * **3D view** — each yarn in its color, see
   [Views and 3D view](view-3d.md).
 * **Printout and order** — the carrier list shows a stripe per yarn
   and the color details per yarn separated by " / " (e.g. "STD-RED /
   STD-BLU"), see [Saving and printing](save-print.md); likewise the
-  Bobbin Table in the [braiding order](../orders/braiding-order.md) and the
+  carrier table in the [braiding order](../orders/braiding-order.md) and the
   color breakdown in the [winding order](../orders/winding-order.md#farbaufschlusselung).
 
 !!! info "Ply separator lines"

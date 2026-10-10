@@ -34,7 +34,7 @@ has its own reference page with all fields.
 - :material-cog-outline: __[Production](production/index.md)__
 
     ---
-    Speed, machine dimensions, run time per bobbin set, change gears
+    Speed, machine sizing, runtime per bobbin set, change gears
 
 - :material-tray-full: __[Winding](winding/index.md)__
 
@@ -48,7 +48,7 @@ has its own reference page with all fields.
 All calculations are built the same way: input fields at the top, result below,
 **Calculate** button.
 
-![Example calculation "Fineness / titer": input fields, result card and "Calculate" button.](../assets/screenshots/calculations/beispiel-feinheit.png)
+![Example calculation "Fineness / Titer": input fields, result card and "Calculate" button.](../assets/screenshots/calculations/beispiel-feinheit.png)
 
 | Area | Content |
 |---|---|

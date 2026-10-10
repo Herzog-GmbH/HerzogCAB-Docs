@@ -66,11 +66,11 @@ Depending on what you know:
   [bobbin master data](../master-data/bobbins.md) is maintained, it is already
   stored there).
 * [Material length on bobbin](../calculations/material/material-length.md)
-  calculates how many metres of your material fit on the selected bobbin.
+  calculates how many meters of your material fit on the selected bobbin.
 
 ## Step 5: Calculate product length and product weight { #schritt-5-produktlange-und-produktgewicht-berechnen }
 
-* [Product length](../calculations/product/rope-length.md) — how many metres
+* [Product length](../calculations/product/rope-length.md) — how many meters
   of finished product a bobbin set yields.
 * [Product weight](../calculations/product/rope-weight.md) — the weight of the
   produced braid section.

@@ -11,7 +11,7 @@ it accepts, how heavy the loaded drum may be, which
 product diameters it processes — are checked by Herzog CAB in the
 [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md)
 and in the [braiding order](../orders/braiding-order.md#tab-aufwicklung)
-(tab **Take-up**). In the [Machine Fleet](../machine-park/index.md),
+(tab **Take-up winding**). In the [Machine Fleet](../machine-park/index.md),
 take-up winders have their own filter.
 
 !!! info "New in version 2.1.0"
@@ -105,7 +105,7 @@ machine.
 
 | Field | Meaning |
 |---|---|
-| **Drum lift** | *no lift*, *hand crank*, *electric*, *hydraulic* or *motorised spindle drive* (or *–*). |
+| **Drum lift** | *no lift*, *hand crank*, *electric*, *hydraulic* or *motorized spindle drive* (or *–*). |
 | **Traversing** | *Uhing*, *traversing drum* or *electronic parallel traversing* (or *–*). |
 | **Tension control** | Checkboxes *Block and tackle*, *Dancer arm*, *Servo motor*, *Torque control* — several possible at once. |
 | **Traverse type** | Checkbox *traversing*. |
@@ -172,7 +172,7 @@ When saving, the dialog checks:
 ## Which information is checked { #welche-angaben-gepruft-werden }
 
 The [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md)
-and the **Take-up** tab in the braiding order compare drum and
+and the **Take-up winding** tab in the braiding order compare drum and
 product with this information of the take-up winder:
 
 | Information of the take-up winder | Is compared with |
@@ -209,7 +209,7 @@ flowchart TD
 
 * [Drums](drums.md) – the drums onto which the take-up winder winds
 * [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md) – find matching drums and take-up winders
-* [Braiding order, tab "Take-up"](../orders/braiding-order.md#tab-aufwicklung) – take-up winder and drum in the order
+* [Braiding order, tab "Take-up winding"](../orders/braiding-order.md#tab-aufwicklung) – take-up winder and drum in the order
 * [Herzog catalogue](../catalog/index.md) – take over take-up winders from Herzog
 * [Pay-offs](pay-off-machines.md) · [Creels](creels.md) · [Bobbin winding machines](winding-machines.md) · [Braiding machines](braiding-machines.md)
 * [Machine Fleet](../machine-park/index.md) – operating overview of all machines

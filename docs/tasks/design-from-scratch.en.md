@@ -63,7 +63,7 @@ controls of the painting mode are described on the reference page
 
 ## Step 4: Check setup and track animation { #schritt-4-besetzung-und-gangbahn-animation-prufen }
 
-The occupation overview shows the horngears of the machine from above with the
+The setup overview shows the horngears of the machine from above with the
 colors assigned to each carrier:
 
 1. Use the arrow buttons to try out color variants — they

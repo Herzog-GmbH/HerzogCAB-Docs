@@ -3,7 +3,7 @@
 !!! abstract "Reference — layout of the print editor: element palette, page canvas, properties"
 
 The print editor consists of three areas: the **element palette** (left),
-the **page canvas** (centre) and the **properties / page settings**
+the **page canvas** (center) and the **properties / page settings**
 (right).
 
 ![Layout of the print editor with the three areas.](../assets/screenshots/print-templates/druck-editor.png)
@@ -26,7 +26,7 @@ appear in the list:
 
 You drag an element onto the page canvas by drag and drop.
 
-## Page canvas (centre) { #seiten-canvas-mitte }
+## Page canvas (center) { #seiten-canvas-mitte }
 
 The canvas shows the page true to the original. You place elements by
 drag and drop, and move and scale them directly on the page. Use the

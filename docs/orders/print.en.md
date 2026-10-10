@@ -58,7 +58,7 @@ toolbar you can
 
 The standard printout of a braiding order contains **Order data**,
 **Customer data**, **Machine data** and **Production data** as well as — with a
-linked design — the design page with preview and Bobbin Table. The color
+linked design — the design page with preview and carrier table. The color
 designations follow the **Display** setting (color name, identifier,
 hex value or Pantone) from the
 [Design tab](braiding-order.md#unter-tabs-ubersicht-und-kloppel-tabelle).

@@ -91,7 +91,7 @@ Above the preview, a row of buttons ("pills") appears for the selected floor pla
 — one per assignment:
 
 * **Assignment pill** — a click selects the assignment; preview and
-  machine list then show its state. The active actual assignment can be recognised by the
+  machine list then show its state. The active actual assignment can be recognized by the
   suffix **(actual)**, e.g. *Default (actual)*.
 * **+** — creates a **new assignment** (scenario); you assign a name.
   The first assignment of a floor plan automatically becomes the actual assignment.

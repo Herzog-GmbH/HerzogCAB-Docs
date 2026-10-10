@@ -7,7 +7,7 @@
 Under *Master data > Braiding machines* you create and manage the braiding machines of your plant.
 For each machine, Herzog CAB stores technical data,
 optionally an image, view images for the hall, and documents such as
-take-off tables or operating manuals. This master data is used in the
+take-up tables or operating manuals. This master data is used in the
 [Machine Fleet](../machine-park/index.md), in the [Factory Planner](../hall-planner/index.md),
 in [orders](../orders/braiding-order.md) and in the
 [calculations](../calculations/index.md).
@@ -85,8 +85,8 @@ the selection lists for heads, slots and carriers change (see
 | **Heads** | Number of braiding heads. |
 | **Pitch** | Pitch of the machine. |
 | **Carrier type** | Designation of the carrier type used (free text). |
-| **Take-up** | **Yes** or **No** – whether the machine has a take-up. |
-| **Take-up** | The take-up of the machine, e.g. *Takeoff disc Ø 313 x 76 mm*. Free text; if the machine type matches a model from the Herzog catalogue, the list offers its take-ups for selection. Leave empty if nothing is specified. |
+| **Take-up winding** | **Yes** or **No** – whether the machine has a take-up winding. |
+| **Take-up** | The take-up of the machine, e.g. *Take-up disc Ø 313 x 76 mm*. Free text; if the machine type matches a model from the Herzog catalogue, the list offers its take-ups for selection. Leave empty if nothing is specified. |
 | **Oil quantity** | Oil quantity (or *not set*). |
 | **Bobbins** | Multiple selection of the permitted bobbin types from the [bobbin master data](bobbins.md). At least one bobbin is required. |
 | **Speed** | Maximum speed in rpm (or *not set*). |
@@ -137,7 +137,7 @@ You can store documents for every machine. For each document the list shows
 **Category**, **File** and **Description**. When adding, you choose one
 of the following categories:
 
-* Take-off table
+* Take-up table
 * Tension spring chart
 * Overview drawing
 * Operating manual

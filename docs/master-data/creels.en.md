@@ -1,6 +1,6 @@
 # Creels
 
-!!! abstract "Reference — Create and maintain pay-off creels and pay-off racks: pay-off positions, take-up, package type and size, yarn tension, monitoring, material, accessories and documents."
+!!! abstract "Reference — Create and maintain pay-off creels and pay-off racks: pay-off positions, pay-off, package type and size, yarn tension, monitoring, material, accessories and documents."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
@@ -20,7 +20,7 @@ filter.
 
 At the top is a toolbar, below it the **Machine list** as cards.
 Each card shows image, series (without series: *Creels*),
-**… Pay-off positions** as well as the take-up (*overhead* or *rolling*) and
+**… Pay-off positions** as well as the pay-off (*overhead* or *rolling*) and
 **Package up to Ø … mm**, if stored.
 
 Toolbar (**Search machine**, **New**, **Edit**, **Delete**),
@@ -65,9 +65,9 @@ remain empty and count as not stored.
 |---|---|
 | **Pay-off positions** | Total number of pay-off positions. |
 | **of which active** | How many positions run at the same time. Example GU 4/8: 4 positions run, the remaining 4 are ready for a quick cop change. |
-| **Take-up** | *overhead* or *rolling* (or *–*). |
+| **Pay-off** | *overhead* or *rolling* (or *–*). |
 | **Drive** | Checkbox *motor-driven*. |
-| **Package type** | Checkboxes *Cops*, *Cardboard tube*, *DIN spool*, *Drum*. |
+| **Package type** | Checkboxes *Cops*, *Cardboard tube*, *DIN drum*, *Drum*. |
 | **Max. package diameter** | Largest package diameter in mm. |
 | **Max. package length** | Largest package length in mm. |
 | **Bobbin weight max.** | Largest bobbin weight in kg. |
@@ -78,7 +78,7 @@ remain empty and count as not stored.
 |---|---|
 | **Yarn tension** | Checkboxes *Disc brake*, *Magnum brake*, *Band brake*, *Wrap brake*, *Crocodile brake*, *Magnetic brake*, *Dancer arm*, *contactless control*. |
 | **Monitoring** | Checkboxes *Thread break*, *Blockage*, *Standstill*. |
-| **Material** | Checkboxes for processable materials: *Yarn*, *Finest yarn*, *Monofilament*, *Wire*, *Glass fibre*, *Carbon fiber*, *Core material*, *Axial threads*, *Knitted tube*. |
+| **Material** | Checkboxes for processable materials: *Yarn*, *Finest yarn*, *Monofilament*, *Wire*, *Glass fiber*, *Carbon fiber*, *Core material*, *Axial threads*, *Knitted tube*. |
 
 ### Accessories and documents { #zubehor-und-dokumente }
 

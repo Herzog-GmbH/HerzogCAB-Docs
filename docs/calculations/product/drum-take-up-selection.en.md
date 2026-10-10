@@ -33,7 +33,7 @@ The inputs are divided into four sections.
 | **Fineness:** | tex, dtex, den, Nr_metric, Nr_english | Fineness of one thread. |
 | **Density:** | g/cm³ | Density of the material (three decimal places). |
 | **Ply count:** | pcs | Threads per carrier; preset to 1. |
-| **Bobbin filling grade:** | % | Share of the bobbin volume that the yarn fills; preset to 70 %. Together with fineness, density and ply count, this gives the yarn length per bobbin, as in [Material Length on Bobbin](../material/material-length.md). |
+| **Bobbin filling grade:** | % | Share of the bobbin volume that the yarn fills; preset to 70 %. Together with fineness, density and ply count, this gives the yarn length per bobbin, as in [Material length on bobbin](../material/material-length.md). |
 | **Number of carriers:** | pcs | Number of carriers. |
 | **Braiding angle:** | ° | Braiding angle of the braid. |
 | **Product diameter:** | mm | Counts for the space on the drum, for checking the take-up winders and — with a core — for their diameter. Length and weight of the cover come from material, fineness and braiding angle. |
@@ -46,10 +46,10 @@ length is supplied by the cover bobbins.
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Share core:** | % | Share of the core in the cross-section of the product, as in [Core-Cover Product](core-sheath.md). Leave empty if the product has no core. |
+| **Core share:** | % | Share of the core in the cross-section of the product, as in [Core-cover product](core-sheath.md). Leave empty if the product has no core. |
 | **Material:** | – | Material of the core; takes over the density. |
 | **Density:** | g/cm³ | Density of the core. Mandatory as soon as a share is entered. |
-| **Filling grade:** | % | Filling grade of the core as in *Core-Cover Product*; preset to 65 %. Mandatory as soon as a share is entered. |
+| **Filling grade:** | % | Filling grade of the core as in *Core-cover product*; preset to 65 %. Mandatory as soon as a share is entered. |
 
 ### Drum { #trommel }
 
@@ -80,8 +80,8 @@ length is supplied by the cover bobbins.
 | **Take-up winder:** | – | The first suitable take-up winder per part, with *"(+… more)"* if there are several. |
 | **Space required on the drum:** | l | Space taken up by the product length at the full product diameter. |
 | **Product weight:** | kg | Weight of the entire product length. |
-| **Weight per metre:** | g/m | Weight per metre, including the core. |
-| **of which core:** | g/m | Share of the core in the weight per metre (only with a core). |
+| **Weight per meter:** | g/m | Weight per meter, including the core. |
+| **of which core:** | g/m | Share of the core in the weight per meter (only with a core). |
 | **Total weight per drum:** | – | Product plus empty weight of the drum, per part of the suggestion. If the empty weight is missing, it reads *"… kg + empty weight"*; for a reel *"… kg without reel"*. |
 | **Check:** | – | *All checks passed.* or *Cannot be checked: …* with the missing details (see below). |
 
@@ -99,7 +99,7 @@ master data and the reels of the reel take-up winders, sorted by size:
 | **Note** | Why a drum does not work or what is missing (see below). |
 
 The suggestion is highlighted in blue; drums that do not fit any take-up winder
-are grey.
+are gray.
 
 ## Operation { #bedienung }
 
@@ -153,7 +153,7 @@ product diameter and load capacity count.
     reporting a drum as suitable. Possible reasons:
     *Take-up winder drum diameter missing*, *Take-up winder traverse width
     missing*, *Take-up winder load capacity missing*,
-    *Drum empty weight missing*, *Weight per metre missing*. Take-up winders with
+    *Drum empty weight missing*, *Weight per meter missing*. Take-up winders with
     missing details remain in the suggestion, but are listed after those that
     definitely fit.
 
@@ -185,7 +185,7 @@ The following appear in the **Note** column of the table:
 
 - [Product length per drum](rope-length-on-drum.md)
 - [Product weight](rope-weight.md)
-- [Core-Cover Product](core-sheath.md)
-- [Material Length on Bobbin](../material/material-length.md)
-- [Machine Runtime per Bobbin Set](../production/run-time-bobbin-set.md)
-- In the order: [Braiding order, "Take-up" tab](../../orders/braiding-order.md#tab-aufwicklung)
+- [Core-cover product](core-sheath.md)
+- [Material length on bobbin](../material/material-length.md)
+- [Machine runtime per bobbin set](../production/run-time-bobbin-set.md)
+- In the order: [Braiding order, "Take-up winding" tab](../../orders/braiding-order.md#tab-aufwicklung)

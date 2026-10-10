@@ -4,7 +4,7 @@
 
 These points are not program errors, but deliberate or
 technical limits of the current version. If you observe one of these
-behaviours, you do not need to open a support ticket.
+behaviors, you do not need to open a support ticket.
 
 ## Workspace on a network drive { #workspace-auf-einem-netzlaufwerk }
 
@@ -30,7 +30,7 @@ permanently at the end of the trial period. You will find details under
 
 ## Cloud sync: the desktop takes precedence { #cloud-abgleich-der-desktop-hat-vorrang }
 
-The cloud sync of the desktop app synchronises in both directions, but
+The cloud sync of the desktop app synchronizes in both directions, but
 not on equal terms: it uploads first and then fetches the changes
 from the web app. If both sides have changed the same entry, the
 desktop wins. The version from the web app is then not lost: it is available in the
@@ -39,12 +39,12 @@ there. Further limits:
 
 * Files deleted in the web app (images, documents) remain in the
   workspace folder.
-* An account synchronises with exactly one workspace folder; a second
+* An account synchronizes with exactly one workspace folder; a second
   profile can only be connected by rebinding.
 * Individual files over 25 MB are skipped.
 
-If you only want to synchronise from the desktop to the web app, switch off
-*Apply changes from the web app to the workspace* — see
+If you only want to synchronize from the desktop to the web app, switch off
+*Apply changes from the web app to the workspace folder* — see
 [Licence and cloud](../admin/settings/license.md) and
 [Move data from the desktop app to the web app](../tasks/desktop-to-web.md).
 

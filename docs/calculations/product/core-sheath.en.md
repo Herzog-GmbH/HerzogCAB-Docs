@@ -1,4 +1,4 @@
-# Core-Cover Product
+# Core-cover product
 
 !!! abstract "Reference — Calculation: two-layer product made of core and cover"
 
@@ -31,14 +31,14 @@ and two identically structured panels for **Core** and **Cover**.
 | **Bobbin:** | – | Selection of a bobbin from the master data (matching the selected machine type). Supplies the outer diameter, core diameter and winding length of the bobbin for the length calculation. |
 | **Material:** | – | Optional selection of a material from the master data; the **Density** is taken over from it automatically. |
 | **Density:** | g/cm³ | Material density (three decimal places). Filled when a material is selected, but can also be overwritten manually. |
-| **Share core:** or **Share cover:** | % | Cross-sectional share of the respective layer in the overall product. **Share core + Share cover must add up to 100 %.** |
+| **Core share:** or **Cover share:** | % | Cross-sectional share of the respective layer in the overall product. **Core share + Cover share must add up to 100 %.** |
 | **Braiding angle:** | ° | Braiding angle of the layer. |
 | **Number of carriers per head:** | pcs | Number of carriers of the machine (core ≥ 1, cover ≥ 3). |
 | **Ply count / carrier:** | pcs | Number of threads/strands running in parallel per carrier. |
 | **Horngear speed:** | rpm | Speed of the machine's horngear. |
 
 !!! note "Shares must add up to 100 %"
-    If **Share core** and **Share cover** together deviate from 100 % by more than 0.01 %, the calculation reports *"The proportions of the core and cover do not add up to 100%"* and marks both share fields.
+    If **Core share** and **Cover share** together deviate from 100 % by more than 0.01 %, the calculation reports *"The proportions of the core and cover do not add up to 100%"* and marks both share fields.
 
 ## Result { #ergebnis }
 
@@ -54,9 +54,9 @@ values are shown in pairs for core and cover.
 | **Cover thickness** | mm | Wall thickness of the cover (radial). |
 | **Output (Core)** / **Output (Cover)** | kg/h | Throughput of the respective layer. |
 | **Weight (Core)** / **Weight (Cover)** | kg/100m | Weight share of the respective layer per 100 m. |
-| **Lace (Core)** / **Lace (Cover)** | tex | Fineness (titer) of the strand per layer. |
-| **Lace diameter (Core)** / **Lace diameter (Cover)** | mm | Diameter of the single strand per layer. |
-| **Length per Bobbin (Core)** / **Length per Bobbin (Cover)** | m | Material length that can be wound per bobbin. |
+| **Strand (Core)** / **Strand (Cover)** | tex | Fineness (titer) of the strand per layer. |
+| **Strand diameter (Core)** / **Strand diameter (Cover)** | mm | Diameter of the single strand per layer. |
+| **Length per bobbin (Core)** / **Length per bobbin (Cover)** | m | Material length that can be wound per bobbin. |
 | **Product length (Core)** / **Product length (Cover)** | m | Braid length that can be produced per bobbin. |
 | **Reduction (Core)** / **Reduction (Cover)** | % | Length reduction caused by braiding (bobbin length compared with braid length). |
 | **Braiding length (Core)** / **Braiding length (Cover)** | mm | Length of travel of a thread per product revolution (pitch). |
@@ -85,7 +85,7 @@ invalid (no bobbin selected, value ≤ 0), the results are cleared.
 ## Related calculations { #verwandte-berechnungen }
 
 - [Material diameter from material](../material/material-diameter.md) – diameter from density and titer of a single material.
-- [Fineness / titer](../material/linear-density.md) – fineness (tex) of individual yarns.
+- [Fineness / Titer](../material/linear-density.md) – fineness (tex) of individual yarns.
 - [Product weight](rope-weight.md) – weight calculation for single-layer products.
 - [Product diameter](product-diameter.md) – outer diameter of a braided product.
 - [Production speed](../production/production-speed.md) – production speed of a braiding machine.

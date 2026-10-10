@@ -14,7 +14,7 @@ finished product will be.
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Linear density / Titer** | tex, dtex, den, Nr_metric, Nr_english | Fineness (titer) of one thread. You choose the unit in the selection field to the right of it (default: tex). For the calculation, the value is converted internally to tex. |
+| **Fineness / Titer** | tex, dtex, den, Nr_metric, Nr_english | Fineness (titer) of one thread. You choose the unit in the selection field to the right of it (default: tex). For the calculation, the value is converted internally to tex. |
 | **Ply count** | pcs | Threads per carrier; preset to 1. As on all other pages, the fineness applies to one thread. In the order, the ply count comes from the **Material** tab. |
 | **Number of carriers** | pcs | Number of carriers braiding. |
 | **Braiding angle** | ° | Angle of the threads in the set [reference](../../admin/settings/appearance.md#flechtwinkel). |
@@ -44,6 +44,6 @@ that suits the machine.
 
 ## Related calculations { #verwandte-berechnungen }
 
-- [Fineness / titer](../material/linear-density.md)
+- [Fineness / Titer](../material/linear-density.md)
 - [Material diameter from material](../material/material-diameter.md)
 - [Materials](../../master-data/materials.md) – maintain the fineness (titer) per material centrally and take it over into the calculation.

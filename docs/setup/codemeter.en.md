@@ -17,7 +17,7 @@ licences.
 
 !!! info "Order"
     We recommend setting up CodeMeter **before** the Herzog CAB installer.
-    This way the runtime is already fully initialised at the first program
+    This way the runtime is already fully initialized at the first program
     start.
 
 !!! tip "Clarify in advance: deployment scenario"

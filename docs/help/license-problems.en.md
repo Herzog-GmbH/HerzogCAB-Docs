@@ -118,7 +118,7 @@ flowchart TD
   L -- signed in --> OK
 ```
 
-| Status | Behaviour |
+| Status | Behavior |
 |---|---|
 | CodeMeter licence present, valid | Program starts normally. |
 | No CodeMeter container, computer signed in to the account | Program starts normally; lease is renewed in the background. |

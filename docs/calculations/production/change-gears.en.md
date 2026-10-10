@@ -4,7 +4,7 @@
 
 ## Purpose { #wofur }
 
-This calculation determines the suitable change gear combination for the rubber feed chain of the take-up. From the desired elongation, the diameter of the takeoff disc and the ratio, the software calculates the two numbers of teeth with which you equip the machine – this way you achieve the desired braid density or the planned feed in braiding operation.
+This calculation determines the suitable change gear combination for the rubber feed chain of the take-up. From the desired elongation, the diameter of the take-up disc and the ratio, the software calculates the two numbers of teeth with which you equip the machine – this way you achieve the desired braid density or the planned feed in braiding operation.
 
 ## Inputs { #eingabewerte }
 
@@ -12,11 +12,11 @@ This calculation determines the suitable change gear combination for the rubber 
 |---|---|---|
 | **Rubber feed device:** | – | Selection of the rubber feed device used: *Small rubber feed device K70* or *Big rubber feed device*. The selection defines the fixed chain characteristics. |
 | **Elongation:** | % | Desired elongation. May be 0; maximum value 1500 %. |
-| **Takeoff disc diameter:** | mm | Diameter of the takeoff disc. Mandatory field, must be greater than 0. |
-| **Ratio takeoff disc - rubber feed chain:** | – | Transmission ratio between takeoff disc and rubber feed chain. Mandatory field, must be greater than 0; maximum value 1500. |
+| **Take-up disc diameter:** | mm | Diameter of the take-up disc. Mandatory field, must be greater than 0. |
+| **Ratio take-up disc - rubber feed chain:** | – | Transmission ratio between take-up disc and rubber feed chain. Mandatory field, must be greater than 0; maximum value 1500. |
 
 !!! note "Mandatory fields"
-    **Takeoff disc diameter** and **Ratio takeoff disc - rubber feed chain** must both be greater than 0, since these values are used as divisors. If one of the two values is missing, the field is marked red and no calculation takes place. The **Elongation**, on the other hand, may be 0.
+    **Take-up disc diameter** and **Ratio take-up disc - rubber feed chain** must both be greater than 0, since these values are used as divisors. If one of the two values is missing, the field is marked red and no calculation takes place. The **Elongation**, on the other hand, may be 0.
 
 ## Result { #ergebnis }
 
@@ -43,4 +43,4 @@ This page follows the general structure of the calculation pages without further
 
 * [Machine sizing](dimensions.md)
 * [Production speed](production-speed.md)
-* [Machine Runtime per Bobbin Set](run-time-bobbin-set.md)
+* [Machine runtime per bobbin set](run-time-bobbin-set.md)

@@ -57,11 +57,11 @@ needs to know the network path for this.
 ### The account knows the folder: connect { #das-konto-kennt-den-ordner-verbinden }
 
 If your company already has a storage location, the
-**"Set up working directory"** dialog shows this folder and immediately checks whether it
+**"Set up workspace folder"** dialog shows this folder and immediately checks whether it
 can be reached from this computer.
 
 !!! warning "📷 Screenshot missing"
-    **Subject:** “Set up working directory” dialog with the company's folder, green tick “The folder can be reached from this computer.” and the **Connect** button
+    **Subject:** “Set up workspace folder” dialog with the company's folder, green tick “The folder can be reached from this computer.” and the **Connect** button
     **How to create:** Sign in for the first time on a second computer with an account that already has a storage location
     **Target file:** `assets/screenshots/setup/arbeitsverzeichnis-verbinden.png`
 
@@ -82,7 +82,7 @@ can be reached from this computer.
 
 If the account does not yet know a storage location, the dialog asks once:
 
-![The “Set up working directory” dialog on the company’s first computer](../assets/screenshots/setup/arbeitsverzeichnis-festlegen.png)
+![The “Set up workspace folder” dialog on the company’s first computer](../assets/screenshots/setup/arbeitsverzeichnis-festlegen.png)
 
 | Element | Meaning |
 |---|---|
@@ -158,7 +158,7 @@ Click **Finish setup** as soon as all mandatory fields
 are filled in — the button is disabled until then.
 
 !!! tip "Who should be the first administrator?"
-    Ideally a person who is organisationally responsible for Herzog CAB in the plant
+    Ideally a person who is organizationally responsible for Herzog CAB in the plant
     — e.g. a shift supervisor or workshop manager.
     You create further users with restricted rights later under
     [Manage users](../admin/users.md).
@@ -183,7 +183,7 @@ Herzog CAB automatically shows the **"Set up profile"** dialog.
 | Field | Meaning |
 |---|---|
 | **Profile name** | Name of the profile, prefilled with "Default". With several companies/plants on the same installation, give it a meaningful name here. |
-| **Working directory** | Folder for orders, machines, materials, colors and print templates of this profile. Prefilled with *Documents\HerzogCAB*. Selectable via **Browse …**. |
+| **Workspace folder** | Folder for orders, machines, materials, colors and print templates of this profile. Prefilled with *Documents\HerzogCAB*. Selectable via **Browse …**. |
 | **Webserver port** | Port at which the mobile web interface of this profile can be reached. Prefilled with 8080. |
 | **Start webserver automatically at launch** | Checkbox, off by default. |
 | **Webserver password** | At least 8 characters. Without a password, the web interface can only be reached on this computer; tablets and phones on the network need a password. Can be set later under [Web server and QR code](../admin/settings/web-server.md). |
@@ -226,9 +226,9 @@ program start (e.g.
 network drive not connected), Herzog CAB reports this directly at startup with
 an error message including a hint for the solution. In an older special case — very
 early installations without profile assignment — the
-**"Set up working directory"** dialog may appear automatically instead: path field,
+**"Set up workspace folder"** dialog may appear automatically instead: path field,
 **Browse …**, a status note (green tick with write access,
-red cross otherwise) and **Apply working directory**. If you cancel
+red cross otherwise) and **Apply workspace folder**. If you cancel
 this dialog, Herzog CAB automatically falls back to *Documents\HerzogCAB*
 so that the program can start in any case.
 
@@ -241,7 +241,7 @@ so that the program can start in any case.
   `C:\Program Files` or on a write-protected network drive.
 * Sign-in fails on a further computer → see
   [Sign-in problems](../help/login-problems.md).
-* Licence is not recognised → see [Licence problems](../help/license-problems.md).
+* Licence is not recognized → see [Licence problems](../help/license-problems.md).
 
 ## Related pages { #verwandte-seiten }
 

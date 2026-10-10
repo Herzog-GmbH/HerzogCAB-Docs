@@ -96,7 +96,7 @@ The status of each machine is derived automatically from its assigned orders:
 | 🔴 Red | **Error reported** | At least one order for this machine has the status *Error*. |
 | 🟢 Green | **In production** | At least one order is in production (and no error reported). |
 | 🟡 Yellow | **Orders waiting** | There are released orders, but none is running. |
-| ⚪ Grey | **No active orders** | No active order is assigned to the machine. |
+| ⚪ Gray | **No active orders** | No active order is assigned to the machine. |
 
 A reported error always takes priority: the traffic light shows red, even if
 other orders are running at the same time. The **order counter** next to the
@@ -114,7 +114,7 @@ flowchart TD
   P -- yes --> G[Green: In production]
   P -- no --> W{An order<br>Released?}
   W -- yes --> Y[Yellow: Orders waiting]
-  W -- no --> N[Grey: No active orders]
+  W -- no --> N[Gray: No active orders]
 ```
 
 ### Detail view of a machine { #detailansicht-einer-maschine }

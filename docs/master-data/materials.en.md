@@ -64,7 +64,7 @@ In many calculations you can select a material from the
 database instead of entering values manually; density and titer are then taken over automatically. This
 applies, for example, to:
 
-* [Fineness / titer](../calculations/material/linear-density.md)
+* [Fineness / Titer](../calculations/material/linear-density.md)
 * [Material diameter](../calculations/material/material-diameter.md)
 * [Product weight](../calculations/product/rope-weight.md)
 
@@ -75,6 +75,6 @@ applies, for example, to:
 
 ## Related pages { #verwandte-seiten }
 
-* [Fineness / titer](../calculations/material/linear-density.md)
+* [Fineness / Titer](../calculations/material/linear-density.md)
 * [Fineness conversion](../calculations/material/linear-density-conversion.md)
 * [Search and filter](../basics/search-filter.md)

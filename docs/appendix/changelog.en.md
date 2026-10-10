@@ -18,7 +18,7 @@
   [Multiple users in the same workspace folder](../basics/multi-user.md).
 * **Selectable braiding angle reference** – under *Settings > General >
   Braiding angle* you choose whether Herzog CAB displays the braiding angle relative to the
-  transverse direction (Herzog, default) or to the braid axis (technical literature)
+  cross direction (Herzog, default) or to the braid axis (technical literature)
   — in all calculations, in the Designer, in the order and on
   printouts. Saved values remain unchanged; the short hint at the
   field shows both values. With a customer account, the choice applies to your user.
@@ -65,7 +65,7 @@
 * **My profile** – for users from the customer account, name and e-mail are
   read-only; **Change in licence portal** opens the matching page.
   See [My profile](../admin/my-profile.md).
-* **User synchronisation** – at program start, Herzog CAB synchronises the
+* **User synchronization** – at program start, Herzog CAB synchronizes the
   user list with the customer account; users removed from the account are
   deactivated. See [Users](../admin/users.md).
 * **Herzog catalogue from the licence server** – new Herzog models, bobbins and
@@ -144,17 +144,17 @@
   from the Machine Fleet or the Herzog catalogue. If not everything fits on one
   drum, it is split; fill level and edge clearance are adjustable.
   If a value is missing, the calculation says *not checkable* instead of
-  silently *fits*; a core counts towards the weight as in *Core-Cover-Product*.
+  silently *fits*; a core counts towards the weight as in *Core-cover product*.
   See
   [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md).
 * **Take-up winder and drum in the order** – new tab
-  [Take-up](../orders/braiding-order.md#tab-aufwicklung) in the
+  [Take-up winding](../orders/braiding-order.md#tab-aufwicklung) in the
   braiding order: take-up winder and drum are saved with the order,
   the order length is split across the drums per head (also with a
   specified delivery length per drum) and checked against the take-up winder.
   **Calculate suggestion** searches for both. The details appear in the
   overview, in the web view and as placeholders in the print templates;
-  a core counts towards the weight per metre, the load capacity and the total weight
+  a core counts towards the weight per meter, the load capacity and the total weight
   in the **Production** tab.
 * **Herzog catalogue** – the new item **Catalogue** directly below the
   Machine Fleet shows Herzog machines of all types, carrier bobbins with
@@ -168,7 +168,7 @@
   image**. See [Herzog catalogue](../catalog/index.md).
 * **Print templates from Herzog CAB Web** – templates that are created or
   changed in the [Print editor of the web app](../web/print-editor.md)
-  now also come back into the program. If you delete the customised version of a
+  now also come back into the program. If you delete the customized version of a
   standard print template on the web, the supplied one applies again
   in the program.
 
@@ -261,9 +261,9 @@
 * **Braiding angle from take-up** – a new calculation connects
   machine setting and braid: the braiding angle results from horngear speed and take-up;
   the take-up can be specified as a speed or via
-  take-up wheel and speed. Conversely, the page provides take-up,
+  take-up disc and speed. Conversely, the page provides take-up,
   horngear speed and wheel speed for a target braiding angle. For
-  round and strand braids. See
+  round and lace braids. See
   [Braiding angle from take-up](../calculations/product/braid-angle-takeup.md).
 * **Favorites on the calculation tiles** – the star is now on every
   calculation tile, designed the same everywhere.

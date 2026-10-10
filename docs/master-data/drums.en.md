@@ -13,7 +13,7 @@ in these areas:
 * [Product length per drum](../calculations/product/rope-length-on-drum.md),
 * [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md),
 * in the [braiding order](../orders/braiding-order.md#tab-aufwicklung), tab
-  **Take-up**.
+  **Take-up winding**.
 
 !!! info "New in version 2.1.0 — workspace folders start without drums"
     New workspace folders no longer contain supplied drums.
@@ -105,7 +105,7 @@ Optional dimensions of the mounting on the take-up winder:
 |---|---|---|
 | **Quill bore [mm]** | mm | Diameter of the bore for the quill. |
 | **Driver pin [mm]** | mm | Diameter of the driver pin. |
-| **Centre to pin distance [mm]** | mm | Distance from the drum centre to the driver pin. |
+| **Center to pin distance [mm]** | mm | Distance from the drum center to the driver pin. |
 
 ### Save and delete { #speichern-und-loschen }
 

@@ -1,4 +1,4 @@
-# Maschinen-Dimensionierung
+# Maschinendimensionierung
 
 !!! abstract "Referenz — Berechnung: schätzt Länge und Breite einer Flechtmaschine und zeichnet den Grundriss"
 

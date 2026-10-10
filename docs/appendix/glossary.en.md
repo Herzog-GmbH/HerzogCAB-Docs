@@ -8,20 +8,20 @@ the German interface and German machine documentation follows in brackets.
 | Term | Meaning |
 |---|---|
 | **Module** (Baustein) | Licensed scope of functions in the customer account, e.g. *Herzog CAB Full Version*, *Herzog CAB Designer* or *Herzog CAB Trial*. Each module has seats and a term, see [Customer account and invitation](../setup/account.md). |
-| **Setup** (Besetzung) | Pattern by which the carriers occupy the positions of a braiding machine. Herzog CAB distinguishes **Standard setup** (1-1, all positions occupied), **Tandem setup** (2-2, see **Tandem**) and **Half setup** (1-3, only every second position occupied). |
-| **Cloud sync** (Cloud-Abgleich, Cloud-Upload) | Automatic synchronisation of the desktop app's workspace folder with the workspace of the web app: up to the web app and — can be switched off — changes from the web app back; in case of conflicts the desktop wins. See [Licence and cloud](../admin/settings/license.md). |
+| **Setup** (Besetzung) | Pattern by which the carriers occupy the positions of a braiding machine. Herzog CAB distinguishes **Normal setup** (1-1, all positions occupied), **Tandem setup** (2-2, see **Tandem**) and **Half setup** (1-3, only every second position occupied). |
+| **Cloud sync** (Cloud-Abgleich, Cloud-Upload) | Automatic synchronization of the desktop app's workspace folder with the workspace of the web app: up to the web app and — can be switched off — changes from the web app back; in case of conflicts the desktop wins. See [Licence and cloud](../admin/settings/license.md). |
 | **CmActLicense** (CmActLicense) | Software licence from Wibu CodeMeter, bound to the fingerprint of the computer (existing customers). |
 | **CmDongle** (CmDongle) | USB licence dongle from Wibu CodeMeter. |
 | **Edition** (Edition) | What an installation currently is: *Full version*, *Designer version* or *Trial version* – derived from the modules of the account or the Feature Code of the dongle. |
 | **Entra ID** (Entra ID) | Microsoft Entra ID (formerly Azure Active Directory) – Microsoft's cloud directory service. Herzog CAB can let users sign in through it, see [Authentication](../admin/authentication.md). |
 | **Ply count** (Fachung) | Number of threads per carrier. |
 | **Fineness / Titer** (Feinheit / Titer) | Program term for **linear density** – mass per unit length (tex, dtex, den …). |
-| **Braiding angle** (Flechtwinkel) | Angle at which a strand runs in the braid — at Herzog measured to the transverse direction by default, in the technical literature usually to the braid axis; the two add up to 90°. The reference can be selected under *Settings > General > Braiding angle*. |
+| **Braiding angle** (Flechtwinkel) | Angle at which a strand runs in the braid — at Herzog measured to the cross direction by default, in the technical literature usually to the braid axis; the two add up to 90°. The reference can be selected under *Settings > General > Braiding angle*. |
 | **Track** (Gangbahn) | The path along which the carriers run through the braiding machine. In the Designer, the movement of the carriers on the track can be shown as an animation, see [Setup and track animation](../designer/animation.md). |
 | **Braid density** (Geflechtsdichte) | Program term for the density of the braid; the associated measure is the **lay length** (German *Schlaglänge*, also called *Verlegelänge*). |
 | **Herzog CAB Web / web app** (Herzog CAB Web / Web-App) | Herzog CAB in the browser at app.herzog-cab.com, see [Web app](../web/index.md). |
 | **Hollow braid** (Hohlgeflecht) | Tube- or hose-shaped braid (also called *tubular braid*). In the program this calculation group is called **Hollow braid** (not “tubular braid”). |
-| **Horngear** (Flügelrad) | Wheel of the braiding machine with slots that guides the carriers along their path and hands them over to the neighbouring horngear. |
+| **Horngear** (Flügelrad) | Wheel of the braiding machine with slots that guides the carriers along their path and hands them over to the neighboring horngear. |
 | **Carrier** (Klöppel) | Bobbin holder on a braiding machine. |
 | **Customer account** (Kundenkonto) | A company's account on the Herzog licence server: modules, seats, computers and users. Managed in the **licence portal**. |
 | **LDAP** (LDAP) | *Lightweight Directory Access Protocol* – standard protocol for directory services such as Active Directory. Herzog CAB can sign in and import users through it, see [Authentication](../admin/authentication.md). |
@@ -42,7 +42,7 @@ the German interface and German machine documentation follows in brackets.
 | **Winding order** (Spulauftrag) | Separate order type for the winding department – analogous to the braiding order, but for filling bobbins on a bobbin winding machine, optionally linked to a braiding order. |
 | **Bobbin** (Spule) | Holder of the yarn/wire on the carrier. |
 | **Winding head** (Spulstelle) | Single winding position on a bobbin winding machine. |
-| **Tandem** (Tandem) | Setup variant in which two adjacent machine positions together form one strand (2-2). Important, for example, for strand braids to avoid collisions. |
+| **Tandem** (Tandem) | Setup variant in which two adjacent machine positions together form one strand (2-2). Important, for example, for lace braids to avoid collisions. |
 | **Winding technology** (Wickeltechnik) | Method by which a bobbin winding machine lays the material onto the bobbin – a master data item of a bobbin winding machine. |
 | **Workspace / workspace folder** (Workspace / Arbeitsverzeichnis) | Data folder with master data, orders, designs and print templates. |
 | **Second factor (2FA)** (Zweiter Faktor) | Additional code from an authenticator app when signing in to the customer account – for the portal, desktop app and web app, see [Password, second factor and name](../portal/security.md). |

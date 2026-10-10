@@ -5,7 +5,7 @@
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
 The **Design** tab (*File > Settings*) bundles everything that controls the
-behaviour of the [Designer](../../designer/index.md) program-wide —
+behavior of the [Designer](../../designer/index.md) program-wide —
 with which values a new design starts, whether the Designer remembers the
 last view, how fast the track animation runs and what happens when
 an unsaved design is closed. At the very bottom is the
@@ -48,7 +48,7 @@ setup overview.
 
 | Setting | Effect |
 |---|---|
-| **Unsaved changes** | Behaviour when closing a design with unsaved changes: **Ask** (default) shows the confirmation prompt; **Save automatically** saves without asking — only for designs that have never been saved is the target folder requested. |
+| **Unsaved changes** | Behavior when closing a design with unsaved changes: **Ask** (default) shows the confirmation prompt; **Save automatically** saves without asking — only for designs that have never been saved is the target folder requested. |
 
 ### Legacy design import { #legacy-designimport }
 

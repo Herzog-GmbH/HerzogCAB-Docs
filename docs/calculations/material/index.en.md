@@ -10,7 +10,7 @@ and bobbin volume.
 
 <div class="grid cards" markdown>
 
-- :material-thread: __[Fineness / titer](linear-density.md)__
+- :material-thread: __[Fineness / Titer](linear-density.md)__
 
     ---
     Determine the required yarn fineness from the braid parameters
@@ -35,12 +35,12 @@ and bobbin volume.
     ---
     Determine the required ply count (ends per carrier) for a chosen material
 
-- :material-spool: __[Material Length on Bobbin](material-length.md)__
+- :material-spool: __[Material length on bobbin](material-length.md)__
 
     ---
     Usable yarn length of a loaded bobbin
 
-- :material-cylinder: __[Bobbin Volume](bobbin-volume.md)__
+- :material-cylinder: __[Bobbin volume](bobbin-volume.md)__
 
     ---
     Winding volume of a bobbin from its geometry

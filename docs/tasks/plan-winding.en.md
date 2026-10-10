@@ -73,7 +73,7 @@ including:
   and total weight including reserve
 * [Bobbins from supplier spool](../calculations/winding/from-supplier-spool.md)
   — how many bobbins a supplier spool yields
-* [Number of winding machines](../calculations/winding/number-of-winders.md) — how
+* [Number of bobbin winding machines](../calculations/winding/number-of-winders.md) — how
   many braiding machines one bobbin winding machine can supply
 * [Yarn tension](../calculations/winding/yarn-tension.md) and
   [Yarn speed](../calculations/winding/line-speed.md) — guide values

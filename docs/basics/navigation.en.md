@@ -23,8 +23,8 @@ Calculations
   │    ├─ Material diameter from material
   │    ├─ Material diameter from product
   │    ├─ Ply count from product
-  │    ├─ Material Length on Bobbin
-  │    └─ Bobbin Volume
+  │    ├─ Material length on bobbin
+  │    └─ Bobbin volume
   ├─ Product
   │    ├─ Braiding angle
   │    ├─ Braiding angle from take-up
@@ -34,7 +34,7 @@ Calculations
   │    ├─ Drum and take-up winder selection
   │    ├─ Product weight
   │    ├─ Product diameter
-  │    ├─ Core-Cover-Product
+  │    ├─ Core-cover product
   │    ├─ Braid density conversion
   │    └─ Hollow braid
   │         ├─ Number of carriers
@@ -44,8 +44,8 @@ Calculations
   ├─ Production
   │    ├─ Production speed
   │    ├─ Machine sizing
-  │    ├─ Machine Runtime per Bobbin Set
-  │    └─ Change gear rubber feed device
+  │    ├─ Machine runtime per bobbin set
+  │    └─ Change gears rubber feed device
   └─ Winding
        ├─ Winding time
        ├─ Yarn speed
@@ -55,7 +55,7 @@ Calculations
        ├─ Material demand
        ├─ Bobbins from supplier spool
        ├─ Residual length by weight
-       └─ Number of winding machines
+       └─ Number of bobbin winding machines
 Master data
   ├─ Designs
   ├─ Colors

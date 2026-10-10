@@ -10,7 +10,7 @@ This calculation provides a rough estimate of the **footprint** of a braiding ma
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **One headed machine / Double headed machine** | – | Design of the machine. Choice between one-headed (default) and double-headed. The double-headed variant occupies two braiding circles and results in a considerably greater length. |
+| **Single-head machine / Two-head machine** | – | Design of the machine. Choice between single-head (default) and two-head. The two-head variant occupies two braiding circles and results in a considerably greater length. |
 | **Number of carriers:** | pcs | Number of carriers of the machine. Must be at least **4** (valid range 4 … 1500). |
 | **Pitch size:** | mm | Pitch size of the machine. Must be greater than 0 (up to max. 3000 mm). |
 
@@ -21,7 +21,7 @@ This calculation provides a rough estimate of the **footprint** of a braiding ma
 
 | Value | Unit | Meaning |
 |---|---|---|
-| **Length:** | cm | Estimated length of the machine floor plan (one decimal place). Correspondingly greater for double-headed machines. |
+| **Length:** | cm | Estimated length of the machine floor plan (one decimal place). Correspondingly greater for two-head machines. |
 | **Width:** | cm | Estimated width of the machine floor plan (one decimal place). |
 
 ## Operation { #bedienung }
@@ -46,5 +46,5 @@ The estimate is derived from the geometry of the braiding circle; design, number
 
 * [Change gears rubber feed device](change-gears.md)
 * [Production speed](production-speed.md)
-* [Machine Runtime per Bobbin Set](run-time-bobbin-set.md)
+* [Machine runtime per bobbin set](run-time-bobbin-set.md)
 * [Factory Planner](../../hall-planner/index.md)

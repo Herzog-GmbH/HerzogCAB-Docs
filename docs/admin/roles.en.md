@@ -58,7 +58,7 @@ A role is made up of individual permissions, grouped by area:
 |---|---|
 | **Administration** | Manage users · Manage roles · Manage company data · Workspace settings |
 | **Master data** | View master data · Edit master data |
-| **Factory Planner** | View factory planner · Edit factory planner |
+| **Factory Planner** | View Factory Planner · Edit Factory Planner |
 | **Orders** | View orders · Edit orders |
 | **Designer** | View designer · Edit designer |
 | **Print templates** | View print templates · Edit print templates |

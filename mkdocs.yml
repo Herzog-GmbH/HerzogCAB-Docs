@@ -250,16 +250,16 @@ plugins:
             "Speichern und Drucken": "Save and print"
             "Berechnungen": "Calculations"
             "Material": "Material"
-            "Feinheit / Titer": "Fineness / titer"
+            "Feinheit / Titer": "Fineness / Titer"
             "Umrechnung Feinheit": "Fineness conversion"
-            "Materialdurchmesser über Material": "Material diameter via material"
-            "Materialdurchmesser über Produkt": "Material diameter via product"
-            "Fachung über Produkt": "Ply count via product"
+            "Materialdurchmesser über Material": "Material diameter from material"
+            "Materialdurchmesser über Produkt": "Material diameter from product"
+            "Fachung über Produkt": "Ply count from product"
             "Materiallänge auf Spule": "Material length on bobbin"
             "Spulvolumen": "Bobbin volume"
             "Produkt": "Product"
             "Flechtwinkel": "Braiding angle"
-            "Flechtwinkel über Abzug": "Braiding angle via take-up"
+            "Flechtwinkel über Abzug": "Braiding angle from take-up"
             "Geflechtsdichte": "Braid density"
             "Umrechnung Geflechtsdichte": "Braid density conversion"
             "Produktdurchmesser": "Product diameter"
@@ -275,8 +275,8 @@ plugins:
             "Bedeckung": "Covering"
             "Produktion": "Production"
             "Produktionsgeschwindigkeit": "Production speed"
-            "Maschinen-Dimensionierung": "Machine dimensions"
-            "Maschinenlaufzeit pro Spulensatz": "Machine run time per bobbin set"
+            "Maschinendimensionierung": "Machine sizing"
+            "Maschinenlaufzeit pro Spulensatz": "Machine runtime per bobbin set"
             "Wechselräder Gummibandkette": "Change gears rubber feed device"
             "Spulerei": "Winding"
             "Spulzeit": "Winding time"
@@ -286,7 +286,7 @@ plugins:
             "Spulengewicht": "Bobbin weight"
             "Materialbedarf": "Material demand"
             "Spulen aus Liefergebinde": "Bobbins from supplier spool"
-            "Restlänge über Gewicht": "Residual length via weight"
+            "Restlänge über Gewicht": "Residual length by weight"
             "Anzahl Spulmaschinen": "Number of bobbin winding machines"
             "Stammdaten": "Master data"
             "Kunden": "Customers"
@@ -545,7 +545,7 @@ nav:
           - Produktion:
               - calculations/production/index.md
               - Produktionsgeschwindigkeit: calculations/production/production-speed.md
-              - Maschinen-Dimensionierung: calculations/production/dimensions.md
+              - Maschinendimensionierung: calculations/production/dimensions.md
               - Maschinenlaufzeit pro Spulensatz: calculations/production/run-time-bobbin-set.md
               - Wechselräder Gummibandkette: calculations/production/change-gears.md
           - Spulerei:

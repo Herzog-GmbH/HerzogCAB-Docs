@@ -42,8 +42,8 @@ The editor is divided into ten tabs, which you can fill in in any order:
 | **Bobbin** | Choose bobbin format; dimensions and bobbin volume. |
 | **Product** | Product-related target values with embedded calculations. |
 | **Production** | Speed, runtime, bobbin sets and the projection to the order length. |
-| **Take-up** | Choose take-up winder and drum; split of the order length across the drums with a check against the take-up winder (from version 2.1.0). |
-| **Design** | Linked braiding design with preview and Bobbin Table. |
+| **Take-up winding** | Choose take-up winder and drum; split of the order length across the drums with a check against the take-up winder (from version 2.1.0). |
+| **Design** | Linked braiding design with preview and carrier table. |
 | **Overview** | Compact summary across all tabs. |
 
 ## "Customer" tab { #tab-kunde }
@@ -136,7 +136,7 @@ the **Design** tab.
 | **Maximum carriers per head** | Carrier positions per head. |
 | **Total carriers** | Carrier positions across all heads. |
 | **Active carriers (per head)** | Calculated automatically from the braid type and the selected binding. |
-| **Stitch Size** | Stitch size of the machine. |
+| **Pitch size** | Pitch size of the machine. |
 | **Maximum speed [rpm]** | Maximum speed according to the master data. |
 
 All these fields carry the placeholder text *comes from the machine* or
@@ -149,7 +149,7 @@ as *not set*. This speed is used in the production calculations.
 
 ### Braid binding { #geflechtsbindung }
 
-Three mutually exclusive options: **Standard setup**,
+Three mutually exclusive options: **Normal setup**,
 **Tandem setup**, **Half setup**. Only the setups that the selected machine
 supports according to the master data can be selected. The selection changes
 the **Active carriers (per head)** field and the design selection.
@@ -207,7 +207,7 @@ window.
 | **Outer diameter [mm]** | Outer diameter of the bobbin. |
 | **Core diameter [mm]** | Core diameter of the bobbin. |
 | **Winding length [mm]** | Usable winding length of the bobbin. |
-| **Bobbin Volume [ccm]** | Winding volume — calculated automatically from the three dimensions. |
+| **Bobbin volume [ccm]** | Bobbin volume — calculated automatically from the three dimensions. |
 
 If a bobbin from the master data is selected, the dimensions are locked
 (placeholder *comes from the bobbin*). If the order contains bobbin dimensions
@@ -225,10 +225,10 @@ embedded calculator icon — see
 | Field | Meaning |
 |---|---|
 | **Product name** | Designation of the product to be manufactured. |
-| **Fill factor [%]** | Fill factor of the braid; preset to 70 for new orders. |
-| **Braid angle [deg]** | Braiding angle — enter manually or calculate via the calculator icon. Display and input in the configured [braiding angle reference](../admin/settings/appearance.md#flechtwinkel). |
+| **Filling grade [%]** | Filling grade of the braid; preset to 70 for new orders. |
+| **Braiding angle [deg]** | Braiding angle — enter manually or calculate via the calculator icon. Display and input in the configured [braiding angle reference](../admin/settings/appearance.md#flechtwinkel). |
 | **Product diameter [mm]** | Diameter of the finished product — manually or from the calculation. |
-| **Braid density** | Braid density with unit selection **Lay length**, **Braids per 10 millimetres**, **Braids per inch**, **Braids per French inch** — manually or from the calculation. |
+| **Braid density** | Braid density with unit selection **Lay length**, **Picks per 10 millimeters**, **Picks per inch**, **Picks per French inch** — manually or from the calculation. |
 | **Material length on bobbin [m]** | How much material fits on one bobbin — manually or from the calculation. Basis for the bobbin set calculation on the **Production** tab. |
 
 ## "Production" tab { #tab-produktion }
@@ -258,19 +258,19 @@ window).
 | **Total bobbin sets** | Bobbin sets required across all heads used (display field). This value feeds the target bobbin count of a linked [winding order](winding-order.md). |
 | **Total runtime [h]** | Runtime for the complete order length (display field). |
 | **Last set remaining length [m]** | Product length still to be manufactured with the last bobbin set (display field, per head). |
-| **Total weight [kg]** | Product weight projected to the order length (display field). For core-cover ropes, the core from the **Take-up** tab is included. |
+| **Total weight [kg]** | Product weight projected to the order length (display field). For core-cover ropes, the core from the **Take-up winding** tab is included. |
 
 The display fields result from the order length, speed and bobbin set length;
 they fill in as soon as the underlying values are available.
 
-## "Take-up" tab { #tab-aufwicklung }
+## "Take-up winding" tab { #tab-aufwicklung }
 
 Here you choose the take-up winder and drum for the order. The order length is
 split across the drums and checked against the take-up winder. The entries are
 saved with the order and appear on the **Overview** tab, in the web view and
 as placeholders in the [print templates](../print-templates/elements.md).
 
-![The “Take-up” tab with selected take-up winder, selected drum and the core section](../assets/screenshots/orders/auftrag-tab-aufwicklung.png)
+![The “Take-up winding” tab with selected take-up winder, selected drum and the core section](../assets/screenshots/orders/auftrag-tab-aufwicklung.png)
 
 !!! info "New from version 2.1.0"
     Take-up winders come from the master data
@@ -293,13 +293,13 @@ as placeholders in the [print templates](../print-templates/elements.md).
 ### "Core (core-cover rope)" section { #abschnitt-seele-kern-mantel-seil }
 
 Only for products with a core. Material and product weight then apply to the
-cover; the core is added to the weight per metre as with
+cover; the core is added to the weight per meter as with
 [Core-cover product](../calculations/product/core-sheath.md) — and thus to the
 load capacity and to the **Total weight** on the **Production** tab.
 
 | Field | Meaning |
 |---|---|
-| **Share core [%]** | Share of the core in the cross-section of the product. Empty = without core. The core diameter follows from the product diameter. |
+| **Core share [%]** | Share of the core in the cross-section of the product. Empty = without core. The core diameter follows from the product diameter. |
 | **Core material** | Takes over the density of the material. |
 | **Core density [g/cm³]** | Density of the core. |
 | **Core filling grade [%]** | Filling grade as with *Core-cover product*. |
@@ -317,9 +317,9 @@ the drum.
 
 ### "Splitting the order length" section { #abschnitt-aufteilung-der-auftragslange }
 
-At the top is the basis of the calculation: product Ø, weight per metre (with
+At the top is the basis of the calculation: product Ø, weight per meter (with
 the share of the core) and order length (with several heads also per head). If
-something is missing, it says where to enter it, e.g. *Weight per metre
+something is missing, it says where to enter it, e.g. *Weight per meter
 missing (product weight and bobbin set on the Production tab)*.
 
 | Field | Meaning |
@@ -328,7 +328,7 @@ missing (product weight and bobbin set on the Production tab)*.
 | **Drums in total** | Number of drums; with several heads e.g. *"6 (3 per head)"*. The order length is split per head. |
 | **Length per drum** | The split, e.g. *"2 × 500 m + 1 × 180 m"*; if the remainder is on a different drum, it is shown in brackets after it. |
 | **Heaviest drum** | Weight of the heaviest loaded drum; without empty weight *"… kg + empty weight"*. |
-| **Check** | Colored lines: green *Take-up winder and drum fit.*, red e.g. *Does not fit: …* or *The product does not fit into the winding space of the drum.*, yellow *Cannot be checked: …*, grey notes such as *Without a take-up winder only the drum capacity is checked.* or *Each head needs its own take-up winder.* |
+| **Check** | Colored lines: green *Take-up winder and drum fit.*, red e.g. *Does not fit: …* or *The product does not fit into the winding space of the drum.*, yellow *Cannot be checked: …*, gray notes such as *Without a take-up winder only the drum capacity is checked.* or *Each head needs its own take-up winder.* |
 
 What exactly is checked is described under
 [Take-up winders — Which data is checked](../master-data/take-up-machines.md#welche-angaben-gepruft-werden).
@@ -336,7 +336,7 @@ What exactly is checked is described under
 ## "Design" tab { #tab-design }
 
 Here you link a braiding design from the [Designer](../designer/index.md)
-to the order and see its preview including the Bobbin Table.
+to the order and see its preview including the carrier table.
 
 ![The “Design” tab with linked design, preview thumbnail and the carrier table open](../assets/screenshots/orders/auftrag-tab-design.png)
 
@@ -365,13 +365,13 @@ The field contains three buttons:
 Below the field, a thumbnail shows the design with key data (name,
 braid type, carriers). A click on the thumbnail or the text opens the
 linked design. If the design has [plying colors](../designer/painting.md#fachungsfarben-farbe-je-garn),
-the Bobbin Table and the printout show a color strip per yarn and the
+the carrier table and the printout show a color strip per yarn and the
 color details per yarn separated by " / ".
 
-### "Overview" and "Bobbin Table" sub-tabs { #unter-tabs-ubersicht-und-kloppel-tabelle }
+### "Overview" and "Carrier table" sub-tabs { #unter-tabs-ubersicht-und-kloppel-tabelle }
 
 * **Overview** — large design preview; a click opens the design.
-* **Bobbin Table** — the setup table of the design: column **No.**
+* **Carrier table** — the setup table of the design: column **No.**
   plus one color column per track (for round braids with two tracks, two
   color columns). The cell background matches the carrier color, the text
   color changes automatically for good contrast. A **Double-click** on
@@ -395,7 +395,7 @@ the printout.
 
 The overview summarizes the order across all tabs — divided into the sections
 **Order**, **Customer**, **Braiding machine**, **Material**,
-**Product**, **Production**, **Take-up** and **Design**. Empty fields appear
+**Product**, **Production**, **Take-up winding** and **Design**. Empty fields appear
 as a dash, so that gaps stand out immediately.
 
 !!! tip "Final check before printing"
@@ -413,7 +413,7 @@ calculation pages is described under
 
 | Field in the order | Calculation |
 |---|---|
-| **Braid angle [deg]** (Product tab) | [Braiding angle](../calculations/product/braid-angle.md) |
+| **Braiding angle [deg]** (Product tab) | [Braiding angle](../calculations/product/braid-angle.md) |
 | **Product diameter [mm]** (Product tab) | [Product diameter](../calculations/product/product-diameter.md) |
 | **Braid density** (Product tab) | [Braid density](../calculations/product/lay-length.md) |
 | **Material length on bobbin [m]** (Product tab) | [Material length on bobbin](../calculations/material/material-length.md) |

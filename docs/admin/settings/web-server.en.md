@@ -83,7 +83,7 @@ If the web server starts automatically with the profile, the status bar reports:
 |---|---|
 | *Web server active on port …* | The server is running with a password and can be reached on the network. |
 | *Web server active on port …, on this computer only. To allow access from the network, set a password in the settings.* | No password set — tablets and phones cannot get in. |
-| *Web server is already running in another instance of this workspace.* | A second program window with the same workspace folder is already providing the server. |
+| *Web server is already running in another instance of this workspace folder.* | A second program window with the same workspace folder is already providing the server. |
 | *Web server start failed: …* | Usually the port is in use — choose a different port. |
 
 !!! info "Settings apply per profile"

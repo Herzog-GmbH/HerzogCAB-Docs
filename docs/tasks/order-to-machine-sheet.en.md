@@ -78,7 +78,7 @@ you can find all available calculations in the chapter
 ## Step 5: Check the overview { #schritt-5-ubersicht-prufen }
 
 Switch to the **Overview** tab. It summarizes the complete order;
-the **Bobbin Table** sub-tab shows the setup with colors for each
+the **Carrier table** sub-tab shows the setup with colors for each
 carrier position (details: [Braiding order editor](../orders/braiding-order.md)).
 
 ## Step 6: Print the machine sheet { #schritt-6-maschinenzettel-drucken }
@@ -120,7 +120,7 @@ in the order in the **Order** tab.
 * You cannot create any more orders (trial version) →
   [Trial version and licence quotas](../basics/trial-quotas.md) and
   [Licence problems](../help/license-problems.md)
-* Buttons are greyed out → you are probably missing a permission,
+* Buttons are grayed out → you are probably missing a permission,
   see [Roles and permissions](../admin/roles.md)
 * Further help → [Help overview](../help/index.md) and
   [Contact support](../help/support.md)

@@ -84,7 +84,7 @@ automatically to match the number of carriers:
 | Standard template | For designs with … |
 |---|---|
 | Compact design template (one page) | up to **48 carriers** |
-| Large design template (two pages, with large Occupation Overview) | from **49 carriers** |
+| Large design template (two pages, with large Setup Overview) | from **49 carriers** |
 
 Only the standard template matching the current number of carriers is ever
 shown; your own templates always appear in the selection regardless of the
@@ -92,7 +92,7 @@ number of carriers.
 
 ### Print preview { #druckvorschau }
 
-![Print preview of a design with design data, Occupation Overview, carrier table and braid pattern](../assets/screenshots/designer/designer-druckvorschau.png)
+![Print preview of a design with design data, Setup Overview, carrier table and braid pattern](../assets/screenshots/designer/designer-druckvorschau.png)
 
 The print preview shows all pages of the selected template, already filled
 with the current design, color and carrier data. With

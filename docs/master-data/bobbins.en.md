@@ -43,7 +43,7 @@ Herzog catalogue …".*
 | **Outer Diameter** | mm | Diameter of the fully wound bobbin. |
 | **Core Diameter** | mm | Diameter of the empty bobbin core. |
 | **Winding Length** | mm | Usable winding width between the flanges. |
-| **Bobbin Volume** | ccm | Holding volume of the bobbin. Can be calculated automatically from the three dimensions (button next to the field), but can still be overwritten manually. |
+| **Bobbin volume** | ccm | Holding volume of the bobbin. Can be calculated automatically from the three dimensions (button next to the field), but can still be overwritten manually. |
 | **Machine types** | – | Multiple selection of the machine types on which the bobbin is used. At least one type is required. |
 
 The available **Machine types** are:
@@ -57,7 +57,7 @@ The available **Machine types** are:
 
 !!! tip "Have the volume calculated automatically"
     Enter outer diameter, core diameter and winding length and
-    use the calculate button at the **Bobbin Volume** field. This keeps
+    use the calculate button at the **Bobbin volume** field. This keeps
     the volume consistent with the dimensions. As soon as you change the volume by hand,
     it is no longer recalculated automatically.
 
@@ -86,7 +86,7 @@ Bobbins are used in the following calculations:
 
 * [Bobbin volume](../calculations/material/bobbin-volume.md)
 * [Material length on bobbin](../calculations/material/material-length.md)
-* [Machine run time per bobbin set](../calculations/production/run-time-bobbin-set.md)
+* [Machine runtime per bobbin set](../calculations/production/run-time-bobbin-set.md)
 * [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md)
 
 ## Related pages { #verwandte-seiten }

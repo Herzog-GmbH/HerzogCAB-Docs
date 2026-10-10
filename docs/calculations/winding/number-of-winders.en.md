@@ -21,13 +21,13 @@ The inputs are divided into three areas: **Braiding machine**,
 |---|---|---|
 | **Number of shifts:** (braiding machine) | – | Number of shifts in braiding operation (choice of 1, 2 or 3). |
 | **Number of carriers per head:** | pcs | Number of carriers of the braiding machine (at least 1). |
-| **Number heads per machine:** | pcs | Number of braiding heads (at least 1). |
+| **Number of heads per machine:** | pcs | Number of braiding heads (at least 1). |
 | **Horngear speed:** | rpm | Speed of the horngears of the braiding machine. |
 | **Number of shifts:** (bobbin winding machine) | – | Number of shifts in winding operation (choice of 1, 2 or 3). |
-| **Type of bobbin winder:** | – | Choice of **Semi automatic** or **Fully automatic**. Default: fully automatic. |
+| **Bobbin winding machine type:** | – | Choice of **Semi automatic** or **Fully automatic**. Default: fully automatic. |
 | **Winding speed:** | m/min | Speed at which the bobbin winding machine winds the material. |
-| **Length on Bobbin:** | m | Material length wound onto one bobbin. |
-| **Spindles per winder:** | pcs | Number of spindles (positions wound in parallel) per bobbin winding machine (at least 1). |
+| **Length on bobbin:** | m | Material length wound onto one bobbin. |
+| **Spindles per bobbin winding machine:** | pcs | Number of spindles (positions wound in parallel) per bobbin winding machine (at least 1). |
 | **Lay length:** | mm | Lay length of the braid. |
 | **Product diameter:** | mm | Diameter of the braid. |
 
@@ -39,16 +39,16 @@ The inputs are divided into three areas: **Braiding machine**,
 
 ## Result { #ergebnis }
 
-The main result is **Bobbin Winders per Braiding Machine**; the other values
+The main result is **Braiding machines per bobbin winding machine**; the other values
 are output as key figure tiles.
 
 | Value | Unit | Meaning |
 |---|---|---|
-| **Bobbin Winders per Braiding Machine:** | pcs | Main result: ratio of braiding machines to bobbin winding machines (rounded up). |
-| **Number of Bobbins:** | pcs | Calculated number of bobbins required (rounded up). |
+| **Braiding machines per bobbin winding machine:** | pcs | Main result: ratio of braiding machines to bobbin winding machines (rounded up). |
+| **Number of bobbins:** | pcs | Calculated number of bobbins required (rounded up). |
 | **Machine runtime:** | h | Run time of the braiding machine for the calculated braid length. |
 | **Output:** | m/h | Braiding output (braid length produced per hour). |
-| **Bobbin winding time:** | min | Time to wind one bobbin. |
+| **Winding time:** | min | Time to wind one bobbin. |
 | **Braiding angle:** | ° | Braiding angle calculated from lay length and braid diameter. |
 | **Product length:** | m | Braid length calculated from length on bobbin and braiding angle. |
 
@@ -76,4 +76,4 @@ glance.
 * [Braiding angle](../product/braid-angle.md)
 * [Braid density](../product/lay-length.md)
 * [Production speed](../production/production-speed.md)
-* [Machine Runtime per Bobbin Set](../production/run-time-bobbin-set.md)
+* [Machine runtime per bobbin set](../production/run-time-bobbin-set.md)

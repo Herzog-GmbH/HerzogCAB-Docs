@@ -24,7 +24,7 @@ On the left is the **User list** with a search field and the buttons for
 creating and importing or refreshing, on the right the **editor** of the
 selected user.
 
-![User management in the account model: user list from the customer account on the left, user with greyed-out details on the right](../assets/screenshots/admin/benutzer-konto.png)
+![User management in the account model: user list from the customer account on the left, user with grayed-out details on the right](../assets/screenshots/admin/benutzer-konto.png)
 
 !!! warning "📷 Screenshot missing"
     **Subject:** User management with a dongle installation — user list on the left (with the buttons “New user”, “Import from Entra”, “Import from LDAP”), user editor on the right

@@ -23,8 +23,8 @@ input and result values and any special features.
 From top to bottom: the **title line** with the name of the calculation, the
 white **input card**, below it (or next to it on larger pages) the
 **result area**, and the **Delete** and **Calculate** buttons.
-Larger pages such as *Core-Cover-Product* or *Machine Runtime per Bobbin
-Set* additionally divide the input into headed sections or side-by-side
+Larger pages such as *Core-cover product* or *Machine runtime per bobbin
+set* additionally divide the input into headed sections or side-by-side
 sub-areas. If the window is too narrow to show all sub-areas side by side,
 they stack one below the other and the page scrolls — no field is cut off at
 the edge any more.
@@ -46,7 +46,7 @@ you can simply leave them or adjust them.
 
 !!! info "Braiding angle fields"
     All braiding angle fields and results show the angle in the
-    selected reference — to the transverse direction (Herzog, default) or to
+    selected reference — to the cross direction (Herzog, default) or to
     the braid axis, see
     [*Settings > General > Braiding angle*](../admin/settings/appearance.md#flechtwinkel).
     If you point the mouse at the field, the tooltip shows both values
@@ -76,7 +76,7 @@ reported the same way; individual pages show their own hint texts for this.
 
 * **Blue main tile(s):** the central result, displayed large.
 * **White mini tiles:** secondary and intermediate values, in a two-column grid.
-* **Result tables:** Some pages (e.g. *Core-Cover-Product*) additionally
+* **Result tables:** Some pages (e.g. *Core-cover product*) additionally
   show a table with two value columns.
 * Before the first calculation, each tile shows a dash with the unit
   (e.g. "– tex") as a placeholder.

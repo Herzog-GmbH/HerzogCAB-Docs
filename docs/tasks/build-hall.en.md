@@ -112,7 +112,7 @@ In the editor, switch to the 3D view with the **3D** view toggle (reference:
   [Bobbin winding machines](../master-data/winding-machines.md))
 * Tiles have the wrong size → add the dimensions in the machine
   master data
-* Buttons are greyed out → permission missing, see
+* Buttons are grayed out → permission missing, see
   [Roles and permissions](../admin/roles.md)
 * Further help → [Help overview](../help/index.md) and
   [Contact support](../help/support.md)

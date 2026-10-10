@@ -31,7 +31,7 @@ the **Herzog CAB – Sign in to your customer account** dialog appears. At the t
 there is a blue header band with *Herzog CAB* and the subtitle *Sign in to your
 customer account*, with a small animated braid running on its right. Below it is
 the note *"Herzog CAB is not yet activated on this computer."*
-with a short explanation. The layout and behaviour of the dialog are the same
+with a short explanation. The layout and behavior of the dialog are the same
 as for the daily [sign-in with the account user](../admin/login.md#anmeldung-mit-dem-kontobenutzer).
 
 ![The “Herzog CAB – Sign in to your customer account” dialog with e-mail address, password and “Stay signed in”](../assets/screenshots/setup/konto-anmeldung-geraet.png)
@@ -136,15 +136,15 @@ licence is already preinstalled on the dongle.
 
 1. Close the Herzog CAB program if it is running.
 2. Plug the **CmDongle** into a free USB port.
-3. Wait briefly - Windows recognises the stick and CodeMeter reads the
+3. Wait briefly - Windows recognizes the stick and CodeMeter reads the
    licence automatically.
 
-You can recognise success by the **CodeMeter tray icon** at the bottom right of the
-taskbar: it changes from grey to blue.
+You can recognize success by the **CodeMeter tray icon** at the bottom right of the
+taskbar: it changes from gray to blue.
 
 !!! warning "📷 Screenshot missing"
     **Subject:** CodeMeter tray icon in the Windows notification area before and after
-    plugging in the dongle (color change grey → blue).
+    plugging in the dongle (color change gray → blue).
     **How to create:** Photograph it with the dongle unplugged, then plug the dongle in and
     photograph it again after a few seconds.
     **Target file:** `assets/screenshots/activate-license/tray-icon-farbwechsel.png`
@@ -320,7 +320,7 @@ create a receipt as the final step:
 
 At startup, Herzog CAB checks whether a valid licence is available:
 
-| Status                      | Behaviour                                       |
+| Status                      | Behavior                                       |
 |-----------------------------|-------------------------------------------------|
 | CodeMeter licence present, valid | Program starts normally (dongle route).    |
 | No CodeMeter container, computer signed in to the account | Program starts normally; the lease is renewed in the background. |
