@@ -450,6 +450,18 @@ img,video{max-width:100%;display:block}
 .tab[aria-selected="true"] .t{color:var(--blue)}
 .tab .d{display:block;font-size:.9rem;color:var(--muted);line-height:1.45}
 .tab:focus-visible{outline:2px solid var(--petrol);outline-offset:4px;border-radius:3px}
+/* Geflechtsarten: Bild links, die sechs Bauarten rechts untereinander. Vorher
+   stand das Bild in 4:3 ueber die volle Breite, fast 900 px hoch — zu gross
+   (Eike, 09.10.2026). Jetzt rund 500 px, die Reiterspalte ist etwa gleich hoch. */
+.geflechte{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);
+  gap:clamp(1.4rem,3.5vw,3rem);align-items:center}
+.geflechte .tabview{margin-bottom:0}
+.geflechte .tabs{grid-template-columns:1fr;gap:clamp(.7rem,1.4vw,1rem)}
+.geflechte .tab .schiene{margin-bottom:.7rem}
+@media (max-width:860px){
+  .geflechte{grid-template-columns:1fr}
+  .geflechte .tabs{grid-template-columns:repeat(auto-fit,minmax(148px,1fr))}
+}
 
 /* ---------- Takt 6: Zahlenband ----------
    Das Marken-Laufband der Vorlage steht auf einer eigenen Flaeche und laeuft an
@@ -577,22 +589,16 @@ footer{padding-block:2.4rem 3.6rem;font-family:var(--f-mono);font-size:.76rem;co
 .preis span{font-size:.9rem;color:var(--muted)}
 .karte .haken li{font-size:.92rem}
 .karte.hervor{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue),var(--shadow)}
-.zusatz{margin-top:clamp(1rem,2.4vw,1.7rem);display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.4rem;
-  border:1px dashed var(--rule-strong);border-radius:10px;padding:1rem 1.3rem}
-.zusatz p{margin:0;color:var(--muted);font-size:.95rem;flex:1;min-width:16rem}
+/* Preise: vier Karten nebeneinander (Testversion, Herzog CAB, Designer, Simulator),
+   auf mittleren Breiten zwei mal zwei statt drei plus eine einzelne. Die Knoepfe
+   stehen unten auf einer Linie. */
+.karten.vier{grid-template-columns:repeat(4,minmax(0,1fr))}
+.karten.vier .karte{padding:clamp(1.2rem,2vw,1.6rem)}
+.karten.vier .karte .btn{margin-top:auto;align-self:stretch;justify-content:center;
+  white-space:nowrap;padding-inline:1em}
+@media (max-width:1100px){.karten.vier{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.karten.vier{grid-template-columns:1fr}}
 .kleingedruckt{margin-top:1.4rem;max-width:var(--measure);font-size:.86rem;color:var(--muted)}
-
-/* ================= Platzrechner (im blauen Band) ================= */
-.rechner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.2fr);gap:1rem;
-  margin-top:clamp(1.6rem,3.5vw,2.4rem);align-items:end}
-.rechner label{display:flex;flex-direction:column;gap:.45rem;font-size:.9rem;color:var(--ink-2)}
-.rechner input{font:inherit;font-size:1.25rem;font-weight:700;width:100%;padding:.55em .7em;border-radius:6px;
-  border:1px solid var(--rule-strong);background:var(--card-face);color:var(--ink)}
-.rechner input:focus-visible{outline:2px solid var(--petrol);outline-offset:2px}
-.rechner-ergebnis{border:1px solid var(--rule-strong);border-radius:8px;padding:.8rem 1rem;background:var(--card-face)}
-.rechner-ergebnis b{display:block;font-size:1.6rem;font-weight:900;letter-spacing:-.02em;line-height:1.1}
-.rechner-ergebnis span{font-size:.84rem;color:var(--ink-2)}
-@media (max-width:860px){.rechner{grid-template-columns:1fr 1fr}.rechner-ergebnis{grid-column:1/-1}}
 
 /* ================= Releases ================= */
 .release-list{display:grid;gap:.65rem}
@@ -644,7 +650,10 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
 </head>
 <body>
 
-<nav class="nav">
+<!-- Was "nur-eigenstaendig" traegt, blendet die Einbettung in herzog-online.com/cab/ aus.
+     Dort stehen Navigation und Fuss der Herzog-Seite; eine zweite Leiste darunter
+     sah doppelt aus (Eike, 09.10.2026). -->
+<nav class="nav nur-eigenstaendig">
   <div class="nav-in">
     <a class="brand" href="#top"><img src="data:image/png;base64,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" alt=""><span>Herzog&nbsp;<span class="cab">CAB</span></span></a>
     <div class="nav-links">
@@ -656,7 +665,7 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
       <a href="/handbuch/">Handbuch</a>
     </div>
     <div class="nav-right">
-      <button class="tt" id="tt" type="button" aria-label="Helle oder dunkle Darstellung">
+      <button class="tt nur-eigenstaendig" id="tt" type="button" aria-label="Helle oder dunkle Darstellung">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
       <a class="btn btn-primary" href="#preise">Testen</a>
@@ -826,7 +835,7 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
     <h2 class="col" style="margin-bottom:1rem">Sechs Bauarten, ein Designer</h2>
     <p class="lede col" style="margin-bottom:clamp(1.8rem,4vw,2.8rem)">Jedes Geflecht steht zweimal da: links das Flechtbild, rechts dasselbe Geflecht in 3D — aus derselben Klöppelbelegung gerechnet.</p>
   </div>
-  <div class="wrap">
+  <div class="wrap geflechte">
     <div class="tabview" id="tabview">
       <figure class="on" aria-label="Rundgeflecht"><img src="bilder/G1-rund.webp" alt="Rundgeflecht: Flechtbild in 2D und dasselbe Geflecht in 3D" width="1200" height="900" loading="lazy" decoding="async"></figure>
       <figure aria-label="Litze"><img src="bilder/G2-litze.webp" alt="Litze: Flechtbild in 2D und dasselbe Geflecht in 3D" width="1200" height="900" loading="lazy" decoding="async"></figure>
@@ -871,7 +880,9 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
 </section>
 
 <!-- ============ Herzog CAB Simulator ============
-     Zusatz zur Vollversion, je Maschinenmodell, Preis auf Anfrage (Entscheidung 09.10.2026).
+     Zusatz zur Vollversion, 1.999 EUR netto je Maschinenmodell, Benutzer und Jahr
+     (Preis veroeffentlicht auf Eikes Wort 09.10.2026; vorher "auf Anfrage").
+     Lizenziert wird der Maschinentyp, der Kunden-Administrator weist die Lizenzen zu.
      Herzog liefert die Maschinenkonfiguration, der Kunde stellt Besetzungen und
      Zeitprogramme zusammen — keine eigene Konstruktion (Handbuch-Regel 29.09.2026). -->
 <section class="takt" id="simulator">
@@ -891,7 +902,7 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
         <li>Klöppelwege Schritt für Schritt auf der Zeitachse, das entstehende Geflecht in 3D</li>
         <li>Programm prüfen und den Schaltplan für die Steuerung als PDF oder CSV ausgeben</li>
       </ul>
-      <p class="small" style="margin:1.3rem 0 1.4rem">Zubuchbar zum Jahresabo von Herzog CAB, lizenziert je Maschinenmodell. Preis auf Anfrage.</p>
+      <p class="small" style="margin:1.3rem 0 1.4rem">Zubuchbar zum Jahresabo von Herzog CAB: 1.999&nbsp;€ netto je Maschinenmodell, Benutzer und Jahr. Baugleiche Maschinen zählen einmal.</p>
       <a class="btn btn-outline" href="https://herzog-online.com/vertretungen/#kontakt" target="_blank" rel="noopener">Simulator anfragen</a>
     </div>
   </div>
@@ -970,7 +981,8 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
 
 <!-- ============ Preise und Testversion ============
      Stand 09.10.2026: nur Jahresabo, 199 EUR netto je Platz (Herzog CAB),
-     99 EUR netto je Platz (Designer), Simulator je Maschinenmodell auf Anfrage.
+     99 EUR netto je Platz (Designer), Simulator 1.999 EUR netto je Maschinenmodell,
+     Benutzer und Jahr (Eike, 09.10.2026).
      Platzregeln aus docs/web/subscription.md, Testgrenzen aus docs/basics/trial-quotas.md. -->
 <section class="takt" id="preise">
   <span id="download" aria-hidden="true"></span>
@@ -979,7 +991,7 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
     <h2 class="col" style="margin-bottom:1rem">Erst testen, dann im Jahresabo</h2>
     <p class="lede col" style="margin-bottom:clamp(1.8rem,4vw,2.8rem)">Ein Platz gilt wahlweise für das Programm oder für den Browser. Beliebig viele Mitarbeiter teilen sich die Plätze — nur nicht gleichzeitig.</p>
 
-    <div class="karten">
+    <div class="karten vier">
       <div class="karte reveal">
         <span class="dl-badge">30 Tage kostenlos</span>
         <h3>Testversion</h3>
@@ -1015,12 +1027,18 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
         </ul>
         <a class="btn btn-outline" href="https://herzog-online.com/vertretungen/#kontakt" target="_blank" rel="noopener">Angebot anfragen</a>
       </div>
-    </div>
 
-    <div class="zusatz reveal">
-      <span class="dl-badge ruhig">Zusatz</span>
-      <p><strong>Herzog CAB Simulator</strong> — zubuchbar zum Jahresabo von Herzog CAB, je Maschinenmodell. Preis auf Anfrage.</p>
-      <a href="#simulator">Mehr zum Simulator →</a>
+      <div class="karte reveal">
+        <span class="dl-badge ruhig">Zusatz</span>
+        <h3>Herzog CAB Simulator</h3>
+        <p class="preis"><b>1.999&nbsp;€</b><span>netto je Maschinenmodell, Benutzer und Jahr</span></p>
+        <ul class="haken">
+          <li>Ihre Flechtmaschine als fertiges Modell von Herzog</li>
+          <li>Je Maschinentyp und Benutzer, baugleiche Maschinen zählen einmal</li>
+          <li>Nur zusammen mit dem Jahresabo von Herzog CAB</li>
+        </ul>
+        <a class="btn btn-outline" href="https://herzog-online.com/vertretungen/#kontakt" target="_blank" rel="noopener">Simulator anfragen</a>
+      </div>
     </div>
 
     <p class="kleingedruckt">Alle Preise netto zuzüglich Umsatzsteuer. Wer im Programm und im Browser zugleich arbeitet, belegt zwei Plätze. Alle Plätze eines Kontos enden am selben Stichtag; später dazugekaufte Plätze laufen anteilig bis dahin. Sie bestellen auf Rechnung, freigeschaltet wird nach dem Zahlungseingang. Bestandskunden bestellen und verlängern direkt im <a href="https://license.herzog-cab.com" target="_blank" rel="noopener">Lizenzportal</a>.</p>
@@ -1033,30 +1051,8 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
   </div>
 </section>
 
-<!-- ============ Platzrechner ============
-     Ersetzt den frueheren Lizenzberater (Dongle, Fingerabdruck, Netzwerk-Lizenz).
-     Seit 2.0 gibt es nur noch das Kundenkonto mit Plaetzen. Zaehlregel: Programm
-     und Browser zaehlen getrennt (Vertrieb 24.09.2026). -->
-<section class="takt blau" id="lizenz">
-  <div class="wrap">
-    <p class="eyebrow">Platzrechner</p>
-    <h2 style="margin-bottom:.8rem;max-width:24ch">Wie viele Plätze brauchen Sie?</h2>
-    <p class="lede" style="max-width:56ch;margin:0">Zählen Sie, wie viele Personen höchstens gleichzeitig arbeiten — nicht, wie viele es insgesamt sind.</p>
-    <div class="rechner" id="rechner">
-      <label>Gleichzeitig im Programm
-        <input type="number" id="rPrg" min="0" max="999" value="2" inputmode="numeric"></label>
-      <label>Gleichzeitig im Browser
-        <input type="number" id="rWeb" min="0" max="999" value="1" inputmode="numeric"></label>
-      <label>Nur Designer, gleichzeitig
-        <input type="number" id="rDes" min="0" max="999" value="0" inputmode="numeric"></label>
-      <div class="rechner-ergebnis" aria-live="polite">
-        <b id="rSumme">597 €</b>
-        <span id="rText">netto im Jahr für 3 Plätze Herzog CAB</span>
-      </div>
-    </div>
-    <p class="small" style="margin-top:1rem">Unverbindliche Rechnung zu den Listenpreisen. Das Angebot erhalten Sie von Ihrem Herzog-Ansprechpartner.</p>
-  </div>
-</section>
+<!-- Der Platzrechner (blaues Band) ist am 09.10.2026 auf Eikes Wunsch entfallen.
+     Wie Plaetze zaehlen, steht bei den Preisen und in den Haeufigen Fragen. -->
 
 <!-- ============ Veröffentlichungen ============ -->
 <section class="takt" id="releases">
@@ -1195,10 +1191,11 @@ kbd{font-family:var(--f-mono);font-size:.82em;background:var(--ground-2);
         <a class="btn btn-outline" href="https://github.com/Herzog-GmbH/HerzogCAB-Feedback/issues/new?template=feature_request.md" target="_blank" rel="noopener">Vorschlag einreichen</a>
       </div>
     </div>
+    <p class="small" style="margin-top:1.6rem">Schon Kunde? Benutzer, Plätze und Rechner verwalten Sie im <a href="https://license.herzog-cab.com" target="_blank" rel="noopener">Lizenzportal</a>, im Browser arbeiten Sie direkt in <a href="https://app.herzog-cab.com" target="_blank" rel="noopener">Herzog CAB Web</a>.</p>
   </div>
 </section>
 
-<footer>
+<footer class="nur-eigenstaendig">
   <div class="wrap">© <span id="yr">2026</span> Herzog GmbH · <a href="/handbuch/">Handbuch</a> · <a href="https://license.herzog-cab.com" target="_blank" rel="noopener">Lizenzportal</a> · <a href="https://app.herzog-cab.com" target="_blank" rel="noopener">Herzog CAB Web</a> · <a href="https://herzog-online.com/impressum/" target="_blank" rel="noopener">Impressum</a> · <a href="https://herzog-online.com/datenschutz/" target="_blank" rel="noopener">Datenschutz</a> · <a href="https://herzog-online.com" target="_blank" rel="noopener">herzog-online.com</a></div>
 </footer>
 
@@ -1660,26 +1657,6 @@ function renderReleases(releases) {
   // als direkten Download aus einem GitHub-Release.
 }
 
-// ===== Platzrechner =====
-// Listenpreise netto je Platz und Jahr. Programm und Browser zaehlen getrennt.
-(function () {
-  const PREIS_CAB = 199, PREIS_DESIGNER = 99;
-  const ein = id => document.getElementById(id);
-  const felder = ['rPrg', 'rWeb', 'rDes'].map(ein);
-  if (felder.some(f => !f)) return;
-  const zahl = f => Math.max(0, Math.min(999, Math.floor(Number(f.value) || 0)));
-  const eur = n => n.toLocaleString('de-DE') + ' €';
-  function rechnen() {
-    const cab = zahl(felder[0]) + zahl(felder[1]), des = zahl(felder[2]);
-    ein('rSumme').textContent = eur(cab * PREIS_CAB + des * PREIS_DESIGNER);
-    const teile = [];
-    if (cab) teile.push(`${cab} ${cab === 1 ? 'Platz' : 'Plätze'} Herzog CAB`);
-    if (des) teile.push(`${des} ${des === 1 ? 'Platz' : 'Plätze'} Designer`);
-    ein('rText').textContent = teile.length ? `netto im Jahr für ${teile.join(' und ')}` : 'netto im Jahr';
-  }
-  felder.forEach(f => f.addEventListener('input', rechnen));
-  rechnen();
-})();
 
 // Render embedded data first for instant display, then try live refresh
 renderReleases(EMBEDDED_RELEASES);
