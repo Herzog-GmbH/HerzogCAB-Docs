@@ -13,8 +13,8 @@ Full definitions: docs/appendix/glossary.en.md
 *[horngears]: Rotating gears of the braiding machine; their slots pick up the carriers and pass them on to the next horngear.
 *[track]: The path along which the carriers run through the braiding machine.
 *[titer]: Fineness of a yarn, given in tex or dtex.
-*[tex]: Unit of fineness: grams per 1000 metres of yarn.
-*[dtex]: Unit of fineness: grams per 10000 metres of yarn.
+*[tex]: Unit of fineness: grams per 1000 meters of yarn.
+*[dtex]: Unit of fineness: grams per 10000 meters of yarn.
 *[ply count]: Number of individual threads running in parallel per carrier.
 *[braid density]: Number of braid crossings per length of the product.
 *[braiding angle]: Angle between the braiding thread and the product axis.
