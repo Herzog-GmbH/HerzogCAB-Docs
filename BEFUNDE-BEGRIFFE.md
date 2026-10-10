@@ -34,29 +34,31 @@ Gesammelt beim Übersetzen des Handbuchs ins Englische. Abgearbeitet = ~~durchge
 
 ## B. Englische Programmübersetzung (`app_en.ts`, Web `en.json`) — uneinheitlich
 
+Stand 10.10.2026: Desktop `fix/begriffe-horngear` 53f2622, Web `fix/uebersetzungen-en` 0c8e00b. Neu aufgefallen: Modulnamen schreibt das Lizenzportal „Herzog CAB Full Version“ / „Herzog CAB Web Trial“, die Web-App „Herzog CAB full version“ / „Herzog CAB Web trial“ — Handbuch folgt dem Portal.
+
 | Deutsch | Programm EN heute | Soll (TERMINOLOGIE.md) |
 |---|---|---|
-| ~~Flügelrad, Flügelradgruppe, Flügel-Speichen~~ | ~~„horn gear“ (61×), „Horn spokes“, Web „horn gears“~~ | ~~**horngear**~~ (Desktop 1da5702: „horngear“, „Horngear spokes“; Web: Nachtrag folgt) |
+| ~~Flügelrad, Flügelradgruppe, Flügel-Speichen~~ | ~~„horn gear“ (61×), „Horn spokes“, Web „horn gears“~~ | ~~**horngear**~~ (Desktop 1da5702: „horngear“, „Horngear spokes“; Web 0c8e00b ebenso) |
 | ~~Klöppel-Tabelle (Auftrag)~~ | ~~„Bobbin Table“~~ | ~~Carrier table~~ (Desktop 1da5702, Handbuch angeglichen) |
-| ~~Besetzung (Normale/Halbe/Tandem … 1-1 usw.), Besetzungsübersicht~~ | ~~„occupation“ / „setup“ gemischt~~ | ~~einheitlich~~ → „Setup“, „Normal/Half/Tandem setup …“, „Setup Overview“, „Edit Setup“ (Desktop; Web: Nachtrag folgt) |
+| ~~Besetzung (Normale/Halbe/Tandem … 1-1 usw.), Besetzungsübersicht~~ | ~~„occupation“ / „setup“ gemischt~~ | ~~einheitlich~~ → „Setup“, „Normal/Half/Tandem setup …“, „Setup overview“, „Edit setup“, Standardbesetzung „Default setup …“ (Desktop 53f2622 und Web 0c8e00b; Handbuch angeglichen) |
 | ~~Arbeitsverzeichnis~~ | ~~„Working directory“ / „Workspace folder“~~ | ~~workspace folder~~ (überall „Workspace folder“) |
 | Litze, Litzengeflecht | ~~„Lace braid“ / „flat braid“ / „Strand“~~ | umgesetzt: Material (Kern-Mantel, HLM) = „Strand“, Geflechtsart = „Lace braid“ (Druck-Editor „Lace“) — **Entscheidung Eike offen**, siehe TERMINOLOGIE.md |
-| ~~Spulvolumen~~ | ~~„Bobbin Volume“ / „Winding volume“~~ | ~~bobbin volume~~ (Trommel-Editor bleibt „Winding volume“) |
+| ~~Spulvolumen~~ | ~~„Bobbin Volume“ / „Winding volume“~~ | ~~bobbin volume~~ (seit 53f2622 auch im Trommel-Editor) |
 | ~~Spulmaschinen~~ | ~~„Bobbin winding machines“ / „winding machines“~~ | ~~einheitlich~~ → „bobbin winding machine(s)“ |
 | ~~Abzug (Gatter)~~ | ~~„Take-up“ — beim Gatter ist es ein Abzug über Kopf/rollend~~ | ~~pay-off~~ (Katalog und Gatter-Dialog) |
 | ~~Aufwicklung und Abzug (Flechtmaschine)~~ | ~~beide „Take-up“~~ | ~~trennen~~ → Aufwicklung = „Take-up winding“, Abzug = „Take-up“ |
 | ~~Stufen (Treppe)~~ | ~~„Stepped“ (Kollision mit Wandanzeige)~~ | ~~Steps~~ (Wandanzeige bleibt „Stepped“) |
-| Wiederherstellen (Web, Versionen) | „Redo“ | Restore |
-| Größe (Web, Medien) | „Quantity“ | Size |
+| ~~Wiederherstellen (Web, Versionen)~~ | ~~„Redo“~~ | ~~Restore~~ (Versionen, Papierkorb, Katalogpflege; Rückgängig/Wiederholen bleiben Undo/Redo) |
+| ~~Größe (Web, Medien)~~ | ~~„Quantity“~~ | ~~Size~~ (Medien, Schriftgröße; „Quantity“ nur noch beim Abzug, Schlüssel `Abzug\|Größe`) |
 | ~~Favorisieren~~ | ~~„Favor“~~ | ~~Add to favorites~~ |
 | ~~Flechtmaschinen / Spulmaschine~~ | ~~„Bobbin Winders per Braiding Machine“ (Sinn verdreht)~~ | ~~Braiding machines per bobbin winding machine~~ |
 | ~~Flechtbezeichnung~~ | ~~„Linear density:“~~ | ~~Braid designation~~ (Feinheit dafür „Fineness“) |
 | ~~Laylength~~ | ~~Tippfehler~~ | ~~Lay length~~ |
-| ~~SP-Flechter / PA4 / Querrichtung~~ / Geflechtsdurchmesser | ~~je zwei Übersetzungen~~ | ~~einheitlich~~ → „Spiral braider“, „Packing braider, 4 lanes“, „cross direction“; **Geflechtsdurchmesser offen** („Product diameter:“ / „Braid diameter“, Abgleich Desktop/Web läuft) |
+| ~~SP-Flechter / PA4 / Querrichtung / Geflechtsdurchmesser~~ | ~~je zwei Übersetzungen~~ | ~~einheitlich~~ → „Spiral braider“, „Packing braider, 4 lanes“, „cross direction“, Geflechtsdurchmesser = „Braid diameter“ (Eingabefeld der Rechenseiten heißt weiter „Product diameter:“) |
 | Seilgewicht / Seillänge (Kern-Mantel, Laufzeit) | ~~„Rope weight/length“~~ | EN erledigt („Weight:“, „Product length per bobbin set:“); **DE-Quelltext noch „Seilgewicht:“, „Seillänge / Spule-Satz:“** |
-| ~~colour/color, licence/license~~ | ~~gemischt~~ | ~~color, licence~~ (Desktop; dazu catalogue, sonst US-Schreibung; Handbuch-Desktopseiten angeglichen) |
+| ~~colour/color, licence/license~~ | ~~gemischt~~ | ~~color, licence~~ (Desktop und Web; dazu catalogue, sonst US-Schreibung; Handbuch angeglichen) |
 | ~~Neuer Auftrag~~ | ~~„New Job“ (sonst order)~~ | ~~New order~~ (auch „+ New design“) |
-| Web `schema.ts` Feldnamen (Hersteller, Einheit der Feinheit, Aussendurchmesser, Flügelrad-Durchmesser, Farbwert, Referenzsystem, Strasse) | ohne Übersetzungsschlüssel → im englischen Web deutsch | übersetzen |
+| ~~Web `schema.ts` Feldnamen (Hersteller, Einheit der Feinheit, Aussendurchmesser, Flügelrad-Durchmesser, Farbwert, Referenzsystem, Strasse)~~ | ~~ohne Übersetzungsschlüssel → im englischen Web deutsch~~ | ~~übersetzen~~ (Web 0c8e00b: „Manufacturer / brand“, „Fineness unit“, „Outer diameter“, „Horngear diameter“, „Color value“, „Reference system“, „Street“) |
 
 ## C. Diagramme ergänzt / vorgeschlagen
 

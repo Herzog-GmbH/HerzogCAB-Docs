@@ -238,7 +238,7 @@ Haspelvolumen	Reel volume	4
 Zu Flechtmaschinen hinzufügen	Add to braiding machines	4
 Artikelnummer	Article number	4
 Zu Spulen hinzufügen	Add to bobbins	4
-Besetzungsübersicht	Setup Overview	4
+Besetzungsübersicht	Setup overview	4
 Laden	Load	4
 Färben	Color	4
 Garn N		4
@@ -380,7 +380,7 @@ Geometrie	Geometry	3
 Neues Material	New material	3
 Firmenlogo	Company logo	3
 Trommeldurchmesser (min–max)	Drum diameter (min–max)	3
-Verlegebreite max.	Traverse width max.	3
+Verlegebreite max.	Max. traverse width	3
 SPA		3
 HLM		3
 Einrichtzeit je Auftrag	Setup time per order	3
@@ -460,7 +460,7 @@ Profilname	Profile name	2
 Webserver-Port	Webserver port	2
 Webserver beim Start automatisch starten	Start webserver automatically at launch	2
 Webserver-Passwort	Webserver password	2
-Id	Id	2
+Id	ID	2
 Einzelne Rechte	Individual permissions	2
 zentralen Benutzerdaten		2
 Netzwerk-Pfad		2
@@ -495,7 +495,7 @@ Favorisieren	Add to favorites	2
 Favorit entfernen	Remove favorite	2
 Geführte Touren	Guided Tours	2
 Geführte Touren…		2
-Farbdatenbank	Color Database	2
+Farbdatenbank	Color database	2
 Spulendatenbank	Bobbin Database	2
 Materialdatenbank	Material database	2
 Kundendatenbank	Customer Database	2
@@ -616,7 +616,7 @@ Maße berechnen	Calculate dimensions	2
 Maschine erstellen	Create machine	2
 Standard	Default	2
 eigene	custom	2
-Spulengewicht max.	Bobbin weight max.	2
+Spulengewicht max.	Max. bobbin weight	2
 Überwachung	Monitoring	2
 Privatkunde	Private customer	2
 Ausschneiden	Cut	2
@@ -624,7 +624,7 @@ Kontextmenü		2
 Trommel anlegen	Create drum	2
 Außendurchmesser [mm]	Outer diameter [mm]	2
 Kerndurchmesser [mm]	Core diameter [mm]	2
-Spulvolumen [ccm]	Winding volume [ccm]	2
+Spulvolumen [ccm]	Bobbin volume [ccm]	2
 + Neuer Grundriss	+ New floor plan	2
 Marke	Brand	2
 Ordner	Folder	2
@@ -689,8 +689,8 @@ Letzte Anmeldung	Last sign-in	2
 14 Tage		2
 Aktuelle Vorlage	Current template	2
 Seiten	Pages	2
-Eingabetabelle	Input Table	2
-Ergebnistabelle	Result Table	2
+Eingabetabelle	Input table	2
+Ergebnistabelle	Result table	2
 Textfeld	Text field	2
 Bild	Image	2
 Feld einfügen	Insert field	2
@@ -1396,7 +1396,7 @@ Maschinenbild	Machine image	1
 Box-Ansicht		1
 Bild/Logo		1
 Trommelbreite … mm		1
-Trommelbreite max.	Drum width max.	1
+Trommelbreite max.	Max. drum width	1
 Materialdurchmesser (min–max)	Material diameter (min–max)	1
 Abwickler erstellen	Create pay-off	1
 AB		1
@@ -1889,7 +1889,7 @@ Einheit der Feinheit	Fineness unit	1
 Flügelrad-Durchmesser	Horngear diameter	1
 Pinolenbohrung	Quill bore	1
 Mitnahme-Pin	Driver pin	1
-Abstand Mitte zu Pin	Centre to pin distance	1
+Abstand Mitte zu Pin	Center to pin distance	1
 Farbwert	Color value	1
 Referenzsystem	Reference system	1
 Strasse	Street	1
