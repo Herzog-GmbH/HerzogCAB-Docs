@@ -21,7 +21,10 @@ Drückt der Bediener in Herzog CAB ++f1++, ermittelt die App über
 2. Neues Modul / neue Berechnung in der App → neuen Key mit Zielseite eintragen.
 3. Der CI-Workflow (`.github/workflows/docs.yml`) validiert nach jedem Build,
    dass **jeder** Pfad der JSON auf eine real gebaute Seite zeigt — sonst ist der
-   Build rot.
+   Build rot. Geprüft wird die deutsche Seite und die englische unter `en/`
+   (gleicher Pfad mit Präfix `en/`); ein Anker `#…` im Pfad muss auf der Seite
+   existieren. Englische Überschriften tragen dafür die deutschen Anker
+   (`python _tools/anker.py --alle`).
 4. Die vendored Kopie in der App beim nächsten App-Release aktualisieren.
 
 ## Struktur der Zuordnung (Stand Neuaufbau 07/2026)
