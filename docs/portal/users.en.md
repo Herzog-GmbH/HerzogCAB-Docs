@@ -14,7 +14,7 @@ in the browser.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-![User list in the licence portal with name, role, machine models and status, below it “Invite user” with language selection](../assets/screenshots/portal/benutzer.png)
+![User list in the licence portal with a name field and “Save” in each row, role, last sign-in and status, below it the “Invite user” form with language selection](../assets/screenshots/portal/benutzer.png)
 
 At the top is the **User list**, below it the **Invite
 user** form. Editors and viewers can only view the list; it is managed by

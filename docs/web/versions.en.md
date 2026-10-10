@@ -54,7 +54,7 @@ Anyone who is allowed to see the entry may view its versions.
 
 ## The "Versions" dialog { #der-dialog-versionen }
 
-![The “Versions” dialog of a design with the current version and no earlier versions yet](../assets/screenshots/web/versionen.png)
+![The “Versions” dialog of a design: at the top the box “Current: version n” with date, person and source, below it the earlier versions with “Differences” and the restore button, one version expanded with the changed fields](../assets/screenshots/web/versionen.png)
 
 The dialog is called *Versions: &lt;name of the entry&gt;*.
 
@@ -118,7 +118,7 @@ Without this permission you can only view the versions.
 
 ## Recycle bin { #papierkorb }
 
-![Recycle bin of the web app, here without deleted entries](../assets/screenshots/web/papierkorb.png)
+![Recycle bin of the web app with one deleted design: name, area, deleted on, by, source and the buttons for versions and restoring](../assets/screenshots/web/papierkorb.png)
 
 Deleted entries do not disappear immediately but go to the
 **Recycle bin**. You open it via *User menu > Recycle bin*. It shows

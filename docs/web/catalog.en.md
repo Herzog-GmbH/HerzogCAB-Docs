@@ -32,11 +32,7 @@ serial number and name.
 
 ## Details of a machine model { #details-eines-maschinenmodells }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Die Details der Feindrahtflechtmaschine KB 1/12-80: Kennzahlen, Technische Daten, Lieferumfang, darunter Zubehör zum Ankreuzen und Abzug und Aufnahme mit Auswahlkreisen.
-    **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog-dialog` (nach `login`).
-    **Ziel-Datei:** `assets/screenshots/web/katalog-dialog.png`
-    <!-- web-bild ../assets/screenshots/web/katalog-dialog.png -->
+![Details of the KB 1/12-80 fine wire braiding machine: key figures, technical data and scope of delivery, below them the accessories to tick and the take-up options to choose from. Catalogue data such as accessory names are shown in German.](../assets/screenshots/web/katalog-dialog.png)
 
 From top to bottom, the details show:
 
@@ -55,11 +51,7 @@ and the area for creating the machine is missing.
 
 ## Creating as own machine { #als-eigene-maschine-anlegen }
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Der untere Teil der Details: Zubehör mit zwei angekreuzten Einträgen, gewählter Abzug, darunter „Als eigene Maschine anlegen" mit Besetzung, Maschinengruppe, Seriennummer und Name; unten rechts **Zu Flechtmaschinen hinzufügen**.
-    **So erzeugen:** `python _tools/web_screenshots.py shots nur:katalog-anlegen` (nach `login`).
-    **Ziel-Datei:** `assets/screenshots/web/katalog-anlegen.png`
-    <!-- web-bild ../assets/screenshots/web/katalog-anlegen.png -->
+![Lower part of the details: accessories with two ticked entries, the selected take-up, below it “Create as own machine” with occupation, machine group, serial number and name; bottom right **Add to braiding machines**.](../assets/screenshots/web/katalog-anlegen.png)
 
 At the end of the details you only enter what the catalogue cannot know:
 

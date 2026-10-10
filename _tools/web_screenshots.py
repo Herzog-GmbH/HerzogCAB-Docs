@@ -299,8 +299,13 @@ def run_web(ctx):
                 if want("katalog-dialog"):
                     shot(page, "web", "katalog-dialog")
                 if want("katalog-anlegen"):
-                    for eintrag in (T("Meterzähler"), T("Kabine")):
-                        dialog.locator("label", has_text=eintrag).first.click(); time.sleep(0.2)
+                    # Zubehoernamen sind Katalogdaten und bleiben oft deutsch: erst
+                    # die Uebersetzung suchen, sonst den deutschen Namen.
+                    for eintrag in ("Meterzähler", "Kabine"):
+                        feld = dialog.locator("label", has_text=T(eintrag))
+                        if feld.count() == 0:
+                            feld = dialog.locator("label", has_text=eintrag)
+                        feld.first.click(); time.sleep(0.2)
                     dialog.get_by_text(T("Als eigene Maschine anlegen"), exact=True).scroll_into_view_if_needed(); time.sleep(0.4)
                     shot(page, "web", "katalog-anlegen")
                 page.keyboard.press("Escape"); time.sleep(0.3)
