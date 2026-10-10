@@ -69,6 +69,25 @@ So läuft die Einladung ab:
 4. Nach dem Setzen des Passworts ist der Zugang **aktiv** und gilt sofort
    für Portal, Desktop-App und Web-App.
 
+Der Lebenslauf eines Zugangs im Überblick:
+
+```mermaid
+stateDiagram-v2
+  [*] --> Offen: Einladen
+  Offen --> Offen: nach 3 Tagen einmal Erinnerung mit neuem Link
+  Offen --> Abgelaufen: Link älter als 14 Tage
+  Abgelaufen --> Offen: Einladung erneuern
+  Offen --> Aktiv: Passwort gesetzt
+  Aktiv --> Deaktiviert: Deaktivieren
+  Deaktiviert --> Aktiv: Aktivieren
+  Aktiv --> [*]: Löschen
+  Deaktiviert --> [*]: Löschen
+  Offen: Einladung offen bis …
+  Abgelaufen: Einladung abgelaufen
+  Aktiv: aktiv
+  Deaktiviert: deaktiviert
+```
+
 !!! info "Benutzer im Testkonto"
     Mit der Testversion laden Sie so viele Benutzer ein, wie die
     Testversion Plätze hat. Unter dem Formular steht, wie viele noch frei
