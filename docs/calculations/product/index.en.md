@@ -46,10 +46,10 @@ tubular and hose-shaped braids there is a separate subgroup,
     ---
     Product length that can be wound onto a drum
 
-- :material-tape-drive: __[Drum and take-up winder selection](drum-take-up-selection.md)__
+- :material-tape-drive: __[Drum and take-up unit selection](drum-take-up-selection.md)__
 
     ---
-    Drum suggestion and suitable take-up winders from carrier loading and product diameter
+    Drum suggestion and suitable take-up units from carrier loading and product diameter
 
 - :material-weight-kilogram: __[Product weight](rope-weight.md)__
 

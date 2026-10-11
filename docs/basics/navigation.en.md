@@ -31,7 +31,7 @@ Calculations
   │    ├─ Braid density
   │    ├─ Product length
   │    ├─ Product length per drum
-  │    ├─ Drum and take-up winder selection
+  │    ├─ Drum and take-up unit selection
   │    ├─ Product weight
   │    ├─ Product diameter
   │    ├─ Core-cover product
@@ -67,8 +67,8 @@ Master data
   ├─ Bobbins
   ├─ Drums
   ├─ Bobbin winding machines
-  ├─ Take-up winders
-  ├─ Pay-offs
+  ├─ Take-up units
+  ├─ Pay-off units
   └─ Creels
 Print editor
 System administration            (visible only with administration permissions)

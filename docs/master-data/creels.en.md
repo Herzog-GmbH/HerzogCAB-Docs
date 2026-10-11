@@ -12,7 +12,7 @@ filter.
 
 !!! info "New in version 2.1.0"
     Creels are a separate machine kind. The list and dialog are structured
-    like those of the [take-up winders](take-up-machines.md).
+    like those of the [take-up units](take-up-machines.md).
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
@@ -26,7 +26,7 @@ Each card shows image, series (without series: *Creels*),
 Toolbar (**Search machine**, **New**, **Edit**, **Delete**),
 double-click and context menu (**Open**, **Edit**, **Duplicate**,
 **Delete**) work as for the
-[take-up winders](take-up-machines.md#werkzeugleiste). The quickest way to create Herzog creels
+[take-up units](take-up-machines.md#werkzeugleiste). The quickest way to create Herzog creels
 is via the [Herzog catalogue](../catalog/index.md) (tab
 **Creels**).
 
@@ -85,7 +85,7 @@ remain empty and count as not stored.
 **Accessories** as checkboxes (catalogue suggestions and own accessories) and
 **Documents** (categories *Operating manual*, *Data sheet*, *Maintenance*,
 *Spare parts*, *Other*) work as for the
-[take-up winders](take-up-machines.md#zubehor).
+[take-up units](take-up-machines.md#zubehor).
 
 ### Save { #speichern }
 
@@ -112,6 +112,6 @@ pay-off positions: more than pay-off positions in total.*
 
 ## Related pages { #verwandte-seiten }
 
-* [Pay-offs](pay-off-machines.md) · [Take-up winders](take-up-machines.md) · [Bobbin winding machines](winding-machines.md) · [Braiding machines](braiding-machines.md)
+* [Pay-off units](pay-off-machines.md) · [Take-up units](take-up-machines.md) · [Bobbin winding machines](winding-machines.md) · [Braiding machines](braiding-machines.md)
 * [Herzog catalogue](../catalog/index.md) – take over creels from Herzog
 * [Machine Fleet](../machine-park/index.md) – operating overview of all machines

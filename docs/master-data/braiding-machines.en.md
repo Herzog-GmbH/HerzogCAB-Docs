@@ -78,8 +78,8 @@ the selection lists for heads, slots and carriers change (see
 | **Serial number** | Serial number of the machine. |
 | **Group** | Freely assignable grouping (e.g. machine group). |
 | **Location** | Hall/plant/department (e.g. "Hall 2, Plant North"). Also used for the Factory Planner. |
-| **Braid type** | **Round braid** or **Lace braid**. |
-| **End horngear slots** | Visible only for lace braid; selection of the number of slots (default 5 or 6). |
+| **Braid type** | **Round braid** or **Flat braid**. |
+| **End horngear slots** | Visible only for flat braid; selection of the number of slots (default 5 or 6). |
 | **Year of manufacture** | Year of manufacture of the machine (or *not set*). |
 | **Max. carriers per head** | Maximum number of carriers per braiding head. |
 | **Heads** | Number of braiding heads. |
@@ -162,14 +162,14 @@ with **Cancel**. When editing, the button is called **Save**.
 
 ## Category-dependent fields { #kategorieabhangige-felder }
 
-Most machines follow the round/lace logic. Four categories bring
+Most machines follow the round/flat braid logic. Four categories bring
 their own value lists for **Heads**, **Slots** and **max. carriers per head**
 – the selection lists adapt automatically as soon as you choose the
 category:
 
 | Category | Heads | Slots | Carriers per head |
 |---|---|---|---|
-| **Default** (round/lace braiders) | 1, 2 | 5, 6 (only for lace braid) | Standard logic |
+| **Default** (round/flat braiders) | 1, 2 | 5, 6 (only for flat braid) | Standard logic |
 | **Soutache** (ST) | 1, 2, 3, 4, 6, 8 | 3, 5, 7, 9, 11 | 3, 5, 7, 9, 11 |
 | **Square** (QU, QSE) | 1, 2 | 4, 6 | 4, 6, 8, 10, 12, 14, 16 |
 | **Packing** (PA) | 1 | 4, 9 | 8, 12, 36 |
@@ -193,7 +193,7 @@ category:
 * [Factory Planner](../hall-planner/index.md) – arrange machines on the floor plan
 * [Bobbins](bobbins.md) – permitted bobbin types of the machine
 * [Bobbin winding machines](winding-machines.md) – master data of the bobbin winding machines
-* [Take-up winders](take-up-machines.md) · [Pay-offs](pay-off-machines.md) · [Creels](creels.md) – the other machine kinds
+* [Take-up units](take-up-machines.md) · [Pay-off units](pay-off-machines.md) · [Creels](creels.md) – the other machine kinds
 * [Herzog catalogue](../catalog/index.md) – take over braiding machines from Herzog
 * [Order to machine sheet](../tasks/order-to-machine-sheet.md) – workflow
   from the order to the machine

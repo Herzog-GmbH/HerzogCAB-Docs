@@ -42,7 +42,7 @@ Tables that are neutral with regard to the order type, as well as the tables for
 | **Product** | Product data (e.g. diameter, braid density) | Order |
 | **Production** | Production values (e.g. heads used) | Order |
 | **Design** | Information on the linked design | Design, Order |
-| **Setup** | Carrier setup as a table (round braid or lace braid) | Design, Order |
+| **Setup** | Carrier setup as a table (round braid or flat braid) | Design, Order |
 
 ### Data tables winding { #datentabellen-spulerei }
 
@@ -137,7 +137,7 @@ is displayed:
 
 | Field | Selection |
 |---|---|
-| **Braid type** | **Automatic**, **Round**, **Lace**, **Per track (multi-column)**. *Automatic* chooses the two columns counterclockwise/clockwise for round braid, one continuous column for lace braid and, for packing and spiral braiders, **one column per track** (header *Track 1*, *Track 2*, …; row number per track starting at 1). *Strand* forces a single column instead. |
+| **Braid type** | **Automatic**, **Round**, **Flat braid**, **Per track (multi-column)**. *Automatic* chooses the two columns counterclockwise/clockwise for round braid, one continuous column for flat braid and, for packing and spiral braiders, **one column per track** (header *Track 1*, *Track 2*, …; row number per track starting at 1). *Strand* forces a single column instead. |
 | **Displayed runs** | Both columns, Left run only, Right run only (selectable only for round braid) |
 | **Displayed value** | Color ID, Color name, Hex value, Pantone |
 | **Cell style** | **Color fill**: cell completely filled in the carrier color (classic). **Color swatch + number**: white cell with number and value on the left and a small, rounded color swatch on the right — compact rows, zebra stripes, light grid and the header in Herzog blue, like the other data tables. |

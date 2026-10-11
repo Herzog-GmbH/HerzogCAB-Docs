@@ -42,7 +42,7 @@ the German interface and German machine documentation follows in brackets.
 | **Winding order** (Spulauftrag) | Separate order type for the winding department – analogous to the braiding order, but for filling bobbins on a bobbin winding machine, optionally linked to a braiding order. |
 | **Bobbin** (Spule) | Holder of the yarn/wire on the carrier. |
 | **Winding head** (Spulstelle) | Single winding position on a bobbin winding machine. |
-| **Tandem** (Tandem) | Setup variant in which two adjacent machine positions together form one strand (2-2). Important, for example, for lace braids to avoid collisions. |
+| **Tandem** (Tandem) | Setup variant in which two adjacent machine positions together form one strand (2-2). Important, for example, for flat braids to avoid collisions. |
 | **Winding technology** (Wickeltechnik) | Method by which a bobbin winding machine lays the material onto the bobbin – a master data item of a bobbin winding machine. |
 | **Workspace / workspace folder** (Workspace / Arbeitsverzeichnis) | Data folder with master data, orders, designs and print templates. |
 | **Second factor (2FA)** (Zweiter Faktor) | Additional code from an authenticator app when signing in to the customer account – for the portal, desktop app and web app, see [Password, second factor and name](../portal/security.md). |

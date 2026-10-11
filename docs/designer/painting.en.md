@@ -29,7 +29,7 @@ pattern updates immediately with every change.
 
 Round and square braids have two runs. The **Counterclockwise** and
 **Clockwise** buttons define which run a click colors — exactly one of the two
-is always active. For lace and packing braids this selection does not
+is always active. For flat braid and packing braids this selection does not
 exist; the buttons are then hidden.
 
 ### Active color { #aktive-farbe }
@@ -92,7 +92,7 @@ current color:
 
 * **Round and square braid:** two columns **Carriers left-run** and **Carriers
   right-run**.
-* **Lace braid:** one column **Carriers**.
+* **Flat braid:** one column **Carriers**.
 * **Packing braid:** one column per track (**Track 1**, **Track 2**, …).
 
 A click on a cell colors exactly this position.

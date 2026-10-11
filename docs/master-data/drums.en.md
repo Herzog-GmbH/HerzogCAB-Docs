@@ -5,13 +5,13 @@
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
 Under *Master data > Drums* you maintain the drums onto which your
-take-up winders wind the finished product. The database holds designs, not
+take-up units wind the finished product. The database holds designs, not
 individual drums: you create a drum with the same dimensions once,
 no matter how many of them are in the plant. The drums are selected
 in these areas:
 
 * [Product length per drum](../calculations/product/rope-length-on-drum.md),
-* [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md),
+* [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md),
 * in the [braiding order](../orders/braiding-order.md#tab-aufwicklung), tab
   **Take-up winding**.
 
@@ -67,7 +67,7 @@ Each card shows:
     Drums taken over bring designation, material, dimensions and
     bobbin volume with them. The **Article number** field remains empty — it is intended for
     your own number. You add the **Empty weight** yourself;
-    without empty weight, the drum and take-up winder selection reports the load capacity
+    without empty weight, the drum and take-up unit selection reports the load capacity
     as *not checkable*. Reels from the catalogue cannot be
     taken over.
 
@@ -84,7 +84,7 @@ Each card shows:
 | **Traverse width [mm]** | mm | Windable width between the flanges. |
 | **Drum width [mm]** | mm | Overall width. Leave empty if it equals the traverse width. |
 | **Bobbin volume [ccm]** | ccm | Holding volume of the drum. Derived from the dimensions (see below) and can still be overwritten. |
-| **Empty weight [kg]** | kg | Weight of the empty drum. Counts towards the load capacity of the take-up winder. |
+| **Empty weight [kg]** | kg | Weight of the empty drum. Counts towards the load capacity of the take-up unit. |
 
 Traverse width and drum width stand in for each other: if only one of the
 two fields is filled, it applies to both.
@@ -99,7 +99,7 @@ two fields is filled, it applies to both.
 
 ### Section "Drum mounting" { #abschnitt-trommelaufnahme }
 
-Optional dimensions of the mounting on the take-up winder:
+Optional dimensions of the mounting on the take-up unit:
 
 | Field | Unit | Description |
 |---|---|---|
@@ -125,8 +125,8 @@ Optional dimensions of the mounting on the take-up winder:
 
 ## Related pages { #verwandte-seiten }
 
-* [Take-up winders](take-up-machines.md) – which drums a take-up winder accepts
-* [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md) – have a matching drum suggested
+* [Take-up units](take-up-machines.md) – which drums a take-up unit accepts
+* [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md) – have a matching drum suggested
 * [Product length per drum](../calculations/product/rope-length-on-drum.md) – length on a drum
 * [Herzog catalogue](../catalog/index.md) – take over drums from Herzog
 * [Bobbins](bobbins.md) – master data with the same structure for carrier bobbins

@@ -78,7 +78,7 @@ an overview with one tile per master data area.
 
     ---
 
-    Drums of the take-up winders with dimensions, bobbin volume and empty weight.
+    Drums of the take-up units with dimensions, bobbin volume and empty weight.
 
     [:octicons-arrow-right-24: Drums](drums.md)
 
@@ -90,21 +90,21 @@ an overview with one tile per master data area.
 
     [:octicons-arrow-right-24: Bobbin winding machines](winding-machines.md)
 
-- :material-tape-drive: **Take-up winders**
+- :material-tape-drive: **Take-up units**
 
     ---
 
-    Take-up winders with drum dimensions, load capacity, design and reel.
+    Take-up units with drum dimensions, load capacity, design and reel.
 
-    [:octicons-arrow-right-24: Take-up winders](take-up-machines.md)
+    [:octicons-arrow-right-24: Take-up units](take-up-machines.md)
 
-- :material-rotate-left: **Pay-offs**
+- :material-rotate-left: **Pay-off units**
 
     ---
 
-    Pay-offs with drum dimensions, load capacity, drum lift and unwinding tension.
+    Pay-off units with drum dimensions, load capacity, drum lift and unwinding tension.
 
-    [:octicons-arrow-right-24: Pay-offs](pay-off-machines.md)
+    [:octicons-arrow-right-24: Pay-off units](pay-off-machines.md)
 
 - :material-view-grid-plus-outline: **Creels**
 
@@ -142,7 +142,7 @@ How to search and filter lists is described for all areas in
 !!! info "Special cases"
     Some areas differ from this layout: **Designs** is a
     folder library (like a file explorer); **Braiding machines**,
-    **Bobbin winding machines**, **Take-up winders**, **Pay-offs** and **Creels** show
+    **Bobbin winding machines**, **Take-up units**, **Pay-off units** and **Creels** show
     their machines as cards and open a separate dialog for creating and
     editing.
 

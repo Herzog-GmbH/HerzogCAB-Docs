@@ -26,7 +26,7 @@ The arrangement of the horngears follows the selected
 | Braid type | Display |
 |---|---|
 | **Round braid** | Horngears in a closed ring around the braiding circle. |
-| **Lace braid** | Horngears in an open row — the carriers reverse at the two larger end gears. |
+| **Flat braid** | Horngears in an open row — the carriers reverse at the two larger end gears. |
 | **Square braid** | 4 horngears in a 2×2 block, 4 slots each, two tracks. |
 | **Spiral braid** | 4 small horngears rolling inside a fixed outer ring; all rotate in the same direction. |
 | **Packing braid** | Horngears in a grid: 3×3 (12 carriers, 3 tracks) or 4×4 (36 carriers, 4 tracks). |
@@ -57,7 +57,7 @@ horngears rotate, carriers travel along their track"*):
   the carriers ride along in their slots and change to the neighboring
   horngear at the transfer points. Each braid type has its own motion logic —
   from the circulating ring of the round braid through the reciprocating track
-  of the lace braid to the intertwined tracks of square and packing braid, the
+  of the flat braid to the intertwined tracks of square and packing braid, the
   figure-eight track of the soutache and the rolling gears of the spiral.
 * Clicking again (**Pause**) stops the animation; the current state remains.
   Another click continues it.

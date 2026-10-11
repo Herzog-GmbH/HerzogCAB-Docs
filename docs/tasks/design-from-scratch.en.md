@@ -37,7 +37,7 @@ side by side to compare variants directly.
 ## Step 2: Define braid type and parameters { #schritt-2-geflechtsart-und-parameter-festlegen }
 
 In the left panel, set the basic data of the design: **Design name**,
-**Braid type** (round braid, lace braid, square braid, spiral braid,
+**Braid type** (round braid, flat braid, square braid, spiral braid,
 packing braid or soutache braid), **Braid binding**,
 **Number of carriers**, **Braiding angle**
 and **Ply count**. Every change rebuilds the braid pattern immediately.

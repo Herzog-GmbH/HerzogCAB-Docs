@@ -10,7 +10,7 @@ braiding angle at which the braid is produced — and conversely: which
 take-up speed or which horngear speed do you need to obtain a
 desired braiding angle? The take-up can be specified as a
 speed or via the diameter and speed of the take-up disc.
-For round braid and lace braid.
+For round braid and flat braid.
 
 ## Inputs { #eingabewerte }
 
@@ -20,11 +20,11 @@ specified as**.
 | Field | Unit / selection | Meaning |
 |---|---|---|
 | **Calculate:** | *Braiding angle*, *Take-up*, *Horngear speed* | What you are looking for. With *Braiding angle*, speed and take-up are given; with *Take-up* or *Horngear speed* you specify the target braiding angle. |
-| **Braid type:** | *Round braid*, *Lace braid* | Determines the machine data below. |
-| **Braid outer diameter:** / **Braid width:** | mm | Dimension of the braid — diameter for round braid, width for lace braid. The calculator icon opens [Product diameter](product-diameter.md); **Apply** writes the result back. |
+| **Braid type:** | *Round braid*, *Flat braid* | Determines the machine data below. |
+| **Braid outer diameter:** / **Braid width:** | mm | Dimension of the braid — diameter for round braid, width for flat braid. The calculator icon opens [Product diameter](product-diameter.md); **Apply** writes the result back. |
 | **Horngears in the track:** | pcs | Round braid only: number of horngears in the ring (up to 256). |
-| **Slots per standard horngear:** | pcs | Lace braid only: slots of a standard horngear (default 4). |
-| **Slots in the track:** | pcs | Lace braid only: slots over the whole track. |
+| **Slots per standard horngear:** | pcs | Flat braid only: slots of a standard horngear (default 4). |
+| **Slots in the track:** | pcs | Flat braid only: slots over the whole track. |
 | **Target braiding angle:** | ° | Only with *Take-up* and *Horngear speed*: the desired braiding angle (up to 85°). |
 | **Horngear speed:** | rpm | Speed of the horngears (up to 2000). Omitted when it is calculated. |
 | **Take-up specified as:** | *Speed*, *Take-up disc* | How the take-up is specified — omitted when the take-up is calculated. |

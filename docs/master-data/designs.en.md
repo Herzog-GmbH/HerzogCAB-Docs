@@ -83,7 +83,7 @@ clicking a column header.
 |---|---|
 | **Design** | Preview image (thumbnail) of the pattern. |
 | **Product name** | Name of the design. |
-| **Braid type** | Round braid, lace braid, square braid or packing braid. |
+| **Braid type** | Round braid, flat braid, square braid or packing braid. |
 | **Binding** | Setup/binding (e.g. Normal setup, Tandem setup, Half setup). |
 | **Carriers** | Number of carriers. |
 | **Angle** | Braiding angle. |

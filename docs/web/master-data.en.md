@@ -81,7 +81,7 @@ traverse width, bobbin volume and empty weight. If it is empty, it shows
 *No drums yet. Add them with "From Herzog catalogue …".*
 The drums are available for selection in the calculators
 [Product length per drum](../calculations/product/rope-length-on-drum.md)
-and [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md).
+and [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md).
 
 ### Colors { #farben }
 

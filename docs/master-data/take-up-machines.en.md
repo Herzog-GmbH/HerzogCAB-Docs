@@ -1,34 +1,34 @@
-# Take-up winders
+# Take-up units
 
-!!! abstract "Reference — Create and maintain take-up winders of the series AW, AWS, AWST, AWSP, AWSA and AWH: drum dimensions, load capacity, design, reel, accessories and documents."
+!!! abstract "Reference — Create and maintain take-up units of the series AW, AWS, AWST, AWSP, AWSA and AWH: drum dimensions, load capacity, design, reel, accessories and documents."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
-Under *Master data > Take-up winders* you create the take-up winders of your plant.
-A take-up winder stands behind the braiding machine and winds the finished
+Under *Master data > Take-up units* you create the take-up units of your plant.
+A take-up unit stands behind the braiding machine and winds the finished
 product onto a drum or a reel. Its limits — which drums
 it accepts, how heavy the loaded drum may be, which
 product diameters it processes — are checked by Herzog CAB in the
-[Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md)
+[Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md)
 and in the [braiding order](../orders/braiding-order.md#tab-aufwicklung)
 (tab **Take-up winding**). In the [Machine Fleet](../machine-park/index.md),
-take-up winders have their own filter.
+take-up units have their own filter.
 
 !!! info "New in version 2.1.0"
-    Take-up winders are a separate machine kind. The list is structured like
+    Take-up units are a separate machine kind. The list is structured like
     that of the [bobbin winding machines](winding-machines.md); for creating and editing,
     a separate dialog opens with drum dimensions, load capacity and design.
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
-![Take-up winder page with three cards: series, drum or reel size, load capacity and traverse width](../assets/screenshots/master-data/aufwickler.png)
+![Take-up unit page with three cards: series, drum or reel size, load capacity and traverse width](../assets/screenshots/master-data/aufwickler.png)
 
 At the top is a toolbar, below it the **Machine list** as cards.
-Each card shows image, series (without series: *Take-up winders*) and the
+Each card shows image, series (without series: *Take-up units*) and the
 most important information:
 
 * **Drum up to Ø … mm** — the largest drum diameter; for a
-  take-up winder with reel, **Reel … ccm** instead,
+  take-up unit with reel, **Reel … ccm** instead,
 * **Load capacity … kg** and **Traverse width … mm**, if stored.
 
 ### Toolbar { #werkzeugleiste }
@@ -36,24 +36,24 @@ most important information:
 | Button | Effect |
 |---|---|
 | **Search machine** | Filters the list. |
-| **New** | Opens the dialog *Create new take-up winder* (see below). |
-| **Edit** | Opens the selected take-up winder in the dialog *Edit take-up winder*. |
+| **New** | Opens the dialog *Create new take-up unit* (see below). |
+| **Edit** | Opens the selected take-up unit in the dialog *Edit take-up unit*. |
 | **Delete** | Removes the selected machine(s) with confirmation prompt. |
 
-Double-clicking a card also opens the take-up winder for
+Double-clicking a card also opens the take-up unit for
 editing. Right-clicking opens a context menu with **Open**,
 **Edit**, **Duplicate** and **Delete**; the copy is called
 *"… (copy)"*.
 
-!!! tip "Take-up winder from the Herzog catalogue"
-    The quickest way to create Herzog take-up winders is via the
-    [Herzog catalogue](../catalog/index.md) (tab **Take-up winders**): technology
+!!! tip "Take-up unit from the Herzog catalogue"
+    The quickest way to create Herzog take-up units is via the
+    [Herzog catalogue](../catalog/index.md) (tab **Take-up units**): technology
     and image come from there; you only enter group, serial number and
     name.
 
-## The "Create new take-up winder" dialog { #der-dialog-neuen-aufwickler-erstellen }
+## The "Create new take-up unit" dialog { #der-dialog-neuen-aufwickler-erstellen }
 
-![The “Create new take-up winder” dialog with image and Machine data section](../assets/screenshots/master-data/aufwickler-neu-dialog.png)
+![The “Create new take-up unit” dialog with image and Machine data section](../assets/screenshots/master-data/aufwickler-neu-dialog.png)
 
 The dialog is divided into sections from top to bottom. Empty
 number fields show a dash with unit (e.g. *– mm*) and count as
@@ -61,15 +61,15 @@ not stored.
 
 !!! tip "Leave unknown values empty"
     Only enter what you really know. If, for example, the
-    **Load capacity** is missing, the drum and take-up winder selection reports the load capacity as
+    **Load capacity** is missing, the drum and take-up unit selection reports the load capacity as
     *not checkable* — instead of suggesting a drum that overloads the
-    take-up winder.
+    take-up unit.
 
 ### Image { #bild }
 
 * **Upload image** – selects a machine image from the
   [Media library](media.md).
-* **Use catalogue image** – appears only as long as the take-up winder
+* **Use catalogue image** – appears only as long as the take-up unit
   has no image of its own and its **Machine type** matches a model from the
   [Herzog catalogue](../catalog/index.md). Loads the catalogue image
   from the internet (an internet connection is required for this).
@@ -94,12 +94,12 @@ machine.
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Drum diameter (min–max)** | mm | Smallest and largest drum diameter that the take-up winder accepts. |
+| **Drum diameter (min–max)** | mm | Smallest and largest drum diameter that the take-up unit accepts. |
 | **Max. traverse width** | mm | Largest traverse width; wider drums do not fit. |
 | **Load capacity** | kg | Total weight of the loaded drum: drum plus wound product. |
 | **Quill diameter** | mm | Diameter of the quill. It is adapted to the respective drum and does not decide whether a drum fits. |
-| **Braid diameter (min–max)** | mm | Smallest and largest product diameter that the take-up winder processes (one decimal place). |
-| **Line speed (min–max)** | m/h | Speed range of the take-up winder. |
+| **Braid diameter (min–max)** | mm | Smallest and largest product diameter that the take-up unit processes (one decimal place). |
+| **Line speed (min–max)** | m/h | Speed range of the take-up unit. |
 
 ### Design { #bauart }
 
@@ -118,12 +118,12 @@ machine.
 
 | Field | Meaning |
 |---|---|
-| **This machine winds onto a reel** | Checkbox for take-up winders that do not wind onto an exchangeable drum but onto their own reel. The reel belongs to the take-up winder and is not changed. |
+| **This machine winds onto a reel** | Checkbox for take-up units that do not wind onto an exchangeable drum but onto their own reel. The reel belongs to the take-up unit and is not changed. |
 | **Reel volume** | Holding volume of the reel in ccm. Editable only when the checkbox is set. The limit is then set by the reel volume, not by the drum diameter. |
 
 ### Accessories { #zubehor }
 
-The accessories of the take-up winder as checkboxes — as for the
+The accessories of the take-up unit as checkboxes — as for the
 [braiding machines](braiding-machines.md#zubehor): suggestions from the
 Herzog catalogue (if the machine type matches a catalogue model)
 and own accessories via the field *Add accessory* with **Add**.
@@ -145,7 +145,7 @@ The buttons below are **Add document**, **Open** and
 
 ### Save { #speichern }
 
-At the bottom, you complete the dialog with **Create take-up winder** or
+At the bottom, you complete the dialog with **Create take-up unit** or
 discard it with **Cancel**. When editing, the button is called
 **Save**.
 
@@ -156,39 +156,39 @@ When saving, the dialog checks:
   line speed, winding tension, traverse step), the lower value is
   greater than the upper one, the dialog reports *"…: the lower value is greater
   than the upper one."* — a reversed range would prevent every suggestion in the drum and
-  take-up winder selection.
+  take-up unit selection.
 
 ## The series { #die-baureihen }
 
 | Series | Designation |
 |---|---|
-| **AW** | Take-up winder |
-| **AWS** | Take-up winder with servo drive |
-| **AWST** | Take-up winder with traversing drum |
-| **AWSP** | Gantry take-up winder |
-| **AWSA** | Heavy-duty take-up winder |
-| **AWH** | Reel take-up winder |
+| **AW** | Take-up unit |
+| **AWS** | Take-up unit with servo drive |
+| **AWST** | Take-up unit with traversing drum |
+| **AWSP** | Gantry take-up unit |
+| **AWSA** | Heavy-duty take-up unit |
+| **AWH** | Reel take-up unit |
 
 ## Which information is checked { #welche-angaben-gepruft-werden }
 
-The [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md)
+The [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md)
 and the **Take-up winding** tab in the braiding order compare drum and
-product with this information of the take-up winder:
+product with this information of the take-up unit:
 
-| Information of the take-up winder | Is compared with |
+| Information of the take-up unit | Is compared with |
 |---|---|
 | **Drum diameter (min–max)** | the outer diameter of the drum |
 | **Max. traverse width** | the drum width (otherwise the traverse width) of the drum |
 | **Braid diameter (min–max)** | the product diameter |
 | **Load capacity** | the weight of product and empty drum |
-| **Reel volume** | for reel take-up winders: determines how much product fits on the reel |
+| **Reel volume** | for reel take-up units: determines how much product fits on the reel |
 
-If the take-up winder lacks the largest drum diameter, the traverse width or
+If the take-up unit lacks the largest drum diameter, the traverse width or
 the load capacity, the result is *not checkable* instead of *fits*. The
 remaining fields (e.g. line speed, winding tension, quill) are
 descriptive.
 
-This is how the result for a take-up winder comes about:
+This is how the result for a take-up unit comes about:
 
 ```mermaid
 flowchart TD
@@ -207,9 +207,9 @@ flowchart TD
 
 ## Related pages { #verwandte-seiten }
 
-* [Drums](drums.md) – the drums onto which the take-up winder winds
-* [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md) – find matching drums and take-up winders
-* [Braiding order, tab "Take-up winding"](../orders/braiding-order.md#tab-aufwicklung) – take-up winder and drum in the order
-* [Herzog catalogue](../catalog/index.md) – take over take-up winders from Herzog
-* [Pay-offs](pay-off-machines.md) · [Creels](creels.md) · [Bobbin winding machines](winding-machines.md) · [Braiding machines](braiding-machines.md)
+* [Drums](drums.md) – the drums onto which the take-up unit winds
+* [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md) – find matching drums and take-up units
+* [Braiding order, tab "Take-up winding"](../orders/braiding-order.md#tab-aufwicklung) – take-up unit and drum in the order
+* [Herzog catalogue](../catalog/index.md) – take over take-up units from Herzog
+* [Pay-off units](pay-off-machines.md) · [Creels](creels.md) · [Bobbin winding machines](winding-machines.md) · [Braiding machines](braiding-machines.md)
 * [Machine Fleet](../machine-park/index.md) – operating overview of all machines

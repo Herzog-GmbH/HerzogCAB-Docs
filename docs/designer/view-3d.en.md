@@ -31,14 +31,14 @@ depends on the braid type:
 | **Round braid** | **Full** · **Half** · **Cylinder** · **3D** |
 | **Square braid** | **Full** · **Square** · **3D** |
 | **Packing braid** | **Full** · **Edge** · **3D** |
-| **Lace**, **spiral**, **soutache braid** | **Full** · **3D** |
+| **Flat braid**, **spiral**, **soutache braid** | **Full** · **3D** |
 
 | Switch | Meaning |
 |---|---|
 | **Full** | The complete development of the circumference as a flat braid pattern — the default view in which you color. |
 | **Half** | Only the front half of the development (round braid). |
 | **Cylinder** / **Square** / **Edge** | The development projected onto the cylinder (round) or the square (square, packing). The back is hidden; use the rotation arrows on the preview card to rotate the body step by step. With Square and Edge, the edges are created by light and shading, not by lines. |
-| **3D** | The real spatial model of the braid from the carrier tracks of the Setup overview — for all six braid types. Mixed designs of round and lace sections have no 3D model; the view then shows a note. |
+| **3D** | The real spatial model of the braid from the carrier tracks of the Setup overview — for all six braid types. Mixed designs of round and flat braid sections have no 3D model; the view then shows a note. |
 
 Colors, ply count and all ongoing changes remain identical in all views
 — including [plying colors](painting.md#fachungsfarben-farbe-je-garn):
@@ -67,7 +67,7 @@ Below the picture is the **slider row**:
 | Control | Options | Meaning |
 |---|---|---|
 | **Material** | *Smooth filament*, *Twisted yarn*, *Wire*, *Light version (simple)* | Fiber structure, roughness and gloss of the threads. The carrier colors are kept in all materials; the light version is for weak graphics cards. |
-| **Display** | *Default for the braid type*, *Interlacing only (schematic)*, *Automatic*, *As the machine is arranged*, *Correction: always round*, *Correction: always lace* | How the cross-section is derived: *Interlacing only* shows the thread order and crossings on the normalized cross-section (without horngear positions and horngear sizes); *Automatic* and *As the machine is arranged* derive it from the tracks. The default per braid type is interlacing for round, spiral and soutache, straightened for lace braid, machine shape for square and packing. |
+| **Display** | *Default for the braid type*, *Interlacing only (schematic)*, *Automatic*, *As the machine is arranged*, *Correction: always round*, *Correction: always flat braid* | How the cross-section is derived: *Interlacing only* shows the thread order and crossings on the normalized cross-section (without horngear positions and horngear sizes); *Automatic* and *As the machine is arranged* derive it from the tracks. The default per braid type is interlacing for round, spiral and soutache, straightened for flat braid, machine shape for square and packing. |
 | **Orientation** | *Top → bottom*, *Bottom → top* | Only rotates the 3D display of the braid — depending on whether you want to view the machine from above or from below. |
 
 The **Covering** from the [measurement row](parameters.md#mazeile-in-der-vorschau)

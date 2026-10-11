@@ -20,7 +20,7 @@ the source and target unit, and the result appears immediately.
 | **Input:** | depending on **From:** | The numerical value to be converted (lay length or picks density). Values ≤ 0 give no result. |
 | **From:** | – | Source unit. Choice: *Lay length*, *Picks / 10 mm*, *Picks / Inch*, *Picks / French Inch*. |
 | **To:** | – | Target unit. Same choice as for **From:**. |
-| **Braid type:** | – | *Round braid* or *Lace braid*. Only visible if **Lay length** is on exactly one side (From or To). |
+| **Braid type:** | – | *Round braid* or *Flat braid*. Only visible if **Lay length** is on exactly one side (From or To). |
 | **Number of carriers:** | pcs | Number of carriers of the machine. Only visible if **Lay length** is on exactly one side. Value range 0–20000. |
 
 !!! note "When braid type and number of carriers are needed"

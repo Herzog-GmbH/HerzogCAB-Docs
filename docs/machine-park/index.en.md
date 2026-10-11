@@ -19,8 +19,8 @@ you do not have to reload the page.
     You do not create new machines here, but in the master data under
     [Braiding machines](../master-data/braiding-machines.md),
     [Bobbin winding machines](../master-data/winding-machines.md),
-    [Take-up winders](../master-data/take-up-machines.md),
-    [Pay-offs](../master-data/pay-off-machines.md) or
+    [Take-up units](../master-data/take-up-machines.md),
+    [Pay-off units](../master-data/pay-off-machines.md) or
     [Creels](../master-data/creels.md) — or directly from the
     [Herzog catalogue](../catalog/index.md) (**Catalogue** navigation item
     directly below the Machine Fleet). The Machine Fleet then displays them
@@ -30,7 +30,7 @@ you do not have to reload the page.
 
 ![Machine Fleet: fleet overview with search field, filter row and machine cards with status traffic light.](../assets/screenshots/master-data/maschinenpark.png)
 
-![Machine Fleet in card view with filter row and take-up winders, pay-off and braiding machines](../assets/screenshots/machine-park/maschinenpark.png)
+![Machine Fleet in card view with filter row and take-up units, pay-off unit and braiding machines](../assets/screenshots/machine-park/maschinenpark.png)
 
 The screen consists of three areas:
 
@@ -56,11 +56,11 @@ All filters can be combined freely and take effect immediately:
 
 | Filter | Selection | Note |
 |---|---|---|
-| **Machine type** | All · Braiding machines · Bobbin winding machines · Take-up winders · Pay-offs · Creels | Always visible. Take-up winders, pay-offs and creels from version 2.1.0. |
+| **Machine type** | All · Braiding machines · Bobbin winding machines · Take-up units · Pay-off units · Creels | Always visible. Take-up units, pay-off units and creels from version 2.1.0. |
 | **Category** | Series/categories of the existing machines | The entries result from your machine inventory. |
 | **Status** | All · Error reported · In production · Orders waiting · No active orders | Filters by the status traffic light (see below). |
 | **Group** | Your machine groups | Only visible if a group is assigned to at least one machine. |
-| **Braid type** | Round braid · Lace braid | Only visible if braid types are maintained. |
+| **Braid type** | Round braid · Flat braid | Only visible if braid types are maintained. |
 | **Location** | Your locations | Only visible if locations are maintained. |
 
 ### Sorting { #sortierung }
@@ -141,8 +141,8 @@ If the machine has no active orders, the view shows the note
 
 * [Braiding machines](../master-data/braiding-machines.md),
   [Bobbin winding machines](../master-data/winding-machines.md),
-  [Take-up winders](../master-data/take-up-machines.md),
-  [Pay-offs](../master-data/pay-off-machines.md) and
+  [Take-up units](../master-data/take-up-machines.md),
+  [Pay-off units](../master-data/pay-off-machines.md) and
   [Creels](../master-data/creels.md) — create and maintain machines
   (master data).
 * [Herzog catalogue](../catalog/index.md) — create Herzog machines as your own

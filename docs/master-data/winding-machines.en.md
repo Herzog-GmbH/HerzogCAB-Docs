@@ -161,6 +161,6 @@ and series must be filled in.
   yarn speed, bobbin capacity and more
 * [Bobbins](bobbins.md) – assign bobbin formats
 * [Braiding machines](braiding-machines.md) – master data of the braiding machines
-* [Take-up winders](take-up-machines.md) · [Pay-offs](pay-off-machines.md) · [Creels](creels.md) – the other machine kinds
+* [Take-up units](take-up-machines.md) · [Pay-off units](pay-off-machines.md) · [Creels](creels.md) – the other machine kinds
 * [Herzog catalogue](../catalog/index.md) – take over bobbin winding machines from Herzog
 * [Machine Fleet](../machine-park/index.md) – operating overview of all machines

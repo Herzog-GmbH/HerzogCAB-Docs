@@ -18,10 +18,10 @@ out yarn after yarn.
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Braid type:** | – | Choice between *Round braid* and *Lace braid*. Determines the label and calculation of the dimension field and whether the **Band thickness** result tile is shown. |
+| **Braid type:** | – | Choice between *Round braid* and *Flat braid*. Determines the label and calculation of the dimension field and whether the **Band thickness** result tile is shown. |
 | **Material:** | – | Optional selection of a material from the [master data](../../master-data/materials.md). Automatically takes over the stored **Density** and also serves as a filter for the material suggestion in the result. |
 | **Density:** | g/cm³ | Material density (up to 3 decimal places, max. 25). Must be greater than 0. |
-| **Product diameter:** / **Product width:** | mm | Dimension of the finished braid (max. 100000). The label changes automatically: *Product diameter* for round braid, *Product width* for lace braid. Must be greater than 0. |
+| **Product diameter:** / **Product width:** | mm | Dimension of the finished braid (max. 100000). The label changes automatically: *Product diameter* for round braid, *Product width* for flat braid. Must be greater than 0. |
 | **Number of carriers per head:** | pcs | Number of carriers of the braiding machine (max. 1500). Minimum value 1. |
 | **Braiding angle:** | ° | Angle of the strands to the product axis (max. 89°). Must be greater than 0. |
 | **Filling grade:** | % | How densely the cross-section is to be filled with material (max. 100 %, initial value 80 %). Must be greater than 0. |
@@ -33,7 +33,7 @@ out yarn after yarn.
 |---|---|---|
 | **Material diameter:** | mm | Main tile: required diameter of the single yarn, to 3 decimal places. |
 | **Required fineness:** | tex, dtex, den, Nr_metric or Nr_english | Fineness the yarn must have per carrier and end. With a switch directly in the tile header you choose the display unit without recalculating. |
-| **Band thickness (lace):** | mm | Only visible for braid type *Lace braid*: thickness of the full band made of all ends of one carrier. For round braid, the tile remains hidden. |
+| **Band thickness (flat braid):** | mm | Only visible for braid type *Flat braid*: thickness of the full band made of all ends of one carrier. For round braid, the tile remains hidden. |
 | **Material suggestion:** | Text | Names the material from the database whose fineness comes closest to the required fineness – restricted to the same material type as the material selected above (same name, otherwise same density). If none is found, the note "no matching material of the same type found" appears. |
 
 ## Operation { #bedienung }

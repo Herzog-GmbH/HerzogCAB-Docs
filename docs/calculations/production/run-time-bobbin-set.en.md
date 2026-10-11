@@ -35,7 +35,7 @@ Visible in *Calculate* mode; in *Enter value* mode, **Production output** is suf
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Machine type** | – | Braider type (*Round braider*, *Lace braider*, *Soutache braider*, *Square braider*, *Spiral braider*, *Packing braider, 2/3/4 lanes*). Enters into the calculation of the production output. |
+| **Machine type** | – | Braider type (*Round braider*, *Flat braider*, *Soutache braider*, *Square braider*, *Spiral braider*, *Packing braider, 2/3/4 lanes*). Enters into the calculation of the production output. |
 | **Braid designation** | – (unit selectable) | Lay length or picks density (braid designation). Unit: *Lay length*, *Picks / 10 mm*, *Picks / Inch*, *Picks / French Inch*. |
 | **Number of carriers** | pcs | Number of carriers (min. 3). |
 | **Horngear speed** | rpm | Speed of the horngear. |
@@ -47,7 +47,7 @@ Visible in *Calculate* mode; in *Enter value* mode, **Braiding angle** is suffic
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Braid type** | – | *Round braid* or *Lace braid*. |
+| **Braid type** | – | *Round braid* or *Flat braid*. |
 | **Braid designation** | – (unit selectable) | Lay length or picks density (braid designation); units as above. |
 | **Product diameter** | mm | Diameter of the finished braid. |
 | **Number of carriers** | pcs | Only visible/optional with a picks-per-length unit. If it is missing, the braid designation is **always** treated as a lay length. |

@@ -22,7 +22,7 @@ designs remain unchanged.
 
 | Setting | Meaning | Values / default |
 |---|---|---|
-| **Braid type** | Braid type with which a new design starts. | Round braid (default), Lace braid (flat), Square braid, Spiral braid, Packing braid, Soutache braid |
+| **Braid type** | Braid type with which a new design starts. | Round braid (default), Flat braid, Square braid, Spiral braid, Packing braid, Soutache braid |
 | **Number of carriers** | Number of carriers of the new design. The permitted values depend on the selected braid type — while you type, the field jumps to the next permitted number. | Default 16 |
 | **Braiding angle** | Initial braiding angle, in the configured [reference of the braiding angle](appearance.md#flechtwinkel). | 20–80 ° to the cross direction (displayed as 10–70 ° to the braid axis), default 45 ° |
 | **Covering** | Initial covering. | 0–100 %, default 70 % |

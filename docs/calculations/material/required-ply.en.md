@@ -16,11 +16,11 @@ want to know how many threads of it must be used in parallel per carrier.
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Braid type:** | – | Choice between *Round braid* and *Lace braid*. Determines the label and calculation of the dimension field. |
+| **Braid type:** | – | Choice between *Round braid* and *Flat braid*. Determines the label and calculation of the dimension field. |
 | **Material:** | – | Optional selection of a material from the [master data](../../master-data/materials.md). Automatically takes over **Density** and **Fineness (material)** (in tex). |
 | **Density:** | g/cm³ | Material density (up to 3 decimal places, max. 25). Must be greater than 0. |
 | **Fineness (material):** | tex, dtex, den, Nm, Ne | Fineness of the already selected yarn. You choose the unit in the selection field to the right of it (default: tex). Must be greater than 0. |
-| **Product diameter:** / **Product width:** | mm | Dimension of the finished braid (max. 100000). The label changes automatically: *Product diameter* for round braid, *Product width* for lace braid. Must be greater than 0. |
+| **Product diameter:** / **Product width:** | mm | Dimension of the finished braid (max. 100000). The label changes automatically: *Product diameter* for round braid, *Product width* for flat braid. Must be greater than 0. |
 | **Number of carriers per head:** | pcs | Number of carriers of the braiding machine (max. 1500). Minimum value 1. |
 | **Braiding angle:** | ° | Angle of the strands to the product axis (max. 89°). Must be greater than 0. |
 | **Filling grade:** | % | How densely the cross-section is to be filled with material (max. 100 %, initial value 80 %). Must be greater than 0. |

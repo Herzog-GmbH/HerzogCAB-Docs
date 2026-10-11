@@ -25,7 +25,7 @@ Ein Begriff = ein Wort. Keine Synonyme zur Abwechslung.
 | braid angle | Flechtwinkel | braiding angle |
 | takeoff disc, take-up wheel, take-off | Abzugsscheibe, Abzug | take-up disc, take-up |
 | bobbin winder, winding machine | Spulmaschine | bobbin winding machine |
-| flat braid (für das Litzengeflecht) | Litzengeflecht | lace braid |
+| flat braid (für das Litzengeflecht) | Litzengeflecht | flat braid |
 | transverse direction | Querrichtung | cross direction |
 | fill factor, filling degree | Füllgrad, Füllungsgrad | filling grade |
 | braid weave, braid configuration | Geflechtsbindung | braid binding |
@@ -59,9 +59,9 @@ Ein Begriff = ein Wort. Keine Synonyme zur Abwechslung.
 | Spulvolumen | bobbin volume | auch bei der Trommel (**Bobbin volume [ccm]**; „Spulvolumen der Trommel“ = bobbin volume of the drum); im Fließtext „Wickelvolumen“ = winding volume |
 | Trommel | drum | DIN-Trommel = DIN drum |
 | Trommelbreite max. / Verlegebreite max. / Spulengewicht max. | Max. drum width / Max. traverse width / Max. bobbin weight | „Max.“ vorn |
-| Aufwickler | take-up winder | |
+| Aufwickler | take-up unit | |
 | Aufwicklung | take-up winding | Reiter im Flechtauftrag, Feld bei der Flechtmaschine |
-| Abwickler | pay-off | |
+| Abwickler | pay-off unit | |
 | Gatter | creel | |
 | Abzug (Flechtmaschine) | take-up | Feld bei der Flechtmaschine, Berechnung „Flechtwinkel über Abzug“ |
 | Abzugsoption(en) | take-up option(s) | Web-App, Katalog |
@@ -88,8 +88,8 @@ Ein Begriff = ein Wort. Keine Synonyme zur Abwechslung.
 | Geflechtsart | braid type | |
 | Geflechtsbindung | braid binding | |
 | Rundgeflecht | round braid | |
-| Flachgeflecht | flat braid | nur als Beschreibung; die Geflechtsart heißt Litzengeflecht = lace braid |
-| Litzengeflecht, Litze (Geflechtsart) | lace braid | Litzenflechter = lace braider, Litzen-Modus = lace, im Druck-Editor kurz „Lace“ |
+| Flachgeflecht | flat braid | nur als Beschreibung; die Geflechtsart heißt Litzengeflecht = flat braid |
+| Litzengeflecht, Litze (Geflechtsart) | flat braid | Litzenflechter = flat braider, Litzen-Modus = flat braid, im Druck-Editor kurz „Flat braid“ |
 | Hohlgeflecht | hollow braid | |
 | Quadratgeflecht | square braid | |
 | Packung | packing | |
@@ -107,7 +107,7 @@ Ein Begriff = ein Wort. Keine Synonyme zur Abwechslung.
 | Flechtpunkt | braiding point | |
 | Besetzung | setup | Klöppelbesetzung im Designer |
 | Normale / Halbe / Tandem-Besetzung | normal / half / tandem setup | mit Bindung: „Normal setup 1-1“, „Half setup 1-3“, „Tandem setup 2-2“ |
-| Standardbesetzung | default setup | z. B. „Default setup lace“; im Fließtext „the default setup“ |
+| Standardbesetzung | default setup | z. B. „Default setup flat braid“; im Fließtext „the default setup“ |
 | Besetzungsübersicht | setup overview | Element im Druck-Editor „Setup overview“; im Designer Name des Bereichs |
 | Besetzung bearbeiten | Edit setup | Dialog im Druck-Editor |
 | Gangbahn-Animation | track animation | |
@@ -179,8 +179,8 @@ Wie im Programm: **catalogue** und **licence** (Substantiv) britisch, sonst amer
 
 Fremde Oberflächen bleiben wörtlich, z. B. die Schaltfläche **Activate License** im CodeMeter-Kontrollzentrum.
 
-## Offene Entscheidungen (für Eike)
+## Entscheidungen (Eike)
 
 | Thema | Stand im Programm und Handbuch (10.10.2026) | Zu entscheiden |
 |---|---|---|
-| **Litze** | Zwei Bedeutungen, zwei Wörter: Litze als **Material** (Kern-Mantel-Produkt: „Litze:“, „Litzendurchmesser:“; Spulmaschine HLM „Litzenschlag“) = **strand**; Litze als **Geflechtsart** (Litzengeflecht, Litzenflechter, Litzen-Modus, Druck-Editor-Auswahl „Litze“) = **lace braid** bzw. kurz **lace**. So umgesetzt in Programm, Web-App und englischem Handbuch. | Bitte bestätigen oder anders festlegen. Bis dahin gilt die Trennung strand / lace braid. |
+| **Litze** | Zwei Bedeutungen, zwei Wörter: Litze als **Material** (Kern-Mantel-Produkt: „Litze:“, „Litzendurchmesser:“; Spulmaschine HLM „Litzenschlag“) = **strand**; Litze als **Geflechtsart** (Litzengeflecht, Litzenflechter, Litzen-Modus, Druck-Editor-Auswahl „Litze“) = **flat braid** bzw. kurz **flat braid**. So umgesetzt in Programm, Web-App und englischem Handbuch. | **Entschieden 11.10.2026 (Eike):** wie auf herzog-online.com — Litzengeflecht = flat braid, Litzenflechtmaschine = flat braiding machine, Litzenschlagmaschine = stranding machine (Litze als Material = strand). Ebenso Aufwickler = take-up unit, Abwickler = pay-off unit (Seite „Pay-off and take-up units“). |

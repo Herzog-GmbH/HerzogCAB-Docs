@@ -1,15 +1,15 @@
-# Drum and take-up winder selection
+# Drum and take-up unit selection
 
-!!! abstract "Reference — Calculation: from the carrier loading to product length and weight, plus the drum suggestion from the drum master data and the suitable take-up winders"
+!!! abstract "Reference — Calculation: from the carrier loading to product length and weight, plus the drum suggestion from the drum master data and the suitable take-up units"
 
 ## Purpose { #wofur }
 
 This calculation leads in one step from the carrier loading to the
-take-up winder. From bobbin, material, fineness, ply count, number of carriers and
+take-up unit. From bobbin, material, fineness, ply count, number of carriers and
 braiding angle, product length and weight are obtained as in the other
 calculations, and with the product diameter the space required. From this,
 the page suggests drums from your [drum master data](../../master-data/drums.md)
-and names the take-up winders that can carry the drum dimensions, product diameter and
+and names the take-up units that can carry the drum dimensions, product diameter and
 weight — from your Machine Fleet or from the
 [Herzog catalogue](../../catalog/index.md). If the product does not fit onto one
 drum, the page splits it across several.
@@ -18,7 +18,7 @@ drum, the page splits it across several.
     The calculation is located under *Calculations > Product*. Prerequisites are
     drums in the [master data](../../master-data/drums.md) and —
     for the *Machine Fleet* source — created
-    [take-up winders](../../master-data/take-up-machines.md).
+    [take-up units](../../master-data/take-up-machines.md).
 
 ## Inputs { #eingabewerte }
 
@@ -36,7 +36,7 @@ The inputs are divided into four sections.
 | **Bobbin filling grade:** | % | Share of the bobbin volume that the yarn fills; preset to 70 %. Together with fineness, density and ply count, this gives the yarn length per bobbin, as in [Material length on bobbin](../material/material-length.md). |
 | **Number of carriers:** | pcs | Number of carriers. |
 | **Braiding angle:** | ° | Braiding angle of the braid. |
-| **Product diameter:** | mm | Counts for the space on the drum, for checking the take-up winders and — with a core — for their diameter. Length and weight of the cover come from material, fineness and braiding angle. |
+| **Product diameter:** | mm | Counts for the space on the drum, for checking the take-up units and — with a core — for their diameter. Length and weight of the cover come from material, fineness and braiding angle. |
 
 ### Core { #seele }
 
@@ -58,11 +58,11 @@ length is supplied by the cover bobbins.
 | **Filling grade on the drum:** | % | Share of the drum volume that the braid fills. The round braid leaves cavities; 70 to 80 % is usual. Preset to 75 %. |
 | **Flange clearance:** | mm | Distance of the top layer below the flange edge. At 0 mm (default) the calculation goes up to the flange edge, as with the volume figures of the Herzog drums. |
 
-### Take-up winders { #aufwickler }
+### Take-up units { #aufwickler }
 
 | Field | Selection | Meaning |
 |---|---|---|
-| **Take-up winders from:** | *Machine Fleet* (default) or *Herzog catalogue* | Where the take-up winders for the check come from: your created [take-up winders](../../master-data/take-up-machines.md) or all take-up winder models from the Herzog catalogue. |
+| **Take-up units from:** | *Machine Fleet* (default) or *Herzog catalogue* | Where the take-up units for the check come from: your created [take-up units](../../master-data/take-up-machines.md) or all take-up unit models from the Herzog catalogue. |
 | **Split:** | *Equal portions*, *Full drums + remainder*, *Remainder on a smaller drum* | How the product is distributed if it does not fit onto one drum (see below). |
 
 !!! note "Mandatory details"
@@ -76,8 +76,8 @@ length is supplied by the cover bobbins.
 | Value | Unit | Meaning |
 |---|---|---|
 | **Product length:** | m | Product length that a full bobbin set delivers (highlighted in blue). |
-| **Drums:** | – | The drum suggestion, e.g. *"3 × Wooden drum …, 23.6 m each + 1 × …, 11.6 m each"*. For a reel take-up winder it reads *"Reel of the …"*. |
-| **Take-up winder:** | – | The first suitable take-up winder per part, with *"(+… more)"* if there are several. |
+| **Drums:** | – | The drum suggestion, e.g. *"3 × Wooden drum …, 23.6 m each + 1 × …, 11.6 m each"*. For a reel take-up unit it reads *"Reel of the …"*. |
+| **Take-up unit:** | – | The first suitable take-up unit per part, with *"(+… more)"* if there are several. |
 | **Space required on the drum:** | l | Space taken up by the product length at the full product diameter. |
 | **Product weight:** | kg | Weight of the entire product length. |
 | **Weight per meter:** | g/m | Weight per meter, including the core. |
@@ -88,17 +88,17 @@ length is supplied by the cover bobbins.
 ### Table "Drums and reels" { #tabelle-trommeln-und-haspeln }
 
 To the right of the inputs, the page lists all drums from the
-master data and the reels of the reel take-up winders, sorted by size:
+master data and the reels of the reel take-up units, sorted by size:
 
 | Column | Meaning |
 |---|---|
 | **Drum / reel** | Name of the drum (with article number in brackets, if maintained) or *Reel of the …*. |
 | **Capacity** | Product length that fits onto one drum. |
 | **Count** | Drums of this type for the whole product. |
-| **Suitable take-up winders** | Up to three take-up winders, followed by *(+…)*; all are listed in the tooltip. |
+| **Suitable take-up units** | Up to three take-up units, followed by *(+…)*; all are listed in the tooltip. |
 | **Note** | Why a drum does not work or what is missing (see below). |
 
-The suggestion is highlighted in blue; drums that do not fit any take-up winder
+The suggestion is highlighted in blue; drums that do not fit any take-up unit
 are gray.
 
 ## Operation { #bedienung }
@@ -119,9 +119,9 @@ flowchart TD
   K --> E{Does everything fit<br>on one drum?}
   E -- yes --> S[Smallest suitable drum]
   E -- no --> A[Split across<br>several drums]
-  S --> W[Check take-up winders]
+  S --> W[Check take-up units]
   A --> W
-  W --> V[Suggestion: drums<br>and suitable take-up winders]
+  W --> V[Suggestion: drums<br>and suitable take-up units]
 ```
 
 If the whole product fits onto one drum, the page suggests the smallest
@@ -135,25 +135,25 @@ suitable drum. Otherwise it splits according to the selected **Split**:
 
 The capacity of a drum follows from its bobbin volume in the
 master data, the **Filling grade on the drum** and the **Flange clearance**. For
-a reel, the reel volume of the take-up winder counts; there is no flange clearance
-there. If the load capacity of a take-up winder limits the length per
+a reel, the reel volume of the take-up unit counts; there is no flange clearance
+there. If the load capacity of a take-up unit limits the length per
 drum, the page calculates with the shorter length.
 
 ### What is checked { #was-gepruft-wird }
 
-For each take-up winder, the page compares drum outer diameter,
+For each take-up unit, the page compares drum outer diameter,
 drum width, product diameter and the weight of product and empty
 drum with its limits — the details are described under
-[Take-up winders](../../master-data/take-up-machines.md#welche-angaben-gepruft-werden).
-Reel take-up winders do not take a drum; for them only
+[Take-up units](../../master-data/take-up-machines.md#welche-angaben-gepruft-werden).
+Reel take-up units do not take a drum; for them only
 product diameter and load capacity count.
 
 !!! warning "Not checkable instead of silently suitable"
     If a detail is missing, the calculation says *not checkable* instead of
     reporting a drum as suitable. Possible reasons:
-    *Take-up winder drum diameter missing*, *Take-up winder traverse width
-    missing*, *Take-up winder load capacity missing*,
-    *Drum empty weight missing*, *Weight per meter missing*. Take-up winders with
+    *Take-up unit drum diameter missing*, *Take-up unit traverse width
+    missing*, *Take-up unit load capacity missing*,
+    *Drum empty weight missing*, *Weight per meter missing*. Take-up units with
     missing details remain in the suggestion, but are listed after those that
     definitely fit.
 
@@ -161,10 +161,10 @@ The following appear in the **Note** column of the table:
 
 | Note | Meaning |
 |---|---|
-| *No take-up winder accepts this drum* | The drum dimensions do not fit any take-up winder. |
+| *No take-up unit accepts this drum* | The drum dimensions do not fit any take-up unit. |
 | *Does not fit* | A reel cannot hold the product. |
-| *Product diameter fits no take-up winder* | The drum fits, the product is too thin or too thick. |
-| *Too heavy for every take-up winder* | Dimensions and product fit, the weight does not. |
+| *Product diameter fits no take-up unit* | The drum fits, the product is too thin or too thick. |
+| *Too heavy for every take-up unit* | Dimensions and product fit, the weight does not. |
 | *Load capacity: at most … m per drum* | The load capacity limits the length on this drum. |
 | *Empty weight missing* | The drum has no empty weight in the master data. |
 
@@ -172,10 +172,10 @@ The following appear in the **Note** column of the table:
 
 | Message under **Check** | Remedy |
 |---|---|
-| *No take-up winder has been created in the Machine Fleet. Choose the Herzog catalogue as the source.* | Create take-up winders or select **Take-up winders from:** *Herzog catalogue*. |
+| *No take-up unit has been created in the Machine Fleet. Choose the Herzog catalogue as the source.* | Create take-up units or select **Take-up units from:** *Herzog catalogue*. |
 | *There are no drums yet. Add them under Master data → Drums with "From Herzog catalogue …".* | Create drums in the [master data](../../master-data/drums.md) or take them over from the catalogue. As of version 2.1.0, new workspace folders start without drums. |
 | *The product does not fit into the winding space of any drum.* | Create a larger drum or check the product diameter. |
-| *No drum fits any of the take-up winders. See the notes in the table.* | The **Note** column gives the reason for each drum. |
+| *No drum fits any of the take-up units. See the notes in the table.* | The **Note** column gives the reason for each drum. |
 
 ## Calculation { #berechnung }
 

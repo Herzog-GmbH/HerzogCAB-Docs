@@ -64,7 +64,7 @@ width; below it the tabs **Geometry**, **Colors** and
 
 | Field | Meaning |
 |---|---|
-| **Braid type** | Round braid, Lace braid, Square braid, Spiral braid, Packing braid, Soutache braid. |
+| **Braid type** | Round braid, Flat braid, Square braid, Spiral braid, Packing braid, Soutache braid. |
 | **Track type** | Packing braid only: family (2-, 3-, 4-track, round). |
 | **Setup** | Interlacing: normal, half, tandem etc. — depending on the braid type. |
 | **Number of carriers** | Drop-down list with the permissible numbers of carriers for the selected braid type and interlacing. |

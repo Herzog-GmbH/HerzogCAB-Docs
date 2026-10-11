@@ -54,10 +54,10 @@ If several strands are wound side by side at the same time (ply count > 1),
 the available winding width is divided among all strands – the length per
 strand decreases accordingly.
 
-!!! tip "Have drum and take-up winder suggested"
+!!! tip "Have drum and take-up unit suggested"
     Which drums are needed for a certain product length and which
-    take-up winder carries them is determined by the calculation
-    [Drum and take-up winder selection](drum-take-up-selection.md).
+    take-up unit carries them is determined by the calculation
+    [Drum and take-up unit selection](drum-take-up-selection.md).
 
 ## Calculation { #berechnung }
 
@@ -65,7 +65,7 @@ strand decreases accordingly.
 
 ## Related calculations { #verwandte-berechnungen }
 
-- [Drum and take-up winder selection](drum-take-up-selection.md)
+- [Drum and take-up unit selection](drum-take-up-selection.md)
 - [Product weight](rope-weight.md)
 - [Material diameter from material](../material/material-diameter.md)
 - [Product length](rope-length.md)

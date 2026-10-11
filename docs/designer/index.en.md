@@ -20,7 +20,7 @@ as a machine setup sheet.
 
     ---
 
-    Round, lace, square, spiral, packing and soutache braid;
+    Round, flat braid, square, spiral, packing and soutache braid;
     binding, number of carriers, braiding angle, ply count, measurement row.
 
     [:octicons-arrow-right-24: Braid type and parameters](parameters.md)

@@ -31,7 +31,7 @@ entry **individually**, **locked** and **with a version**:
 | Entry type | When saving | When deleting |
 |---|---|---|
 | [Materials](../master-data/materials.md), [Bobbins](../master-data/bobbins.md), [Drums](../master-data/drums.md) | Version check with prompt, **Save as copy** possible | Prompt if the entry has been changed in the meantime |
-| Your own machines: [Braiding machines](../master-data/braiding-machines.md), [Bobbin winding machines](../master-data/winding-machines.md), [Take-up winders](../master-data/take-up-machines.md), [Pay-offs](../master-data/pay-off-machines.md), [Creels](../master-data/creels.md) | Version check with prompt (without copy) | without prompt |
+| Your own machines: [Braiding machines](../master-data/braiding-machines.md), [Bobbin winding machines](../master-data/winding-machines.md), [Take-up units](../master-data/take-up-machines.md), [Pay-off units](../master-data/pay-off-machines.md), [Creels](../master-data/creels.md) | Version check with prompt (without copy) | without prompt |
 | [Braiding orders](../orders/braiding-order.md) and [Winding orders](../orders/winding-order.md) | Version check with prompt, **Save as copy** possible | without prompt |
 | [Customers](../master-data/customers.md), [Colors](../master-data/colors.md), [Floor plans](../master-data/floor-plans.md), assignments of the [Factory Planner](../hall-planner/index.md) | Version check with prompt (without copy) | without prompt |
 | [Designs](../master-data/designs.md) | Version check with prompt; instead of a copy, the Designer offers **Save design under a new name** | without prompt |

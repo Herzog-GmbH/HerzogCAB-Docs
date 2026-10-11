@@ -11,15 +11,15 @@ Herzog CAB shows under
 [*Settings > General > Braiding angle*](../../admin/settings/appearance.md#flechtwinkel). It largely determines the appearance,
 strength and elongation of the finished braid. The calculation determines
 this angle from the braid designation and product dimension – separately for
-round braid and lace braid.
+round braid and flat braid.
 
 ## Inputs { #eingabewerte }
 
 | Field | Unit | Meaning |
 |---|---|---|
-| **Braid type:** | – | Choice between *Round braid* and *Lace braid*. Determines the formula and the name of the next field. |
+| **Braid type:** | – | Choice between *Round braid* and *Flat braid*. Determines the formula and the name of the next field. |
 | **Braid designation:** | Lay length, Picks / 10 mm, Picks / Inch, Picks / French Inch | Characteristic value of the braid (braid designation). You choose the unit in the selection field to the right of it. With *Lay length* the value is used directly; with the picks units (picks per unit of length) it is converted internally into a lay length. |
-| **Product diameter:** / **Product width:** | mm | Dimension of the product. With *Round braid* the field is called **Product diameter:**, with *Lace braid* **Product width:**. |
+| **Product diameter:** / **Product width:** | mm | Dimension of the product. With *Round braid* the field is called **Product diameter:**, with *Flat braid* **Product width:**. |
 | **Number of carriers:** | pcs | Number of carriers. Only shown and required if a picks unit is selected as the unit of the braid designation (not with *Lay length*). |
 
 !!! note "Number of carriers only with picks units"

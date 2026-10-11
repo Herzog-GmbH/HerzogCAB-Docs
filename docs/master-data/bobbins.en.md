@@ -87,7 +87,7 @@ Bobbins are used in the following calculations:
 * [Bobbin volume](../calculations/material/bobbin-volume.md)
 * [Material length on bobbin](../calculations/material/material-length.md)
 * [Machine runtime per bobbin set](../calculations/production/run-time-bobbin-set.md)
-* [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md)
+* [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md)
 
 ## Related pages { #verwandte-seiten }
 
@@ -95,5 +95,5 @@ Bobbins are used in the following calculations:
 * [Bobbin winding machines](winding-machines.md) – assign matching bobbins to a bobbin
   winding machine
 * [Drums](drums.md) – master data with the same structure for the drums of the
-  take-up winders
+  take-up units
 * [Herzog catalogue](../catalog/index.md) – take over bobbins from Herzog

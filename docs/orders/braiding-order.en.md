@@ -6,7 +6,7 @@
 
 In the braiding order editor you maintain a complete braiding order: customer,
 order data, braiding machine, material, bobbin, product target values,
-production values, take-up winder and drum, and the linked design. You do not
+production values, take-up unit and drum, and the linked design. You do not
 have to enter many values by hand — next to the fields there are **calculator
 icons** that open the matching calculation and write the result back into the
 order.
@@ -42,7 +42,7 @@ The editor is divided into ten tabs, which you can fill in in any order:
 | **Bobbin** | Choose bobbin format; dimensions and bobbin volume. |
 | **Product** | Product-related target values with embedded calculations. |
 | **Production** | Speed, runtime, bobbin sets and the projection to the order length. |
-| **Take-up winding** | Choose take-up winder and drum; split of the order length across the drums with a check against the take-up winder (from version 2.1.0). |
+| **Take-up winding** | Choose take-up unit and drum; split of the order length across the drums with a check against the take-up unit (from version 2.1.0). |
 | **Design** | Linked braiding design with preview and carrier table. |
 | **Overview** | Compact summary across all tabs. |
 
@@ -122,7 +122,7 @@ in brackets after the name. The button with the open icon next to it
 
 ### Braid type { #geflechtsart }
 
-Choice between **Round braid** and **Lace braid**. The braid type affects how
+Choice between **Round braid** and **Flat braid**. The braid type affects how
 the active carriers result from the binding and which designs are offered on
 the **Design** tab.
 
@@ -265,28 +265,28 @@ they fill in as soon as the underlying values are available.
 
 ## "Take-up winding" tab { #tab-aufwicklung }
 
-Here you choose the take-up winder and drum for the order. The order length is
-split across the drums and checked against the take-up winder. The entries are
+Here you choose the take-up unit and drum for the order. The order length is
+split across the drums and checked against the take-up unit. The entries are
 saved with the order and appear on the **Overview** tab, in the web view and
 as placeholders in the [print templates](../print-templates/elements.md).
 
-![The “Take-up winding” tab with selected take-up winder, selected drum and the core section](../assets/screenshots/orders/auftrag-tab-aufwicklung.png)
+![The “Take-up winding” tab with selected take-up unit, selected drum and the core section](../assets/screenshots/orders/auftrag-tab-aufwicklung.png)
 
 !!! info "New from version 2.1.0"
-    Take-up winders come from the master data
-    [Take-up winders](../master-data/take-up-machines.md), drums from the
+    Take-up units come from the master data
+    [Take-up units](../master-data/take-up-machines.md), drums from the
     [Drums](../master-data/drums.md). The calculation behind it is the same
     as in the calculation
-    [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md).
+    [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md).
 
-### "Take-up winder and drum" section { #abschnitt-aufwickler-und-trommel }
+### "Take-up unit and drum" section { #abschnitt-aufwickler-und-trommel }
 
 | Field | Meaning |
 |---|---|
-| **Take-up winder** | Take-up winder from the Machine Fleet (default: *No take-up winder selected*). Below it are its limits, e.g. drum Ø, traverse width, load capacity and product Ø, and for a reel take-up winder the reel volume. The **Open take-up winders** button shows the take-up winders in a separate window; there they can be created and changed, and a double-click transfers one into the order. |
-| **Drum** | Drum from the drum master data (default: *No drum selected*). Below it are the outer and core diameter, traverse width, volume and empty weight (or *Empty weight missing*). **Open drums** shows the drums in a separate window; a double-click transfers a drum. If the take-up winder winds onto its reel, no drum is needed. |
+| **Take-up unit** | Take-up unit from the Machine Fleet (default: *No take-up unit selected*). Below it are its limits, e.g. drum Ø, traverse width, load capacity and product Ø, and for a reel take-up unit the reel volume. The **Open take-up units** button shows the take-up units in a separate window; there they can be created and changed, and a double-click transfers one into the order. |
+| **Drum** | Drum from the drum master data (default: *No drum selected*). Below it are the outer and core diameter, traverse width, volume and empty weight (or *Empty weight missing*). **Open drums** shows the drums in a separate window; a double-click transfers a drum. If the take-up unit winds onto its reel, no drum is needed. |
 | **Delivery length per drum [m]** | Length per drum if the customer specifies it. Leave empty to distribute the order length according to the selected split. |
-| **Split** | *Equal portions*, *Full drums + remainder* or *Remainder on a smaller drum* — as in the [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md#der-vorschlag). With a delivery length, the split only applies to the remainder. |
+| **Split** | *Equal portions*, *Full drums + remainder* or *Remainder on a smaller drum* — as in the [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md#der-vorschlag). With a delivery length, the split only applies to the remainder. |
 | **Filling grade on the drum [%]** | Share of the winding space filled with product; the voids of the round braid are included in it. If empty, 75 % applies. |
 | **Flange clearance [mm]** | Distance of the top layer from the flange edge. 0 = bobbin volume from the drum database. |
 
@@ -306,13 +306,13 @@ load capacity and to the **Total weight** on the **Production** tab.
 
 ### "Calculate suggestion" button { #schaltflache-vorschlag-berechnen }
 
-Finds a take-up winder from the Machine Fleet and a drum from the database
+Finds a take-up unit from the Machine Fleet and a drum from the database
 that suit the product and length, and enters both. With a delivery length it
 looks for the smallest drum for exactly this length, otherwise for the order
 length per head. A message names the result
 (*Suggestion applied: … with ….*) or the reason why there is none,
 e.g. *The suggestion needs the product diameter (Product tab).*
-If no take-up winder has been created in the Machine Fleet, it only suggests
+If no take-up unit has been created in the Machine Fleet, it only suggests
 the drum.
 
 ### "Splitting the order length" section { #abschnitt-aufteilung-der-auftragslange }
@@ -328,10 +328,10 @@ missing (product weight and bobbin set on the Production tab)*.
 | **Drums in total** | Number of drums; with several heads e.g. *"6 (3 per head)"*. The order length is split per head. |
 | **Length per drum** | The split, e.g. *"2 × 500 m + 1 × 180 m"*; if the remainder is on a different drum, it is shown in brackets after it. |
 | **Heaviest drum** | Weight of the heaviest loaded drum; without empty weight *"… kg + empty weight"*. |
-| **Check** | Colored lines: green *Take-up winder and drum fit.*, red e.g. *Does not fit: …* or *The product does not fit into the winding space of the drum.*, yellow *Cannot be checked: …*, gray notes such as *Without a take-up winder only the drum capacity is checked.* or *Each head needs its own take-up winder.* |
+| **Check** | Colored lines: green *Take-up unit and drum fit.*, red e.g. *Does not fit: …* or *The product does not fit into the winding space of the drum.*, yellow *Cannot be checked: …*, gray notes such as *Without a take-up unit only the drum capacity is checked.* or *Each head needs its own take-up unit.* |
 
 What exactly is checked is described under
-[Take-up winders — Which data is checked](../master-data/take-up-machines.md#welche-angaben-gepruft-werden).
+[Take-up units — Which data is checked](../master-data/take-up-machines.md#welche-angaben-gepruft-werden).
 
 ## "Design" tab { #tab-design }
 
@@ -443,5 +443,5 @@ calculation pages is described under
 * [Print](print.md) — template selection, print preview, QR code
 * [From order to machine sheet](../tasks/order-to-machine-sheet.md) — the workflow as a guide
 * [Designer](../designer/index.md) — design and edit braiding designs
-* [Customers](../master-data/customers.md) · [Braiding machines](../master-data/braiding-machines.md) · [Materials](../master-data/materials.md) · [Bobbins](../master-data/bobbins.md) · [Take-up winders](../master-data/take-up-machines.md) · [Drums](../master-data/drums.md) · [Designs](../master-data/designs.md) — the related master data
-* [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md) — the same calculation as a separate calculation
+* [Customers](../master-data/customers.md) · [Braiding machines](../master-data/braiding-machines.md) · [Materials](../master-data/materials.md) · [Bobbins](../master-data/bobbins.md) · [Take-up units](../master-data/take-up-machines.md) · [Drums](../master-data/drums.md) · [Designs](../master-data/designs.md) — the related master data
+* [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md) — the same calculation as a separate calculation

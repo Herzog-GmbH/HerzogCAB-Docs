@@ -119,15 +119,15 @@
   only* and a network drive; under *System administration >
   Storage location*, a local workspace folder can be moved to a network drive.
   See [Storage location](../admin/storage-location.md).
-* **Take-up winders as a separate machine type** – own master data page and
+* **Take-up units as a separate machine type** – own master data page and
   own creation dialog with drum dimensions, load capacity, tension control, image and
   documents, own filter in the Machine Fleet and own group in the
   Factory Planner. Series AW, AWS, AWST, AWSP, AWSA and AWH. See
-  [Take-up winders](../master-data/take-up-machines.md).
-* **Pay-offs as a separate machine type** – for material such as core, rope
+  [Take-up units](../master-data/take-up-machines.md).
+* **Pay-off units as a separate machine type** – for material such as core, rope
   or cable that runs off a drum into the downstream machine:
   drum dimensions, load capacity, drum stroke and pay-off tension. Series AB,
-  ABS, ABST and ABA. See [Pay-offs](../master-data/pay-off-machines.md).
+  ABS, ABST and ABA. See [Pay-off units](../master-data/pay-off-machines.md).
 * **Creels as a separate machine type** – pay-off creels and pay-off stands with
   pay-off positions (total and of which active), take-up, drive, bobbin type and
   size, yarn tension, monitoring and material. Series GU, GR, GRP,
@@ -138,20 +138,20 @@
   core diameter and traverse width and can still be overwritten.
   *Product length per drum* now selects the drum from the database
   instead of asking for three dimensions. See [Drums](../master-data/drums.md).
-* **Drum and take-up winder selection** – a new calculation leads from the
-  carrier loading to the take-up winder: product length and weight, the
-  drum suggestion from the drum database and the matching take-up winders
+* **Drum and take-up unit selection** – a new calculation leads from the
+  carrier loading to the take-up unit: product length and weight, the
+  drum suggestion from the drum database and the matching take-up units
   from the Machine Fleet or the Herzog catalogue. If not everything fits on one
   drum, it is split; fill level and edge clearance are adjustable.
   If a value is missing, the calculation says *not checkable* instead of
   silently *fits*; a core counts towards the weight as in *Core-cover product*.
   See
-  [Drum and take-up winder selection](../calculations/product/drum-take-up-selection.md).
-* **Take-up winder and drum in the order** – new tab
+  [Drum and take-up unit selection](../calculations/product/drum-take-up-selection.md).
+* **Take-up unit and drum in the order** – new tab
   [Take-up winding](../orders/braiding-order.md#tab-aufwicklung) in the
-  braiding order: take-up winder and drum are saved with the order,
+  braiding order: take-up unit and drum are saved with the order,
   the order length is split across the drums per head (also with a
-  specified delivery length per drum) and checked against the take-up winder.
+  specified delivery length per drum) and checked against the take-up unit.
   **Calculate suggestion** searches for both. The details appear in the
   overview, in the web view and as placeholders in the print templates;
   a core counts towards the weight per meter, the load capacity and the total weight
@@ -178,7 +178,7 @@
   and Herzog CAB Web together; the licence tab shows *Full version (program
   and web)*, Herzog CAB Web states the edition.
 * **Machine pages open faster** – braiding machines, bobbin winding machines,
-  take-up winders and pay-offs as well as creels only build their cards when they come into
+  take-up units and pay-off units as well as creels only build their cards when they come into
   view.
 
 ### Bug fixes { #fehlerbehebungen }
@@ -263,7 +263,7 @@
   the take-up can be specified as a speed or via
   take-up disc and speed. Conversely, the page provides take-up,
   horngear speed and wheel speed for a target braiding angle. For
-  round and lace braids. See
+  round and flat braids. See
   [Braiding angle from take-up](../calculations/product/braid-angle-takeup.md).
 * **Favorites on the calculation tiles** – the star is now on every
   calculation tile, designed the same everywhere.

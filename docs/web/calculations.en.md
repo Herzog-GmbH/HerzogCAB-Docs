@@ -7,7 +7,7 @@
 The web app contains all calculators of the desktop app in the same five
 groups — Material, Product, Hollow braid, Production and Winding —,
 including **Braiding angle from take-up** and
-**Drum and take-up winder selection** (as of 30.09.2026: 34 calculators; the current
+**Drum and take-up unit selection** (as of 30.09.2026: 34 calculators; the current
 number is shown below the page title). Inputs, selection fields, units,
 formulas and results are the same as in the desktop app; the meaning
 of each field is described on the reference page of the respective calculator in the chapter
@@ -49,7 +49,7 @@ operation in the browser.
 | **Unit** | Where the desktop app has a unit switch (e.g. fineness in tex, dtex, den, Nm, Ne), it is also available here. |
 | **Calculate** | Runs the calculation. Missing or invalid inputs are marked at the field. |
 | **Delete** | Resets all inputs to the default values. |
-| **Result** | The result values with unit — the same values and decimal places as on the desktop. Calculators with a table (e.g. *Drums and reels* of the drum and take-up winder selection) show it below. |
+| **Result** | The result values with unit — the same values and decimal places as on the desktop. Calculators with a table (e.g. *Drums and reels* of the drum and take-up unit selection) show it below. |
 | **Print** | Prints inputs and result via the browser (see [Print](print.md)). |
 
 The web app remembers the most recently entered values per calculator for your
