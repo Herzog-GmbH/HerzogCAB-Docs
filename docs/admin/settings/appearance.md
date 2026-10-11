@@ -9,12 +9,7 @@ das Erscheinungsbild der gesamten Oberfläche ein, aktivieren bei Bedarf das
 Diagnose-Protokoll, entscheiden über die anonyme Nutzungsstatistik und
 legen fest, wie Herzog CAB den Flechtwinkel misst.
 
-![Tab „Allgemein" mit Profil, Darstellung, Diagnose und Datenschutz.](../../assets/screenshots/settings/einstellungen-allgemein.png)
-
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Einstellungen, Tab „Allgemein“ ohne Kopfkarte, mit den Karten Profil, Darstellung, Diagnose, Datenschutz, Produktionsplanung und der neuen Karte „Flechtwinkel“ (Auswahl „Flechtwinkel messen“ aufgeklappt); unten rechts **Speichern** und **Abbrechen**.
-    **So erzeugen:** *Datei > Einstellungen*, Tab **Allgemein**, Dialog so hoch ziehen, dass alle Karten sichtbar sind; die Auswahl „Flechtwinkel messen“ aufklappen.
-    **Ziel-Datei:** `assets/screenshots/settings/einstellungen-allgemein.png` (ersetzt das bisherige Bild)
+![Tab „Allgemein" mit Profil, Darstellung, Diagnose, Datenschutz, Produktionsplanung und Flechtwinkel; die Auswahl „Flechtwinkel messen" ist aufgeklappt.](../../assets/screenshots/settings/einstellungen-allgemein.png)
 
 ## Bedienelemente im Detail
 

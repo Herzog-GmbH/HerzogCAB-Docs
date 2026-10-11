@@ -9,12 +9,7 @@ the appearance of the entire interface, enable the
 diagnostic log if required, decide on the anonymous usage statistics and
 define how Herzog CAB measures the braiding angle.
 
-![General tab with profile, display, diagnostics and privacy.](../../assets/screenshots/settings/einstellungen-allgemein.png)
-
-!!! warning "📷 Screenshot missing"
-    **Subject:** Settings, “General” tab without header card, with the cards Profile, Display, Diagnostics, Privacy, Production planning and the new “Braiding angle” card (“Measure braiding angle” selection expanded); **Save** and **Cancel** at the bottom right.
-    **How to create:** *File > Settings*, **General** tab, drag the dialog high enough that all cards are visible; expand the “Measure braiding angle” selection.
-    **Target file:** `assets/screenshots/settings/einstellungen-allgemein.png` (replaces the previous image)
+![General tab with profile, appearance, diagnostics, privacy, production planning and braiding angle; the “Measure braiding angle” selection is expanded.](../../assets/screenshots/settings/einstellungen-allgemein.png)
 
 ## Controls in detail { #bedienelemente-im-detail }
 

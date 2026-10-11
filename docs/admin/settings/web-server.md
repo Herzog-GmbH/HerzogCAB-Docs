@@ -17,10 +17,7 @@ erfolgt bequem über einen **QR-Code**, den Sie hier anzeigen und auch auf
     dieses Passworts. Bis Version 2.1.0 war das Passwort freiwillig und der
     Webserver auch ohne Passwort im Netz offen.
 
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Einstellungen, Tab „Webserver“ bei laufendem Server mit Passwort: oben „Netzwerk“ (Webserver aktivieren, Port), darunter „Zugangsschutz“ (Passwortfeld mit Platzhalter „Gesetzt – zum Ändern neu eingeben“, Schaltfläche „Passwort entfernen“, Hinweis „Die Weboberfläche ist im Netz erreichbar, nur mit diesem Passwort.“), unten „Live-Status“ mit grünem Punkt, IP-Adressen, QR-Adresse und QR-Code; Speichern/Abbrechen rechts unten.
-    **So erzeugen:** *Datei > Einstellungen*, Tab **Webserver**; Webserver aktivieren, Testpasswort vergeben, **Speichern**, Dialog erneut öffnen. Interne IP-Adressen dürfen sichtbar sein.
-    **Ziel-Datei:** `assets/screenshots/settings/webserver.png` (ersetzt das bisherige Bild)
+![Tab „Webserver" bei laufendem Server mit Passwort: Netzwerk, Zugangsschutz und Live-Status mit IP-Adressen und QR-Code.](../../assets/screenshots/settings/webserver.png)
 
 !!! warning "Berechtigung erforderlich"
     Das Ändern der Webserver-Einstellungen erfordert das Recht

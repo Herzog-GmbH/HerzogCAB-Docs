@@ -1,6 +1,6 @@
 [
  {"bild":"basics/startseite-zweispaltig.en.png","box":[78,100,108,128],"text":"MM","schrift":"segoeuib","groesse":15,"farbe":"#ffffff","grund":"#00459a","ausrichtung":"mitte"},
- {"bild":"basics/startseite-zweispaltig.en.png","box":[134,90,360,120],"text":"Good evening, Max","schrift":"segoeuib","groesse":23},
+ {"bild":"basics/startseite-zweispaltig.en.png","box":[134,90,420,120],"text":"Good evening, Max","schrift":"segoeuib","groesse":23},
  {"bild":"basics/startseite-zweispaltig.en.png","box":[256,123,640,143],"text":"Administrator   |   Musterflechterei GmbH","schrift":"segoeui","groesse":14,"einzug":8},
  {"bild":"admin/benutzer-konto.en.png","box":[65,198,400,217],"text":"account “Musterflechterei GmbH” – the","schrift":"segoeui","groesse":14},
  {"bild":"admin/benutzer-konto.en.png","box":[457,142,600,166],"text":"Max Muster","schrift":"seguisb","groesse":17},

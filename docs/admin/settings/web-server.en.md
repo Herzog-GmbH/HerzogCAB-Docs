@@ -17,10 +17,7 @@ is convenient via a **QR code**, which you can display here and also
     this password. Up to version 2.1.0, the password was optional and the
     web server was open on the network even without a password.
 
-!!! warning "📷 Screenshot missing"
-    **Subject:** Settings, “Web Server” tab with the server running and a password set: at the top “Network” (Enable web server, Port), below it “Access Protection” (password field with the placeholder “Set – enter a new one to change it”, “Remove password” button, note “The web interface can be reached from the network, only with this password.”), at the bottom “Live Status” with a green dot, IP addresses, QR address and QR code; Save/Cancel at the bottom right.
-    **How to create:** *File > Settings*, **Web Server** tab; enable the web server, set a test password, **Save**, open the dialog again. Internal IP addresses may be visible.
-    **Target file:** `assets/screenshots/settings/webserver.png` (replaces the previous image)
+![“Web Server” tab with the server running and a password set: network, access protection and live status with IP addresses and QR code.](../../assets/screenshots/settings/webserver.png)
 
 !!! warning "Permission required"
     Changing the web server settings requires the
