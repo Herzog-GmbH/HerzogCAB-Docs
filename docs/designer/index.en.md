@@ -38,8 +38,8 @@ as a machine setup sheet.
 
     ---
 
-    The machine top view with horngears, the animated tracks and
-    the color rotation.
+    The machine top view with horngears and the animated
+    tracks.
 
     [:octicons-arrow-right-24: Setup and animation](animation.md)
 

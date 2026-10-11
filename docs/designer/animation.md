@@ -1,6 +1,6 @@
 # Besetzung und Gangbahn-Animation
 
-!!! abstract "Referenz — die Besetzungsübersicht: Flügelräder und Gangbahnen der Flechtmaschine von oben, mit Animation, Geschwindigkeitsregelung und Farbrotation."
+!!! abstract "Referenz — die Besetzungsübersicht: Flügelräder und Gangbahnen der Flechtmaschine von oben, mit Animation und Geschwindigkeitsregelung."
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -94,22 +94,8 @@ tatsächlich verkreuzt werden und wie das Muster entsteht.
 * Beim **Zurücksetzen** (z. B. durch eine Parameteränderung) erscheint sofort
   wieder das vollständige Flechtbild.
 
-### Farbrotation (Pfeil-Schaltflächen)
-
-Unter der Übersicht liegen zwei Pfeil-Schaltflächen (**Links drehen** /
-**Rechts drehen**). Sie verschieben die komplette Farb- und Texturbelegung
-aller Klöppel um jeweils eine Position entlang der Gangbahn — die Besetzung
-selbst (welche Einschnitte belegt sind) ändert sich dabei nicht. Damit
-simulieren Sie ein Weiterdrehen der Maschine und probieren Farbvarianten
-durch, ohne jeden Klöppel einzeln umzufärben — praktisch für Spiral- und
-Versatzmuster. Flechtbild, Klöppeltabelle und Übersicht wandern gemeinsam mit.
-
-!!! info "Keine Farbrotation beim Packungsgeflecht"
-    Beim **Packungsgeflecht** passt die Links-/Rechts-Rotation nicht zur
-    Gangbahn-Struktur — die beiden Pfeil-Schaltflächen sind dort deaktiviert.
-
 ## Verwandte Seiten
 
-* [Färben und Texturieren](painting.md) — die Farben, die hier rotiert und animiert werden
+* [Färben und Texturieren](painting.md) — die Farben, die hier animiert werden
 * [Geflechtsart und Parameter](parameters.md) — Radanordnung und Klöppelzahl festlegen
 * [3D-Ansicht](view-3d.md) — das fertige Muster am runden Strang betrachten

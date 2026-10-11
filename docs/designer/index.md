@@ -38,8 +38,8 @@ als Maschinenbelegblatt.
 
     ---
 
-    Die Maschinen-Draufsicht mit Flügelrädern, die animierten Gangbahnen und
-    die Farbrotation.
+    Die Maschinen-Draufsicht mit Flügelrädern und den animierten
+    Gangbahnen.
 
     [:octicons-arrow-right-24: Besetzung und Animation](animation.md)
 

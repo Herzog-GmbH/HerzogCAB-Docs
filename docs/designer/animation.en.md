@@ -1,6 +1,6 @@
 # Setup and track animation
 
-!!! abstract "Reference — the Setup overview: horngears and tracks of the braiding machine seen from above, with animation, speed control and color rotation."
+!!! abstract "Reference — the Setup overview: horngears and tracks of the braiding machine seen from above, with animation and speed control."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
@@ -94,22 +94,8 @@ crossed and how the pattern is created.
 * When it is **reset** (e.g. by a parameter change), the complete braid
   pattern appears again immediately.
 
-### Color rotation (arrow buttons) { #farbrotation-pfeil-schaltflachen }
-
-Below the overview there are two arrow buttons (**Rotate left** /
-**Rotate right**). They shift the complete color and texture assignment
-of all carriers by one position along the track — the setup itself (which
-slots are occupied) does not change. This lets you simulate the machine
-turning further and try out color variants without recoloring each carrier
-individually — useful for spiral and offset patterns. The braid pattern,
-carrier table and overview move together.
-
-!!! info "No color rotation for packing braid"
-    For **Packing braid**, the left/right rotation does not match the
-    track structure — the two arrow buttons are deactivated there.
-
 ## Related pages { #verwandte-seiten }
 
-* [Coloring and texturing](painting.md) — the colors that are rotated and animated here
+* [Coloring and texturing](painting.md) — the colors that are animated here
 * [Braid type and parameters](parameters.md) — define the horngear arrangement and number of carriers
 * [3D view](view-3d.md) — view the finished pattern on the round braid

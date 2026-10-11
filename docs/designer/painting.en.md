@@ -194,6 +194,6 @@ assignments since the design was opened.
 ## Related pages { #verwandte-seiten }
 
 * [Colors (master data)](../master-data/colors.md) — maintain palettes and colors with Pantone/RAL reference
-* [Setup and track animation](animation.md) — rotate the color assignment along the track
+* [Setup and track animation](animation.md) — the colors in the running machine
 * [Braid type and parameters](parameters.md) — set ply count and braid type
 * [Designing a design from scratch](../tasks/design-from-scratch.md)
