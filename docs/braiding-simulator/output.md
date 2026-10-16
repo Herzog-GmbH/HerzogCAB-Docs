@@ -45,7 +45,7 @@ Unter der Überschrift **Schaltplan** stehen der Name des Programms und:
 | **Abzugsbereiche** | Wie viele Abschnitte mit eigenem Abzug das Programm hat (nur, wenn es welche gibt). |
 | **Stellhebel** | Wie viele Stellhebel die Maschine hat (nur, wenn es welche gibt). |
 
-Darunter stehen gelb die [Hinweise](#hinweise). Ist kein Programm gewählt,
+Darunter stehen in Orange die [Hinweise](#hinweise). Ist kein Programm gewählt,
 steht dort *Kein Zeitprogramm gewählt. Oben unter „Programm“ ein Programm
 wählen oder anlegen.*, und die Knöpfe sind gesperrt.
 

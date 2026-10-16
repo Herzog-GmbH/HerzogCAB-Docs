@@ -111,7 +111,7 @@ diesen Werten.
 ## Schritt 7: Schaltplan ausgeben
 
 1. Öffnen Sie die Aufgabe **Ausgeben** ([Referenz](../braiding-simulator/output.md)).
-2. Prüfen Sie die gelben Hinweise; fehlt zum Beispiel die Drehzahl, sind
+2. Prüfen Sie die orangefarbenen Hinweise; fehlt zum Beispiel die Drehzahl, sind
    Zeiten und Abzugslängen unbekannt.
 3. Klicken Sie auf **Drucken…** oder **Als PDF speichern…**. Für die
    Weiterverarbeitung in Excel wählen Sie **Als CSV speichern…**.

@@ -193,7 +193,7 @@ folgen daraus.*
 | **Für das ganze Programm** | **Materialdurchmesser** | Durchmesser **eines** Garns in mm. Er gibt der Vorschau den Maßstab. Der Wert gehört zur Besetzung, siehe [Bestücken > Garn](populate.md#garn). |
 | **Ergibt** | Tabelle | Abzug (m/min), **Abzug je Flügelradumdrehung** (mm), Schlaglänge (mm), Flechtwinkel, PPI, **Geflechtsdurchmesser** (bei der Litze **Geflechtsbreite**) und **Bedeckung**. Die vorgegebene Größe steht fett. Durchmesser und Bedeckung sind immer Ergebnis. |
 
-Gelbe Hinweise im Dialog:
+Orangefarbene Hinweise im Dialog:
 
 | Hinweis | Was zu tun ist |
 |---|---|
