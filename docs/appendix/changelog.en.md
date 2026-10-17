@@ -6,9 +6,19 @@
 
 ### New { #neu }
 
+* **Edit lock** – whoever edits an entry holds it. Other computers in the
+  same workspace folder and, with cloud sync, the web app too show a small
+  lock on this entry and open it read-only (banner *Being edited – read
+  only*); who is editing it appears in the tooltip. When it is free again,
+  *Now available – reload* appears. After 30 minutes without input, an
+  entry without unsaved changes is released. With the new **Release locks**
+  permission an administrator ends a lock. Applies to orders, winding
+  orders, Designer, Factory Planner, print editor, Braiding Simulator and
+  all master data. See
+  [The edit lock](../basics/multi-user.md#die-bearbeitungssperre).
 * **Multiple users in the same workspace folder** – materials, bobbins,
   drums, own machines, orders, customers, colors, floor plans,
-  layouts, designs and print templates are saved individually and with a lock;
+  layouts, designs and print templates are saved individually and with a version;
   a colleague's changes to other entries are no longer
   lost. If someone has changed or deleted the same entry in the meantime,
   Herzog CAB asks what to do (**Overwrite**, **Save as
@@ -41,7 +51,9 @@
   digit. See [Signing in and out](../admin/login.md).
 * **F1 opens the manual** – ++f1++ and the new menu item *Help >
   Manual* open the page of this manual that matches the page or
-  dialog that has the focus, also in dialogs. The guided tour of the
+  dialog that has the focus, also in dialogs. With a German user interface
+  the German manual opens, in all other languages the English one; on the
+  Mac ++cmd+question++ opens the manual. The guided tour of the
   current page now starts with ++shift+f1++. See
   [Keyboard shortcuts](keyboard-shortcuts.md#hilfe-tasten).
 
@@ -67,7 +79,28 @@
   See [My profile](../admin/my-profile.md).
 * **User synchronization** – at program start, Herzog CAB synchronizes the
   user list with the customer account; users removed from the account are
-  deactivated. See [Users](../admin/users.md).
+  deactivated and can no longer get into the program on this computer, not
+  even without internet. See
+  [Manage users](../admin/users.md#abgleich-mit-dem-kundenkonto-beim-programmstart).
+* **Sign in again instead of a dead end** – if the password was changed, the
+  user was deleted in the customer account or the computer was signed out
+  in the licence portal, Herzog CAB asks for a new sign-in at the next start
+  (*Herzog CAB needs to be activated again on this computer.*) instead of
+  stopping at *not yet activated*. See
+  [Licence problems](../help/license-problems.md).
+* **Licence tab** – if less than a day of the lease remains, the tab shows
+  the remaining hours instead of *0 days left*. See
+  [Licence and cloud](../admin/settings/license.md).
+* **Open designs with one click** – the cards under *Last edited or saved*
+  open a design with one click. If the carrier count of a design does not match
+  the braid type and binding, the Designer suggests the next suitable count
+  when opening it, instead of silently staying on the start view.
+* **Translations** – all program texts are translated into all six
+  languages. The English technical terms follow herzog-online.com (flat
+  braid, take-up unit, pay-off unit), messages from the licence server
+  arrive in the program language, and the Herzog catalogue shows the
+  English texts in all languages except German. This manual is now also
+  available in English.
 * **Herzog catalogue from the licence server** – new Herzog models, bobbins and
   drums arrive without a program update. See
   [Herzog catalogue](../catalog/index.md).
@@ -80,9 +113,11 @@
 * **Web server on the network only with a password** – without a password, the
   web interface can only be reached on the computer itself; with a password
   (at least 8 characters) it can be reached on the company network after signing in. The password is
-  no longer stored in plain text; after failed attempts, sign-in is
-  briefly locked. **If you use tablets or phones, set a password after the
-  update.** See [Web server and QR code](../admin/settings/web-server.md).
+  no longer stored in plain text; after five failed attempts, sign-in is
+  locked for the device for one minute at first, longer after further failed
+  attempts (at most 15 minutes). **If you use tablets or phones, set a
+  password after the update.** See
+  [Web server and QR code](../admin/settings/web-server.md).
 
 ### Compatibility { #kompatibilitat }
 

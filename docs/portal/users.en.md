@@ -39,7 +39,7 @@ the administrators.
 | **Renew invitation** | Sends a new link to a person who has not yet set their password, even if the invitation has already expired. The new link is again valid for 14 days; the old one is then no longer valid. Next to it, you choose the language of the invitation. |
 | **Deactivate** | The user can no longer sign in anywhere; their data and assignments are retained. Computers on which they were signed in to the desktop app require a new sign-in. With confirmation prompt. |
 | **Activate** | Removes the deactivation. |
-| **Delete** | Permanently deletes the access, after the prompt *Permanently delete the access &lt;e-mail&gt;? Designs, orders and computers stay with the account.* |
+| **Delete** | Permanently deletes the access, after the prompt *Permanently delete the access &lt;e-mail&gt;? Designs, orders and computers stay with the account.* On the computers the deleted user also loses offline access: the desktop app synchronizes its user list with the customer account at startup as soon as someone with the *Manage users* permission is signed in there, and deactivates the user (see [Manage users](../admin/users.md#abgleich-mit-dem-kundenkonto-beim-programmstart)). |
 
 !!! info "Built-in protection mechanisms"
     You can neither deactivate nor delete your own access, and

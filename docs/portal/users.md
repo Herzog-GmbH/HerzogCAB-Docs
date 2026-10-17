@@ -39,7 +39,7 @@ sie die Administratoren.
 | **Einladung erneuern** | Schickt einer Person, die ihr Passwort noch nicht gesetzt hat, einen neuen Link, auch wenn die Einladung schon abgelaufen ist. Der neue Link gilt wieder 14 Tage, der alte gilt dann nicht mehr. Daneben wählen Sie die Sprache der Einladung. |
 | **Deaktivieren** | Der Benutzer kann sich nirgends mehr anmelden; seine Daten und Zuweisungen bleiben erhalten. Rechner, auf denen er in der Desktop-App angemeldet war, verlangen eine neue Anmeldung. Mit Sicherheitsabfrage. |
 | **Aktivieren** | Hebt die Deaktivierung auf. |
-| **Löschen** | Löscht den Zugang endgültig, nach der Rückfrage *Zugang &lt;E-Mail&gt; endgültig löschen? Designs, Aufträge und Rechner bleiben beim Konto.* |
+| **Löschen** | Löscht den Zugang endgültig, nach der Rückfrage *Zugang &lt;E-Mail&gt; endgültig löschen? Designs, Aufträge und Rechner bleiben beim Konto.* An den Rechnern verliert der gelöschte Benutzer auch den Offline-Zugang: Die Desktop-App gleicht ihre Benutzerliste beim Start mit dem Kundenkonto ab, sobald dort jemand mit dem Recht *Benutzer verwalten* angemeldet ist, und deaktiviert ihn (siehe [Benutzer verwalten](../admin/users.md#abgleich-mit-dem-kundenkonto-beim-programmstart)). |
 
 !!! info "Eingebaute Schutzmechanismen"
     Ihren eigenen Zugang können Sie weder deaktivieren noch löschen, und

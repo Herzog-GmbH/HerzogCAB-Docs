@@ -6,9 +6,19 @@
 
 ### Neu
 
+* **Bearbeitungssperre** – wer einen Eintrag bearbeitet, hält ihn. Andere
+  Rechner am selben Arbeitsverzeichnis und, mit dem Cloud-Abgleich, auch
+  die Web-App zeigen an diesem Eintrag ein kleines Schloss und öffnen ihn
+  nur zum Lesen (Band *In Bearbeitung – nur lesen*); wer ihn bearbeitet,
+  steht im Tooltip. Ist er wieder frei, erscheint *Jetzt frei – neu laden*.
+  Nach 30 Minuten ohne Eingabe wird ein Eintrag ohne ungespeicherte
+  Änderungen freigegeben. Mit dem neuen Recht **Sperren aufheben** beendet
+  ein Administrator eine Sperre. Gilt für Aufträge, Spulaufträge, Designer,
+  Hallenplaner, Druck-Editor, Flechtsimulator und alle Stammdaten. Siehe
+  [Die Bearbeitungssperre](../basics/multi-user.md#die-bearbeitungssperre).
 * **Mehrere Benutzer am selben Arbeitsverzeichnis** – Materialien, Spulen,
   Trommeln, eigene Maschinen, Aufträge, Kunden, Farben, Grundrisse,
-  Belegungen, Designs und Druckvorlagen werden einzeln und gesperrt
+  Belegungen, Designs und Druckvorlagen werden einzeln und mit Version
   gespeichert; Änderungen eines Kollegen an anderen Einträgen gehen nicht
   mehr verloren. Hat jemand denselben Eintrag inzwischen geändert oder
   gelöscht, fragt Herzog CAB nach (**Überschreiben**, **Als Kopie
@@ -41,7 +51,9 @@
   Ziffer selbst prüfen. Siehe [Anmelden und Abmelden](../admin/login.md).
 * **F1 öffnet das Handbuch** – ++f1++ und der neue Menüeintrag *Hilfe >
   Handbuch* öffnen die Seite dieses Handbuchs, die zur Seite oder zum
-  Dialog mit dem Fokus passt, auch in Dialogen. Die geführte Tour der
+  Dialog mit dem Fokus passt, auch in Dialogen. Bei deutscher Oberfläche
+  öffnet das deutsche Handbuch, in allen anderen Sprachen das englische;
+  am Mac öffnet ++cmd+question++ das Handbuch. Die geführte Tour der
   aktuellen Seite startet jetzt mit ++shift+f1++. Siehe
   [Tastenkürzel](keyboard-shortcuts.md#hilfe-tasten).
 
@@ -67,7 +79,29 @@
   Siehe [Mein Profil](../admin/my-profile.md).
 * **Benutzer abgleichen** – beim Programmstart gleicht Herzog CAB die
   Benutzerliste mit dem Kundenkonto ab; im Konto entfernte Benutzer werden
-  deaktiviert. Siehe [Benutzer](../admin/users.md).
+  deaktiviert und kommen an diesem Rechner auch ohne Internet nicht mehr
+  ins Programm. Siehe
+  [Benutzer verwalten](../admin/users.md#abgleich-mit-dem-kundenkonto-beim-programmstart).
+* **Neu anmelden statt Sackgasse** – wurde das Passwort geändert, der
+  Benutzer im Kundenkonto gelöscht oder der Rechner im Lizenzportal
+  abgemeldet, fragt Herzog CAB beim nächsten Start nach einer neuen
+  Anmeldung (*Herzog CAB muss auf diesem Rechner neu freigeschaltet
+  werden.*), statt bei *noch nicht freigeschaltet* stehen zu bleiben. Siehe
+  [Lizenzprobleme](../help/license-problems.md).
+* **Lizenz-Tab** – bleibt von der Miete weniger als ein Tag, zeigt der Tab
+  die Reststunden statt *noch 0 Tage*. Siehe
+  [Lizenz und Cloud](../admin/settings/license.md).
+* **Designs öffnen mit einem Klick** – die Karten unter *Zuletzt
+  bearbeitet oder gespeichert* öffnen ein Design mit einem Klick. Passt die Klöppelzahl
+  eines Designs nicht zu Geflechtsart und Bindung, schlägt der Designer
+  beim Öffnen die nächste passende Zahl vor, statt still auf der
+  Startansicht zu bleiben.
+* **Übersetzungen** – alle Programmtexte sind in allen sechs Sprachen
+  übersetzt. Die englischen Fachbegriffe folgen herzog-online.com (flat
+  braid, take-up unit, pay-off unit), Meldungen des Lizenzservers kommen in
+  der Programmsprache an, und der Herzog-Katalog zeigt in allen Sprachen
+  außer Deutsch die englischen Texte. Dieses Handbuch gibt es jetzt auch
+  auf Englisch.
 * **Herzog-Katalog vom Lizenzserver** – neue Herzog-Modelle, Spulen und
   Trommeln kommen ohne Programm-Update. Siehe
   [Herzog-Katalog](../catalog/index.md).
@@ -80,9 +114,11 @@
 * **Webserver nur mit Passwort im Netz** – ohne Passwort ist die
   Weboberfläche nur noch auf dem Rechner selbst erreichbar, mit Passwort
   (mindestens 8 Zeichen) im Firmennetz nach Anmeldung. Das Passwort wird
-  nicht mehr im Klartext gespeichert; nach Fehlversuchen sperrt die
-  Anmeldung kurz. **Wer Tablets oder Handys nutzt, vergibt nach dem Update
-  ein Passwort.** Siehe [Webserver und QR-Code](../admin/settings/web-server.md).
+  nicht mehr im Klartext gespeichert; nach fünf Fehlversuchen sperrt die
+  Anmeldung für das Gerät erst eine Minute, bei weiteren Fehlversuchen
+  länger (höchstens 15 Minuten). **Wer Tablets oder Handys nutzt, vergibt
+  nach dem Update ein Passwort.** Siehe
+  [Webserver und QR-Code](../admin/settings/web-server.md).
 
 ### Kompatibilität
 
