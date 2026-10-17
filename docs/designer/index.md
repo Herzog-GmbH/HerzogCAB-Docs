@@ -77,8 +77,12 @@ Kurzanleitung und Ihren zuletzt verwendeten Designs:
   (++ctrl+o++) öffnet ein gespeichertes.
 * **Zuletzt bearbeitet oder gespeichert** (rechts) — Ihre fünf zuletzt
   geänderten Designs, jeweils mit Vorschaubild, Namen, Ordner und dem
-  Zeitstempel der letzten Bearbeitung bzw. Speicherung. Ein **Doppelklick**
-  öffnet das Design direkt.
+  Zeitstempel der letzten Bearbeitung bzw. Speicherung. Ein **Klick**
+  öffnet das Design direkt. Passt seine Klöppelzahl nicht zu Geflechtsart
+  und Bindung, fragt der Designer nach (*„…“ hat n Klöppel. Für diese
+  Geflechtsart und Bindung sind nur m Klöppel möglich …*) und bietet
+  **Mit m Klöppeln öffnen** an; das gespeicherte Design ändert sich erst,
+  wenn Sie speichern.
 
 Solange kein Design geöffnet ist, ist die Werkzeugleiste gesperrt; nur
 **Neu** und **Laden** sind bedienbar.

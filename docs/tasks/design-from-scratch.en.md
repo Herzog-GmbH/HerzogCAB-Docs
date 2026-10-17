@@ -66,8 +66,9 @@ controls of the painting mode are described on the reference page
 The setup overview shows the horngears of the machine from above with the
 colors assigned to each carrier:
 
-1. Use the arrow buttons to try out color variants — they
-   rotate the color assignment along the track.
+1. Check whether the colors sit on the carriers as you planned. You can
+   keep recoloring in the braid pattern or in the carrier table; the
+   overview follows immediately.
 2. Start the **Track animation** with the play button: the
    carriers move across the horngears and the braid pattern builds up in sync,
    layer by layer. Control the speed with the

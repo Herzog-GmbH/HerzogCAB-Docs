@@ -77,8 +77,11 @@ short instructions and your recently used designs:
   (++ctrl+o++) opens a saved one.
 * **Last edited or saved** (right) — your five most recently
   changed designs, each with preview image, name, folder and the
-  timestamp of the last edit or save. A **Double-click**
-  opens the design directly.
+  timestamp of the last edit or save. A **click**
+  opens the design directly. If its carrier count does not match the braid
+  type and binding, the Designer asks (*“…” has n carriers. Only m carriers
+  are possible for this braid type and binding …*) and offers **Open with m
+  carriers**; the saved design only changes when you save.
 
 As long as no design is open, the toolbar is locked; only
 **New** and **Load** can be used.

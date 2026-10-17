@@ -51,9 +51,15 @@ for t in "141 einstellungen-design" "350 webserver" "435 einstellungen-lizenz"; 
 k -Titel "$T" -Do "keys:{ESC};wait:800"
 k -Do "click:164,46;wait:700;click:245,116;wait:2000"; f basics/gefuehrte-touren-dialog.png -Titel "Touren|Tours"; k -Titel "Touren|Tours" -Do "keys:{ESC};wait:600"
 k -Do "move:18,500;wait:700;click:200,928;wait:2000"; f admin/mein-profil.png -Titel "Mein Profil|My profile"; k -Titel "Mein Profil|My profile" -Do "keys:{ESC};wait:600;move:1000,600;park"
-nav 627 3000; k -Do "click:1456,376;wait:800;click:1400,448;wait:1500;dbl:196,311;wait:1500"; k -Titel "Neue Seite|New page" -Do "click:270,126;wait:2000"; k -Do "click:1456,220;wait:2000"; T='^Auftrag$|^Order$'; f print-templates/tabelle-bearbeiten.png -Titel "$T"
-k -Titel "$T" -Do "click:1528,143;type:Durchmesser;wait:1200;park"; v -Titel "$T"; (cd "$(cygpath -u "$SC")" && python -c "from PIL import Image; im=Image.open(\"v.png\"); im.crop((1380,90,im.width,im.height)).save(r\"$(cygpath -w "$D/docs/assets/screenshots/print-templates/feldvorlagen-picker$SUF.png")\")"); k -Titel "$T" -Do "click:1626,762;wait:800"
-# EN: Suchbegriff "diameter" statt "Durchmesser"
+# Druck-Editor: Vorlage per NAMEN waehlen, nicht per Listenplatz. Die Vorlagenauswahl sortiert nach dem angezeigten
+# Namen: deutsch steht "Standard Auftrag" oben, englisch "Default Calculation" vor "Default Order". Der feste Klick auf
+# den ersten Listeneintrag (frueher click:1400,448) lud im EN-Lauf deshalb die Berechnungs-Vorlage, und die
+# Auftrags-Tabelle fehlte in der Palette (Befund 11.10.2026). Tippen bei offener Liste springt zum Eintrag, ENTER waehlt.
+VORLAGE="Standard Auftrag"; SUCH="Durchmesser"; [ "$SUF" = ".en" ] && { VORLAGE="Default Order"; SUCH="diameter"; }
+nav 627 3000; k -Do "click:1456,376;wait:800;type:$VORLAGE;wait:400;keys:{ENTER};wait:1500;dbl:196,311;wait:1500"; k -Titel "Neue Seite|New page" -Do "click:270,126;wait:2000"; k -Do "click:1456,220;wait:2000"; T='^Auftrag$|^Order$'; f print-templates/tabelle-bearbeiten.png -Titel "$T"
+k -Titel "$T" -Do "click:1528,143;type:$SUCH;wait:1200;park"; v -Titel "$T"; (cd "$(cygpath -u "$SC")" && python -c "from PIL import Image; im=Image.open(\"v.png\"); im.crop((1380,90,im.width,im.height)).save(r\"$(cygpath -w "$D/docs/assets/screenshots/print-templates/feldvorlagen-picker$SUF.png")\")"); k -Titel "$T" -Do "click:1626,762;wait:800"
+# Vor dem Lauf pruefen: Stehen im Musterbetrieb eigene Vorlagen, die mit demselben Namen beginnen, waehlt das Tippen die
+# alphabetisch erste davon.
 nav 147 2500; k -Titel "^Druck-Editor$|^Print editor$" -Do "click:376,108;wait:1500"   # Vorlage NICHT speichern (Nein/No)
 # --- Neue Motive 11.10.2026 (Einstellungen; Dialog per fenster_setzen.ps1 platzieren, NICHT an der Titelleiste ziehen: Windows-Andocken maximiert ihn) ---
 # Allgemein: Datei > Einstellungen; fenster_setzen.ps1 -Titel "^Einstellungen|^Settings" -X 200 -Y 40 -B 776 -H 1180; k -Titel "$T" -Do "click:476,996;wait:1000;park"; f settings/einstellungen-allgemein.png -Titel "$T" -Bildschirm

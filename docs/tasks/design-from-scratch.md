@@ -65,8 +65,9 @@ Bedienelemente des Malmodus beschreibt die Referenzseite
 Die Besetzungsübersicht zeigt die Flügelräder der Maschine von oben mit den
 zugewiesenen Farben je Klöppel:
 
-1. Probieren Sie mit den Pfeil-Schaltflächen Farbvarianten durch — sie
-   rotieren die Farbzuordnung entlang der Gangbahn.
+1. Prüfen Sie, ob die Farben so auf den Klöppeln sitzen, wie Sie es
+   geplant haben. Umfärben können Sie weiter im Flechtbild oder in der
+   Klöppeltabelle; die Übersicht folgt sofort.
 2. Starten Sie mit der Play-Schaltfläche die **Gangbahn-Animation**: Die
    Klöppel wandern über die Räder, und das Flechtbild baut sich synchron
    Lage für Lage auf. Das Tempo regeln Sie mit den
