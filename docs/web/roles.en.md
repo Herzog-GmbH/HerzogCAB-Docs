@@ -57,7 +57,7 @@ the permission **Manage roles** or **Manage users**.
 | Factory Planner | **View Factory Planner** / **Edit Factory Planner** | [Factory Planner](hall-planner.md). |
 | Orders | **View orders** / **Edit orders** | [Orders](orders.md). |
 | Designer | **View designer** / **Edit designer** | [Designs and Designer](designer.md). |
-| Braiding Simulator | **View Braiding Simulator** / **Edit Braiding Simulator** | See the Braiding Simulator or change programs. Only for accounts with the Braiding Simulator. |
+| Braiding Simulator | **View Braiding Simulator** / **Edit Braiding Simulator** | See the [Braiding Simulator](braiding-simulator.md) or change programs. Only for accounts with the Braiding Simulator, see [Licence and rights](../braiding-simulator/licence.md#rechte). |
 | Print templates | **View print templates** / **Edit print templates** | Open the [Print editor](print-editor.md) or change, save and delete templates there; **Edit template** on the [print page](print.md). |
 | Calculations / Export | **Run calculations** | [Calculations](calculations.md). |
 | | **Print / Export** | [Print](print.md) and export. |

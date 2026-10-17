@@ -80,7 +80,7 @@ flowchart LR
 | [Druck-Editor](../print-templates/index.md) | dem Laden einer Vorlage | Sie eine andere Vorlage laden. |
 | Maschinen der Stammdaten ([Flechtmaschinen](../master-data/braiding-machines.md), [Spulmaschinen](../master-data/winding-machines.md), [Aufwickler](../master-data/take-up-machines.md), [Abwickler](../master-data/pay-off-machines.md), [Gatter](../master-data/creels.md)) | dem Öffnen des Bearbeitungsdialogs | Sie den Dialog schließen. |
 | [Materialien](../master-data/materials.md), [Spulen](../master-data/bobbins.md), [Trommeln](../master-data/drums.md), [Farben](../master-data/colors.md), [Kunden](../master-data/customers.md) | Ihrer **ersten Änderung** im Formular. Nur Auswählen und Ansehen sperrt nicht. | Sie speichern oder Ihre Änderung verwerfen. |
-| Flechtsimulator | dem Öffnen einer Maschine: ihr Flechtprogramm (Besetzung und Zeitprogramm) | Sie eine andere Maschine öffnen oder den Simulator ohne Ungespeichertes verlassen. |
+| [Flechtsimulator](../braiding-simulator/index.md) | dem Öffnen einer Maschine: ihr Flechtprogramm (Besetzung und Zeitprogramm) | Sie eine andere Maschine öffnen oder den Simulator ohne Ungespeichertes verlassen. |
 
 Dazu gilt überall:
 

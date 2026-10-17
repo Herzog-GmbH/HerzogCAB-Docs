@@ -20,6 +20,7 @@ name appears in the title bar of the window.
 |---|---|
 | **General** | Profile (active profile, **Switch profile …**, **Manage profiles …**), display (language, font size, design), diagnostics, privacy, production planning and braiding angle — see [General](appearance.md) |
 | **Design** | Defaults for new designs, view, animation and saving in the Designer as well as the import of legacy design data — see [Design](legacy-import.md) |
+| **Braiding Simulator** | Only with the Braiding Simulator: personal defaults for playback and the 3D preview — see [3D preview and take-up](../../braiding-simulator/views.md#startwerte-in-den-einstellungen) |
 | **Licence** | Account model only: licence status, account, offline lease, signing out the computer and cloud upload to the web app — see [Licence and cloud](license.md) |
 | **Web Server** | Switching on and port, password (mandatory for access from the network), server status, IP selection and QR code — see [Web server and QR code](web-server.md) |
 

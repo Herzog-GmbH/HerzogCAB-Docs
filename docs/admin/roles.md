@@ -61,7 +61,7 @@ Eine Rolle setzt sich aus Einzelrechten zusammen, gruppiert nach Bereichen:
 | **Hallenplaner** | Hallenplaner anzeigen · Hallenplaner bearbeiten |
 | **Aufträge** | Aufträge anzeigen · Aufträge bearbeiten |
 | **Designer** | Designer anzeigen · Designer bearbeiten |
-| **Flechtsimulator** | Flechtsimulator anzeigen · Flechtsimulator bearbeiten — nur, wenn Herzog CAB den Flechtsimulator enthält |
+| **Flechtsimulator** | Flechtsimulator anzeigen · Flechtsimulator bearbeiten — nur, wenn Herzog CAB den Flechtsimulator enthält, siehe [Lizenz und Rechte](../braiding-simulator/licence.md#rechte) |
 | **Druckvorlagen** | Druckvorlagen anzeigen · Druckvorlagen bearbeiten |
 | **Berechnungen / Export** | Berechnungen ausführen · Drucken / Export |
 | **Spezialwerkzeuge** | Parameter Explorer öffnen |

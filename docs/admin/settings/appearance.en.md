@@ -106,6 +106,8 @@ stored data:
   value.
 * **Order:** the **Braiding angle** field in the
   [braiding order](../../orders/braiding-order.md).
+* **Braiding Simulator:** braiding angle in the braid preview, see
+  [Braiding angle reference](../../braiding-simulator/views.md#flechtwinkel-bezug).
 * **Printouts:** design printout and placeholders for the braiding angle in
   [print templates](../../print-templates/elements.md), the angle column of the
   design library and the mobile view of the

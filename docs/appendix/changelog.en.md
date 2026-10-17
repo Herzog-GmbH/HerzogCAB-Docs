@@ -26,6 +26,19 @@
   Old versions are retained. **All computers using the
   shared folder need version 2.1.1.** See
   [Multiple users in the same workspace folder](../basics/multi-user.md).
+* **Braiding Simulator** – additional module for the full version with a
+  subscription: it shows Herzog machines in motion, with carriers,
+  switches, time program and the resulting braid. It appears as soon as an
+  administrator assigns you a model licence in the licence portal
+  (*Machine models*); its home page shows your machines. You work in four
+  steps: **Set up**, **Program** (switch the switches, record, timeline,
+  change the division while running), **Check** (collisions, repeat,
+  return of every carrier) and **Output** (switching plan for the control
+  system, as PDF or CSV). Plus 3D preview with machine and take-up,
+  braiding angle reference and machines with several braiding heads. Also
+  in the web app, there without the switching plan. See
+  [Braiding Simulator](../braiding-simulator/index.md) and
+  [Assign machine models](../portal/models.md).
 * **Selectable braiding angle reference** – under *Settings > General >
   Braiding angle* you choose whether Herzog CAB displays the braiding angle relative to the
   cross direction (Herzog, default) or to the braid axis (technical literature)

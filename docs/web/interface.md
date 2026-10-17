@@ -94,7 +94,7 @@ Gesperrt wird beim Öffnen: Flecht- und Spulaufträge, Designs im
 [Maschinen](machines.md), im [Hallenplaner](hall-planner.md) der Grundriss
 und die gewählte Belegung, die Vorlage im [Druck Editor](print-editor.md),
 der Eintrag im Bearbeitungsdialog der [Stammdaten](master-data.md) und das
-Programm im Flechtsimulator. Neue, noch nicht gespeicherte Einträge und
+Programm im [Flechtsimulator](braiding-simulator.md). Neue, noch nicht gespeicherte Einträge und
 Einträge, die Sie nur ansehen dürfen, sperrt die Web-App nicht.
 
 ### Das Schloss

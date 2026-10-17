@@ -57,7 +57,7 @@ dem Recht **Rollen verwalten** oder **Benutzer verwalten**.
 | Hallenplaner | **Hallenplaner anzeigen** / **bearbeiten** | [Hallenplaner](hall-planner.md). |
 | Aufträge | **Aufträge anzeigen** / **bearbeiten** | [Aufträge](orders.md). |
 | Designer | **Designer anzeigen** / **bearbeiten** | [Designs und Designer](designer.md). |
-| Flechtsimulator | **Flechtsimulator anzeigen** / **bearbeiten** | Den Flechtsimulator sehen bzw. Programme ändern. Nur bei Konten mit dem Flechtsimulator. |
+| Flechtsimulator | **Flechtsimulator anzeigen** / **bearbeiten** | Den [Flechtsimulator](braiding-simulator.md) sehen bzw. Programme ändern. Nur bei Konten mit dem Flechtsimulator, siehe [Lizenz und Rechte](../braiding-simulator/licence.md#rechte). |
 | Druckvorlagen | **Druckvorlagen anzeigen** / **bearbeiten** | [Druck Editor](print-editor.md) öffnen bzw. Vorlagen dort ändern, speichern und löschen; **Vorlage bearbeiten** auf der [Druckseite](print.md). |
 | Berechnungen / Export | **Berechnungen ausführen** | [Berechnungen](calculations.md). |
 | | **Drucken / Export** | [Drucken](print.md) und Export. |

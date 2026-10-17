@@ -73,7 +73,7 @@ flowchart LR
 | Eingebauter Webserver mit QR-Code | Abo und Bestellung im Browser |
 | — | Ein gemeinsamer Arbeitsbereich je Konto ohne Pfade |
 | — | [Versionen und Papierkorb](../web/versions.md) |
-| — | [Fachungsfarben](../web/designer.md#fachungsfarben-farbe-je-garn) im Designer (Farbe je Garn) |
+| Schaltplan des [Flechtsimulators](../braiding-simulator/output.md) drucken, als PDF oder CSV | — |
 
 Die vollständige Gegenüberstellung steht unter [Web-App](../web/index.md).
 

@@ -26,6 +26,18 @@
   geändert hat. Alte Fassungen bleiben erhalten. **Alle Rechner am
   gemeinsamen Ordner brauchen Version 2.1.1.** Siehe
   [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
+* **Flechtsimulator** – zusätzlicher Baustein zur Vollversion im Abo: Er
+  zeigt Herzog-Maschinen in Bewegung, mit Klöppeln, Weichen, Zeitprogramm
+  und dem entstehenden Geflecht. Sichtbar wird er, sobald ein Administrator
+  Ihnen im Lizenzportal eine Modell-Lizenz zuweist (*Maschinenmodelle*);
+  die Startseite zeigt Ihre Maschinen. Gearbeitet wird in vier Schritten:
+  **Bestücken**, **Programm** (Weichen schalten, aufnehmen, Zeitachse,
+  Teilung im Lauf), **Prüfen** (Kollisionen, Rapport, Rückkehr jedes
+  Klöppels) und **Ausgeben** (Schaltplan für die Steuerung, als PDF oder
+  CSV). Dazu 3D-Vorschau mit Maschine und Abzug, Flechtwinkel-Bezug und
+  Maschinen mit mehreren Flechtköpfen. In der Web-App ebenfalls, dort ohne
+  Schaltplan. Siehe [Flechtsimulator](../braiding-simulator/index.md) und
+  [Maschinenmodelle zuweisen](../portal/models.md).
 * **Flechtwinkel-Bezug wählbar** – unter *Einstellungen > Allgemein >
   Flechtwinkel* wählen Sie, ob Herzog CAB den Flechtwinkel zur
   Querrichtung (Herzog, Standard) oder zur Geflechtsachse (Fachliteratur)

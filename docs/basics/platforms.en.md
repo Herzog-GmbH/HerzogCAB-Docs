@@ -73,7 +73,7 @@ flowchart LR
 | Built-in web server with QR code | Subscription and ordering in the browser |
 | — | One shared workspace per account without paths |
 | — | [Versions and recycle bin](../web/versions.md) |
-| — | [Plying colors](../web/designer.md#fachungsfarben-farbe-je-garn) in the Designer (color per yarn) |
+| Switching plan of the [Braiding Simulator](../braiding-simulator/output.md): print, save as PDF or CSV | — |
 
 The complete comparison can be found under [Web app](../web/index.md).
 

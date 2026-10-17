@@ -61,7 +61,7 @@ A role is made up of individual permissions, grouped by area:
 | **Factory Planner** | View Factory Planner · Edit Factory Planner |
 | **Orders** | View orders · Edit orders |
 | **Designer** | View designer · Edit designer |
-| **Braiding Simulator** | View Braiding Simulator · Edit Braiding Simulator — only if Herzog CAB includes the Braiding Simulator |
+| **Braiding Simulator** | View Braiding Simulator · Edit Braiding Simulator — only if Herzog CAB includes the Braiding Simulator, see [Licence and rights](../braiding-simulator/licence.md#rechte) |
 | **Print templates** | View print templates · Edit print templates |
 | **Calculations / Export** | Run calculations · Print / Export |
 | **Expert tools** | Open Parameter Explorer |

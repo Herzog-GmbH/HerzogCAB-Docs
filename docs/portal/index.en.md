@@ -36,6 +36,15 @@ Open licence portal*.
 
     [:octicons-arrow-right-24: Users](users.md)
 
+- :material-cog-transfer-outline: **Machine models**
+
+    ---
+
+    Distribute model licences for the Braiding Simulator to users. Only for
+    administrators and only if the account has model licences.
+
+    [:octicons-arrow-right-24: Assign machine models](models.md)
+
 - :material-cart-outline: **Order**
 
     ---
@@ -113,6 +122,7 @@ After signing in, the portal shows a menu bar at the top, and below it the
 | **My account** | Start page: company, customer number, [modules, computers, who is currently working, requests](licenses.md). |
 | **Download** | [Latest version of the desktop app](download.md). Only with a module for the program. |
 | **Users** | [User list, invitations, roles](users.md). |
+| **Machine models** | [Assign model licences for the Braiding Simulator to users](models.md). Only for administrators and only if the account has model licences. |
 | **Order** | Order an annual subscription, buy additional seats or renew, as described under [Subscription and ordering](../web/subscription.md). Only administrators can order. |
 | **Web app** | Opens [app.herzog-cab.com](https://app.herzog-cab.com) in a new tab. Only if the account may use the web app. |
 | **Language** | German or English — the choice applies to your user. |

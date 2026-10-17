@@ -106,6 +106,8 @@ gespeicherten Daten:
   folgt.
 * **Auftrag:** das Feld **Flechtwinkel** im
   [Flechtauftrag](../../orders/braiding-order.md).
+* **Flechtsimulator:** Flechtwinkel in der Geflechtsvorschau, siehe
+  [Flechtwinkel-Bezug](../../braiding-simulator/views.md#flechtwinkel-bezug).
 * **Ausdrucke:** Design-Ausdruck und Platzhalter für den Flechtwinkel in
   [Druckvorlagen](../../print-templates/elements.md), die Winkel-Spalte der
   Designbibliothek und die mobile Ansicht des

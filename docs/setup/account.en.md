@@ -81,6 +81,11 @@ desktop app under *Settings > Licence*.
 You order, renew or add seats to the annual subscription under
 [Subscription and order](../web/subscription.md).
 
+For the full version with a subscription there is the **Braiding Simulator**
+with **model licences** per machine model and user. They appear in the
+licence portal in a separate **Machine models** card, not among the
+modules, see [Braiding Simulator: Licence and rights](../braiding-simulator/licence.md).
+
 !!! info "One subscription for program and web app"
     The annual subscription applies to the program on the computer and to the
     [web app](../web/index.md). In the licence portal, the module then shows

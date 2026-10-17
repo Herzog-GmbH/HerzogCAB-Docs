@@ -81,6 +81,11 @@ Desktop-App unter *Einstellungen > Lizenz*.
 Das Jahresabo bestellen, verlängern oder um Plätze erweitern Sie unter
 [Abo und Bestellung](../web/subscription.md).
 
+Zur Vollversion im Abo gibt es den **Flechtsimulator** mit
+**Modell-Lizenzen** je Maschinenmodell und Benutzer. Sie stehen im
+Lizenzportal in einer eigenen Karte **Maschinenmodelle**, nicht bei den
+Bausteinen, siehe [Flechtsimulator: Lizenz und Rechte](../braiding-simulator/licence.md).
+
 !!! info "Ein Abo für Programm und Web-App"
     Das Jahresabo gilt für das Programm auf dem Rechner und für die
     [Web-App](../web/index.md). Im Lizenzportal steht beim Baustein dann

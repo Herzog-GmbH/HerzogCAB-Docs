@@ -92,7 +92,8 @@ Locked on opening: braiding and winding orders, designs in the
 [machines](machines.md), in the [Factory Planner](hall-planner.md) the
 floor plan and the selected assignment, the template in the
 [Print editor](print-editor.md), the entry in the edit dialog of the
-[master data](master-data.md) and the program in the Braiding Simulator.
+[master data](master-data.md) and the program in the
+[Braiding Simulator](braiding-simulator.md).
 New entries that have not yet been saved, and entries you may only view,
 are not locked by the web app.
 

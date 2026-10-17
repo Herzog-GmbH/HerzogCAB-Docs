@@ -20,6 +20,7 @@ Name steht in der Titelleiste des Fensters.
 |---|---|
 | **Allgemein** | Profil (aktives Profil, **Profil wechseln …**, **Profile verwalten …**), Darstellung (Sprache, Schriftgröße, Design), Diagnose, Datenschutz, Produktionsplanung und Flechtwinkel — siehe [Allgemein](appearance.md) |
 | **Design** | Vorgaben für neue Designs, Ansicht, Animation und Speichern im Designer sowie der Import von Design-Altdaten — siehe [Design](legacy-import.md) |
+| **Flechtsimulator** | Nur mit dem Flechtsimulator: persönliche Startwerte für Wiedergabe und 3D-Vorschau — siehe [3D-Vorschau und Abzug](../../braiding-simulator/views.md#startwerte-in-den-einstellungen) |
 | **Lizenz** | Nur im Kontomodell: Lizenzstatus, Konto, Offline-Miete, Abmelden vom Rechner und Cloud-Upload in die Web-App — siehe [Lizenz und Cloud](license.md) |
 | **Webserver** | Einschalten und Port, Passwort (Pflicht für den Zugriff aus dem Netz), Serverstatus, IP-Auswahl und QR-Code — siehe [Webserver und QR-Code](web-server.md) |
 

@@ -78,7 +78,7 @@ flowchart LR
 | [Print editor](../print-templates/index.md) | loading a template | you load another template. |
 | Machines in the master data ([Braiding machines](../master-data/braiding-machines.md), [Bobbin winding machines](../master-data/winding-machines.md), [Take-up units](../master-data/take-up-machines.md), [Pay-off units](../master-data/pay-off-machines.md), [Creels](../master-data/creels.md)) | opening the edit dialog | you close the dialog. |
 | [Materials](../master-data/materials.md), [Bobbins](../master-data/bobbins.md), [Drums](../master-data/drums.md), [Colors](../master-data/colors.md), [Customers](../master-data/customers.md) | your **first change** in the form. Just selecting and viewing does not lock. | you save or discard your change. |
-| Braiding Simulator | opening a machine: its braiding program (setup and time program) | you open another machine or leave the simulator without unsaved changes. |
+| [Braiding Simulator](../braiding-simulator/index.md) | opening a machine: its braiding program (setup and time program) | you open another machine or leave the simulator without unsaved changes. |
 
 In addition, everywhere:
 

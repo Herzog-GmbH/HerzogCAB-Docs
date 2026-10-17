@@ -21,7 +21,7 @@ displayed in the editor immediately.
 | **New** (tooltip *New template*) | Creates a new, empty template. |
 | **Save** | Saves the current template with all changes. If there are unsaved changes, the button is called **Save \*** and is highlighted in blue. If a colleague has saved the same template in the meantime, Herzog CAB asks (**Overwrite**, **Save as copy**, **Reload**). If they are editing it right now, it is read-only for you (lock in the template selection, banner *Being edited – read only*) — see [Multiple users](../basics/multi-user.md). |
 | **Delete** (tooltip *Delete template*) | Removes the current template (with confirmation prompt). |
-| **Usage** | Specifies what the template is for: calculation, design or order. See [Editor layout](editor.md). |
+| **Usage** | Specifies what the template is for: calculation, design or order, with the Braiding Simulator also **Braiding Simulator** (switching plan, template *Standard switching plan*, see [Output](../braiding-simulator/output.md)). See [Editor layout](editor.md). |
 
 If you leave the editor with unsaved changes, Herzog CAB asks
 whether you want to save first or discard the changes.

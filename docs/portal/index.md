@@ -36,6 +36,15 @@ Lizenzportal öffnen*.
 
     [:octicons-arrow-right-24: Benutzer](users.md)
 
+- :material-cog-transfer-outline: **Maschinenmodelle**
+
+    ---
+
+    Modell-Lizenzen für den Flechtsimulator an Benutzer verteilen. Nur für
+    Administratoren und nur, wenn das Konto Modell-Lizenzen hat.
+
+    [:octicons-arrow-right-24: Maschinenmodelle zuweisen](models.md)
+
 - :material-cart-outline: **Bestellen**
 
     ---
@@ -114,6 +123,7 @@ Seite **Mein Konto**.
 | **Mein Konto** | Startseite: Firma, Kundennummer, [Bausteine, Rechner, wer gerade arbeitet, Anfragen](licenses.md). |
 | **Herunterladen** | [Neueste Version der Desktop-App](download.md). Nur mit einem Baustein für das Programm. |
 | **Benutzer** | [Benutzerliste, Einladungen, Rollen](users.md). |
+| **Maschinenmodelle** | [Modell-Lizenzen für den Flechtsimulator Benutzern zuweisen](models.md). Nur für Administratoren und nur, wenn das Konto Modell-Lizenzen hat. |
 | **Bestellen** | Jahresabo bestellen, Plätze dazukaufen oder verlängern, wie unter [Abo und Bestellung](../web/subscription.md) beschrieben. Bestellen können nur Administratoren. |
 | **Web-App** | Öffnet [app.herzog-cab.com](https://app.herzog-cab.com) in einem neuen Tab. Nur, wenn das Konto die Web-App nutzen darf. |
 | **Sprache** | Deutsch oder Englisch — die Wahl gilt für Ihren Benutzer. |
