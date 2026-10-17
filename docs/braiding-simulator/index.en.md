@@ -69,7 +69,7 @@ from the first click to the switching plan are given under
 
     ---
 
-    Place carriers, color them, set up by pattern; ply count, yarn, tubes.
+    Place and color carriers; ply count, yarn, tubes.
 
     [:octicons-arrow-right-24: Set up](populate.md)
 
@@ -86,7 +86,7 @@ from the first click to the switching plan are given under
 
     ---
 
-    Messages, collision check, basic run, repeat and interlacing.
+    Messages, collision check, repeat and interlacing.
 
     [:octicons-arrow-right-24: Check](check.md)
 
@@ -212,7 +212,6 @@ some of the functions:
 |---|---|---|
 | Print the switching plan, save it as PDF and CSV | ✔ | — |
 | Covering and material diameter per setup | ✔ | Material diameter per browser, no covering |
-| Set up by pattern | All patterns with running direction, own colors and check against the time program | Only the fixed templates |
 | Thread yarns into tubes with a click | ✔ | — |
 | Insert operating mode | ✔ | — |
 | Operation on tablet and smartphone | — | ✔ |

@@ -63,7 +63,7 @@ zuletzt gewählte Vorlage.
 
 | Knopf | Wirkung |
 |---|---|
-| **Drucken…** | Öffnet den Schaltplan mit der gewählten Vorlage in der Druckvorschau (Fenster *Schaltplan: &lt;Programm&gt;*). |
+| **Drucken…** | Öffnet den Schaltplan mit der gewählten Vorlage in der Druckvorschau (Fenster *Schaltplan: &lt;Programm&gt;*). Die Vorschau zeigt die Seiten im Format und in der Ausrichtung der Vorlage, bei **Standard Schaltplan** also A4 quer. |
 | **Als PDF speichern…** | Speichert den Schaltplan mit der gewählten Vorlage als PDF. |
 | **Als CSV speichern…** (Bereich **Daten**) | Speichert Programmdaten, Startzustand, Schaltfolge, Abzug, Stellhebel und die Zustände aller Weichen und Räder je Schaltpunkt als Tabelle, zum Beispiel für Excel. |
 
@@ -108,7 +108,9 @@ und Abzug beim Start stehen; Spalten **Bauteil**, **Zustand**,
 
 Je Schaltung eine Zeile mit **Nr.**, **Schritt**, **Umdrehung**, **Zeit ab
 Start**, **Länge ab Start**, **Bauteil**, **Schaltung** und
-**Einzelheiten**. Beispiele:
+**Einzelheiten**. Ohne Drehzahl im Zeitprogramm bleiben **Zeit ab Start**
+und **Länge ab Start** leer (*–*), ohne Abzug die **Länge ab Start**. Den
+Grund nennt ein [Hinweis](#hinweise) über der Schaltfolge. Beispiele:
 
 | Bauteil | Schaltung |
 |---|---|
@@ -144,11 +146,13 @@ nur in der CSV, nicht im Druck.
 ## Hinweise { #hinweise }
 
 Der Schaltplan meldet, was an der Maschine nicht so umsetzbar ist oder
-noch fehlt. Im Druck stehen die Hinweise vorn in der Schaltfolge.
+noch fehlt. Im Druck stehen die Hinweise über der Schaltfolge.
 
 | Hinweis | Bedeutung |
 |---|---|
 | *Flügelraddrehzahl fehlt: Zeiten und Abzugslängen sind unbekannt.* | In der Zeitachse eine [Drehzahl](views.md#drehzahl) setzen. |
+| *Im Zeitprogramm sind weder Drehzahl noch Abzug gesetzt: Zeit und Länge ab Start sind unbekannt. Beides steht in der Zeitachse in den Zeilen „Drehzahl“ und „Abzug“.* | Die Spalten **Zeit ab Start** und **Länge ab Start** der Schaltfolge bleiben leer. In der Zeitachse [Drehzahl](views.md#drehzahl) und [Abzug](views.md#abzug) setzen. |
+| *Im Zeitprogramm ist kein Abzug gesetzt: die Länge ab Start ist unbekannt. Der Abzug steht in der Zeitachse in der Zeile „Abzug“.* | Die Spalte **Länge ab Start** bleibt leer. In der Zeitachse einen [Abzug](views.md#abzug) setzen. |
 | *Schlaglänge, Flechtwinkel und PPI kommen aus der 3D-Vorschau: für vollständige Werte die Geflechtsvorschau einschalten.* | Die 3D-Vorschau ist ausgeblendet; über **Ansicht > 3D-Vorschau** einschalten. |
 | *Stellhebel n steht beim Start gemischt — an der Maschine nicht möglich.* | Die Weichen eines Stellhebels stehen beim Start unterschiedlich. |
 | *Im Programm wird ein Stellhebel nur teilweise umgestellt — an der Maschine nicht möglich. Die Weichen stehen einzeln in der Schaltfolge.* | Das Programm schaltet nur einen Teil der Weichen eines Stellhebels. |

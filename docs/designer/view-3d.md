@@ -70,7 +70,7 @@ Unter dem Bild liegt die **Reglerzeile**:
 | **Darstellung** | *Vorgabe der Geflechtsart*, *Nur Abbindung (Schema)*, *Automatisch*, *Wie die Maschine steht*, *Korrektur: immer rund*, *Korrektur: immer Litze* | Wie der Querschnitt hergeleitet wird: *Nur Abbindung* zeigt Fadenfolge und Kreuzungen auf dem normierten Querschnitt (ohne Radpositionen und Radgrößen); *Automatisch* und *Wie die Maschine steht* leiten ihn aus den Gangbahnen ab. Die Vorgabe je Geflechtsart ist Abbindung für Rund, Spirale und Soutache, gerade gezogen für Litze, Maschinenform für Quadrat und Packung. |
 | **Ausrichtung** | *Oben → unten*, *Unten → oben* | Dreht nur die 3D-Anzeige des Geflechts — je nachdem, ob Sie die Maschine von oben oder von unten betrachten möchten. |
 
-Die **Bedeckung** aus der [Maßzeile](parameters.md#mazeile-in-der-vorschau)
+Die **Bedeckung** im Parameter-Panel unter [Fachung](parameters.md#material-bedeckung-geflechts)
 bestimmt die gezeichnete Fadendicke; der **Flechtwinkel** wirkt live. Läuft
 die [Gangbahn-Animation](animation.md), wächst das 3D-Geflecht synchron mit
 — *Zurück auf Anfang* zeigt wieder das ganze Geflecht. Diese Einstellungen
@@ -91,7 +91,7 @@ gelten für den Designer insgesamt, nicht je Design.
 ## Verwandte Seiten
 
 * [Designer-Überblick](index.md) — Zoomen und Verschieben der Vorschau
-* [Geflechtsart und Parameter](parameters.md) — Geflechtsart wählen, Maßzeile
+* [Geflechtsart und Parameter](parameters.md) — Geflechtsart wählen, Material-Ø und Bedeckung
 * [Färben und Texturieren](painting.md) — Texturdarstellung im flachen Flechtbild
 * [Besetzung und Gangbahn-Animation](animation.md) — die Kinematik hinter dem 3D-Modell
 * [Design (Einstellungen)](../admin/settings/legacy-import.md) — Ansicht merken

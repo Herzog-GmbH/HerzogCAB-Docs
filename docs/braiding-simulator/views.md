@@ -23,14 +23,26 @@ Werte stehen im Zeitprogramm und kommen in den
 Oben an der 3D-Vorschau liegen von links nach rechts:
 
 1. der Umschalter **Geflecht** | **Schema** | **Maschine**,
-2. das Info-Symbol **ⓘ** (nur Kurzhinweis zur Bedienung mit der Maus),
-3. das **Zahnrad** mit den Einstellungen der 3D-Vorschau,
-4. **✕** zum Ausblenden.
+2. das **Zahnrad** mit den Einstellungen der 3D-Vorschau,
+3. **✕** zum Ausblenden.
 
 Im Bild selbst stehen oben die festen Ansichten, unter dem Bild ein bis
 zwei Infozeilen. Den Platz zwischen Maschine und 3D-Vorschau verteilen Sie
 mit dem Teiler dazwischen (*Ziehen: Platz zwischen Maschine und
 3D-Vorschau verteilen*).
+
+So bedienen Sie die Vorschau mit der Maus:
+
+* Oben im Bild stehen drei [feste Ansichten](#feste-ansichten-und-schloss);
+  das **Schloss** daneben sperrt das Drehen. In der Ansicht
+  [Maschine](#ansicht-maschine) gibt es kein Schloss.
+* Bei offenem Schloss dreht die linke Maustaste das Geflecht, die rechte
+  verschiebt es. Ein Doppelklick stellt die gewählte Ansicht wieder her.
+* Das Mausrad zoomt immer, auch bei gesperrtem Schloss.
+* Ein Millimetermaß zeigt die Vorschau, sobald unter
+  [Bestücken > Garn](populate.md#garn) ein Materialdurchmesser eingetragen
+  oder ein [Kern eingezogen](populate.md#rohr) ist, siehe
+  [Infozeilen unter dem Bild](#infozeilen-unter-dem-bild).
 
 ## Bedienelemente im Detail
 

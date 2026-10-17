@@ -1,6 +1,6 @@
 # Check
 
-!!! abstract "Reference — The “Check” task: errors and notes, collision check over the whole run, basic run without program, repeat and interlacing"
+!!! abstract "Reference — The “Check” task: errors and notes, collision check over the whole run, repeat and interlacing"
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
@@ -49,15 +49,19 @@ Typical messages:
 | Element | Effect |
 |---|---|
 | **Check current arrangement** | Sets the run to the start and calculates it in one go: collisions, repeat, color pattern, whether every carrier returns to its place, and the interlacing per section. |
-| **Basic run without program** | Checkbox: checks the setup only with the start position of the switches and gears, without the commands of the time program. This shows you whether the setup runs as such before you add changeovers. |
+
+The check always uses the program selected under **Program** at the top,
+starting from the start arrangement. If it shows **— no program —**, the
+simulator checks the setup only with the start position of the switches
+and gears. This shows you whether the setup runs as such before you add
+changeovers.
 
 After every change to the program, arrangement or start position, it reads
 *Program or arrangement changed — please check again.*
 
 ### Reading the result { #das-ergebnis-lesen }
 
-The result begins with *Check from start arrangement:* (or *…, basic
-run without program:*). Then:
+The result begins with *Check from start arrangement:*. Then:
 
 | Line | Meaning |
 |---|---|
@@ -105,9 +109,9 @@ program, the [timeline](program.md#zeitachse) shows the row hatched as
 
 ## Typical procedure { #typischer-ablauf }
 
-1. Choose a setup, switch on **Basic run without program**, click
+1. Choose a setup, select **— no program —** under **Program**, click
    **Check current arrangement**: the setup must run collision-free.
-2. Clear the checkbox, choose a program and check again.
+2. Choose a program and check again.
 3. With ❌: **Jump to step**, look at the machine, move or change the
    command in the [timeline](program.md#zeitachse).
 4. With *repeat not reached* or a repeat that is much longer than the

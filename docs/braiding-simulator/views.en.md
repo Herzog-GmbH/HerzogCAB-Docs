@@ -23,14 +23,26 @@ in the time program and go into the
 At the top of the 3D preview, from left to right, are:
 
 1. the switch **Braid** | **Schematic** | **Machine**,
-2. the info symbol **ⓘ** (only a tooltip on mouse operation),
-3. the **gear icon** with the settings of the 3D preview,
-4. **✕** to hide it.
+2. the **gear icon** with the settings of the 3D preview,
+3. **✕** to hide it.
 
 In the image itself, the fixed views are at the top, and one or two info
 lines are below the image. You distribute the space between machine and
 3D preview with the splitter between them (*Drag: share the space between
 machine and 3D preview*).
+
+How to operate the preview with the mouse:
+
+* At the top of the image there are three [fixed views](#feste-ansichten-und-schloss);
+  the **lock** next to them blocks rotation. The
+  [Machine](#ansicht-maschine) view has no lock.
+* With the lock open, the left mouse button rotates the braid and the
+  right one pans it. A double-click restores the selected view.
+* The mouse wheel always zooms, even when the lock is closed.
+* The preview shows a scale in millimeters as soon as a material diameter
+  is entered under [Set up > Yarn](populate.md#garn) or a
+  [core is threaded in](populate.md#rohr), see
+  [Info lines below the image](#infozeilen-unter-dem-bild).
 
 ## Controls in detail { #bedienelemente-im-detail }
 

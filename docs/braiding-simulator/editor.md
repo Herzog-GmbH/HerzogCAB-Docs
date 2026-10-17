@@ -52,7 +52,8 @@ in allen Aufgaben gleich ist; die Aufgaben selbst haben eigene Seiten.
 | **Weichen mit Nummern** | Weichen und feste Bauteile mit ihrer W-Nummer, wie in der Zeitachse. Runde Symbole lassen sich schalten, eckige sind feste Bauteile. | an |
 | **Laufrichtung** | Färbt jeden leeren Platz nach der Richtung, in die ein Klöppel dort um die Maschine liefe: die beiden Fadensysteme des Geflechts. Dazu Drehpfeile an den Naben, Richtungspfeile an den Klöppeln und unten links eine Legende (*im Uhrzeigersinn*, *gegen den Uhrzeigersinn*, *pendelt*, *bleibt am Rad*, *Sackgasse*). Fahren Sie mit der Maus über einen leeren Platz, zeigt die Ansicht dessen Bahn. | an |
 | **Klöppelnummern** | Nummer jedes Klöppels und die Bezeichnung der Rohre. | aus |
-| **Leere Plätze** | Leere Klöppelplätze und die Einschnitte der Räder. | an |
+| **Leere Plätze** | Leere Klöppelplätze. | an |
+| **Einschnitte** | Die Einschnitte der Flügelräder. | an |
 | **3D-Vorschau** | Blendet die [3D-Vorschau](views.md) ein oder aus. | an |
 | **Maschine einpassen** | Zeigt die ganze Maschine (auch ++ctrl+0++ oder Doppelklick auf eine freie Stelle). | — |
 
@@ -84,7 +85,7 @@ Die rechte Leiste hat eine feste Breite. Unten liegen die vier Aufgaben:
 
 | Reiter | Inhalt |
 |---|---|
-| [**Bestücken**](populate.md) | Klöppel setzen, färben und nach Muster bestücken; Garn und Rohrfäden. Ein Klick auf einen leeren Platz setzt einen Klöppel. |
+| [**Bestücken**](populate.md) | Klöppel setzen und färben; Garn und Rohrfäden. Ein Klick auf einen leeren Platz setzt einen Klöppel. |
 | [**Programm**](program.md) | Weichen und Räder im Lauf, Betriebsarten, Drehzahl und Abzug. Ein Klick auf eine Weiche schaltet sie. |
 | [**Prüfen**](check.md) | Fehler und Hinweise, Kollisionsprüfung über den ganzen Lauf. Ein roter bzw. oranger Punkt am Reiter zeigt Fehler bzw. Hinweise. |
 | [**Ausgeben**](output.md) | Schaltplan für die Steuerung: drucken, als PDF oder CSV. |
@@ -129,8 +130,7 @@ und speichert die Programme:
   entsteht eine eigene Kopie *&lt;Name&gt; – eigene*; das Original bleibt
   unverändert.
 * Ist keine Besetzung gewählt (zum Beispiel nach **Alle Klöppel
-  entfernen** oder **Bestücken nach Muster…**), fragt das Programm nach
-  einem Namen.
+  entfernen**), fragt das Programm nach einem Namen.
 * Ändern Sie ein Programm von Herzog, legt der Simulator sofort eine eigene
   Kopie an: *Eigene Kopie „… – eigene“ angelegt — das Programm von Herzog
   bleibt unverändert.*

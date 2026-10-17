@@ -13,7 +13,7 @@
 ```mermaid
 flowchart LR
   A["Open machine"] --> B["Choose and adjust<br>setup"]
-  B --> C["Check basic run"]
+  B --> C["Check setup"]
   C --> D["Create and record<br>program"]
   D --> E["Take-up and speed"]
   E --> F["Check"]
@@ -47,16 +47,13 @@ The machine appears with the configuration in the
    the tube.
 6. Choose **Save as new setup…** and enter a name.
 
-!!! tip "Set up by pattern"
-    Instead of placing them by hand, **Set up by pattern…** distributes
-    the carriers full, half, as tandem or in one running direction only,
-    optionally with one color per running direction.
+## Step 3: Check the setup { #schritt-3-besetzung-prufen }
 
-## Step 3: Check the basic run { #schritt-3-grundlauf-prufen }
-
-1. Open the **Check** task ([reference](../braiding-simulator/check.md)).
-2. Tick **Basic run without program** and click
-   **Check current arrangement**.
+1. If a program is selected under **Program** at the top, select
+   **— no program —** there. Without a program, the simulator checks the
+   setup with the start position of the switches and gears.
+2. Open the **Check** task ([reference](../braiding-simulator/check.md))
+   and click **Check current arrangement**.
 3. The result must be *✅ Collision-free — repeat after … steps*.
 
 If the setup itself does not run collision-free, adjust it before you
@@ -98,8 +95,8 @@ these values.
 
 ## Step 6: Check and save { #schritt-6-prufen-und-speichern }
 
-1. In **Check**, remove the tick from **Basic run without program** and
-   click **Check current arrangement**.
+1. In **Check**, click **Check current arrangement**. The check uses the
+   program selected under **Program** at the top.
 2. If the result is ❌, jump to the collision with **Jump to step** and
    correct the command in the timeline; then check again.
 3. If the repeat is much longer than the program, accept the suggestion

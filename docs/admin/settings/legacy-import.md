@@ -32,7 +32,7 @@ Designs bleiben unverändert.
 | Einstellung | Wirkung |
 |---|---|
 | **Zuletzt genutzte Ansicht merken** | Ist die Option aktiv (Standard), merkt sich der Designer je Geflechtsart die zuletzt gewählte Ansicht (Voll, Halb, Zylinder/Vierkant/Kante samt Drehwinkel oder 3D) und stellt sie beim nächsten Start wieder her. Ohne die Option startet jede Geflechtsart in der vollen Abwicklung; die gemerkten Werte bleiben erhalten. |
-| **Maßzeile in der Vorschau anzeigen (Material-Ø, Bedeckung, Geflechts-Ø)** | Blendet die Maßzeile in der Titelleiste der Vorschau ein oder aus (Standard: ein). Die Änderung wirkt beim nächsten Neuzeichnen, z. B. beim Wechsel des Design-Fensters. |
+| **Material-Ø, Bedeckung und Geflechts-Ø anzeigen** | Blendet die drei Felder im Designer links unter **Fachung** ein oder aus (Standard: ein), siehe [Geflechtsart und Parameter](../../designer/parameters.md#material-bedeckung-geflechts). Die Änderung wirkt beim nächsten Neuzeichnen, z. B. beim Wechsel des Design-Fensters. |
 
 ### Animation
 

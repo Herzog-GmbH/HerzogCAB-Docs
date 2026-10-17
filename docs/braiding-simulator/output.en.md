@@ -62,7 +62,7 @@ remembers the template selected last.
 
 | Button | Effect |
 |---|---|
-| **Print…** | Opens the switching plan with the selected template in the print preview (window *Switching plan: &lt;program&gt;*). |
+| **Print…** | Opens the switching plan with the selected template in the print preview (window *Switching plan: &lt;program&gt;*). The preview shows the pages in the paper size and orientation of the template, so A4 landscape for **Standard switching plan**. |
 | **Save as PDF…** | Saves the switching plan with the selected template as a PDF. |
 | **Save as CSV…** (**Data** area) | Saves program data, start state, switching sequence, take-up, shift levers and the states of all switches and gears per switching point as a table, for example for Excel. |
 
@@ -108,7 +108,10 @@ rotation), pitches and take-up are set at the start; columns
 
 One row per action with **No.**, **Step**, **Revolution**, **Time from
 start**, **Length from start**, **Component**, **Action** and
-**Details**. Examples:
+**Details**. Without a speed in the time program, **Time from start** and
+**Length from start** stay empty (*–*); without a take-up, **Length from
+start** does. A [note](#hinweise) above the switching sequence gives the
+reason. Examples:
 
 | Component | Action |
 |---|---|
@@ -144,12 +147,14 @@ block only exists in the CSV, not in the printout.
 ## Notes { #hinweise }
 
 The switching plan reports what cannot be implemented like this on the
-machine or is still missing. In the printout, the notes appear at the
-beginning of the switching sequence.
+machine or is still missing. In the printout, the notes appear above the
+switching sequence.
 
 | Note | Meaning |
 |---|---|
 | *Horngear speed missing: times and take-up lengths are unknown.* | Set a [speed](views.md#drehzahl) in the timeline. |
+| *The time program sets neither speed nor take-up: time and length from start are unknown. Both are set in the “Speed” and “Take-up” rows of the timeline.* | The **Time from start** and **Length from start** columns of the switching sequence stay empty. Set the [speed](views.md#drehzahl) and the [take-up](views.md#abzug) in the timeline. |
+| *The time program sets no take-up: the length from start is unknown. The take-up is set in the “Take-up” row of the timeline.* | The **Length from start** column stays empty. Set a [take-up](views.md#abzug) in the timeline. |
 | *Lay length, braiding angle and PPI come from the 3D preview: switch on the braid preview for complete values.* | The 3D preview is hidden; switch it on via **View > 3D preview**. |
 | *Shift lever n is mixed at the start — not possible on the machine.* | The switches of a shift lever are set differently at the start. |
 | *The program only partly moves a shift lever — not possible on the machine. The switches are listed individually in the switching sequence.* | The program switches only some of the switches of a shift lever. |

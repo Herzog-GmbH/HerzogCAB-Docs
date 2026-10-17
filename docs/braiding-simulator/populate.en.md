@@ -1,14 +1,14 @@
 # Set up
 
-!!! abstract "Reference — The “Set up” task: placing and removing carriers, colors, ply count and numbers, set up by pattern, yarn and covering, tube threads and saving setups"
+!!! abstract "Reference — The “Set up” task: placing and removing carriers, colors, ply count and numbers, yarn and covering, tube threads and saving setups"
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
 Before a program can run, the machine needs carriers. The quickest way is
 to select a **configuration** from Herzog at the top (*Full*, *Half*,
-*Tandem* …) and adjust it. You can also set up the machine by hand or by a
-pattern. Colors, ply count and yarn determine what the braid looks like in
-the [3D preview](views.md); together you save everything as a **setup**.
+*Tandem* …) and adjust it. You can also set up the machine by hand.
+Colors, ply count and yarn determine what the braid looks like in the
+[3D preview](views.md); together you save everything as a **setup**.
 
 Placing and removing carriers always belongs to the setup, never to the
 program. Even during recording, it does not become a program command.
@@ -16,7 +16,7 @@ program. Even during recording, it does not become a program command.
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
 !!! warning "📷 Screenshot missing"
-    **Subject:** “Set up” task with the groups Carriers (Set up by pattern…, Color for new carriers, Select all carriers, Remove all carriers), Yarn (Material diameter, Covering) and Setup; above it the selection card of a carrier with ply count 3 and individual colors.
+    **Subject:** “Set up” task with the groups Carriers (Color for new carriers, Select all carriers, Remove all carriers), Yarn (Material diameter, Covering) and Setup; above it the selection card of a carrier with ply count 3 and individual colors.
     **How to create:** Customer build with a model licence, open a machine, “Set up” tab, click a carrier and set the ply count to 3.
     **Target file:** `assets/screenshots/braiding-simulator/bestuecken.png`
 
@@ -43,8 +43,7 @@ placed here at …*; then place it at the start or on another position.
 
 | Element | Effect |
 |---|---|
-| **Set up by pattern…** | Distributes the carriers evenly over the tracks of the machine, see [below](#bestucken-nach-muster). |
-| **Color for new carriers** | Button showing the current placement color. A click opens the selection: **Automatic (color rotation)** (every carrier gets its own color), **Standard colors** from the [color library](../master-data/colors.md), **Recently used** and **Choose custom color…**. |
+| **Color for new carriers** | Button showing the current placement color. A click opens the selection: **Standard colors** from the [color library](../master-data/colors.md), **Recently used** and **Choose custom color…**. New carriers always get the selected color; the default is blue. Carriers without a color of their own from configurations and older setups keep their automatically assigned colors. |
 | **Select all carriers** | Selects all carriers so that you can change ply count, arrangement or color together (in the machine also ++ctrl+a++). |
 | **Remove all carriers** | After a confirmation prompt, takes all carriers off the machine. A saved setup is kept; the **Setup** list then no longer shows a setup. |
 
@@ -94,31 +93,6 @@ in the [selection card](#rohr). The tube threads belong to the setup.
 reminds you: *“Save” at the top writes changes back to the selected
 setup.*
 
-## Set up by pattern { #bestucken-nach-muster }
-
-!!! warning "📷 Screenshot missing"
-    **Subject:** “Set up by pattern” dialog with the pattern Full, Color per running direction, two color buttons and the result line “✅ 32 carriers — 16 clockwise, 16 counterclockwise. Runs collision-free with “…”.”
-    **How to create:** Open a machine with a program, Set up > Set up by pattern….
-    **Target file:** `assets/screenshots/braiding-simulator/bestuecken-muster.png`
-
-The dialog distributes the carriers evenly over the tracks of the machine,
-with the switches as they are now. The current arrangement is replaced;
-**Undo** brings it back.
-
-| Field | Meaning |
-|---|---|
-| **Pattern** | **Full** (every 2nd position of each track, the normal setup), **Half** (every 4th position of each track), **Tandem** (every 2nd gear fully occupied), **One running direction only** (only the tracks of one running direction, every 2nd position, for example for a spiral) or **As many as possible** (the largest collision-free setup that can be found). |
-| **Running direction** | **Clockwise** or **Counterclockwise**; only with *One running direction only*. |
-| **Color per running direction** | The carriers of one running direction get one color, those of the other the second color, as in the braid pattern. Without the tick, the color for new carriers applies. |
-| **Colors** | The two colors **clockwise** (red by default) and **counterclockwise** (yellow by default). |
-| **Check against the time program** | Only with a selected program: accepts only a position that runs collision-free with this program. If there are several equivalent positions, only the one the program was written for fits this way. Not available with *Tandem* and *As many as possible*. |
-
-The result line recalculates with every change, for example *✅ 32
-carriers — 16 clockwise, 16 counterclockwise. Runs collision-free with
-“…”.* If the pattern does not work, it shows ❌ with the reason.
-**Set up** places the carriers; the new arrangement is not yet a saved
-setup.
-
 ## Selection card: carrier and tube { #auswahlkarte-kloppel }
 
 ### A single carrier { #ein-kloppel }
@@ -144,7 +118,7 @@ selection. The card shows differing initial values as *— different —*.
 |---|---|
 | **Ply count**, **Arrangement** | For all selected carriers. |
 | **Color…** | One color for all selected carriers; with a ply count above 1, for all yarns. |
-| **Color by running direction** | The clockwise carriers get one color, the counterclockwise carriers the other, the same colors as for set up by pattern. |
+| **Color by running direction** | The clockwise carriers get one color, the counterclockwise carriers the other, red and yellow by default. |
 
 ### Tube { #rohr }
 
@@ -181,9 +155,6 @@ confirmation prompt.
 
 ## In the web app { #in-der-web-app }
 
-* **Set up by pattern…** offers only the patterns and **Color per running
-  direction** with fixed colors; running direction, custom colors and
-  **Check against the time program** are missing.
 * The **Covering** cannot be set. The **Material diameter** applies per
   browser to all machines and is not saved with the setup.
 * **Tube threads** cannot be threaded in by clicking; they only come from

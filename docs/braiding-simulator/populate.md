@@ -1,15 +1,15 @@
 # Bestücken
 
-!!! abstract "Referenz — Die Aufgabe „Bestücken“: Klöppel setzen und entfernen, Farben, Fachung und Nummern, Bestücken nach Muster, Garn und Bedeckung, Rohrfäden und Besetzungen speichern"
+!!! abstract "Referenz — Die Aufgabe „Bestücken“: Klöppel setzen und entfernen, Farben, Fachung und Nummern, Garn und Bedeckung, Rohrfäden und Besetzungen speichern"
 
 ## Wofür Sie diesen Bereich nutzen
 
 Bevor ein Programm laufen kann, braucht die Maschine Klöppel. Am
 schnellsten wählen Sie oben eine **Konfiguration** von Herzog (*Voll*,
 *Halb*, *Tandem* …) und passen sie an. Sie können die Maschine auch von
-Hand oder nach einem Muster bestücken. Farben, Fachung und Garn bestimmen,
-wie das Geflecht in der [3D-Vorschau](views.md) aussieht; zusammen
-speichern Sie alles als **Besetzung**.
+Hand bestücken. Farben, Fachung und Garn bestimmen, wie das Geflecht in
+der [3D-Vorschau](views.md) aussieht; zusammen speichern Sie alles als
+**Besetzung**.
 
 Klöppel setzen und entfernen gehört immer zur Besetzung, nie zum
 Programm. Auch während der Aufnahme wird daraus kein Programmbefehl.
@@ -17,7 +17,7 @@ Programm. Auch während der Aufnahme wird daraus kein Programmbefehl.
 ## Der Bildschirm im Überblick
 
 !!! warning "📷 Screenshot fehlt"
-    **Motiv:** Aufgabe „Bestücken“ mit den Gruppen Klöppel (Bestücken nach Muster…, Farbe für neue Klöppel, Alle Klöppel auswählen, Alle Klöppel entfernen), Garn (Materialdurchmesser, Bedeckung) und Besetzung; darüber die Auswahlkarte eines Klöppels mit Fachung 3 und Einzelfarben.
+    **Motiv:** Aufgabe „Bestücken“ mit den Gruppen Klöppel (Farbe für neue Klöppel, Alle Klöppel auswählen, Alle Klöppel entfernen), Garn (Materialdurchmesser, Bedeckung) und Besetzung; darüber die Auswahlkarte eines Klöppels mit Fachung 3 und Einzelfarben.
     **So erzeugen:** Kundenbuild mit Modell-Lizenz, Maschine öffnen, Reiter „Bestücken“, einen Klöppel anklicken und Fachung auf 3 stellen.
     **Ziel-Datei:** `assets/screenshots/braiding-simulator/bestuecken.png`
 
@@ -44,8 +44,7 @@ einsetzen*; setzen Sie ihn dann am Start oder auf einen anderen Platz.
 
 | Element | Wirkung |
 |---|---|
-| **Bestücken nach Muster…** | Verteilt die Klöppel regelmäßig auf die Bahnen der Maschine, siehe [unten](#bestucken-nach-muster). |
-| **Farbe für neue Klöppel** | Knopf mit der aktuellen Setzfarbe. Ein Klick öffnet die Auswahl: **Automatisch (Farbrotation)** (jeder Klöppel bekommt eine eigene Farbe), **Standardfarben** aus der [Farbbibliothek](../master-data/colors.md), **Zuletzt verwendet** und **Eigene Farbe wählen…**. |
+| **Farbe für neue Klöppel** | Knopf mit der aktuellen Setzfarbe. Ein Klick öffnet die Auswahl: **Standardfarben** aus der [Farbbibliothek](../master-data/colors.md), **Zuletzt verwendet** und **Eigene Farbe wählen…**. Neue Klöppel bekommen immer die gewählte Farbe; Standard ist Blau. Klöppel ohne eigene Farbe aus Konfigurationen und älteren Besetzungen behalten ihre automatisch verteilten Farben. |
 | **Alle Klöppel auswählen** | Wählt alle Klöppel, um Fachung, Anordnung oder Farbe gemeinsam zu ändern (in der Maschine auch ++ctrl+a++). |
 | **Alle Klöppel entfernen** | Nimmt nach Rückfrage alle Klöppel von der Maschine. Eine gespeicherte Besetzung bleibt erhalten; die Liste **Besetzung** zeigt danach keine Besetzung mehr an. |
 
@@ -97,31 +96,6 @@ Besetzung an (dasselbe wie im Menü **⋯** neben **Besetzung**). Der Hinweis
 darunter erinnert: *„Speichern“ oben schreibt Änderungen in die gewählte
 Besetzung zurück.*
 
-## Bestücken nach Muster { #bestucken-nach-muster }
-
-!!! warning "📷 Screenshot fehlt"
-    **Motiv:** Dialog „Bestücken nach Muster“ mit Muster Voll, Farbe je Laufrichtung, zwei Farbknöpfen und der Ergebniszeile „✅ 32 Klöppel — 16 im, 16 gegen den Uhrzeigersinn. Läuft mit „…“ kollisionsfrei.“
-    **So erzeugen:** Maschine mit Programm öffnen, Bestücken > Bestücken nach Muster….
-    **Ziel-Datei:** `assets/screenshots/braiding-simulator/bestuecken-muster.png`
-
-Der Dialog verteilt die Klöppel regelmäßig auf die Bahnen der Maschine, so
-wie die Weichen gerade stehen. Die bisherige Aufstellung wird ersetzt;
-**Rückgängig** holt sie zurück.
-
-| Feld | Bedeutung |
-|---|---|
-| **Muster** | **Voll** (jeder 2. Platz jeder Bahn, die Normalbesetzung), **Halb** (jeder 4. Platz jeder Bahn), **Tandem** (jedes 2. Rad voll besetzt), **Nur eine Laufrichtung** (nur die Bahnen einer Laufrichtung, jeder 2. Platz, zum Beispiel für eine Spirale) oder **So viele wie möglich** (die größte kollisionsfreie Besetzung, die sich finden lässt). |
-| **Laufrichtung** | **Im Uhrzeigersinn** oder **Gegen den Uhrzeigersinn**; nur bei *Nur eine Laufrichtung*. |
-| **Farbe je Laufrichtung** | Die Klöppel einer Laufrichtung bekommen die eine Farbe, die der anderen die zweite, wie im Flechtbild. Ohne Häkchen gilt die Farbe für neue Klöppel. |
-| **Farben** | Die beiden Farben **im Uhrzeigersinn** (Standard rot) und **gegen den Uhrzeigersinn** (Standard gelb). |
-| **Mit dem Zeitprogramm prüfen** | Nur mit gewähltem Programm: Nimmt nur eine Lage, die mit diesem Programm kollisionsfrei läuft. Gibt es mehrere gleichwertige Lagen, passt so nur die, zu der das Programm geschrieben ist. Bei *Tandem* und *So viele wie möglich* nicht verfügbar. |
-
-Die Ergebniszeile rechnet bei jeder Änderung neu, zum Beispiel *✅ 32
-Klöppel — 16 im, 16 gegen den Uhrzeigersinn. Läuft mit „…“
-kollisionsfrei.* Geht das Muster nicht, steht dort ❌ mit dem Grund.
-**Bestücken** setzt die Klöppel; die neue Aufstellung ist noch keine
-gespeicherte Besetzung.
-
 ## Auswahlkarte: Klöppel und Rohr { #auswahlkarte-kloppel }
 
 ### Ein Klöppel
@@ -147,7 +121,7 @@ Unterschiedliche Ausgangswerte zeigt die Karte als *— unterschiedlich —*.
 |---|---|
 | **Fachung**, **Anordnung** | Für alle ausgewählten Klöppel. |
 | **Farbe…** | Eine Farbe für alle ausgewählten Klöppel, bei Fachung für alle Garne. |
-| **Nach Laufrichtung färben** | Die Klöppel im Uhrzeigersinn bekommen die eine, die gegen den Uhrzeigersinn die andere Farbe, dieselben wie beim Bestücken nach Muster. |
+| **Nach Laufrichtung färben** | Die Klöppel im Uhrzeigersinn bekommen die eine, die gegen den Uhrzeigersinn die andere Farbe, standardmäßig Rot und Gelb. |
 
 ### Rohr { #rohr }
 
@@ -186,9 +160,6 @@ Besetzung nach Rückfrage.
 
 ## In der Web-App
 
-* **Bestücken nach Muster…** bietet nur die Muster und **Farbe je
-  Laufrichtung** mit festen Farben; Laufrichtung, eigene Farben und **Mit
-  dem Zeitprogramm prüfen** fehlen.
 * Die **Bedeckung** lässt sich nicht einstellen. Der
   **Materialdurchmesser** gilt je Browser für alle Maschinen und wird nicht
   mit der Besetzung gespeichert.

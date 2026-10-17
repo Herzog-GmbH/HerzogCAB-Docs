@@ -85,7 +85,6 @@ Zeitachse.
 | Funktion der Desktop-App | Im Browser |
 |---|---|
 | [Schaltplan](../braiding-simulator/output.md) drucken, als PDF und CSV | **Ausgeben** zeigt nur: *Den Schaltplan für die Steuerung (Drucken, PDF, CSV) gibt es bisher nur in Herzog CAB am PC.* |
-| [Bestücken nach Muster](../braiding-simulator/populate.md#bestucken-nach-muster) mit Wahl der Laufrichtung, eigenen Farben und **Mit dem Zeitprogramm prüfen** | Nur die Muster selbst und **Farbe je Laufrichtung** mit festen Farben. |
 | **Bedeckung** | Nicht einstellbar; angezeigt wird sie in Infozeile, Abzug und Maschine 3D. |
 | **Materialdurchmesser** je Besetzung | Gilt je Browser für alle Maschinen und wird nicht mit der Besetzung gespeichert. Ein Materialdurchmesser aus einem Programm der Desktop-App geht im Abzug vor. |
 | [Rohrfäden](../braiding-simulator/populate.md#rohrfaden) per Klick einziehen | Rohrfäden kommen nur aus einer gespeicherten Besetzung. |

@@ -68,7 +68,7 @@ vom ersten Klick bis zum Schaltplan finden Sie unter
 
     ---
 
-    Klöppel setzen, färben, nach Muster bestücken; Fachung, Garn, Rohre.
+    Klöppel setzen und färben; Fachung, Garn, Rohre.
 
     [:octicons-arrow-right-24: Bestücken](populate.md)
 
@@ -85,7 +85,7 @@ vom ersten Klick bis zum Schaltplan finden Sie unter
 
     ---
 
-    Meldungen, Kollisionsprüfung, Grundlauf, Rapport und Abbindung.
+    Meldungen, Kollisionsprüfung, Rapport und Abbindung.
 
     [:octicons-arrow-right-24: Prüfen](check.md)
 
@@ -211,7 +211,6 @@ Funktionen noch nicht:
 |---|---|---|
 | Schaltplan drucken, als PDF und CSV | ✔ | — |
 | Bedeckung und Materialdurchmesser je Besetzung | ✔ | Materialdurchmesser je Browser, keine Bedeckung |
-| Bestücken nach Muster | alle Muster mit Laufrichtung, eigenen Farben und Prüfung mit dem Zeitprogramm | nur die festen Vorlagen |
 | Rohrfäden per Klick einziehen | ✔ | — |
 | Betriebsart einfügen | ✔ | — |
 | Bedienung am Tablet und Smartphone | — | ✔ |

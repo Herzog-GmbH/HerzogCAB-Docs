@@ -1,6 +1,6 @@
 # Prüfen
 
-!!! abstract "Referenz — Die Aufgabe „Prüfen“: Fehler und Hinweise, Kollisionsprüfung über den ganzen Lauf, Grundlauf ohne Programm, Rapport und Abbindung"
+!!! abstract "Referenz — Die Aufgabe „Prüfen“: Fehler und Hinweise, Kollisionsprüfung über den ganzen Lauf, Rapport und Abbindung"
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -49,15 +49,19 @@ Typische Meldungen:
 | Element | Wirkung |
 |---|---|
 | **Aktuelle Aufstellung prüfen** | Setzt den Lauf an den Start und rechnet ihn in einem Zug durch: Kollisionen, Rapport, Farbbild, ob jeder Klöppel auf seinen Platz zurückkehrt, und die Abbindung je Abschnitt. |
-| **Grundlauf ohne Programm** | Häkchen: Prüft die Besetzung nur mit der Startstellung der Weichen und Räder, ohne die Befehle des Zeitprogramms. So sehen Sie, ob die Besetzung an sich läuft, bevor Sie Umschaltungen hinzufügen. |
+
+Geprüft wird immer mit dem Programm, das oben unter **Programm** gewählt
+ist, ab der Startaufstellung. Steht dort **— kein Programm —**, prüft der
+Simulator die Besetzung nur mit der Startstellung der Weichen und Räder.
+So sehen Sie, ob die Besetzung an sich läuft, bevor Sie Umschaltungen
+hinzufügen.
 
 Nach jeder Änderung an Programm, Aufstellung oder Startstellung steht
 dort *Programm oder Aufstellung geändert — bitte erneut prüfen.*
 
 ### Das Ergebnis lesen
 
-Das Ergebnis beginnt mit *Prüfung ab Startaufstellung:* (bzw. *…,
-Grundlauf ohne Programm:*). Danach:
+Das Ergebnis beginnt mit *Prüfung ab Startaufstellung:*. Danach:
 
 | Zeile | Bedeutung |
 |---|---|
@@ -106,10 +110,10 @@ maschinentauglich*; entfernen Sie die Befehle mit Rechtsklick.
 
 ## Typischer Ablauf
 
-1. Besetzung wählen, **Grundlauf ohne Programm** einschalten,
-   **Aktuelle Aufstellung prüfen**: Die Besetzung muss kollisionsfrei
-   laufen.
-2. Häkchen wegnehmen, Programm wählen und erneut prüfen.
+1. Besetzung wählen, unter **Programm** den Eintrag **— kein Programm —**
+   wählen, **Aktuelle Aufstellung prüfen**: Die Besetzung muss
+   kollisionsfrei laufen.
+2. Programm wählen und erneut prüfen.
 3. Bei ❌: **Zum Schritt springen**, in der Maschine nachsehen, Befehl in
    der [Zeitachse](program.md#zeitachse) verschieben oder ändern.
 4. Bei *Rapport nicht erreicht* oder einem Rapport, der viel länger ist

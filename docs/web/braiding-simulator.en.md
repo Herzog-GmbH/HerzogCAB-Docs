@@ -86,7 +86,6 @@ the timeline.
 | Function of the desktop app | In the browser |
 |---|---|
 | Print the [switching plan](../braiding-simulator/output.md), save it as PDF and CSV | **Output** only shows: *The switching plan for the control (print, PDF, CSV) is so far only available in Herzog CAB on the PC.* |
-| [Set up by pattern](../braiding-simulator/populate.md#bestucken-nach-muster) with choice of the running direction, your own colors and **Check against the time program** | Only the patterns themselves and **Color per running direction** with fixed colors. |
 | **Covering** | Cannot be set; it is shown in the info line, the take-up and Machine 3D. |
 | **Material diameter** per setup | Applies per browser to all machines and is not saved with the setup. A material diameter from a desktop app program takes precedence in the take-up. |
 | Threading [tube threads](../braiding-simulator/populate.md#rohrfaden) in with a click | Tube threads only come from a saved setup. |

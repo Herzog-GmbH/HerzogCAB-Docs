@@ -13,7 +13,7 @@
 ```mermaid
 flowchart LR
   A["Maschine öffnen"] --> B["Besetzung wählen<br>und anpassen"]
-  B --> C["Grundlauf prüfen"]
+  B --> C["Besetzung prüfen"]
   C --> D["Programm anlegen<br>und aufnehmen"]
   D --> E["Abzug und Drehzahl"]
   E --> F["Prüfen"]
@@ -48,16 +48,13 @@ Die Maschine erscheint mit der Konfiguration im
 6. Wählen Sie **Als neue Besetzung speichern…** und vergeben Sie einen
    Namen.
 
-!!! tip "Bestücken nach Muster"
-    Statt von Hand verteilt **Bestücken nach Muster…** die Klöppel voll,
-    halb, als Tandem oder nur in einer Laufrichtung, auf Wunsch mit einer
-    Farbe je Laufrichtung.
+## Schritt 3: Besetzung prüfen
 
-## Schritt 3: Grundlauf prüfen
-
-1. Öffnen Sie die Aufgabe **Prüfen** ([Referenz](../braiding-simulator/check.md)).
-2. Setzen Sie das Häkchen **Grundlauf ohne Programm** und klicken Sie auf
-   **Aktuelle Aufstellung prüfen**.
+1. Ist oben unter **Programm** ein Programm gewählt, wählen Sie dort
+   **— kein Programm —**. Ohne Programm prüft der Simulator die Besetzung
+   mit der Startstellung der Weichen und Räder.
+2. Öffnen Sie die Aufgabe **Prüfen** ([Referenz](../braiding-simulator/check.md))
+   und klicken Sie auf **Aktuelle Aufstellung prüfen**.
 3. Das Ergebnis muss *✅ Kollisionsfrei — Rapport nach … Schritten* sein.
 
 Läuft schon die Besetzung nicht kollisionsfrei, passen Sie sie an, bevor
@@ -100,8 +97,8 @@ diesen Werten.
 
 ## Schritt 6: Prüfen und speichern
 
-1. Nehmen Sie in **Prüfen** das Häkchen **Grundlauf ohne Programm** weg und
-   klicken Sie auf **Aktuelle Aufstellung prüfen**.
+1. Klicken Sie in **Prüfen** auf **Aktuelle Aufstellung prüfen**. Geprüft
+   wird mit dem Programm, das oben unter **Programm** gewählt ist.
 2. Bei ❌ springen Sie mit **Zum Schritt springen** zur Kollision und
    korrigieren den Befehl in der Zeitachse; dann erneut prüfen.
 3. Ist der Rapport viel länger als das Programm, übernehmen Sie den

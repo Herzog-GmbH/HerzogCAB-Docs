@@ -1,6 +1,6 @@
 # Geflechtsart und Parameter
 
-!!! abstract "Referenz — das Parameter-Panel des Designers: Geflechtsart, Geflechtsbindung, Bahn-Art, Klöppelzahl, Flechtwinkel, Fachung, Seelen sowie die Maßzeile mit Material-Ø, Bedeckung und Geflechts-Ø."
+!!! abstract "Referenz — das Parameter-Panel des Designers: Geflechtsart, Geflechtsbindung, Bahn-Art, Klöppelzahl, Flechtwinkel, Fachung mit Material-Ø, Bedeckung und Geflechts-Ø sowie Seelen."
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -137,23 +137,27 @@ Sie jedem Garn eine eigene Farbe geben — siehe
 [Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn). Zum Einfärben
 und Texturieren der Fäden siehe [Färben und Texturieren](painting.md).
 
-### Seelen einlegen (2 Kerne) — nur Soutachegeflecht
+### Material-Ø, Bedeckung und Geflechts-Ø { #material-bedeckung-geflechts }
 
-Ankreuzfeld: Zwei Seelenfäden (Kerneinlagen) laufen durch die Achsen der
-beiden Flügelräder und werden umflochten — die klassische Soutache-Kordel
-mit zwei Wülsten. Ausschalten für seelenlose Geflechte. Die Seelen erscheinen
-in der [3D-Ansicht](view-3d.md) als Kerne.
-
-## Maßzeile in der Vorschau
-
-Oben in der Vorschau-Karte steht eine **Maßzeile** (abschaltbar unter
-[Einstellungen > Design](../admin/settings/legacy-import.md)):
+Bei Rund- und Litzengeflecht stehen direkt unter **Fachung** drei weitere
+Zeilen untereinander. Bei Mischdesigns fehlen sie; abschalten lassen sie
+sich unter [Einstellungen > Design](../admin/settings/legacy-import.md).
 
 | Feld | Bedeutung |
 |---|---|
 | **Material-Ø** | Durchmesser des einzelnen Fadens (Garn/Draht) in mm, 0,00–100,00. Leer (*–*) = keine Angabe; der Geflechtsdurchmesser bleibt dann leer. |
 | **Bedeckung** (bei Litze: **Füllung**) | Bedeckungsgrad des Geflechts in Prozent, Standard **70 %** (änderbar in den Einstellungen). Steuert in der 3D-Ansicht die gezeichnete Fadendicke. |
 | **Geflechts-Ø** (bei Litze: **Produktbreite**) | Anzeige: der berechnete Geflechtsdurchmesser aus Klöppelzahl, Flechtwinkel, Fachung, Materialdurchmesser und Bedeckung — dieselbe Berechnung wie die Seite [Durchmesser](../calculations/tubular-braid/tube-diameter.md). Nur Anzeige; die Zeichnung bleibt maßstabslos. |
+
+Sind mehrere Design-Fenster offen, zeigen die Felder die Werte des aktiven
+Fensters.
+
+### Seelen einlegen (2 Kerne) — nur Soutachegeflecht
+
+Ankreuzfeld: Zwei Seelenfäden (Kerneinlagen) laufen durch die Achsen der
+beiden Flügelräder und werden umflochten — die klassische Soutache-Kordel
+mit zwei Wülsten. Ausschalten für seelenlose Geflechte. Die Seelen erscheinen
+in der [3D-Ansicht](view-3d.md) als Kerne.
 
 ## Verwandte Seiten
 

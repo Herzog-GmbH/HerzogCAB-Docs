@@ -21,7 +21,7 @@ as a machine setup sheet.
     ---
 
     Round, flat braid, square, spiral, packing and soutache braid;
-    binding, number of carriers, braiding angle, ply count, measurement row.
+    binding, number of carriers, braiding angle, ply count, material Ø and covering.
 
     [:octicons-arrow-right-24: Braid type and parameters](parameters.md)
 
@@ -97,9 +97,9 @@ five areas:
 |---|---|
 | **Toolbar** (top) | Mode switch, side filter, undo/redo, display switches as well as color and texture palette. |
 | **Document header** (per design window) | Summary of the design and the actions **Print**, **Save**, **Save under new name**, **Close view**. |
-| **Parameter panel** (left) | Design name, [braid type and parameters](parameters.md) and below them the [Setup overview](animation.md). |
+| **Parameter panel** (left) | Design name, [braid type and parameters](parameters.md) with [material Ø, covering and braid Ø](parameters.md#material-bedeckung-geflechts) below **Ply count**, and below them the [Setup overview](animation.md). |
 | **Carrier table** (center) | All carrier positions with their current color — you can also color directly here. |
-| **Preview** (right) | The braid pattern that results from the current color assignment, with its own zoom buttons and the [measurement row](parameters.md#mazeile-in-der-vorschau) (material Ø, covering, braid Ø); in the 3D view the spatial model. |
+| **Preview** (right) | The braid pattern that results from the current color assignment, with its own zoom buttons; in the 3D view the spatial model. |
 
 ## Controls in detail { #bedienelemente-im-detail }
 
@@ -165,7 +165,7 @@ In that case, first close one via the ✕ in its header.
 |---|---|
 | Zoom | **Mouse wheel** over the braid pattern — zooming happens at the mouse position. |
 | Zoom (buttons) | **Zoom in** / **Zoom out** at the top right of the preview card. |
-| Fit view | **Fit view** (full-screen icon) on the preview card — the braid pattern is fitted completely again. |
+| Fit view | **Fit view** (full-screen icon) on the preview card — the braid pattern is fitted completely again. For **Cylinder** and **Square**, it returns to the starting view in which the body fills the preview. |
 | Pan | Hold down the **right mouse button** and drag — works at any time, also in paint mode. |
 | Pan (mode) | Choose the **Move** tool and drag with the **left mouse button**. |
 

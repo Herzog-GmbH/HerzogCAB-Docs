@@ -31,7 +31,7 @@ recognize a multi-head machine by the number of carriers.
 |---|---|
 | **Number of carriers** | The start page, the setups and the status line show *2 × 12 carriers* if all heads are set up the same way, otherwise for example *12 + 10 carriers*. |
 | **Carrier numbers** | Each head counts from 1: an RU 2/12-80 has the numbers 1 to 12 twice. A new carrier gets the lowest free number **in its head**. |
-| **Running direction** | Applies around the center of the respective head, not around the machine center. This affects the [Running direction](editor.md#ansicht) view and [Set up by pattern](populate.md#bestucken-nach-muster). |
+| **Running direction** | Applies around the center of the respective head, not around the machine center. This affects the [Running direction](editor.md#ansicht) view and **Color by running direction** in the [selection card](populate.md#auswahlkarte-kloppel). |
 | **Configurations** | *Full*, *Half* and *Tandem* from Herzog apply per head; *Full* and *Half* occupy both running directions equally. |
 | **Take-up** | All heads are connected to the same take-up gearbox. The [take-up](views.md#abzug) is set as on a single-head machine and applies to all heads; it is measured at head 1. |
 | **Machine 3D** | The ["Machine" view](views.md#ansicht-maschine) shows braiding point, braid and take-up disc per head. Labels and fixed views refer to head 1. |

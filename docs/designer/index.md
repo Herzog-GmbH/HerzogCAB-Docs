@@ -21,7 +21,7 @@ als Maschinenbelegblatt.
     ---
 
     Rund-, Litzen-, Quadrat-, Spiral-, Packungs- und Soutachegeflecht;
-    Bindung, Klöppelzahl, Flechtwinkel, Fachung, Maßzeile.
+    Bindung, Klöppelzahl, Flechtwinkel, Fachung, Material-Ø und Bedeckung.
 
     [:octicons-arrow-right-24: Geflechtsart und Parameter](parameters.md)
 
@@ -98,9 +98,9 @@ aus fünf Bereichen:
 |---|---|
 | **Werkzeugleiste** (oben) | Modus-Umschalter, Seitenfilter, Rückgängig/Wiederherstellen, Anzeige-Schalter sowie Farb- und Texturpalette. |
 | **Dokument-Kopfzeile** (je Design-Fenster) | Zusammenfassung des Designs und die Aktionen **Drucken**, **Speichern**, **Speichern unter neuem Namen**, **Ansicht schließen**. |
-| **Parameter-Panel** (links) | Designname, [Geflechtsart und Parameter](parameters.md) sowie darunter die [Besetzungsübersicht](animation.md). |
+| **Parameter-Panel** (links) | Designname, [Geflechtsart und Parameter](parameters.md) mit [Material-Ø, Bedeckung und Geflechts-Ø](parameters.md#material-bedeckung-geflechts) unter **Fachung** sowie darunter die [Besetzungsübersicht](animation.md). |
 | **Klöppeltabelle** (Mitte) | Alle Klöppelpositionen mit ihrer aktuellen Farbe — hier können Sie auch direkt färben. |
-| **Vorschau** (rechts) | Das Flechtbild, das aus der aktuellen Farbbelegung entsteht, mit eigenen Zoom-Schaltflächen und der [Maßzeile](parameters.md#mazeile-in-der-vorschau) (Material-Ø, Bedeckung, Geflechts-Ø); in der 3D-Ansicht das räumliche Modell. |
+| **Vorschau** (rechts) | Das Flechtbild, das aus der aktuellen Farbbelegung entsteht, mit eigenen Zoom-Schaltflächen; in der 3D-Ansicht das räumliche Modell. |
 
 ## Bedienelemente im Detail
 
@@ -167,7 +167,7 @@ sein"*. Schließen Sie dann zuerst eines über das ✕ in dessen Kopfzeile.
 |---|---|
 | Zoomen | **Mausrad** über dem Flechtbild — gezoomt wird an der Mausposition. |
 | Zoomen (Schaltflächen) | **Hineinzoomen** / **Herauszoomen** oben rechts an der Vorschau-Karte. |
-| Ansicht einpassen | **Ansicht einpassen** (Vollbild-Symbol) an der Vorschau-Karte — das Flechtbild wird wieder komplett eingepasst. |
+| Ansicht einpassen | **Ansicht einpassen** (Vollbild-Symbol) an der Vorschau-Karte — das Flechtbild wird wieder komplett eingepasst. Bei **Zylinder** und **Vierkant** führt es auf den Startausschnitt zurück, in dem der Körper die Vorschau füllt. |
 | Verschieben | **Rechte Maustaste** gedrückt halten und ziehen — funktioniert jederzeit, auch im Malmodus. |
 | Verschieben (Modus) | Werkzeug **Bewegen** wählen und mit der **linken Maustaste** ziehen. |
 

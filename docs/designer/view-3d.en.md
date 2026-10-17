@@ -70,7 +70,7 @@ Below the picture is the **slider row**:
 | **Display** | *Default for the braid type*, *Interlacing only (schematic)*, *Automatic*, *As the machine is arranged*, *Correction: always round*, *Correction: always flat braid* | How the cross-section is derived: *Interlacing only* shows the thread order and crossings on the normalized cross-section (without horngear positions and horngear sizes); *Automatic* and *As the machine is arranged* derive it from the tracks. The default per braid type is interlacing for round, spiral and soutache, straightened for flat braid, machine shape for square and packing. |
 | **Orientation** | *Top → bottom*, *Bottom → top* | Only rotates the 3D display of the braid — depending on whether you want to view the machine from above or from below. |
 
-The **Covering** from the [measurement row](parameters.md#mazeile-in-der-vorschau)
+The **Covering** in the parameter panel below [Ply count](parameters.md#material-bedeckung-geflechts)
 determines the drawn thread thickness; the **Braiding angle** has a live
 effect. If the [track animation](animation.md) is running, the 3D braid grows
 in sync — *Back to start* shows the whole braid again. These settings
@@ -91,7 +91,7 @@ apply to the Designer as a whole, not per design.
 ## Related pages { #verwandte-seiten }
 
 * [Designer overview](index.md) — zooming and panning the preview
-* [Braid type and parameters](parameters.md) — choose the braid type, measurement row
+* [Braid type and parameters](parameters.md) — choose the braid type, material Ø and covering
 * [Coloring and texturing](painting.md) — texture display in the flat braid pattern
 * [Setup and track animation](animation.md) — the kinematics behind the 3D model
 * [Design (settings)](../admin/settings/legacy-import.md) — remember the view

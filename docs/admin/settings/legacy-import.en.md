@@ -32,7 +32,7 @@ designs remain unchanged.
 | Setting | Effect |
 |---|---|
 | **Remember last used view** | If the option is enabled (default), the Designer remembers the last selected view per braid type (full, half, cylinder/square/edge including rotation angle, or 3D) and restores it at the next start. Without the option, every braid type starts in the full development; the remembered values are retained. |
-| **Show measurement row in the preview (material Ø, covering, braid Ø)** | Shows or hides the measurement row in the title bar of the preview (default: on). The change takes effect at the next redraw, e.g. when switching the design window. |
+| **Show material Ø, covering and braid Ø** | Shows or hides the three fields in the Designer on the left below **Ply count** (default: on), see [Braid type and parameters](../../designer/parameters.md#material-bedeckung-geflechts). The change takes effect at the next redraw, e.g. when switching the design window. |
 
 ### Animation
 

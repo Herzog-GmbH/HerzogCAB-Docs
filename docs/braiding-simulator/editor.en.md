@@ -52,7 +52,8 @@ tasks; the tasks themselves have their own pages.
 | **Switches with numbers** | Switches and fixed components with their W number, as in the timeline. Round symbols can be switched, square ones are fixed components. | on |
 | **Running direction** | Colors each empty position by the direction in which a carrier would run around the machine from there: the two thread systems of the braid. Plus rotation arrows on the hubs, direction arrows on the carriers and a legend at the bottom left (*clockwise*, *counterclockwise*, *oscillates*, *stays on the horngear*, *Dead end*). If you move the mouse over an empty position, the view shows its track. | on |
 | **Carrier numbers** | Number of each carrier and the labels of the tubes. | off |
-| **Empty positions** | Empty carrier positions and the slots of the gears. | on |
+| **Empty positions** | Empty carrier positions. | on |
+| **Slots** | The slots of the horngears. | on |
 | **3D preview** | Shows or hides the [3D preview](views.md). | on |
 | **Fit machine** | Shows the whole machine (also ++ctrl+0++ or a double-click on an empty spot). | — |
 
@@ -84,7 +85,7 @@ The right-hand bar has a fixed width. At the bottom are the four tasks:
 
 | Tab | Content |
 |---|---|
-| [**Set up**](populate.md) | Place and color carriers, set up by pattern; yarn and tube threads. A click on an empty position places a carrier. |
+| [**Set up**](populate.md) | Place and color carriers; yarn and tube threads. A click on an empty position places a carrier. |
 | [**Program**](program.md) | Switches and gears during the run, operating modes, speed and take-up. A click on a switch switches it. |
 | [**Check**](check.md) | Errors and notes, collision check over the whole run. A red or orange dot on the tab indicates errors or notes. |
 | [**Output**](output.md) | Switching plan for the control: print, as PDF or CSV. |
@@ -129,8 +130,8 @@ the programs:
 * If the selected setup is a configuration or a setup from Herzog, a copy
   of your own *&lt;Name&gt; – own* is created; the original remains
   unchanged.
-* If no setup is selected (for example after **Remove all carriers** or
-  **Set up by pattern…**), the program asks for a name.
+* If no setup is selected (for example after **Remove all carriers**),
+  the program asks for a name.
 * If you change a program from Herzog, the simulator immediately creates a
   copy of your own: *Own copy "… – own" created — the program from Herzog
   remains unchanged.*

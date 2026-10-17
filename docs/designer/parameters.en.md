@@ -1,6 +1,6 @@
 # Braid type and parameters
 
-!!! abstract "Reference — the Designer's parameter panel: braid type, braid binding, track type, number of carriers, braiding angle, ply count, cores, and the measurement row with material Ø, covering and braid Ø."
+!!! abstract "Reference — the Designer's parameter panel: braid type, braid binding, track type, number of carriers, braiding angle, ply count with material Ø, covering and braid Ø, and cores."
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
@@ -136,22 +136,26 @@ you give each yarn its own color — see
 [plying colors](painting.md#fachungsfarben-farbe-je-garn). For coloring
 and texturing the threads, see [Coloring and texturing](painting.md).
 
+### Material Ø, covering and braid Ø { #material-bedeckung-geflechts }
+
+For round and flat braids, three more rows appear directly below **Ply
+count**, one below the other. They are missing for mixed designs; you can
+switch them off under [Settings > Design](../admin/settings/legacy-import.md).
+
+| Field | Meaning |
+|---|---|
+| **Material Ø** | Diameter of the single thread (yarn/wire) in mm, 0.00–100.00. Empty (*–*) = no value; the braid diameter then stays empty. |
+| **Covering** (for flat braid: **Fill**) | Covering of the braid in percent, default **70 %** (can be changed in the settings). Controls the drawn thread thickness in the 3D view. |
+| **Braid Ø** (for flat braid: **Product width**) | Display: the calculated braid diameter from number of carriers, braiding angle, ply count, material diameter and covering — the same calculation as the [Diameter](../calculations/tubular-braid/tube-diameter.md) page. Display only; the drawing remains not to scale. |
+
+If several design windows are open, the fields show the values of the
+active window.
+
 ### Insert cores (2 core threads) — soutache braid only { #seelen-einlegen-2-kerne-nur-soutachegeflecht }
 
 Checkbox: two core threads run through the axes of the two horngears and are
 braided over — the classic soutache cord with two beads. Switch off for braids
 without cores. The cores appear in the [3D view](view-3d.md) as cores.
-
-## Measurement row in the preview { #mazeile-in-der-vorschau }
-
-At the top of the preview card there is a **measurement row** (can be switched
-off under [Settings > Design](../admin/settings/legacy-import.md)):
-
-| Field | Meaning |
-|---|---|
-| **Material Ø** | Diameter of the single thread (yarn/wire) in mm, 0.00–100.00. Empty (*–*) = no value; the braid diameter then stays empty. |
-| **Covering** (for flat braid: **Fill:**) | Covering of the braid in percent, default **70 %** (can be changed in the settings). Controls the drawn thread thickness in the 3D view. |
-| **Braid Ø:** (for flat braid: **Product width:**) | Display: the calculated braid diameter from number of carriers, braiding angle, ply count, material diameter and covering — the same calculation as the [Diameter](../calculations/tubular-braid/tube-diameter.md) page. Display only; the drawing remains not to scale. |
 
 ## Related pages { #verwandte-seiten }
 
