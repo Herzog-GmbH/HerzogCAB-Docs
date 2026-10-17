@@ -19,6 +19,9 @@
   "productionLayout": "hall-planner/",
   "productionLayoutEditor": "hall-planner/editor/",
 
+  "braidSimulator": "braiding-simulator/",
+  "braidSimulatorEditor": "braiding-simulator/editor/",
+
   "uiDesigner": "designer/",
   "designs": "designer/",
   "designer": "designer/",

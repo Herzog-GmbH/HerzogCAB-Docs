@@ -36,6 +36,7 @@ Drückt der Bediener in Herzog CAB ++f1++, ermittelt die App über
 | Maschinenpark | `machinePark` | `machine-park/` |
 | Herzog-Katalog | `machineConfigurator` | `catalog/` |
 | Hallenplaner | `productionLayout`, `productionLayoutEditor` | `hall-planner/…` |
+| Flechtsimulator | `braidSimulator`, `braidSimulatorEditor` | `braiding-simulator/…` |
 | Designer | `uiDesigner`, `designs`, `designer` | `designer/` |
 | Berechnungen (Gruppen) | `calculations`, `material`, `product`, `hollowBraid`, `production`, `windingCalcs` | `calculations/…` |
 | Berechnungen (34 Rechner) | `braidAngle`, `braidProcess`, `drumTakeUpSelection`, `windingTime`, … | je eigene Seite |

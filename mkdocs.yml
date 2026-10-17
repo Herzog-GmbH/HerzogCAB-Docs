@@ -242,6 +242,17 @@ plugins:
             "Hallenplaner": "Factory Planner"
             "Editor – Grundriss und Bestückung": "Editor – floor plan and layout"
             "3D-Hallenansicht": "3D shop floor view"
+            "Flechtsimulator": "Braiding Simulator"
+            "Lizenz und Rechte": "Licence and rights"
+            "Der Simulator-Bildschirm": "The simulator screen"
+            "Bestücken": "Set up"
+            "Programm": "Program"
+            "Prüfen": "Check"
+            "Ausgeben": "Output"
+            "3D-Vorschau und Abzug": "3D preview and take-up"
+            "Mehrere Flechtköpfe": "Multiple braiding heads"
+            "Ein Flechtprogramm erstellen": "Create a braiding program"
+            "Maschinenmodelle zuweisen": "Assign machine models"
             "Designer": "Designer"
             "Geflechtsart und Parameter": "Braid type and parameters"
             "Färben und Texturieren": "Coloring and texturing"
@@ -506,6 +517,16 @@ nav:
           - hall-planner/index.md
           - Editor – Grundriss und Bestückung: hall-planner/editor.md
           - 3D-Hallenansicht: hall-planner/view-3d.md
+      - Flechtsimulator:
+          - braiding-simulator/index.md
+          - Lizenz und Rechte: braiding-simulator/licence.md
+          - Der Simulator-Bildschirm: braiding-simulator/editor.md
+          - Bestücken: braiding-simulator/populate.md
+          - Programm: braiding-simulator/program.md
+          - Prüfen: braiding-simulator/check.md
+          - Ausgeben: braiding-simulator/output.md
+          - 3D-Vorschau und Abzug: braiding-simulator/views.md
+          - Mehrere Flechtköpfe: braiding-simulator/multiple-heads.md
       - Designer:
           - designer/index.md
           - Geflechtsart und Parameter: designer/parameters.md
@@ -595,6 +616,7 @@ nav:
       - Herzog-Katalog: web/catalog.md
       - Stammdaten: web/master-data.md
       - Hallenplaner: web/hall-planner.md
+      - Flechtsimulator: web/braiding-simulator.md
       - Drucken: web/print.md
       - Druck Editor: web/print-editor.md
       - Versionen und Papierkorb: web/versions.md
@@ -615,6 +637,7 @@ nav:
       - Ein Design entwerfen und drucken: tasks/design-from-scratch.md
       - Spulen für einen Flechtauftrag planen: tasks/plan-winding.md
       - Eine Produktionshalle aufbauen: tasks/build-hall.md
+      - Ein Flechtprogramm erstellen: tasks/create-braiding-program.md
       - Material richtig kalkulieren: tasks/material-calculation.md
       - Eine Druckvorlage erstellen: tasks/create-print-template.md
       - Benutzer und Rollen einrichten: tasks/setup-users.md
@@ -628,6 +651,7 @@ nav:
           - portal/index.md
           - Mein Konto — Bausteine, Rechner, Plätze: portal/licenses.md
           - Benutzer einladen und verwalten: portal/users.md
+          - Maschinenmodelle zuweisen: portal/models.md
           - Lizenz anfordern: portal/requests.md
           - Herunterladen: portal/download.md
           - Passwort, zweiter Faktor und Name: portal/security.md
