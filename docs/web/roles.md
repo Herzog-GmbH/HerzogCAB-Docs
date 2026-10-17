@@ -52,10 +52,12 @@ dem Recht **Rollen verwalten** oder **Benutzer verwalten**.
 | | **Rollen verwalten** | Rollen anlegen, ändern, löschen. |
 | | **Firmendaten verwalten** | [Firma](company.md) bearbeiten. |
 | | **Workspace-Einstellungen** | [Import und Export](import.md) des Arbeitsbereichs. |
+| | **Sperren aufheben** | Die [Bearbeitungssperre](interface.md#bearbeitungssperre) eines anderen beenden (Knopf **Sperre aufheben**), in der Web-App wie in der Desktop-App. Von den eingebauten Rollen hat es nur der *Administrator*. |
 | Stammdaten | **Stammdaten anzeigen** / **bearbeiten** | [Stammdaten](master-data.md) und [Maschinen](machines.md) sehen bzw. ändern. |
 | Hallenplaner | **Hallenplaner anzeigen** / **bearbeiten** | [Hallenplaner](hall-planner.md). |
 | Aufträge | **Aufträge anzeigen** / **bearbeiten** | [Aufträge](orders.md). |
 | Designer | **Designer anzeigen** / **bearbeiten** | [Designs und Designer](designer.md). |
+| Flechtsimulator | **Flechtsimulator anzeigen** / **bearbeiten** | Den Flechtsimulator sehen bzw. Programme ändern. Nur bei Konten mit dem Flechtsimulator. |
 | Druckvorlagen | **Druckvorlagen anzeigen** / **bearbeiten** | [Druck Editor](print-editor.md) öffnen bzw. Vorlagen dort ändern, speichern und löschen; **Vorlage bearbeiten** auf der [Druckseite](print.md). |
 | Berechnungen / Export | **Berechnungen ausführen** | [Berechnungen](calculations.md). |
 | | **Drucken / Export** | [Drucken](print.md) und Export. |

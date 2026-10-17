@@ -52,10 +52,12 @@ the permission **Manage roles** or **Manage users**.
 | | **Manage roles** | Create, change, delete roles. |
 | | **Manage company data** | Edit [Company](company.md). |
 | | **Workspace settings** | [Import and export](import.md) of the workspace. |
+| | **Release locks** | End someone else's [edit lock](interface.md#bearbeitungssperre) (button **Release lock**), in the web app as in the desktop app. Of the built-in roles only the *Administrator* has it. |
 | Master data | **View master data** / **Edit master data** | See or change [master data](master-data.md) and [machines](machines.md). |
 | Factory Planner | **View Factory Planner** / **Edit Factory Planner** | [Factory Planner](hall-planner.md). |
 | Orders | **View orders** / **Edit orders** | [Orders](orders.md). |
 | Designer | **View designer** / **Edit designer** | [Designs and Designer](designer.md). |
+| Braiding Simulator | **View Braiding Simulator** / **Edit Braiding Simulator** | See the Braiding Simulator or change programs. Only for accounts with the Braiding Simulator. |
 | Print templates | **View print templates** / **Edit print templates** | Open the [Print editor](print-editor.md) or change, save and delete templates there; **Edit template** on the [print page](print.md). |
 | Calculations / Export | **Run calculations** | [Calculations](calculations.md). |
 | | **Print / Export** | [Print](print.md) and export. |

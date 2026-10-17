@@ -56,14 +56,21 @@ Eine Rolle setzt sich aus Einzelrechten zusammen, gruppiert nach Bereichen:
 
 | Bereich | Rechte |
 |---|---|
-| **Administration** | Benutzer verwalten · Rollen verwalten · Firmendaten verwalten · Workspace-Einstellungen |
+| **Administration** | Benutzer verwalten · Rollen verwalten · Firmendaten verwalten · Workspace-Einstellungen · Sperren aufheben |
 | **Stammdaten** | Stammdaten anzeigen · Stammdaten bearbeiten |
 | **Hallenplaner** | Hallenplaner anzeigen · Hallenplaner bearbeiten |
 | **Aufträge** | Aufträge anzeigen · Aufträge bearbeiten |
 | **Designer** | Designer anzeigen · Designer bearbeiten |
+| **Flechtsimulator** | Flechtsimulator anzeigen · Flechtsimulator bearbeiten — nur, wenn Herzog CAB den Flechtsimulator enthält |
 | **Druckvorlagen** | Druckvorlagen anzeigen · Druckvorlagen bearbeiten |
 | **Berechnungen / Export** | Berechnungen ausführen · Drucken / Export |
 | **Spezialwerkzeuge** | Parameter Explorer öffnen |
+
+**Sperren aufheben** erlaubt, die
+[Bearbeitungssperre](../basics/multi-user.md#die-bearbeitungssperre) eines
+anderen Benutzers zu beenden, etwa wenn ein Kollege einen Auftrag offen hat
+und nicht erreichbar ist. Von den eingebauten Rollen hat es nur der
+*Administrator*.
 
 Mit der Option **Alle Rechte (Administrator)** erhält eine Rolle pauschal
 sämtliche Berechtigungen — die Einzelrechte-Häkchen spielen dann keine Rolle

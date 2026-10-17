@@ -101,8 +101,11 @@ The most demanding variant combines several strategies:
 
 !!! warning "Notes on workspaces on network drives"
     * All operators need **write permissions** on the shares.
-    * **Do not let two operators open** the same order at the same time —
-      changes can overwrite each other.
+    * **All computers on the same version** (2.1.1 or later): then
+      Herzog CAB locks every entry that someone is currently editing, and
+      the others see it read-only, see
+      [Multiple users in the same workspace folder](../basics/multi-user.md).
+      Older versions do not know the lock.
     * A **stable network connection** is mandatory. Dropouts
       can damage order files.
     * **Don't forget the backup** — the workspace is now the only

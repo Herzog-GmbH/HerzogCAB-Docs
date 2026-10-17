@@ -116,6 +116,7 @@ Ohne dieses Recht sehen Sie die Versionen nur.
 |---|---|
 | *Dieser Editor hat ungespeicherte Änderungen. Bitte speichern oder verwerfen Sie sie, bevor Sie eine Version wiederherstellen.* | Der Editor hat offene Änderungen. Solange sie da sind, fehlt der Knopf **Wiederherstellen**. |
 | *Inzwischen hat jemand anderes gespeichert. Der Verlauf wird neu geladen.* | Ein Kollege oder der Cloud-Abgleich hat den Eintrag gerade gespeichert. Prüfen Sie die neu geladene Liste und stellen Sie dann erneut wieder her. |
+| *Dieser Eintrag ist gerade in Bearbeitung.* | Ein anderer hat den Eintrag gerade offen, in der Web-App oder in der Desktop-App (Schloss, siehe [Bearbeitungssperre](interface.md#bearbeitungssperre)). Stellen Sie wieder her, sobald er frei ist. |
 
 ## Papierkorb
 
@@ -164,7 +165,9 @@ Papierkorb die 200 zuletzt gelöschten Einträge.
     Die Desktop-App hat keinen Dialog *Versionen* und keinen Papierkorb.
     Arbeitet sie mit dem Cloud-Abgleich, landen ihre Speicherungen und
     Löschungen trotzdem hier, mit der Quelle *Programm*. Ohne Cloud-Abgleich
-    entstehen für die Daten im Arbeitsverzeichnis keine Versionen.
+    legt sie frühere Fassungen nur im Arbeitsverzeichnis ab, wo Sie sie
+    nicht ansehen können (siehe
+    [Alte Fassungen](../basics/multi-user.md#alte-fassungen)).
 
 ## Verwandte Seiten
 

@@ -90,8 +90,8 @@ Wenn Sie Herzog CAB zum ersten Mal bedienen, lesen Sie am besten zuerst
 
     ---
 
-    Wie Einträge einzeln, gesperrt und mit Version gespeichert werden —
-    und was Sie sehen, wenn ein Kollege denselben Eintrag geändert hat.
+    Bearbeitungssperre mit Schloss, Speichern einzeln und mit Version —
+    und was Sie sehen, wenn ein Kollege denselben Eintrag bearbeitet.
 
     [:octicons-arrow-right-24: Mehrere Benutzer](multi-user.md)
 

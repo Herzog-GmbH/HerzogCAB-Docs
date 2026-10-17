@@ -1,6 +1,6 @@
 # Screenshots Desktop-App — Liste für Eike
 
-Stand: 11.10.2026. Insgesamt **16** Platzhalter auf 8 Seiten.
+Stand: 16.10.2026. Insgesamt **17** Platzhalter auf 8 Seiten.
 
 > Diese Datei erzeugt `python _tools/screenshot_liste.py` aus allen Blöcken `!!! warning "📷 Screenshot fehlt"` unter `docs/`. Nicht von Hand bearbeiten — Ausnahme ist der markierte Abschnitt „veraltete Bestandsbilder“, den das Skript übernimmt.
 
@@ -42,22 +42,23 @@ Von Hand gepflegt; `_tools/screenshot_liste.py` übernimmt diesen Abschnitt unve
 | 8 | `setup/update.md` | Maintenance-Tool-Assistent im Schritt „Komponenten aktualisieren". | Maintenance-Tool über *Herzog > Herzog CAB Maintenance* öffnen und den Update-Schritt fotografieren. | `assets/screenshots/setup/maintenance-tool-update.png` |
 | 9 | `setup/uninstall.md` | Maintenance-Tool-Assistent im Schritt „Alle Komponenten entfernen". | Maintenance-Tool über *Herzog > Herzog CAB Maintenance* öffnen und den Deinstallations-Schritt fotografieren. | `assets/screenshots/setup/maintenance-tool-entfernen.png` |
 
-## Grundlagen — 1 Bild
+## Grundlagen — 2 Bilder
 
 | # | Seite | Motiv | So erzeugen | Ziel-Datei |
 |---|---|---|---|---|
-| 10 | `basics/multi-user.md` | Rückfrage „Materialien“ mit dem Text „Das Material "…" wurde inzwischen von … am Rechner … um … geändert. Die eigenen Änderungen sind noch nicht gespeichert.“ und den Schaltflächen **Überschreiben**, **Als Kopie speichern**, **Neu laden** und **Abbrechen**. | Zwei Programmfenster auf zwei Rechnern (oder zwei Windows-Benutzern) mit demselben Arbeitsverzeichnis; in beiden dasselbe Material öffnen, in Fenster A ändern und speichern, danach in Fenster B ändern und **Speichern** klicken. Musterdaten, Musternamen. | `assets/screenshots/basics/mehrbenutzer-rueckfrage.png` |
+| 10 | `basics/multi-user.md` | Flechtauftrag mit dem gelben Band „In Bearbeitung – nur lesen“, den Schaltflächen **Erneut versuchen** und **Sperre aufheben** und dem Tooltip am Schloss (Name · Rechner · seit …). | Zwei Programmfenster mit eigenem Windows-Benutzer oder auf zwei Rechnern am selben Arbeitsverzeichnis; in Fenster A einen Auftrag öffnen, in Fenster B denselben Auftrag öffnen und mit der Maus auf das Schloss im Band zeigen. Fenster B mit einer Rolle, die *Sperren aufheben* hat. Musterdaten, Musternamen. | `assets/screenshots/basics/sperre-band.png` |
+| 11 | `basics/multi-user.md` | Rückfrage „Materialien“ mit dem Text „Das Material "…" wurde inzwischen von … am Rechner … um … geändert. Die eigenen Änderungen sind noch nicht gespeichert.“ und den Schaltflächen **Überschreiben**, **Als Kopie speichern**, **Neu laden** und **Abbrechen**. | Zwei Programmfenster auf zwei Rechnern (oder zwei Windows-Benutzern) mit demselben Arbeitsverzeichnis; in beiden dasselbe Material öffnen, in Fenster A ändern und speichern, danach in Fenster B ändern und **Speichern** klicken. Musterdaten, Musternamen. | `assets/screenshots/basics/mehrbenutzer-rueckfrage.png` |
 
 ## Verwaltung — 6 Bilder
 
 | # | Seite | Motiv | So erzeugen | Ziel-Datei |
 |---|---|---|---|---|
-| 11 | `admin/login.md` | Anmeldefenster „Herzog CAB – Anmelden“ im Kontomodell: blaues Kopfband mit „Herzog CAB“, „Konto: &lt;Firma&gt;“ und dem Zopf rechts; Felder E-Mail-Adresse und Passwort mit Beschriftung darüber, Häkchen „Angemeldet bleiben“, Link „Passwort vergessen?“, Schaltflächen Anmelden und Beenden. | Kunden-Build auf einem am Konto angemeldeten Rechner starten, nachdem der Benutzer sich im Programm abgemeldet hat (sonst startet es dank „Angemeldet bleiben“ ohne Dialog). Musterkonto, keine echte E-Mail-Adresse. | `assets/screenshots/admin/anmelden-konto.png` |
-| 12 | `admin/login.md` | Derselbe Dialog im Schritt „Zweiter Faktor“: Kopfband-Unterzeile „Zweiter Faktor“, grüner Haken im Passwortfeld, darunter „Code aus der Authenticator-App“ mit sechs Kästchen in zwei Dreiergruppen (drei Ziffern eingetippt), graue Meldung zur Zwei-Faktor-Anmeldung, Schaltfläche „Bestätigen“. | Mit einem Testbenutzer anmelden, für den im Lizenzportal der zweite Faktor eingerichtet ist; nach **Anmelden** drei Ziffern eintippen und aufnehmen. | `assets/screenshots/admin/anmelden-konto-code.png` |
-| 13 | `admin/login.md` | Anmeldefenster „Herzog CAB – Anmelden" mit Logo, Feldern Login/Passwort und der Schaltfläche „Mit Microsoft anmelden" | Herzog CAB mit Dongle starten (Entra-Anmeldung muss unter *Systemverwaltung > Authentifizierung* aktiviert sein, sonst fehlt die Microsoft-Schaltfläche) | `assets/screenshots/admin/anmelden.png` |
-| 14 | `admin/users.md` | Benutzerverwaltung bei Dongle-Installation — Benutzerliste links (mit den Schaltflächen „Neuer Benutzer", „Aus Entra importieren", „Aus LDAP importieren"), Benutzer-Editor rechts | Build mit Dongle, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen | `assets/screenshots/admin/benutzer.png` |
-| 15 | `admin/authentication.md` | Bildschirm „Authentifizierung", Reiter „Microsoft Entra ID" mit Konfigurationsfeldern und der Tabelle „Entra-Gruppe → Rolle" | *Systemverwaltung > Authentifizierung* öffnen (Reiter Microsoft Entra ID aktiv); Beispieldaten ohne echte Tenant-/Client-IDs verwenden | `assets/screenshots/admin/authentifizierung-entra.png` |
-| 16 | `admin/authentication.md` | Bildschirm „Authentifizierung", Reiter „LDAP / Active Directory" mit allen Verbindungsfeldern und der Schaltfläche „Verbindung prüfen" | *Systemverwaltung > Authentifizierung* öffnen, Reiter „LDAP / Active Directory" wählen; Beispieldaten (example.local) verwenden | `assets/screenshots/admin/authentifizierung-ldap.png` |
+| 12 | `admin/login.md` | Anmeldefenster „Herzog CAB – Anmelden“ im Kontomodell: blaues Kopfband mit „Herzog CAB“, „Konto: &lt;Firma&gt;“ und dem Zopf rechts; Felder E-Mail-Adresse und Passwort mit Beschriftung darüber, Häkchen „Angemeldet bleiben“, Link „Passwort vergessen?“, Schaltflächen Anmelden und Beenden. | Kunden-Build auf einem am Konto angemeldeten Rechner starten, nachdem der Benutzer sich im Programm abgemeldet hat (sonst startet es dank „Angemeldet bleiben“ ohne Dialog). Musterkonto, keine echte E-Mail-Adresse. | `assets/screenshots/admin/anmelden-konto.png` |
+| 13 | `admin/login.md` | Derselbe Dialog im Schritt „Zweiter Faktor“: Kopfband-Unterzeile „Zweiter Faktor“, grüner Haken im Passwortfeld, darunter „Code aus der Authenticator-App“ mit sechs Kästchen in zwei Dreiergruppen (drei Ziffern eingetippt), graue Meldung zur Zwei-Faktor-Anmeldung, Schaltfläche „Bestätigen“. | Mit einem Testbenutzer anmelden, für den im Lizenzportal der zweite Faktor eingerichtet ist; nach **Anmelden** drei Ziffern eintippen und aufnehmen. | `assets/screenshots/admin/anmelden-konto-code.png` |
+| 14 | `admin/login.md` | Anmeldefenster „Herzog CAB – Anmelden" mit Logo, Feldern Login/Passwort und der Schaltfläche „Mit Microsoft anmelden" | Herzog CAB mit Dongle starten (Entra-Anmeldung muss unter *Systemverwaltung > Authentifizierung* aktiviert sein, sonst fehlt die Microsoft-Schaltfläche) | `assets/screenshots/admin/anmelden.png` |
+| 15 | `admin/users.md` | Benutzerverwaltung bei Dongle-Installation — Benutzerliste links (mit den Schaltflächen „Neuer Benutzer", „Aus Entra importieren", „Aus LDAP importieren"), Benutzer-Editor rechts | Build mit Dongle, *Systemverwaltung > Benutzer* öffnen, einen Benutzer auswählen | `assets/screenshots/admin/benutzer.png` |
+| 16 | `admin/authentication.md` | Bildschirm „Authentifizierung", Reiter „Microsoft Entra ID" mit Konfigurationsfeldern und der Tabelle „Entra-Gruppe → Rolle" | *Systemverwaltung > Authentifizierung* öffnen (Reiter Microsoft Entra ID aktiv); Beispieldaten ohne echte Tenant-/Client-IDs verwenden | `assets/screenshots/admin/authentifizierung-entra.png` |
+| 17 | `admin/authentication.md` | Bildschirm „Authentifizierung", Reiter „LDAP / Active Directory" mit allen Verbindungsfeldern und der Schaltfläche „Verbindung prüfen" | *Systemverwaltung > Authentifizierung* öffnen, Reiter „LDAP / Active Directory" wählen; Beispieldaten (example.local) verwenden | `assets/screenshots/admin/authentifizierung-ldap.png` |
 
 ## Alle Desktop-Bestandsbilder — 76 Dateien neu aufnehmen
 
@@ -65,15 +66,15 @@ Alle Bilder der Herzog-CAB-Oberfläche stammen von **vor dem UI-Review (02.10.20
 
 | Datei | eingebunden auf | Bildunterschrift | Stand |
 |---|---|---|---|
-| `assets/screenshots/admin/auf-netzlaufwerk-verschieben.png` | `admin/storage-location.md` | Dialog „Auf Netzlaufwerk verschieben“ mit dem bisherigen Arbeitsverzeichnis und dem Feld für den neuen Ordner | 09.10.2026 |
-| `assets/screenshots/admin/benutzer-konto.png` | `admin/users.md` | Benutzerverwaltung im Kontomodell: Benutzerliste aus dem Kundenkonto links, Benutzer mit ausgegrauten Stammda… | 09.10.2026 |
+| `assets/screenshots/admin/auf-netzlaufwerk-verschieben.png` | `admin/storage-location.md` | Dialog „Auf Netzlaufwerk verschieben“ mit dem bisherigen Arbeitsverzeichnis und dem Feld für den neuen Ordner | 11.10.2026 |
+| `assets/screenshots/admin/benutzer-konto.png` | `admin/users.md` | Benutzerverwaltung im Kontomodell: Benutzerliste aus dem Kundenkonto links, Benutzer mit ausgegrauten Stammda… | 11.10.2026 |
 | `assets/screenshots/admin/mein-profil.png` | `admin/my-profile.md` | Dialog „Mein Profil“, Reiter „Profil“: Anzeigename und E-Mail ausgegraut, darunter „Im Lizenzportal ändern“ | 09.10.2026 |
 | `assets/screenshots/admin/speicherort.png` | `admin/storage-location.md` | Bildschirm „Speicherort“ mit dem lokalen Arbeitsbereich des aktiven Profils und der Schaltfläche „Auf Netzlau… | 09.10.2026 |
 | `assets/screenshots/basics/gefuehrte-touren-dialog.png` | `basics/guided-tour.md` | Dialog „Geführte Touren“ mit Themenkarten und der runden Start-Schaltfläche in jeder Karte | 09.10.2026 |
-| `assets/screenshots/basics/hauptfenster.png` | `basics/interface.md` | Hauptfenster mit eingeklappter Navigation, Menüleiste Datei, Ansicht, Hilfe und der Startseite in voller Brei… | 09.10.2026 |
-| `assets/screenshots/basics/startseite-zweispaltig.png` | `basics/home.md` | Startseite in zwei Spalten: Aufträge über die volle Breite, darunter Produktion links, Favoriten und Zuletzt… | 09.10.2026 |
-| `assets/screenshots/basics/startseite.png` | `basics/home.md` | Startseite in drei Spalten: Produktion, Aufträge mit Favoriten, Zuletzt geöffnet mit Workspace-Status | 09.10.2026 |
-| `assets/screenshots/basics/verlauf-leiste.png` | `basics/history.md` | Berechnung mit geöffneter Verlaufs-Leiste: jede Berechnung erscheint mit Ergebnis und Uhrzeit | 09.10.2026 |
+| `assets/screenshots/basics/hauptfenster.png` | `basics/interface.md` | Hauptfenster mit eingeklappter Navigation, Menüleiste Datei, Ansicht, Hilfe und der Startseite in voller Brei… | 11.10.2026 |
+| `assets/screenshots/basics/startseite-zweispaltig.png` | `basics/home.md` | Startseite in zwei Spalten: Aufträge über die volle Breite, darunter Produktion links, Favoriten und Zuletzt… | 11.10.2026 |
+| `assets/screenshots/basics/startseite.png` | `basics/home.md` | Startseite in drei Spalten: Produktion, Aufträge mit Favoriten, Zuletzt geöffnet mit Workspace-Status | 11.10.2026 |
+| `assets/screenshots/basics/verlauf-leiste.png` | `basics/history.md` | Berechnung mit geöffneter Verlaufs-Leiste: jede Berechnung erscheint mit Ergebnis und Uhrzeit | 11.10.2026 |
 | `assets/screenshots/calculations/beispiel-feinheit.png` | `basics/calc-page-anatomy.md`, `calculations/index.md` | Beispiel-Berechnung „Feinheit": Eingabe-Karte, blaue Ergebnis-Kachel mit Einheiten-Platzhalter und die Schalt… | 09.10.2026 |
 | `assets/screenshots/calculations/berechnungen-uebersicht.png` | `calculations/index.md` | Berechnungen-Übersicht mit allen Rechnern, gruppiert nach Material, Produkt und Produktion. | 09.10.2026 |
 | `assets/screenshots/catalog/katalog-anlegen.png` | `catalog/index.md` | Abschnitt „Als eigene Maschine anlegen“ mit Besetzung, Maschinengruppe, Seriennummer und Name in Flechtmaschi… | 09.10.2026 |
@@ -81,29 +82,29 @@ Alle Bilder der Herzog-CAB-Oberfläche stammen von **vor dem UI-Review (02.10.20
 | `assets/screenshots/catalog/katalog.png` | `catalog/index.md` | Herzog-Katalog in der Kachelansicht, Reiter Flechtmaschinen, mit Suchfeld, Baureihenfilter und Umschalter Kac… | 09.10.2026 |
 | `assets/screenshots/design/designer-start.png` | `designer/index.md` | Designer-Startansicht mit Kurzanleitung links und der Liste „Zuletzt bearbeitet oder gespeichert" rechts. | 26.06.2026 |
 | `assets/screenshots/designer/designer-3d-ansicht.png` | `designer/view-3d.md` | Designer in der 3D-Ansicht: zweifarbiges Rundgeflecht als räumliches Modell mit Draufsicht, Seitenansicht und… | 09.10.2026 |
-| `assets/screenshots/designer/designer-bearbeitungsansicht.png` | `designer/index.md` | Designer mit Rundgeflecht: Werkzeugleiste, links Parameter und Besetzungsübersicht, Mitte Klöppeltabelle, rec… | 09.10.2026 |
+| `assets/screenshots/designer/designer-bearbeitungsansicht.png` | `designer/index.md` | Designer mit Rundgeflecht: Werkzeugleiste, links Parameter und Besetzungsübersicht, Mitte Klöppeltabelle, rec… | 11.10.2026 |
 | `assets/screenshots/designer/designer-besetzungsuebersicht.png` | `designer/animation.md` | Besetzungsübersicht eines Packungsgeflechts mit neun Flügelrädern, eingefärbten Klöppeln und den Animations-S… | 09.10.2026 |
-| `assets/screenshots/designer/designer-druckvorschau.png` | `designer/save-print.md` | Druckvorschau eines Designs mit Designdaten, Besetzungsübersicht, Klöppeltabelle und Flechtbild | 09.10.2026 |
+| `assets/screenshots/designer/designer-druckvorschau.png` | `designer/save-print.md` | Druckvorschau eines Designs mit Designdaten, Besetzungsübersicht, Klöppeltabelle und Flechtbild | 11.10.2026 |
 | `assets/screenshots/designer/designer-fachungsfarben-dialog.png` | `designer/painting.md` | Dialog „Fachungsfarben – L3“ mit den Farbknöpfen für Garn 1 bis Garn 3 und „Alle wie Garn 1“ | 09.10.2026 |
-| `assets/screenshots/designer/designer-fachungsfarben.png` | `designer/painting.md` | Designer mit Rundgeflecht und Fachung 3: Garn-Wähler in der Werkzeugleiste mit geöffnetem Menü Garn 1 bis Gar… | 09.10.2026 |
-| `assets/screenshots/designer/designer-farbpalette.png` | `designer/painting.md` | Geöffnete Farbpalette mit aktiver Farbe, Auswahl „Standardpalette“, Farbfeldern und Farbrad-Schaltfläche | 09.10.2026 |
+| `assets/screenshots/designer/designer-fachungsfarben.png` | `designer/painting.md` | Designer mit Rundgeflecht und Fachung 3: Garn-Wähler in der Werkzeugleiste mit geöffnetem Menü Garn 1 bis Gar… | 11.10.2026 |
+| `assets/screenshots/designer/designer-farbpalette.png` | `designer/painting.md` | Geöffnete Farbpalette mit aktiver Farbe, Auswahl „Standardpalette“, Farbfeldern und Farbrad-Schaltfläche | 11.10.2026 |
 | `assets/screenshots/designer/designer-parameter-panel.png` | `designer/parameters.md` | Parameter-Panel mit aufgeklappter Auswahlliste Geflechtsart und allen sechs Geflechtsarten | 09.10.2026 |
-| `assets/screenshots/designer/designer-speichern-dialog.png` | `designer/save-print.md` | Dialog „Design speichern“ mit Designname, Ordnerbaum der Design-Bibliothek und Feld für einen neuen Ordner | 09.10.2026 |
-| `assets/screenshots/designer/designer-zylinder-ansicht.png` | `designer/view-3d.md` | Designer in der Ansicht Zylinder mit den beiden Schaltflächen „Drehen“ in der Werkzeugleiste | 09.10.2026 |
-| `assets/screenshots/hall-planner/3d-hallenansicht.png` | `hall-planner/view-3d.md` | 3D-Hallenansicht mit Wänden, Maschinen und farbigen Status-Kugeln, oben die Werkzeugleiste | 09.10.2026 |
-| `assets/screenshots/hall-planner/editor-bestueckung.png` | `hall-planner/editor.md` | Editor im Bestückungs-Modus: links der Maschinenkatalog, über dem Grundriss die Auswahl-Werkzeugleiste, recht… | 09.10.2026 |
-| `assets/screenshots/hall-planner/editor-geometrie.png` | `hall-planner/editor.md` | Editor im Geometrie-Modus: links Werkzeuge, Wände, Flächen und Objekte, Mitte der Grundriss, rechts die Eigen… | 09.10.2026 |
-| `assets/screenshots/machine-park/maschinenpark.png` | `machine-park/index.md` | Maschinenpark in der Kartenansicht mit Filterzeile sowie Aufwicklern, Abwickler und Flechtmaschinen | 09.10.2026 |
-| `assets/screenshots/master-data/abwickler-neu-dialog.png` | `master-data/pay-off-machines.md` | Dialog „Neuen Abwickler erstellen“ mit Bild und Abschnitt Maschinendaten | 09.10.2026 |
-| `assets/screenshots/master-data/abwickler.png` | `master-data/pay-off-machines.md` | Seite Abwickler mit Suchfeld, Neu, Bearbeiten, Löschen und einer Abwickler-Karte in der Maschinenliste | 09.10.2026 |
-| `assets/screenshots/master-data/aufwickler-neu-dialog.png` | `master-data/take-up-machines.md` | Dialog „Neuen Aufwickler erstellen“ mit Bild und Abschnitt Maschinendaten | 09.10.2026 |
-| `assets/screenshots/master-data/aufwickler.png` | `master-data/take-up-machines.md` | Seite Aufwickler mit drei Karten: Baureihe, Trommel- bzw. Haspelgröße, Traglast und Verlegebreite | 09.10.2026 |
+| `assets/screenshots/designer/designer-speichern-dialog.png` | `designer/save-print.md` | Dialog „Design speichern“ mit Designname, Ordnerbaum der Design-Bibliothek und Feld für einen neuen Ordner | 11.10.2026 |
+| `assets/screenshots/designer/designer-zylinder-ansicht.png` | `designer/view-3d.md` | Designer in der Ansicht Zylinder mit den beiden Schaltflächen „Drehen“ in der Werkzeugleiste | 11.10.2026 |
+| `assets/screenshots/hall-planner/3d-hallenansicht.png` | `hall-planner/view-3d.md` | 3D-Hallenansicht mit Wänden, Maschinen und farbigen Status-Kugeln, oben die Werkzeugleiste | 11.10.2026 |
+| `assets/screenshots/hall-planner/editor-bestueckung.png` | `hall-planner/editor.md` | Editor im Bestückungs-Modus: links der Maschinenkatalog, über dem Grundriss die Auswahl-Werkzeugleiste, recht… | 11.10.2026 |
+| `assets/screenshots/hall-planner/editor-geometrie.png` | `hall-planner/editor.md` | Editor im Geometrie-Modus: links Werkzeuge, Wände, Flächen und Objekte, Mitte der Grundriss, rechts die Eigen… | 11.10.2026 |
+| `assets/screenshots/machine-park/maschinenpark.png` | `machine-park/index.md` | Maschinenpark in der Kartenansicht mit Filterzeile sowie Aufwicklern, Abwickler und Flechtmaschinen | 11.10.2026 |
+| `assets/screenshots/master-data/abwickler-neu-dialog.png` | `master-data/pay-off-machines.md` | Dialog „Neuen Abwickler erstellen“ mit Bild und Abschnitt Maschinendaten | 11.10.2026 |
+| `assets/screenshots/master-data/abwickler.png` | `master-data/pay-off-machines.md` | Seite Abwickler mit Suchfeld, Neu, Bearbeiten, Löschen und einer Abwickler-Karte in der Maschinenliste | 11.10.2026 |
+| `assets/screenshots/master-data/aufwickler-neu-dialog.png` | `master-data/take-up-machines.md` | Dialog „Neuen Aufwickler erstellen“ mit Bild und Abschnitt Maschinendaten | 11.10.2026 |
+| `assets/screenshots/master-data/aufwickler.png` | `master-data/take-up-machines.md` | Seite Aufwickler mit drei Karten: Baureihe, Trommel- bzw. Haspelgröße, Traglast und Verlegebreite | 11.10.2026 |
 | `assets/screenshots/master-data/designs-bibliothek.png` | `master-data/designs.md` | Design-Bibliothek mit Ordnerbaum links, Design-Tabelle mit Vorschaubildern rechts und Werkzeugleiste darüber | 09.10.2026 |
 | `assets/screenshots/master-data/farben-uebersicht.png` | `master-data/colors.md` | Farben-Editor: links die Farbdatenbank, rechts der Bearbeitungsbereich. | 09.10.2026 |
 | `assets/screenshots/master-data/flechtmaschine-neu-dialog.png` | `master-data/braiding-machines.md` | Dialog „Neue Maschine erstellen“ mit Bild und Abschnitt Maschinendaten | 09.10.2026 |
 | `assets/screenshots/master-data/flechtmaschinen.png` | `master-data/braiding-machines.md` | Flechtmaschinen: Maschinenliste in den Stammdaten. | 09.10.2026 |
 | `assets/screenshots/master-data/gatter-neu-dialog.png` | `master-data/creels.md` | Dialog „Neues Gatter erstellen“ mit Bild und Abschnitt Maschinendaten | 09.10.2026 |
-| `assets/screenshots/master-data/gatter.png` | `master-data/creels.md` | Seite Gatter mit Suchfeld, Schaltflächen und einer Gatter-Karte mit Baureihe und Ablaufstellen | 09.10.2026 |
+| `assets/screenshots/master-data/gatter.png` | `master-data/creels.md` | Seite Gatter mit Suchfeld, Schaltflächen und einer Gatter-Karte mit Baureihe und Ablaufstellen | 11.10.2026 |
 | `assets/screenshots/master-data/grundrisse.png` | `master-data/floor-plans.md` | Grundrisse: Liste links, Grundriss-Ansicht rechts. | 09.10.2026 |
 | `assets/screenshots/master-data/hallenplaner.png` | `hall-planner/index.md` | Hallenplaner-Übersicht: Grundriss-Liste links, rechts Belegungs-Pillenleiste, Vorschau, zugewiesene Maschinen… | 09.10.2026 |
 | `assets/screenshots/master-data/kunden-uebersicht.png` | `master-data/customers.md` | Kunden-Modul: links die Kundendatenbank, rechts der Bearbeitungsbereich. | 09.10.2026 |
@@ -117,30 +118,30 @@ Alle Bilder der Herzog-CAB-Oberfläche stammen von **vor dem UI-Review (02.10.20
 | `assets/screenshots/master-data/spulmaschine-neu-dialog.png` | `master-data/winding-machines.md` | Dialog „Neue Spulmaschine erstellen“ mit Bild und Abschnitt Maschinendaten samt Baureihe | 09.10.2026 |
 | `assets/screenshots/master-data/spulmaschinen.png` | `master-data/winding-machines.md` | Seite Spulmaschinen mit vier Karten: Baureihe, Spulstellen, Spulen-Durchmesser und Drehzahl | 09.10.2026 |
 | `assets/screenshots/master-data/trommeln.png` | `master-data/drums.md` | Seite Trommeln: links Trommeldatenbank mit Suche und Materialart, rechts „Trommel bearbeiten“ mit Maßen und T… | 09.10.2026 |
-| `assets/screenshots/orders/auftraege-uebersicht.png` | `orders/index.md` | Auftragsübersicht mit Suche, vier Filtern, Flecht- und Spulaufträgen nach Zeitraum gruppiert und Aktionsleist… | 09.10.2026 |
+| `assets/screenshots/orders/auftraege-uebersicht.png` | `orders/index.md` | Auftragsübersicht mit Suche, vier Filtern, Flecht- und Spulaufträgen nach Zeitraum gruppiert und Aktionsleist… | 11.10.2026 |
 | `assets/screenshots/orders/auftrag-druckvorlage-waehlen.png` | `orders/print.md` | Dialog „Druckvorlage wählen“ mit aufgeklappter Auswahlliste der Vorlagen | 09.10.2026 |
-| `assets/screenshots/orders/auftrag-druckvorschau.png` | `orders/print.md` | Druckvorschau eines Auftrags mit Auftrags-, Kunden-, Maschinen- und Produktionsdaten. | 09.10.2026 |
-| `assets/screenshots/orders/auftrag-editor-kunde.png` | `orders/braiding-order.md` | Flechtauftrag-Editor mit dem Tab „Kunde" und der Tab-Leiste. | 09.10.2026 |
+| `assets/screenshots/orders/auftrag-druckvorschau.png` | `orders/print.md` | Druckvorschau eines Auftrags mit Auftrags-, Kunden-, Maschinen- und Produktionsdaten. | 11.10.2026 |
+| `assets/screenshots/orders/auftrag-editor-kunde.png` | `orders/braiding-order.md` | Flechtauftrag-Editor mit dem Tab „Kunde" und der Tab-Leiste. | 11.10.2026 |
 | `assets/screenshots/orders/auftrag-tab-auftrag.png` | `orders/braiding-order.md` | Tab „Auftrag" mit Name, Nummer, Auftragslänge, Terminen und Status. | 26.06.2026 |
-| `assets/screenshots/orders/auftrag-tab-aufwicklung.png` | `orders/braiding-order.md` | Tab „Aufwicklung“ mit gewähltem Aufwickler, gewählter Trommel und dem Abschnitt zur Seele | 09.10.2026 |
-| `assets/screenshots/orders/auftrag-tab-design.png` | `orders/braiding-order.md` | Tab „Design“ mit verknüpftem Design, Vorschau-Miniatur und geöffneter Klöppel-Tabelle | 09.10.2026 |
+| `assets/screenshots/orders/auftrag-tab-aufwicklung.png` | `orders/braiding-order.md` | Tab „Aufwicklung“ mit gewähltem Aufwickler, gewählter Trommel und dem Abschnitt zur Seele | 11.10.2026 |
+| `assets/screenshots/orders/auftrag-tab-design.png` | `orders/braiding-order.md` | Tab „Design“ mit verknüpftem Design, Vorschau-Miniatur und geöffneter Klöppel-Tabelle | 11.10.2026 |
 | `assets/screenshots/orders/auftrag-tab-produkt.png` | `orders/braiding-order.md` | Tab „Produkt" mit den Rechner-Symbolen neben den Feldern. | 26.06.2026 |
-| `assets/screenshots/orders/auftrag-tab-produktion.png` | `orders/braiding-order.md` | Tab „Produktion“ mit den Abschnitten Produktionswerte und Hochrechnung auf die Auftragslänge | 09.10.2026 |
+| `assets/screenshots/orders/auftrag-tab-produktion.png` | `orders/braiding-order.md` | Tab „Produktion“ mit den Abschnitten Produktionswerte und Hochrechnung auf die Auftragslänge | 11.10.2026 |
 | `assets/screenshots/orders/auftrag-tab-uebersicht.png` | `orders/braiding-order.md` | Tab „Übersicht" als kompakte Zusammenfassung des Auftrags. | 26.06.2026 |
 | `assets/screenshots/orders/spulauftrag-editor.png` | `orders/winding-order.md` | Spulauftrag-Editor mit den Karten „Auftrag“ und „Spulerei — was wird gespult?“ samt Farbaufschlüsselung | 09.10.2026 |
 | `assets/screenshots/print-templates/druck-editor.png` | `print-templates/editor.md`, `print-templates/index.md`, `print-templates/manage.md`, `print-templates/preview-and-print.md` | Aufbau des Druck-Editors mit den drei Bereichen. | 26.06.2026 |
 | `assets/screenshots/print-templates/element-palette.png` | `print-templates/elements.md` | Element-Palette des Druck-Editors mit den Gruppen Datentabellen und Grafische Elemente. | 26.06.2026 |
 | `assets/screenshots/print-templates/feldvorlagen-picker.png` | `print-templates/elements.md` | Feldvorlagen-Picker mit Suche, Bereich-Auswahl, Trefferliste und Schaltfläche „Feld einfügen“ | 09.10.2026 |
 | `assets/screenshots/print-templates/tabelle-bearbeiten.png` | `print-templates/elements.md` | Bearbeitungsdialog der Datentabelle „Auftrag“ mit Parameterzeilen links und Feldvorlagen-Picker rechts | 09.10.2026 |
-| `assets/screenshots/settings/einstellungen-allgemein.png` | `admin/settings/appearance.md`, `admin/settings/index.md` | Tab „Allgemein" mit Profil, Darstellung, Diagnose, Datenschutz, Produktionsplanung und Flechtwinkel; die Ausw… | 09.10.2026 |
+| `assets/screenshots/settings/einstellungen-allgemein.png` | `admin/settings/appearance.md`, `admin/settings/index.md` | Tab „Allgemein" mit Profil, Darstellung, Diagnose, Datenschutz, Produktionsplanung und Flechtwinkel; die Ausw… | 11.10.2026 |
 | `assets/screenshots/settings/einstellungen-design.png` | `admin/settings/legacy-import.md` | Tab „Design“ der Einstellungen mit Vorgaben für neue Designs, Vorschau & Ansicht, Animation und Speichern | 09.10.2026 |
-| `assets/screenshots/settings/einstellungen-lizenz.png` | `admin/settings/license.md` | Tab „Lizenz“ der Einstellungen mit den Karten zum Kundenkonto, Konto und Cloud | 09.10.2026 |
-| `assets/screenshots/settings/firma.png` | `admin/company.md` | Firma: Logo, Stammdaten sowie Steuer- und Handelsregister-Angaben. | 09.10.2026 |
-| `assets/screenshots/settings/webserver.png` | `admin/settings/web-server.md` | Tab „Webserver" bei laufendem Server mit Passwort: Netzwerk, Zugangsschutz und Live-Status mit IP-Adressen un… | 09.10.2026 |
+| `assets/screenshots/settings/einstellungen-lizenz.png` | `admin/settings/license.md` | Tab „Lizenz“ der Einstellungen mit den Karten zum Kundenkonto, Konto und Cloud | 11.10.2026 |
+| `assets/screenshots/settings/firma.png` | `admin/company.md` | Firma: Logo, Stammdaten sowie Steuer- und Handelsregister-Angaben. | 11.10.2026 |
+| `assets/screenshots/settings/webserver.png` | `admin/settings/web-server.md` | Tab „Webserver" bei laufendem Server mit Passwort: Netzwerk, Zugangsschutz und Live-Status mit IP-Adressen un… | 11.10.2026 |
 | `assets/screenshots/setup/arbeitsverzeichnis-festlegen.png` | `setup/first-run.md` | Dialog „Arbeitsverzeichnis einrichten“ auf dem ersten Rechner der Firma | 09.10.2026 |
 | `assets/screenshots/setup/konto-anmeldung-geraet.png` | `setup/activate-license.md` | Dialog „Herzog CAB – Anmeldung am Kundenkonto“ mit E-Mail-Adresse, Passwort und „Angemeldet bleiben“ | 09.10.2026 |
 | `assets/screenshots/users/rollen.png` | `admin/roles.md` | Rollen-Verwaltung: Rollenliste links, Rechte-Auswahl rechts. | 09.10.2026 |
-| `assets/screenshots/workspace/profile.png` | `admin/profiles.md` | Profilverwaltung: Profilliste links, Profil-Einstellungen rechts. | 09.10.2026 |
+| `assets/screenshots/workspace/profile.png` | `admin/profiles.md` | Profilverwaltung: Profilliste links, Profil-Einstellungen rechts. | 11.10.2026 |
 
 ## Bilder fremder Programme — 16 Dateien, nicht betroffen
 

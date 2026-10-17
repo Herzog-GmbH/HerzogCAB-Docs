@@ -33,8 +33,10 @@ All controls of the header are in **one line**: on the far left,
 **To order overview** (with an arrow icon) takes you back to the
 [Order Overview](index.md), next to it is the title "Winding order". On the
 right are **Print** (opens the [print output](print.md) with the standard
-winding order template) and **Save winding order**. If a colleague has saved
-the same winding order in the meantime, Herzog CAB asks when saving — see
+winding order template) and **Save winding order**. If a colleague is
+editing the winding order right now, it is read-only for you (banner *Being
+edited – read only*); if they have saved it in the meantime, Herzog CAB asks
+when saving — see
 [Several users on the same workspace folder](../basics/multi-user.md).
 
 The editor is **one** scrolling page with three numbered cards — from top to

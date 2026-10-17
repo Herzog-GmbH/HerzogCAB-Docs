@@ -115,6 +115,7 @@ Without this permission you can only view the versions.
 |---|---|
 | *This editor has unsaved changes. Please save or discard them before you restore a version.* | The editor has open changes. As long as they exist, the **Restore** button is missing. |
 | *Someone else has saved in the meantime. The history is being reloaded.* | A colleague or the cloud sync has just saved the entry. Check the reloaded list and then restore again. |
+| *This entry is currently being edited.* | Someone else has the entry open right now, in the web app or in the desktop app (lock, see [Edit lock](interface.md#bearbeitungssperre)). Restore as soon as it is free. |
 
 ## Recycle bin { #papierkorb }
 
@@ -162,7 +163,9 @@ recycle bin shows the 200 most recently deleted entries.
     The desktop app has no *Versions* dialog and no recycle bin.
     If it works with the cloud sync, its saves and
     deletions still end up here, with the source *Program*. Without cloud sync,
-    no versions are created for the data in the workspace folder.
+    it stores earlier versions only in the workspace folder, where you cannot
+    view them (see
+    [Old versions](../basics/multi-user.md#alte-fassungen)).
 
 ## Related pages { #verwandte-seiten }
 

@@ -9,10 +9,15 @@ Verhalten beobachten, müssen Sie kein Support-Ticket eröffnen.
 ## Workspace auf einem Netzlaufwerk
 
 Liegt das Arbeitsverzeichnis auf einem Netzlaufwerk und mehrere Arbeitsplätze
-greifen darauf zu: Zwei Rechner können **nicht gleichzeitig denselben
-Auftrag** bearbeiten. Die zuletzt gespeicherte Version überschreibt die
-vorherige, ohne dass Herzog CAB warnt. Sprechen Sie sich im Team ab, wer
-gerade welchen Auftrag bearbeitet.
+greifen darauf zu, kann **immer nur einer** einen Eintrag bearbeiten: Wer
+denselben Auftrag, dasselbe Design oder denselben Stammdateneintrag öffnet,
+während ein Kollege ihn bearbeitet, sieht ihn nur zum Lesen (Schloss, Band
+*In Bearbeitung – nur lesen*), bis der Kollege fertig ist. Das ist gewollt,
+siehe [Die Bearbeitungssperre](../basics/multi-user.md#die-bearbeitungssperre).
+Bleibt ein Eintrag gesperrt, weil der Kollege nicht erreichbar ist, kann ein
+Administrator die Sperre aufheben. Rechner mit Version 2.1.0 oder älter am
+selben Arbeitsverzeichnis kennen die Sperre nicht und können Änderungen
+anderer überschreiben; aktualisieren Sie deshalb alle Rechner gleichzeitig.
 
 ## Druckvorschau bei sehr großen Vorlagen
 

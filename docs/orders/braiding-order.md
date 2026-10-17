@@ -440,8 +440,10 @@ beschrieben.
   **Speichern**, **Nicht speichern** oder **Abbrechen**.
 * Das Speichern setzt das Recht voraus, Aufträge zu bearbeiten — siehe
   [Rollen und Rechte](../admin/roles.md).
-* Hat ein Kollege denselben Auftrag inzwischen gespeichert, fragt Herzog CAB
-  nach (**Überschreiben**, **Als Kopie speichern**, **Neu laden**) — siehe
+* Bearbeitet ein Kollege den Auftrag gerade, sehen Sie ihn nur zum Lesen
+  (Band *In Bearbeitung – nur lesen*, Schloss in der Auftragsliste). Hat
+  er ihn inzwischen gespeichert, fragt Herzog CAB nach (**Überschreiben**,
+  **Als Kopie speichern**, **Neu laden**) — siehe
   [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
 
 ## Verwandte Seiten

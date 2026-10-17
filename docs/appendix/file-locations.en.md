@@ -16,6 +16,7 @@ page does not duplicate it.
 | **Machine-wide** (`%ProgramData%`) | User accounts, profiles, profile pictures, the licence confirmation of the customer account (`license.json`, lease and modules of this computer) | computer-wide, independent of the workspace folder |
 | **Cloud upload** | Record of the last upload (`.cloud-sync` in the workspace folder) | in the workspace folder, hidden subfolder |
 | **Old versions** | Earlier and deleted versions of entries (`.verlauf` in the workspace folder), see [Multiple users](../basics/multi-user.md#alte-fassungen) | in the workspace folder, hidden subfolder |
+| **Edit locks** | Who is currently editing which entry (`.sperren` in the workspace folder), see [The edit lock](../basics/multi-user.md#die-bearbeitungssperre). Do not delete by hand: a lock without a sign of life expires by itself after three minutes. | in the workspace folder, hidden subfolder |
 | **Web app** | Workspace of the customer account: orders, designs, machines, master data, media | on the Herzog server (app.herzog-cab.com), per account; backup via [ZIP export](../web/import.md) |
 | **Windows registry** | Window sizes, column widths, last interface state | `HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab` |
 

@@ -9,10 +9,15 @@ behaviors, you do not need to open a support ticket.
 ## Workspace on a network drive { #workspace-auf-einem-netzlaufwerk }
 
 If the workspace folder is on a network drive and several workstations
-access it: two computers can**not edit the same
-order at the same time**. The most recently saved version overwrites the
-previous one without Herzog CAB warning you. Agree within the team who
-is currently editing which order.
+access it, **only one person at a time** can edit an entry: anyone who
+opens the same order, the same design or the same master data entry while
+a colleague is editing it sees it read-only (lock, banner *Being edited –
+read only*) until the colleague is done. This is intended, see
+[The edit lock](../basics/multi-user.md#die-bearbeitungssperre). If an
+entry stays locked because the colleague cannot be reached, an
+administrator can release the lock. Computers with version 2.1.0 or older
+in the same workspace folder do not know the lock and can overwrite other
+people's changes; therefore update all computers at the same time.
 
 ## Print preview with very large templates { #druckvorschau-bei-sehr-groen-vorlagen }
 

@@ -33,9 +33,10 @@ Alle Bedienelemente der Kopfzeile stehen in **einer Zeile**: Ganz links
 bringt Sie **Zur Auftragsübersicht** (mit Pfeilsymbol) zurück zur
 [Auftragsübersicht](index.md), daneben steht der Titel „Spulauftrag“. Rechts
 liegen **Drucken** (öffnet die [Druckausgabe](print.md) mit der
-Spulauftrags-Standardvorlage) und **Spulauftrag speichern**. Hat ein
-Kollege denselben Spulauftrag inzwischen gespeichert, fragt Herzog CAB beim
-Speichern nach — siehe [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
+Spulauftrags-Standardvorlage) und **Spulauftrag speichern**. Bearbeitet ein
+Kollege den Spulauftrag gerade, ist er für Sie nur lesbar (Band *In
+Bearbeitung – nur lesen*); hat er ihn inzwischen gespeichert, fragt Herzog
+CAB beim Speichern nach — siehe [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
 
 Der Editor ist **eine** Scroll-Seite mit drei nummerierten Karten — von oben
 nach unten in der Reihenfolge, in der Sie planen:

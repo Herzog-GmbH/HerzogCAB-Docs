@@ -432,8 +432,10 @@ calculation pages is described under
   **Save**, **Don't save** or **Cancel**.
 * Saving requires the right to edit orders — see
   [Roles and rights](../admin/roles.md).
-* If a colleague has saved the same order in the meantime, Herzog CAB asks
-  (**Overwrite**, **Save as copy**, **Reload**) — see
+* If a colleague is editing the order right now, you see it read-only
+  (banner *Being edited – read only*, lock in the order list). If they have
+  saved it in the meantime, Herzog CAB asks (**Overwrite**,
+  **Save as copy**, **Reload**) — see
   [Several users on the same workspace folder](../basics/multi-user.md).
 
 ## Related pages { #verwandte-seiten }

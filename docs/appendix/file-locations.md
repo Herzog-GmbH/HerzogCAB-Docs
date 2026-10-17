@@ -16,6 +16,7 @@ Seite dupliziert sie nicht.
 | **Maschinenweit** (`%ProgramData%`) | Benutzerkonten, Profile, Profilbilder, die Lizenzbestätigung des Kundenkontos (`license.json`, Miete und Bausteine dieses Rechners) | rechnerweit, unabhängig vom Arbeitsverzeichnis |
 | **Cloud-Upload** | Merkliste des letzten Uploads (`.cloud-sync` im Arbeitsverzeichnis) | im Arbeitsverzeichnis, unsichtbarer Unterordner |
 | **Alte Fassungen** | Frühere und gelöschte Fassungen von Einträgen (`.verlauf` im Arbeitsverzeichnis), siehe [Mehrere Benutzer](../basics/multi-user.md#alte-fassungen) | im Arbeitsverzeichnis, unsichtbarer Unterordner |
+| **Bearbeitungssperren** | Wer gerade welchen Eintrag bearbeitet (`.sperren` im Arbeitsverzeichnis), siehe [Die Bearbeitungssperre](../basics/multi-user.md#die-bearbeitungssperre). Nicht von Hand löschen: Eine Sperre ohne Lebenszeichen verfällt nach drei Minuten von selbst. | im Arbeitsverzeichnis, unsichtbarer Unterordner |
 | **Web-App** | Arbeitsbereich des Kundenkontos: Aufträge, Designs, Maschinen, Stammdaten, Medien | auf dem Herzog-Server (app.herzog-cab.com), je Konto; Sicherung per [ZIP-Export](../web/import.md) |
 | **Windows-Registry** | Fenstergrößen, Spaltenbreiten, letzter Oberflächen-Zustand | `HKEY_CURRENT_USER\Software\Herzog GmbH\Herzog Cab` |
 

@@ -101,8 +101,11 @@ Die anspruchsvollste Variante kombiniert mehrere Strategien:
 
 !!! warning "Hinweise zu Workspaces auf Netzlaufwerken"
     * Alle Bediener brauchen **Schreibrechte** auf den Shares.
-    * **Nicht zwei Bediener gleichzeitig** denselben Auftrag öffnen —
-      Änderungen können sich überschreiben.
+    * **Alle Rechner auf derselben Version** (ab 2.1.1): Dann sperrt
+      Herzog CAB jeden Eintrag, den gerade jemand bearbeitet, und die
+      anderen sehen ihn nur zum Lesen, siehe
+      [Mehrere Benutzer am selben Arbeitsverzeichnis](../basics/multi-user.md).
+      Ältere Versionen kennen die Sperre nicht.
     * Eine **stabile Netzwerkverbindung** ist Pflicht. Bei Aussetzern
       können Auftragsdateien beschädigt werden.
     * **Backup nicht vergessen** — der Workspace ist jetzt der einzige

@@ -90,8 +90,8 @@ If you are using Herzog CAB for the first time, it is best to read
 
     ---
 
-    How entries are saved individually, locked and with a version —
-    and what you see when a colleague has changed the same entry.
+    Edit lock with a lock symbol, saving individually and with a version —
+    and what you see when a colleague is editing the same entry.
 
     [:octicons-arrow-right-24: Multiple users](multi-user.md)
 
