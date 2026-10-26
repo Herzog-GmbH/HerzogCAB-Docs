@@ -35,15 +35,59 @@ tasks; the tasks themselves have their own pages.
 |---|---|
 | **← Braiding Simulator** | Back to the [start page](index.md#startseite). If there are unsaved changes, the program asks first. |
 | Name of the machine | With an asterisk if there are unsaved changes. The tooltip states the number of gears, switches and carrier positions. |
-| **Setup** | List of the setups for this machine: your own, those supplied by Herzog (with a symbol, *Supplied by Herzog with the machine.*) and the configurations (*Configuration: Full* etc.). Choosing one places the setup on the machine immediately; if the current arrangement has not been saved, the program asks first (*Change setup*, **Discard and load**). Switches and gears stay as they are. |
-| **⋯** next to Setup | **Save as new setup…** and **Delete setup…** (own setups only), see [Set up](populate.md#besetzung-speichern). |
-| **Program** | List of the time programs for this machine, programs from Herzog with a symbol. Choosing one loads it immediately; if the program brings a setup, the setup comes along, provided your current arrangement has been saved. The next time you open the machine, program and setup are selected again. |
-| **⋯** next to Program | **New program…** (enter a name; the program takes the current position of switches and gears as its start and the selected setup) and **Delete program…** (it is only deleted once you **Save**). Programs from Herzog cannot be deleted. |
+| **Setup** | List of the setups for this machine. Choosing one places the setup on the machine immediately and loads its most recently used program, see [below](#besetzung-und-programm). |
+| **⋯** next to Setup | **Save as new setup…**, **Rename setup…** and **Delete setup…**, see [below](#besetzung-und-programm). |
+| **Program** | The time programs of the selected setup. Choosing one loads it immediately. The next time you open the machine, setup and program are selected again. |
+| **⋯** next to Program | **New program…**, **Rename program…**, **Duplicate program**, **Assign to another setup…** and **Delete program…**, see [below](#besetzung-und-programm). |
 | **⛔ n errors**, **⚠ n notes** | Appear as soon as there are messages (red or orange). The tooltip lists them; a click opens the [Check](check.md) task. |
 | **View** | What the machine view shows, see [below](#ansicht). |
 | **?** | Quick help with mouse and keys, see [Keys and mouse](#tasten-und-maus). |
 | Undo, Redo | Multi-level (++ctrl+z++, ++ctrl+y++). The run is then back at the start. Locked during recording. |
 | **Save** | Saves your own setups and programs (++ctrl+s++). Active as soon as there are changes and you have the *Edit Braiding Simulator* right. See [Save](#speichern). |
+
+### Setup and program { #besetzung-und-programm }
+
+Each program belongs to exactly one setup. The **Program** list therefore
+only shows the programs of the setup selected at the top.
+
+!!! warning "📷 Screenshot missing"
+    **Subject:** Header bar of the simulator with a selected setup and the opened ⋯ menu next to “Program” (New program…, Rename program…, Duplicate program, Assign to another setup…, Delete program…).
+    **How to create:** Customer build with a model licence, open a machine with two setups and several programs, click ⋯ next to “Program”.
+    **Target file:** `assets/screenshots/braiding-simulator/programm-menue.png`
+
+* **Changing the setup:** the new setup comes with its most recently used
+  program; a setup without programs comes with **— no program —**. If the
+  current arrangement has not been saved, the program asks first (*Change
+  setup*, **Discard and load**).
+* **Programs without a setup:** programs from older program versions that
+  do not belong to any setup yet are listed in the **Program** list under
+  the subheading *Without setup:*. If you choose one, the program asks once
+  which setup it belongs to (**Assign program**, **Assign**). If there is
+  no setup yet, save one first.
+
+**⋯** menu next to **Setup**:
+
+| Entry | Effect |
+|---|---|
+| **Save as new setup…** | Creates the current arrangement as a new setup, optionally with a copy of the open program, see [Set up](populate.md#besetzung-speichern). |
+| **Rename setup…** | New name for the selected setup. The program refuses a name that already exists (*The setup “…” already exists.*). |
+| **Delete setup…** | Deletes the selected setup **together with its programs**. The confirmation prompt names the programs, for example *Delete setup “…” together with 2 programs?*. **Undo** brings the setup and its programs back. |
+
+These three entries take effect immediately, without **Save**.
+
+**⋯** menu next to **Program**:
+
+| Entry | Effect |
+|---|---|
+| **New program…** | Creates a new program on the selected setup (enter a name). It takes over the current start position of switches and gears. A new program is only possible on a saved setup: if the arrangement is not one yet, the program asks *A program belongs to a setup. The current arrangement is not a saved setup yet. Save it as a setup now?*; **Save setup…** opens the [Save setup](populate.md#besetzung-speichern) dialog. |
+| **Rename program…** | New name for the selected program. |
+| **Duplicate program** | Creates a copy of the program on the same setup (*… – copy*). |
+| **Assign to another setup…** | The program then belongs to the setup you choose in the dialog (**Assign**) and runs with its carriers. The simulator switches to that setup. Check the program afterwards under [Check](check.md). Only active if the machine has more than one setup. |
+| **Delete program…** | Deletes the selected program after a confirmation prompt; it is only gone for good once you **Save**. |
+
+You save these program changes with **Save**. The entries of both menus
+require the *Edit Braiding Simulator* right. The same commands are also
+available on the [start page](index.md#startseite).
 
 ### View { #ansicht }
 
@@ -86,7 +130,7 @@ The right-hand bar has a fixed width. At the bottom are the four tasks:
 | Tab | Content |
 |---|---|
 | [**Set up**](populate.md) | Place and color carriers; yarn and tube threads. A click on an empty position places a carrier. |
-| [**Program**](program.md) | Switches and gears during the run, operating modes, speed and take-up. A click on a switch switches it. |
+| [**Program**](program.md) | Switches and gears during the run, speed and take-up. A click on a switch switches it. |
 | [**Check**](check.md) | Errors and notes, collision check over the whole run. A red or orange dot on the tab indicates errors or notes. |
 | [**Output**](output.md) | Switching plan for the control: print, as PDF or CSV. |
 
@@ -124,17 +168,9 @@ machine view.
 
 ## Save { #speichern }
 
-**Save** writes changed arrangements into the selected setup and saves
-the programs:
-
-* If the selected setup is a configuration or a setup from Herzog, a copy
-  of your own *&lt;Name&gt; – own* is created; the original remains
-  unchanged.
-* If no setup is selected (for example after **Remove all carriers**),
-  the program asks for a name.
-* If you change a program from Herzog, the simulator immediately creates a
-  copy of your own: *Own copy "… – own" created — the program from Herzog
-  remains unchanged.*
+**Save** writes a changed arrangement into the selected setup and saves
+the programs. If no setup is selected (for example after **Remove all
+carriers**), the program asks for a name (*Save setup*, **Setup name:**).
 
 If you leave the machine with unsaved changes (going back, via the
 navigation or when closing the program), the program asks *The machine
@@ -187,8 +223,9 @@ Layout and operation are the same. Differences, with details under
 
 * Dragging with the **left** or middle mouse button pans the machine;
   **Zoom in**, **Zoom out** and **Fit** are at the top right.
-* The **⋯** menu next to **Program** additionally contains **Rename…** and
-  **Duplicate…**.
+* In the **⋯** menu next to **Program**, the entries are called
+  **Rename…** and **Duplicate…**; when duplicating, the web app asks for
+  the name of the copy.
 * The playback speed additionally offers **8 steps/s**.
 * On a smartphone everything is stacked, the selection card slides up from
   the bottom as a sheet, and a **Long press** replaces the right-click.

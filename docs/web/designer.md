@@ -180,6 +180,8 @@ die Ansicht *„Dieser Browser kann kein WebGL darstellen."*
     Die Web-App zeigt ein Design je Seite — den Zwei-Fenster-Vergleich der
     Desktop-App gibt es nicht. Mischdesigns aus Rund- und Litzenabschnitten
     zeigt die Web-App an; anlegen lassen sie sich nur in der Desktop-App.
+    Die [Drehung](../designer/painting.md#drehung-s-z-oder-gerade) je Klöppel
+    setzen Sie in der Desktop-App.
     Dafür hat die Web-App schon die [Fachungsfarben](#fachungsfarben-farbe-je-garn)
     und den Dialog [Versionen](versions.md).
 

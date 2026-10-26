@@ -32,14 +32,14 @@ sowie zwei gleich aufgebaute Panels für **Seele** und **Mantel**.
 | **Spule** | – | Auswahl einer Spule aus den Stammdaten (passend zur gewählten Maschinentype). Liefert Außendurchmesser, Kerndurchmesser und Wickellänge der Spule für die Längenberechnung. |
 | **Material** | – | Optionale Auswahl eines Materials aus den Stammdaten; die **Dichte** wird daraus automatisch übernommen. |
 | **Dichte** | g/cm³ | Materialdichte (drei Nachkommastellen). Wird bei Materialauswahl gefüllt, ist aber auch manuell überschreibbar. |
-| **Anteil Seele** bzw. **Anteil Mantel** | % | Querschnittsanteil der jeweiligen Lage am Gesamtprodukt. **Anteil Seele + Anteil Mantel müssen zusammen 100 % ergeben.** |
+| **Anteil Seele** bzw. **Anteil Mantel** | % | Querschnittsanteil der jeweiligen Lage am Gesamtprodukt. **Anteil Seele + Anteil Mantel müssen zusammen 100 % ergeben.** Tippen Sie einen der beiden Werte ein, ergänzt Herzog CAB den anderen auf 100 %. Werte aus Verlauf oder Auftrag bleiben beim Laden unverändert. |
 | **Flechtwinkel** | ° | Flechtwinkel der Lage. |
 | **Anzahl Klöppel** | stk. | Anzahl der Klöppel der Maschine (Seele ≥ 1, Mantel ≥ 3). |
 | **Fachung pro Klöppel** | stk. | Anzahl der parallel laufenden Fäden/Litzen je Klöppel. |
 | **Flügelrad-Drehzahl** | rpm | Drehzahl des Flügelrads der Maschine. |
 
 !!! note "Anteile müssen 100 % ergeben"
-    Weichen **Anteil Seele** und **Anteil Mantel** zusammen um mehr als 0,01 % von 100 % ab, meldet die Berechnung *„Die Anteile von Kern und Mantel ergeben zusammen keine 100 %"* und markiert beide Anteilsfelder.
+    Weichen **Anteil Seele** und **Anteil Mantel** zusammen um mehr als 0,01 % von 100 % ab, etwa bei Werten aus einem älteren Auftrag, meldet die Berechnung *„Die Anteile von Kern und Mantel ergeben zusammen keine 100 %"* und markiert beide Anteilsfelder.
 
 ## Ergebnis
 

@@ -25,7 +25,7 @@ gültige Modell-Lizenz des Kontos ab, verschwindet der Eintrag.
 ## Startseite
 
 !!! warning "📷 Screenshot fehlt"
-    **Motiv:** Startseite des Flechtsimulators in der Web-App: links die Maschinen, rechts die gewählte Maschine mit Vorschau, Konfigurationen von Herzog, Meine Besetzungen, Meine Programme und den Knöpfen Neue Besetzung, Neues Programm, Öffnen.
+    **Motiv:** Startseite des Flechtsimulators in der Web-App: links die Maschinen, rechts die gewählte Maschine mit Vorschau, dem Abschnitt Besetzungen und Programme (je Besetzung eine Karte mit ihren Programmen) und den Knöpfen Neue Besetzung, Öffnen, Eigenes löschen….
     **So erzeugen:** Web-App lokal (127.0.0.1:5173), Seite `/flechtsimulator` mit einem Kundenkonto mit zugewiesener Modell-Lizenz; noch nicht im Skript `_tools/web_screenshots.py` (Name `flechtsimulator` ergänzen).
     **Ziel-Datei:** `assets/screenshots/web/flechtsimulator.png`
     <!-- web-bild ../assets/screenshots/web/flechtsimulator.png -->
@@ -38,8 +38,8 @@ Im Browser kommt hinzu:
 * Ab 1024 px Breite stehen Liste und Details nebeneinander, darunter
   untereinander. Am Smartphone springt die Seite nach der Wahl zu den
   Details.
-* Neben **Neue Besetzung** und **Neues Programm** gibt es den Knopf
-  **Öffnen** für die gewählte Maschine.
+* Neben **Neue Besetzung** gibt es den Knopf **Öffnen** für die gewählte
+  Maschine.
 * Die Liste lädt alle fünf Minuten und beim Zurückkehren ins Fenster neu;
   eine neue Zuweisung im Lizenzportal kommt so ohne Neuladen an.
 * Ist Ihnen kein Modell zugewiesen, steht dort *Ihnen ist kein
@@ -72,7 +72,6 @@ Zeitachse.
 |---|---|
 | **Befehle (n)** | Aufklappbare Liste aller Befehle des Programms in der Aufgabe **Programm**. Je Befehl ändern Sie den **Schritt** (der Befehl wandert dorthin), springen mit **Zum Schritt springen** oder entfernen ihn mit **Befehl entfernen**. Befehle, die die Maschine nicht ausführen kann, stehen orange. |
 | **Länge** | Die Programmlänge steht in der Aufgabe **Programm** (leer = so lang wie die Befehle). |
-| **Umbenennen…**, **Duplizieren…** | Zusätzlich im Menü **⋯** neben **Programm**. Ein Programm von Herzog wird beim Umbenennen zur eigenen Kopie. |
 | **Fadenspur (abgewickelt)** | In der Aufgabe **Ausgeben**: **Fadenspur berechnen** zeigt den Weg jedes Klöppels um das Geflecht, abgewickelt (Umfang waagerecht, Zeit nach unten, Rapport gestrichelt). |
 | **8 Schritte/s** | Zusätzliche Geschwindigkeit der Wiedergabe. |
 | **Vollbild** | Knopf in der 3D-Vorschau. |
@@ -88,7 +87,6 @@ Zeitachse.
 | **Bedeckung** | Nicht einstellbar; angezeigt wird sie in Infozeile, Abzug und Maschine 3D. |
 | **Materialdurchmesser** je Besetzung | Gilt je Browser für alle Maschinen und wird nicht mit der Besetzung gespeichert. Ein Materialdurchmesser aus einem Programm der Desktop-App geht im Abzug vor. |
 | [Rohrfäden](../braiding-simulator/populate.md#rohrfaden) per Klick einziehen | Rohrfäden kommen nur aus einer gespeicherten Besetzung. |
-| [Betriebsart einfügen](../braiding-simulator/program.md#betriebsart-einfugen) | Fehlt. |
 | Ansicht **Laufrichtung** färbt leere Plätze | Nur Drehpfeile und Richtungspfeile. |
 | Zeitachse: Rechtsklick-Menü (Schritte einfügen/löschen, Abschnitt verschieben/kopieren), Zeilen markieren, Befehl durch Ziehen verschieben | Fehlt. Befehle verschieben Sie über die Befehlsliste. Ziehen in einer Zeile legt den Zustand über den Bereich. |
 | Prüfung mit Farbbild, Rückkehr der Klöppel und Abbindung je Abschnitt | Nur Kollision, Rapport und Klöppelzahl, dazu *Alle Befehle lassen sich an der Maschine ausführen.* oder die Befunde. |
@@ -106,9 +104,11 @@ Zeitachse.
 * **Aufnahme:** Während der Aufnahme spielt das Programm ohne
   Wiederholung; beim Stoppen wächst die Programmlänge bis zum erreichten
   Schritt.
-* **Anhalten und Umkehren** von Flügelradgruppen und Switch-out-Rädern
-  kennt ohne Aufnahme keine Variante *nur für diesen Lauf*, wie es sie für
-  Weichen gibt.
+* **Umkehren** von Flügelradgruppen und Switch-out-Rädern kennt ohne
+  Aufnahme keine Variante *nur für diesen Lauf*.
+* Im Menü **⋯** neben **Programm** heißen die Einträge **Umbenennen…** und
+  **Duplizieren…**; beim Duplizieren fragt die Web-App nach dem Namen der
+  Kopie.
 * **Rückgängig** wirkt auf Programmänderungen, nicht auf einzelnes Setzen
   oder Färben von Klöppeln.
 * **Ohne *Flechtsimulator bearbeiten*** fehlen Aufnahme, **Startzustand

@@ -81,26 +81,42 @@ ab, welche Design-Vorlagen vorhanden sind:
 Für Designs bringt Herzog CAB zwei Standardvorlagen mit, die automatisch
 passend zur Klöppelzahl angeboten werden:
 
-| Standardvorlage | Für Designs mit … |
-|---|---|
-| Kompakte Design-Vorlage (eine Seite) | bis **48 Klöppeln** |
-| Große Design-Vorlage (zwei Seiten, mit großer Besetzungsübersicht) | ab **49 Klöppeln** |
+| Standardvorlage | Für Designs mit … | Aufbau |
+|---|---|---|
+| **Standard Design** | bis **48 Klöppeln** | Eine Seite: oben Designdaten und Besetzungsübersicht, darunter die Besetzung mit Farblegende sowie Flechtbild und 3D-Ansicht nebeneinander. |
+| **Standard Design (hohe Klöppelzahl)** | ab **49 Klöppeln** | Zwei Seiten: Seite 1 mit Designdaten, Besetzung mit Farblegende sowie Flechtbild und 3D-Ansicht nebeneinander, Seite 2 mit einer großen Besetzungsübersicht. |
 
 Es wird immer nur die zur aktuellen Klöppelzahl passende Standardvorlage
 angezeigt; Ihre selbst angelegten Vorlagen erscheinen unabhängig von der
-Klöppelzahl immer in der Auswahl.
+Klöppelzahl immer in der Auswahl. Wie Herzog CAB die Standardvorlagen bei
+einem Update erneuert, steht unter
+[Vorlagen verwalten](../print-templates/manage.md#mitgelieferte-standardvorlagen).
 
 ### Druckvorschau
 
 ![Druckvorschau eines Designs mit Designdaten, Besetzungsübersicht, Klöppeltabelle und Flechtbild](../assets/screenshots/designer/designer-druckvorschau.png)
 
 Die Druckvorschau zeigt alle Seiten der gewählten Vorlage, bereits befüllt mit
-den aktuellen Design-, Farb- und Klöppeldaten. Bei
-[Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn) zeigt die
-Klöppelliste je Garn einen Farbstreifen; Kennung, Name, Farbwert und
-Pantone stehen je Garn durch „ / “ getrennt (fehlende Angaben als „–“). Im Vorschau-Fenster stehen
-Zoom-Funktionen und die **Drucken**-Schaltfläche bereit, über die Sie den
-Ausdruck an den Drucker senden.
+den aktuellen Design-, Farb- und Klöppeldaten:
+
+* **Designdaten** — im Klartext, z. B. *Rundgeflecht* und *Normale Besetzung
+  1-1*. Dazu kommen bei Rund- und Litzengeflecht Material-Ø, Bedeckung bzw.
+  Füllung und Geflechts-Ø bzw. Produktbreite sowie mit 3D-Bild der
+  3D-Werkstoff. Leere Angaben fallen weg; Spiral-, Packungs- und
+  Soutachegeflecht haben keine Zeile Geflechtsbindung.
+* **Besetzung** — je Klöppel die Nummer, die
+  [Drehung](painting.md#drehung-s-z-oder-gerade) und die Farbe. Bei
+  [Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn) zeigt das
+  Farbfeld je Garn einen Streifen; die Farbangaben stehen je nach
+  [Zellendarstellung](../print-templates/elements.md#besetzung) einmal in der
+  Farblegende oder je Garn durch „ / “ getrennt in der Zelle (fehlende
+  Angaben als „–“).
+* **Flechtbild** — ohne Klöppel-Labels.
+* **3D-Ansicht** — die Seitenansicht des Geflechts in der Form, die Sie im
+  Fenster [Darstellung](view-3d.md#fenster-darstellung) gewählt haben.
+
+Im Vorschau-Fenster stehen Zoom-Funktionen und die **Drucken**-Schaltfläche
+bereit, über die Sie den Ausdruck an den Drucker senden.
 
 ## Verwandte Seiten
 

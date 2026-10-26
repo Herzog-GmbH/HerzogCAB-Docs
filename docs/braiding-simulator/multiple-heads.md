@@ -32,7 +32,6 @@ mehrköpfige Maschine an der Klöppelzahl.
 | **Klöppelzahl** | Die Startseite, die Besetzungen und die Statuszeile zeigen *2 × 12 Klöppel*, wenn alle Köpfe gleich besetzt sind, sonst zum Beispiel *12 + 10 Klöppel*. |
 | **Klöppelnummern** | Jeder Kopf zählt ab 1: Eine RU 2/12-80 hat zweimal die Nummern 1 bis 12. Ein neuer Klöppel bekommt die kleinste freie Nummer **in seinem Kopf**. |
 | **Laufrichtung** | Gilt um die Mitte des jeweiligen Kopfes, nicht um die Maschinenmitte. Das betrifft die Ansicht [Laufrichtung](editor.md#ansicht) und **Nach Laufrichtung färben** in der [Auswahlkarte](populate.md#auswahlkarte-kloppel). |
-| **Konfigurationen** | *Voll*, *Halb* und *Tandem* von Herzog gelten je Kopf; *Voll* und *Halb* besetzen beide Laufrichtungen gleich stark. |
 | **Abzug** | Alle Köpfe hängen am selben Abzugsgetriebe. Der [Abzug](views.md#abzug) wird wie bei einer einköpfigen Maschine eingestellt und gilt für alle Köpfe; gemessen wird an Kopf 1. |
 | **Maschine 3D** | Die [Ansicht „Maschine“](views.md#ansicht-maschine) zeigt je Kopf Flechtpunkt, Geflecht und Abzugsscheibe. Beschriftungen und feste Ansichten beziehen sich auf Kopf 1. |
 

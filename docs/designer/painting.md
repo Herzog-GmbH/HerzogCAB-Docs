@@ -1,17 +1,23 @@
-# Färben und Texturieren
+# Färben und Drehung
 
-!!! abstract "Referenz — Malmodus, Farbpalette, Benutzerfarben, Farbwähler, Fachungsfarben und Texturen: den Klöppeln und ihren Garnen Farben und Faser-Texturen zuweisen."
+!!! abstract "Referenz — Malmodus, Farbpalette, Benutzerfarben, Farbwähler, Fachungsfarben und der Pinsel Drehung: den Klöppeln und ihren Garnen Farben und eine Drehung zuweisen."
 
 ## Wofür Sie diesen Bereich nutzen
 
 Das Muster eines Geflechts entsteht dadurch, **welcher Klöppel welche Farbe
-führt**. Im Malmodus weisen Sie den Klöppelpositionen Farben und Faser-Texturen
-zu — per Klick im Flechtbild oder in der Klöppeltabelle. Das Flechtbild
-aktualisiert sich bei jeder Änderung sofort.
+führt**. Im Malmodus weisen Sie den Klöppelpositionen Farben zu — per Klick
+im Flechtbild oder in der Klöppeltabelle. Mit dem Pinsel **Drehung** legen
+Sie außerdem fest, ob die Garne eines Klöppels S-gedreht, Z-gedreht oder
+gerade sind. Das Flechtbild aktualisiert sich bei jeder Änderung sofort.
 
 ## Der Bildschirm im Überblick
 
 ![Geöffnete Farbpalette mit aktiver Farbe, Auswahl „Standardpalette“, Farbfeldern und Farbrad-Schaltfläche](../assets/screenshots/designer/designer-farbpalette.png)
+
+Die Schaltfläche **Farbpalette** in der Werkzeugleiste öffnet die
+Farbpalette, die Schaltfläche **Drehung** rechts daneben das Fenster
+**Drehung**. Beide Fenster öffnen sich unter ihrer Schaltfläche und
+schließen sich beim Klick daneben oder mit ++esc++.
 
 ## Bedienelemente im Detail
 
@@ -20,17 +26,21 @@ aktualisiert sich bei jeder Änderung sofort.
 * **Färben** — der Malmodus (Standard): Klicks im Flechtbild oder in der
   Klöppeltabelle färben die getroffene Klöppelposition mit der aktiven Farbe.
   Im Flechtbild wird die Position unter dem Mauszeiger hervorgehoben, damit Sie
-  sehen, was ein Klick treffen würde.
+  sehen, was ein Klick treffen würde. Ist der Pinsel **Drehung** gewählt,
+  schaltet ein Klick auf **Färben** zurück aufs Färben.
 * **Bewegen** — der Verschiebemodus: die linke Maustaste verschiebt die
   Ansicht, es wird nichts gefärbt. (Verschieben per **rechter Maustaste**
-  funktioniert in beiden Modi.)
+  funktioniert in beiden Modi.) In den Ansichten **Zylinder** und
+  **Vierkant** dreht die linke Maustaste auch hier den Körper, siehe
+  [Ansichten und 3D-Ansicht](view-3d.md).
 
 ### Seitenfilter Linkslauf / Rechtslauf
 
 Rund- und Quadratgeflecht haben zwei Läufe. Die Schaltflächen **Linkslauf** und
-**Rechtslauf** legen fest, welchen Lauf ein Klick einfärbt — es ist immer genau
-eine der beiden aktiv. Bei Litzen- und Packungsgeflecht gibt es diese Auswahl
-nicht; die Schaltflächen sind dann ausgeblendet.
+**Rechtslauf** legen fest, welchen Lauf ein Klick einfärbt bzw. mit einer
+Drehung versieht — es ist immer genau eine der beiden aktiv. Bei Litzen- und
+Packungsgeflecht gibt es diese Auswahl nicht; die Schaltflächen sind dann
+ausgeblendet.
 
 ### Aktive Farbe
 
@@ -52,7 +62,8 @@ zentralen Farbdatenbank ([Stammdaten > Farben](../master-data/colors.md)):
 Jedes Farbfeld zeigt beim Überfahren den Farbnamen und den Farbwert an. Ein
 Klick macht die Farbe zur aktiven Farbe — Farben aus der Bibliothek behalten
 dabei ihre Zuordnung (Name, Pantone-/RAL-Referenz), die auch in der
-Klöppeltabelle und auf Ausdrucken erscheint.
+Klöppeltabelle und auf Ausdrucken erscheint. Ist der Pinsel **Drehung**
+gewählt, schaltet ein Klick auf eine Farbe zurück aufs Färben.
 
 Die Schaltfläche neben der Auswahlliste (**Farbdatenbank öffnen**) springt
 direkt zu *Stammdaten > Farben*, wo Sie Paletten und Farben pflegen.
@@ -81,9 +92,10 @@ ersten freien Benutzerfarben-Platz abgelegt.
 ### Färben im Flechtbild
 
 Klicken Sie im Malmodus auf eine Masche im Flechtbild — die zugehörige
-Klöppelposition erhält die aktive Farbe (bzw. die aktive Textur). Bei Rund- und
-Quadratgeflecht bestimmt der Seitenfilter, ob der Linkslauf oder der Rechtslauf
-gefärbt wird.
+Klöppelposition erhält die aktive Farbe. Bei Rund- und Quadratgeflecht
+bestimmt der Seitenfilter, ob der Linkslauf oder der Rechtslauf gefärbt wird.
+In den Ansichten **Zylinder** und **Vierkant** färbt ein kurzer Klick;
+Ziehen mit gedrückter Maustaste dreht dort den Körper.
 
 ### Färben in der Klöppeltabelle
 
@@ -95,7 +107,8 @@ aktuellen Farbe:
 * **Litzengeflecht:** eine Spalte **Klöppel**.
 * **Packungsgeflecht:** eine Spalte je Gangbahn (**Bahn 1**, **Bahn 2**, …).
 
-Ein Klick auf eine Zelle färbt genau diese Position.
+Ein Klick auf eine Zelle färbt genau diese Position. Hat ein Klöppel eine
+Drehung, steht sie hinter der Nummer, siehe [Drehung](#drehung-s-z-oder-gerade).
 
 !!! tip "Schnell viele Klöppel färben"
     Halten Sie die Maustaste gedrückt und ziehen Sie über die Zellen der
@@ -122,7 +135,8 @@ Garn ein Klick in die Klöppeltabelle oder ins Flechtbild färbt:
 | **Garn N** | färbt nur dieses eine Garn des getroffenen Klöppels. |
 
 Verkleinern Sie die Fachung unter das gewählte Garn, springt der Wähler auf
-**Alle Garne** zurück.
+**Alle Garne** zurück. Solange der Pinsel **Drehung** gewählt ist, ist der
+Garn-Wähler gesperrt: Die Drehung gilt immer für alle Garne eines Klöppels.
 
 **Fachungsfarben eines Klöppels im Dialog.** Ein **Rechtsklick** auf eine
 Zelle der Klöppeltabelle färbt nicht, sondern öffnet ein Menü:
@@ -147,8 +161,8 @@ rückgängig machen.
 
 * **Klöppeltabelle** — senkrechte Streifen je Garn, Garn 1 links.
 * **Flechtbild** — jedes Garn als eigener Streifen **längs zum Faden**, in
-  allen Ansichten (Voll, Halb, Zylinder, Vierkant, Kante), im Linkslauf wie
-  im Rechtslauf und auch mit eingeschalteten Texturen.
+  allen Zeichenansichten (Voll, Halb, Zylinder, Vierkant, Flechtbild), im
+  Linkslauf wie im Rechtslauf und auch mit eingeschalteter Fadenstruktur.
 * **Besetzungsübersicht** — der Klöppelpunkt ist in Kreisstücke je Garn
   geteilt, siehe [Besetzung und Gangbahn-Animation](animation.md).
 * **3D-Ansicht** — jedes Garn in seiner Farbe, siehe
@@ -166,34 +180,73 @@ rückgängig machen.
     der Maschen; nur wenn alle Garne einer Masche dunkel sind, werden sie
     hell gezeichnet.
 
-### Texturen
+### Drehung (S, Z oder gerade)
 
-* **Textur** (Werkzeugleiste) — schaltet die Texturdarstellung im Flechtbild
-  ein oder aus (Standard: ein). Ausgeschaltet werden die Maschen als glatte
-  Farbflächen gezeichnet.
-* **Texturpalette** (Gruppe **Texturen** bzw. Schaltfläche **Muster**) — links
-  eine große Vorschau der aktiven Textur, daneben die verfügbaren
-  Faser-Texturen zur Auswahl. Ein Klick wählt die Textur und schaltet auf
-  Texturdarstellung um.
+Mit dem Pinsel **Drehung** geben Sie jedem Klöppel die Drehung seiner Garne:
+**S**, **Z** oder **Gerade** (ungedreht), auf Wunsch mit der Zahl der
+Drehungen je Meter. Die Drehung gilt für alle Garne auf der Spule eines
+Klöppels, nicht je Garn der Fachung.
 
-Die angebotenen Texturen passen zur eingestellten
-[Fachung](parameters.md) (Fadenzahl je Klöppel) und werden farblich passend zur
-aktiven Farbe eingefärbt dargestellt.
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Geöffnetes Fenster „Drehung“ unter der Schaltfläche **Drehung** mit den Knöpfen S, Z und Gerade, dem Feld TPM und dem Hinweistext; im Hintergrund die Klöppeltabelle mit Einträgen wie „3  S 120“.
+    **So erzeugen:** Designer, Rundgeflecht mit einigen gedrehten Klöppeln, Schaltfläche **Drehung** rechts neben **Farbpalette** anklicken, S wählen, TPM 120 eintragen.
+    **Ziel-Datei:** `assets/screenshots/designer/designer-drehung.png`
 
-!!! info "Schmale Fenster: Paletten als Popup"
-    Reicht die Fensterbreite nicht aus, klappen die Gruppen **Farbe** und
-    **Texturen** zu den Schaltflächen **Farbpalette** und **Muster** zusammen.
-    Ein Klick öffnet die jeweilige Palette als Popup mit identischem Inhalt.
+**Schaltfläche Drehung (Werkzeugleiste).** Sie liegt rechts neben
+**Farbpalette** und trägt die gewählte Drehung im Namen, z. B. **Drehung S
+120**. Ein Klick wählt den Pinsel, schaltet aus **Bewegen** in den Malmodus
+und öffnet das Fenster **Drehung**:
+
+| Element | Bedeutung |
+|---|---|
+| **S** | S-Drehung: die Fasern laufen bei senkrechtem Faden wie „\“. |
+| **Z** | Z-Drehung: die Fasern laufen bei senkrechtem Faden wie „/“. |
+| **Gerade** | Ungedrehte Fäden. |
+| **TPM** | Drehungen je Meter, freiwillig, 0 bis 9999 in Zehnerschritten; „–“ bedeutet keine Angabe. Mit dem [Material-Ø](parameters.md#material-bedeckung-geflechts) bestimmt die TPM die Neigung der Drehungsstriche. Bei **Gerade** gesperrt. |
+
+**Drehung setzen.** Klicken Sie auf einen Klöppel in der Klöppeltabelle oder
+eine Masche im Flechtbild — der Klöppel erhält die gewählte Drehung samt
+TPM. Der [Seitenfilter](#seitenfilter-linkslauf-rechtslauf) wirkt wie beim
+Färben, und auch das Ziehen mit gedrückter Maustaste über die Klöppeltabelle
+funktioniert. Eine Schaltfläche, die alle Klöppel auf einmal setzt, gibt es
+nicht. Eine Farbe aus der Palette oder ein Klick auf **Färben** schaltet
+zurück aufs Färben.
+
+**Wo die Drehung erscheint:**
+
+* **Klöppeltabelle** — hinter der Nummer, z. B. „3  S 120“ (Klöppel 3,
+  S-Drehung, 120 TPM). Der Kurzhinweis schreibt sie aus (*Drehung S, 120
+  TPM*). Gerade Klöppel zeigen nur die Nummer.
+* **Flechtbild** — mit eingeschalteter **Fadenstruktur** zeichnet jede Masche
+  die Garne der Fachung mit Faserglanz, gedrehte Garne mit Drehungsstrichen
+  (S „\“, Z „/“). Die Neigung der Striche folgt aus TPM und Material-Ø; ohne
+  TPM oder ohne Material-Ø gilt 30°, insgesamt bleibt sie zwischen 3° und
+  75°. Die Fadenstruktur schalten Sie im Fenster
+  [Darstellung](view-3d.md#fenster-darstellung) ein und aus.
+* **3D-Ansicht** — mit dem Werkstoff **Garn** erscheinen gerade Garne glatt,
+  S- und Z-Garne gedreht. **Draht** und **Seil** zeigen keine Drehung.
+* **Ausdruck** — die Besetzungstabelle nennt die Drehung hinter der
+  Klöppelnummer, siehe [Elemente und Platzhalter](../print-templates/elements.md#besetzung).
+
+Die Drehung wird mit dem Design gespeichert und gilt für alle Geflechtsarten,
+auch im Mischdesign. **Zurück** und **Vor** nehmen sie mit zurück bzw.
+stellen sie wieder her.
+
+!!! warning "Ältere Programmversionen verlieren die Drehung"
+    Herzog CAB vor Version 2.1.2 kennt die Drehung nicht. Speichert ein
+    solcher Rechner ein Design, geht die Drehung verloren. Arbeiten mehrere
+    Rechner mit demselben Arbeitsverzeichnis, aktualisieren Sie alle.
 
 ### Zurück und Vor (Rückgängig / Wiederherstellen)
 
-**Zurück** (++ctrl+z++) macht den letzten Färbeschritt rückgängig, **Vor**
+**Zurück** (++ctrl+z++) macht den letzten Schritt rückgängig, **Vor**
 (++ctrl+y++) stellt rückgängig gemachte Schritte wieder her. Der Verlauf
-umfasst alle Farb- und Texturzuweisungen seit dem Öffnen des Designs.
+umfasst alle Farb- und Drehungszuweisungen seit dem Öffnen des Designs.
 
 ## Verwandte Seiten
 
 * [Farben (Stammdaten)](../master-data/colors.md) — Paletten und Farben mit Pantone-/RAL-Referenz pflegen
 * [Besetzung und Gangbahn-Animation](animation.md) — die Farben in der laufenden Maschine
-* [Geflechtsart und Parameter](parameters.md) — Fachung und Geflechtsart einstellen
+* [Ansichten und 3D-Ansicht](view-3d.md) — Fenster Darstellung mit Fadenstruktur und Werkstoff
+* [Geflechtsart und Parameter](parameters.md) — Fachung, Material-Ø und Geflechtsart einstellen
 * [Ein Design von Grund auf entwerfen](../tasks/design-from-scratch.md)

@@ -4,11 +4,11 @@
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
-Before a program can run, the machine needs carriers. The quickest way is
-to select a **configuration** from Herzog at the top (*Full*, *Half*,
-*Tandem* …) and adjust it. You can also set up the machine by hand.
-Colors, ply count and yarn determine what the braid looks like in the
-[3D preview](views.md); together you save everything as a **setup**.
+Before a program can run, the machine needs carriers. The machine model
+comes empty: you place the carriers yourself or select a saved **setup**
+at the top and adjust it. Colors, ply count and yarn determine what the
+braid looks like in the [3D preview](views.md); together you save
+everything as a **setup**. You then create your programs on a setup.
 
 Placing and removing carriers always belongs to the setup, never to the
 program. Even during recording, it does not become a program command.
@@ -43,7 +43,7 @@ placed here at …*; then place it at the start or on another position.
 
 | Element | Effect |
 |---|---|
-| **Color for new carriers** | Button showing the current placement color. A click opens the selection: **Standard colors** from the [color library](../master-data/colors.md), **Recently used** and **Choose custom color…**. New carriers always get the selected color; the default is blue. Carriers without a color of their own from configurations and older setups keep their automatically assigned colors. |
+| **Color for new carriers** | Button showing the current placement color. A click opens the selection: **Standard colors** from the [color library](../master-data/colors.md), **Recently used** and **Choose custom color…**. New carriers always get the selected color; the default is blue. Carriers without a color of their own from older setups keep their automatically assigned colors. |
 | **Select all carriers** | Selects all carriers so that you can change ply count, arrangement or color together (in the machine also ++ctrl+a++). |
 | **Remove all carriers** | After a confirmation prompt, takes all carriers off the machine. A saved setup is kept; the **Setup** list then no longer shows a setup. |
 
@@ -89,9 +89,9 @@ in the [selection card](#rohr). The tube threads belong to the setup.
 ### "Setup" group { #gruppe-besetzung }
 
 **Save as new setup…** creates the current arrangement as a new setup
-(the same as in the **⋯** menu next to **Setup**). The note below it
-reminds you: *“Save” at the top writes changes back to the selected
-setup.*
+(the same as in the **⋯** menu next to **Setup**), see
+[Save setup](#besetzung-speichern). The note below it reminds you:
+*“Save” at the top writes changes back to the selected setup.*
 
 ## Selection card: carrier and tube { #auswahlkarte-kloppel }
 
@@ -131,27 +131,36 @@ Z3*), its position and its dimensions.
 | **Color…** | Color of the thread (only when threaded in). |
 | **Core diameter** | Only on the central tube: diameter of the core. In the 3D preview it determines the braid diameter; the braid lies on it. **Fill the bore** uses the diameter of the bore. |
 
-## Configurations and your own setups { #konfigurationen-und-eigene-besetzungen }
+## Saving setups { #besetzungen-speichern }
 
-* Herzog supplies **configurations** with the model. They contain only
-  positions and carrier numbers; your colors and your yarn are added.
-* If you select a configuration or a setup from Herzog and change it,
-  **Save** stores your own copy *&lt;Name&gt; – own*: *Saved as your own
-  setup "…" — "…" from Herzog remains unchanged.*
-* Setups from Herzog cannot be deleted.
+Every setup is your own: it is created on the empty machine or as a copy
+of another setup. A machine can have any number of setups, and each setup
+has its own programs.
+
+* **Save** in the header bar writes changed carriers, colors and yarn back
+  to the selected setup. If no setup is selected (for example after
+  **Remove all carriers**), the program asks for a name.
+* **Save as new setup…** creates another setup.
+* Rename and delete are in the **⋯** menu next to **Setup**, see
+  [The simulator screen](editor.md#besetzung-und-programm).
 
 ### Save setup { #besetzung-speichern }
 
 **Save as new setup…** opens the **Save setup** dialog:
 
+!!! warning "📷 Screenshot missing"
+    **Subject:** “Save setup” dialog with the field “Name of the setup” (suggestion “Round 2”) and the ticked box “Take program “…” along as a copy”.
+    **How to create:** Customer build with a model licence, open a machine with a setup and one of its programs, “Set up” tab, click “Save as new setup…”.
+    **Target file:** `assets/screenshots/braiding-simulator/besetzung-speichern.png`
+
 | Field | Meaning |
 |---|---|
-| **Name of the setup** | Suggestion *&lt;selected setup&gt; – own* or *Setup n*. If one of your own setups has the same name, the program asks whether to overwrite it. |
-| **Load with “…”** | Only when one of your own programs is selected: whoever selects the program gets this setup along with it. |
+| **Name of the setup** | Suggestion: the name of the selected setup followed by a number, for example *Round 2*; without a selected setup *Setup n*. If a setup with the same name exists, the program asks whether to overwrite it with the current arrangement. |
+| **Take program “…” along as a copy** | Only when a program is selected; ticked by default. The new setup gets a copy of the open program. The program itself stays with its setup. |
 
-The setup is saved immediately (*Setup "…" saved (32 carriers).*).
-**Delete setup…** in the **⋯** menu deletes one of your own setups after a
-confirmation prompt.
+**Save** creates the setup immediately (*Setup "…" saved (32
+carriers).*, with a program copy also *With a copy of “…”.*). Afterwards
+the new setup is selected, with the program copy or without a program.
 
 ## In the web app { #in-der-web-app }
 
@@ -173,5 +182,5 @@ Details: [Braiding Simulator (web app)](../web/braiding-simulator.md).
 * [Program](program.md) — switching switches and recording programs.
 * [3D preview and take-up](views.md) — how colors, ply count and yarn look
   in the braid.
-* [Coloring and texturing in the Designer](../designer/painting.md) —
+* [Coloring and twist in the Designer](../designer/painting.md) —
   plying colors in the Designer.

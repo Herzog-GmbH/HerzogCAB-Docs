@@ -4,12 +4,12 @@
 
 ## Wofür Sie diesen Bereich nutzen
 
-Bevor ein Programm laufen kann, braucht die Maschine Klöppel. Am
-schnellsten wählen Sie oben eine **Konfiguration** von Herzog (*Voll*,
-*Halb*, *Tandem* …) und passen sie an. Sie können die Maschine auch von
-Hand bestücken. Farben, Fachung und Garn bestimmen, wie das Geflecht in
-der [3D-Vorschau](views.md) aussieht; zusammen speichern Sie alles als
-**Besetzung**.
+Bevor ein Programm laufen kann, braucht die Maschine Klöppel. Das
+Maschinenmodell kommt leer: Sie setzen die Klöppel selbst oder wählen oben
+eine gespeicherte **Besetzung** und passen sie an. Farben, Fachung und
+Garn bestimmen, wie das Geflecht in der [3D-Vorschau](views.md) aussieht;
+zusammen speichern Sie alles als **Besetzung**. Auf einer Besetzung legen
+Sie danach Ihre Programme an.
 
 Klöppel setzen und entfernen gehört immer zur Besetzung, nie zum
 Programm. Auch während der Aufnahme wird daraus kein Programmbefehl.
@@ -44,7 +44,7 @@ einsetzen*; setzen Sie ihn dann am Start oder auf einen anderen Platz.
 
 | Element | Wirkung |
 |---|---|
-| **Farbe für neue Klöppel** | Knopf mit der aktuellen Setzfarbe. Ein Klick öffnet die Auswahl: **Standardfarben** aus der [Farbbibliothek](../master-data/colors.md), **Zuletzt verwendet** und **Eigene Farbe wählen…**. Neue Klöppel bekommen immer die gewählte Farbe; Standard ist Blau. Klöppel ohne eigene Farbe aus Konfigurationen und älteren Besetzungen behalten ihre automatisch verteilten Farben. |
+| **Farbe für neue Klöppel** | Knopf mit der aktuellen Setzfarbe. Ein Klick öffnet die Auswahl: **Standardfarben** aus der [Farbbibliothek](../master-data/colors.md), **Zuletzt verwendet** und **Eigene Farbe wählen…**. Neue Klöppel bekommen immer die gewählte Farbe; Standard ist Blau. Klöppel ohne eigene Farbe aus älteren Besetzungen behalten ihre automatisch verteilten Farben. |
 | **Alle Klöppel auswählen** | Wählt alle Klöppel, um Fachung, Anordnung oder Farbe gemeinsam zu ändern (in der Maschine auch ++ctrl+a++). |
 | **Alle Klöppel entfernen** | Nimmt nach Rückfrage alle Klöppel von der Maschine. Eine gespeicherte Besetzung bleibt erhalten; die Liste **Besetzung** zeigt danach keine Besetzung mehr an. |
 
@@ -92,9 +92,10 @@ aus. Ausziehen, Farbe und Kerndurchmesser stellen Sie in der
 ### Gruppe „Besetzung“
 
 **Als neue Besetzung speichern…** legt die aktuelle Aufstellung als neue
-Besetzung an (dasselbe wie im Menü **⋯** neben **Besetzung**). Der Hinweis
-darunter erinnert: *„Speichern“ oben schreibt Änderungen in die gewählte
-Besetzung zurück.*
+Besetzung an (dasselbe wie im Menü **⋯** neben **Besetzung**), siehe
+[Besetzung speichern](#besetzung-speichern). Der Hinweis darunter
+erinnert: *„Speichern“ oben schreibt Änderungen in die gewählte Besetzung
+zurück.*
 
 ## Auswahlkarte: Klöppel und Rohr { #auswahlkarte-kloppel }
 
@@ -134,29 +135,38 @@ und Maße.
 | **Farbe…** | Farbe des Fadens (nur, wenn eingezogen). |
 | **Kerndurchmesser** | Nur am Zentralrohr: Durchmesser des Kerns. Er bestimmt in der 3D-Vorschau den Geflechtsdurchmesser; das Geflecht legt sich auf ihn. **Bohrung ausfüllen** nimmt den Durchmesser der Bohrung. |
 
-## Konfigurationen und eigene Besetzungen
+## Besetzungen speichern
 
-* **Konfigurationen** liefert Herzog mit dem Modell. Sie enthalten nur
-  Plätze und Klöppelnummern; Ihre Farben und Ihr Garn kommen dazu.
-* Wählen Sie eine Konfiguration oder eine Besetzung von Herzog und ändern
-  sie, speichert **Speichern** eine eigene Kopie *&lt;Name&gt; – eigene*:
-  *Als eigene Besetzung „…“ gespeichert — „…“ von Herzog bleibt
-  unverändert.*
-* Besetzungen von Herzog lassen sich nicht löschen.
+Jede Besetzung ist Ihre eigene: Sie entsteht auf der leeren Maschine oder
+als Kopie einer anderen Besetzung. Eine Maschine kann beliebig viele
+Besetzungen haben, und zu jeder gehören ihre Programme.
+
+* **Speichern** in der Kopfzeile schreibt geänderte Klöppel, Farben und
+  Garn in die gewählte Besetzung zurück. Ist keine Besetzung gewählt (zum
+  Beispiel nach **Alle Klöppel entfernen**), fragt das Programm nach einem
+  Namen.
+* **Als neue Besetzung speichern…** legt eine weitere Besetzung an.
+* Umbenennen und Löschen stehen im Menü **⋯** neben **Besetzung**, siehe
+  [Der Simulator-Bildschirm](editor.md#besetzung-und-programm).
 
 ### Besetzung speichern { #besetzung-speichern }
 
 **Als neue Besetzung speichern…** öffnet den Dialog **Besetzung
 speichern**:
 
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Dialog „Besetzung speichern“ mit dem Feld „Name der Besetzung“ (Vorschlag „Rund 2“) und dem gesetzten Haken „Programm „…“ als Kopie mitnehmen“.
+    **So erzeugen:** Kundenbuild mit Modell-Lizenz, Maschine mit einer Besetzung und einem ihrer Programme öffnen, Reiter „Bestücken“, „Als neue Besetzung speichern…“ klicken.
+    **Ziel-Datei:** `assets/screenshots/braiding-simulator/besetzung-speichern.png`
+
 | Feld | Bedeutung |
 |---|---|
-| **Name der Besetzung** | Vorschlag *&lt;gewählte Besetzung&gt; – eigene* bzw. *Besetzung n*. Gibt es eine eigene Besetzung gleichen Namens, fragt das Programm, ob es sie überschreiben soll. |
-| **Mit „…“ mitladen** | Nur, wenn ein eigenes Programm gewählt ist: Wer das Programm wählt, bekommt diese Besetzung gleich dazu. |
+| **Name der Besetzung** | Vorschlag: der Name der gewählten Besetzung mit einer Zahl dahinter, zum Beispiel *Rund 2*, ohne gewählte Besetzung *Besetzung n*. Gibt es eine Besetzung gleichen Namens, fragt das Programm, ob es sie mit der aktuellen Aufstellung überschreiben soll. |
+| **Programm „…“ als Kopie mitnehmen** | Nur, wenn ein Programm gewählt ist; vorbelegt an. Die neue Besetzung bekommt eine Kopie des offenen Programms. Das Programm selbst bleibt bei seiner Besetzung. |
 
-Die Besetzung wird sofort gespeichert (*Besetzung „…“ gespeichert (32
-Klöppel).*). **Besetzung löschen…** im Menü **⋯** löscht eine eigene
-Besetzung nach Rückfrage.
+**Speichern** legt die Besetzung sofort an (*Besetzung „…“ gespeichert (32
+Klöppel).*, mit Programmkopie zusätzlich *Mit Kopie von „…“.*). Danach ist
+die neue Besetzung gewählt, mit der Programmkopie oder ohne Programm.
 
 ## In der Web-App
 
@@ -178,5 +188,5 @@ Einzelheiten: [Flechtsimulator in der Web-App](../web/braiding-simulator.md).
 * [Programm](program.md) — Weichen schalten und Programme aufnehmen.
 * [3D-Vorschau und Abzug](views.md) — wie Farben, Fachung und Garn im
   Geflecht aussehen.
-* [Färben und Texturieren im Designer](../designer/painting.md) —
+* [Färben und Drehung im Designer](../designer/painting.md) —
   Fachungsfarben im Designer.

@@ -16,8 +16,8 @@ tatsächlich gedruckt wird.
 !!! info "Nur ein Ausschnitt"
     Der Screenshot zeigt den Grundaufbau der Palette. Seit Version 1.4.5 kommen
     zwei weitere Datentabellen-Gruppen für die Flechterei und die Spulerei
-    hinzu (siehe unten) — ein aktueller Screenshot mit allen sechs Gruppen
-    fehlt noch.
+    hinzu (siehe unten); auch das Element **3D-Ansicht** fehlt auf dem Bild —
+    ein aktueller Screenshot mit allen sechs Gruppen fehlt noch.
 
 ## Die sechs Element-Gruppen
 
@@ -41,8 +41,8 @@ Auftragsart-neutrale Tabellen sowie die Tabellen für Berechnungs-Vorlagen.
 | **Flechtmaschine** | Maschinenname, -typ, Geflechtsart, Kopfanzahl, aktive Klöppel | Auftrag |
 | **Produkt** | Produktdaten (z. B. Durchmesser, Geflechtsdichte) | Auftrag |
 | **Produktion** | Produktionswerte (z. B. genutzte Köpfe) | Auftrag |
-| **Design** | Angaben zum verknüpften Design | Design, Auftrag |
-| **Besetzung** | Klöppelbesetzung als Tabelle (Rundgeflecht oder Litze) | Design, Auftrag |
+| **Design** | Angaben zum verknüpften Design im Klartext (siehe [Design](#design)) | Design, Auftrag |
+| **Besetzung** | Klöppelbesetzung als Tabelle mit Farbe und Drehung je Klöppel (siehe [Besetzung](#besetzung)) | Design, Auftrag |
 
 ### Datentabellen Spulerei
 
@@ -57,7 +57,8 @@ Neu seit Version 1.4.5, für Vorlagen zum Spulauftrag.
 
 | Element | Zeigt | Verwendung |
 |---|---|---|
-| **Geflecht** | Vorschaubild des Flechtmusters | Design, Auftrag |
+| **Geflecht** | Vorschaubild des Flechtmusters, ohne Klöppel-Labels | Design, Auftrag |
+| **3D-Ansicht** | Seitenansicht des Geflechts aus der [3D-Ansicht](../designer/view-3d.md) des aktiven Design-Fensters, auf weißem Grund ohne Bodengitter und in derselben Form wie im Designer. Im Druck-Editor steht dafür ein Würfel-Symbol; das Bild entsteht beim Drucken. Bei Mischdesigns oder ohne OpenGL-fähige Grafik steht statt des Bildes der Hinweis *3D-Ansicht hier nicht verfügbar*. | Design |
 | **Besetzungsübersicht** | Grafische Übersicht der Klöppelbesetzung | Design, Auftrag |
 
 ### Firmenelemente
@@ -111,6 +112,27 @@ Bei **Auftrag**, **Kunde**, **Flechtmaschine**, **Material**, **Spule**,
 Jede dieser Tabellen startet mit einer sinnvollen Vorbelegung, die Sie bei
 Bedarf anpassen oder ergänzen.
 
+Beim Druck richtet sich die Breite der Spalte mit den Bezeichnungen nach der
+längsten Bezeichnung. Ist ein Wert zu lang für seine Spalte, wird er bis auf
+75 % verkleinert und dann hinten gekürzt („…“).
+
+### Design
+
+Die Tabelle **Design** druckt Geflechtsart und Geflechtsbindung im Klartext,
+z. B. *Rundgeflecht* und *Normale Besetzung 1-1*. Die Vorbelegung umfasst
+Designname, Geflechtsart, Geflechtsbindung, Klöppel, Flechtwinkel, Fachung,
+Material-Ø, Bedeckung bzw. Füllung, Geflechts-Ø bzw. Produktbreite und
+3D-Werkstoff. Angaben, die für das Design nicht gelten, fallen weg statt leer
+zu stehen:
+
+* Material-Ø, Bedeckung, Füllung, Geflechts-Ø und Produktbreite gibt es nur
+  bei Rund- und Litzengeflecht, wie im
+  [Designer](../designer/parameters.md#material-bedeckung-geflechts).
+* Den 3D-Werkstoff (Garn, Draht oder Seil) druckt Herzog CAB nur, wenn auch
+  ein Bild der 3D-Ansicht entsteht.
+* Spiral-, Packungs- und Soutachegeflecht haben keine Zeile
+  Geflechtsbindung.
+
 ### Freie Tabelle
 
 Die **Tabelle** aus den Freien Elementen bearbeiten Sie zellenweise: Zeilen-
@@ -140,7 +162,21 @@ dargestellt wird:
 | **Geflechtsart** | **Automatisch**, **Rund**, **Litze**, **Pro Bahn (mehrspaltig)**. *Automatisch* wählt für Rundgeflecht die zwei Spalten Linkslauf/Rechtslauf, für Litze eine durchlaufende Spalte und für Packungs- und Spiralflechter **eine Spalte je Gangbahn** (Kopf *Bahn 1*, *Bahn 2*, …; Zeilennummer je Bahn ab 1). *Litze* erzwingt stattdessen eine einzelne Spalte. |
 | **Angezeigte Läufe** | Beide Spalten, Nur linker Lauf, Nur rechter Lauf (nur bei Rundgeflecht wählbar) |
 | **Angezeigter Wert** | Farb-ID, Farbname, Hex-Wert, Pantone |
-| **Zellendarstellung** | **Farbfläche**: Zelle vollflächig in der Klöppelfarbe (klassisch). **Farbfeld + Nummer**: weiße Zelle mit Nummer und Wert links und einem kleinen, abgerundeten Farbfeld rechts — kompakte Zeilen, Zebra-Streifen, helles Gitter und der Kopf im Herzog-Blau, wie die übrigen Datentabellen. |
+| **Zellendarstellung** | **Farbfläche**: Zelle vollflächig in der Klöppelfarbe (klassisch). **Farbfeld + Nummer**: weiße Zelle mit Nummer und Wert links und einem kleinen, abgerundeten Farbfeld rechts — kompakte Zeilen, Zebra-Streifen, helles Gitter und der Kopf im Herzog-Blau, wie die übrigen Datentabellen. **Farbfeld mit Farblegende**: Nummer, ein Farbfeld mit einem Streifen je Garn und rechts die Drehung; Farbnamen und der angezeigte Wert stehen einmal in der Legende **Farben** unter der Tabelle (siehe unten). |
+
+Jede Zellendarstellung zeigt die
+[Drehung](../designer/painting.md#drehung-s-z-oder-gerade) eines Klöppels,
+auch im Auftragsdruck: bei **Farbfläche** und **Farbfeld + Nummer** hinter
+der Nummer, z. B. „3 S 120“, bei **Farbfeld mit Farblegende** rechts in der
+Zelle. Gerade Klöppel zeigen nur die Nummer.
+
+**Farblegende.** Bei **Farbfeld mit Farblegende** listet die Legende jede
+Farbe einmal, in der Reihenfolge ihres ersten Auftretens, mit Farbfeld,
+Farbnamen und dem unter **Angezeigter Wert** gewählten Wert. Bei
+[Fachungsfarben](../designer/painting.md#fachungsfarben-farbe-je-garn)
+erscheint jede Garnfarbe einzeln. Die Legende nimmt höchstens etwa 40 % der
+Elementfläche ein; passen nicht alle Farben hinein, nennt der letzte Eintrag
+die Zahl der übrigen.
 
 !!! info "Direktdruck ohne Vorlage"
     Drucken Sie ein Design direkt aus dem Designer ohne Vorlage, nutzt

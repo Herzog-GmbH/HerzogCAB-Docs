@@ -48,10 +48,22 @@ Flechtbilds:
 | Verschieben | **Rechte Maustaste** gedrückt halten und ziehen. |
 | Ansicht einpassen | **Doppelklick** mit der linken Maustaste. |
 
-### Gangbahn-Animation (Play/Pause)
+### Schaltflächen der Übersicht
 
-Oben links in der Übersicht liegt die **Play-Schaltfläche** (*„Gangbahnen
-animieren: Flügelräder drehen sich, Klöppel laufen ihre Bahn ab"*):
+Oben links in der Übersicht liegen die Schaltflächen der Animation, von
+links nach rechts:
+
+| Schaltfläche | Kurzhinweis | Wirkung |
+|---|---|---|
+| ⏮ | *Maschine und Geflechtsaufbau auf den Anfang setzen* | Setzt Maschine und Aufbau auf den Anfang, siehe [unten](#auf-den-anfang-setzen). |
+| ▶ / ⏸ | *Gangbahnen animieren: Flügelräder drehen sich, Klöppel laufen ihre Bahn ab* | Startet bzw. hält die Animation an. |
+| ⏪ | *Animation langsamer* | Halbiert die Geschwindigkeit. |
+| ⏩ | *Animation schneller* | Verdoppelt die Geschwindigkeit. |
+
+Die Schaltfläche oben rechts (*Maschinenübersicht vergrößert anzeigen*)
+öffnet die Übersicht in einem großen Fenster **Maschinenübersicht**.
+
+### Gangbahn-Animation (Play/Pause)
 
 * **Play** startet die Animation: Die Flügelräder drehen sich gegensinnig, die
   Klöppel reiten in ihren Einschnitten mit und wechseln an den Übergabepunkten
@@ -67,19 +79,32 @@ animieren: Flügelräder drehen sich, Klöppel laufen ihre Bahn ab"*):
 !!! info "Wann die Animation verfügbar ist"
     Die Animation gibt es für alle sechs Geflechtsarten. Bei einzelnen sehr
     kleinen Konfigurationen (z. B. Rundgeflecht mit sehr wenigen Klöppeln) ist
-    keine kollisionsfreie Animation möglich — die Play-Schaltfläche wird dann
-    nicht angeboten.
+    keine kollisionsfreie Animation möglich — die Schaltflächen der Animation
+    werden dann nicht angeboten.
 
-### Geschwindigkeit (0,25× bis 8×)
+### Auf den Anfang setzen (⏮) { #auf-den-anfang-setzen }
 
-Neben der Play-Schaltfläche liegen zwei Tempo-Schaltflächen:
+Die Schaltfläche ⏮ links neben Play setzt die Klöppel auf ihre
+Startposition und leert den lagenweisen Aufbau im Flechtbild und in der
+[3D-Ansicht](view-3d.md):
+
+* Läuft die Animation, baut sich das Geflecht sofort von vorn neu auf.
+* Steht die Animation, bleibt der Anfang stehen, bis Sie **Play** drücken.
+
+Die Klöppelbezeichnungen bleiben dabei an ihren Klöppeln.
+
+### Geschwindigkeit (0,25× bis 16×)
+
+Rechts neben der Play-Schaltfläche liegen zwei Tempo-Schaltflächen:
 
 * **Animation langsamer** — halbiert die Geschwindigkeit (bis minimal 0,25×).
-* **Animation schneller** — verdoppelt die Geschwindigkeit (bis maximal 8×).
+* **Animation schneller** — verdoppelt die Geschwindigkeit (bis maximal 16×).
 
-Die Grundgeschwindigkeit ist bewusst gemächlich gewählt, damit Sie die
-Übergaben der Klöppel zwischen den Rädern gut verfolgen können. Zum schnellen
-Aufbau des kompletten Flechtbilds schalten Sie einfach ein paar Stufen hoch.
+Mit niedriger Geschwindigkeit verfolgen Sie die Übergaben der Klöppel
+zwischen den Rädern, mit hoher bauen Sie das komplette Flechtbild schnell
+auf. Die Startgeschwindigkeit legen Sie unter
+[Einstellungen > Design](../admin/settings/legacy-import.md) fest; die
+Tempo-Schaltflächen schreiben den zuletzt genutzten Wert dorthin zurück.
 
 ### Synchroner Lage-für-Lage-Aufbau des Flechtbilds
 
@@ -91,11 +116,14 @@ tatsächlich verkreuzt werden und wie das Muster entsteht.
 * Ist das Bild vollständig aufgebaut, bleibt es komplett stehen — die
   Animation der Räder läuft weiter.
 * Beim **Pausieren** bleibt der aktuelle Aufbaustand sichtbar.
+* Mit **⏮** beginnt der Aufbau von vorn.
 * Beim **Zurücksetzen** (z. B. durch eine Parameteränderung) erscheint sofort
   wieder das vollständige Flechtbild.
 
+In der [3D-Ansicht](view-3d.md) wächst das Geflecht genauso synchron mit.
+
 ## Verwandte Seiten
 
-* [Färben und Texturieren](painting.md) — die Farben, die hier animiert werden
+* [Färben und Drehung](painting.md) — die Farben, die hier animiert werden
 * [Geflechtsart und Parameter](parameters.md) — Radanordnung und Klöppelzahl festlegen
 * [3D-Ansicht](view-3d.md) — das fertige Muster am runden Strang betrachten

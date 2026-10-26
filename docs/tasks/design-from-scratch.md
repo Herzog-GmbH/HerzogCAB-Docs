@@ -11,7 +11,7 @@
 ```mermaid
 flowchart LR
   A["Designer öffnen"] --> B["Geflechtsart & Parameter"]
-  B --> C["Färben & Texturieren"]
+  B --> C["Färben & Drehung"]
   C --> D["Besetzung & Animation prüfen"]
   D --> E["3D-Ansicht"]
   E --> F["Speichern"]
@@ -45,20 +45,22 @@ und **Fachung**. Jede Änderung baut das Flechtbild sofort neu auf.
 Alle Parameter und ihre zulässigen Werte sind auf der Referenzseite
 [Geflechtsart & Parameter](../designer/parameters.md) erklärt.
 
-## Schritt 3: Färben und Texturieren
+## Schritt 3: Färben und Drehung setzen
 
 1. Aktivieren Sie das Werkzeug **Färben**.
-2. Wählen Sie eine Farbe aus der Palette (oder aus einer Bibliothek der
-   [Farbdatenbank](../master-data/colors.md)).
+2. Wählen Sie über **Farbpalette** eine Farbe (oder eine Farbe aus einer
+   Bibliothek der [Farbdatenbank](../master-data/colors.md)).
 3. Klicken Sie im Flechtbild oder in der Klöppeltabelle auf die Positionen,
    die diese Farbe erhalten sollen. Über den Seitenfilter färben Sie gezielt
-   nur den Linkslauf, nur den Rechtslauf oder beide Laufrichtungen.
-4. Optional belegen Sie Positionen mit einer Faser-Textur aus der
-   Texturpalette.
+   nur den Linkslauf oder nur den Rechtslauf.
+4. Optional geben Sie Klöppeln eine Drehung: Klicken Sie auf **Drehung**,
+   wählen Sie **S**, **Z** oder **Gerade** und bei Bedarf die **TPM**, und
+   klicken Sie dann auf die Klöppel. Eine Farbe aus der Palette schaltet
+   zurück aufs Färben.
 
 Fehlgriffe machen Sie mit **Zurück** (++ctrl+z++) wieder rückgängig. Alle
-Bedienelemente des Malmodus beschreibt die Referenzseite
-[Färben & Texturieren](../designer/painting.md).
+Bedienelemente des Malmodus und der Drehung beschreibt die Referenzseite
+[Färben & Drehung](../designer/painting.md).
 
 ## Schritt 4: Besetzung und Gangbahn-Animation prüfen
 
@@ -71,7 +73,8 @@ zugewiesenen Farben je Klöppel:
 2. Starten Sie mit der Play-Schaltfläche die **Gangbahn-Animation**: Die
    Klöppel wandern über die Räder, und das Flechtbild baut sich synchron
    Lage für Lage auf. Das Tempo regeln Sie mit den
-   Geschwindigkeits-Schaltflächen.
+   Geschwindigkeits-Schaltflächen; ⏮ setzt Maschine und Aufbau auf den
+   Anfang.
 
 Details zu allen Schaltflächen: Referenzseite
 [Besetzung & Gangbahn-Animation](../designer/animation.md).
@@ -79,8 +82,10 @@ Details zu allen Schaltflächen: Referenzseite
 ## Schritt 5: 3D-Ansicht kontrollieren
 
 Schalten Sie in der Werkzeugleiste mit dem Ansichts-Schalter **3D** die
-3D-Ansicht ein (verfügbar für alle Geflechtsarten). Sie zeigt, wie sich das
-Muster am fertigen Geflechtstrang umlaufend fortsetzt — Referenz:
+3D-Ansicht ein (verfügbar für alle Geflechtsarten außer Mischdesigns). Sie
+zeigt, wie sich das Muster am fertigen Geflechtstrang umlaufend fortsetzt.
+Werkstoff und Form des Modells wählen Sie über die Schaltfläche
+**Darstellung** — Referenz:
 [Ansichten und 3D-Ansicht](../designer/view-3d.md).
 
 ## Schritt 6: Design in der Bibliothek speichern
@@ -99,6 +104,7 @@ gespeicherte Design finden Sie anschließend in der
 1. Klicken Sie in der Kopfzeile des Design-Fensters auf **Drucken**.
 2. Sind mehrere Druckvorlagen vorhanden, wählen Sie die gewünschte Vorlage
    aus; passend zur Klöppelzahl ist bereits eine Standardvorlage
+   (**Standard Design** bzw. **Standard Design (hohe Klöppelzahl)**)
    vorausgewählt.
 3. Prüfen Sie die Druckvorschau und starten Sie den Druck.
 
@@ -109,7 +115,8 @@ gestalten Sie im [Druck-Editor](../print-templates/index.md).
 
 * Das Design liegt in der [Design-Bibliothek](../master-data/designs.md) und
   erscheint unter „Zuletzt geöffnet" auf der [Startseite](../basics/home.md).
-* Der Ausdruck mit Flechtbild, Besetzung und Klöppeltabelle ist fertig.
+* Der Ausdruck mit Flechtbild, 3D-Ansicht, Besetzungsübersicht und
+  Besetzung ist fertig.
 * Das Design kann jetzt im
   [Flechtauftrag](../orders/braiding-order.md) (Tab **Design**) verknüpft
   werden — siehe Ablauf

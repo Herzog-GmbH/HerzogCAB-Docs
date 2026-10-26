@@ -12,7 +12,7 @@
 
 ```mermaid
 flowchart LR
-  A["Open machine"] --> B["Choose and adjust<br>setup"]
+  A["Open machine"] --> B["Create setup"]
   B --> C["Check setup"]
   C --> D["Create and record<br>program"]
   D --> E["Take-up and speed"]
@@ -27,16 +27,23 @@ flowchart LR
 1. In the navigation, click **Braiding Simulator** (reference:
    [Start page](../braiding-simulator/index.md#startseite)).
 2. Select the machine on the left.
-3. On the right, under **Configurations from Herzog**, click **Open** next
-   to the desired configuration (for example *Full*).
+3. On the right, below the section **Setups and programs**, click **New
+   setup**.
 
-The machine appears with the configuration in the
-[simulator screen](../braiding-simulator/editor.md).
+The empty machine appears in the
+[simulator screen](../braiding-simulator/editor.md), with the **Set up**
+task open.
 
-## Step 2: Adjust the setup { #schritt-2-besetzung-anpassen }
+!!! tip "Tip"
+    If the machine already has a suitable setup, click **Open** in its
+    card, adjust the setup in step 2 and save changes with **Save** instead
+    of **Save as new setup…**.
 
-1. On the right, open the **Set up** task
-   ([reference](../braiding-simulator/populate.md)).
+## Step 2: Create the setup { #schritt-2-besetzung-anlegen }
+
+1. In the **Set up** task
+   ([reference](../braiding-simulator/populate.md)), a click on an empty
+   position places a carrier.
 2. Color the carriers: click a carrier and choose **Individual colors** in
    the selection card, or select several carriers with ++ctrl++ + click
    and choose **Color…** or **Color by running direction**.
@@ -62,21 +69,24 @@ write a program.
 ## Step 4: Create and record the program { #schritt-4-programm-anlegen-und-aufnehmen }
 
 1. At the top, choose **⋯** next to **Program** > **New program…** and
-   enter a name. The program takes over the current switch position as its
-   start and the selected setup.
+   enter a name. The program belongs to the selected setup and takes over
+   the current switch position as its start.
 2. Open the **Program** task
    ([reference](../braiding-simulator/program.md)).
-3. In the playback bar, click **Record** and then **Start**.
-4. At the point where the changeover should happen, press **Pause** (or
+3. If a switch should be in a different position from the beginning,
+   click it without recording. This changes the program's start position.
+4. In the playback bar, click **Record** and then **Start**.
+5. At the point where the changeover should happen, press **Pause** (or
    enter the step under **Go to step**).
-5. Click the switches that should change; with a shift lever, one switch
+6. Click the switches that should change; with a shift lever, one switch
    is enough.
-6. Let the run continue and switch back later. At the end, click
+7. Let the run continue and switch back later. At the end, click
    **Stop recording**.
 
 You do the fine-tuning in the [timeline](../braiding-simulator/program.md#zeitachse):
-move commands, insert or delete steps. You take over changeovers from the
-programs from Herzog with **Insert operating mode…**.
+move commands, insert or delete steps. You take over commands from another
+program of this machine with **Copy section…** in the right-click menu of
+the timeline.
 
 ## Step 5: Set take-up and speed { #schritt-5-abzug-und-drehzahl-einstellen }
 
@@ -113,8 +123,8 @@ these values.
 
 ## Result { #ergebnis }
 
-* On the start page, your setup is listed under **My setups** and the
-  program under **My programs**.
+* On the start page, your setup appears as a card under **Setups and
+  programs**, with the program indented below it.
 * The check shows *✅ Collision-free — repeat after … steps*.
 * The switching plan is available as a printout, PDF or CSV.
 
@@ -123,5 +133,8 @@ these values.
 * The machine is missing or does not open: [Licence and rights](../braiding-simulator/licence.md#wenn-eine-lizenz-wegfallt).
 * **Save** stays gray: your role needs *Edit Braiding Simulator*, or a
   colleague is currently editing the same machine.
+* **New program…** asks for a setup: a program always belongs to a saved
+  setup. Save the arrangement first (step 2), see
+  [Setup and program](../braiding-simulator/editor.md#besetzung-und-programm).
 * A pitch change has no effect: see
   [Pitch in this run](../braiding-simulator/program.md#teilung-im-lauf).

@@ -255,7 +255,7 @@ plugins:
             "Maschinenmodelle zuweisen": "Assign machine models"
             "Designer": "Designer"
             "Geflechtsart und Parameter": "Braid type and parameters"
-            "Färben und Texturieren": "Coloring and texturing"
+            "Färben und Drehung": "Coloring and twist"
             "Besetzung und Gangbahn-Animation": "Setup and track animation"
             "Ansichten und 3D-Ansicht": "Views and 3D view"
             "Speichern und Drucken": "Save and print"
@@ -530,7 +530,7 @@ nav:
       - Designer:
           - designer/index.md
           - Geflechtsart und Parameter: designer/parameters.md
-          - Färben und Texturieren: designer/painting.md
+          - Färben und Drehung: designer/painting.md
           - Besetzung und Gangbahn-Animation: designer/animation.md
           - Ansichten und 3D-Ansicht: designer/view-3d.md
           - Speichern und Drucken: designer/save-print.md

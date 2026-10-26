@@ -26,6 +26,25 @@ displayed in the editor immediately.
 If you leave the editor with unsaved changes, Herzog CAB asks
 whether you want to save first or discard the changes.
 
+## Supplied standard templates { #mitgelieferte-standardvorlagen }
+
+Herzog CAB comes with standard templates, e.g. *Default Order*, *Default
+Design* and *Default Design (high carrier count)*. Which design template is
+offered when printing is described under
+[Saving and printing](../designer/save-print.md#druck-starten-und-vorlage-wahlen).
+
+If an update brings a new version of a standard template, Herzog CAB
+replaces the template at the first start, once per workspace folder — but
+only as long as it still has its original name. Templates with a different
+name and your own templates remain unchanged. Herzog CAB does not recreate
+a standard template that has been deleted.
+
+!!! warning "Keeping your own changes to a standard template"
+    If you have adapted a standard template, save it under a name of your
+    own before the update: click **Save** and enter a new name under
+    **Template name**. Herzog CAB then creates a template of your own that
+    an update does not replace.
+
 ## File location { #speicherort }
 
 All templates are stored as files under `Printouts/templates/` in the active

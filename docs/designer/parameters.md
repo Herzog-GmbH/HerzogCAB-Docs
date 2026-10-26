@@ -42,7 +42,7 @@ einen Eintrag erklärt ein Hinweis die Maschinenbauart.
 | **Litzengeflecht** | Flaches Geflecht (Litze) mit einer offenen Gangbahn — die Klöppel pendeln zwischen den beiden größeren Endrädern hin und her. |
 | **Quadratgeflecht** | Quadratischer Geflechtquerschnitt: 4 Flügelräder mit 4 bis 18 Einschnitten tragen 8 bis 36 Klöppel auf zwei Gangbahnen. Ansichten *Voll*, *Vierkant* (drehbar) und *3D*. |
 | **Spiralgeflecht** | Spiralflechter mit 4 Flügelrädern im festen Außenkranz: 12 Klöppel (3 Einschnitte je Rad, 3 Gangbahnen) oder 20 Klöppel (5 Einschnitte, 5 Gangbahnen); Besetzung 1 voll / 1 leer. |
-| **Packungsgeflecht** | Packungsflechter mit Flügelrädern im Raster. Über **Bahn-Art** wählen Sie die Familie — **2-bahnig**, **3-bahnig**, **4-bahnig** oder **rund** —, über **Klöppel** die Größe. Ansichten *Voll*, *Kante* (drehbar) und *3D*. |
+| **Packungsgeflecht** | Packungsflechter mit Flügelrädern im Raster. Über **Bahn-Art** wählen Sie die Familie — **2-bahnig**, **3-bahnig**, **4-bahnig** oder **rund** —, über **Klöppel** die Größe. Ansichten *Voll*, *Vierkant* (drehbar) und *3D*. |
 | **Soutachegeflecht** | Zwei Flügelräder mit je so vielen Einschnitten wie Klöppeln auf einer Achter-Bahn: 3, 5, 7, 9 oder 11 Klöppel (immer ungerade), Besetzung 1 voll / 1 leer — wahlweise mit **zwei Seelen** durch die Flügelrad-Achsen. |
 
 !!! info "Wechsel der Geflechtsart passt die Klöppelzahl an"
@@ -135,7 +135,7 @@ die Garne jeder Masche, auch wenn alle Garne gleich gefärbt sind. Ab
 Fachung 2 erscheint außerdem in der Werkzeugleiste der Garn-Wähler, mit dem
 Sie jedem Garn eine eigene Farbe geben — siehe
 [Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn). Zum Einfärben
-und Texturieren der Fäden siehe [Färben und Texturieren](painting.md).
+der Fäden und zu ihrer Drehung siehe [Färben und Drehung](painting.md).
 
 ### Material-Ø, Bedeckung und Geflechts-Ø { #material-bedeckung-geflechts }
 
@@ -145,7 +145,7 @@ sich unter [Einstellungen > Design](../admin/settings/legacy-import.md).
 
 | Feld | Bedeutung |
 |---|---|
-| **Material-Ø** | Durchmesser des einzelnen Fadens (Garn/Draht) in mm, 0,00–100,00. Leer (*–*) = keine Angabe; der Geflechtsdurchmesser bleibt dann leer. |
+| **Material-Ø** | Durchmesser des einzelnen Fadens (Garn/Draht) in mm, 0,00–100,00. Leer (*–*) = keine Angabe; der Geflechtsdurchmesser bleibt dann leer. Zusammen mit der TPM bestimmt er die Neigung der Drehungsstriche, siehe [Drehung](painting.md#drehung-s-z-oder-gerade); beim 3D-Werkstoff **Seil** gilt er als Seildurchmesser. |
 | **Bedeckung** (bei Litze: **Füllung**) | Bedeckungsgrad des Geflechts in Prozent, Standard **70 %** (änderbar in den Einstellungen). Steuert in der 3D-Ansicht die gezeichnete Fadendicke. |
 | **Geflechts-Ø** (bei Litze: **Produktbreite**) | Anzeige: der berechnete Geflechtsdurchmesser aus Klöppelzahl, Flechtwinkel, Fachung, Materialdurchmesser und Bedeckung — dieselbe Berechnung wie die Seite [Durchmesser](../calculations/tubular-braid/tube-diameter.md). Nur Anzeige; die Zeichnung bleibt maßstabslos. |
 
@@ -156,12 +156,12 @@ Fensters.
 
 Ankreuzfeld: Zwei Seelenfäden (Kerneinlagen) laufen durch die Achsen der
 beiden Flügelräder und werden umflochten — die klassische Soutache-Kordel
-mit zwei Wülsten. Ausschalten für seelenlose Geflechte. Die Seelen erscheinen
-in der [3D-Ansicht](view-3d.md) als Kerne.
+mit zwei Wülsten. Ausschalten für seelenlose Geflechte. In der
+[3D-Ansicht](view-3d.md) liegen die Seelen als Kerne innen im Geflecht.
 
 ## Verwandte Seiten
 
-* [Färben und Texturieren](painting.md) — die Klöppel des eingestellten Geflechts einfärben
+* [Färben und Drehung](painting.md) — die Klöppel des eingestellten Geflechts einfärben und ihnen eine Drehung geben
 * [Besetzung und Gangbahn-Animation](animation.md) — wie die gewählte Konfiguration auf der Maschine aussieht
 * [3D-Ansicht](view-3d.md) — Projektionen und echtes 3D-Modell
 * [Speichern und Drucken](save-print.md) — das fertige Design ablegen

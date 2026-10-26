@@ -62,7 +62,7 @@ two rights. It only appears if your account may use the Braiding Simulator.
 | Right | Allows | Default roles |
 |---|---|---|
 | **View Braiding Simulator** | Open the Braiding Simulator, load setups and programs, play them back, check them and output the switching plan. | Administrator, Editor, Viewer |
-| **Edit Braiding Simulator** | Create, save and delete your own setups and programs, **Insert operating mode…**. Without this right you can try everything out; when you leave, the changes are discarded without a prompt. | Administrator, Editor |
+| **Edit Braiding Simulator** | Create, save, rename, assign and delete setups and programs. Without this right you can try everything out; when you leave, the changes are discarded without a prompt. | Administrator, Editor |
 
 The rights only state what a role may do. Which machines a user sees is
 determined solely by the assignment of the model licences.

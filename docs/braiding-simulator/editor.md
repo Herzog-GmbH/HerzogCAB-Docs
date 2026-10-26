@@ -35,15 +35,59 @@ in allen Aufgaben gleich ist; die Aufgaben selbst haben eigene Seiten.
 |---|---|
 | **← Flechtsimulator** | Zurück zur [Startseite](index.md#startseite). Bei ungespeicherten Änderungen fragt das Programm vorher nach. |
 | Name der Maschine | Bei ungespeicherten Änderungen mit einem Stern. Der Kurzhinweis nennt die Zahl der Räder, Weichen und Klöppelplätze. |
-| **Besetzung** | Liste der Besetzungen dieser Maschine: eigene, von Herzog mitgelieferte (mit Symbol, *Kommt mit der Maschine von Herzog.*) und die Konfigurationen (*Konfiguration: Voll* usw.). Die Wahl setzt die Besetzung sofort auf die Maschine; ist die aktuelle Aufstellung nicht gespeichert, fragt das Programm vorher (*Besetzung wechseln*, **Verwerfen und laden**). Weichen und Räder bleiben dabei, wie sie stehen. |
-| **⋯** neben Besetzung | **Als neue Besetzung speichern…** und **Besetzung löschen…** (nur eigene Besetzungen), siehe [Bestücken](populate.md#besetzung-speichern). |
-| **Programm** | Liste der Zeitprogramme dieser Maschine, Programme von Herzog mit Symbol. Die Wahl lädt sofort; bringt das Programm eine Besetzung mit, kommt sie mit, sofern Ihre aktuelle Aufstellung gespeichert ist. Beim nächsten Öffnen der Maschine sind Programm und Besetzung wieder gewählt. |
-| **⋯** neben Programm | **Neues Programm…** (Name eingeben; das Programm übernimmt die aktuelle Stellung von Weichen und Rädern als Start und die gewählte Besetzung) und **Programm löschen…** (gelöscht ist es erst mit **Speichern**). Programme von Herzog lassen sich nicht löschen. |
+| **Besetzung** | Liste der Besetzungen dieser Maschine. Die Wahl setzt die Besetzung sofort auf die Maschine und lädt ihr zuletzt benutztes Programm, siehe [unten](#besetzung-und-programm). |
+| **⋯** neben Besetzung | **Als neue Besetzung speichern…**, **Besetzung umbenennen…** und **Besetzung löschen…**, siehe [unten](#besetzung-und-programm). |
+| **Programm** | Die Zeitprogramme der gewählten Besetzung. Die Wahl lädt sofort. Beim nächsten Öffnen der Maschine sind Besetzung und Programm wieder gewählt. |
+| **⋯** neben Programm | **Neues Programm…**, **Programm umbenennen…**, **Programm duplizieren**, **Anderer Besetzung zuordnen…** und **Programm löschen…**, siehe [unten](#besetzung-und-programm). |
 | **⛔ n Fehler**, **⚠ n Hinweise** | Erscheinen, sobald es Meldungen gibt (rot bzw. orange). Der Kurzhinweis listet sie auf; ein Klick öffnet die Aufgabe [Prüfen](check.md). |
 | **Ansicht** | Was die Maschinenansicht zeigt, siehe [unten](#ansicht). |
 | **?** | Kurzhilfe mit Maus und Tasten, siehe [Tasten und Maus](#tasten-und-maus). |
 | Rückgängig, Wiederholen | Mehrstufig (++ctrl+z++, ++ctrl+y++). Der Lauf steht danach wieder am Start. Während der Aufnahme gesperrt. |
 | **Speichern** | Speichert Ihre eigenen Besetzungen und Programme (++ctrl+s++). Aktiv, sobald es Änderungen gibt und Sie das Recht *Flechtsimulator bearbeiten* haben. Siehe [Speichern](#speichern). |
+
+### Besetzung und Programm { #besetzung-und-programm }
+
+Jedes Programm gehört zu genau einer Besetzung. Die Liste **Programm**
+zeigt deshalb nur die Programme der Besetzung, die oben gewählt ist.
+
+!!! warning "📷 Screenshot fehlt"
+    **Motiv:** Kopfzeile des Simulators mit gewählter Besetzung und geöffnetem Menü ⋯ neben „Programm“ (Neues Programm…, Programm umbenennen…, Programm duplizieren, Anderer Besetzung zuordnen…, Programm löschen…).
+    **So erzeugen:** Kundenbuild mit Modell-Lizenz, Maschine mit zwei Besetzungen und mehreren Programmen öffnen, ⋯ neben „Programm“ klicken.
+    **Ziel-Datei:** `assets/screenshots/braiding-simulator/programm-menue.png`
+
+* **Besetzung wechseln:** Die neue Besetzung kommt mit ihrem zuletzt
+  benutzten Programm, bei einer Besetzung ohne Programm mit **— kein
+  Programm —**. Ist die aktuelle Aufstellung nicht gespeichert, fragt das
+  Programm vorher (*Besetzung wechseln*, **Verwerfen und laden**).
+* **Programme ohne Besetzung:** Programme aus älteren Programmversionen,
+  die noch keiner Besetzung gehören, stehen in der Liste **Programm** unter
+  der Zwischenzeile *Ohne Besetzung:*. Wählen Sie eines, fragt das Programm
+  einmal, zu welcher Besetzung es gehört (**Programm zuordnen**,
+  **Zuordnen**). Gibt es noch keine Besetzung, speichern Sie zuerst eine.
+
+Menü **⋯** neben **Besetzung**:
+
+| Eintrag | Wirkung |
+|---|---|
+| **Als neue Besetzung speichern…** | Legt die aktuelle Aufstellung als neue Besetzung an, auf Wunsch mit einer Kopie des offenen Programms, siehe [Bestücken](populate.md#besetzung-speichern). |
+| **Besetzung umbenennen…** | Neuer Name für die gewählte Besetzung. Einen Namen, den es schon gibt, lehnt das Programm ab (*Die Besetzung „…“ gibt es schon.*). |
+| **Besetzung löschen…** | Löscht die gewählte Besetzung **samt ihren Programmen**. Die Rückfrage nennt die Programme, zum Beispiel *Besetzung „…“ samt 2 Programmen löschen?*. **Rückgängig** holt Besetzung und Programme zurück. |
+
+Diese drei Einträge wirken sofort, ohne **Speichern**.
+
+Menü **⋯** neben **Programm**:
+
+| Eintrag | Wirkung |
+|---|---|
+| **Neues Programm…** | Legt ein neues Programm auf der gewählten Besetzung an (Name eingeben). Es übernimmt die aktuelle Startstellung von Weichen und Rädern. Ein neues Programm geht nur auf einer gespeicherten Besetzung: Ist die Aufstellung noch keine, fragt das Programm *Ein Programm gehört zu einer Besetzung. Die aktuelle Aufstellung ist noch keine gespeicherte Besetzung. Jetzt als Besetzung speichern?*; **Besetzung speichern…** öffnet den Dialog [Besetzung speichern](populate.md#besetzung-speichern). |
+| **Programm umbenennen…** | Neuer Name für das gewählte Programm. |
+| **Programm duplizieren** | Legt eine Kopie des Programms auf derselben Besetzung an (*… – Kopie*). |
+| **Anderer Besetzung zuordnen…** | Das Programm gehört danach zu der Besetzung, die Sie im Dialog wählen (**Zuordnen**), und läuft mit deren Klöppeln. Der Simulator wechselt auf diese Besetzung. Prüfen Sie das Programm danach unter [Prüfen](check.md). Nur aktiv, wenn die Maschine mehr als eine Besetzung hat. |
+| **Programm löschen…** | Löscht das gewählte Programm nach Rückfrage; endgültig ist es erst mit **Speichern**. |
+
+Diese Programmänderungen speichern Sie mit **Speichern**. Die Einträge
+beider Menüs brauchen das Recht *Flechtsimulator bearbeiten*. Dieselben
+Befehle gibt es auch auf der [Startseite](index.md#startseite).
 
 ### Ansicht { #ansicht }
 
@@ -86,7 +130,7 @@ Die rechte Leiste hat eine feste Breite. Unten liegen die vier Aufgaben:
 | Reiter | Inhalt |
 |---|---|
 | [**Bestücken**](populate.md) | Klöppel setzen und färben; Garn und Rohrfäden. Ein Klick auf einen leeren Platz setzt einen Klöppel. |
-| [**Programm**](program.md) | Weichen und Räder im Lauf, Betriebsarten, Drehzahl und Abzug. Ein Klick auf eine Weiche schaltet sie. |
+| [**Programm**](program.md) | Weichen und Räder im Lauf, Drehzahl und Abzug. Ein Klick auf eine Weiche schaltet sie. |
 | [**Prüfen**](check.md) | Fehler und Hinweise, Kollisionsprüfung über den ganzen Lauf. Ein roter bzw. oranger Punkt am Reiter zeigt Fehler bzw. Hinweise. |
 | [**Ausgeben**](output.md) | Schaltplan für die Steuerung: drucken, als PDF oder CSV. |
 
@@ -123,17 +167,10 @@ die letzte Meldung, rechts den Zoom der Maschinenansicht.
 
 ## Speichern { #speichern }
 
-**Speichern** schreibt geänderte Aufstellungen in die gewählte Besetzung
-und speichert die Programme:
-
-* Ist die gewählte Besetzung eine Konfiguration oder Besetzung von Herzog,
-  entsteht eine eigene Kopie *&lt;Name&gt; – eigene*; das Original bleibt
-  unverändert.
-* Ist keine Besetzung gewählt (zum Beispiel nach **Alle Klöppel
-  entfernen**), fragt das Programm nach einem Namen.
-* Ändern Sie ein Programm von Herzog, legt der Simulator sofort eine eigene
-  Kopie an: *Eigene Kopie „… – eigene“ angelegt — das Programm von Herzog
-  bleibt unverändert.*
+**Speichern** schreibt eine geänderte Aufstellung in die gewählte
+Besetzung und speichert die Programme. Ist keine Besetzung gewählt (zum
+Beispiel nach **Alle Klöppel entfernen**), fragt das Programm nach einem
+Namen (*Besetzung speichern*, **Name der Besetzung:**).
 
 Verlassen Sie die Maschine mit ungespeicherten Änderungen (zurück, über
 die Navigation oder beim Schließen des Programms), fragt das Programm
@@ -188,8 +225,9 @@ Aufbau und Bedienung sind gleich. Abweichungen, Einzelheiten unter
 * Ziehen mit der **linken** oder mittleren Maustaste verschiebt die
   Maschine; oben rechts liegen **Vergrößern**, **Verkleinern** und
   **Einpassen**.
-* Im Menü **⋯** neben **Programm** gibt es zusätzlich **Umbenennen…** und
-  **Duplizieren…**.
+* Im Menü **⋯** neben **Programm** heißen die Einträge **Umbenennen…** und
+  **Duplizieren…**; beim Duplizieren fragt die Web-App nach dem Namen der
+  Kopie.
 * Die Geschwindigkeit hat zusätzlich **8 Schritte/s**.
 * Am Smartphone steht alles untereinander, die Auswahlkarte kommt als
   Bogen von unten, und **langes Drücken** ersetzt den Rechtsklick.

@@ -11,7 +11,7 @@
 ```mermaid
 flowchart LR
   A["Open Designer"] --> B["Braid type & parameters"]
-  B --> C["Color & texture"]
+  B --> C["Color & twist"]
   C --> D["Check setup & animation"]
   D --> E["3D view"]
   E --> F["Save"]
@@ -45,21 +45,21 @@ and **Ply count**. Every change rebuilds the braid pattern immediately.
 All parameters and their permitted values are explained on the reference page
 [Braid type & parameters](../designer/parameters.md).
 
-## Step 3: Color and texture { #schritt-3-farben-und-texturieren }
+## Step 3: Color and set the twist { #schritt-3-farben-und-drehung-setzen }
 
 1. Activate the **Color** tool.
-2. Select a color from the palette (or from a library in the
+2. Select a color via **Color palette** (or a color from a library in the
    [Color database](../master-data/colors.md)).
 3. In the braid pattern or in the carrier table, click the positions
    that should receive this color. Using the side filter, you can color
-   only the counterclockwise run, only the clockwise run or both running
-   directions.
-4. Optionally, assign a fiber texture from the texture palette to
-   positions.
+   only the left run or only the right run.
+4. Optionally, give carriers a twist: click **Twist**, choose **S**, **Z**
+   or **Untwisted** and, if needed, the **TPM**, and then click the
+   carriers. A color from the palette switches back to coloring.
 
 Undo mistakes with **Back** (++ctrl+z++). All
-controls of the painting mode are described on the reference page
-[Color & texture](../designer/painting.md).
+controls of the painting mode and the twist are described on the reference
+page [Color & twist](../designer/painting.md).
 
 ## Step 4: Check setup and track animation { #schritt-4-besetzung-und-gangbahn-animation-prufen }
 
@@ -72,7 +72,7 @@ colors assigned to each carrier:
 2. Start the **Track animation** with the play button: the
    carriers move across the horngears and the braid pattern builds up in sync,
    layer by layer. Control the speed with the
-   speed buttons.
+   speed buttons; ⏮ resets machine and build-up to the start.
 
 Details on all buttons: reference page
 [Setup & track animation](../designer/animation.md).
@@ -80,8 +80,9 @@ Details on all buttons: reference page
 ## Step 5: Check the 3D view { #schritt-5-3d-ansicht-kontrollieren }
 
 Switch on the 3D view in the toolbar with the **3D** view switch (available
-for all braid types). It shows how the pattern continues around the
-finished braid strand — reference:
+for all braid types except mixed designs). It shows how the pattern
+continues around the finished braid strand. You choose material and form of
+the model via the **Display** button — reference:
 [Views and 3D view](../designer/view-3d.md).
 
 ## Step 6: Save the design in the library { #schritt-6-design-in-der-bibliothek-speichern }
@@ -99,8 +100,8 @@ find the saved design in the
 
 1. In the header of the design window, click **Print**.
 2. If several print templates are available, select the desired template;
-   a default template matching the number of carriers is already
-   pre-selected.
+   a default template matching the number of carriers (**Default Design**
+   or **Default Design (high carrier count)**) is already pre-selected.
 3. Check the print preview and start printing.
 
 Details: [Save & print](../designer/save-print.md); you can design your own
@@ -110,7 +111,8 @@ templates in the [Print editor](../print-templates/index.md).
 
 * The design is in the [design library](../master-data/designs.md) and
   appears under "Recently opened" on the [Home page](../basics/home.md).
-* The printout with braid pattern, setup and carrier table is ready.
+* The printout with braid pattern, 3D view, Setup overview and setup is
+  ready.
 * The design can now be linked in the
   [braiding order](../orders/braiding-order.md) (**Design** tab) —
   see the workflow

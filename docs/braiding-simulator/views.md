@@ -17,7 +17,7 @@ Werte stehen im Zeitprogramm und kommen in den
 
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Flechtsimulator mit bestückter Maschine links und der 3D-Vorschau rechts im Modus „Geflecht“, Seitenansicht, darunter die Infozeilen; das Zahnrad-Fenster „3D-Vorschau“ ist geöffnet.
-    **So erzeugen:** Kundenbuild mit Modell-Lizenz, Flechtsimulator > Maschine öffnen > Konfiguration von Herzog laden, einige Schritte abspielen, Zahnrad oben an der 3D-Vorschau klicken.
+    **So erzeugen:** Kundenbuild mit Modell-Lizenz, Flechtsimulator > Maschine mit einer gespeicherten Besetzung öffnen, einige Schritte abspielen, Zahnrad oben an der 3D-Vorschau klicken.
     **Ziel-Datei:** `assets/screenshots/braiding-simulator/vorschau-geflecht.png`
 
 Oben an der 3D-Vorschau liegen von links nach rechts:
@@ -50,7 +50,7 @@ So bedienen Sie die Vorschau mit der Maus:
 
 | Modus | Zeigt |
 |---|---|
-| **Geflecht** | *Das entstehende Geflecht in 3D.* Die Klöppelfarben, die Fachung und der [Materialdurchmesser](populate.md#garn) bestimmen das Bild. Das ist der Standard. |
+| **Geflecht** | *Das entstehende Geflecht in 3D.* Die Klöppelfarben, die Fachung und der [Materialdurchmesser](populate.md#garn) bestimmen das Bild. Eine Litze erscheint als flaches Band, auch wenn die Klöppel eine Fachung haben. Das ist der Standard. |
 | **Schema** | *Nur die Abbindung: Fadenfolge und Über- und Unterkreuzungen, ohne Radpositionen und Radgrößen.* Hilfreich, um die Bindung zu prüfen, wenn das Geflecht im Bild sehr dicht oder flach ist. |
 | **Maschine** | *Die bestückte Maschine in 3D: Klöppel, Fäden zum Flechtpunkt, das Geflecht bis zur Abzugsscheibe.* Siehe [Ansicht „Maschine“](#ansicht-maschine). |
 
@@ -98,7 +98,7 @@ Das Zahnrad öffnet das Fenster **3D-Vorschau**:
 | Einstellung | Wirkung |
 |---|---|
 | **Flechtwinkel** | Regler für die Steigung der Fäden im Bild (Standard 45°), angezeigt im [gewählten Bezug](#flechtwinkel-bezug). Hat das Programm einen [Abzug](#abzug), ist der Regler gesperrt: *Der Flechtwinkel kommt aus dem Abzug im Zeitprogramm (Zeile „Abzug" der Zeitachse).* |
-| **Material** | **Glattes Filament**, **Gedrehtes Garn** (Standard), **Draht** oder **Einfache Darstellung**. Bestimmt nur Faserstruktur, Rauheit und Glanz. Die einfache Darstellung ist schneller und hilft bei schwacher Grafik. Die Klöppelfarben bleiben in allen Modi erhalten. |
+| **Material** | **Glattes Filament**, **Gedrehtes Garn** (Standard), **Draht**, **Seil** oder **Einfache Darstellung**. Bestimmt nur Faserstruktur, Rauheit und Glanz. **Seil** zeichnet jeden Faden als geflochtenes Seil mit hellen und dunklen Kennfäden, für Geflechte aus Seilen; stellen Sie dazu den [Materialdurchmesser](populate.md#garn) auf den Seildurchmesser, zum Beispiel 10 mm. Die einfache Darstellung ist schneller und hilft bei schwacher Grafik. Die Klöppelfarben bleiben in allen Modi erhalten. |
 | **Querschnitt wie die Radanordnung** | Zeigt den Querschnitt genau wie die Radanordnung der Maschine, ohne Umrechnung: die Ansicht für die Fehlersuche. Aus (Standard) zeigt das Geflecht, wie es die Maschine verlässt; Litzen-Betrieb und mehrere Flechtkreise erkennt die Vorschau dann selbst. Der Schalter wird nicht gespeichert. |
 | **Geparkte Fäden bündig abschneiden** | Nur sichtbar, wenn das Programm Klöppel auf einem Switch-out-Rad parkt. Aus (Standard): Die Fäden der geparkten Klöppel stehen außen am Geflecht und laufen wieder hinein, wenn der Klöppel zurückkommt, so wie beim Flechten. Ein: Diese Strecke ist bündig abgeschnitten, so wie am fertigen Geflecht. |
 | **Geflecht während der Simulation aufbauen** | Ein: Das Geflecht wächst ab **Start** mit der Klöppelbewegung. Aus: Das vollständige Geflecht ist sofort sichtbar. |

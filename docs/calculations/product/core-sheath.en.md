@@ -31,14 +31,14 @@ and two identically structured panels for **Core** and **Cover**.
 | **Bobbin:** | – | Selection of a bobbin from the master data (matching the selected machine type). Supplies the outer diameter, core diameter and winding length of the bobbin for the length calculation. |
 | **Material:** | – | Optional selection of a material from the master data; the **Density** is taken over from it automatically. |
 | **Density:** | g/cm³ | Material density (three decimal places). Filled when a material is selected, but can also be overwritten manually. |
-| **Core share:** or **Cover share:** | % | Cross-sectional share of the respective layer in the overall product. **Core share + Cover share must add up to 100 %.** |
+| **Core share:** or **Cover share:** | % | Cross-sectional share of the respective layer in the overall product. **Core share + Cover share must add up to 100 %.** When you type one of the two values, Herzog CAB completes the other one to 100 %. Values from the history or an order stay unchanged when loaded. |
 | **Braiding angle:** | ° | Braiding angle of the layer. |
 | **Number of carriers per head:** | pcs | Number of carriers of the machine (core ≥ 1, cover ≥ 3). |
 | **Ply count / carrier:** | pcs | Number of threads/strands running in parallel per carrier. |
 | **Horngear speed:** | rpm | Speed of the machine's horngear. |
 
 !!! note "Shares must add up to 100 %"
-    If **Core share** and **Cover share** together deviate from 100 % by more than 0.01 %, the calculation reports *"The proportions of the core and cover do not add up to 100%"* and marks both share fields.
+    If **Core share** and **Cover share** together deviate from 100 % by more than 0.01 %, for example with values from an older order, the calculation reports *"The proportions of the core and cover do not add up to 100%"* and marks both share fields.
 
 ## Result { #ergebnis }
 

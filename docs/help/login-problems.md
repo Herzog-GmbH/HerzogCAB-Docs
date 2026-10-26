@@ -34,7 +34,10 @@ Minuten.
 **„Der Lizenzserver ist nicht erreichbar … Offline anmelden kann sich nur, wer sich auf diesem Rechner schon einmal online angemeldet hat."**
 Ohne Verbindung lässt die Desktop-App nur Benutzer herein, die auf diesem
 Rechner schon einmal online angemeldet waren — mit dem Passwort von damals.
-Verbindung prüfen oder mit einem solchen Benutzer anmelden.
+Verbindung prüfen oder mit einem solchen Benutzer anmelden. Ab Version
+2.1.2 gilt dasselbe, wenn der Lizenzserver wegen einer Wartung nur eine
+Fehlerseite liefert (HTTP 502, 503 oder 504); ältere Versionen brachen dann
+mit *„Der Lizenzserver antwortete mit HTTP 503.“* ab.
 
 **Einladungslink abgelaufen.**
 Der Link aus der Einladungsmail gilt 14 Tage. Öffnen Sie den abgelaufenen

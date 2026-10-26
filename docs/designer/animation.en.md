@@ -48,10 +48,22 @@ braid pattern:
 | Pan | Hold down the **right mouse button** and drag. |
 | Fit view | **Double-click** with the left mouse button. |
 
-### Track animation (Play/Pause) { #gangbahn-animation-playpause }
+### Buttons of the overview { #schaltflachen-der-ubersicht }
 
-At the top left of the overview is the **Play button** (*"Animate tracks:
-horngears rotate, carriers travel along their track"*):
+At the top left of the overview are the animation buttons, from left to
+right:
+
+| Button | Tooltip | Effect |
+|---|---|---|
+| ⏮ | *Reset machine and braid build-up to the start* | Resets machine and build-up to the start, see [below](#auf-den-anfang-setzen). |
+| ▶ / ⏸ | *Animate tracks: horngears rotate, carriers travel along their track* | Starts or pauses the animation. |
+| ⏪ | *Slow down animation* | Halves the speed. |
+| ⏩ | *Speed up animation* | Doubles the speed. |
+
+The button at the top right (*Show machine overview enlarged*) opens the
+overview in a large **Machine overview** window.
+
+### Track animation (Play/Pause) { #gangbahn-animation-playpause }
 
 * **Play** starts the animation: the horngears rotate in opposite directions,
   the carriers ride along in their slots and change to the neighboring
@@ -67,19 +79,33 @@ horngears rotate, carriers travel along their track"*):
 !!! info "When the animation is available"
     The animation is available for all six braid types. For some very
     small configurations (e.g. round braid with very few carriers), no
-    collision-free animation is possible — the Play button is then not
-    offered.
+    collision-free animation is possible — the animation buttons are then
+    not offered.
 
-### Speed (0.25× to 8×) { #geschwindigkeit-025-bis-8 }
+### Reset to the start (⏮) { #auf-den-anfang-setzen }
 
-Next to the Play button there are two speed buttons:
+The ⏮ button to the left of Play sets the carriers back to their start
+position and clears the layer-by-layer build-up in the braid pattern and in
+the [3D view](view-3d.md):
+
+* If the animation is running, the braid immediately builds up again from
+  the start.
+* If the animation is stopped, the start remains until you press **Play**.
+
+The carrier labels stay with their carriers.
+
+### Speed (0.25× to 16×) { #geschwindigkeit-025-bis-16 }
+
+To the right of the Play button there are two speed buttons:
 
 * **Slow down animation** — halves the speed (down to a minimum of 0.25×).
-* **Speed up animation** — doubles the speed (up to a maximum of 8×).
+* **Speed up animation** — doubles the speed (up to a maximum of 16×).
 
-The base speed is deliberately leisurely so that you can easily follow the
-transfers of the carriers between the horngears. To build up the complete braid
-pattern quickly, simply switch up a few steps.
+At a low speed you can follow the transfers of the carriers between the
+horngears; at a high speed you build up the complete braid pattern quickly.
+You set the start speed under
+[Settings > Design](../admin/settings/legacy-import.md); the speed buttons
+write the last used value back there.
 
 ### Synchronous layer-by-layer build-up of the braid pattern { #synchroner-lage-fur-lage-aufbau-des-flechtbilds }
 
@@ -91,11 +117,14 @@ crossed and how the pattern is created.
 * Once the picture is complete, it stays complete — the
   animation of the horngears continues.
 * When you **pause**, the current build-up state remains visible.
+* With **⏮** the build-up starts again from the beginning.
 * When it is **reset** (e.g. by a parameter change), the complete braid
   pattern appears again immediately.
 
+In the [3D view](view-3d.md) the braid grows in sync in the same way.
+
 ## Related pages { #verwandte-seiten }
 
-* [Coloring and texturing](painting.md) — the colors that are animated here
+* [Coloring and twist](painting.md) — the colors that are animated here
 * [Braid type and parameters](parameters.md) — define the horngear arrangement and number of carriers
 * [3D view](view-3d.md) — view the finished pattern on the round braid

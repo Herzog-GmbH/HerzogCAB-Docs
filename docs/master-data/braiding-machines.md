@@ -33,6 +33,7 @@ technischen Daten (Klöppelzahl, Drehzahl).
 | **Suche** | Filtert die Liste nach Name, Typ, Kategorie oder Standort. |
 | **Neu** | Öffnet den Dialog *Neue Maschine erstellen* (siehe unten). |
 | **Importieren** | Übernimmt Maschinen aus einer CSV-Datei (Bilder im selben Ordner wie die CSV). |
+| **Vergleichen** | Stellt mindestens zwei gewählte Maschinen in einer Tabelle gegenüber, siehe [Maschinen vergleichen](#maschinen-vergleichen). |
 | **Bearbeiten** | Öffnet die gewählte Maschine zum Ändern. |
 | **Löschen** | Entfernt die gewählte(n) Maschine(n) mit Sicherheitsabfrage. |
 
@@ -189,6 +190,28 @@ wählen:
     Die Maschinendaten (Klöppelzahl, Besetzung, Geflechtsart) bestimmen, welche
     Designs und Produkte gefertigt werden können. Herzog CAB gleicht diese Werte
     beim Anlegen eines [Auftrags](../orders/braiding-order.md) ab.
+
+## Maschinen vergleichen
+
+Markieren Sie in der Liste mindestens zwei Maschinen und klicken Sie auf
+**Vergleichen**; die Schaltfläche zeigt die Zahl der gewählten Maschinen,
+zum Beispiel **Vergleichen (3)**. Das Fenster *Maschinenvergleich* stellt
+die Maschinen in Spalten nebeneinander, je Merkmal eine Zeile. Leere
+Angaben bleiben leer.
+
+Verglichen wird innerhalb der jeweiligen Liste: Flechtmaschinen,
+Spulmaschinen, Aufwickler, Abwickler und Gatter haben jeweils ihre eigenen
+Zeilen, dazu bei allen Typ, Kategorie, Baujahr, Seriennummer, Gruppe,
+Standort und die Maße.
+
+Bei Flechtmaschinen nennt der Vergleich unter anderem **Klöppel je Kopf**,
+**Stich**, **Drehzahl** und **Abzug**. Tragen Sie oben eine **Schlaglänge
+für die Produktion** ein, erscheinen **Produktion je Kopf** und
+**Produktion gesamt** bei maximaler Drehzahl, wie bei der Berechnung
+[Kern-Mantel-Produkt](../calculations/product/core-sheath.md). Das gilt für
+Rundgeflecht; Litzenmaschinen bekommen keinen Wert. Ist an der Maschine
+keine Drehzahl eingetragen, nimmt der Vergleich die des Herzog-Katalogmodells;
+der Tooltip an der Zelle sagt das.
 
 ## Verwandte Seiten
 

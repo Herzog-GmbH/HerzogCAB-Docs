@@ -25,14 +25,14 @@ as a machine setup sheet.
 
     [:octicons-arrow-right-24: Braid type and parameters](parameters.md)
 
-- :material-palette: **Coloring and texturing**
+- :material-palette: **Coloring and twist**
 
     ---
 
-    Paint mode, color library, user colors, color picker, textures and
-    side filter.
+    Paint mode, color library, user colors, color picker, plying colors,
+    twist per carrier and side filter.
 
-    [:octicons-arrow-right-24: Coloring and texturing](painting.md)
+    [:octicons-arrow-right-24: Coloring and twist](painting.md)
 
 - :material-play-circle-outline: **Setup and track animation**
 
@@ -47,8 +47,8 @@ as a machine setup sheet.
 
     ---
 
-    Full and half development, the rotatable projections cylinder, square
-    and edge, and the real 3D model of the braid.
+    Full and half development, the rotatable projections cylinder and
+    square, the real 3D model of the braid and the Display window.
 
     [:octicons-arrow-right-24: Views and 3D view](view-3d.md)
 
@@ -95,7 +95,7 @@ five areas:
 
 | Area | Content |
 |---|---|
-| **Toolbar** (top) | Mode switch, side filter, undo/redo, display switches as well as color and texture palette. |
+| **Toolbar** (top) | Mode switch, side filter, undo/redo, view switches, **Display**, **Color palette** and the **Twist** brush. |
 | **Document header** (per design window) | Summary of the design and the actions **Print**, **Save**, **Save under new name**, **Close view**. |
 | **Parameter panel** (left) | Design name, [braid type and parameters](parameters.md) with [material Ø, covering and braid Ø](parameters.md#material-bedeckung-geflechts) below **Ply count**, and below them the [Setup overview](animation.md). |
 | **Carrier table** (center) | All carrier positions with their current color — you can also color directly here. |
@@ -109,22 +109,15 @@ five areas:
 |---|---|
 | **New** (++ctrl+n++) | Opens a new design window with the defaults from [Settings > Design](../admin/settings/legacy-import.md) (default: round braid, 16 carriers, 45°, Normal setup 1-1). If a design is already open, a second window is created next to it (see below). |
 | **Load** (++ctrl+o++) | Switches to the [design library](../master-data/designs.md), where you select and open a saved design. |
-| **Color** | Paint mode: clicks in the braid pattern or in the carrier table color carriers with the active color — see [Coloring and texturing](painting.md). |
+| **Color** | Paint mode: clicks in the braid pattern or in the carrier table color carriers with the active color — see [Coloring and twist](painting.md). If the **Twist** brush is selected, **Color** switches back to coloring. |
 | **Move** | Pan mode: hold down the left mouse button to move the view without coloring. |
-| **Counterclockwise** / **Clockwise** | Side filter for coloring: defines which running direction a click colors. Only visible for round and square braid (two runs). |
+| **Left run** / **Right run** | Side filter for color and twist: defines which running direction a click hits. Only visible for round and square braid (two runs). |
 | **All yarns** / **Yarn N** | Yarn selector, only from ply count 2: defines which yarn of a carrier a click colors — see [plying colors](painting.md#fachungsfarben-farbe-je-garn). |
-| **Back** (++ctrl+z++) / **Forward** (++ctrl+y++) | Undoes the last coloring step or restores it. |
-| **Labels** | Shows or hides the carrier labels in the braid pattern (default: on). |
-| **Full** / **Half** / **Cylinder** (or **Square**, **Edge**) / **3D** | The view switches: flat development, half development, rotatable projection and the real 3D model — which ones appear depends on the braid type, see [Views and 3D view](view-3d.md). |
-| **Texture** | Switches the texture display in the braid pattern on or off (default: on). |
-| **Pattern** | Opens the texture palette for selecting the fiber texture. |
-| **Color** / **Color palette** | The color palette with active color, library colors and user colors. |
-
-!!! info "Palettes adapt to the window width"
-    In wide windows, the **Color** and **Textures** groups are located directly
-    in the toolbar. If the window becomes narrow, they collapse into the
-    pop-up buttons **Color palette** and **Pattern** — the content is
-    the same.
+| **Back** (++ctrl+z++) / **Forward** (++ctrl+y++) | Undoes the last step (color or twist) or restores it. |
+| **Full** or **Braid pattern** / **Half** / **Cylinder** or **Square** / **3D** | The view switches: flat development, half development, rotatable projection and the real 3D model — which ones appear depends on the braid type, see [Views and 3D view](view-3d.md). |
+| **Display** | Opens the **Display** window: **Yarn structure** and **Labels** for the drawn views, **Material**, **Simple display**, **Form** and **Orientation** for the 3D view. Applies to all design windows — see [“Display” window](view-3d.md#fenster-darstellung). |
+| **Color palette** | Opens the color palette with active color, library colors and user colors — see [Coloring and twist](painting.md). |
+| **Twist** | Brush for the twist of the yarns: S, Z or untwisted, optionally with TPM. The button shows the selected twist in its name, e.g. **Twist S 120** — see [Twist](painting.md#drehung-s-z-oder-gerade). |
 
 ### Document header { #dokument-kopfzeile }
 
@@ -167,7 +160,8 @@ In that case, first close one via the ✕ in its header.
 | Zoom (buttons) | **Zoom in** / **Zoom out** at the top right of the preview card. |
 | Fit view | **Fit view** (full-screen icon) on the preview card — the braid pattern is fitted completely again. For **Cylinder** and **Square**, it returns to the starting view in which the body fills the preview. |
 | Pan | Hold down the **right mouse button** and drag — works at any time, also in paint mode. |
-| Pan (mode) | Choose the **Move** tool and drag with the **left mouse button**. |
+| Pan (mode) | Choose the **Move** tool and drag with the **left mouse button**. In **Cylinder** and **Square** the left mouse button rotates the body here as well; pan there with the right mouse button. |
+| Rotate (**Cylinder**, **Square**) | Hold down the **left mouse button** and drag sideways — see [Rotating cylinder and square](view-3d.md#zylinder-und-vierkant-drehen). |
 
 The [Setup overview](animation.md) has its own, independent
 zoom and pan controls.

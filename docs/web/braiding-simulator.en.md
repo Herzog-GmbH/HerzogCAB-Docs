@@ -25,7 +25,7 @@ last valid model licence expires, the entry disappears.
 ## Start page { #startseite }
 
 !!! warning "📷 Screenshot missing"
-    **Subject:** Start page of the Braiding Simulator in the web app: the machines on the left, the selected machine on the right with preview, Configurations from Herzog, My setups, My programs and the buttons New setup, New program, Open.
+    **Subject:** Start page of the Braiding Simulator in the web app: the machines on the left, the selected machine on the right with preview, the section Setups and programs (one card per setup with its programs) and the buttons New setup, Open, Delete own….
     **How to create:** Web app locally (127.0.0.1:5173), page `/flechtsimulator` with a customer account with an assigned model licence; not yet in the script `_tools/web_screenshots.py` (add the name `flechtsimulator`).
     **Target file:** `assets/screenshots/web/flechtsimulator.png`
     <!-- web-bild ../assets/screenshots/web/flechtsimulator.png -->
@@ -38,8 +38,8 @@ In the browser, the following is added:
 * From a width of 1024 px, list and details are side by side, below that
   one above the other. On a smartphone the page jumps to the details after
   you make a selection.
-* Next to **New setup** and **New program** there is the **Open** button
-  for the selected machine.
+* Next to **New setup** there is the **Open** button for the selected
+  machine.
 * The list reloads every five minutes and when you return to the window;
   a new assignment in the licence portal thus arrives without reloading.
 * If no model is assigned to you, it reads *No machine model is assigned
@@ -73,7 +73,6 @@ the timeline.
 |---|---|
 | **Commands (n)** | Collapsible list of all commands of the program in the **Program** task. For each command you change the **Step** (the command moves there), jump with **Jump to step** or remove it with **Remove command**. Commands that the machine cannot execute are shown in orange. |
 | **Length** | The program length is in the **Program** task (empty = as long as the commands). |
-| **Rename…**, **Duplicate…** | Additionally in the **⋯** menu next to **Program**. A program from Herzog becomes your own copy when you rename it. |
 | **Thread path (unrolled)** | In the **Output** task: **Calculate thread path** shows the path of each carrier around the braid, unrolled (circumference horizontally, time downward, repeat dashed). |
 | **8 steps/s** | Additional playback speed. |
 | **Full screen** | Button in the 3D preview. |
@@ -89,7 +88,6 @@ the timeline.
 | **Covering** | Cannot be set; it is shown in the info line, the take-up and Machine 3D. |
 | **Material diameter** per setup | Applies per browser to all machines and is not saved with the setup. A material diameter from a desktop app program takes precedence in the take-up. |
 | Threading [tube threads](../braiding-simulator/populate.md#rohrfaden) in with a click | Tube threads only come from a saved setup. |
-| [Insert operating mode](../braiding-simulator/program.md#betriebsart-einfugen) | Missing. |
 | **Running direction** view colors empty positions | Only rotation arrows and direction arrows. |
 | Timeline: right-click menu (insert/delete steps, move/copy a section), selecting rows, moving a command by dragging | Missing. You move commands via the command list. Dragging in a row applies the state over the range. |
 | Check with color pattern, return of the carriers and interlacing per section | Only collision, repeat and number of carriers, plus *All commands can be executed on the machine.* or the findings. |
@@ -106,9 +104,11 @@ the timeline.
   step.
 * **Recording:** during recording the program plays without repetition;
   when you stop, the program length grows up to the step reached.
-* **Stopping and reversing** horngear groups and switch-out gears has no
-  *for this run only* variant without recording, as there is for
-  switches.
+* **Reversing** horngear groups and switch-out gears has no *for this run
+  only* variant without recording.
+* In the **⋯** menu next to **Program**, the entries are called
+  **Rename…** and **Duplicate…**; when duplicating, the web app asks for
+  the name of the copy.
 * **Undo** applies to program changes, not to placing or coloring
   individual carriers.
 * **Without *Edit Braiding Simulator***, recording, **Adopt start state**,

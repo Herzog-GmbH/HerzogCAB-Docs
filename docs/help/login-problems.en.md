@@ -34,7 +34,10 @@ minutes.
 **"The licence server cannot be reached … Only users who have already signed in online on this computer can sign in offline."**
 Without a connection, the desktop app only lets in users who have already
 signed in online on this computer — with the password from that time.
-Check the connection or sign in with such a user.
+Check the connection or sign in with such a user. From version 2.1.2 the
+same applies when the licence server only returns an error page during
+maintenance (HTTP 502, 503 or 504); older versions stopped with
+*"The licence server responded with HTTP 503."*
 
 **Invitation link expired.**
 The link from the invitation email is valid for 14 days. Open the expired

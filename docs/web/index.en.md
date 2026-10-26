@@ -166,7 +166,7 @@ exists in both — the most important differences:
 | Data | workspace folder on the computer or a network drive, per profile | central in the customer account, one workspace per account |
 | Users | account users (or local / Entra / LDAP with dongle) | account users only |
 | Calculations | all calculators, history, favorites | the same calculators, history and favorites per user on all devices, search |
-| Designer | all six braid types, coloring by click, textures, plying colors (color per yarn), track animation, true 3D, two-window comparison, mixed designs | all six braid types, coloring by click, textures, plying colors (color per yarn), occupation overview with animation, true 3D; one design per page, mixed designs view only |
+| Designer | all six braid types, coloring by click, twist per carrier, plying colors (color per yarn), track animation, true 3D, two-window comparison, mixed designs | all six braid types, coloring by click, textures, plying colors (color per yarn), occupation overview with animation, true 3D; one design per page, mixed designs view only |
 | Braiding Simulator | with a model licence: set up, program, check, output switching plan, see [Braiding Simulator](../braiding-simulator/index.md) | with a model licence: set up, program, check; switching plan only in the desktop app, see [Braiding Simulator (web app)](braiding-simulator.md) |
 | Edit lock | lock on entries that someone else is editing; read-only until they are free | the same, with cloud sync also towards the desktop app, see [Edit lock](interface.md#bearbeitungssperre) |
 | Versions | — | earlier versions and recycle bin for orders, designs, machines, master data, hall plans and print templates, also for changes from the cloud sync |

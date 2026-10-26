@@ -17,7 +17,7 @@ in the time program and go into the
 
 !!! warning "📷 Screenshot missing"
     **Subject:** Braiding Simulator with the loaded machine on the left and the 3D preview on the right in “Braid” mode, side view, the info lines below it; the “3D preview” gear icon window is open.
-    **How to create:** Customer build with a model licence, Braiding Simulator > open a machine > load a configuration from Herzog, play a few steps, click the gear icon at the top of the 3D preview.
+    **How to create:** Customer build with a model licence, Braiding Simulator > open a machine with a saved setup, play a few steps, click the gear icon at the top of the 3D preview.
     **Target file:** `assets/screenshots/braiding-simulator/vorschau-geflecht.png`
 
 At the top of the 3D preview, from left to right, are:
@@ -50,7 +50,7 @@ How to operate the preview with the mouse:
 
 | Mode | Shows |
 |---|---|
-| **Braid** | *The braid as it is produced, in 3D.* The carrier colors, the ply count and the [material diameter](populate.md#garn) determine the image. This is the default. |
+| **Braid** | *The braid as it is produced, in 3D.* The carrier colors, the ply count and the [material diameter](populate.md#garn) determine the image. A flat braid appears as a flat ribbon, even if the carriers have a ply count above 1. This is the default. |
 | **Schematic** | *Interlacing only: thread sequence and over- and under-crossings, without gear positions and gear sizes.* Helpful for checking the binding when the braid in the image is very dense or flat. |
 | **Machine** | *The loaded machine in 3D: carriers, yarns to the braiding point, the braid up to the take-up disc.* See ["Machine" view](#ansicht-maschine). |
 
@@ -98,7 +98,7 @@ The gear icon opens the **3D preview** window:
 | Setting | Effect |
 |---|---|
 | **Braiding angle** | Slider for the inclination of the yarns in the image (default 45°), shown in the [selected reference](#flechtwinkel-bezug). If the program has a [take-up](#abzug), the slider is locked: *The braiding angle comes from the take-up in the time program ("Take-up" row of the timeline).* |
-| **Material** | **Smooth filament**, **Twisted yarn** (default), **Wire** or **Simple display**. Only determines fiber structure, roughness and gloss. The simple display is faster and helps with weak graphics. The carrier colors are kept in all modes. |
+| **Material** | **Smooth filament**, **Twisted yarn** (default), **Wire**, **Rope** or **Simple display**. Only determines fiber structure, roughness and gloss. **Rope** draws each thread as a braided rope with light and dark tracers, for braids made of ropes; set the [material diameter](populate.md#garn) to the rope diameter, for example 10 mm. The simple display is faster and helps with weak graphics. The carrier colors are kept in all modes. |
 | **Cross-section like the gear layout** | Shows the cross-section exactly like the gear layout of the machine, without conversion: the view for troubleshooting. Off (default) shows the braid as it leaves the machine; the preview then detects flat braid operation and several braiding circles by itself. The switch is not saved. |
 | **Cut parked threads flush** | Only visible if the program parks carriers on a switch-out gear. Off (default): the threads of the parked carriers stand outside the braid and run back in when the carrier returns, as during braiding. On: this length is cut off flush, as on the finished braid. |
 | **Build braid during simulation** | On: the braid grows from **Start** with the carrier movement. Off: the complete braid is visible immediately. |

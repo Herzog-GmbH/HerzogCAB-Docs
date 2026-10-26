@@ -2,7 +2,86 @@
 
 !!! abstract "Referenz — Was sich in welcher Version geändert hat"
 
-## Version 2.1.1 (in Vorbereitung)
+## Version 2.1.2 (in Vorbereitung) { #version-212 }
+
+### Neu { #neu-212 }
+
+* **Programme gehören zu einer Besetzung** – im Flechtsimulator legen Sie
+  auf einer Besetzung beliebig viele Programme an; jedes Programm gehört zu
+  genau einer Besetzung. Die Startseite zeigt je Besetzung eine Karte mit
+  Klöppelzahl, Fachung, Garn-Ø, Bedeckung und Kern-Ø, darunter ihre
+  Programme mit Schritten, Drehzahl und Abzug. Über **⋯** benennen Sie um,
+  duplizieren, ordnen einer anderen Besetzung zu oder löschen. Programme
+  ohne Besetzung stehen unter *Ohne Besetzung* und bekommen mit
+  **Zuordnen…** ihre Besetzung. Im Editor zeigt die Programmauswahl nur die
+  Programme der geladenen Besetzung; **Als neue Besetzung speichern…** nimmt
+  das offene Programm auf Wunsch als Kopie mit, **Besetzung löschen…** löscht
+  ihre Programme mit. Siehe [Flechtsimulator](../braiding-simulator/index.md).
+* **Startstellung per Klick** – ohne Aufnahme ändert ein Klick auf ein Rad,
+  eine Weiche, einen Stellhebel oder eine Schaltgruppe die Startstellung des
+  Programms, bei jedem Schritt. Abzug und Drehzahl stehen auf der Zeitachse
+  wie die Weichen über die ganze Breite. Siehe
+  [Programm](../braiding-simulator/program.md).
+* **Drehung je Klöppel** – im Designer geben Sie mit dem Pinsel **Drehung**
+  jedem Klöppel S- oder Z-Drehung oder gerade Fäden, auf Wunsch mit
+  Drehungen je Meter (TPM). Flechtbild, 3D-Ansicht und Druck zeigen die
+  Drehung. Siehe [Färben und Drehung](../designer/painting.md#drehung-s-z-oder-gerade).
+* **Knopf Darstellung** – ein Fenster im Designer für Fadenstruktur, Labels,
+  Werkstoff, einfache Darstellung, Form und Ausrichtung; es ersetzt Textur,
+  Muster, Labels, Texturpalette und das Zahnrad der 3D-Ansicht. Siehe
+  [Fenster Darstellung](../designer/view-3d.md#fenster-darstellung).
+* **Designausdruck mit 3D-Ansicht und Farblegende** – neues Druckelement
+  *3D-Ansicht* und Zellendarstellung *Farbfeld mit Farblegende*; die
+  Standardvorlagen drucken Flechtbild und 3D-Ansicht nebeneinander, die
+  Designdaten mit Material-Ø, Bedeckung, Geflechts-Ø und 3D-Werkstoff. Siehe
+  [Elemente](../print-templates/elements.md).
+* **Werkstoff Seil** – für Geflechte aus Seilen, im Designer und im
+  Flechtsimulator. Litze und Spirale mit Fachung zeigen im 3D flache
+  Bänder, bei der Soutache liegen die Seelen im Geflecht.
+* **Maschinen vergleichen** – **Vergleichen** in den Maschinenlisten stellt
+  mindestens zwei Maschinen gegenüber, bei Flechtmaschinen mit Produktion zu
+  einer Schlaglänge. Siehe
+  [Maschinen vergleichen](../master-data/braiding-machines.md#maschinen-vergleichen).
+* **Geflechtsdichte über den Schlaglängenfaktor** – unter **Eingabe über**
+  wählen Sie Flechtwinkel oder Schlaglängenfaktor. Siehe
+  [Geflechtsdichte](../calculations/product/lay-length.md).
+
+### Verbesserungen { #verbesserungen-212 }
+
+* **Maschinenmodelle ohne Besetzungen und Programme** – Herzog liefert mit
+  dem Modell keine Konfigurationen (Voll, Halb, Tandem), Besetzungen oder
+  Programme mehr; Sie bestücken und programmieren selbst. Eigene Besetzungen
+  und Programme bleiben erhalten. **Betriebsart einfügen…** entfällt.
+* **Kern-Mantel-Produkt** – tippen Sie den Anteil der Seele oder des Mantels
+  ein, ergänzt Herzog CAB den anderen auf 100 %. Siehe
+  [Kern-Mantel-Produkt](../calculations/product/core-sheath.md).
+* **Ansichten im Designer** – Zylinder und Vierkant drehen Sie durch
+  waagerechtes Ziehen, bei der Packung heißt *Kante* jetzt *Vierkant*. Die
+  Maschinenübersicht hat den Knopf ⏮, der Maschine und Geflechtsaufbau auf
+  den Anfang setzt. Die Form im 3D kennt nur noch *Vorgabe der
+  Geflechtsart*, *Nur Abbindung (Schema)* und *Wie die Maschine steht*.
+* **Standard-Designvorlagen** – *Standard Design* und *Standard Design (hohe
+  Klöppelzahl)* werden beim ersten Start einmal durch die neue Fassung
+  ersetzt, solange sie noch ihren ursprünglichen Namen tragen. Wer eigene
+  Änderungen behalten will, benennt sie vorher im Druck-Editor um.
+
+### Fehlerbehebungen { #fehlerbehebungen-212 }
+
+* Antwortet der Lizenzserver wegen einer Wartung mit einer Fehlerseite
+  (HTTP 502, 503 oder 504), meldet sich Herzog CAB offline an, statt die
+  Anmeldung abzubrechen. Siehe [Login-Probleme](../help/login-problems.md).
+* Abmelden und Beenden räumen die 3D-Ansicht *Maschine* sauber ab.
+* Bei zwei offenen Designs erscheint die Übersicht nach einem Wechsel der
+  Geflechtsart nicht mehr doppelt.
+* Das Symbol der Spulmaschinen zeigt vier Spulstellen.
+
+### Kompatibilität { #kompatibilitaet-212 }
+
+* **Drehung je Klöppel** – ältere Versionen kennen die Drehung nicht und
+  verlieren sie beim Speichern eines Designs. Aktualisieren Sie alle Rechner
+  am selben Arbeitsverzeichnis.
+
+## Version 2.1.1 (Oktober 2026)
 
 ### Neu
 

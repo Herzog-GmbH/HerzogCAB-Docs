@@ -33,6 +33,7 @@ technical data (number of carriers, speed).
 | **Search** | Filters the list by name, type, category or location. |
 | **New** | Opens the dialog *Create new machine* (see below). |
 | **Import** | Takes over machines from a CSV file (images in the same folder as the CSV). |
+| **Compare** | Shows at least two selected machines side by side in a table, see [Compare machines](#maschinen-vergleichen). |
 | **Edit** | Opens the selected machine for editing. |
 | **Delete** | Removes the selected machine(s) with confirmation prompt. |
 
@@ -186,6 +187,27 @@ category:
     The machine data (number of carriers, setup, braid type) determines which
     designs and products can be produced. Herzog CAB checks these values
     when creating an [order](../orders/braiding-order.md).
+
+## Compare machines { #maschinen-vergleichen }
+
+Select at least two machines in the list and click **Compare**; the
+button shows the number of selected machines, for example **Compare (3)**.
+The *Machine comparison* window shows the machines side by side in
+columns, one row per property. Missing values stay empty.
+
+The comparison works within the respective list: braiding machines,
+bobbin winding machines, take-up units, pay-off units and creels each have
+their own rows, plus type, category, year of manufacture, serial number,
+group, location and dimensions for all of them.
+
+For braiding machines the comparison shows, among others, **Carriers per
+head**, **Pitch**, **Speed** and **Take-up**. If you enter a **Lay length
+for production** at the top, **Production per head** and **Total
+production** at maximum speed appear, as in the calculation
+[Core-cover product](../calculations/product/core-sheath.md). This applies
+to round braids; flat braiding machines get no value. If no speed is
+entered for the machine, the comparison uses the speed of the Herzog
+catalogue model; the tooltip on the cell says so.
 
 ## Related pages { #verwandte-seiten }
 

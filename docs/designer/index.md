@@ -25,14 +25,14 @@ als Maschinenbelegblatt.
 
     [:octicons-arrow-right-24: Geflechtsart und Parameter](parameters.md)
 
-- :material-palette: **Färben und Texturieren**
+- :material-palette: **Färben und Drehung**
 
     ---
 
-    Malmodus, Farbbibliothek, Benutzerfarben, Farbwähler, Texturen und
-    Seitenfilter.
+    Malmodus, Farbbibliothek, Benutzerfarben, Farbwähler, Fachungsfarben,
+    Drehung je Klöppel und Seitenfilter.
 
-    [:octicons-arrow-right-24: Färben und Texturieren](painting.md)
+    [:octicons-arrow-right-24: Färben und Drehung](painting.md)
 
 - :material-play-circle-outline: **Besetzung und Gangbahn-Animation**
 
@@ -47,8 +47,8 @@ als Maschinenbelegblatt.
 
     ---
 
-    Volle und halbe Abwicklung, die drehbaren Projektionen Zylinder, Vierkant
-    und Kante und das echte 3D-Modell des Geflechts.
+    Volle und halbe Abwicklung, die drehbaren Projektionen Zylinder und
+    Vierkant, das echte 3D-Modell des Geflechts und das Fenster Darstellung.
 
     [:octicons-arrow-right-24: Ansichten und 3D-Ansicht](view-3d.md)
 
@@ -96,7 +96,7 @@ aus fünf Bereichen:
 
 | Bereich | Inhalt |
 |---|---|
-| **Werkzeugleiste** (oben) | Modus-Umschalter, Seitenfilter, Rückgängig/Wiederherstellen, Anzeige-Schalter sowie Farb- und Texturpalette. |
+| **Werkzeugleiste** (oben) | Modus-Umschalter, Seitenfilter, Rückgängig/Wiederherstellen, Ansichts-Schalter, **Darstellung**, **Farbpalette** und der Pinsel **Drehung**. |
 | **Dokument-Kopfzeile** (je Design-Fenster) | Zusammenfassung des Designs und die Aktionen **Drucken**, **Speichern**, **Speichern unter neuem Namen**, **Ansicht schließen**. |
 | **Parameter-Panel** (links) | Designname, [Geflechtsart und Parameter](parameters.md) mit [Material-Ø, Bedeckung und Geflechts-Ø](parameters.md#material-bedeckung-geflechts) unter **Fachung** sowie darunter die [Besetzungsübersicht](animation.md). |
 | **Klöppeltabelle** (Mitte) | Alle Klöppelpositionen mit ihrer aktuellen Farbe — hier können Sie auch direkt färben. |
@@ -110,22 +110,15 @@ aus fünf Bereichen:
 |---|---|
 | **Neu** (++ctrl+n++) | Öffnet ein neues Designfenster mit den Vorgaben aus [Einstellungen > Design](../admin/settings/legacy-import.md) (Standard: Rundgeflecht, 16 Klöppel, 45°, Normale Besetzung 1-1). Ist bereits ein Design geöffnet, entsteht ein zweites Fenster daneben (siehe unten). |
 | **Laden** (++ctrl+o++) | Wechselt in die [Designbibliothek](../master-data/designs.md), wo Sie ein gespeichertes Design auswählen und öffnen. |
-| **Färben** | Malmodus: Klicks im Flechtbild oder in der Klöppeltabelle färben Klöppel mit der aktiven Farbe ein — siehe [Färben und Texturieren](painting.md). |
+| **Färben** | Malmodus: Klicks im Flechtbild oder in der Klöppeltabelle färben Klöppel mit der aktiven Farbe ein — siehe [Färben und Drehung](painting.md). Ist der Pinsel **Drehung** gewählt, schaltet **Färben** zurück aufs Färben. |
 | **Bewegen** | Verschiebemodus: mit gedrückter linker Maustaste verschieben Sie die Ansicht, ohne zu färben. |
-| **Linkslauf** / **Rechtslauf** | Seitenfilter für das Färben: legt fest, welche Laufrichtung ein Klick einfärbt. Nur bei Rund- und Quadratgeflecht sichtbar (zwei Läufe). |
+| **Linkslauf** / **Rechtslauf** | Seitenfilter für Farbe und Drehung: legt fest, welche Laufrichtung ein Klick trifft. Nur bei Rund- und Quadratgeflecht sichtbar (zwei Läufe). |
 | **Alle Garne** / **Garn N** | Garn-Wähler, nur ab Fachung 2: legt fest, welches Garn eines Klöppels ein Klick färbt — siehe [Fachungsfarben](painting.md#fachungsfarben-farbe-je-garn). |
-| **Zurück** (++ctrl+z++) / **Vor** (++ctrl+y++) | Macht den letzten Färbeschritt rückgängig bzw. stellt ihn wieder her. |
-| **Labels** | Blendet die Klöppelbezeichnungen im Flechtbild ein oder aus (Standard: ein). |
-| **Voll** / **Halb** / **Zylinder** (bzw. **Vierkant**, **Kante**) / **3D** | Die Ansichts-Schalter: flache Abwicklung, halbe Abwicklung, drehbare Projektion und das echte 3D-Modell — welche erscheinen, hängt von der Geflechtsart ab, siehe [Ansichten und 3D-Ansicht](view-3d.md). |
-| **Textur** | Schaltet die Texturdarstellung im Flechtbild ein oder aus (Standard: ein). |
-| **Muster** | Öffnet die Texturpalette zur Auswahl der Faser-Textur. |
-| **Farbe** / **Farbpalette** | Die Farbpalette mit aktiver Farbe, Bibliotheksfarben und Benutzerfarben. |
-
-!!! info "Paletten passen sich der Fensterbreite an"
-    In breiten Fenstern liegen die Gruppen **Farbe** und **Texturen** direkt in
-    der Werkzeugleiste. Wird das Fenster schmal, klappen sie zu den
-    Popup-Schaltflächen **Farbpalette** und **Muster** zusammen — der Inhalt ist
-    derselbe.
+| **Zurück** (++ctrl+z++) / **Vor** (++ctrl+y++) | Macht den letzten Schritt (Farbe oder Drehung) rückgängig bzw. stellt ihn wieder her. |
+| **Voll** bzw. **Flechtbild** / **Halb** / **Zylinder** bzw. **Vierkant** / **3D** | Die Ansichts-Schalter: flache Abwicklung, halbe Abwicklung, drehbare Projektion und das echte 3D-Modell — welche erscheinen, hängt von der Geflechtsart ab, siehe [Ansichten und 3D-Ansicht](view-3d.md). |
+| **Darstellung** | Öffnet das Fenster **Darstellung**: **Fadenstruktur** und **Labels** für die Zeichenansichten, **Werkstoff**, **Einfache Darstellung**, **Form** und **Ausrichtung** für die 3D-Ansicht. Gilt für alle Designfenster — siehe [Fenster „Darstellung“](view-3d.md#fenster-darstellung). |
+| **Farbpalette** | Öffnet die Farbpalette mit aktiver Farbe, Bibliotheksfarben und Benutzerfarben — siehe [Färben und Drehung](painting.md). |
+| **Drehung** | Pinsel für die Drehung der Garne: S, Z oder gerade, auf Wunsch mit TPM. Die Schaltfläche trägt die gewählte Drehung im Namen, z. B. **Drehung S 120** — siehe [Drehung](painting.md#drehung-s-z-oder-gerade). |
 
 ### Dokument-Kopfzeile
 
@@ -169,7 +162,8 @@ sein"*. Schließen Sie dann zuerst eines über das ✕ in dessen Kopfzeile.
 | Zoomen (Schaltflächen) | **Hineinzoomen** / **Herauszoomen** oben rechts an der Vorschau-Karte. |
 | Ansicht einpassen | **Ansicht einpassen** (Vollbild-Symbol) an der Vorschau-Karte — das Flechtbild wird wieder komplett eingepasst. Bei **Zylinder** und **Vierkant** führt es auf den Startausschnitt zurück, in dem der Körper die Vorschau füllt. |
 | Verschieben | **Rechte Maustaste** gedrückt halten und ziehen — funktioniert jederzeit, auch im Malmodus. |
-| Verschieben (Modus) | Werkzeug **Bewegen** wählen und mit der **linken Maustaste** ziehen. |
+| Verschieben (Modus) | Werkzeug **Bewegen** wählen und mit der **linken Maustaste** ziehen. In **Zylinder** und **Vierkant** dreht die linke Maustaste auch hier den Körper; verschieben Sie dort mit der rechten Maustaste. |
+| Drehen (**Zylinder**, **Vierkant**) | **Linke Maustaste** gedrückt halten und waagerecht ziehen — siehe [Zylinder und Vierkant drehen](view-3d.md#zylinder-und-vierkant-drehen). |
 
 Die [Besetzungsübersicht](animation.md) hat eine eigene, unabhängige
 Zoom-und-Verschieben-Bedienung.

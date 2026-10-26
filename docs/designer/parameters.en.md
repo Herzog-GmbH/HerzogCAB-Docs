@@ -38,11 +38,11 @@ an entry, a tooltip explains the machine design.
 
 | Braid type | Description |
 |---|---|
-| **Round braid** | Round braid with two counter-rotating runs (counterclockwise and clockwise) on a ring of horngears. The braid pattern shows the circumferential braid as a flat section; the *Cylinder* and *3D* views show it round (see [3D view](view-3d.md)). |
+| **Round braid** | Round braid with two counter-rotating runs (left run and right run) on a ring of horngears. The braid pattern shows the circumferential braid as a flat section; the *Cylinder* and *3D* views show it round (see [3D view](view-3d.md)). |
 | **Flat braid** | Flat braid (flat braid) with an open track — the carriers move back and forth between the two larger end gears. |
 | **Square braid** | Square braid cross-section: 4 horngears with 4 to 18 slots carry 8 to 36 carriers on two tracks. *Full*, *Square* (rotatable) and *3D* views. |
 | **Spiral braid** | Spiral braiding machine with 4 horngears in a fixed outer ring: 12 carriers (3 slots per horngear, 3 tracks) or 20 carriers (5 slots, 5 tracks); setup 1 full / 1 empty. |
-| **Packing braid** | Packing braiding machine with horngears in a grid. Use **Track type** to choose the family — **2-track**, **3-track**, **4-track** or **round** — and **Carriers** to choose the size. *Full*, *Edge* (rotatable) and *3D* views. |
+| **Packing braid** | Packing braiding machine with horngears in a grid. Use **Track type** to choose the family — **2-track**, **3-track**, **4-track** or **round** — and **Carriers** to choose the size. *Full*, *Square* (rotatable) and *3D* views. |
 | **Soutache braid** | Two horngears, each with as many slots as there are carriers, on a figure-eight track: 3, 5, 7, 9 or 11 carriers (always odd), setup 1 full / 1 empty — optionally with **two cores** through the horngear axes. |
 
 !!! info "Changing the braid type adjusts the number of carriers"
@@ -134,7 +134,7 @@ the yarns of each stitch, even if all yarns have the same color. From
 ply count 2, the yarn selector also appears in the toolbar, with which
 you give each yarn its own color — see
 [plying colors](painting.md#fachungsfarben-farbe-je-garn). For coloring
-and texturing the threads, see [Coloring and texturing](painting.md).
+the threads and for their twist, see [Coloring and twist](painting.md).
 
 ### Material Ø, covering and braid Ø { #material-bedeckung-geflechts }
 
@@ -144,7 +144,7 @@ switch them off under [Settings > Design](../admin/settings/legacy-import.md).
 
 | Field | Meaning |
 |---|---|
-| **Material Ø** | Diameter of the single thread (yarn/wire) in mm, 0.00–100.00. Empty (*–*) = no value; the braid diameter then stays empty. |
+| **Material Ø** | Diameter of the single thread (yarn/wire) in mm, 0.00–100.00. Empty (*–*) = no value; the braid diameter then stays empty. Together with the TPM it sets the slope of the twist lines, see [Twist](painting.md#drehung-s-z-oder-gerade); with the 3D material **Rope** it is the rope diameter. |
 | **Covering** (for flat braid: **Fill**) | Covering of the braid in percent, default **70 %** (can be changed in the settings). Controls the drawn thread thickness in the 3D view. |
 | **Braid Ø** (for flat braid: **Product width**) | Display: the calculated braid diameter from number of carriers, braiding angle, ply count, material diameter and covering — the same calculation as the [Diameter](../calculations/tubular-braid/tube-diameter.md) page. Display only; the drawing remains not to scale. |
 
@@ -155,11 +155,11 @@ active window.
 
 Checkbox: two core threads run through the axes of the two horngears and are
 braided over — the classic soutache cord with two beads. Switch off for braids
-without cores. The cores appear in the [3D view](view-3d.md) as cores.
+without cores. In the [3D view](view-3d.md) the cores lie inside the braid.
 
 ## Related pages { #verwandte-seiten }
 
-* [Coloring and texturing](painting.md) — color the carriers of the configured braid
+* [Coloring and twist](painting.md) — color the carriers of the configured braid and give them a twist
 * [Setup and track animation](animation.md) — what the selected configuration looks like on the machine
 * [3D view](view-3d.md) — projections and real 3D model
 * [Saving and printing](save-print.md) — store the finished design

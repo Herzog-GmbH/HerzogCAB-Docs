@@ -16,8 +16,9 @@ is actually printed.
 !!! info "Only an excerpt"
     The screenshot shows the basic structure of the palette. Since version 1.4.5,
     two further data table groups for braiding and winding
-    have been added (see below) — an up-to-date screenshot with all six groups
-    is still missing.
+    have been added (see below); the **3D view** element is also missing from
+    the picture — an up-to-date screenshot with all six groups is still
+    missing.
 
 ## The six element groups { #die-sechs-element-gruppen }
 
@@ -41,8 +42,8 @@ Tables that are neutral with regard to the order type, as well as the tables for
 | **Braiding machine** | Machine name, machine type, braid type, number of heads, active carriers | Order |
 | **Product** | Product data (e.g. diameter, braid density) | Order |
 | **Production** | Production values (e.g. heads used) | Order |
-| **Design** | Information on the linked design | Design, Order |
-| **Setup** | Carrier setup as a table (round braid or flat braid) | Design, Order |
+| **Design** | Information on the linked design in plain words (see [Design](#design)) | Design, Order |
+| **Setup** | Carrier setup as a table with color and twist per carrier (see [Setup](#besetzung)) | Design, Order |
 
 ### Data tables winding { #datentabellen-spulerei }
 
@@ -57,7 +58,8 @@ New since version 1.4.5, for winding order templates.
 
 | Element | Shows | Usage |
 |---|---|---|
-| **Braid** | Preview image of the braid pattern | Design, Order |
+| **Braid** | Preview image of the braid pattern, without carrier labels | Design, Order |
+| **3D view** | Side view of the braid from the [3D view](../designer/view-3d.md) of the active design window, on a white background without floor grid and in the same form as in the Designer. In the print editor a cube icon stands in for it; the image is created when printing. For mixed designs or without OpenGL-capable graphics, the note *3D view not available here* appears instead of the image. | Design |
 | **Setup overview** | Graphic overview of the carrier setup | Design, Order |
 
 ### Company elements { #firmenelemente }
@@ -111,6 +113,26 @@ For **Order**, **Customer**, **Braiding machine**, **Material**, **Bobbin**,
 Each of these tables starts with a sensible default content, which you can
 adapt or extend as needed.
 
+When printing, the width of the label column follows the longest label. If a
+value is too long for its column, it is reduced down to 75 % and then
+shortened at the end ("…").
+
+### Design { #design }
+
+The **Design** table prints the braid type and braid binding in plain words,
+e.g. *Round braid* and *Normal setup 1-1*. The default content comprises
+design name, braid type, braid binding, carriers, braiding angle, ply count,
+material Ø, covering or fill, braid Ø or product width and 3D material.
+Details that do not apply to the design are left out instead of staying
+empty:
+
+* Material Ø, covering, fill, braid Ø and product width exist only for round
+  and flat braids, as in the
+  [Designer](../designer/parameters.md#material-bedeckung-geflechts).
+* Herzog CAB prints the 3D material (yarn, wire or rope) only if an image of
+  the 3D view is created as well.
+* Spiral, packing and soutache braids have no braid binding row.
+
 ### Free table { #freie-tabelle }
 
 You edit the **Table** from the free elements cell by cell: you set the number of rows
@@ -137,10 +159,24 @@ is displayed:
 
 | Field | Selection |
 |---|---|
-| **Braid type** | **Automatic**, **Round**, **Flat braid**, **Per track (multi-column)**. *Automatic* chooses the two columns counterclockwise/clockwise for round braid, one continuous column for flat braid and, for packing and spiral braiders, **one column per track** (header *Track 1*, *Track 2*, …; row number per track starting at 1). *Strand* forces a single column instead. |
+| **Braid type** | **Automatic**, **Round**, **Flat braid**, **Per track (multi-column)**. *Automatic* chooses the two columns left run/right run for round braid, one continuous column for flat braid and, for packing and spiral braiders, **one column per track** (header *Track 1*, *Track 2*, …; row number per track starting at 1). *Flat braid* forces a single column instead. |
 | **Displayed runs** | Both columns, Left run only, Right run only (selectable only for round braid) |
 | **Displayed value** | Color ID, Color name, Hex value, Pantone |
-| **Cell style** | **Color fill**: cell completely filled in the carrier color (classic). **Color swatch + number**: white cell with number and value on the left and a small, rounded color swatch on the right — compact rows, zebra stripes, light grid and the header in Herzog blue, like the other data tables. |
+| **Cell style** | **Color fill**: cell completely filled in the carrier color (classic). **Color swatch + number**: white cell with number and value on the left and a small, rounded color swatch on the right — compact rows, zebra stripes, light grid and the header in Herzog blue, like the other data tables. **Color swatch with color legend**: number, a color swatch with one stripe per yarn and the twist on the right; color names and the displayed value appear once in the **Colors** legend below the table (see below). |
+
+Every cell style shows the
+[twist](../designer/painting.md#drehung-s-z-oder-gerade) of a carrier, also
+in the order printout: with **Color fill** and **Color swatch + number**
+after the number, e.g. "3 S 120", with **Color swatch with color legend** on
+the right of the cell. Untwisted carriers show only the number.
+
+**Color legend.** With **Color swatch with color legend**, the legend lists
+each color once, in the order of its first occurrence, with color swatch,
+color name and the value selected under **Displayed value**. With
+[plying colors](../designer/painting.md#fachungsfarben-farbe-je-garn), each
+yarn color appears separately. The legend takes up at most about 40 % of the
+element area; if not all colors fit, the last entry states the number of the
+remaining ones.
 
 !!! info "Direct printing without a template"
     If you print a design directly from the Designer without a template,

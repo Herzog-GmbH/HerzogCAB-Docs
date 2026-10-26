@@ -1,6 +1,6 @@
 # Program
 
-!!! abstract "Reference — The “Program” task: switching switches and gears, recording, timeline, pitch in this run, horngear groups, inserting an operating mode, speed and take-up"
+!!! abstract "Reference — The “Program” task: switching switches and gears, start position, recording, timeline, pitch in this run, horngear groups, speed and take-up"
 
 ## What you use this area for { #wofur-sie-diesen-bereich-nutzen }
 
@@ -14,15 +14,18 @@ twisting or spiral come about. You write a program in two ways:
 * **Set in the timeline:** in the row of a switch or gear, click the step
   at which the change should happen.
 
-You create new programs at the top in the header bar (**⋯** next to
-**Program** > **New program…**) or on the
-[start page](index.md#startseite) with **New program**.
+Each program belongs to exactly one setup. You create new programs at the
+top in the header bar on the selected setup (**⋯** next to **Program** >
+**New program…**) or on the [start page](index.md#startseite) in the card
+of the setup with **+ New program**. How programs and setups belong
+together is described under
+[Setup and program](editor.md#besetzung-und-programm).
 
 ## The screen at a glance { #der-bildschirm-im-uberblick }
 
 !!! warning "📷 Screenshot missing"
     **Subject:** “Program” task with the groups Switches and gears and Speed and take-up; at the bottom the timeline with the rows Take-up, Speed, Direction, Switches (expanded) and Gears; the red “Recording” band in the machine view.
-    **How to create:** Customer build with a model licence, open a machine with a program from Herzog (changeover), “Program” tab, start recording.
+    **How to create:** Customer build with a model licence, open a machine with one of your own changeover programs, “Program” tab, start recording.
     **Target file:** `assets/screenshots/braiding-simulator/programm.png`
 
 In the **Program** task, a **click on a switch** switches it. A click on
@@ -30,29 +33,48 @@ a carrier or a gear selects it.
 
 ## Switching switches { #weichen-schalten }
 
-What a click on a switch does depends on where the run is:
+What a click on a switch does depends on whether a program is selected
+and whether recording is on. In short: without recording the start
+position, with recording from here on.
 
 | State | Effect |
 |---|---|
-| **At the start** | Changes the **start position** of the program. |
-| **Mid-run, without recording** | Applies to this run only: *W12 changed for this run only — the start position stays. Use Record to put the command into the program.* |
-| **With recording** | Becomes a switching command at the current step. |
+| **Program selected, without recording** | Changes the **start position** of the program, whatever step the run is currently at. The switch is then in this position from the beginning: *W12 is now closed from the beginning — the program's start position has changed.* |
+| **With recording** | Becomes a switching command from the current step. |
+| **Without a program** | At the start, the click changes the switch over; mid-run, it applies to this run only. |
+
+If you change the start position mid-run, the simulator recalculates the
+run with the new start position up to the previous spot. A command in
+step 1 for the same switch is adjusted as well. If the program switches
+the switch itself later on, the message names the step: *From step 20 the
+program switches it.* Up to there, the new start position applies.
+
+The machine already shows the commands of step 1 at the start: switches,
+run state and direction of the gears appear there as step 1 sets them.
 
 * If the switch is on a **shift lever**, one click sets all switches of
   the lever together.
 * **++ctrl++ + click** collects several switches into a **switch group**:
   a click on one of them then switches all of them; a click on another
   switch dissolves the group.
+* Shift levers and switch groups follow the same rule as a single switch:
+  without recording the start position, with recording a command from
+  here on.
 * **Fixed components** (X crossing, Y piece, groove blocks) cannot be
   switched; a click only selects them.
 
 ## "Switches and gears" group { #gruppe-weichen-und-rader }
 
+At the top of the group, a note sums up the click rule: *A click on a
+switch switches it; Ctrl+click collects several to switch together.
+Without recording this changes the program's start position, i.e. from
+the beginning. With recording on it becomes a command from the current
+step. The same applies to starting and stopping gears.*
+
 | Element | Effect |
 |---|---|
-| **Reverse all gears** | Reverses the running direction of all gears; all pairs stay counter-rotating, the braiding circle continues backwards. Grouped gears stay rigidly coupled. Takes effect from the next step boundary and, like a switch click, works at the start, mid-run or with recording. |
-| **Insert operating mode…** | Takes a changeover such as twisting, spiral or flat from a program of this machine and inserts it at the current step, see [below](#betriebsart-einfugen). |
-| **Adopt start state** | Saves the current position of gears and switches as the start of the program; the selected setup is linked to the program (*Program start adopted: … gears, … switches · setup: …*). The run is then at the start. |
+| **Reverse all gears** | Reverses the running direction of all gears; all pairs stay counter-rotating, the braiding circle continues backwards. Grouped gears stay rigidly coupled. Takes effect from the next step boundary: at the start as the start position, mid-run without recording for this run only, with recording as a command. |
+| **Adopt start state** | Saves the current position of gears and switches as the start of the program (*Program start adopted: … gears, … switches · setup: …*). The program stays with its setup. The run is then at the start. |
 | **Repeat program** | Tick (on by default): the commands repeat with the program length as the period, typical for braid patterns. Without the tick, the program runs through once; after that, all positions stay as they are. |
 
 Without a selected program, the program-related buttons are locked.
@@ -127,11 +149,22 @@ following have their own drive:
 | **Stop switch-out** / **Start switch-out** | Stops or starts the switch-out gear; while it stands, its carriers park. |
 | **Reverse switch-out** | Reverses only this gear. |
 
-All of them take effect from the next step boundary: at the start as the
-start position, mid-run for this run only, with recording as a program
-command. Below the hub of these gears, a run symbol shows whether they
-are running (▶) or stopped (⏸); in the **Program** task, a click on it
-starts or stops the gear.
+**Stop** and **Start** follow the same rule as a switch click: with a
+program selected and without recording, they change the program's start
+position, whatever step the run is at (*Horngear group 1 (gears …) is
+now stopped from the beginning — the program's start position has
+changed.*); a command in step 1 is adjusted as well, and a later command
+for the same gear is named in the message. With recording they become a
+command from the current step. Without a program they act as the start
+position at the start and for this run only mid-run.
+
+**Reverse** takes effect from the next step boundary: at the start as the
+start position, mid-run without recording for this run only, with
+recording as a program command.
+
+Below the hub of these gears, a run symbol shows whether they are running
+(▶) or stopped (⏸); in the **Program** task, a click on it starts or stops
+the gear, with the same effect as the buttons.
 
 If a gear runs against its base direction, the card warns: *Runs
 backwards in operation, against the base direction.*
@@ -141,7 +174,8 @@ backwards in operation, against the base direction.*
 On a **turning unit**, **Trigger carrier exchange** swaps one carrier
 each between the two neighboring gears; meanwhile, the rest of the
 machine stands still. With recording, this becomes a command in the
-program. If the exchange is not possible right now, the card states the
+program; without recording, the exchange applies to this run only. If the
+exchange is not possible right now, the card states the
 reason and the *Next possible step* with the link **jump there**.
 
 ### Pitch in this run { #teilung-im-lauf }
@@ -178,6 +212,8 @@ on. The following are recorded as a command at the current step: switch
 clicks (also via shift levers), **Reverse all gears**, stopping, starting
 and reversing horngear groups and switch-out gears, carrier exchanges and
 pitch changes. Placing and removing carriers remains part of the setup.
+Without recording, a click on a switch or on the run state of a gear
+changes the start position, see [Switching switches](#weichen-schalten).
 
 * During recording, a red band **Recording** with the position and the
   number of commands appears at the top left of the machine, and the
@@ -261,6 +297,16 @@ it applies until the next change. Dragging sets it **only for the
 range**; afterwards, the previous value applies again. The dialogs are
 described under [3D preview and take-up](views.md#abzug).
 
+Like **Direction** and **Switches**, **Take-up** and **Speed** span the
+full width of the timeline, also beyond the end of the program:
+
+* Without **Repeat program**, the last range continues to apply after the
+  end of the program.
+* With **Repeat program**, the ranges recur with the program length.
+* Identical neighboring ranges merge into one block.
+* Beyond the end of the program, the tooltip names the range that applies
+  there.
+
 ### Right-click menu { #rechtsklick-menu }
 
 Depending on the row, a matching command appears at the top, for example
@@ -273,7 +319,6 @@ Depending on the row, a matching command appears at the top, for example
 | **Delete steps…** | Deletes steps; what was switched there continues to apply afterwards, later commands move forward. |
 | **Move section…** | Moves the commands of a step range by a number of steps (positive later, negative earlier), optionally **Selected rows only**. |
 | **Copy section…** | Copies the commands of a section to another place, also from another program of this machine (**From program**). |
-| **Insert operating mode…** | As in the "Switches and gears" group, see [below](#betriebsart-einfugen). |
 | **Go to step n** | Sets the playhead. |
 
 If a gear row contains a command that the machine cannot execute
@@ -282,37 +327,8 @@ program), the row is hatched and the tooltip says *Not machine-capable:
 on the machine all gears run in sync.* Use **Remove single-gear commands
 of G…** in the right-click menu to delete these commands.
 
-## Insert operating mode { #betriebsart-einfugen }
-
-A **changeover** is a section of a program in which switches deviate
-from the program start and then switch back, for example into twisting
-and back. **Insert operating mode…** takes such a changeover from any
-program of this machine, for example from a program from Herzog, into
-your program.
-
-| Field | Meaning |
-|---|---|
-| **Changeover** | The changeovers found: program · steps · switches switched. |
-| **Starts at step** | Where the changeover begins (preset: current step). |
-| **Duration** | Steps from the first command of the way out to the first command of the way back. |
-| **Make room** | Inserts steps so that the rest of the program is kept and moves back. Without the tick, the changeover overwrites what is there. |
-| **Include take-up** | Only if the section contains take-up changes: takes them over as well; when twisting, for example, the take-up is set to 0. |
-
-The dialog checks immediately whether the run stays collision-free and
-whether every carrier, after the return, stands where it would stand
-without the changeover: *✅ Collision-free — after the return every
-carrier stands as it would without the changeover.*, *⚠ Collision-free,
-but the color pattern is shifted afterwards.* or *❌ Collision at step
-…*. Below that, it suggests *Suitable start steps* and *Suitable
-durations*. **Insert** inserts the changeover. The function requires the
-permission *Edit Braiding Simulator*.
-
-If the simulator finds no changeover in the programs of this machine, it
-says so; then first create one or use a program from Herzog.
-
 ## In the web app { #in-der-web-app }
 
-* **Insert operating mode** does not exist.
 * The timeline has no right-click menu and no row selection; dragging
   applies a state over the range but does not move a command. You move,
   jump to and remove commands in the **Commands (n)** list of the

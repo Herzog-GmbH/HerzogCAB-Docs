@@ -62,7 +62,7 @@ Rechten. Sie erscheint nur, wenn Ihr Konto den Flechtsimulator nutzen darf.
 | Recht | Erlaubt | Standardrollen |
 |---|---|---|
 | **Flechtsimulator anzeigen** | Den Flechtsimulator öffnen, Besetzungen und Programme laden, abspielen, prüfen und den Schaltplan ausgeben. | Administrator, Bearbeiter, Betrachter |
-| **Flechtsimulator bearbeiten** | Eigene Besetzungen und Programme anlegen, speichern und löschen, **Betriebsart einfügen…**. Ohne dieses Recht können Sie alles ausprobieren; beim Verlassen werden die Änderungen ohne Rückfrage verworfen. | Administrator, Bearbeiter |
+| **Flechtsimulator bearbeiten** | Besetzungen und Programme anlegen, speichern, umbenennen, zuordnen und löschen. Ohne dieses Recht können Sie alles ausprobieren; beim Verlassen werden die Änderungen ohne Rückfrage verworfen. | Administrator, Bearbeiter |
 
 Die Rechte sagen nur, was eine Rolle tun darf. Welche Maschinen ein
 Benutzer sieht, bestimmt allein die Zuweisung der Modell-Lizenzen.

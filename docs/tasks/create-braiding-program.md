@@ -12,7 +12,7 @@
 
 ```mermaid
 flowchart LR
-  A["Maschine öffnen"] --> B["Besetzung wählen<br>und anpassen"]
+  A["Maschine öffnen"] --> B["Besetzung anlegen"]
   B --> C["Besetzung prüfen"]
   C --> D["Programm anlegen<br>und aufnehmen"]
   D --> E["Abzug und Drehzahl"]
@@ -27,16 +27,24 @@ flowchart LR
 1. Klicken Sie in der Navigation auf **Flechtsimulator** (Referenz:
    [Startseite](../braiding-simulator/index.md#startseite)).
 2. Wählen Sie links die Maschine.
-3. Klicken Sie rechts unter **Konfigurationen von Herzog** bei der
-   gewünschten Konfiguration (zum Beispiel *Voll*) auf **Öffnen**.
+3. Klicken Sie rechts unter dem Abschnitt **Besetzungen und Programme**
+   auf **Neue Besetzung**.
 
-Die Maschine erscheint mit der Konfiguration im
-[Simulator-Bildschirm](../braiding-simulator/editor.md).
+Die leere Maschine erscheint im
+[Simulator-Bildschirm](../braiding-simulator/editor.md), die Aufgabe
+**Bestücken** ist offen.
 
-## Schritt 2: Besetzung anpassen
+!!! tip "Tipp"
+    Hat die Maschine schon eine passende Besetzung, klicken Sie in deren
+    Karte auf **Öffnen**, passen die Besetzung in Schritt 2 an und
+    speichern Änderungen mit **Speichern** statt mit **Als neue Besetzung
+    speichern…**.
 
-1. Öffnen Sie rechts die Aufgabe **Bestücken**
-   ([Referenz](../braiding-simulator/populate.md)).
+## Schritt 2: Besetzung anlegen
+
+1. In der Aufgabe **Bestücken**
+   ([Referenz](../braiding-simulator/populate.md)) setzen Sie mit einem
+   Klick auf einen leeren Platz einen Klöppel.
 2. Färben Sie die Klöppel: Klöppel anklicken und in der Auswahlkarte
    **Einzelfarben** wählen, oder mehrere mit ++ctrl++ + Klick wählen und
    **Farbe…** bzw. **Nach Laufrichtung färben**.
@@ -63,22 +71,25 @@ Sie ein Programm schreiben.
 ## Schritt 4: Programm anlegen und aufnehmen
 
 1. Wählen Sie oben **⋯** neben **Programm** > **Neues Programm…** und
-   vergeben Sie einen Namen. Das Programm übernimmt die aktuelle
-   Weichenstellung als Start und die gewählte Besetzung.
+   vergeben Sie einen Namen. Das Programm gehört zur gewählten Besetzung
+   und übernimmt die aktuelle Weichenstellung als Start.
 2. Öffnen Sie die Aufgabe **Programm**
    ([Referenz](../braiding-simulator/program.md)).
-3. Klicken Sie in der Wiedergabeleiste auf **Aufnahme** und dann auf
+3. Soll eine Weiche von Anfang an anders stehen, klicken Sie sie ohne
+   Aufnahme an. Das ändert die Startstellung des Programms.
+4. Klicken Sie in der Wiedergabeleiste auf **Aufnahme** und dann auf
    **Start**.
-4. Drücken Sie an der Stelle, an der umgeschaltet werden soll, **Pause**
+5. Drücken Sie an der Stelle, an der umgeschaltet werden soll, **Pause**
    (oder geben Sie den Schritt unter **Gehe zu Schritt** ein).
-5. Klicken Sie die Weichen, die schalten sollen; bei einem Stellhebel
+6. Klicken Sie die Weichen, die schalten sollen; bei einem Stellhebel
    genügt eine Weiche.
-6. Lassen Sie weiterlaufen und schalten Sie später zurück. Klicken Sie am
+7. Lassen Sie weiterlaufen und schalten Sie später zurück. Klicken Sie am
    Ende auf **Aufnahme stoppen**.
 
 Feinarbeit erledigen Sie in der [Zeitachse](../braiding-simulator/program.md#zeitachse):
-Befehle verschieben, Schritte einfügen oder löschen. Umschaltungen aus den
-Programmen von Herzog übernehmen Sie mit **Betriebsart einfügen…**.
+Befehle verschieben, Schritte einfügen oder löschen. Befehle aus einem
+anderen Programm dieser Maschine übernehmen Sie mit **Abschnitt
+kopieren…** im Rechtsklick-Menü der Zeitachse.
 
 ## Schritt 5: Abzug und Drehzahl einstellen
 
@@ -115,8 +126,8 @@ diesen Werten.
 
 ## Ergebnis
 
-* Auf der Startseite steht Ihre Besetzung unter **Meine Besetzungen** und
-  das Programm unter **Meine Programme**.
+* Auf der Startseite steht Ihre Besetzung als Karte unter **Besetzungen
+  und Programme**, das Programm eingerückt darunter.
 * Die Prüfung zeigt *✅ Kollisionsfrei — Rapport nach … Schritten*.
 * Der Schaltplan liegt als Ausdruck, PDF oder CSV vor.
 
@@ -125,5 +136,9 @@ diesen Werten.
 * Die Maschine fehlt oder öffnet nicht: [Lizenz und Rechte](../braiding-simulator/licence.md#wenn-eine-lizenz-wegfallt).
 * **Speichern** bleibt grau: Ihre Rolle braucht *Flechtsimulator
   bearbeiten*, oder ein Kollege bearbeitet gerade dieselbe Maschine.
+* **Neues Programm…** fragt nach einer Besetzung: Ein Programm gehört
+  immer zu einer gespeicherten Besetzung. Speichern Sie zuerst die
+  Aufstellung (Schritt 2), siehe
+  [Besetzung und Programm](../braiding-simulator/editor.md#besetzung-und-programm).
 * Ein Teilungswechsel wirkt nicht: siehe
   [Teilung im Lauf](../braiding-simulator/program.md#teilung-im-lauf).

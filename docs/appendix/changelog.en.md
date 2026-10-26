@@ -2,7 +2,84 @@
 
 !!! abstract "Reference — What changed in which version"
 
-## Version 2.1.1 (in preparation) { #version-211-in-vorbereitung }
+## Version 2.1.2 (in preparation) { #version-212 }
+
+### New { #neu-212 }
+
+* **Programs belong to a setup** – in the Braiding Simulator you create any
+  number of programs on a setup; every program belongs to exactly one
+  setup. The start page shows one card per setup with carrier count, ply
+  count, yarn Ø, covering and core Ø, and below it its programs with steps,
+  speed and take-up. With **⋯** you rename, duplicate, assign to another
+  setup or delete. Programs without a setup are listed under *Without
+  setup* and get their setup with **Assign…**. In the editor the program
+  selection shows only the programs of the loaded setup; **Save as new
+  setup…** can take the open program along as a copy, **Delete setup…**
+  deletes its programs as well. See
+  [Braiding Simulator](../braiding-simulator/index.md).
+* **Start position by click** – without recording, a click on a gear, a
+  switch, a shift lever or a switch group changes the start position of the
+  program, at any step. Like the switches, take-up and speed span the whole
+  width of the timeline. See [Program](../braiding-simulator/program.md).
+* **Twist per carrier** – in the designer the **Twist** brush gives each
+  carrier S or Z twist or untwisted yarns, optionally with turns per metre
+  (TPM). Braid pattern, 3D view and printout show the twist. See
+  [Coloring and twist](../designer/painting.md#drehung-s-z-oder-gerade).
+* **Display button** – one window in the designer for yarn structure,
+  labels, material, simple display, form and orientation; it replaces
+  texture, pattern, labels, texture palette and the gear icon of the 3D
+  view. See [3D view](../designer/view-3d.md#fenster-darstellung).
+* **Design printout with 3D view and colour legend** – new print element
+  *3D view* and cell style *Color swatch with color legend*; the standard
+  templates print the braid pattern and the 3D view side by side, and the
+  design data with material Ø, covering, braid Ø and 3D material. See
+  [Elements](../print-templates/elements.md).
+* **Material Rope** – for braids made of ropes, in the designer and in the
+  Braiding Simulator. Flat braids and spiral braids with a ply count show
+  flat bands in 3D, and in soutache braids the cores lie inside the braid.
+* **Compare machines** – **Compare** in the machine lists shows at least two
+  machines side by side, for braiding machines with the output at a given
+  lay length. See
+  [Compare machines](../master-data/braiding-machines.md#maschinen-vergleichen).
+* **Braid density via the lay length factor** – under **Input via** you
+  choose braiding angle or lay length factor. See
+  [Braid density](../calculations/product/lay-length.md).
+
+### Improvements { #verbesserungen-212 }
+
+* **Machine models without setups and programs** – Herzog no longer ships
+  configurations (full, half, tandem), setups or programs with the model;
+  you set up and program yourself. Your own setups and programs are kept.
+  **Insert operating mode…** has been removed.
+* **Core-cover product** – when you type the core or cover share, Herzog CAB
+  completes the other one to 100 %. See
+  [Core-cover product](../calculations/product/core-sheath.md).
+* **Views in the designer** – you rotate the cylinder and square views by
+  dragging sideways, and for packing braids *Edge* is now called *Square*.
+  The machine overview has the ⏮ button that sets machine and braid
+  build-up back to the start. The 3D form only offers *Default for the braid
+  type*, *Interlacing only (schematic)* and *As the machine is arranged*.
+* **Standard design templates** – *Default Design* and *Default Design (high
+  carrier count)* are replaced once with the new version at the first
+  start, as long as they still have their original name. To keep your own
+  changes, rename them in the Print Editor beforehand.
+
+### Bug fixes { #fehlerbehebungen-212 }
+
+* If the licence server answers with an error page during maintenance
+  (HTTP 502, 503 or 504), Herzog CAB signs in offline instead of aborting
+  the sign-in. See [Sign-in problems](../help/login-problems.md).
+* Signing out and quitting clean up the 3D view *Machine* properly.
+* With two designs open, the overview no longer appears twice after
+  changing the braid type.
+* The bobbin winding machine icon shows four winding positions.
+
+### Compatibility { #kompatibilitaet-212 }
+
+* **Twist per carrier** – older versions do not know the twist and lose it
+  when saving a design. Update all computers on the same working directory.
+
+## Version 2.1.1 (October 2026) { #version-211-oktober-2026 }
 
 ### New { #neu }
 

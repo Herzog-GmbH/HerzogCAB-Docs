@@ -81,26 +81,42 @@ which design templates exist:
 For designs, Herzog CAB comes with two standard templates, which are offered
 automatically to match the number of carriers:
 
-| Standard template | For designs with … |
-|---|---|
-| Compact design template (one page) | up to **48 carriers** |
-| Large design template (two pages, with large Setup overview) | from **49 carriers** |
+| Standard template | For designs with … | Layout |
+|---|---|---|
+| **Default Design** | up to **48 carriers** | One page: design data and Setup overview at the top, below them the setup with color legend and the braid pattern and 3D view side by side. |
+| **Default Design (high carrier count)** | from **49 carriers** | Two pages: page 1 with design data, setup with color legend and the braid pattern and 3D view side by side, page 2 with a large Setup overview. |
 
 Only the standard template matching the current number of carriers is ever
 shown; your own templates always appear in the selection regardless of the
-number of carriers.
+number of carriers. How Herzog CAB renews the standard templates during an
+update is described under
+[Manage templates](../print-templates/manage.md#mitgelieferte-standardvorlagen).
 
 ### Print preview { #druckvorschau }
 
 ![Print preview of a design with design data, Setup overview, carrier table and braid pattern](../assets/screenshots/designer/designer-druckvorschau.png)
 
 The print preview shows all pages of the selected template, already filled
-with the current design, color and carrier data. With
-[plying colors](painting.md#fachungsfarben-farbe-je-garn), the
-carrier list shows a color strip per yarn; identifier, name, color value and
-Pantone are shown per yarn separated by " / " (missing details as "–"). The
-preview window provides zoom functions and the **Print** button, which you use
-to send the printout to the printer.
+with the current design, color and carrier data:
+
+* **Design data** — in plain words, e.g. *Round braid* and *Normal setup
+  1-1*. For round and flat braids, material Ø, covering or fill and braid Ø
+  or product width are added, and with a 3D image the 3D material. Empty
+  details are left out; spiral, packing and soutache braids have no braid
+  binding row.
+* **Setup** — per carrier the number, the
+  [twist](painting.md#drehung-s-z-oder-gerade) and the color. With
+  [plying colors](painting.md#fachungsfarben-farbe-je-garn), the color
+  swatch shows a stripe per yarn; depending on the
+  [cell style](../print-templates/elements.md#besetzung), the color details
+  appear once in the color legend or per yarn separated by " / " in the cell
+  (missing details as "–").
+* **Braid pattern** — without carrier labels.
+* **3D view** — the side view of the braid in the form you selected in the
+  [Display](view-3d.md#fenster-darstellung) window.
+
+The preview window provides zoom functions and the **Print** button, which
+you use to send the printout to the printer.
 
 ## Related pages { #verwandte-seiten }
 

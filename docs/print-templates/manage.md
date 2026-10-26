@@ -26,6 +26,25 @@ sofort im Editor angezeigt.
 Beim Verlassen des Editors mit ungespeicherten Änderungen fragt Herzog CAB
 nach, ob Sie zuerst speichern oder die Änderungen verwerfen möchten.
 
+## Mitgelieferte Standardvorlagen
+
+Herzog CAB bringt Standardvorlagen mit, z. B. *Standard Auftrag*, *Standard
+Design* und *Standard Design (hohe Klöppelzahl)*. Welche Design-Vorlage beim
+Drucken angeboten wird, steht unter
+[Speichern und Drucken](../designer/save-print.md#druck-starten-und-vorlage-wahlen).
+
+Bringt ein Update eine neue Fassung einer Standardvorlage mit, ersetzt Herzog
+CAB die Vorlage beim ersten Start einmal je Arbeitsverzeichnis — aber nur,
+solange sie noch ihren ursprünglichen Namen trägt. Vorlagen mit anderem Namen
+und Ihre eigenen Vorlagen bleiben unverändert. Eine gelöschte Standardvorlage
+legt Herzog CAB nicht wieder an.
+
+!!! warning "Eigene Änderungen an einer Standardvorlage behalten"
+    Haben Sie eine Standardvorlage angepasst, speichern Sie sie vor dem
+    Update unter einem eigenen Namen: Klicken Sie auf **Speichern** und
+    geben Sie unter **Name der Vorlage** einen neuen Namen ein. Herzog CAB
+    legt damit eine eigene Vorlage an, die ein Update nicht ersetzt.
+
 ## Speicherort
 
 Alle Vorlagen liegen als Datei unter `Printouts/templates/` im aktiven

@@ -180,6 +180,8 @@ rebuild the model (with large machines this takes a moment,
     The web app shows one design per page — the two-window comparison of the
     desktop app does not exist. The web app displays mixed designs made of round and strand sections;
     they can only be created in the desktop app.
+    You set the [twist](../designer/painting.md#drehung-s-z-oder-gerade) per
+    carrier in the desktop app.
     On the other hand, the web app already has the [plying colors](#fachungsfarben-farbe-je-garn)
     and the [Versions](versions.md) dialog.
 

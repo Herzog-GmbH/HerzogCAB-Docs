@@ -1,6 +1,6 @@
 # Programm
 
-!!! abstract "Referenz — Die Aufgabe „Programm“: Weichen und Räder schalten, Aufnahme, Zeitachse, Teilung im Lauf, Flügelradgruppen, Betriebsart einfügen, Drehzahl und Abzug"
+!!! abstract "Referenz — Die Aufgabe „Programm“: Weichen und Räder schalten, Startstellung, Aufnahme, Zeitachse, Teilung im Lauf, Flügelradgruppen, Drehzahl und Abzug"
 
 ## Wofür Sie diesen Bereich nutzen
 
@@ -14,15 +14,18 @@ Litze, Verzwirnen oder Spirale. Sie schreiben ein Programm auf zwei Wegen:
 * **In der Zeitachse setzen:** In der Zeile einer Weiche oder eines Rades
   auf den Schritt klicken, an dem geschaltet werden soll.
 
-Neue Programme legen Sie oben in der Kopfzeile an (**⋯** neben
+Jedes Programm gehört zu genau einer Besetzung. Neue Programme legen Sie
+oben in der Kopfzeile auf der gewählten Besetzung an (**⋯** neben
 **Programm** > **Neues Programm…**) oder auf der
-[Startseite](index.md#startseite) mit **Neues Programm**.
+[Startseite](index.md#startseite) in der Karte der Besetzung mit **+ Neues
+Programm**. Wie Programme und Besetzungen zusammenhängen, steht unter
+[Besetzung und Programm](editor.md#besetzung-und-programm).
 
 ## Der Bildschirm im Überblick
 
 !!! warning "📷 Screenshot fehlt"
     **Motiv:** Aufgabe „Programm“ mit den Gruppen Weichen und Räder sowie Drehzahl und Abzug; unten die Zeitachse mit den Zeilen Abzug, Drehzahl, Richtung, Weichen (aufgeklappt) und Räder; das rote Band „Aufnahme läuft“ in der Maschinenansicht.
-    **So erzeugen:** Kundenbuild mit Modell-Lizenz, Maschine mit einem Programm von Herzog (Umschaltung) öffnen, Reiter „Programm“, Aufnahme starten.
+    **So erzeugen:** Kundenbuild mit Modell-Lizenz, Maschine mit einem eigenen Umschaltprogramm öffnen, Reiter „Programm“, Aufnahme starten.
     **Ziel-Datei:** `assets/screenshots/braiding-simulator/programm.png`
 
 In der Aufgabe **Programm** schaltet ein **Klick auf eine Weiche** sie.
@@ -30,29 +33,48 @@ Ein Klick auf einen Klöppel oder ein Rad wählt es aus.
 
 ## Weichen schalten
 
-Was ein Klick auf eine Weiche bewirkt, hängt davon ab, wo der Lauf steht:
+Was ein Klick auf eine Weiche bewirkt, hängt davon ab, ob ein Programm
+gewählt ist und ob die Aufnahme läuft. Kurz gesagt: ohne Aufnahme die
+Startstellung, mit Aufnahme ab hier.
 
 | Stand | Wirkung |
 |---|---|
-| **Am Start** | Ändert die **Startstellung** des Programms. |
-| **Mitten im Lauf, ohne Aufnahme** | Gilt nur für diesen Lauf: *W12 nur für diesen Lauf umgestellt — die Startstellung bleibt. Ins Programm kommt der Befehl mit der Aufnahme.* |
-| **Mit Aufnahme** | Wird ein Schaltbefehl am aktuellen Schritt. |
+| **Programm gewählt, ohne Aufnahme** | Ändert die **Startstellung** des Programms, gleich an welchem Schritt der Lauf gerade steht. Die Weiche steht danach von Anfang an so: *W12 ist jetzt von Anfang an geschlossen — die Startstellung des Programms ist geändert.* |
+| **Mit Aufnahme** | Wird ein Schaltbefehl ab dem aktuellen Schritt. |
+| **Ohne Programm** | Am Start stellt der Klick die Weiche um; mitten im Lauf gilt er nur für diesen Lauf. |
+
+Ändern Sie die Startstellung mitten im Lauf, rechnet der Simulator den
+Lauf mit der neuen Startstellung bis zur alten Stelle neu. Ein Befehl in
+Schritt 1 für dieselbe Weiche zieht mit. Schaltet das Programm die Weiche
+später selbst, nennt die Meldung den Schritt: *Ab Schritt 20 schaltet das
+Programm um.* Bis dorthin gilt die neue Startstellung.
+
+Befehle in Schritt 1 zeigt die Maschine schon am Start: Weichen, Lauf und
+Richtung der Räder stehen dort so, wie Schritt 1 sie schaltet.
 
 * Hängt die Weiche an einem **Stellhebel**, stellt ein Klick alle Weichen
   des Hebels gemeinsam.
 * **++ctrl++ + Klick** sammelt mehrere Weichen zu einer **Schaltgruppe**:
   Ein Klick auf eine von ihnen schaltet dann alle; ein Klick auf eine
   andere Weiche löst die Gruppe auf.
+* Für Stellhebel und Schaltgruppen gilt dieselbe Regel wie für eine
+  einzelne Weiche: ohne Aufnahme die Startstellung, mit Aufnahme ein Befehl
+  ab hier.
 * **Feste Bauteile** (X-Kreuzung, Y-Stück, Nutensteine) lassen sich nicht
   schalten; ein Klick wählt sie nur aus.
 
 ## Gruppe „Weichen und Räder“
 
+Oben in der Gruppe fasst ein Hinweis die Klickregel zusammen: *Klick auf
+eine Weiche schaltet sie, Strg+Klick sammelt mehrere zum gemeinsamen
+Schalten. Ohne Aufnahme ändert das die Startstellung des Programms, also
+von Anfang an. Mit laufender Aufnahme wird es ein Befehl ab dem aktuellen
+Schritt. Für Start und Stopp der Räder gilt dasselbe.*
+
 | Element | Wirkung |
 |---|---|
-| **Alle Räder umkehren** | Kehrt die Laufrichtung aller Räder um; alle Paare bleiben gegenläufig, der Flechtkreis läuft rückwärts weiter. Gruppierte Räder bleiben fest gekoppelt. Wirkt ab der nächsten Schrittgrenze, wie ein Weichenklick am Start, im Lauf oder mit Aufnahme. |
-| **Betriebsart einfügen…** | Übernimmt eine Umschaltung wie Verzwirnen, Spirale oder Flach aus einem Programm dieser Maschine an den aktuellen Schritt, siehe [unten](#betriebsart-einfugen). |
-| **Startzustand übernehmen** | Speichert die aktuelle Stellung von Rädern und Weichen als Start des Programms; die gewählte Besetzung wird mit dem Programm verknüpft (*Programmstart übernommen: … Räder, … Weichen · Besetzung: …*). Der Lauf steht danach am Start. |
+| **Alle Räder umkehren** | Kehrt die Laufrichtung aller Räder um; alle Paare bleiben gegenläufig, der Flechtkreis läuft rückwärts weiter. Gruppierte Räder bleiben fest gekoppelt. Wirkt ab der nächsten Schrittgrenze: am Start als Startstellung, mitten im Lauf ohne Aufnahme nur für diesen Lauf, mit Aufnahme als Befehl. |
+| **Startzustand übernehmen** | Speichert die aktuelle Stellung von Rädern und Weichen als Start des Programms (*Programmstart übernommen: … Räder, … Weichen · Besetzung: …*). Das Programm bleibt bei seiner Besetzung. Der Lauf steht danach am Start. |
 | **Programm wiederholen** | Häkchen (Standard an): Die Befehle wiederholen sich mit der Programmlänge als Periode, typisch für Flechtmuster. Ohne Häkchen läuft das Programm einmal durch, danach bleiben alle Stellungen. |
 
 Ohne gewähltes Programm sind die programmbezogenen Knöpfe gesperrt.
@@ -129,11 +151,22 @@ Knöpfe. Einen eigenen Antrieb haben:
 | **Switch-out anhalten** / **Switch-out starten** | Hält das Switch-out-Rad an bzw. startet es; steht es, parken seine Klöppel. |
 | **Switch-out umkehren** | Kehrt nur dieses Rad um. |
 
-Alle wirken ab der nächsten Schrittgrenze: am Start als Startstellung,
-mitten im Lauf nur für diesen Lauf, mit Aufnahme als Programmbefehl.
+**Anhalten** und **Starten** folgen derselben Regel wie ein Weichenklick:
+Mit gewähltem Programm und ohne Aufnahme ändern sie die Startstellung des
+Programms, gleich an welchem Schritt der Lauf steht (*Flügelradgruppe 1
+(Räder …) steht jetzt von Anfang an — die Startstellung des Programms ist
+geändert.*); ein Befehl in Schritt 1 zieht mit, ein späterer Befehl
+für dasselbe Rad wird in der Meldung genannt. Mit Aufnahme werden sie ein
+Befehl ab dem aktuellen Schritt. Ohne Programm wirken sie am Start als
+Startstellung und mitten im Lauf nur für diesen Lauf.
+
+**Umkehren** wirkt ab der nächsten Schrittgrenze: am Start als
+Startstellung, mitten im Lauf ohne Aufnahme nur für diesen Lauf, mit
+Aufnahme als Programmbefehl.
+
 Unter der Nabe dieser Räder zeigt ein Lauf-Symbol, ob sie laufen (▶) oder
 stehen (⏸); in der Aufgabe **Programm** startet bzw. hält ein Klick darauf
-das Rad.
+das Rad, mit derselben Wirkung wie die Knöpfe.
 
 Läuft ein Rad gegen seine Grundrichtung, warnt die Karte: *Läuft im
 Betrieb rückwärts, gegen die Grundrichtung.*
@@ -142,7 +175,8 @@ Betrieb rückwärts, gegen die Grundrichtung.*
 
 An einer **Dreheinheit** tauscht **Klöppelwechsel auslösen** je einen
 Klöppel zwischen den beiden Nachbarrädern; währenddessen steht die übrige
-Maschine. Mit Aufnahme wird daraus ein Befehl im Programm. Geht der
+Maschine. Mit Aufnahme wird daraus ein Befehl im Programm, ohne Aufnahme
+gilt der Wechsel nur für diesen Lauf. Geht der
 Wechsel gerade nicht, nennt die Karte den Grund und den *nächsten
 möglichen Schritt* mit dem Link **dorthin springen**.
 
@@ -181,7 +215,9 @@ Aufnahme ein. Aufgezeichnet werden als Befehl am aktuellen Schritt:
 Weichenklicks (auch über Stellhebel), **Alle Räder umkehren**, Anhalten,
 Starten und Umkehren von Flügelradgruppen und Switch-out-Rädern,
 Klöppelwechsel und Teilungswechsel. Klöppel setzen und entfernen bleibt
-Teil der Besetzung.
+Teil der Besetzung. Ohne Aufnahme ändert ein Klick auf eine Weiche oder
+auf den Lauf eines Rades die Startstellung, siehe
+[Weichen schalten](#weichen-schalten).
 
 * Während der Aufnahme steht oben links in der Maschine ein rotes Band
   **Aufnahme läuft** mit Position und Zahl der Befehle, und der Knopf heißt
@@ -265,6 +301,17 @@ diesem Schritt**; er gilt bis zum nächsten Wechsel. Ziehen setzt ihn
 **nur für den Bereich**; danach gilt wieder der Wert davor. Die Dialoge
 sind unter [3D-Vorschau und Abzug](views.md#abzug) beschrieben.
 
+Wie **Richtung** und **Weichen** stehen auch **Abzug** und **Drehzahl**
+über die ganze Breite der Zeitachse, auch hinter dem Programmende:
+
+* Ohne **Programm wiederholen** gilt der letzte Bereich nach dem
+  Programmende weiter.
+* Mit **Programm wiederholen** kehren die Bereiche mit der Programmlänge
+  wieder.
+* Gleiche Bereiche nebeneinander verschmelzen zu einem Block.
+* Hinter dem Programmende nennt der Kurzhinweis den Bereich, der dort
+  gilt.
+
 ### Rechtsklick-Menü
 
 Je nach Zeile oben ein passender Befehl, zum Beispiel *W12 bei Schritt 20
@@ -277,7 +324,6 @@ anhalten* oder *Ab Schritt 20 mit 3er-Teilung*. Darunter immer:
 | **Schritte löschen…** | Löscht Schritte; was dort geschaltet wurde, gilt danach weiter, spätere Befehle rücken nach vorn. |
 | **Abschnitt verschieben…** | Verschiebt die Befehle eines Schrittbereichs um eine Zahl von Schritten (positiv später, negativ früher), auf Wunsch **Nur markierte Zeilen**. |
 | **Abschnitt kopieren…** | Kopiert die Befehle eines Abschnitts an eine andere Stelle, auch aus einem anderen Programm dieser Maschine (**Aus Programm**). |
-| **Betriebsart einfügen…** | Wie in der Gruppe „Weichen und Räder“, siehe [unten](#betriebsart-einfugen). |
 | **Zu Schritt n springen** | Setzt den Abspielkopf. |
 
 Steht in einer Radzeile ein Befehl, den die Maschine nicht ausführen kann
@@ -287,38 +333,8 @@ Steht in einer Radzeile ein Befehl, den die Maschine nicht ausführen kann
 Mit **Einzelrad-Befehle von R… entfernen** im Rechtsklick-Menü löschen Sie
 diese Befehle.
 
-## Betriebsart einfügen { #betriebsart-einfugen }
-
-Eine **Umschaltung** ist ein Abschnitt eines Programms, in dem Weichen vom
-Programmstart abweichen und danach zurückschalten, zum Beispiel ins
-Verzwirnen und zurück. **Betriebsart einfügen…** übernimmt eine solche
-Umschaltung aus einem beliebigen Programm dieser Maschine, zum Beispiel aus
-einem Programm von Herzog, in Ihr Programm.
-
-| Feld | Bedeutung |
-|---|---|
-| **Umschaltung** | Die gefundenen Umschaltungen: Programm · Schritte · geschaltete Weichen. |
-| **Beginnt bei Schritt** | Wo die Umschaltung beginnt (vorbelegt: aktueller Schritt). |
-| **Dauer** | Schritte vom ersten Befehl des Hinwegs bis zum ersten des Rückwegs. |
-| **Platz schaffen** | Schritte einfügen, damit das übrige Programm erhalten bleibt und nach hinten rückt. Ohne Häkchen überschreibt die Umschaltung, was dort steht. |
-| **Abzug mitnehmen** | Nur, wenn der Abschnitt Abzugswechsel enthält: übernimmt sie mit; beim Verzwirnen steht der Abzug zum Beispiel auf 0. |
-
-Der Dialog prüft sofort, ob der Lauf kollisionsfrei bleibt und jeder
-Klöppel nach der Rückkehr dort steht, wo er ohne Umschaltung stünde:
-*✅ Kollisionsfrei — nach der Rückkehr steht jeder Klöppel wie ohne
-Umschaltung.*, *⚠ Kollisionsfrei, aber das Farbbild ist danach
-verschoben.* oder *❌ Kollision bei Schritt …*. Darunter schlägt er
-*Passende Startschritte* und *Passende Dauern* vor. **Einfügen** setzt die
-Umschaltung ein. Die Funktion braucht das Recht *Flechtsimulator
-bearbeiten*.
-
-Findet der Simulator in den Programmen dieser Maschine keine Umschaltung,
-sagt er das; legen Sie dann zuerst eine an oder nutzen Sie ein Programm
-von Herzog.
-
 ## In der Web-App
 
-* **Betriebsart einfügen** gibt es nicht.
 * Die Zeitachse hat kein Rechtsklick-Menü und keine Zeilenmarkierung;
   Ziehen legt einen Zustand über den Bereich, verschiebt aber keinen
   Befehl. Befehle verschieben, anspringen und entfernen Sie in der Liste

@@ -11,9 +11,9 @@ carriers run without collisions and what the braid will look like. You
 pass the finished program on to the control as a switching plan.
 
 Herzog supplies the machine as a ready-made **machine model**: horngears,
-slots, switches and tubes exactly as the machine is built, plus the
-configurations it can run. You build your setups and programs on top of
-it; you do not have to design anything.
+slots, switches and tubes exactly as the machine is built. You do not have
+to design anything. The model does not bring carriers or programs: you set
+up the empty machine yourself and create your setups and programs on it.
 
 The Braiding Simulator is available in the desktop app and in the web
 app, with a [model licence](licence.md) in addition to the full version
@@ -24,9 +24,8 @@ subscription.
 | Term | Meaning |
 |---|---|
 | **Machine model** | The empty machine from Herzog: gears, switches, tubes. It cannot be changed in the Braiding Simulator. New versions of a model arrive automatically. |
-| **Configuration** | An arrangement that Herzog supplies with the model, for example *Full*, *Half* or *Tandem*: positions and carrier numbers only, without colors. |
-| **Setup** | Which carriers stand where, with colors, ply count, material diameter and covering. A setup of your own is created when you change a configuration and save it. |
-| **Time program** (program for short) | The start position of switches and gears and the commands that switch during the run: switches, reversal, take-up, speed. A program can bring its setup along. |
+| **Setup** | Which carriers stand where, with colors, ply count, material diameter and covering. A setup is created when you set up the empty machine and save it. A machine can have any number of setups. |
+| **Time program** (program for short) | The start position of switches and gears and the commands that switch during the run: switches, reversal, take-up, speed. Each program belongs to exactly one setup; on a setup you create as many programs as you like. |
 | **Step** | The time unit of the simulation: every gear turns on by one pitch. Programs are as many steps long as you define; as a rule, they repeat. |
 | **Repeat** | After how many steps the machine is back in its start state. A repeat reached without a collision proves that the program runs collision-free permanently. |
 | **Collision**, **dead end** | Two carriers meet, or a carrier cannot go any further. Both stop the simulation. |
@@ -78,7 +77,7 @@ from the first click to the switching plan are given under
     ---
 
     Switching switches, recording, timeline, pitch in this run,
-    horngear groups, inserting an operating mode.
+    horngear groups.
 
     [:octicons-arrow-right-24: Program](program.md)
 
@@ -131,7 +130,7 @@ Clicking **Braiding Simulator** in the navigation opens the start page
 with the machines assigned to you.
 
 !!! warning "📷 Screenshot missing"
-    **Subject:** Start page of the Braiding Simulator: on the left the list of licensed machines with status line, on the right the selected machine with “valid until”, 2D top view and the sections Configurations from Herzog, My setups, My programs as well as the buttons New setup, New program, Delete own….
+    **Subject:** Start page of the Braiding Simulator: on the left the list of licensed machines with status line, on the right the selected machine with “valid until”, 2D top view and the section Setups and programs: two cards, one per setup, with key figures, below each its indented programs with Open and ⋯, “+ New program” in every card; at the bottom the buttons New setup and Delete own….
     **How to create:** Customer build with account sign-in and at least one assigned model licence, Navigation > Braiding Simulator.
     **Target file:** `assets/screenshots/braiding-simulator/startseite.png`
 
@@ -149,8 +148,8 @@ One entry per machine model, in alphabetical order:
   *Loading*, *Licence expired on &lt;date&gt;*, *No valid licence* or
   *Connection to the licence server required*. What the red states mean
   is described under [Licence and rights](licence.md#wenn-eine-lizenz-wegfallt).
-* A **lock** indicates that another user is currently editing the own
-  programs of this model; the tooltip names that user. See
+* A **lock** indicates that another user is currently editing the setups
+  and programs of this model; the tooltip names that user. See
   [Multiple users in the same workspace folder](../basics/multi-user.md).
 
 A **double-click** opens the model, provided it can be used. Below the
@@ -176,25 +175,52 @@ a note, for example *Herzog has updated the model, version … instead of
 …. Your setups and programs are kept.* Below that, a top view shows the
 gear layout of the machine.
 
-Three sections follow, each row with **Open**:
+Below that follows the section **Setups and programs**: one card per
+setup, with its programs indented below it. If the machine has no setup
+yet, it reads *No own setup yet. “New setup” places the carriers on the
+empty machine; you then create programs on it.*
 
-| Section | Content |
+#### Card of a setup { #karte-einer-besetzung }
+
+| Element | Content or effect |
 |---|---|
-| **Configurations from Herzog** | The configurations of the model with the number of carriers, for example *Full · 32 carriers*. You save changes as a setup of your own. |
-| **My setups** | Your own setups for this model. |
-| **My programs** | Your programs and the programs Herzog supplies (suffix *from Herzog*). If you change a program from Herzog, a copy of your own is created. |
+| Name and key figures | Name of the setup, below it the number of carriers, ply count, yarn Ø, covering and core Ø, where set, and the number of programs, for example *32 carriers · Ply count 2 · Yarn Ø 0.25 mm · 2 programs*. Without a program it reads *no program yet*. |
+| **Open** | Opens the setup with its most recently used program in the [simulator screen](editor.md). |
+| **⋯** | **Rename…**, **Duplicate** (copy of the setup including its programs, name *… – copy*) and **Delete…** (deletes the setup together with its programs; the confirmation prompt names the programs). |
+| Program row | One row per program of the setup with name, number of steps, speed and take-up, for example *Round · 48 steps · 120 rpm · Take-up 1.20 m/min*. Speed and take-up only appear if the program has them; several ranges appear as a span. |
+| **Open** in the program row | Opens the program with its setup. |
+| **⋯** in the program row | **Rename…**, **Duplicate** (copy on the same setup, name *… – copy*), **Assign to another setup** (submenu with the other setups of the machine) and **Delete…**. |
+| **+ New program** | Opens the setup and creates a new time program on it; the simulator asks for the name. |
 
-**Open** loads the machine with the selected setup or program into the
-[simulator screen](editor.md). Without a valid licence, **Open** is
-locked; your own entries remain visible.
+#### Programs without a setup { #programme-ohne-besetzung }
+
+Your setups and programs from older program versions are kept. A setup
+from Herzog that one of your programs refers to appears as a normal setup
+in the list. Programs that do not belong to any setup yet appear at the
+end in the group **Without setup** (*Older programs that do not belong to
+any setup yet. “Assign” gives them one.*). Instead of **Open**, each row
+has the button **Assign…**: it lists the setups of the machine, and your
+choice gives the program to that setup. If there is no setup yet,
+**Assign…** is locked. Here the **⋯** menu only contains **Rename…** and
+**Delete…**.
+
+#### Buttons below the section { #knopfe-unter-dem-abschnitt }
 
 | Button | Effect |
 |---|---|
-| **New setup** | Takes a configuration from Herzog as the starting point (if there are several, via the menu *From …*), opens the machine and asks for the name of the new setup. |
-| **New program** | Creates a new time program for this machine. |
+| **New setup** | Opens the empty machine in the [Set up](populate.md) task. Place the carriers and save them with **Save as new setup…**. |
 | **Delete own…** | After a confirmation prompt, deletes all your own setups and time programs for this machine. The machine stays as Herzog supplies it. |
 
-The three buttons require the *Edit Braiding Simulator* right.
+**New setup**, **Delete own…**, **+ New program** and the entries of the
+**⋯** menus require the *Edit Braiding Simulator* right. Without a valid
+licence, **Open**, **New setup** and the menus of the cards are locked;
+your setups and programs remain visible.
+
+Whatever you rename, duplicate, assign or delete on the start page takes
+effect immediately, without **Save**. If another user is currently editing
+the setups and programs of this machine (lock in the list), the start page
+refuses every change with *Someone else is editing the programs of this
+machine right now.*
 
 !!! info "Where your setups and programs are stored"
     The desktop app stores your own setups and programs per model in the
@@ -213,7 +239,6 @@ some of the functions:
 | Print the switching plan, save it as PDF and CSV | ✔ | — |
 | Covering and material diameter per setup | ✔ | Material diameter per browser, no covering |
 | Thread yarns into tubes with a click | ✔ | — |
-| Insert operating mode | ✔ | — |
 | Operation on tablet and smartphone | — | ✔ |
 
 The details are given under [Braiding Simulator (web app)](../web/braiding-simulator.md).
