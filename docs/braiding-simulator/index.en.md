@@ -165,7 +165,7 @@ If the list is empty, it shows the reason:
 | *Sign in with your Herzog account. The machines your account holds a licence for will then appear here.* | The program is not signed in with the customer account. |
 | *The machines are being loaded from the licence server.* | The list is about to arrive. |
 | *No machine model is assigned to you. Your administrator assigns model licences in the licence portal.* | Your account has model licences, but none for you. See [Assign machine models](../portal/models.md). |
-| *No machines yet. Herzog activates the machine models for your account; they then appear here with their configurations.* | Your account does not have a model licence yet. |
+| *No machines yet. Herzog activates the machine models for your account; they then appear here.* | Your account does not have a model licence yet. |
 
 ### Selected machine (right) { #gewahlte-maschine-rechts }
 

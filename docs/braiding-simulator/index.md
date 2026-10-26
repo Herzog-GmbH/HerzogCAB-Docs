@@ -166,7 +166,7 @@ Ist die Liste leer, steht dort der Grund:
 | *Melden Sie sich mit Ihrem Herzog-Konto an. Dann erscheinen hier die Maschinen, für die Ihr Konto eine Lizenz hat.* | Das Programm ist nicht mit dem Kundenkonto angemeldet. |
 | *Die Maschinen werden vom Lizenzserver geladen.* | Die Liste kommt gleich. |
 | *Ihnen ist kein Maschinenmodell zugewiesen. Ihr Administrator weist Modell-Lizenzen im Lizenzportal zu.* | Ihr Konto hat Modell-Lizenzen, aber keine für Sie. Siehe [Maschinenmodelle zuweisen](../portal/models.md). |
-| *Noch keine Maschinen. Herzog schaltet die Maschinenmodelle für Ihr Konto frei; danach erscheinen sie hier mit ihren Konfigurationen.* | Ihr Konto hat noch keine Modell-Lizenz. |
+| *Noch keine Maschinen. Herzog schaltet die Maschinenmodelle für Ihr Konto frei; danach erscheinen sie hier.* | Ihr Konto hat noch keine Modell-Lizenz. |
 
 ### Gewählte Maschine (rechts)
 
