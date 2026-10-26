@@ -2,7 +2,7 @@
 
 !!! abstract "Reference — What changed in which version"
 
-## Version 2.1.2 (in preparation) { #version-212 }
+## Version 2.1.2 (October 2026) { #version-212 }
 
 ### New { #neu-212 }
 
